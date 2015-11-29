@@ -46,4 +46,4 @@ def chr_to_hex(char):   # 单个字符变成是十六进制的字符
         return '0'+chr_hex[2]
     else:
         return chr_hex[2:]
-print main('acccc','bc')
+print main('abcd','bb')
