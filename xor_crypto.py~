@@ -49,5 +49,5 @@ def chr_to_hex(char):   # 单个字符变成是十六进制的字符
 def hex_to_chr(aa):
     result = ''
     for i in range(0,len(aa),2):
-        result = result + chr( int(aa[i:i+2],16) )
+        result = result + ord( int(aa[i:i+2],16) )
     return result
