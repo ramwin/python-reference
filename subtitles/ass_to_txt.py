@@ -11,6 +11,8 @@ def assStypeGrep(text):
     text = ''.join(re.split(r'{[\s\S]*?}',text))
     text = text.replace('\\N','\n')
     return text
+    
+    
 def main(doc,stylegrep=False):
     '''a function to change the ass doc object to text'''
     text = ''
@@ -25,4 +27,6 @@ if __name__=='__main__':
     doc = ass.parse(open(ass_file_path))
     text = main(doc, stylegrep=True)
     save_file_path = open(txt_file_path,'w')
+    print(type(text))
     save_file_path.write(text)
+    save_file_path.close()

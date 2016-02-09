@@ -6,11 +6,17 @@ gopzbloojbfujxzb
 '''
 import smtplib  
 from email.mime.text import MIMEText  
-mailto_list=["zettage_wangx@163.com"]
-mail_host="smtp.163.com"  #设置服务器
-mail_user="zettage_wangx"    #用户名
-mail_pass="gopzbloojbfujxzb"   #口令 
-mail_postfix="163.com"  #发件箱的后缀
+# mailto_list=["1846468966@qq.com"]
+# mail_host="smtp.163.com"  #设置服务器
+# mail_user="zettage_wangx"    #用户名
+# mail_pass="gopzbloojbfujxzb"   #口令 
+# mail_postfix="163.com"  #发件箱的后缀
+
+mailto_list=["1175190234@qq.com"]
+mail_host="smtp.zettage.com"  #设置服务器
+mail_user="register"    #用户名
+mail_pass="Zettage321"   #口令 
+mail_postfix="zettage.com"  #发件箱的后缀
 
 def send_mail(to_list,sub,random_string):  #to_list：收件人；sub：主题；content：邮件内容
     content = '''
