@@ -22,8 +22,11 @@ def main():
             best_index = index
     print('您现在应该购买的是:{0}'.format(best))
     new_level = input('现在您的 {0} 等级是:'.format(best))
+    new_level = new_level.replace(',','')
     new_speed = input('现在您的 {0} 的生子速度是:'.format(best))
+    new_speed = new_speed.replace(',','')
     new_price = input('现在您的 {0} 的价格是:'.format(best))
+    new_price = new_price.replace(',','')
     data_list[best_index] = '{0}:{1},{2},{3}\n'.format(best,new_level,new_speed,new_price)
     file = open(file_path,'w')
     file.write(title)
