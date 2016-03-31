@@ -10,3 +10,4 @@ def main():
 if __name__ == '__main__':
     main()
     print(os.sys.argv[1])
+    print(type(os.sys.argv[1]))
