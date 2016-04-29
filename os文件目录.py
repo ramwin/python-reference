@@ -4,4 +4,12 @@
 
 import os
 # 获取当前目录  
+os.getcwd()
 os.path.abspath('.')
+
+# 切换目录
+os.chdir('Pictures')
+
+# 遍历文件
+os.listdir()
+
