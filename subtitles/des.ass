@@ -1,0 +1,1851 @@
+﻿[Script Info]
+;本字幕文件用 SrtEdit MPC播放版 Version 5.2 编辑制作
+;Unicode SrtEdit Copyright(C) 2005-2009 袁卫国
+
+Title: 
+Original Script: 
+Original Translation: 
+Original Timing: 
+Original Editing: 
+Script Updated By: 
+Update Details: 
+ScriptType: v4.00+
+Collisions: Normal
+PlayResX: 0
+PlayResY: 0
+Timer: 100.0000
+Synch Point: 
+WrapStyle: 0
+ScaledBorderAndShadow: no
+
+[V4+ Styles]
+Format: Name, Fontname, Fontsize, PrimaryColour, SecondaryColour, OutlineColour, BackColour, Bold, Italic, Underline, StrikeOut, ScaleX, ScaleY, Spacing, Angle, BorderStyle, Outline, Shadow, Alignment, MarginL, MarginR, MarginV, Encoding
+Style: Title,黑体,21,&H00FFFFFF,&H00000000,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,2,0,0,55,134
+Style: Title-Eng,Tahoma,15,&H00FFFFFF,&H00000000,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,2,0,0,55,134
+Style: Team,黑体,16,&H0000FF00,&H00000000,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,2,0,0,55,134
+Style: Team-Eng,Tahoma,15,&H0000FF00,&H00000000,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,2,0,0,55,134
+Style: Name,黑体,15,&H0000FF00,&H00000000,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,2,0,0,16,134
+Style: Screen,黑体,14,&H00FFFFFF,&H00000000,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,2,0,0,20,134
+Style: Song,黑体,13,&H00FFFFFF,&H00000000,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,8,0,0,16,134
+Style: Song-Chn,黑体,13,&H00FFFFFF,&H00000000,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,8,0,0,16,134
+Style: Song-Eng,Tahoma,10,&H0000FFFF,&H00000000,&H00000000,&H00000000,0,0,0,0,100,100,0,0,1,1,1,8,0,0,16,134
+Style: Comment,黑体,11,&H00FF00FF,&H00000000,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,8,0,0,1,134
+Style: ChText,Tahoma,22,&H00FFFFFF,&H00000000,&H00FF8000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,2,0,0,0,134
+Style: EnText,Tahoma,15,&H00FFFFFF,&H00000000,&H00000000,&H00000000,-1,0,0,0,100,100,0,0,1,1,1,2,0,0,0,134
+
+[Events]
+Format: Layer, Start, End, Style, Name, MarginL, MarginR, MarginV, Effect, Text
+Dialogue: 0,0:01:47.79,0:01:49.24,EnText,,0000,0000,0000,,Justin!
+Dialogue: 0,0:01:49.33,0:01:52.37,EnText,,0000,0000,0000,,Quick, honey, take my picture.\NI got the pyramid in my hand.
+Dialogue: 0,0:02:01.55,0:02:03.67,EnText,,0000,0000,0000,,Justin, you get back here right now!
+Dialogue: 0,0:02:04.10,0:02:05.12,EnText,,0000,0000,0000,,No, stop!
+Dialogue: 0,0:02:05.22,0:02:07.62,EnText,,0000,0000,0000,,- No, no! Stop him!\N- Go back! Don't climb!
+Dialogue: 0,0:02:12.40,0:02:13.42,EnText,,0000,0000,0000,,Wait, wait.
+Dialogue: 0,0:02:13.52,0:02:15.56,EnText,,0000,0000,0000,,Hold on. Easy, little boy.
+Dialogue: 0,0:02:16.94,0:02:19.18,EnText,,0000,0000,0000,,Okay, stop, child! Stop right there. No!
+Dialogue: 0,0:02:20.49,0:02:23.44,EnText,,0000,0000,0000,,No, no, no! There he goes.
+Dialogue: 0,0:02:35.00,0:02:36.16,EnText,,0000,0000,0000,,Justin!
+Dialogue: 0,0:02:44.84,0:02:46.63,EnText,,0000,0000,0000,,I've got him! I've got him!
+Dialogue: 0,0:02:57.56,0:03:00.01,EnText,,0000,0000,0000,,Outrage in Egypt tonight\Nas it was discovered
+Dialogue: 0,0:03:00.11,0:03:02.85,EnText,,0000,0000,0000,,that the Great Pyramid of Giza\Nhad been stolen
+Dialogue: 0,0:03:02.94,0:03:05.77,EnText,,0000,0000,0000,,and replaced by a giant inflatable replica.
+Dialogue: 0,0:03:06.03,0:03:09.02,EnText,,0000,0000,0000,,There is panic throughout the globe\Nas countries and citizens
+Dialogue: 0,0:03:09.33,0:03:12.19,EnText,,0000,0000,0000,,try to protect their beloved landmarks.
+Dialogue: 0,0:03:12.75,0:03:15.28,EnText,,0000,0000,0000,,Law enforcement still has no leads,
+Dialogue: 0,0:03:15.37,0:03:17.74,EnText,,0000,0000,0000,,leaving everyone to wonder,\Nwhich of the world's villains
+Dialogue: 0,0:03:17.83,0:03:20.37,EnText,,0000,0000,0000,,is responsible for this heinous crime?
+Dialogue: 0,0:03:20.67,0:03:22.45,EnText,,0000,0000,0000,,And where will he strike next?
+Dialogue: 0,0:04:11.39,0:04:13.78,EnText,,0000,0000,0000,,I'm having a bad, bad day
+Dialogue: 0,0:04:13.89,0:04:16.92,EnText,,0000,0000,0000,,It's about time that I get my way
+Dialogue: 0,0:04:17.02,0:04:19.58,EnText,,0000,0000,0000,,Steamrolling whatever I see
+Dialogue: 0,0:04:20.27,0:04:22.94,EnText,,0000,0000,0000,,Freeze ray! Freeze ray! Freeze ray!
+Dialogue: 0,0:04:23.02,0:04:25.14,EnText,,0000,0000,0000,,I'm having a bad, bad day
+Dialogue: 0,0:04:25.23,0:04:28.26,EnText,,0000,0000,0000,,If you take it personal, that's okay
+Dialogue: 0,0:04:28.36,0:04:30.92,EnText,,0000,0000,0000,,Watch, this is so fun to see
+Dialogue: 0,0:04:32.11,0:04:33.64,EnText,,0000,0000,0000,,Despicable me
+Dialogue: 0,0:04:58.72,0:05:00.67,EnText,,0000,0000,0000,,Morning, Gru!
+Dialogue: 0,0:05:02.14,0:05:03.16,EnText,,0000,0000,0000,,How you doing?
+Dialogue: 0,0:05:03.27,0:05:05.26,EnText,,0000,0000,0000,,Hello, Fred.
+Dialogue: 0,0:05:05.35,0:05:10.39,EnText,,0000,0000,0000,,FYI, your dog has been leaving\Nlittle bombs all over my yard,
+Dialogue: 0,0:05:10.48,0:05:12.56,EnText,,0000,0000,0000,,and I don't appreciate it.
+Dialogue: 0,0:05:12.65,0:05:16.27,EnText,,0000,0000,0000,,Sorry. You know dogs.\NThey go wherever they want to go.
+Dialogue: 0,0:05:16.36,0:05:18.10,EnText,,0000,0000,0000,,Unless they're dead.
+Dialogue: 0,0:05:20.66,0:05:21.82,EnText,,0000,0000,0000,,I'm joking!
+Dialogue: 0,0:05:22.95,0:05:25.82,EnText,,0000,0000,0000,,Although, it is true.\NAnyway, have a good one.
+Dialogue: 0,0:05:26.71,0:05:29.32,EnText,,0000,0000,0000,,Okay. Yeah.
+Dialogue: 0,0:05:30.17,0:05:33.33,EnText,,0000,0000,0000,,Steamrolling whatever I see
+Dialogue: 0,0:05:34.26,0:05:35.66,EnText,,0000,0000,0000,,Despicable me
+Dialogue: 0,0:05:36.13,0:05:38.53,EnText,,0000,0000,0000,,I'm having a bad, bad day
+Dialogue: 0,0:05:38.64,0:05:41.25,EnText,,0000,0000,0000,,If you take it personal, that's okay
+Dialogue: 0,0:05:45.60,0:05:47.26,EnText,,0000,0000,0000,,Despicable me
+Dialogue: 0,0:05:53.19,0:05:55.81,EnText,,0000,0000,0000,,You've got to be pulling on my leg!
+Dialogue: 0,0:05:59.65,0:06:00.67,EnText,,0000,0000,0000,,Hello!
+Dialogue: 0,0:06:01.74,0:06:03.61,EnText,,0000,0000,0000,,Cookies for sale.
+Dialogue: 0,0:06:05.74,0:06:07.94,EnText,,0000,0000,0000,,Go away. I'm not home.
+Dialogue: 0,0:06:08.37,0:06:10.77,EnText,,0000,0000,0000,,Yes, you are. I heard you.
+Dialogue: 0,0:06:11.67,0:06:14.70,EnText,,0000,0000,0000,,No, you didn't. This
+Dialogue: 0,0:06:14.79,0:06:16.70,EnText,,0000,0000,0000,,is a recording.
+Dialogue: 0,0:06:16.80,0:06:19.04,EnText,,0000,0000,0000,,- No, it isn't.\N- Yes, it is.
+Dialogue: 0,0:06:19.47,0:06:23.71,EnText,,0000,0000,0000,,Watch this. Leave a message, beep.
+Dialogue: 0,0:06:27.51,0:06:29.30,EnText,,0000,0000,0000,,Goodbye, recorded message.
+Dialogue: 0,0:06:29.39,0:06:31.22,EnText,,0000,0000,0000,,Agnes, come on.
+Dialogue: 0,0:06:41.99,0:06:43.01,EnText,,0000,0000,0000,,Kyle!
+Dialogue: 0,0:06:43.11,0:06:47.05,EnText,,0000,0000,0000,,Bad dog! No! No, no. Sit. My muffin.
+Dialogue: 0,0:06:47.16,0:06:48.26,EnText,,0000,0000,0000,,Gru!
+Dialogue: 0,0:06:49.29,0:06:50.90,EnText,,0000,0000,0000,,Dr Nefario.
+Dialogue: 0,0:06:51.08,0:06:52.65,EnText,,0000,0000,0000,,I know how you must be feeling.
+Dialogue: 0,0:06:52.75,0:06:56.20,EnText,,0000,0000,0000,,I, too, have encountered\Ngreat disappointment,
+Dialogue: 0,0:06:56.88,0:07:00.70,EnText,,0000,0000,0000,,but in my eyes,\Nyou will always be one of the greats.
+Dialogue: 0,0:07:01.38,0:07:02.83,EnText,,0000,0000,0000,,What? What happened?
+Dialogue: 0,0:07:02.92,0:07:04.33,EnText,,0000,0000,0000,,It's all over the news!
+Dialogue: 0,0:07:04.42,0:07:06.41,EnText,,0000,0000,0000,,Some fella just stole a pyramid.
+Dialogue: 0,0:07:06.51,0:07:09.75,EnText,,0000,0000,0000,,They're saying he makes\Nall other villains look
+Dialogue: 0,0:07:10.60,0:07:12.09,EnText,,0000,0000,0000,,lame.
+Dialogue: 0,0:07:14.43,0:07:16.47,EnText,,0000,0000,0000,,Assemble the minions!
+Dialogue: 0,0:07:47.13,0:07:48.96,EnText,,0000,0000,0000,,Minions, assemble!
+Dialogue: 0,0:07:50.01,0:07:51.46,EnText,,0000,0000,0000,,Okay. Okay.
+Dialogue: 0,0:07:58.52,0:07:59.62,EnText,,0000,0000,0000,,Hey!
+Dialogue: 0,0:08:47.06,0:08:49.73,EnText,,0000,0000,0000,,Looking good, Kevin!\NHow is the family? Good?
+Dialogue: 0,0:08:49.82,0:08:51.00,EnText,,0000,0000,0000,,All right.
+Dialogue: 0,0:08:51.11,0:08:54.10,EnText,,0000,0000,0000,,That's my Billy boy! What up, Larry?
+Dialogue: 0,0:08:55.15,0:08:57.19,EnText,,0000,0000,0000,,Hello, everybody!
+Dialogue: 0,0:08:57.28,0:08:59.15,EnText,,0000,0000,0000,,Yeah, all right!
+Dialogue: 0,0:08:59.24,0:09:01.57,EnText,,0000,0000,0000,,Simmer down. Simmer down!
+Dialogue: 0,0:09:01.66,0:09:03.53,EnText,,0000,0000,0000,,Thank you, okay.
+Dialogue: 0,0:09:03.62,0:09:06.53,EnText,,0000,0000,0000,,Now, I realise that you guys probably heard
+Dialogue: 0,0:09:06.62,0:09:09.37,EnText,,0000,0000,0000,,about this other villain\Nwho stole the pyramids.
+Dialogue: 0,0:09:09.46,0:09:11.78,EnText,,0000,0000,0000,,Apparently, it's a big deal.
+Dialogue: 0,0:09:11.88,0:09:15.29,EnText,,0000,0000,0000,,People are calling it\Nthe crime of the century and stuff like that.
+Dialogue: 0,0:09:15.38,0:09:19.54,EnText,,0000,0000,0000,,But am I upset? No, I am not!
+Dialogue: 0,0:09:21.06,0:09:22.46,EnText,,0000,0000,0000,,A little,
+Dialogue: 0,0:09:22.56,0:09:26.46,EnText,,0000,0000,0000,,but we have had\Na pretty good year ourselves,
+Dialogue: 0,0:09:26.56,0:09:29.47,EnText,,0000,0000,0000,,and you guys are all right in my book.
+Dialogue: 0,0:09:30.56,0:09:31.80,EnText,,0000,0000,0000,,No, no raises!
+Dialogue: 0,0:09:31.90,0:09:35.06,EnText,,0000,0000,0000,,You're not going to get any raises.
+Dialogue: 0,0:09:35.90,0:09:37.56,EnText,,0000,0000,0000,,What did we do?
+Dialogue: 0,0:09:37.65,0:09:43.65,EnText,,0000,0000,0000,,Well, we stole the Times Square JumboTron!
+Dialogue: 0,0:09:44.12,0:09:45.36,EnText,,0000,0000,0000,,Nice!
+Dialogue: 0,0:09:47.04,0:09:49.07,EnText,,0000,0000,0000,,That's how I roll.
+Dialogue: 0,0:09:49.46,0:09:53.15,EnText,,0000,0000,0000,,Yeah, you all like watching football\Non that, huh?
+Dialogue: 0,0:09:53.96,0:09:55.37,EnText,,0000,0000,0000,,But that's not all.
+Dialogue: 0,0:09:55.46,0:09:58.74,EnText,,0000,0000,0000,,We stole the Statue of Liberty,
+Dialogue: 0,0:10:00.47,0:10:02.83,EnText,,0000,0000,0000,,the small one from Las Vegas.
+Dialogue: 0,0:10:05.01,0:10:09.01,EnText,,0000,0000,0000,,And I won't even mention the Eiffel Tower!\NAlso Vegas.
+Dialogue: 0,0:10:09.10,0:10:11.88,EnText,,0000,0000,0000,,Okay, I wasn't going to tell you\Nabout this yet,
+Dialogue: 0,0:10:11.98,0:10:16.64,EnText,,0000,0000,0000,,but I have been working\Non something very big!
+Dialogue: 0,0:10:17.61,0:10:21.94,EnText,,0000,0000,0000,,Something that will blow this pyramid thing\Nout of the water!
+Dialogue: 0,0:10:22.53,0:10:26.90,EnText,,0000,0000,0000,,And thanks to the efforts\Nof my good friend Dr Nefario...
+Dialogue: 0,0:10:27.28,0:10:28.73,EnText,,0000,0000,0000,,Thank you!
+Dialogue: 0,0:10:28.83,0:10:30.10,EnText,,0000,0000,0000,,There he is.
+Dialogue: 0,0:10:30.20,0:10:31.65,EnText,,0000,0000,0000,,He's styling.
+Dialogue: 0,0:10:32.29,0:10:35.61,EnText,,0000,0000,0000,,Now, we have located a shrink ray
+Dialogue: 0,0:10:35.71,0:10:40.33,EnText,,0000,0000,0000,,in a secret lab,\Nand once we take this shrink ray,
+Dialogue: 0,0:10:40.63,0:10:43.83,EnText,,0000,0000,0000,,we will have the capability
+Dialogue: 0,0:10:43.92,0:10:47.86,EnText,,0000,0000,0000,,to pull off the true crime of the century.
+Dialogue: 0,0:10:48.64,0:10:51.09,EnText,,0000,0000,0000,,We are going to steal...
+Dialogue: 0,0:10:53.64,0:10:58.01,EnText,,0000,0000,0000,,Wait, wait! I haven't told you what it is yet.
+Dialogue: 0,0:11:01.40,0:11:02.42,EnText,,0000,0000,0000,,Hey.
+Dialogue: 0,0:11:02.53,0:11:04.64,EnText,,0000,0000,0000,,Dave, listen up, please.
+Dialogue: 0,0:11:09.28,0:11:12.69,EnText,,0000,0000,0000,,Next, we are going to steal,
+Dialogue: 0,0:11:12.79,0:11:15.11,EnText,,0000,0000,0000,,pause for effect,
+Dialogue: 0,0:11:15.91,0:11:18.07,EnText,,0000,0000,0000,,the moon!
+Dialogue: 0,0:11:19.29,0:11:23.12,EnText,,0000,0000,0000,,And once the moon is mine,
+Dialogue: 0,0:11:23.59,0:11:27.91,EnText,,0000,0000,0000,,the world will give me\Nwhatever I want to get it back!
+Dialogue: 0,0:11:28.01,0:11:33.35,EnText,,0000,0000,0000,,And I will be the greatest villain of all time!
+Dialogue: 0,0:11:36.35,0:11:40.55,EnText,,0000,0000,0000,,That's what I'm talking about.
+Dialogue: 0,0:11:42.19,0:11:43.26,EnText,,0000,0000,0000,,Yes?
+Dialogue: 0,0:11:43.36,0:11:47.10,EnText,,0000,0000,0000,,Hello, Gru?\NI've been crunching some numbers,
+Dialogue: 0,0:11:47.19,0:11:50.35,EnText,,0000,0000,0000,,and I really don't see how we can afford this.
+Dialogue: 0,0:11:50.45,0:11:53.23,EnText,,0000,0000,0000,,It can't be done. I'm not a miracle worker.
+Dialogue: 0,0:11:53.70,0:11:55.32,EnText,,0000,0000,0000,,Hey, chillax.
+Dialogue: 0,0:11:55.41,0:11:59.03,EnText,,0000,0000,0000,,I'll just get another loan from the bank.\NThey love me!
+Dialogue: 0,0:12:14.72,0:12:16.42,EnText,,0000,0000,0000,,Edith, stop it!
+Dialogue: 0,0:12:16.51,0:12:18.59,EnText,,0000,0000,0000,,What? I'm just walking.
+Dialogue: 0,0:12:31.40,0:12:33.52,EnText,,0000,0000,0000,,- Hi, Miss Hattie. We're back.\N- Hi, Miss Hattie. We're back.
+Dialogue: 0,0:12:36.41,0:12:37.90,EnText,,0000,0000,0000,,Hello, girls!
+Dialogue: 0,0:12:37.99,0:12:40.82,EnText,,0000,0000,0000,,Anybody come to adopt us\Nwhile we were out?
+Dialogue: 0,0:12:41.75,0:12:43.74,EnText,,0000,0000,0000,,Let me think.
+Dialogue: 0,0:12:44.25,0:12:45.32,EnText,,0000,0000,0000,,No!
+Dialogue: 0,0:12:48.54,0:12:51.62,EnText,,0000,0000,0000,,Edith! What did you put on my desk?
+Dialogue: 0,0:12:52.05,0:12:53.70,EnText,,0000,0000,0000,,A mud pie.
+Dialogue: 0,0:12:54.47,0:12:58.37,EnText,,0000,0000,0000,,You're never gonna get adopted, Edith.\NYou know that, don't you?
+Dialogue: 0,0:12:58.47,0:13:00.75,EnText,,0000,0000,0000,,- Yeah, I know.\N- Good.
+Dialogue: 0,0:13:01.10,0:13:04.42,EnText,,0000,0000,0000,,So, how did it go, girls?\NDid we meet our quotas?
+Dialogue: 0,0:13:05.27,0:13:06.59,EnText,,0000,0000,0000,,Sort of.
+Dialogue: 0,0:13:06.69,0:13:10.93,EnText,,0000,0000,0000,,We sold 43 mini-mints, 30 choco-swirlies,\Nand 18 coco-nutties.
+Dialogue: 0,0:13:12.82,0:13:15.02,EnText,,0000,0000,0000,,Okay.
+Dialogue: 0,0:13:15.40,0:13:19.26,EnText,,0000,0000,0000,,Well, you say that like it's a great sale day.
+Dialogue: 0,0:13:19.36,0:13:21.52,EnText,,0000,0000,0000,,Look at my face!
+Dialogue: 0,0:13:21.62,0:13:24.86,EnText,,0000,0000,0000,,Do you still think it's a great sale day?
+Dialogue: 0,0:13:25.79,0:13:27.78,EnText,,0000,0000,0000,,Eighteen coco-nutties.
+Dialogue: 0,0:13:28.21,0:13:32.87,EnText,,0000,0000,0000,,I think we can do a little better than that,\Ndon't you?
+Dialogue: 0,0:13:33.71,0:13:34.73,EnText,,0000,0000,0000,,Yeah.
+Dialogue: 0,0:13:34.84,0:13:39.20,EnText,,0000,0000,0000,,We wouldn't want to spend the weekend\Nin the Box of Shame, would we? No.
+Dialogue: 0,0:13:39.63,0:13:40.79,EnText,,0000,0000,0000,,- No, Miss Hattie.\N- No, Miss Hattie.
+Dialogue: 0,0:13:40.88,0:13:44.57,EnText,,0000,0000,0000,,Okay, good. Off you go.\NGo clean something of mine.
+Dialogue: 0,0:13:46.64,0:13:47.88,EnText,,0000,0000,0000,,- Hi, Penny.\N- Hi, Penny.
+Dialogue: 0,0:13:47.98,0:13:49.13,EnText,,0000,0000,0000,,Hi, guys.
+Dialogue: 0,0:13:54.11,0:13:57.30,EnText,,0000,0000,0000,,Hello, Mom. Sorry, I meant to call, but...
+Dialogue: 0,0:13:57.65,0:14:00.93,EnText,,0000,0000,0000,,I just wanted to congratulate you\Non stealing the pyramid.
+Dialogue: 0,0:14:01.99,0:14:03.39,EnText,,0000,0000,0000,,That was you, wasn't it?
+Dialogue: 0,0:14:03.70,0:14:07.27,EnText,,0000,0000,0000,,Or was it a villain who's actually successful?
+Dialogue: 0,0:14:08.41,0:14:11.15,EnText,,0000,0000,0000,,Just so you know, Mom,\NI am about to do something
+Dialogue: 0,0:14:11.25,0:14:13.99,EnText,,0000,0000,0000,,that's very, very big, very important.
+Dialogue: 0,0:14:14.38,0:14:17.16,EnText,,0000,0000,0000,,When you hear about it,\Nyou're going to be very proud.
+Dialogue: 0,0:14:18.67,0:14:21.87,EnText,,0000,0000,0000,,Good luck with that. Okay, I'm out of here.
+Dialogue: 0,0:15:30.24,0:15:32.31,EnText,,0000,0000,0000,,Gru to see Mr Perkins.
+Dialogue: 0,0:15:32.74,0:15:34.81,EnText,,0000,0000,0000,,Yes, please have a seat.
+Dialogue: 0,0:15:46.42,0:15:48.79,EnText,,0000,0000,0000,,That's one small step for man,
+Dialogue: 0,0:15:51.72,0:15:53.42,EnText,,0000,0000,0000,,one giant leap for mankind.
+Dialogue: 0,0:15:53.55,0:15:56.29,EnText,,0000,0000,0000,,Ma, someday I'm going to go to the moon.
+Dialogue: 0,0:15:56.93,0:15:59.25,EnText,,0000,0000,0000,,I'm afraid you're too late, Son.
+Dialogue: 0,0:15:59.60,0:16:02.05,EnText,,0000,0000,0000,,NASA isn't sending the monkeys any more.
+Dialogue: 0,0:16:10.78,0:16:11.85,EnText,,0000,0000,0000,,Hey.
+Dialogue: 0,0:16:19.29,0:16:23.44,EnText,,0000,0000,0000,,I'm applying for a new villain loan.\NGo by the name of Vector.
+Dialogue: 0,0:16:28.09,0:16:29.57,EnText,,0000,0000,0000,,It's a mathematical term,
+Dialogue: 0,0:16:29.67,0:16:34.16,EnText,,0000,0000,0000,,a quantity represented by an arrow,\Nwith both direction and magnitude.
+Dialogue: 0,0:16:38.14,0:16:40.17,EnText,,0000,0000,0000,,Vector! That's me,
+Dialogue: 0,0:16:40.26,0:16:45.50,EnText,,0000,0000,0000,,'cause I'm committing crimes\Nwith both direction and magnitude.
+Dialogue: 0,0:16:45.60,0:16:47.26,EnText,,0000,0000,0000,,Oh, yeah!
+Dialogue: 0,0:16:49.40,0:16:51.01,EnText,,0000,0000,0000,,Check out my new weapon.
+Dialogue: 0,0:16:51.11,0:16:53.35,EnText,,0000,0000,0000,,Piranha gun! Oh, yes!
+Dialogue: 0,0:16:53.44,0:16:57.19,EnText,,0000,0000,0000,,Fires live piranhas. Ever seen one before?\NNo, you haven't. I invented it.
+Dialogue: 0,0:16:57.28,0:16:59.44,EnText,,0000,0000,0000,,Do you want a demonstration?
+Dialogue: 0,0:17:00.41,0:17:04.65,EnText,,0000,0000,0000,,Shoot! So difficult, sometimes,\Nto get the piranha back inside of my...
+Dialogue: 0,0:17:04.74,0:17:07.19,EnText,,0000,0000,0000,,Mr Gru, Mr Perkins will see you now.
+Dialogue: 0,0:17:08.21,0:17:09.39,EnText,,0000,0000,0000,,So, all I need
+Dialogue: 0,0:17:09.50,0:17:12.53,EnText,,0000,0000,0000,,is money from the bank to build a rocket.
+Dialogue: 0,0:17:12.63,0:17:15.58,EnText,,0000,0000,0000,,- And then, the moon is ours.\N- Wow!
+Dialogue: 0,0:17:16.46,0:17:18.33,EnText,,0000,0000,0000,,Well, very nice presentation.
+Dialogue: 0,0:17:18.42,0:17:20.71,EnText,,0000,0000,0000,,I'd like to see this shrink ray.
+Dialogue: 0,0:17:20.80,0:17:24.88,EnText,,0000,0000,0000,,Absolutely! Will do. Soon as I have it.
+Dialogue: 0,0:17:25.97,0:17:27.92,EnText,,0000,0000,0000,,You don't have it?
+Dialogue: 0,0:17:28.02,0:17:31.68,EnText,,0000,0000,0000,,And yet you have the audacity\Nto ask the bank for money?
+Dialogue: 0,0:17:32.73,0:17:34.26,EnText,,0000,0000,0000,,Apparently.
+Dialogue: 0,0:17:34.36,0:17:38.68,EnText,,0000,0000,0000,,Do you have any idea of the capital\Nthat this bank has invested in you, Gru?
+Dialogue: 0,0:17:39.74,0:17:44.35,EnText,,0000,0000,0000,,With far too few of your sinister plots\Nactually turning a profit.
+Dialogue: 0,0:17:45.20,0:17:49.03,EnText,,0000,0000,0000,,How can I put it? Let's say this apple is you.
+Dialogue: 0,0:17:49.58,0:17:52.06,EnText,,0000,0000,0000,,If we don't start getting our money back...
+Dialogue: 0,0:17:53.92,0:17:55.61,EnText,,0000,0000,0000,,Get the picture?
+Dialogue: 0,0:17:57.04,0:18:00.62,EnText,,0000,0000,0000,,Look, Gru, the point is,\Nthere are a lot of new villains out there,
+Dialogue: 0,0:18:00.92,0:18:03.75,EnText,,0000,0000,0000,,younger than you, hungrier than you,
+Dialogue: 0,0:18:03.84,0:18:05.88,EnText,,0000,0000,0000,,younger than you.
+Dialogue: 0,0:18:05.97,0:18:08.25,EnText,,0000,0000,0000,,Like that young fellow out there\Nnamed Vector.
+Dialogue: 0,0:18:08.35,0:18:09.92,EnText,,0000,0000,0000,,He just stole a pyramid!
+Dialogue: 0,0:18:14.48,0:18:16.55,EnText,,0000,0000,0000,,I've got it. I've got it.
+Dialogue: 0,0:18:17.90,0:18:20.56,EnText,,0000,0000,0000,,So, as far as getting money for the rocket...
+Dialogue: 0,0:18:20.65,0:18:23.64,EnText,,0000,0000,0000,,Get the shrink ray, then we'll talk.
+Dialogue: 0,0:19:53.45,0:19:54.69,EnText,,0000,0000,0000,,Suckers!
+Dialogue: 0,0:19:59.74,0:20:01.07,EnText,,0000,0000,0000,,Suckers!
+Dialogue: 0,0:20:08.00,0:20:09.27,EnText,,0000,0000,0000,,We got it!
+Dialogue: 0,0:20:16.34,0:20:17.45,EnText,,0000,0000,0000,,What?
+Dialogue: 0,0:20:17.55,0:20:20.34,EnText,,0000,0000,0000,,Hey! Hey! What! Hey!
+Dialogue: 0,0:20:22.06,0:20:23.08,EnText,,0000,0000,0000,,No, no, no!
+Dialogue: 0,0:20:26.65,0:20:27.80,EnText,,0000,0000,0000,,You!
+Dialogue: 0,0:20:30.73,0:20:34.56,EnText,,0000,0000,0000,,Now, maybe you'll think twice\Nbefore you freeze someone's head!
+Dialogue: 0,0:20:34.65,0:20:36.43,EnText,,0000,0000,0000,,So long, Gru!
+Dialogue: 0,0:20:38.16,0:20:40.44,EnText,,0000,0000,0000,,Quick! We can't let him get away!
+Dialogue: 0,0:20:48.25,0:20:49.95,EnText,,0000,0000,0000,,Up ahead! Up ahead!
+Dialogue: 0,0:20:50.84,0:20:52.78,EnText,,0000,0000,0000,,Fire! Fire, now!
+Dialogue: 0,0:21:01.43,0:21:02.45,EnText,,0000,0000,0000,,You missed me!
+Dialogue: 0,0:21:02.55,0:21:04.59,EnText,,0000,0000,0000,,Come to papa!
+Dialogue: 0,0:21:17.78,0:21:19.14,EnText,,0000,0000,0000,,Take that.
+Dialogue: 0,0:21:21.16,0:21:22.81,EnText,,0000,0000,0000,,How adorable.
+Dialogue: 0,0:21:24.07,0:21:25.60,EnText,,0000,0000,0000,,Got you in our sights!
+Dialogue: 0,0:21:26.20,0:21:28.65,EnText,,0000,0000,0000,,Like taking candy from a...
+Dialogue: 0,0:21:28.75,0:21:29.82,EnText,,0000,0000,0000,,What?
+Dialogue: 0,0:21:31.29,0:21:32.82,EnText,,0000,0000,0000,,Hey, Gru!
+Dialogue: 0,0:21:32.92,0:21:36.03,EnText,,0000,0000,0000,,Try this on for size!
+Dialogue: 0,0:21:37.50,0:21:40.20,EnText,,0000,0000,0000,,That's weird. What is going...
+Dialogue: 0,0:21:44.97,0:21:47.17,EnText,,0000,0000,0000,,This is claustrophobic!
+Dialogue: 0,0:21:48.56,0:21:49.96,EnText,,0000,0000,0000,,No, no, no!
+Dialogue: 0,0:21:55.81,0:21:58.21,EnText,,0000,0000,0000,,Too small! This is too small for me!
+Dialogue: 0,0:22:04.61,0:22:06.35,EnText,,0000,0000,0000,,I hate that guy!
+Dialogue: 0,0:22:13.16,0:22:17.20,EnText,,0000,0000,0000,,...and please watch over us, and bless\Nthat we'll have a good night's sleep.
+Dialogue: 0,0:22:17.29,0:22:21.33,EnText,,0000,0000,0000,,And bless that while we're sleeping,\Nno bugs will crawl into our ears
+Dialogue: 0,0:22:21.42,0:22:23.66,EnText,,0000,0000,0000,,and lay eggs in our brains.
+Dialogue: 0,0:22:24.05,0:22:26.66,EnText,,0000,0000,0000,,Great. Thanks for that image, Edith.
+Dialogue: 0,0:22:27.30,0:22:30.04,EnText,,0000,0000,0000,,And please bless\Nthat someone will adopt us soon,
+Dialogue: 0,0:22:30.14,0:22:33.04,EnText,,0000,0000,0000,,and that the mommy and daddy will be nice
+Dialogue: 0,0:22:33.14,0:22:35.05,EnText,,0000,0000,0000,,and have a pet unicorn.
+Dialogue: 0,0:22:35.48,0:22:36.66,EnText,,0000,0000,0000,,Amen.
+Dialogue: 0,0:22:36.77,0:22:38.51,EnText,,0000,0000,0000,,- Amen.\N- Amen.
+Dialogue: 0,0:22:43.36,0:22:46.68,EnText,,0000,0000,0000,,Unicorns, I love them\Nunicorns, I love them
+Dialogue: 0,0:22:46.78,0:22:50.47,EnText,,0000,0000,0000,,uni, uni, unicorns\NI love them
+Dialogue: 0,0:22:51.16,0:22:54.19,EnText,,0000,0000,0000,,uni, unicorns, I could pet one
+Dialogue: 0,0:22:54.54,0:22:56.65,EnText,,0000,0000,0000,,If they were really real
+Dialogue: 0,0:22:56.75,0:22:57.85,EnText,,0000,0000,0000,,And they are
+Dialogue: 0,0:22:57.96,0:23:00.49,EnText,,0000,0000,0000,,So, I bought one so I could pet it
+Dialogue: 0,0:23:00.92,0:23:03.78,EnText,,0000,0000,0000,,Now it loves me\NNow I love it
+Dialogue: 0,0:24:20.58,0:24:22.94,EnText,,0000,0000,0000,,Don't you... What the...
+Dialogue: 0,0:24:52.82,0:24:54.64,EnText,,0000,0000,0000,,Good luck, little girls!
+Dialogue: 0,0:24:59.82,0:25:02.02,EnText,,0000,0000,0000,,Whoa! Cool.
+Dialogue: 0,0:25:03.12,0:25:07.15,EnText,,0000,0000,0000,,Hi! We're orphans\Nfrom Miss Hattie's Home for Girls.
+Dialogue: 0,0:25:07.25,0:25:09.15,EnText,,0000,0000,0000,,- I don't care. Beat it!\N- Come on!
+Dialogue: 0,0:25:09.29,0:25:12.53,EnText,,0000,0000,0000,,We're selling cookies\Nso, you know, we can have a better future.
+Dialogue: 0,0:25:12.63,0:25:15.45,EnText,,0000,0000,0000,,- Wait, wait! Do you have coco-nutties?\N- Yeah.
+Dialogue: 0,0:25:37.61,0:25:39.72,EnText,,0000,0000,0000,,Light bulb.
+Dialogue: 0,0:25:42.82,0:25:44.14,EnText,,0000,0000,0000,,Dr Nefario!
+Dialogue: 0,0:25:44.24,0:25:47.48,EnText,,0000,0000,0000,,I'm going to need a dozen tiny robots\Ndisguised as cookies!
+Dialogue: 0,0:25:47.58,0:25:49.52,EnText,,0000,0000,0000,,- What?\N- Cookie robots!
+Dialogue: 0,0:25:49.62,0:25:52.02,EnText,,0000,0000,0000,,- Who is this?\N- Oh, forget it.
+Dialogue: 0,0:25:58.67,0:26:01.45,EnText,,0000,0000,0000,,Well, it appears you have cleared\Nour background check,
+Dialogue: 0,0:26:02.01,0:26:03.74,EnText,,0000,0000,0000,,Dr Gru.
+Dialogue: 0,0:26:06.93,0:26:09.17,EnText,,0000,0000,0000,,And I see you have made a list
+Dialogue: 0,0:26:09.26,0:26:13.00,EnText,,0000,0000,0000,,of some of your personal achievements.
+Dialogue: 0,0:26:13.35,0:26:15.88,EnText,,0000,0000,0000,,Thank you for that. I love reading.
+Dialogue: 0,0:26:23.69,0:26:26.14,EnText,,0000,0000,0000,,And I see you have been given\Nthe Medal of Honor
+Dialogue: 0,0:26:26.24,0:26:28.35,EnText,,0000,0000,0000,,and a knighthood.
+Dialogue: 0,0:26:30.74,0:26:32.23,EnText,,0000,0000,0000,,- Me, me, me.\N- Me, me, me.
+Dialogue: 0,0:26:32.33,0:26:33.56,EnText,,0000,0000,0000,,Kevin?
+Dialogue: 0,0:26:35.29,0:26:37.40,EnText,,0000,0000,0000,,You had your own cooking show
+Dialogue: 0,0:26:37.50,0:26:41.41,EnText,,0000,0000,0000,,and you can hold your breath\Nfor 30 seconds?
+Dialogue: 0,0:26:41.50,0:26:43.20,EnText,,0000,0000,0000,,It's not that impressive.
+Dialogue: 0,0:26:45.46,0:26:46.65,EnText,,0000,0000,0000,,Idiot!
+Dialogue: 0,0:26:48.72,0:26:51.50,EnText,,0000,0000,0000,,- Fight! Fight! Fight! Fight!\N- Fight! Fight! Fight! Fight!
+Dialogue: 0,0:26:53.43,0:26:56.42,EnText,,0000,0000,0000,,What in the name of... What?
+Dialogue: 0,0:26:57.02,0:27:00.21,EnText,,0000,0000,0000,,Well, here's the dealio.
+Dialogue: 0,0:27:00.31,0:27:05.22,EnText,,0000,0000,0000,,Things have been so Ionely since my wife,
+Dialogue: 0,0:27:07.11,0:27:09.59,EnText,,0000,0000,0000,,Debbie, passed on.
+Dialogue: 0,0:27:09.69,0:27:12.77,EnText,,0000,0000,0000,,It's like my heart is a tooth,
+Dialogue: 0,0:27:13.45,0:27:18.32,EnText,,0000,0000,0000,,and it's got a cavity\Nthat can only be filled with children.
+Dialogue: 0,0:27:18.75,0:27:19.90,EnText,,0000,0000,0000,,I'm sorry.
+Dialogue: 0,0:27:24.29,0:27:27.45,EnText,,0000,0000,0000,,You are a beautiful woman.\NDo you speak Spanish?
+Dialogue: 0,0:27:27.96,0:27:30.36,EnText,,0000,0000,0000,,Do I look like I speak Spanish?
+Dialogue: 0,0:27:32.26,0:27:35.79,EnText,,0000,0000,0000,,You have a face como un burro.
+Dialogue: 0,0:27:39.31,0:27:41.79,EnText,,0000,0000,0000,,Well, thank you!
+Dialogue: 0,0:27:43.31,0:27:47.00,EnText,,0000,0000,0000,,Anyway, can we proceed with this adoption?
+Dialogue: 0,0:27:47.11,0:27:48.68,EnText,,0000,0000,0000,,So, so excited!
+Dialogue: 0,0:27:50.61,0:27:53.97,EnText,,0000,0000,0000,,Please tell Margo, Edith and Agnes\Nto come to the lobby.
+Dialogue: 0,0:27:57.03,0:27:58.73,EnText,,0000,0000,0000,,I bet the mom is beautiful!
+Dialogue: 0,0:27:58.83,0:28:00.94,EnText,,0000,0000,0000,,I bet the daddy's eyes sparkle.
+Dialogue: 0,0:28:01.04,0:28:03.82,EnText,,0000,0000,0000,,I bet their house is made of Gummi Bears.
+Dialogue: 0,0:28:04.83,0:28:07.11,EnText,,0000,0000,0000,,I'm just saying it'd be nice.
+Dialogue: 0,0:28:08.21,0:28:11.49,EnText,,0000,0000,0000,,My caterpillar never turned into a butterfly.
+Dialogue: 0,0:28:11.59,0:28:13.20,EnText,,0000,0000,0000,,That's a Cheeto.
+Dialogue: 0,0:28:16.34,0:28:19.83,EnText,,0000,0000,0000,,Well, Debbie was a very lucky woman.
+Dialogue: 0,0:28:22.26,0:28:23.67,EnText,,0000,0000,0000,,Who's Debbie?
+Dialogue: 0,0:28:23.76,0:28:25.17,EnText,,0000,0000,0000,,Your wife.
+Dialogue: 0,0:28:25.64,0:28:27.13,EnText,,0000,0000,0000,,Hi, girls!
+Dialogue: 0,0:28:37.20,0:28:39.98,EnText,,0000,0000,0000,,Girls, I want you to meet Mr Gru.
+Dialogue: 0,0:28:41.36,0:28:43.40,EnText,,0000,0000,0000,,He's going to adopt you.
+Dialogue: 0,0:28:43.49,0:28:46.02,EnText,,0000,0000,0000,,And he's a dentist!
+Dialogue: 0,0:28:48.37,0:28:49.69,EnText,,0000,0000,0000,,Yeah!
+Dialogue: 0,0:28:53.46,0:28:57.83,EnText,,0000,0000,0000,,Hi. I'm Margo. This is Edith.
+Dialogue: 0,0:28:58.38,0:29:00.21,EnText,,0000,0000,0000,,And that's Agnes.
+Dialogue: 0,0:29:00.30,0:29:02.25,EnText,,0000,0000,0000,,I got your leg, I got your leg!
+Dialogue: 0,0:29:02.34,0:29:05.42,EnText,,0000,0000,0000,,Okay, that is enough, little girl.
+Dialogue: 0,0:29:05.51,0:29:07.84,EnText,,0000,0000,0000,,- Let go of my leg. Come on. You can do it.\N- Higher!
+Dialogue: 0,0:29:07.93,0:29:10.21,EnText,,0000,0000,0000,,- Higher!\N- Just release your grip. Wow!
+Dialogue: 0,0:29:10.52,0:29:13.67,EnText,,0000,0000,0000,,How do you remove them?\NIs there a command?
+Dialogue: 0,0:29:13.77,0:29:15.72,EnText,,0000,0000,0000,,Some nonstick spray?
+Dialogue: 0,0:29:17.36,0:29:18.89,EnText,,0000,0000,0000,,Crowbar?
+Dialogue: 0,0:29:20.69,0:29:23.36,EnText,,0000,0000,0000,,Okay, girls, let's go.
+Dialogue: 0,0:29:47.22,0:29:48.63,EnText,,0000,0000,0000,,Oh, yeah!
+Dialogue: 0,0:29:51.01,0:29:53.00,EnText,,0000,0000,0000,,Pretty impressive!
+Dialogue: 0,0:29:54.31,0:29:56.26,EnText,,0000,0000,0000,,What are you looking at?
+Dialogue: 0,0:29:56.35,0:29:57.59,EnText,,0000,0000,0000,,Boo-ya!
+Dialogue: 0,0:29:59.81,0:30:01.80,EnText,,0000,0000,0000,,You got shrunk, tiny mouthwash!
+Dialogue: 0,0:30:02.44,0:30:03.46,EnText,,0000,0000,0000,,Take that!
+Dialogue: 0,0:30:04.61,0:30:06.39,EnText,,0000,0000,0000,,You done been shrunk!
+Dialogue: 0,0:30:07.24,0:30:08.42,EnText,,0000,0000,0000,,Yello?
+Dialogue: 0,0:30:09.28,0:30:11.27,EnText,,0000,0000,0000,,I got the shrink ray, all right.
+Dialogue: 0,0:30:12.49,0:30:14.97,EnText,,0000,0000,0000,,No, I'm not playing with it.
+Dialogue: 0,0:30:15.08,0:30:16.57,EnText,,0000,0000,0000,,Gru?
+Dialogue: 0,0:30:18.37,0:30:20.20,EnText,,0000,0000,0000,,Don't make me laugh! No.
+Dialogue: 0,0:30:20.71,0:30:23.24,EnText,,0000,0000,0000,,P.S., he is not getting the moon,
+Dialogue: 0,0:30:23.34,0:30:26.37,EnText,,0000,0000,0000,,and P.P.S., by the time I'm done with him,
+Dialogue: 0,0:30:26.46,0:30:27.99,EnText,,0000,0000,0000,,he's gonna be begging for mercy.
+Dialogue: 0,0:30:30.09,0:30:31.28,EnText,,0000,0000,0000,,Okay, bye.
+Dialogue: 0,0:30:33.30,0:30:37.38,EnText,,0000,0000,0000,,Look at you, a little tiny toilet\Nfor a little tiny baby...
+Dialogue: 0,0:30:38.81,0:30:40.63,EnText,,0000,0000,0000,,Curse you, tiny toilet!
+Dialogue: 0,0:30:45.32,0:30:47.39,EnText,,0000,0000,0000,,Okay, here we are.
+Dialogue: 0,0:30:47.49,0:30:49.02,EnText,,0000,0000,0000,,Home sweet home.
+Dialogue: 0,0:30:51.49,0:30:54.40,EnText,,0000,0000,0000,,So, this is, like, your house?
+Dialogue: 0,0:30:55.20,0:30:56.47,EnText,,0000,0000,0000,,Wait a sec...
+Dialogue: 0,0:30:56.58,0:30:59.32,EnText,,0000,0000,0000,,You're the guy\Nwho pretended he was a recorded message!
+Dialogue: 0,0:30:59.41,0:31:01.40,EnText,,0000,0000,0000,,No, that was someone else.
+Dialogue: 0,0:31:14.97,0:31:16.24,EnText,,0000,0000,0000,,Can I hold your hand?
+Dialogue: 0,0:31:17.05,0:31:18.07,EnText,,0000,0000,0000,,No.
+Dialogue: 0,0:31:28.36,0:31:33.23,EnText,,0000,0000,0000,,When we got adopted by a bald guy,\NI thought this'd be more like Annie.
+Dialogue: 0,0:31:42.16,0:31:43.43,EnText,,0000,0000,0000,,No, hey!
+Dialogue: 0,0:31:47.54,0:31:50.70,EnText,,0000,0000,0000,,Kyle, these are not treats. These are guests.
+Dialogue: 0,0:31:50.79,0:31:53.41,EnText,,0000,0000,0000,,Girls, this is Kyle, my
+Dialogue: 0,0:31:53.51,0:31:54.53,EnText,,0000,0000,0000,,dog.
+Dialogue: 0,0:31:57.39,0:31:58.46,EnText,,0000,0000,0000,,Fluffy doggy!
+Dialogue: 0,0:32:03.89,0:32:05.05,EnText,,0000,0000,0000,,What kind of dog is that?
+Dialogue: 0,0:32:05.14,0:32:07.76,EnText,,0000,0000,0000,,He is a... I don't know.
+Dialogue: 0,0:32:08.65,0:32:11.84,EnText,,0000,0000,0000,,Do you really think that this is\Nan appropriate place for little kids?
+Dialogue: 0,0:32:12.36,0:32:14.01,EnText,,0000,0000,0000,,'Cause it's not.
+Dialogue: 0,0:32:15.07,0:32:17.43,EnText,,0000,0000,0000,,No! No! Stay away from there!
+Dialogue: 0,0:32:17.53,0:32:19.06,EnText,,0000,0000,0000,,It's fragile.
+Dialogue: 0,0:32:21.66,0:32:25.11,EnText,,0000,0000,0000,,Well, I suppose the plan will work with two.
+Dialogue: 0,0:32:25.20,0:32:27.99,EnText,,0000,0000,0000,,Hey! It's dark in here.
+Dialogue: 0,0:32:30.87,0:32:33.20,EnText,,0000,0000,0000,,It poked a hole in my juice box.
+Dialogue: 0,0:32:38.17,0:32:39.41,EnText,,0000,0000,0000,,As you can see,
+Dialogue: 0,0:32:39.51,0:32:43.00,EnText,,0000,0000,0000,,I have provided everything\Na child might need.
+Dialogue: 0,0:32:44.89,0:32:45.96,EnText,,0000,0000,0000,,All right.
+Dialogue: 0,0:32:47.10,0:32:49.46,EnText,,0000,0000,0000,,Okay. As I was saying... Hey!
+Dialogue: 0,0:32:50.68,0:32:51.70,EnText,,0000,0000,0000,,Somebody broke that.
+Dialogue: 0,0:32:52.19,0:32:55.84,EnText,,0000,0000,0000,,Okay, okay.\NClearly, we need to set some rules.
+Dialogue: 0,0:32:55.94,0:32:57.76,EnText,,0000,0000,0000,,Rule number one.
+Dialogue: 0,0:32:57.86,0:33:00.42,EnText,,0000,0000,0000,,You will not touch anything.
+Dialogue: 0,0:33:00.53,0:33:02.35,EnText,,0000,0000,0000,,What about the floor?
+Dialogue: 0,0:33:02.78,0:33:04.81,EnText,,0000,0000,0000,,Yes, you may touch the floor.
+Dialogue: 0,0:33:04.91,0:33:06.27,EnText,,0000,0000,0000,,What about the air?
+Dialogue: 0,0:33:06.37,0:33:08.44,EnText,,0000,0000,0000,,Yes, you may touch the air!
+Dialogue: 0,0:33:08.54,0:33:09.56,EnText,,0000,0000,0000,,What about this?
+Dialogue: 0,0:33:12.75,0:33:14.70,EnText,,0000,0000,0000,,- Where did you get that?\N- Found it.
+Dialogue: 0,0:33:14.79,0:33:18.57,EnText,,0000,0000,0000,,Okay. Rule number two.\NYou will not bother me while I'm working.
+Dialogue: 0,0:33:18.67,0:33:20.54,EnText,,0000,0000,0000,,Rule number three.
+Dialogue: 0,0:33:20.63,0:33:25.08,EnText,,0000,0000,0000,,You will not cry or whine or laugh or giggle
+Dialogue: 0,0:33:25.43,0:33:27.79,EnText,,0000,0000,0000,,or sneeze or burp or fart!
+Dialogue: 0,0:33:28.47,0:33:32.80,EnText,,0000,0000,0000,,So, no, no, no annoying sounds. All right?
+Dialogue: 0,0:33:32.89,0:33:35.13,EnText,,0000,0000,0000,,Does this count as annoying?
+Dialogue: 0,0:33:38.48,0:33:39.84,EnText,,0000,0000,0000,,Very!
+Dialogue: 0,0:33:42.15,0:33:44.71,EnText,,0000,0000,0000,,I will see you in six hours.
+Dialogue: 0,0:33:46.82,0:33:50.73,EnText,,0000,0000,0000,,Okay, don't worry.\NEverything's going to be fine.
+Dialogue: 0,0:33:51.37,0:33:55.74,EnText,,0000,0000,0000,,We're gonna be really happy here.\NRight? Agnes?
+Dialogue: 0,0:34:24.32,0:34:27.31,EnText,,0000,0000,0000,,Question. What are these?
+Dialogue: 0,0:34:28.24,0:34:31.27,EnText,,0000,0000,0000,,A dozen boogie robots! Boogie!
+Dialogue: 0,0:34:32.78,0:34:34.81,EnText,,0000,0000,0000,,Look at this. Watch me!
+Dialogue: 0,0:34:38.71,0:34:41.37,EnText,,0000,0000,0000,,Cookie robots. I said cookie robots.
+Dialogue: 0,0:34:41.96,0:34:44.52,EnText,,0000,0000,0000,,Why are you so old?
+Dialogue: 0,0:34:47.00,0:34:48.70,EnText,,0000,0000,0000,,Okay. I'm on it.
+Dialogue: 0,0:34:49.55,0:34:50.87,EnText,,0000,0000,0000,,Hello?
+Dialogue: 0,0:35:06.56,0:35:07.80,EnText,,0000,0000,0000,,TV!
+Dialogue: 0,0:35:27.67,0:35:28.86,EnText,,0000,0000,0000,,What is that?
+Dialogue: 0,0:35:29.09,0:35:31.48,EnText,,0000,0000,0000,,- Look at that!\N- That is cool!
+Dialogue: 0,0:35:32.34,0:35:33.61,EnText,,0000,0000,0000,,Come on!
+Dialogue: 0,0:35:34.13,0:35:36.41,EnText,,0000,0000,0000,,I don't think he's a dentist.
+Dialogue: 0,0:35:50.27,0:35:52.10,EnText,,0000,0000,0000,,We've been working on this for a while.
+Dialogue: 0,0:35:52.19,0:35:54.93,EnText,,0000,0000,0000,,It's a anti-gravity serum.
+Dialogue: 0,0:36:00.66,0:36:04.07,EnText,,0000,0000,0000,,I meant to close that.\NHe'll be all right, I'm sure.
+Dialogue: 0,0:36:04.16,0:36:07.19,EnText,,0000,0000,0000,,- Do the effects wear off?\N- So far,
+Dialogue: 0,0:36:07.29,0:36:09.28,EnText,,0000,0000,0000,,no. No, they don't.
+Dialogue: 0,0:36:10.83,0:36:13.91,EnText,,0000,0000,0000,,And here, of course,\Nis the new weapon you ordered.
+Dialogue: 0,0:36:17.59,0:36:18.61,EnText,,0000,0000,0000,,No, no.
+Dialogue: 0,0:36:18.72,0:36:22.54,EnText,,0000,0000,0000,,I said "dart gun," not... Okay.
+Dialogue: 0,0:36:23.14,0:36:25.88,EnText,,0000,0000,0000,,Oh, yes. 'Cause I was wondering
+Dialogue: 0,0:36:25.97,0:36:28.59,EnText,,0000,0000,0000,,under what circumstances\Nwould we use this?
+Dialogue: 0,0:36:28.68,0:36:30.13,EnText,,0000,0000,0000,,But, anyway.
+Dialogue: 0,0:36:30.23,0:36:33.64,EnText,,0000,0000,0000,,What I really wanted to show you was this.
+Dialogue: 0,0:36:38.40,0:36:41.52,EnText,,0000,0000,0000,,Now those are cookie robots!
+Dialogue: 0,0:36:42.66,0:36:45.90,EnText,,0000,0000,0000,,La, la, la, la\NI love unicorns
+Dialogue: 0,0:36:45.99,0:36:49.65,EnText,,0000,0000,0000,,What are you doing here?\NI told you to stay in the kitchen!
+Dialogue: 0,0:36:49.75,0:36:52.41,EnText,,0000,0000,0000,,We got bored. What is this place?
+Dialogue: 0,0:36:52.50,0:36:54.24,EnText,,0000,0000,0000,,Can I drink this?
+Dialogue: 0,0:36:54.33,0:36:56.78,EnText,,0000,0000,0000,,Do you want to explode?
+Dialogue: 0,0:36:58.42,0:36:59.44,EnText,,0000,0000,0000,,Gru!
+Dialogue: 0,0:36:59.55,0:37:01.50,EnText,,0000,0000,0000,,Get back in the kitchen!
+Dialogue: 0,0:37:01.59,0:37:03.71,EnText,,0000,0000,0000,,- Will you play with us?\N- No.
+Dialogue: 0,0:37:04.13,0:37:06.33,EnText,,0000,0000,0000,,- Why?\N- Because I'm busy.
+Dialogue: 0,0:37:06.43,0:37:08.00,EnText,,0000,0000,0000,,Doing what?
+Dialogue: 0,0:37:09.43,0:37:11.00,EnText,,0000,0000,0000,,Okay, okay, you got me.
+Dialogue: 0,0:37:11.10,0:37:13.84,EnText,,0000,0000,0000,,The dentist thing is more of a hobby.
+Dialogue: 0,0:37:14.44,0:37:16.83,EnText,,0000,0000,0000,,In real life, I am a spy.
+Dialogue: 0,0:37:17.36,0:37:20.51,EnText,,0000,0000,0000,,And it is top secret,\Nand you may not tell anybody,
+Dialogue: 0,0:37:20.61,0:37:22.68,EnText,,0000,0000,0000,,- because if you do...\N- What does this do?
+Dialogue: 0,0:37:26.57,0:37:27.68,EnText,,0000,0000,0000,,Hey!
+Dialogue: 0,0:37:28.53,0:37:29.98,EnText,,0000,0000,0000,,My unicorn!
+Dialogue: 0,0:37:30.33,0:37:31.98,EnText,,0000,0000,0000,,You have to fix it.
+Dialogue: 0,0:37:32.08,0:37:37.36,EnText,,0000,0000,0000,,Fix it? Look, it has been disintegrated.\NBy definition, it cannot be fixed.
+Dialogue: 0,0:37:42.67,0:37:44.83,EnText,,0000,0000,0000,,That's freaking me out. What is she doing?
+Dialogue: 0,0:37:44.92,0:37:48.08,EnText,,0000,0000,0000,,She's gonna hold her breath\Nuntil she gets a new one.
+Dialogue: 0,0:37:49.47,0:37:52.84,EnText,,0000,0000,0000,,It is just a toy. Now stop it!
+Dialogue: 0,0:37:55.14,0:37:57.26,EnText,,0000,0000,0000,,Okay, okay! I'll fix it!
+Dialogue: 0,0:37:57.69,0:37:59.64,EnText,,0000,0000,0000,,Tim! Mark! Phil!
+Dialogue: 0,0:38:02.31,0:38:03.55,EnText,,0000,0000,0000,,This is very important.
+Dialogue: 0,0:38:03.65,0:38:07.14,EnText,,0000,0000,0000,,You have to get the little girl\Na new unicorn toy.
+Dialogue: 0,0:38:13.20,0:38:15.07,EnText,,0000,0000,0000,,Hey, hey, hey! A toy!
+Dialogue: 0,0:38:16.24,0:38:18.36,EnText,,0000,0000,0000,,Go, and hurry!
+Dialogue: 0,0:38:18.46,0:38:19.61,EnText,,0000,0000,0000,,What are those?
+Dialogue: 0,0:38:19.71,0:38:22.86,EnText,,0000,0000,0000,,They are my cousins.
+Dialogue: 0,0:38:23.71,0:38:25.24,EnText,,0000,0000,0000,,Jerry! Stuart!
+Dialogue: 0,0:38:26.34,0:38:29.33,EnText,,0000,0000,0000,,Watch them,\Nand keep them away from me, please.
+Dialogue: 0,0:38:46.61,0:38:48.97,EnText,,0000,0000,0000,,- Wow!\N- Wow!
+Dialogue: 0,0:39:54.05,0:39:55.20,EnText,,0000,0000,0000,,It was your cousin's idea.
+Dialogue: 0,0:39:55.55,0:39:56.70,EnText,,0000,0000,0000,,What?
+Dialogue: 0,0:39:57.09,0:39:58.58,EnText,,0000,0000,0000,,Okay, bedtime.
+Dialogue: 0,0:40:01.89,0:40:03.33,EnText,,0000,0000,0000,,Not you two!
+Dialogue: 0,0:40:04.89,0:40:09.59,EnText,,0000,0000,0000,,Okey-dokey. Beddie-bye.\NAll tucked in. Sweet dreams.
+Dialogue: 0,0:40:11.52,0:40:13.34,EnText,,0000,0000,0000,,Just so you know,
+Dialogue: 0,0:40:13.44,0:40:15.39,EnText,,0000,0000,0000,,you're never gonna be my dad.
+Dialogue: 0,0:40:15.98,0:40:18.06,EnText,,0000,0000,0000,,I think I can live with that.
+Dialogue: 0,0:40:19.74,0:40:21.56,EnText,,0000,0000,0000,,Are these beds made out of bombs?
+Dialogue: 0,0:40:22.11,0:40:26.27,EnText,,0000,0000,0000,,Yes, but they are very old\Nand highly unlikely to blow up.
+Dialogue: 0,0:40:27.20,0:40:29.24,EnText,,0000,0000,0000,,But try not to toss and turn.
+Dialogue: 0,0:40:29.33,0:40:30.43,EnText,,0000,0000,0000,,Cool.
+Dialogue: 0,0:40:31.42,0:40:34.57,EnText,,0000,0000,0000,,- Will you read us a bedtime story?\N- No.
+Dialogue: 0,0:40:34.67,0:40:37.74,EnText,,0000,0000,0000,,But we can't go to sleep\Nwithout a bedtime story.
+Dialogue: 0,0:40:37.84,0:40:41.41,EnText,,0000,0000,0000,,Well, then it's going to be\Na long night for you, isn't it?
+Dialogue: 0,0:40:42.26,0:40:45.88,EnText,,0000,0000,0000,,So, good night, sleep tight,\Nand don't let the bed bugs bite.
+Dialogue: 0,0:40:45.97,0:40:49.83,EnText,,0000,0000,0000,,Because there are literally\Nthousands of them.
+Dialogue: 0,0:40:50.93,0:40:54.05,EnText,,0000,0000,0000,,And there's probably\Nsomething in your closet.
+Dialogue: 0,0:40:55.65,0:40:57.80,EnText,,0000,0000,0000,,He's just kidding, Agnes.
+Dialogue: 0,0:41:20.04,0:41:21.95,EnText,,0000,0000,0000,,It's beautiful.
+Dialogue: 0,0:41:50.36,0:41:52.81,EnText,,0000,0000,0000,,Girls, let's go.
+Dialogue: 0,0:41:52.91,0:41:55.73,EnText,,0000,0000,0000,,Time to deliver the cookies!
+Dialogue: 0,0:41:56.70,0:41:59.37,EnText,,0000,0000,0000,,Okay. But first, we're going to dance class.
+Dialogue: 0,0:41:59.46,0:42:02.36,EnText,,0000,0000,0000,,Actually, we're going to have to skip\Nthe dance class today.
+Dialogue: 0,0:42:02.46,0:42:06.99,EnText,,0000,0000,0000,,Actually, we can't\Nskip the dance class today.
+Dialogue: 0,0:42:07.09,0:42:09.08,EnText,,0000,0000,0000,,We have a big recital coming up.
+Dialogue: 0,0:42:09.17,0:42:12.42,EnText,,0000,0000,0000,,- We're doing an excerpt from Swan Lake.\N- Yeah, Swan Lake!
+Dialogue: 0,0:42:12.51,0:42:14.25,EnText,,0000,0000,0000,,That's fantastic. Wonderful.
+Dialogue: 0,0:42:14.35,0:42:18.42,EnText,,0000,0000,0000,,But we're going to deliver cookies! Come on!
+Dialogue: 0,0:42:20.60,0:42:21.62,EnText,,0000,0000,0000,,No.
+Dialogue: 0,0:42:22.52,0:42:23.54,EnText,,0000,0000,0000,,No?
+Dialogue: 0,0:42:23.65,0:42:26.85,EnText,,0000,0000,0000,,We're not going to deliver cookies\Nuntil we do dance class.
+Dialogue: 0,0:42:26.94,0:42:28.05,EnText,,0000,0000,0000,,Really?
+Dialogue: 0,0:42:28.15,0:42:31.84,EnText,,0000,0000,0000,,Well, I am not driving you to dance class.
+Dialogue: 0,0:42:31.95,0:42:37.31,EnText,,0000,0000,0000,,So if you want to go,\Nyou are going to have to walk yourselves.
+Dialogue: 0,0:42:43.42,0:42:44.69,EnText,,0000,0000,0000,,What are you doing?
+Dialogue: 0,0:42:44.79,0:42:46.53,EnText,,0000,0000,0000,,Walking to dance class.
+Dialogue: 0,0:42:46.63,0:42:48.58,EnText,,0000,0000,0000,,Ya? Okay, fine.
+Dialogue: 0,0:42:48.67,0:42:52.53,EnText,,0000,0000,0000,,You just keep walking,\Nbecause I'm really not driving you!
+Dialogue: 0,0:42:52.63,0:42:53.82,EnText,,0000,0000,0000,,Okay.
+Dialogue: 0,0:42:55.30,0:42:57.78,EnText,,0000,0000,0000,,You're going to suffer the wrath of Gru!
+Dialogue: 0,0:42:58.26,0:43:00.30,EnText,,0000,0000,0000,,Seriously, I'm going to count to three!
+Dialogue: 0,0:43:00.39,0:43:02.34,EnText,,0000,0000,0000,,And you had better be in this car!
+Dialogue: 0,0:43:02.43,0:43:06.05,EnText,,0000,0000,0000,,Here we go! One! Two!
+Dialogue: 0,0:43:06.14,0:43:09.72,EnText,,0000,0000,0000,,...three, four and five.
+Dialogue: 0,0:43:09.81,0:43:12.72,EnText,,0000,0000,0000,,And lift, and stretch.
+Dialogue: 0,0:43:12.82,0:43:15.38,EnText,,0000,0000,0000,,And one, and two...
+Dialogue: 0,0:43:15.49,0:43:17.60,EnText,,0000,0000,0000,,- Here you go.\N- What is it?
+Dialogue: 0,0:43:17.70,0:43:21.23,EnText,,0000,0000,0000,,Your ticket to the dance recital.\NYou are coming, right?
+Dialogue: 0,0:43:21.33,0:43:22.98,EnText,,0000,0000,0000,,Of course, of course.
+Dialogue: 0,0:43:23.08,0:43:26.15,EnText,,0000,0000,0000,,I have pins and needles that I'm sitting on.
+Dialogue: 0,0:43:26.25,0:43:28.11,EnText,,0000,0000,0000,,Pinkie promise?
+Dialogue: 0,0:43:29.33,0:43:32.53,EnText,,0000,0000,0000,,Oh, yes. My pinkie promises.
+Dialogue: 0,0:43:45.72,0:43:50.42,EnText,,0000,0000,0000,,All right.\NOur first customer is a man named Vector.
+Dialogue: 0,0:43:50.52,0:43:52.26,EnText,,0000,0000,0000,,But he's a V.
+Dialogue: 0,0:43:52.36,0:43:54.30,EnText,,0000,0000,0000,,You know, we're supposed\Nto start with the A's.
+Dialogue: 0,0:43:54.40,0:43:56.31,EnText,,0000,0000,0000,,Then we go to the B's. Then we...
+Dialogue: 0,0:43:56.40,0:44:01.31,EnText,,0000,0000,0000,,Yes, yes! I went to kindergarten.\NI know how the alphabet works!
+Dialogue: 0,0:44:03.95,0:44:06.62,EnText,,0000,0000,0000,,I was just thinking
+Dialogue: 0,0:44:06.70,0:44:10.45,EnText,,0000,0000,0000,,that it might be nice\Nto deliver Mr Vector's first.
+Dialogue: 0,0:44:10.54,0:44:12.15,EnText,,0000,0000,0000,,That is all.
+Dialogue: 0,0:44:15.42,0:44:17.95,EnText,,0000,0000,0000,,Almost over. It's almost over.
+Dialogue: 0,0:44:20.05,0:44:24.29,EnText,,0000,0000,0000,,Girls, welcome back\Nto the fortress of Vector-tude!
+Dialogue: 0,0:44:25.30,0:44:27.78,EnText,,0000,0000,0000,,Do you have my cookies for me?
+Dialogue: 0,0:44:35.52,0:44:37.47,EnText,,0000,0000,0000,,Four boxes of mini-mints, two toffee totes,
+Dialogue: 0,0:44:37.57,0:44:42.27,EnText,,0000,0000,0000,,two caramel clumpies\Nand fifteen boxes of coco-nutties.
+Dialogue: 0,0:44:42.36,0:44:45.94,EnText,,0000,0000,0000,,Exactly. I'd like to see somebody else\Norder that many cookies.
+Dialogue: 0,0:44:46.03,0:44:47.10,EnText,,0000,0000,0000,,Not likely.
+Dialogue: 0,0:44:47.20,0:44:49.36,EnText,,0000,0000,0000,,Name one person\Nwho ordered more cookies than me.
+Dialogue: 0,0:44:49.45,0:44:50.98,EnText,,0000,0000,0000,,That'll be $52.
+Dialogue: 0,0:44:51.58,0:44:52.85,EnText,,0000,0000,0000,,Right.
+Dialogue: 0,0:45:00.42,0:45:03.16,EnText,,0000,0000,0000,,Seven, eight, nine...
+Dialogue: 0,0:45:04.05,0:45:06.61,EnText,,0000,0000,0000,,Tic Tacs! Where was I?
+Dialogue: 0,0:45:06.72,0:45:09.92,EnText,,0000,0000,0000,,Seven, eight, nine...
+Dialogue: 0,0:45:10.01,0:45:11.80,EnText,,0000,0000,0000,,Why are you wearing pyjamas?
+Dialogue: 0,0:45:12.81,0:45:16.17,EnText,,0000,0000,0000,,These aren't pyjamas!\NThis is a warm-up suit.
+Dialogue: 0,0:45:32.87,0:45:35.19,EnText,,0000,0000,0000,,- What are you warming up for?\N- Stuff.
+Dialogue: 0,0:45:35.29,0:45:36.31,EnText,,0000,0000,0000,,What sort of stuff?
+Dialogue: 0,0:45:36.41,0:45:38.81,EnText,,0000,0000,0000,,Super-cool stuff you wouldn't understand.
+Dialogue: 0,0:45:38.92,0:45:40.32,EnText,,0000,0000,0000,,Like sleeping?
+Dialogue: 0,0:45:40.42,0:45:43.28,EnText,,0000,0000,0000,,They are not pyjamas!
+Dialogue: 0,0:45:55.14,0:45:58.34,EnText,,0000,0000,0000,,Here you go, 52 big ones.
+Dialogue: 0,0:46:16.45,0:46:17.90,EnText,,0000,0000,0000,,Bye!
+Dialogue: 0,0:47:11.84,0:47:13.20,EnText,,0000,0000,0000,,Come on!
+Dialogue: 0,0:47:35.32,0:47:37.10,EnText,,0000,0000,0000,,What the...
+Dialogue: 0,0:47:39.95,0:47:41.60,EnText,,0000,0000,0000,,Quiet down, fish!
+Dialogue: 0,0:47:48.66,0:47:49.74,EnText,,0000,0000,0000,,Down, boy!
+Dialogue: 0,0:48:12.81,0:48:16.14,EnText,,0000,0000,0000,,We did it! Come on, girls, let's go!
+Dialogue: 0,0:48:24.03,0:48:27.15,EnText,,0000,0000,0000,,But what about the other people\Nwho ordered cookies?
+Dialogue: 0,0:48:27.24,0:48:29.94,EnText,,0000,0000,0000,,Life is full of disappointments
+Dialogue: 0,0:48:30.04,0:48:31.77,EnText,,0000,0000,0000,,for some people.
+Dialogue: 0,0:48:37.50,0:48:39.03,EnText,,0000,0000,0000,,Don't do that!
+Dialogue: 0,0:48:39.13,0:48:42.12,EnText,,0000,0000,0000,,Super Silly Fun Land! Can we go? Please?
+Dialogue: 0,0:48:42.55,0:48:43.62,EnText,,0000,0000,0000,,No.
+Dialogue: 0,0:48:43.72,0:48:46.20,EnText,,0000,0000,0000,,But we've never been.\NAnd it's the funnest place on earth!
+Dialogue: 0,0:48:46.30,0:48:47.32,EnText,,0000,0000,0000,,Don't care.
+Dialogue: 0,0:48:47.43,0:48:48.53,EnText,,0000,0000,0000,,- Please?\N- Please?
+Dialogue: 0,0:48:48.64,0:48:50.25,EnText,,0000,0000,0000,,We'll never ask for anything else,\Never again!
+Dialogue: 0,0:48:50.35,0:48:52.38,EnText,,0000,0000,0000,,- Pretty please?\N- Please?
+Dialogue: 0,0:48:59.57,0:49:01.47,EnText,,0000,0000,0000,,- Come on!\N- Come on!
+Dialogue: 0,0:49:02.07,0:49:04.35,EnText,,0000,0000,0000,,Light bulb.
+Dialogue: 0,0:49:09.11,0:49:10.90,EnText,,0000,0000,0000,,Come on!
+Dialogue: 0,0:49:10.99,0:49:13.94,EnText,,0000,0000,0000,,Goodbye, have fun.
+Dialogue: 0,0:49:17.37,0:49:20.91,EnText,,0000,0000,0000,,Sorry, dude.\NThey can't ride without an adult.
+Dialogue: 0,0:49:21.00,0:49:22.41,EnText,,0000,0000,0000,,What?
+Dialogue: 0,0:50:19.14,0:50:20.30,EnText,,0000,0000,0000,,Oh, my gosh!
+Dialogue: 0,0:50:20.39,0:50:22.79,EnText,,0000,0000,0000,,Look at that fluffy unicorn!
+Dialogue: 0,0:50:25.56,0:50:27.84,EnText,,0000,0000,0000,,He's so fluffy, I'm gonna die!
+Dialogue: 0,0:50:27.94,0:50:29.39,EnText,,0000,0000,0000,,You've gotta let us play for it!
+Dialogue: 0,0:50:29.48,0:50:31.18,EnText,,0000,0000,0000,,No, no, no.
+Dialogue: 0,0:50:31.28,0:50:32.55,EnText,,0000,0000,0000,,Come on!
+Dialogue: 0,0:50:34.11,0:50:36.64,EnText,,0000,0000,0000,,How much for the fluffy unicorn?
+Dialogue: 0,0:50:37.87,0:50:39.77,EnText,,0000,0000,0000,,Well, it is not for sale.
+Dialogue: 0,0:50:39.87,0:50:44.82,EnText,,0000,0000,0000,,But all you gotta do to win it\Nis knock down that little spaceship there.
+Dialogue: 0,0:50:45.71,0:50:46.81,EnText,,0000,0000,0000,,It's easy!
+Dialogue: 0,0:50:55.22,0:50:56.49,EnText,,0000,0000,0000,,Yay!
+Dialogue: 0,0:51:08.48,0:51:09.67,EnText,,0000,0000,0000,,Again!
+Dialogue: 0,0:51:10.40,0:51:12.85,EnText,,0000,0000,0000,,- Wait!\N- Come on. One more time!
+Dialogue: 0,0:51:12.94,0:51:14.10,EnText,,0000,0000,0000,,Just one more.
+Dialogue: 0,0:51:14.19,0:51:16.52,EnText,,0000,0000,0000,,I accidentally closed my eyes.
+Dialogue: 0,0:51:31.88,0:51:33.87,EnText,,0000,0000,0000,,- I hit it! I hit it!\N- That was cool.
+Dialogue: 0,0:51:38.34,0:51:41.21,EnText,,0000,0000,0000,,Whoa, whoa, whoa. What was that?
+Dialogue: 0,0:51:41.97,0:51:45.04,EnText,,0000,0000,0000,,She hit that. I saw that with my own eyes.
+Dialogue: 0,0:51:45.14,0:51:47.88,EnText,,0000,0000,0000,,Hey, buddy,\Nlet me explain something to you.
+Dialogue: 0,0:51:47.97,0:51:52.51,EnText,,0000,0000,0000,,You see that little tin spaceship?\NYou see how it's not knocked over?
+Dialogue: 0,0:51:52.60,0:51:55.43,EnText,,0000,0000,0000,,Do you know what that means, professor?
+Dialogue: 0,0:51:55.52,0:51:59.06,EnText,,0000,0000,0000,,It means you don't get the unicorn!
+Dialogue: 0,0:52:01.20,0:52:03.06,EnText,,0000,0000,0000,,Somebody's got a frowny face.
+Dialogue: 0,0:52:03.16,0:52:05.55,EnText,,0000,0000,0000,,Boo! Better luck next time!
+Dialogue: 0,0:52:07.78,0:52:10.48,EnText,,0000,0000,0000,,Okay, my turn.
+Dialogue: 0,0:52:31.93,0:52:34.41,EnText,,0000,0000,0000,,Knocked over!
+Dialogue: 0,0:52:38.77,0:52:41.68,EnText,,0000,0000,0000,,- It's so fluffy!\N- Yeah!
+Dialogue: 0,0:52:42.32,0:52:44.43,EnText,,0000,0000,0000,,That was awesome!
+Dialogue: 0,0:52:44.53,0:52:46.14,EnText,,0000,0000,0000,,You blew up the whole thing!
+Dialogue: 0,0:52:46.24,0:52:48.60,EnText,,0000,0000,0000,,Let's go. Let's try another game!
+Dialogue: 0,0:52:55.66,0:52:58.06,EnText,,0000,0000,0000,,Gru, do you mind if I have a quick word?
+Dialogue: 0,0:52:58.83,0:53:01.07,EnText,,0000,0000,0000,,Okay, girls, go play.
+Dialogue: 0,0:53:08.63,0:53:10.92,EnText,,0000,0000,0000,,I got the shrink ray!
+Dialogue: 0,0:53:13.55,0:53:15.75,EnText,,0000,0000,0000,,Cotton candy!
+Dialogue: 0,0:53:16.77,0:53:20.71,EnText,,0000,0000,0000,,We have 12 days\Nuntil the moon is in optimum position.
+Dialogue: 0,0:53:20.81,0:53:22.93,EnText,,0000,0000,0000,,We can't afford any distractions!
+Dialogue: 0,0:53:24.69,0:53:25.93,EnText,,0000,0000,0000,,Get me Perkins.
+Dialogue: 0,0:53:33.99,0:53:36.11,EnText,,0000,0000,0000,,Sorry to bother you, Mr Perkins,
+Dialogue: 0,0:53:36.20,0:53:40.14,EnText,,0000,0000,0000,,but I figured that you would want to see this!
+Dialogue: 0,0:53:40.96,0:53:42.06,EnText,,0000,0000,0000,,What?
+Dialogue: 0,0:53:54.59,0:53:57.07,EnText,,0000,0000,0000,,Well done, Gru. Rather impressive.
+Dialogue: 0,0:53:57.18,0:54:00.17,EnText,,0000,0000,0000,,Now, the rest of the plan is simple.
+Dialogue: 0,0:54:00.81,0:54:04.55,EnText,,0000,0000,0000,,I fly to the moon. I shrink the moon.
+Dialogue: 0,0:54:04.65,0:54:08.34,EnText,,0000,0000,0000,,I grab the moon. I sit on the toilet.
+Dialogue: 0,0:54:08.44,0:54:10.06,EnText,,0000,0000,0000,,What?
+Dialogue: 0,0:54:10.15,0:54:12.27,EnText,,0000,0000,0000,,Sorry. Sorry!
+Dialogue: 0,0:54:12.36,0:54:15.48,EnText,,0000,0000,0000,,Could you excuse me for just one second?
+Dialogue: 0,0:54:15.57,0:54:16.98,EnText,,0000,0000,0000,,I told you not to touch my things.
+Dialogue: 0,0:54:17.07,0:54:20.06,EnText,,0000,0000,0000,,I told you, I told you.\NI've told you a thousand times.
+Dialogue: 0,0:54:20.16,0:54:21.86,EnText,,0000,0000,0000,,Hey, can we order pizza?
+Dialogue: 0,0:54:21.95,0:54:23.86,EnText,,0000,0000,0000,,Pizza? You just had lunch.
+Dialogue: 0,0:54:23.96,0:54:25.11,EnText,,0000,0000,0000,,Not now, for dinner.
+Dialogue: 0,0:54:25.21,0:54:26.74,EnText,,0000,0000,0000,,Dinner?
+Dialogue: 0,0:54:26.83,0:54:29.66,EnText,,0000,0000,0000,,Just... Fine, fine, fine, whatever.\NJust get back in there!
+Dialogue: 0,0:54:29.75,0:54:31.53,EnText,,0000,0000,0000,,Can we get stuffed crust?
+Dialogue: 0,0:54:32.80,0:54:34.04,EnText,,0000,0000,0000,,- Stuffed crust!\N- Stuffed crust!
+Dialogue: 0,0:54:34.13,0:54:35.70,EnText,,0000,0000,0000,,I'll stuff you all in the crust!
+Dialogue: 0,0:54:37.72,0:54:39.08,EnText,,0000,0000,0000,,You're funny!
+Dialogue: 0,0:54:39.18,0:54:41.92,EnText,,0000,0000,0000,,Just don't come out of that room again!
+Dialogue: 0,0:54:42.47,0:54:43.49,EnText,,0000,0000,0000,,All right.
+Dialogue: 0,0:54:44.43,0:54:47.84,EnText,,0000,0000,0000,,Sorry about that. Where were we?
+Dialogue: 0,0:54:47.94,0:54:49.51,EnText,,0000,0000,0000,,You were sitting on the toilet.
+Dialogue: 0,0:54:49.60,0:54:54.14,EnText,,0000,0000,0000,,No, no, no! No, I'm sorry.\NIt was a little attempt at humour.
+Dialogue: 0,0:54:54.23,0:54:57.02,EnText,,0000,0000,0000,,I know how much you like to laugh
+Dialogue: 0,0:54:59.49,0:55:03.32,EnText,,0000,0000,0000,,inside. Now, I was saying...
+Dialogue: 0,0:55:06.91,0:55:08.86,EnText,,0000,0000,0000,,You don't seem terribly focused, Gru.
+Dialogue: 0,0:55:08.96,0:55:11.32,EnText,,0000,0000,0000,,Believe me, I am completely focused.
+Dialogue: 0,0:55:11.42,0:55:13.41,EnText,,0000,0000,0000,,- Hello!\N- What?
+Dialogue: 0,0:55:13.50,0:55:14.66,EnText,,0000,0000,0000,,That guy is huge!
+Dialogue: 0,0:55:14.75,0:55:16.16,EnText,,0000,0000,0000,,- Are we on TV?\N- What are those? Children?
+Dialogue: 0,0:55:16.25,0:55:19.04,EnText,,0000,0000,0000,,What are you doing?\NI told you to stay out of here!
+Dialogue: 0,0:55:24.26,0:55:25.50,EnText,,0000,0000,0000,,No, no, no!
+Dialogue: 0,0:55:25.60,0:55:26.62,EnText,,0000,0000,0000,,Freeze ray!
+Dialogue: 0,0:55:26.72,0:55:28.34,EnText,,0000,0000,0000,,Mr Gru?
+Dialogue: 0,0:55:33.06,0:55:34.39,EnText,,0000,0000,0000,,Okay.
+Dialogue: 0,0:55:35.77,0:55:37.14,EnText,,0000,0000,0000,,As I was saying...
+Dialogue: 0,0:55:37.23,0:55:41.06,EnText,,0000,0000,0000,,No need to continue. I've seen quite enough.
+Dialogue: 0,0:55:41.15,0:55:43.52,EnText,,0000,0000,0000,,- But my plan...\N- Is a great plan.
+Dialogue: 0,0:55:43.62,0:55:46.77,EnText,,0000,0000,0000,,I love everything about your plan,\Nexcept for one thing.
+Dialogue: 0,0:55:47.66,0:55:48.98,EnText,,0000,0000,0000,,You.
+Dialogue: 0,0:55:52.25,0:55:55.82,EnText,,0000,0000,0000,,Look, Mom, I drew a picture of me\Nlanding on the moon!
+Dialogue: 0,0:55:58.92,0:56:02.95,EnText,,0000,0000,0000,,Look, Mom, I made a prototype of the rocket\Nout of macaroni!
+Dialogue: 0,0:56:05.59,0:56:09.96,EnText,,0000,0000,0000,,Look, Mom, I made a real rocket\Nbased on the macaroni prototype!
+Dialogue: 0,0:56:21.23,0:56:22.97,EnText,,0000,0000,0000,,I don't understand.
+Dialogue: 0,0:56:23.32,0:56:25.60,EnText,,0000,0000,0000,,Let's face reality, Gru.
+Dialogue: 0,0:56:25.70,0:56:30.44,EnText,,0000,0000,0000,,You've been at this for far too long\Nwith far too little success.
+Dialogue: 0,0:56:30.66,0:56:34.86,EnText,,0000,0000,0000,,We're gonna put our faith,\Nour money, into a...
+Dialogue: 0,0:56:35.71,0:56:37.32,EnText,,0000,0000,0000,,Well, a younger villain.
+Dialogue: 0,0:56:37.42,0:56:38.90,EnText,,0000,0000,0000,,But I...
+Dialogue: 0,0:56:39.00,0:56:41.07,EnText,,0000,0000,0000,,It's over. Goodbye, Gru.
+Dialogue: 0,0:57:02.31,0:57:06.81,EnText,,0000,0000,0000,,Now, I know there have been\Nsome rumours going around
+Dialogue: 0,0:57:06.90,0:57:10.19,EnText,,0000,0000,0000,,that the bank is no longer funding us.
+Dialogue: 0,0:57:11.07,0:57:13.86,EnText,,0000,0000,0000,,Well, I am here to put those rumours to rest.
+Dialogue: 0,0:57:16.00,0:57:17.94,EnText,,0000,0000,0000,,They are true.
+Dialogue: 0,0:57:19.87,0:57:22.07,EnText,,0000,0000,0000,,In terms of money,
+Dialogue: 0,0:57:23.25,0:57:25.41,EnText,,0000,0000,0000,,we have no money.
+Dialogue: 0,0:57:25.50,0:57:28.07,EnText,,0000,0000,0000,,So how will we get to the moon?
+Dialogue: 0,0:57:29.26,0:57:31.08,EnText,,0000,0000,0000,,The answer is clear.
+Dialogue: 0,0:57:31.18,0:57:32.75,EnText,,0000,0000,0000,,We won't.
+Dialogue: 0,0:57:35.81,0:57:38.09,EnText,,0000,0000,0000,,We are doomed.
+Dialogue: 0,0:57:39.35,0:57:44.22,EnText,,0000,0000,0000,,Now would probably be a good time\Nto look for other employment options.
+Dialogue: 0,0:57:45.86,0:57:46.96,EnText,,0000,0000,0000,,I know.
+Dialogue: 0,0:57:47.07,0:57:52.27,EnText,,0000,0000,0000,,I have fired up my resume\Nas I suggest that all of you do, as well.
+Dialogue: 0,0:57:53.28,0:57:54.85,EnText,,0000,0000,0000,,What is it?
+Dialogue: 0,0:57:56.78,0:58:00.07,EnText,,0000,0000,0000,,Can't you see that I am\Nin the middle of a pep talk?
+Dialogue: 0,0:58:29.73,0:58:31.10,EnText,,0000,0000,0000,,Yes!
+Dialogue: 0,0:58:31.19,0:58:34.10,EnText,,0000,0000,0000,,Yes, we will build our own rocket
+Dialogue: 0,0:58:34.74,0:58:38.27,EnText,,0000,0000,0000,,using this and whatever else we can find!
+Dialogue: 0,0:58:38.74,0:58:42.36,EnText,,0000,0000,0000,,Grab everything!\NHit the junkyards! Take apart the cars!
+Dialogue: 0,0:58:42.87,0:58:44.73,EnText,,0000,0000,0000,,Who needs the bank?
+Dialogue: 0,0:58:44.83,0:58:46.57,EnText,,0000,0000,0000,,Let's go. Let's go!
+Dialogue: 0,0:59:36.84,0:59:38.83,EnText,,0000,0000,0000,,Mom! What are you doing here?
+Dialogue: 0,0:59:38.92,0:59:41.75,EnText,,0000,0000,0000,,And here he is in the bathtub.
+Dialogue: 0,0:59:42.47,0:59:44.12,EnText,,0000,0000,0000,,Look at his little buns.
+Dialogue: 0,0:59:46.47,0:59:47.96,EnText,,0000,0000,0000,,Mom.
+Dialogue: 0,0:59:48.05,0:59:49.42,EnText,,0000,0000,0000,,Not cool.
+Dialogue: 0,0:59:50.43,0:59:54.97,EnText,,0000,0000,0000,,And here, he's all dressed up\Nin his Sunday best.
+Dialogue: 0,0:59:55.65,0:59:57.84,EnText,,0000,0000,0000,,He looks like a girl!
+Dialogue: 0,0:59:57.94,1:00:01.10,EnText,,0000,0000,0000,,Yes, he does. An ugly girl!
+Dialogue: 0,1:00:23.92,1:00:25.49,EnText,,0000,0000,0000,,You're funny!
+Dialogue: 0,1:00:39.02,1:00:41.97,EnText,,0000,0000,0000,,Yes! Mine's shaped like a dead guy!
+Dialogue: 0,1:01:00.08,1:01:02.61,EnText,,0000,0000,0000,,Mr Perkins, your son is here.
+Dialogue: 0,1:01:02.71,1:01:04.53,EnText,,0000,0000,0000,,Send him in.
+Dialogue: 0,1:01:05.71,1:01:07.37,EnText,,0000,0000,0000,,Hey, Dad.
+Dialogue: 0,1:01:08.22,1:01:09.66,EnText,,0000,0000,0000,,You wanted to see me?
+Dialogue: 0,1:01:09.76,1:01:12.71,EnText,,0000,0000,0000,,- Yes, I did, Victor.\N- I am not Victor any more.
+Dialogue: 0,1:01:12.80,1:01:16.25,EnText,,0000,0000,0000,,Victor was my nerd name. Now I am Vector!
+Dialogue: 0,1:01:16.35,1:01:17.67,EnText,,0000,0000,0000,,Sit down!
+Dialogue: 0,1:01:19.31,1:01:21.70,EnText,,0000,0000,0000,,Do you know where the shrink ray is?
+Dialogue: 0,1:01:22.15,1:01:24.09,EnText,,0000,0000,0000,,Duh! Back at my place.
+Dialogue: 0,1:01:24.19,1:01:27.05,EnText,,0000,0000,0000,,Oh, is that right?\NBack at your place? That's cool.
+Dialogue: 0,1:01:27.15,1:01:31.39,EnText,,0000,0000,0000,,I guess Gru must just have one\Nthat looks exactly like it!
+Dialogue: 0,1:01:33.99,1:01:37.23,EnText,,0000,0000,0000,,What the... Those girls sold me cookies!
+Dialogue: 0,1:01:37.54,1:01:41.28,EnText,,0000,0000,0000,,Do you have any idea\Nhow lucrative this moon heist could be?
+Dialogue: 0,1:01:41.37,1:01:43.15,EnText,,0000,0000,0000,,I give you the opportunity of a lifetime,
+Dialogue: 0,1:01:43.25,1:01:45.07,EnText,,0000,0000,0000,,and you just blow it!
+Dialogue: 0,1:01:45.96,1:01:49.24,EnText,,0000,0000,0000,,- No, I didn't.\N- Oh, really?
+Dialogue: 0,1:01:49.67,1:01:52.54,EnText,,0000,0000,0000,,You just wait\Nuntil Gru sees my latest weapon.
+Dialogue: 0,1:01:52.63,1:01:55.62,EnText,,0000,0000,0000,,Squid-launcher! Oh, yeah!
+Dialogue: 0,1:01:58.60,1:02:00.75,EnText,,0000,0000,0000,,There's a squid on my face!
+Dialogue: 0,1:02:02.31,1:02:03.58,EnText,,0000,0000,0000,,Don't worry.
+Dialogue: 0,1:02:03.68,1:02:06.93,EnText,,0000,0000,0000,,The moon is as good as ours.
+Dialogue: 0,1:02:09.77,1:02:11.26,EnText,,0000,0000,0000,,Come on now, it's bedtime.
+Dialogue: 0,1:02:11.36,1:02:14.52,EnText,,0000,0000,0000,,Did you brush your teeth?\NLet me smell. Let me smell.
+Dialogue: 0,1:02:15.15,1:02:16.52,EnText,,0000,0000,0000,,You did not!
+Dialogue: 0,1:02:16.61,1:02:20.69,EnText,,0000,0000,0000,,Put on your PGs.\NHold still. Okay, seriously! Seriously!
+Dialogue: 0,1:02:20.78,1:02:25.28,EnText,,0000,0000,0000,,This is beddie-bye time, right now.\NI'm not kidding around. I mean it!
+Dialogue: 0,1:02:25.37,1:02:28.11,EnText,,0000,0000,0000,,- But we're not tired!\N- Well, I am tired.
+Dialogue: 0,1:02:28.21,1:02:30.41,EnText,,0000,0000,0000,,Will you read us a bedtime story?
+Dialogue: 0,1:02:34.30,1:02:35.66,EnText,,0000,0000,0000,,No.
+Dialogue: 0,1:02:35.76,1:02:37.00,EnText,,0000,0000,0000,,Pretty please!
+Dialogue: 0,1:02:37.09,1:02:40.92,EnText,,0000,0000,0000,,The physical appearance of the "please"\Nmakes no difference.
+Dialogue: 0,1:02:41.01,1:02:43.08,EnText,,0000,0000,0000,,It is still no, so go to sleep.
+Dialogue: 0,1:02:43.18,1:02:45.30,EnText,,0000,0000,0000,,But we can't. We're all hyper!
+Dialogue: 0,1:02:45.39,1:02:49.88,EnText,,0000,0000,0000,,And without a bedtime story,\Nwe'll just keep getting up and bugging you.
+Dialogue: 0,1:02:49.98,1:02:51.05,EnText,,0000,0000,0000,,All night long.
+Dialogue: 0,1:02:53.23,1:02:54.47,EnText,,0000,0000,0000,,Fine.
+Dialogue: 0,1:02:55.53,1:02:58.52,EnText,,0000,0000,0000,,All right, all right. Sleepy Kittens.
+Dialogue: 0,1:02:58.99,1:03:00.31,EnText,,0000,0000,0000,,Sleepy Kittens?
+Dialogue: 0,1:03:00.74,1:03:02.14,EnText,,0000,0000,0000,,- What are these?\N- Puppets.
+Dialogue: 0,1:03:02.61,1:03:04.90,EnText,,0000,0000,0000,,You use them when you tell the story.
+Dialogue: 0,1:03:12.00,1:03:14.53,EnText,,0000,0000,0000,,Okay, let's get this over with.
+Dialogue: 0,1:03:15.04,1:03:19.29,EnText,,0000,0000,0000,,"Three little kittens loved to play,\Nthey had fun in the sun all day.
+Dialogue: 0,1:03:19.38,1:03:23.79,EnText,,0000,0000,0000,,"Then their mother came out and said,\N'Time for kittens to go to bed."'
+Dialogue: 0,1:03:23.89,1:03:27.74,EnText,,0000,0000,0000,,Wow! This is garbage.\NYou actually like this?
+Dialogue: 0,1:03:27.85,1:03:29.29,EnText,,0000,0000,0000,,Keep reading!
+Dialogue: 0,1:03:30.10,1:03:32.47,EnText,,0000,0000,0000,,- Come on!\N- All right, all right, all right.
+Dialogue: 0,1:03:32.56,1:03:35.12,EnText,,0000,0000,0000,,"Three little kittens started to bawl,
+Dialogue: 0,1:03:35.23,1:03:37.55,EnText,,0000,0000,0000,,"'Mommy, we're not tired at all.'
+Dialogue: 0,1:03:37.65,1:03:40.18,EnText,,0000,0000,0000,,"Their mother smiled and said with a purr,
+Dialogue: 0,1:03:40.28,1:03:43.93,EnText,,0000,0000,0000,,"'Fine, but at least\Nyou should brush your fur."'
+Dialogue: 0,1:03:44.03,1:03:46.19,EnText,,0000,0000,0000,,Now you brush the fur.
+Dialogue: 0,1:03:47.91,1:03:49.65,EnText,,0000,0000,0000,,This is literature?
+Dialogue: 0,1:03:49.74,1:03:52.98,EnText,,0000,0000,0000,,A 2-year-old could have written this.\NAll right.
+Dialogue: 0,1:03:53.54,1:03:56.53,EnText,,0000,0000,0000,,"Three little kittens with fur all brushed
+Dialogue: 0,1:03:56.62,1:04:00.03,EnText,,0000,0000,0000,,"said, 'We can't sleep, we feel too rushed! '
+Dialogue: 0,1:04:00.13,1:04:03.20,EnText,,0000,0000,0000,,"Their mother replied, with a voice like silk,
+Dialogue: 0,1:04:03.30,1:04:06.21,EnText,,0000,0000,0000,,"'Fine, but at least\Nyou should drink your milk."'
+Dialogue: 0,1:04:06.30,1:04:08.62,EnText,,0000,0000,0000,,Now make them drink the milk.
+Dialogue: 0,1:04:12.97,1:04:16.83,EnText,,0000,0000,0000,,I don't like this book.\NThis is going on forever.
+Dialogue: 0,1:04:16.94,1:04:23.26,EnText,,0000,0000,0000,,"Three little kittens, with milk all gone,\Nrubbed their eyes and started to yawn.
+Dialogue: 0,1:04:29.66,1:04:35.44,EnText,,0000,0000,0000,,"'We can't sleep, we can't even try.'\NThen their mother sang a lullaby.
+Dialogue: 0,1:04:35.54,1:04:41.28,EnText,,0000,0000,0000,,"'Good night kittens, close your eyes.\NSleep in peace until you rise.
+Dialogue: 0,1:04:41.88,1:04:45.08,EnText,,0000,0000,0000,,"'Though while you sleep, we are apart,
+Dialogue: 0,1:04:45.17,1:04:49.91,EnText,,0000,0000,0000,,"'your mommy loves you with all her heart."'
+Dialogue: 0,1:04:53.93,1:04:56.25,EnText,,0000,0000,0000,,The end. Okay, good night.
+Dialogue: 0,1:04:57.27,1:04:59.51,EnText,,0000,0000,0000,,- Wait!\N- What?
+Dialogue: 0,1:04:59.60,1:05:01.47,EnText,,0000,0000,0000,,What about good night kisses?
+Dialogue: 0,1:05:03.44,1:05:07.18,EnText,,0000,0000,0000,,No, no. There will be no kissing or hugging\Nor kissing.
+Dialogue: 0,1:05:10.11,1:05:12.67,EnText,,0000,0000,0000,,He is not gonna kiss us good night, Agnes.
+Dialogue: 0,1:05:13.32,1:05:15.36,EnText,,0000,0000,0000,,I like him. He's nice.
+Dialogue: 0,1:05:15.45,1:05:16.77,EnText,,0000,0000,0000,,But scary.
+Dialogue: 0,1:05:18.04,1:05:19.31,EnText,,0000,0000,0000,,Like Santa!
+Dialogue: 0,1:05:37.85,1:05:42.05,EnText,,0000,0000,0000,,Only 48 hours till the launch,\Nand all systems are go.
+Dialogue: 0,1:05:44.31,1:05:45.97,EnText,,0000,0000,0000,,About that,
+Dialogue: 0,1:05:46.48,1:05:50.72,EnText,,0000,0000,0000,,I was thinking that maybe\Nwe could move the date of the heist.
+Dialogue: 0,1:05:50.82,1:05:56.39,EnText,,0000,0000,0000,,Please tell me this is not as a result\Nof the girls' dance recital, is it?
+Dialogue: 0,1:05:56.49,1:05:58.69,EnText,,0000,0000,0000,,No, no, no!
+Dialogue: 0,1:05:58.78,1:06:01.81,EnText,,0000,0000,0000,,The recital? Don't... That's stupid!
+Dialogue: 0,1:06:01.95,1:06:06.82,EnText,,0000,0000,0000,,I just think it's kind of weird\Nto do it on a Saturday.
+Dialogue: 0,1:06:06.92,1:06:12.49,EnText,,0000,0000,0000,,I was thinking,\Nmaybe a heist is a Tuesday thing, right?
+Dialogue: 0,1:06:13.21,1:06:16.83,EnText,,0000,0000,0000,,Gru, you and I have been\Nworking on this for years.
+Dialogue: 0,1:06:16.93,1:06:19.00,EnText,,0000,0000,0000,,It's everything we've dreamed of.
+Dialogue: 0,1:06:19.09,1:06:21.00,EnText,,0000,0000,0000,,Your chance to make history,
+Dialogue: 0,1:06:21.10,1:06:24.29,EnText,,0000,0000,0000,,become the man who stole the moon!
+Dialogue: 0,1:06:24.39,1:06:28.16,EnText,,0000,0000,0000,,But these girls\Nare becoming a major distraction!
+Dialogue: 0,1:06:28.27,1:06:29.59,EnText,,0000,0000,0000,,They need to go.
+Dialogue: 0,1:06:30.35,1:06:34.35,EnText,,0000,0000,0000,,If you don't do something about it,\Nthen I will.
+Dialogue: 0,1:06:36.03,1:06:37.68,EnText,,0000,0000,0000,,I understand.
+Dialogue: 0,1:06:40.20,1:06:41.69,EnText,,0000,0000,0000,,Good.
+Dialogue: 0,1:06:44.83,1:06:45.98,EnText,,0000,0000,0000,,Butt.
+Dialogue: 0,1:06:49.21,1:06:50.39,EnText,,0000,0000,0000,,Butt.
+Dialogue: 0,1:07:02.97,1:07:04.12,EnText,,0000,0000,0000,,Butt.
+Dialogue: 0,1:07:06.01,1:07:09.76,EnText,,0000,0000,0000,,All right.\NNow, when we put our cups together,
+Dialogue: 0,1:07:09.85,1:07:12.52,EnText,,0000,0000,0000,,we will make the "clink" sound\Nwith our mouths.
+Dialogue: 0,1:07:12.60,1:07:13.76,EnText,,0000,0000,0000,,Ready? Edith?
+Dialogue: 0,1:07:13.85,1:07:14.87,EnText,,0000,0000,0000,,- Clink.\N- Clink.
+Dialogue: 0,1:07:14.98,1:07:16.97,EnText,,0000,0000,0000,,There we go. And now we drink.
+Dialogue: 0,1:07:17.73,1:07:18.75,EnText,,0000,0000,0000,,And Agnes?
+Dialogue: 0,1:07:18.86,1:07:19.93,EnText,,0000,0000,0000,,- Clink.\N- Clink.
+Dialogue: 0,1:07:20.03,1:07:21.39,EnText,,0000,0000,0000,,Very good!
+Dialogue: 0,1:07:23.11,1:07:24.48,EnText,,0000,0000,0000,,Excuse me, girls.
+Dialogue: 0,1:07:24.86,1:07:25.97,EnText,,0000,0000,0000,,Come on!
+Dialogue: 0,1:07:26.07,1:07:29.60,EnText,,0000,0000,0000,,Don't worry, I'll be back. Keep clinking.
+Dialogue: 0,1:07:30.08,1:07:31.18,EnText,,0000,0000,0000,,- Clink, clink.\N- Clink, clink.
+Dialogue: 0,1:07:33.58,1:07:35.45,EnText,,0000,0000,0000,,Miss Hattie, what are you doing here?
+Dialogue: 0,1:07:35.54,1:07:39.45,EnText,,0000,0000,0000,,I'm here for the girls. I received a call\Nthat you wanted to return them.
+Dialogue: 0,1:07:42.05,1:07:46.29,EnText,,0000,0000,0000,,And also,\NI did purchase a Spanish dictionary.
+Dialogue: 0,1:07:49.72,1:07:50.91,EnText,,0000,0000,0000,,I didn't like what you said.
+Dialogue: 0,1:07:51.01,1:07:52.38,EnText,,0000,0000,0000,,But...
+Dialogue: 0,1:07:58.69,1:08:01.25,EnText,,0000,0000,0000,,I will get the girls ready.
+Dialogue: 0,1:08:11.16,1:08:13.61,EnText,,0000,0000,0000,,Don't let her take us, Mr Gru!
+Dialogue: 0,1:08:14.87,1:08:16.74,EnText,,0000,0000,0000,,Tell her you wanna keep us.
+Dialogue: 0,1:08:16.83,1:08:18.82,EnText,,0000,0000,0000,,All right, girls. Come on, let's go.
+Dialogue: 0,1:08:18.91,1:08:21.39,EnText,,0000,0000,0000,,Goodbye, Mr Gru. Thanks for everything.
+Dialogue: 0,1:08:37.52,1:08:39.59,EnText,,0000,0000,0000,,I did it for your own good.
+Dialogue: 0,1:08:39.98,1:08:43.05,EnText,,0000,0000,0000,,Come on, let's go get that moon.
+Dialogue: 0,1:08:44.90,1:08:45.97,EnText,,0000,0000,0000,,Right.
+Dialogue: 0,1:10:02.56,1:10:03.66,EnText,,0000,0000,0000,,What is this for?
+Dialogue: 0,1:10:05.35,1:10:06.62,EnText,,0000,0000,0000,,The recital?
+Dialogue: 0,1:10:06.73,1:10:09.97,EnText,,0000,0000,0000,,I am the greatest criminal mind\Nof the century.
+Dialogue: 0,1:10:10.06,1:10:14.14,EnText,,0000,0000,0000,,I don't go to little girls' dance recitals!
+Dialogue: 0,1:10:34.96,1:10:39.91,EnText,,0000,0000,0000,,Opening launch bay doors.\NCommencing launch sequence.
+Dialogue: 0,1:10:40.01,1:10:45.00,EnText,,0000,0000,0000,,And we are good to go\Nin T minus 10 seconds.
+Dialogue: 0,1:10:46.10,1:10:50.55,EnText,,0000,0000,0000,,Ten, nine, eight, seven,
+Dialogue: 0,1:10:50.64,1:10:51.66,EnText,,0000,0000,0000,,six...
+Dialogue: 0,1:11:17.75,1:11:18.99,EnText,,0000,0000,0000,,Oh, yeah!
+Dialogue: 0,1:11:20.96,1:11:23.50,EnText,,0000,0000,0000,,Nice work, Doctor. All systems go.
+Dialogue: 0,1:11:23.92,1:11:25.00,EnText,,0000,0000,0000,,Boo-ya!
+Dialogue: 0,1:11:36.27,1:11:37.84,EnText,,0000,0000,0000,,My flight suit.
+Dialogue: 0,1:11:39.61,1:11:42.76,EnText,,0000,0000,0000,,Oh, yeah! Once again, the mighty...
+Dialogue: 0,1:13:07.61,1:13:09.30,EnText,,0000,0000,0000,,I've got it!
+Dialogue: 0,1:13:10.82,1:13:13.64,EnText,,0000,0000,0000,,I've got the moon!
+Dialogue: 0,1:13:13.74,1:13:16.52,EnText,,0000,0000,0000,,I've got the moon!
+Dialogue: 0,1:13:31.63,1:13:33.12,EnText,,0000,0000,0000,,I can make it!
+Dialogue: 0,1:13:40.39,1:13:42.71,EnText,,0000,0000,0000,,- Wait a minute!\N- Kevin!
+Dialogue: 0,1:13:45.85,1:13:47.42,EnText,,0000,0000,0000,,Come on, come on!
+Dialogue: 0,1:13:55.69,1:13:57.27,EnText,,0000,0000,0000,,He's still not here.
+Dialogue: 0,1:13:57.36,1:13:59.76,EnText,,0000,0000,0000,,Why would he come? He gave us up.
+Dialogue: 0,1:13:59.86,1:14:01.39,EnText,,0000,0000,0000,,But he pinkie promised!
+Dialogue: 0,1:14:01.49,1:14:04.23,EnText,,0000,0000,0000,,Girls, girls, places!
+Dialogue: 0,1:14:04.33,1:14:07.11,EnText,,0000,0000,0000,,No, we can't start yet!\NWe're still expecting someone.
+Dialogue: 0,1:14:07.20,1:14:09.57,EnText,,0000,0000,0000,,Can we just wait a few more minutes?
+Dialogue: 0,1:14:13.42,1:14:15.82,EnText,,0000,0000,0000,,All right. But just a few more minutes.
+Dialogue: 0,1:14:15.92,1:14:17.99,EnText,,0000,0000,0000,,He's not coming, guys.
+Dialogue: 0,1:14:21.47,1:14:23.46,EnText,,0000,0000,0000,,Gru! Gru, can you hear me?
+Dialogue: 0,1:14:25.81,1:14:29.34,EnText,,0000,0000,0000,,Quick, we have to warn him, and fast!
+Dialogue: 0,1:15:04.34,1:15:06.33,EnText,,0000,0000,0000,,Okay, okay. There's the library.
+Dialogue: 0,1:15:06.43,1:15:09.13,EnText,,0000,0000,0000,,That's Third Street. The dance studio...
+Dialogue: 0,1:15:09.22,1:15:10.63,EnText,,0000,0000,0000,,There! There! There it is!
+Dialogue: 0,1:15:48.09,1:15:50.49,EnText,,0000,0000,0000,,Sorry, buddy. Show's over.
+Dialogue: 0,1:15:50.84,1:15:52.46,EnText,,0000,0000,0000,,Over?
+Dialogue: 0,1:16:30.42,1:16:31.91,EnText,,0000,0000,0000,,Vector, open up!
+Dialogue: 0,1:16:33.68,1:16:36.16,EnText,,0000,0000,0000,,First give me the moon. Then we'll talk.
+Dialogue: 0,1:16:49.73,1:16:52.21,EnText,,0000,0000,0000,,- Mr Gru!\N- Zip it, Happy Meal.
+Dialogue: 0,1:16:52.32,1:16:53.81,EnText,,0000,0000,0000,,Now, the girls.
+Dialogue: 0,1:16:53.91,1:16:58.27,EnText,,0000,0000,0000,,Actually, I think I'll hold on to them\Na little while longer.
+Dialogue: 0,1:16:58.37,1:16:59.39,EnText,,0000,0000,0000,,No!
+Dialogue: 0,1:16:59.49,1:17:02.16,EnText,,0000,0000,0000,,Oh, yeah! Unpredictable!
+Dialogue: 0,1:17:02.87,1:17:04.36,EnText,,0000,0000,0000,,Listen close, you little punk.
+Dialogue: 0,1:17:04.46,1:17:07.78,EnText,,0000,0000,0000,,When I get in there,\Nyou are in for a world of pain!
+Dialogue: 0,1:17:09.09,1:17:10.91,EnText,,0000,0000,0000,,I'm really scared!
+Dialogue: 0,1:17:14.38,1:17:16.21,EnText,,0000,0000,0000,,He is gonna kick your butt.
+Dialogue: 0,1:17:56.51,1:17:58.37,EnText,,0000,0000,0000,,What? He punched my shark!
+Dialogue: 0,1:18:25.12,1:18:26.22,EnText,,0000,0000,0000,,There he is!
+Dialogue: 0,1:18:32.16,1:18:33.40,EnText,,0000,0000,0000,,Hang on, Gru.
+Dialogue: 0,1:18:38.76,1:18:40.03,EnText,,0000,0000,0000,,Oh, no!
+Dialogue: 0,1:18:50.35,1:18:52.17,EnText,,0000,0000,0000,,Vector has the girls. Go!
+Dialogue: 0,1:18:56.19,1:18:57.84,EnText,,0000,0000,0000,,What happened to the ship? It's big again!
+Dialogue: 0,1:18:57.94,1:19:00.68,EnText,,0000,0000,0000,,- Not as big as the moon is going to be!\N- What?
+Dialogue: 0,1:19:00.78,1:19:05.84,EnText,,0000,0000,0000,,The larger the mass of an object, the quicker\Nthe effects of the shrink ray wear off!
+Dialogue: 0,1:19:05.95,1:19:08.85,EnText,,0000,0000,0000,,I call it the Nefario Principle.
+Dialogue: 0,1:19:08.95,1:19:10.86,EnText,,0000,0000,0000,,I just came up with it now, actually.
+Dialogue: 0,1:19:11.70,1:19:13.19,EnText,,0000,0000,0000,,Oh, no!
+Dialogue: 0,1:19:19.25,1:19:20.57,EnText,,0000,0000,0000,,Did you see that?
+Dialogue: 0,1:19:20.71,1:19:23.41,EnText,,0000,0000,0000,,- Vector! Help!\N- Vector!
+Dialogue: 0,1:19:23.51,1:19:24.69,EnText,,0000,0000,0000,,- Over here!\N- Hey!
+Dialogue: 0,1:19:24.80,1:19:26.41,EnText,,0000,0000,0000,,What are you girls doing back there?
+Dialogue: 0,1:19:26.51,1:19:27.53,EnText,,0000,0000,0000,,The moon!
+Dialogue: 0,1:19:43.69,1:19:44.71,EnText,,0000,0000,0000,,Watch out!
+Dialogue: 0,1:19:48.57,1:19:50.35,EnText,,0000,0000,0000,,Get as close in as you can.
+Dialogue: 0,1:19:51.20,1:19:52.47,EnText,,0000,0000,0000,,You got it.
+Dialogue: 0,1:20:08.84,1:20:11.04,EnText,,0000,0000,0000,,- Mr Gru, up here!\N- Mr Gru!
+Dialogue: 0,1:20:11.13,1:20:13.17,EnText,,0000,0000,0000,,Okay, girls! Girls!
+Dialogue: 0,1:20:13.26,1:20:15.96,EnText,,0000,0000,0000,,- You're going to have to jump.\N- Jump?
+Dialogue: 0,1:20:16.06,1:20:17.96,EnText,,0000,0000,0000,,Are you insane?
+Dialogue: 0,1:20:18.06,1:20:19.46,EnText,,0000,0000,0000,,Don't worry, I will catch you.
+Dialogue: 0,1:20:20.39,1:20:21.80,EnText,,0000,0000,0000,,You gave us back!
+Dialogue: 0,1:20:21.89,1:20:26.05,EnText,,0000,0000,0000,,I know, I know.\NAnd it is the worst mistake I ever made.
+Dialogue: 0,1:20:26.65,1:20:28.56,EnText,,0000,0000,0000,,But you have to jump now.
+Dialogue: 0,1:20:29.15,1:20:31.22,EnText,,0000,0000,0000,,It'll be okay.
+Dialogue: 0,1:20:36.20,1:20:37.22,EnText,,0000,0000,0000,,Okay, girls.
+Dialogue: 0,1:20:39.33,1:20:40.82,EnText,,0000,0000,0000,,Jump now!
+Dialogue: 0,1:20:45.83,1:20:48.12,EnText,,0000,0000,0000,,Margo, I will catch you.
+Dialogue: 0,1:20:48.79,1:20:51.83,EnText,,0000,0000,0000,,And I will never let you go again.
+Dialogue: 0,1:21:01.43,1:21:03.46,EnText,,0000,0000,0000,,- Not so fast!\N- No!
+Dialogue: 0,1:21:03.56,1:21:04.80,EnText,,0000,0000,0000,,Let me go!
+Dialogue: 0,1:21:08.77,1:21:09.85,EnText,,0000,0000,0000,,Margo!
+Dialogue: 0,1:21:15.65,1:21:17.85,EnText,,0000,0000,0000,,I'm coming, Margo. Hang on!
+Dialogue: 0,1:21:46.81,1:21:48.30,EnText,,0000,0000,0000,,I got you.
+Dialogue: 0,1:22:06.45,1:22:07.56,EnText,,0000,0000,0000,,No!
+Dialogue: 0,1:22:24.76,1:22:26.00,EnText,,0000,0000,0000,,Oh, poop.
+Dialogue: 0,1:22:27.10,1:22:28.92,EnText,,0000,0000,0000,,This time, good triumphs,
+Dialogue: 0,1:22:29.01,1:22:32.13,EnText,,0000,0000,0000,,and the moon has been returned\Nto its rightful place in the sky.
+Dialogue: 0,1:22:32.52,1:22:37.14,EnText,,0000,0000,0000,,But once again, law enforcement is baffled,\Nleaving everyone to wonder,
+Dialogue: 0,1:22:37.23,1:22:39.01,EnText,,0000,0000,0000,,who is this mysterious hero?
+Dialogue: 0,1:22:39.11,1:22:41.06,EnText,,0000,0000,0000,,And what will he do next?
+Dialogue: 0,1:22:41.61,1:22:43.39,EnText,,0000,0000,0000,,Okay, girls. Time for bed.
+Dialogue: 0,1:22:43.49,1:22:47.18,EnText,,0000,0000,0000,,- Come on! We want a story.\N- Three sleepy kittens!
+Dialogue: 0,1:22:47.28,1:22:51.52,EnText,,0000,0000,0000,,Oh, no! Sorry. That book was\Naccidentally destroyed maliciously.
+Dialogue: 0,1:22:52.95,1:22:56.15,EnText,,0000,0000,0000,,Tonight we are going to read a new book.
+Dialogue: 0,1:22:56.25,1:22:58.45,EnText,,0000,0000,0000,,This one is called
+Dialogue: 0,1:22:58.54,1:23:02.20,EnText,,0000,0000,0000,,One Big unicorn by... Who wrote this?
+Dialogue: 0,1:23:03.01,1:23:06.70,EnText,,0000,0000,0000,,Me! I wrote it. Look, it's a puppet book!
+Dialogue: 0,1:23:07.51,1:23:09.21,EnText,,0000,0000,0000,,Here, watch this.
+Dialogue: 0,1:23:10.39,1:23:12.21,EnText,,0000,0000,0000,,That's the horn!
+Dialogue: 0,1:23:16.23,1:23:18.30,EnText,,0000,0000,0000,,This is gonna be the best book ever!
+Dialogue: 0,1:23:18.40,1:23:23.18,EnText,,0000,0000,0000,,Not to pat myself on the back,\Nbut, yes, it probably will be.
+Dialogue: 0,1:23:23.27,1:23:24.35,EnText,,0000,0000,0000,,Here we go.
+Dialogue: 0,1:23:24.44,1:23:27.43,EnText,,0000,0000,0000,,"One big unicorn, strong and free
+Dialogue: 0,1:23:27.53,1:23:30.23,EnText,,0000,0000,0000,,"thought he was happy as he could be.
+Dialogue: 0,1:23:31.57,1:23:35.02,EnText,,0000,0000,0000,,"Then three little kittens came around
+Dialogue: 0,1:23:35.37,1:23:39.11,EnText,,0000,0000,0000,,"and turned his whole life upside down."
+Dialogue: 0,1:23:39.21,1:23:40.95,EnText,,0000,0000,0000,,Hey, that one looks like me!
+Dialogue: 0,1:23:41.04,1:23:43.16,EnText,,0000,0000,0000,,No, what are you talking about?\NThese are kittens!
+Dialogue: 0,1:23:43.25,1:23:47.00,EnText,,0000,0000,0000,,Any relation to persons living or dead\Nis completely coincidental.
+Dialogue: 0,1:23:50.55,1:23:52.92,EnText,,0000,0000,0000,,"They made him laugh.
+Dialogue: 0,1:23:53.01,1:23:55.21,EnText,,0000,0000,0000,,"They made him cry.
+Dialogue: 0,1:23:57.47,1:23:59.92,EnText,,0000,0000,0000,,"He never should have said goodbye.
+Dialogue: 0,1:24:00.77,1:24:05.35,EnText,,0000,0000,0000,,"And now he knows he could never part
+Dialogue: 0,1:24:05.44,1:24:08.00,EnText,,0000,0000,0000,,"from those three little kittens
+Dialogue: 0,1:24:08.53,1:24:11.43,EnText,,0000,0000,0000,,"that changed his heart.
+Dialogue: 0,1:24:11.53,1:24:13.60,EnText,,0000,0000,0000,,"The end."
+Dialogue: 0,1:24:13.70,1:24:16.02,EnText,,0000,0000,0000,,Okay, all right. Good night.
+Dialogue: 0,1:24:39.35,1:24:40.96,EnText,,0000,0000,0000,,I love you.
+Dialogue: 0,1:24:41.52,1:24:43.21,EnText,,0000,0000,0000,,I love you, too.
+Dialogue: 0,1:24:52.57,1:24:54.39,EnText,,0000,0000,0000,,No, no!
+Dialogue: 0,1:24:56.61,1:24:57.72,EnText,,0000,0000,0000,,All right.
+Dialogue: 0,1:25:02.74,1:25:04.90,EnText,,0000,0000,0000,,Didn't I get you already?
+Dialogue: 0,1:25:38.74,1:25:40.73,EnText,,0000,0000,0000,,They're very good!
+Dialogue: 0,1:25:40.82,1:25:43.77,EnText,,0000,0000,0000,,I'm so proud of you, Son.
+Dialogue: 0,1:25:43.87,1:25:46.77,EnText,,0000,0000,0000,,You've turned out to be a great parent!
+Dialogue: 0,1:25:47.91,1:25:49.40,EnText,,0000,0000,0000,,Just like me.
+Dialogue: 0,1:25:50.00,1:25:52.24,EnText,,0000,0000,0000,,Maybe even better.
+Dialogue: 0,1:26:19.57,1:26:21.27,EnText,,0000,0000,0000,,No, I'm fine. Go ahead.
+Dialogue: 0,1:26:23.03,1:26:24.48,EnText,,0000,0000,0000,,No, no, no!
+Dialogue: 0,1:28:04.12,1:28:05.70,EnText,,0000,0000,0000,,Hey, Carl! Hey.
+Dialogue: 0,1:28:09.96,1:28:11.04,EnText,,0000,0000,0000,,No, no, no.
+Dialogue: 0,1:28:11.13,1:28:12.32,EnText,,0000,0000,0000,,Me, me, me.
+Dialogue: 0,1:28:13.68,1:28:14.70,EnText,,0000,0000,0000,,John?
+Dialogue: 0,1:28:14.80,1:28:16.25,EnText,,0000,0000,0000,,No, no. Me, me, me.
+Dialogue: 0,1:28:39.99,1:28:41.01,EnText,,0000,0000,0000,,Oh, poop.
+Dialogue: 0,1:29:27.75,1:29:28.93,EnText,,0000,0000,0000,,Oh, no!
+Dialogue: 0,1:29:29.79,1:29:31.24,EnText,,0000,0000,0000,,Stop! Stop!
+Dialogue: 0,1:30:32.47,1:30:33.84,EnText,,0000,0000,0000,,Hello, I am Gru.
+Dialogue: 0,1:30:33.94,1:30:36.93,EnText,,0000,0000,0000,,Back to work, back to work! Back to...
+Dialogue: 0,0:01:47.79,0:01:49.24,ChText,,0000,0000,0000,,Justin!
+Dialogue: 0,0:01:49.33,0:01:52.37,ChText,,0000,0000,0000,,亲爱的 快帮我照张相\N我把金字塔托在手上呢
+Dialogue: 0,0:02:01.55,0:02:03.67,ChText,,0000,0000,0000,,Justin 你马上给我回来
+Dialogue: 0,0:02:04.10,0:02:05.12,ChText,,0000,0000,0000,,停
+Dialogue: 0,0:02:05.22,0:02:07.62,ChText,,0000,0000,0000,,- 拦住他\N- 回来 不要爬上去
+Dialogue: 0,0:02:12.40,0:02:13.42,ChText,,0000,0000,0000,,等一下 等一下
+Dialogue: 0,0:02:13.52,0:02:15.55,ChText,,0000,0000,0000,,站住 慢慢来 小家伙
+Dialogue: 0,0:02:16.94,0:02:19.18,ChText,,0000,0000,0000,,好 停 孩子 就在这儿停住 不要!
+Dialogue: 0,0:02:20.49,0:02:23.44,ChText,,0000,0000,0000,,不好了 他掉下去了
+Dialogue: 0,0:02:35.00,0:02:36.16,ChText,,0000,0000,0000,,Justin!
+Dialogue: 0,0:02:44.84,0:02:46.63,ChText,,0000,0000,0000,,我抓住他了 我抓住他了
+Dialogue: 0,0:02:57.56,0:03:00.01,ChText,,0000,0000,0000,,今晚在埃及发现了一起令人震惊的事件
+Dialogue: 0,0:03:00.11,0:03:02.85,ChText,,0000,0000,0000,,吉萨金字塔被偷走了
+Dialogue: 0,0:03:02.95,0:03:05.77,ChText,,0000,0000,0000,,取而代之的是一个巨大的充气复制品
+Dialogue: 0,0:03:06.03,0:03:09.02,ChText,,0000,0000,0000,,这引起了全球的恐慌\N与此同时各国人民
+Dialogue: 0,0:03:09.33,0:03:12.19,ChText,,0000,0000,0000,,也誓要保护他们的标志性建筑
+Dialogue: 0,0:03:12.75,0:03:15.28,ChText,,0000,0000,0000,,执法部门仍然没有找到任何线索
+Dialogue: 0,0:03:15.37,0:03:17.74,ChText,,0000,0000,0000,,这不禁让人们好奇究竟是哪一个\N恶贯满盈的歹徒
+Dialogue: 0,0:03:17.83,0:03:20.37,ChText,,0000,0000,0000,,要对这起极不道德的犯罪负责任呢
+Dialogue: 0,0:03:20.67,0:03:22.45,ChText,,0000,0000,0000,,他的下一个目标又是什么呢
+Dialogue: 0,0:04:11.38,0:04:13.78,ChText,,0000,0000,0000,,(我今天倒霉透了)
+Dialogue: 0,0:04:13.89,0:04:16.92,ChText,,0000,0000,0000,,(是时候我行我素了)
+Dialogue: 0,0:04:17.02,0:04:19.58,ChText,,0000,0000,0000,,(要破坏我所见的一切)
+Dialogue: 0,0:04:20.27,0:04:22.94,ChText,,0000,0000,0000,,冰冻射线  冰冻射线  冰冻射线
+Dialogue: 0,0:04:23.02,0:04:25.14,ChText,,0000,0000,0000,,(我今天倒霉透了)
+Dialogue: 0,0:04:25.23,0:04:28.26,ChText,,0000,0000,0000,,(如果你要往心里去 那也无所谓)
+Dialogue: 0,0:04:28.36,0:04:30.92,ChText,,0000,0000,0000,,(瞧 这多有趣)
+Dialogue: 0,0:04:32.11,0:04:33.64,ChText,,0000,0000,0000,,(卑鄙的我)
+Dialogue: 0,0:04:58.72,0:05:00.67,ChText,,0000,0000,0000,,早上好 Gru
+Dialogue: 0,0:05:02.14,0:05:03.16,ChText,,0000,0000,0000,,你好吗?
+Dialogue: 0,0:05:03.27,0:05:05.26,ChText,,0000,0000,0000,,你好 Fred
+Dialogue: 0,0:05:05.35,0:05:10.39,ChText,,0000,0000,0000,,顺便让你知道一下\N你的狗在我的院子里到处便便
+Dialogue: 0,0:05:10.48,0:05:12.56,ChText,,0000,0000,0000,,可我并不需要狗便便
+Dialogue: 0,0:05:12.65,0:05:16.27,ChText,,0000,0000,0000,,对不起 你知道狗狗总是随心所欲的
+Dialogue: 0,0:05:16.36,0:05:18.10,ChText,,0000,0000,0000,,除非他们死了
+Dialogue: 0,0:05:20.66,0:05:21.82,ChText,,0000,0000,0000,,骗到你啦
+Dialogue: 0,0:05:22.95,0:05:25.82,ChText,,0000,0000,0000,,虽然事实是这样\N好啦 祝你今天愉快
+Dialogue: 0,0:05:26.71,0:05:29.32,ChText,,0000,0000,0000,,好的
+Dialogue: 0,0:05:30.17,0:05:33.33,ChText,,0000,0000,0000,,(破坏我所看见的一切)
+Dialogue: 0,0:05:34.26,0:05:35.66,ChText,,0000,0000,0000,,(卑鄙的我)
+Dialogue: 0,0:05:36.13,0:05:38.53,ChText,,0000,0000,0000,,(我今天倒霉透了)
+Dialogue: 0,0:05:38.63,0:05:41.25,ChText,,0000,0000,0000,,(如果你要往心里去 无所谓)
+Dialogue: 0,0:05:45.60,0:05:47.26,ChText,,0000,0000,0000,,(卑鄙的我)
+Dialogue: 0,0:05:53.19,0:05:55.81,ChText,,0000,0000,0000,,别这样搞我吧
+Dialogue: 0,0:05:59.65,0:06:00.68,ChText,,0000,0000,0000,,有人吗?
+Dialogue: 0,0:06:01.74,0:06:03.60,ChText,,0000,0000,0000,,要买小饼干吗
+Dialogue: 0,0:06:05.74,0:06:07.94,ChText,,0000,0000,0000,,走开 我不在家
+Dialogue: 0,0:06:08.37,0:06:10.77,ChText,,0000,0000,0000,,你在的 我听到你声音了
+Dialogue: 0,0:06:11.67,0:06:14.70,ChText,,0000,0000,0000,,不 你听错了
+Dialogue: 0,0:06:14.79,0:06:16.70,ChText,,0000,0000,0000,,这是答录机
+Dialogue: 0,0:06:16.80,0:06:19.04,ChText,,0000,0000,0000,,- 不 不是\N- 是的
+Dialogue: 0,0:06:19.46,0:06:23.71,ChText,,0000,0000,0000,,听好了 请留言 哔
+Dialogue: 0,0:06:27.51,0:06:29.30,ChText,,0000,0000,0000,,再见 录音器
+Dialogue: 0,0:06:29.39,0:06:31.21,ChText,,0000,0000,0000,,Agnes 走吧
+Dialogue: 0,0:06:41.99,0:06:43.01,ChText,,0000,0000,0000,,Kyle!
+Dialogue: 0,0:06:43.11,0:06:47.05,ChText,,0000,0000,0000,,可恶的狗 不  不\N坐下 我的松饼
+Dialogue: 0,0:06:47.16,0:06:48.26,ChText,,0000,0000,0000,,Gru
+Dialogue: 0,0:06:49.29,0:06:50.90,ChText,,0000,0000,0000,,Nefario博士
+Dialogue: 0,0:06:51.08,0:06:52.65,ChText,,0000,0000,0000,,我知道你的感受
+Dialogue: 0,0:06:52.75,0:06:56.20,ChText,,0000,0000,0000,,我也觉得非常遗憾
+Dialogue: 0,0:06:56.88,0:07:00.70,ChText,,0000,0000,0000,,但在我眼中 你永远是最棒的
+Dialogue: 0,0:07:01.38,0:07:02.83,ChText,,0000,0000,0000,,发生什么事了?
+Dialogue: 0,0:07:02.92,0:07:04.33,ChText,,0000,0000,0000,,所有的新闻都在报道
+Dialogue: 0,0:07:04.42,0:07:06.41,ChText,,0000,0000,0000,,有个家伙把金字塔偷了
+Dialogue: 0,0:07:06.51,0:07:09.75,ChText,,0000,0000,0000,,他们说其他坏人和他比起来显得
+Dialogue: 0,0:07:10.60,0:07:12.09,ChText,,0000,0000,0000,,逊色
+Dialogue: 0,0:07:14.43,0:07:16.47,ChText,,0000,0000,0000,,集中小奴才!
+Dialogue: 0,0:07:47.13,0:07:48.96,ChText,,0000,0000,0000,,小奴才 集合!
+Dialogue: 0,0:07:50.01,0:07:51.46,ChText,,0000,0000,0000,,好的 好的
+Dialogue: 0,0:07:58.52,0:07:59.62,ChText,,0000,0000,0000,,嗨
+Dialogue: 0,0:08:47.06,0:08:49.73,ChText,,0000,0000,0000,,Kevin 看上去不错嘛\N家里人都好吗
+Dialogue: 0,0:08:49.82,0:08:51.00,ChText,,0000,0000,0000,,好的
+Dialogue: 0,0:08:51.11,0:08:54.10,ChText,,0000,0000,0000,,我的小宝贝 Larry 好吗?
+Dialogue: 0,0:08:55.15,0:08:57.19,ChText,,0000,0000,0000,,大家好
+Dialogue: 0,0:08:57.28,0:08:59.15,ChText,,0000,0000,0000,,好啦
+Dialogue: 0,0:08:59.24,0:09:01.57,ChText,,0000,0000,0000,,安静 安静
+Dialogue: 0,0:09:01.66,0:09:03.53,ChText,,0000,0000,0000,,谢谢
+Dialogue: 0,0:09:03.62,0:09:06.53,ChText,,0000,0000,0000,,我想你们都听说了
+Dialogue: 0,0:09:06.62,0:09:09.36,ChText,,0000,0000,0000,,关于金字塔被别的坏人偷走的事了
+Dialogue: 0,0:09:09.46,0:09:11.78,ChText,,0000,0000,0000,,很显然 这是件大事
+Dialogue: 0,0:09:11.88,0:09:15.29,ChText,,0000,0000,0000,,大家都说这是一个划时代的创举啥的
+Dialogue: 0,0:09:15.38,0:09:19.54,ChText,,0000,0000,0000,,但我生气了吗?  不 我没有!
+Dialogue: 0,0:09:21.05,0:09:22.46,ChText,,0000,0000,0000,,一点点
+Dialogue: 0,0:09:22.56,0:09:26.46,ChText,,0000,0000,0000,,但是我们这一年的成绩相当不错
+Dialogue: 0,0:09:26.56,0:09:29.47,ChText,,0000,0000,0000,,我认为你们都很棒
+Dialogue: 0,0:09:30.56,0:09:31.80,ChText,,0000,0000,0000,,没有加薪
+Dialogue: 0,0:09:31.90,0:09:35.06,ChText,,0000,0000,0000,,你的工资是不会加的
+Dialogue: 0,0:09:35.90,0:09:37.56,ChText,,0000,0000,0000,,我们都干了些什么
+Dialogue: 0,0:09:37.65,0:09:43.65,ChText,,0000,0000,0000,,我们偷了时代广场的大电视屏幕!
+Dialogue: 0,0:09:44.12,0:09:45.36,ChText,,0000,0000,0000,,正点!
+Dialogue: 0,0:09:47.04,0:09:49.07,ChText,,0000,0000,0000,,看我多厉害
+Dialogue: 0,0:09:49.46,0:09:53.15,ChText,,0000,0000,0000,,你们都喜欢用它看橄榄球比赛　是吧　
+Dialogue: 0,0:09:53.96,0:09:55.37,ChText,,0000,0000,0000,,不止这些
+Dialogue: 0,0:09:55.46,0:09:58.74,ChText,,0000,0000,0000,,我们还偷了自由神像
+Dialogue: 0,0:10:00.47,0:10:02.83,ChText,,0000,0000,0000,,在拉斯维加斯的那座小的
+Dialogue: 0,0:10:05.01,0:10:09.01,ChText,,0000,0000,0000,,更别提艾菲尔铁塔了\N也是拉斯维加斯的
+Dialogue: 0,0:10:09.10,0:10:11.88,ChText,,0000,0000,0000,,好了 本来我不打算告诉你们的
+Dialogue: 0,0:10:11.98,0:10:16.64,ChText,,0000,0000,0000,,我正在进行一项非常伟大的计划
+Dialogue: 0,0:10:17.61,0:10:21.93,ChText,,0000,0000,0000,,和这件事毕金字塔这事马上就要变浮云啦
+Dialogue: 0,0:10:22.53,0:10:26.90,ChText,,0000,0000,0000,,同时非常感谢我的好朋友\NNefario博士的大力相助
+Dialogue: 0,0:10:27.28,0:10:28.73,ChText,,0000,0000,0000,,谢谢
+Dialogue: 0,0:10:28.83,0:10:30.10,ChText,,0000,0000,0000,,他在那
+Dialogue: 0,0:10:30.20,0:10:31.65,ChText,,0000,0000,0000,,很有型啊
+Dialogue: 0,0:10:32.29,0:10:35.61,ChText,,0000,0000,0000,,我们在一个秘密实验室里发现了
+Dialogue: 0,0:10:35.71,0:10:40.33,ChText,,0000,0000,0000,,一种收缩射线 一旦我们得到它
+Dialogue: 0,0:10:40.63,0:10:43.83,ChText,,0000,0000,0000,,我们就有能力
+Dialogue: 0,0:10:43.92,0:10:47.86,ChText,,0000,0000,0000,,创造真正的划时代犯罪行为
+Dialogue: 0,0:10:48.64,0:10:51.09,ChText,,0000,0000,0000,,我们准备要偷取...
+Dialogue: 0,0:10:53.64,0:10:58.01,ChText,,0000,0000,0000,,等一下 我还没告诉你们是什么
+Dialogue: 0,0:11:01.40,0:11:02.42,ChText,,0000,0000,0000,,嗨
+Dialogue: 0,0:11:02.53,0:11:04.64,ChText,,0000,0000,0000,,Dave 听好了
+Dialogue: 0,0:11:09.28,0:11:12.69,ChText,,0000,0000,0000,,下一步 我们将要去偷
+Dialogue: 0,0:11:12.79,0:11:15.11,ChText,,0000,0000,0000,,来个定格效果
+Dialogue: 0,0:11:15.91,0:11:18.07,ChText,,0000,0000,0000,,月亮!
+Dialogue: 0,0:11:19.29,0:11:23.12,ChText,,0000,0000,0000,,一旦月亮到我手
+Dialogue: 0,0:11:23.59,0:11:27.91,ChText,,0000,0000,0000,,他们就会对我有求必应以换回月亮
+Dialogue: 0,0:11:28.01,0:11:33.35,ChText,,0000,0000,0000,,而我将成为世界上最伟大的坏人
+Dialogue: 0,0:11:36.35,0:11:40.55,ChText,,0000,0000,0000,,这才是我想要的
+Dialogue: 0,0:11:42.19,0:11:43.26,ChText,,0000,0000,0000,,什么事
+Dialogue: 0,0:11:43.36,0:11:47.10,ChText,,0000,0000,0000,,喂 Gru? 我算了一下
+Dialogue: 0,0:11:47.19,0:11:50.35,ChText,,0000,0000,0000,,我们负担不起进行计划的费用
+Dialogue: 0,0:11:50.45,0:11:53.23,ChText,,0000,0000,0000,,这个计划完成不了 我不是魔术师
+Dialogue: 0,0:11:53.70,0:11:55.31,ChText,,0000,0000,0000,,放心
+Dialogue: 0,0:11:55.41,0:11:59.03,ChText,,0000,0000,0000,,我会去银行再贷款的 他们喜欢我
+Dialogue: 0,0:12:14.72,0:12:16.42,ChText,,0000,0000,0000,,Edith 别再这样了
+Dialogue: 0,0:12:16.51,0:12:18.59,ChText,,0000,0000,0000,,干嘛? 我走路而已
+Dialogue: 0,0:12:31.40,0:12:33.52,ChText,,0000,0000,0000,,- Hattie老师 我们回来了\N- Hattie老师 我们回来了
+Dialogue: 0,0:12:36.41,0:12:37.90,ChText,,0000,0000,0000,,姑娘们 你们好
+Dialogue: 0,0:12:37.99,0:12:40.82,ChText,,0000,0000,0000,,我们不在的时候有人来领养我们吗
+Dialogue: 0,0:12:41.74,0:12:43.73,ChText,,0000,0000,0000,,让我想一想
+Dialogue: 0,0:12:44.25,0:12:45.32,ChText,,0000,0000,0000,,没有
+Dialogue: 0,0:12:48.54,0:12:51.62,ChText,,0000,0000,0000,,Edith 你放什么在我桌上呢
+Dialogue: 0,0:12:52.05,0:12:53.70,ChText,,0000,0000,0000,,泥巴馅饼
+Dialogue: 0,0:12:54.46,0:12:58.37,ChText,,0000,0000,0000,,Edith 你永远不会被领养的 知道吗
+Dialogue: 0,0:12:58.47,0:13:00.75,ChText,,0000,0000,0000,,- 我知道\N- 好极了
+Dialogue: 0,0:13:01.10,0:13:04.42,ChText,,0000,0000,0000,,孩子们进行得怎样了\N达到目标了吗
+Dialogue: 0,0:13:05.27,0:13:06.59,ChText,,0000,0000,0000,,差不多
+Dialogue: 0,0:13:06.69,0:13:10.93,ChText,,0000,0000,0000,,我们卖了四十三个迷你薄荷 三十个巧克力圈圈\N还有十八个可可果仁
+Dialogue: 0,0:13:12.82,0:13:15.02,ChText,,0000,0000,0000,,好
+Dialogue: 0,0:13:15.40,0:13:19.26,ChText,,0000,0000,0000,,嗯 好像你们卖得很好嘛
+Dialogue: 0,0:13:19.36,0:13:21.52,ChText,,0000,0000,0000,,看着我
+Dialogue: 0,0:13:21.62,0:13:24.86,ChText,,0000,0000,0000,,你们还认为是这样吗
+Dialogue: 0,0:13:25.79,0:13:27.78,ChText,,0000,0000,0000,,十八个可可果仁
+Dialogue: 0,0:13:28.21,0:13:32.87,ChText,,0000,0000,0000,,我觉得我们可以做得更好一点 是吗
+Dialogue: 0,0:13:33.71,0:13:34.73,ChText,,0000,0000,0000,,是呀
+Dialogue: 0,0:13:34.84,0:13:39.21,ChText,,0000,0000,0000,,你们周末不会想要呆在盒子里反省吧
+Dialogue: 0,0:13:39.63,0:13:40.79,ChText,,0000,0000,0000,,- 不 Hattie老师\N- 不 Hattie老师
+Dialogue: 0,0:13:40.88,0:13:44.57,ChText,,0000,0000,0000,,好极了 可以走了 帮我整理一下东西
+Dialogue: 0,0:13:46.64,0:13:47.88,ChText,,0000,0000,0000,,- 嗨 Penny\N- 嗨 Penny
+Dialogue: 0,0:13:47.97,0:13:49.13,ChText,,0000,0000,0000,,嗨 你们好
+Dialogue: 0,0:13:54.10,0:13:57.30,ChText,,0000,0000,0000,,嗨 妈妈 对不起\N我本来想打电话的 可是...
+Dialogue: 0,0:13:57.65,0:14:00.93,ChText,,0000,0000,0000,,我只是想恭喜你偷了金字塔
+Dialogue: 0,0:14:01.99,0:14:03.40,ChText,,0000,0000,0000,,是你干的 是吧?
+Dialogue: 0,0:14:03.70,0:14:07.27,ChText,,0000,0000,0000,,还是另外一个成功的混混干的?
+Dialogue: 0,0:14:08.41,0:14:11.15,ChText,,0000,0000,0000,,妈 告诉你 我将要做
+Dialogue: 0,0:14:11.25,0:14:13.99,ChText,,0000,0000,0000,,一件非常非常大和重要的计划
+Dialogue: 0,0:14:14.37,0:14:17.16,ChText,,0000,0000,0000,,如果你知道了一定会感到很骄傲
+Dialogue: 0,0:14:18.67,0:14:21.87,ChText,,0000,0000,0000,,祝你好运 我要走了
+Dialogue: 0,0:15:02.09,0:15:03.12,ChText,,0000,0000,0000,,(恶魔银行)
+Dialogue: 0,0:15:30.24,0:15:32.31,ChText,,0000,0000,0000,,Gru 我约了Perkins先生
+Dialogue: 0,0:15:32.74,0:15:34.81,ChText,,0000,0000,0000,,好的 请坐
+Dialogue: 0,0:15:46.42,0:15:48.79,ChText,,0000,0000,0000,,这是人类的一小步
+Dialogue: 0,0:15:51.72,0:15:53.42,ChText,,0000,0000,0000,,全人类的一大步
+Dialogue: 0,0:15:53.55,0:15:56.29,ChText,,0000,0000,0000,,妈 我有一天也要上月球
+Dialogue: 0,0:15:56.93,0:15:59.25,ChText,,0000,0000,0000,,儿子 来不及了
+Dialogue: 0,0:15:59.60,0:16:02.05,ChText,,0000,0000,0000,,美国宇航局不再送猴子到那儿做实验了
+Dialogue: 0,0:16:19.28,0:16:23.44,ChText,,0000,0000,0000,,我正在申请一个新的坏人贷款\N用Vector这个名字
+Dialogue: 0,0:16:28.08,0:16:29.57,ChText,,0000,0000,0000,,这是个数学术语
+Dialogue: 0,0:16:29.67,0:16:34.16,ChText,,0000,0000,0000,,表示方向和数量
+Dialogue: 0,0:16:38.14,0:16:40.17,ChText,,0000,0000,0000,,Vector 那就是我
+Dialogue: 0,0:16:40.26,0:16:45.50,ChText,,0000,0000,0000,,因为我犯的罪都是有来头的
+Dialogue: 0,0:16:49.40,0:16:51.01,ChText,,0000,0000,0000,,看看我的新武器
+Dialogue: 0,0:16:51.11,0:16:53.35,ChText,,0000,0000,0000,,水虎鱼枪 酷!
+Dialogue: 0,0:16:53.44,0:16:57.19,ChText,,0000,0000,0000,,以前有看到过吗\N你肯定没看过 我发明的
+Dialogue: 0,0:17:00.41,0:17:04.65,ChText,,0000,0000,0000,,糟糕 有时候把鱼塞回枪膛很难...
+Dialogue: 0,0:17:04.74,0:17:07.19,ChText,,0000,0000,0000,,Gru先生 Perkins先生现在可以见你了
+Dialogue: 0,0:17:08.21,0:17:09.39,ChText,,0000,0000,0000,,所以 我要的
+Dialogue: 0,0:17:09.50,0:17:12.53,ChText,,0000,0000,0000,,就是从银行借钱造一架火箭
+Dialogue: 0,0:17:12.63,0:17:15.58,ChText,,0000,0000,0000,,- 然后 月亮就是我们的了\N- 哇
+Dialogue: 0,0:17:16.46,0:17:18.33,ChText,,0000,0000,0000,,嗯 陈述得非常好
+Dialogue: 0,0:17:18.42,0:17:20.71,ChText,,0000,0000,0000,,我希望可以看一下这个收缩射线
+Dialogue: 0,0:17:20.80,0:17:24.88,ChText,,0000,0000,0000,,没问题 我很快就会有了
+Dialogue: 0,0:17:25.97,0:17:27.92,ChText,,0000,0000,0000,,你还没有?
+Dialogue: 0,0:17:28.02,0:17:31.67,ChText,,0000,0000,0000,,你这样也有脸向银行借钱?
+Dialogue: 0,0:17:32.73,0:17:34.26,ChText,,0000,0000,0000,,显然易见的
+Dialogue: 0,0:17:34.36,0:17:38.68,ChText,,0000,0000,0000,,你知道这间银行已经投资\N在你身上多少资金了吗 Gru
+Dialogue: 0,0:17:39.74,0:17:44.35,ChText,,0000,0000,0000,,你有什么阴谋坏事做了是赚钱的
+Dialogue: 0,0:17:45.20,0:17:49.03,ChText,,0000,0000,0000,,我怎么投?  比方说这个苹果是你
+Dialogue: 0,0:17:49.58,0:17:52.06,ChText,,0000,0000,0000,,如果我们不将借出去的钱拿回来
+Dialogue: 0,0:17:53.92,0:17:55.62,ChText,,0000,0000,0000,,知道后果了吗
+Dialogue: 0,0:17:57.04,0:18:00.62,ChText,,0000,0000,0000,,Gru 我要说的是\N新坏人不断涌现
+Dialogue: 0,0:18:00.92,0:18:03.75,ChText,,0000,0000,0000,,他们比你年轻 比你饥饿
+Dialogue: 0,0:18:03.84,0:18:05.87,ChText,,0000,0000,0000,,比你年轻
+Dialogue: 0,0:18:05.97,0:18:08.25,ChText,,0000,0000,0000,,象那边的小男孩叫Vector
+Dialogue: 0,0:18:08.35,0:18:09.92,ChText,,0000,0000,0000,,他刚偷走了金字塔
+Dialogue: 0,0:18:14.48,0:18:16.55,ChText,,0000,0000,0000,,了解 了解
+Dialogue: 0,0:18:17.90,0:18:20.57,ChText,,0000,0000,0000,,所以 谈到借钱造火箭...
+Dialogue: 0,0:18:20.65,0:18:23.64,ChText,,0000,0000,0000,,先把收缩射线弄到手 我们再谈吧
+Dialogue: 0,0:19:53.45,0:19:54.69,ChText,,0000,0000,0000,,白痴
+Dialogue: 0,0:19:59.74,0:20:01.07,ChText,,0000,0000,0000,,白痴
+Dialogue: 0,0:20:08.00,0:20:09.27,ChText,,0000,0000,0000,,我们拿到了
+Dialogue: 0,0:20:16.34,0:20:17.45,ChText,,0000,0000,0000,,什么
+Dialogue: 0,0:20:17.55,0:20:20.34,ChText,,0000,0000,0000,,嗨 嗨 嗨
+Dialogue: 0,0:20:22.06,0:20:23.08,ChText,,0000,0000,0000,,不 不 不
+Dialogue: 0,0:20:26.65,0:20:27.80,ChText,,0000,0000,0000,,你
+Dialogue: 0,0:20:30.73,0:20:34.56,ChText,,0000,0000,0000,,在你冰冻别人的脑袋前你要三思
+Dialogue: 0,0:20:34.65,0:20:36.43,ChText,,0000,0000,0000,,再会 Gru
+Dialogue: 0,0:20:38.16,0:20:40.44,ChText,,0000,0000,0000,,快 不能让他跑了
+Dialogue: 0,0:20:48.25,0:20:49.95,ChText,,0000,0000,0000,,高一点 高一点
+Dialogue: 0,0:20:50.83,0:20:52.78,ChText,,0000,0000,0000,,开火 开火
+Dialogue: 0,0:21:01.43,0:21:02.45,ChText,,0000,0000,0000,,没打到我
+Dialogue: 0,0:21:02.55,0:21:04.59,ChText,,0000,0000,0000,,哥拼了
+Dialogue: 0,0:21:17.78,0:21:19.14,ChText,,0000,0000,0000,,拿着吧
+Dialogue: 0,0:21:21.15,0:21:22.81,ChText,,0000,0000,0000,,真可爱
+Dialogue: 0,0:21:24.07,0:21:25.61,ChText,,0000,0000,0000,,看到你了
+Dialogue: 0,0:21:26.20,0:21:28.65,ChText,,0000,0000,0000,,就像把糖果从...
+Dialogue: 0,0:21:28.75,0:21:29.82,ChText,,0000,0000,0000,,不是吧
+Dialogue: 0,0:21:31.29,0:21:32.82,ChText,,0000,0000,0000,,嗨 Gru
+Dialogue: 0,0:21:32.92,0:21:36.03,ChText,,0000,0000,0000,,试一下这个
+Dialogue: 0,0:21:37.50,0:21:40.20,ChText,,0000,0000,0000,,真奇怪 发生什么。。。
+Dialogue: 0,0:21:44.97,0:21:47.17,ChText,,0000,0000,0000,,这是幽闭恐怖症
+Dialogue: 0,0:21:48.56,0:21:49.96,ChText,,0000,0000,0000,,不 不是的
+Dialogue: 0,0:21:55.81,0:21:58.21,ChText,,0000,0000,0000,,太小了  这个太小了
+Dialogue: 0,0:22:04.61,0:22:06.35,ChText,,0000,0000,0000,,我讨厌那家伙
+Dialogue: 0,0:22:13.16,0:22:17.20,ChText,,0000,0000,0000,,请看护着我们 保佑我们睡个好觉
+Dialogue: 0,0:22:17.29,0:22:21.33,ChText,,0000,0000,0000,,还有保佑我们睡着的时候虫子\N不会爬进我们的耳朵
+Dialogue: 0,0:22:21.42,0:22:23.66,ChText,,0000,0000,0000,,和在我们的脑袋里下蛋
+Dialogue: 0,0:22:24.05,0:22:26.66,ChText,,0000,0000,0000,,谢谢你的想象力 Edith
+Dialogue: 0,0:22:27.30,0:22:30.04,ChText,,0000,0000,0000,,请保佑我们很快就会被领养
+Dialogue: 0,0:22:30.14,0:22:33.04,ChText,,0000,0000,0000,,新爸爸妈妈对我们很好
+Dialogue: 0,0:22:33.14,0:22:35.05,ChText,,0000,0000,0000,,还有一只独角兽宠物
+Dialogue: 0,0:22:35.48,0:22:36.66,ChText,,0000,0000,0000,,阿门
+Dialogue: 0,0:22:36.77,0:22:38.51,ChText,,0000,0000,0000,,- 阿门\N- 阿门
+Dialogue: 0,0:22:43.36,0:22:46.68,ChText,,0000,0000,0000,,独角兽 我最喜欢他们了\N独角兽 我也喜欢他们
+Dialogue: 0,0:22:46.78,0:22:50.47,ChText,,0000,0000,0000,,独角兽 我爱他们
+Dialogue: 0,0:22:51.16,0:22:54.19,ChText,,0000,0000,0000,,独角兽 我可以养一只
+Dialogue: 0,0:22:54.54,0:22:56.65,ChText,,0000,0000,0000,,如果真有这东西
+Dialogue: 0,0:22:56.75,0:22:57.85,ChText,,0000,0000,0000,,他们是真的
+Dialogue: 0,0:22:57.96,0:23:00.49,ChText,,0000,0000,0000,,我买了一只我就可以养它了
+Dialogue: 0,0:23:00.92,0:23:03.78,ChText,,0000,0000,0000,,它爱我 我爱它
+Dialogue: 0,0:24:20.58,0:24:22.94,ChText,,0000,0000,0000,,你...
+Dialogue: 0,0:24:52.81,0:24:54.64,ChText,,0000,0000,0000,,祝你好运 小姑娘
+Dialogue: 0,0:24:59.82,0:25:02.02,ChText,,0000,0000,0000,,哇 酷
+Dialogue: 0,0:25:03.12,0:25:07.15,ChText,,0000,0000,0000,,我们是女孩之家的孩子 我们是孤儿
+Dialogue: 0,0:25:07.24,0:25:09.15,ChText,,0000,0000,0000,,关我什么事 走开
+Dialogue: 0,0:25:09.29,0:25:12.53,ChText,,0000,0000,0000,,我们在卖饼干做慈善 为了孩子的未来
+Dialogue: 0,0:25:12.62,0:25:15.45,ChText,,0000,0000,0000,,- 等等 你们有没有椰子果仁?\N- 有啊
+Dialogue: 0,0:25:37.61,0:25:39.72,ChText,,0000,0000,0000,,灯泡
+Dialogue: 0,0:25:42.82,0:25:44.14,ChText,,0000,0000,0000,,Nefario博士
+Dialogue: 0,0:25:44.24,0:25:47.48,ChText,,0000,0000,0000,,我需要一打的乔装成饼干的小机器人
+Dialogue: 0,0:25:47.57,0:25:49.52,ChText,,0000,0000,0000,,- 什么\N- 饼干机器人
+Dialogue: 0,0:25:49.62,0:25:52.02,ChText,,0000,0000,0000,,- 这是谁?\N- 算了
+Dialogue: 0,0:25:58.67,0:26:01.45,ChText,,0000,0000,0000,,嗯 你已经通过我们的背景调查\NGru医生
+Dialogue: 0,0:26:06.93,0:26:09.17,ChText,,0000,0000,0000,,我看到你写了一张清单
+Dialogue: 0,0:26:09.26,0:26:13.01,ChText,,0000,0000,0000,,列出一些你的个人成就
+Dialogue: 0,0:26:13.35,0:26:15.88,ChText,,0000,0000,0000,,谢谢 我很喜欢读书
+Dialogue: 0,0:26:23.69,0:26:26.14,ChText,,0000,0000,0000,,我也留意到你被授予过勋章
+Dialogue: 0,0:26:26.24,0:26:28.35,ChText,,0000,0000,0000,,和骑士头衔
+Dialogue: 0,0:26:30.74,0:26:32.23,ChText,,0000,0000,0000,,- 我 我 我\N- 我 我 我
+Dialogue: 0,0:26:32.33,0:26:33.57,ChText,,0000,0000,0000,,Kevin?
+Dialogue: 0,0:26:35.29,0:26:37.40,ChText,,0000,0000,0000,,你有自己的烹饪节目
+Dialogue: 0,0:26:37.50,0:26:41.41,ChText,,0000,0000,0000,,你还可以三十秒不呼吸?
+Dialogue: 0,0:26:41.50,0:26:43.20,ChText,,0000,0000,0000,,没什么了不起的
+Dialogue: 0,0:26:45.46,0:26:46.65,ChText,,0000,0000,0000,,傻瓜
+Dialogue: 0,0:26:48.72,0:26:51.50,ChText,,0000,0000,0000,,揍它 揍它...
+Dialogue: 0,0:26:53.43,0:26:56.42,ChText,,0000,0000,0000,,以什么的名义...什么
+Dialogue: 0,0:26:57.02,0:27:00.22,ChText,,0000,0000,0000,,是这样的
+Dialogue: 0,0:27:00.31,0:27:05.22,ChText,,0000,0000,0000,,生活显得很孤单自从我的太太
+Dialogue: 0,0:27:07.11,0:27:09.59,ChText,,0000,0000,0000,,Debbie 不在了
+Dialogue: 0,0:27:09.69,0:27:12.77,ChText,,0000,0000,0000,,就像我的心是一颗牙
+Dialogue: 0,0:27:13.45,0:27:18.32,ChText,,0000,0000,0000,,然后长了蛀牙 只能由孩子们来填补牙洞
+Dialogue: 0,0:27:18.74,0:27:19.90,ChText,,0000,0000,0000,,对不起
+Dialogue: 0,0:27:24.29,0:27:27.45,ChText,,0000,0000,0000,,你是位漂亮的女士\N你讲西班牙语吗
+Dialogue: 0,0:27:27.96,0:27:30.36,ChText,,0000,0000,0000,,我看上去像会讲西班牙语吗
+Dialogue: 0,0:27:32.26,0:27:35.79,ChText,,0000,0000,0000,,你的脸太美了
+Dialogue: 0,0:27:39.31,0:27:41.79,ChText,,0000,0000,0000,,谢谢
+Dialogue: 0,0:27:43.31,0:27:47.00,ChText,,0000,0000,0000,,我们可以继续领养手续了吗
+Dialogue: 0,0:27:47.10,0:27:48.68,ChText,,0000,0000,0000,,太激动了
+Dialogue: 0,0:27:50.61,0:27:53.98,ChText,,0000,0000,0000,,请叫Margo Edith和Agnes到大厅来
+Dialogue: 0,0:27:57.03,0:27:58.73,ChText,,0000,0000,0000,,我打赌妈妈一定很漂亮
+Dialogue: 0,0:27:58.82,0:28:00.94,ChText,,0000,0000,0000,,我说爸爸的眼睛会闪闪光
+Dialogue: 0,0:28:01.03,0:28:03.82,ChText,,0000,0000,0000,,他们的房子一定都是用\NGummi Bear糖做的
+Dialogue: 0,0:28:04.83,0:28:07.11,ChText,,0000,0000,0000,,我只是说说而已
+Dialogue: 0,0:28:08.21,0:28:11.49,ChText,,0000,0000,0000,,我的毛毛虫永远也不会变成蝴蝶了
+Dialogue: 0,0:28:11.59,0:28:13.20,ChText,,0000,0000,0000,,那是一个Cheeto(芝士做的零食)
+Dialogue: 0,0:28:16.34,0:28:19.83,ChText,,0000,0000,0000,,Debbie真是幸运
+Dialogue: 0,0:28:22.26,0:28:23.67,ChText,,0000,0000,0000,,谁是Debbie?
+Dialogue: 0,0:28:23.77,0:28:25.17,ChText,,0000,0000,0000,,你太太
+Dialogue: 0,0:28:25.64,0:28:27.13,ChText,,0000,0000,0000,,嗨 姑娘们
+Dialogue: 0,0:28:37.19,0:28:39.98,ChText,,0000,0000,0000,,姑娘们 给你们介绍这是Gru先生
+Dialogue: 0,0:28:41.36,0:28:43.40,ChText,,0000,0000,0000,,他准备收养你们
+Dialogue: 0,0:28:43.49,0:28:46.03,ChText,,0000,0000,0000,,他是个牙医
+Dialogue: 0,0:28:53.46,0:28:57.83,ChText,,0000,0000,0000,,嗨 我是Margo 这是Edith
+Dialogue: 0,0:28:58.38,0:29:00.21,ChText,,0000,0000,0000,,那是Agnes
+Dialogue: 0,0:29:00.30,0:29:02.25,ChText,,0000,0000,0000,,抓住你的腿了 抓住你的腿了
+Dialogue: 0,0:29:02.34,0:29:05.42,ChText,,0000,0000,0000,,好了 够了 小姑娘
+Dialogue: 0,0:29:05.51,0:29:07.84,ChText,,0000,0000,0000,,- 放开我的腿 快点 放手\N- 高一点
+Dialogue: 0,0:29:07.93,0:29:10.21,ChText,,0000,0000,0000,,- 再高一点\N- 快放手吧
+Dialogue: 0,0:29:10.52,0:29:13.68,ChText,,0000,0000,0000,,怎么让她们撒手呢\N要发命令么
+Dialogue: 0,0:29:13.77,0:29:15.72,ChText,,0000,0000,0000,,还是有什么不粘手的喷剂
+Dialogue: 0,0:29:17.36,0:29:18.89,ChText,,0000,0000,0000,,难道要用撬棍
+Dialogue: 0,0:29:20.69,0:29:23.36,ChText,,0000,0000,0000,,好了 孩子们 咱们走吧
+Dialogue: 0,0:29:51.01,0:29:53.00,ChText,,0000,0000,0000,,酷毙了
+Dialogue: 0,0:29:54.31,0:29:56.26,ChText,,0000,0000,0000,,你看什么呢
+Dialogue: 0,0:29:56.35,0:29:57.59,ChText,,0000,0000,0000,,砰砰
+Dialogue: 0,0:29:59.81,0:30:01.80,ChText,,0000,0000,0000,,你被缩小啦 小小漱口水
+Dialogue: 0,0:30:02.44,0:30:03.46,ChText,,0000,0000,0000,,受死吧
+Dialogue: 0,0:30:04.61,0:30:06.39,ChText,,0000,0000,0000,,你被缩小啦
+Dialogue: 0,0:30:07.24,0:30:08.43,ChText,,0000,0000,0000,,你好
+Dialogue: 0,0:30:09.28,0:30:11.27,ChText,,0000,0000,0000,,我拿到缩小射线枪啦 那是当然
+Dialogue: 0,0:30:12.49,0:30:14.97,ChText,,0000,0000,0000,,没 我没拿它玩
+Dialogue: 0,0:30:15.08,0:30:16.57,ChText,,0000,0000,0000,,Gru
+Dialogue: 0,0:30:18.37,0:30:20.20,ChText,,0000,0000,0000,,别跟我开玩笑了
+Dialogue: 0,0:30:20.71,0:30:23.24,ChText,,0000,0000,0000,,顺便说一句 他才偷不了月球呢
+Dialogue: 0,0:30:23.34,0:30:26.37,ChText,,0000,0000,0000,,顺便说第二句 等我好好教训他
+Dialogue: 0,0:30:26.46,0:30:28.00,ChText,,0000,0000,0000,,他会向我求饶的
+Dialogue: 0,0:30:30.09,0:30:31.28,ChText,,0000,0000,0000,,好了 拜拜
+Dialogue: 0,0:30:33.30,0:30:37.38,ChText,,0000,0000,0000,,瞧你 小小的马桶给小小的孩子用
+Dialogue: 0,0:30:38.81,0:30:40.63,ChText,,0000,0000,0000,,去你的 小马桶
+Dialogue: 0,0:30:45.32,0:30:47.39,ChText,,0000,0000,0000,,好啦 我们到了
+Dialogue: 0,0:30:47.49,0:30:49.02,ChText,,0000,0000,0000,,到家了 甜蜜的家
+Dialogue: 0,0:30:51.49,0:30:54.40,ChText,,0000,0000,0000,,那么 这就是 你的家喽
+Dialogue: 0,0:30:55.20,0:30:56.47,ChText,,0000,0000,0000,,等一下
+Dialogue: 0,0:30:56.58,0:30:59.32,ChText,,0000,0000,0000,,你就是那个假装自己是答录机的家伙
+Dialogue: 0,0:30:59.41,0:31:01.40,ChText,,0000,0000,0000,,不 你搞错了
+Dialogue: 0,0:31:14.97,0:31:16.24,ChText,,0000,0000,0000,,我可以握住你的手吗
+Dialogue: 0,0:31:17.05,0:31:18.08,ChText,,0000,0000,0000,,不行
+Dialogue: 0,0:31:28.36,0:31:33.22,ChText,,0000,0000,0000,,我们被一个光头的家伙收养的时候\N我还以为我们会像Annie日记里的主角呢
+Dialogue: 0,0:31:42.16,0:31:43.43,ChText,,0000,0000,0000,,不 喂
+Dialogue: 0,0:31:47.54,0:31:50.70,ChText,,0000,0000,0000,,Kyle 她们是客人 不是玩具
+Dialogue: 0,0:31:50.80,0:31:53.41,ChText,,0000,0000,0000,,姑娘们 这是Kyle 我的
+Dialogue: 0,0:31:53.51,0:31:54.53,ChText,,0000,0000,0000,,狗
+Dialogue: 0,0:31:57.38,0:31:58.46,ChText,,0000,0000,0000,,毛毛狗狗
+Dialogue: 0,0:32:03.89,0:32:05.05,ChText,,0000,0000,0000,,它是什么品种
+Dialogue: 0,0:32:05.14,0:32:07.76,ChText,,0000,0000,0000,,他应该是 我也不知道
+Dialogue: 0,0:32:08.65,0:32:11.85,ChText,,0000,0000,0000,,你真觉得这里适合住小孩子吗
+Dialogue: 0,0:32:12.36,0:32:14.01,ChText,,0000,0000,0000,,看来不是啊
+Dialogue: 0,0:32:15.07,0:32:17.43,ChText,,0000,0000,0000,,不 不 别去那儿
+Dialogue: 0,0:32:17.53,0:32:19.06,ChText,,0000,0000,0000,,这个经不起折腾的
+Dialogue: 0,0:32:21.66,0:32:25.11,ChText,,0000,0000,0000,,这个 只有2个孩子\N计划应该还是能够进行的吧
+Dialogue: 0,0:32:25.20,0:32:27.99,ChText,,0000,0000,0000,,嘿 这里好黑
+Dialogue: 0,0:32:30.87,0:32:33.20,ChText,,0000,0000,0000,,它把我的果汁盒戳了个洞
+Dialogue: 0,0:32:38.17,0:32:39.41,ChText,,0000,0000,0000,,你们瞧
+Dialogue: 0,0:32:39.51,0:32:43.00,ChText,,0000,0000,0000,,我已经准备好一个孩子可能需要的一切了
+Dialogue: 0,0:32:44.89,0:32:45.96,ChText,,0000,0000,0000,,好啦
+Dialogue: 0,0:32:47.10,0:32:49.46,ChText,,0000,0000,0000,,好 我刚刚说什么来着  嘿
+Dialogue: 0,0:32:50.69,0:32:51.71,ChText,,0000,0000,0000,,有人把这个打碎了
+Dialogue: 0,0:32:52.19,0:32:55.84,ChText,,0000,0000,0000,,好吧 好吧\N看来  我们需要定些规矩
+Dialogue: 0,0:32:55.94,0:32:57.76,ChText,,0000,0000,0000,,第一条
+Dialogue: 0,0:32:57.86,0:33:00.42,ChText,,0000,0000,0000,,不准摸任何东西
+Dialogue: 0,0:33:00.53,0:33:02.35,ChText,,0000,0000,0000,,那地板呢
+Dialogue: 0,0:33:02.78,0:33:04.81,ChText,,0000,0000,0000,,嗯   那个可以摸
+Dialogue: 0,0:33:04.91,0:33:06.27,ChText,,0000,0000,0000,,那空气呢
+Dialogue: 0,0:33:06.37,0:33:08.44,ChText,,0000,0000,0000,,嗯   那个也可以摸
+Dialogue: 0,0:33:08.54,0:33:09.56,ChText,,0000,0000,0000,,那这个呢
+Dialogue: 0,0:33:12.75,0:33:14.70,ChText,,0000,0000,0000,,- 那个你哪儿来的\N- 我找到的
+Dialogue: 0,0:33:14.79,0:33:18.57,ChText,,0000,0000,0000,,好吧  规矩二\N我工作的时候你们不能烦我
+Dialogue: 0,0:33:18.67,0:33:20.54,ChText,,0000,0000,0000,,规矩三
+Dialogue: 0,0:33:20.63,0:33:25.08,ChText,,0000,0000,0000,,不能哭 抱怨 大笑或者傻笑
+Dialogue: 0,0:33:25.43,0:33:27.79,ChText,,0000,0000,0000,,还有打喷嚏 打嗝和放屁
+Dialogue: 0,0:33:28.47,0:33:32.80,ChText,,0000,0000,0000,,反正就是一丁点烦人的声音都不能有 知道吗
+Dialogue: 0,0:33:32.89,0:33:35.13,ChText,,0000,0000,0000,,这个也算烦人吗
+Dialogue: 0,0:33:38.48,0:33:39.85,ChText,,0000,0000,0000,,很烦人
+Dialogue: 0,0:33:42.15,0:33:44.71,ChText,,0000,0000,0000,,6个小时后见
+Dialogue: 0,0:33:46.82,0:33:50.73,ChText,,0000,0000,0000,,好了 别担心 会没事的
+Dialogue: 0,0:33:51.37,0:33:55.74,ChText,,0000,0000,0000,,我们会在这儿过得很开心的\N对吧 Agnes
+Dialogue: 0,0:34:24.32,0:34:27.31,ChText,,0000,0000,0000,,请问 这些是什么
+Dialogue: 0,0:34:28.24,0:34:31.27,ChText,,0000,0000,0000,,12个跳舞机器人 会跳舞的哦
+Dialogue: 0,0:34:32.78,0:34:34.81,ChText,,0000,0000,0000,,看这个  看我的
+Dialogue: 0,0:34:38.70,0:34:41.37,ChText,,0000,0000,0000,,饼干机器人  我说的是饼干机器人
+Dialogue: 0,0:34:41.96,0:34:44.52,ChText,,0000,0000,0000,,为什么你  这么老
+Dialogue: 0,0:34:47.00,0:34:48.70,ChText,,0000,0000,0000,,好的 我这就开始做
+Dialogue: 0,0:34:49.55,0:34:50.87,ChText,,0000,0000,0000,,有人么
+Dialogue: 0,0:35:06.56,0:35:07.80,ChText,,0000,0000,0000,,电视
+Dialogue: 0,0:35:27.67,0:35:28.85,ChText,,0000,0000,0000,,那是什么
+Dialogue: 0,0:35:29.09,0:35:31.48,ChText,,0000,0000,0000,,- 看那个\N- 酷毙了
+Dialogue: 0,0:35:32.34,0:35:33.61,ChText,,0000,0000,0000,,来吧
+Dialogue: 0,0:35:34.13,0:35:36.41,ChText,,0000,0000,0000,,我觉得他不牙医
+Dialogue: 0,0:35:50.27,0:35:52.10,ChText,,0000,0000,0000,,为这个我们已经干了好一段时间了
+Dialogue: 0,0:35:52.19,0:35:54.93,ChText,,0000,0000,0000,,这是反重力血清
+Dialogue: 0,0:36:00.66,0:36:04.07,ChText,,0000,0000,0000,,我本想着关上那个的\N他会没事的 我敢肯定
+Dialogue: 0,0:36:04.16,0:36:07.19,ChText,,0000,0000,0000,,-药效会消失么\N-到现在为止
+Dialogue: 0,0:36:07.29,0:36:09.28,ChText,,0000,0000,0000,,没有 没消失
+Dialogue: 0,0:36:10.83,0:36:13.91,ChText,,0000,0000,0000,,而这个 就是你要的新武器啦
+Dialogue: 0,0:36:17.59,0:36:18.61,ChText,,0000,0000,0000,,不 不
+Dialogue: 0,0:36:18.72,0:36:22.54,ChText,,0000,0000,0000,,我说的是“飞镖手枪” 不是…\N好吧 就这样吧
+Dialogue: 0,0:36:23.14,0:36:25.88,ChText,,0000,0000,0000,,是吧 难怪了 我还在想
+Dialogue: 0,0:36:25.97,0:36:28.59,ChText,,0000,0000,0000,,这个东西你要什么时候用嘞
+Dialogue: 0,0:36:28.68,0:36:30.13,ChText,,0000,0000,0000,,不过呢 这个
+Dialogue: 0,0:36:30.23,0:36:33.64,ChText,,0000,0000,0000,,我真正想让你看的是这个
+Dialogue: 0,0:36:38.40,0:36:41.52,ChText,,0000,0000,0000,,这才是饼干机器人嘛
+Dialogue: 0,0:36:42.66,0:36:45.90,ChText,,0000,0000,0000,,啦啦啦啦  我爱独角兽
+Dialogue: 0,0:36:45.99,0:36:49.65,ChText,,0000,0000,0000,,你们在这儿干什么\N我不是让你们待在厨房吗
+Dialogue: 0,0:36:49.75,0:36:52.41,ChText,,0000,0000,0000,,我们觉得无聊嘛\N这是哪儿
+Dialogue: 0,0:36:52.50,0:36:54.24,ChText,,0000,0000,0000,,这个能喝么
+Dialogue: 0,0:36:54.33,0:36:56.78,ChText,,0000,0000,0000,,你想爆炸么
+Dialogue: 0,0:36:58.42,0:36:59.44,ChText,,0000,0000,0000,,Gru
+Dialogue: 0,0:36:59.55,0:37:01.50,ChText,,0000,0000,0000,,给我回厨房去
+Dialogue: 0,0:37:01.59,0:37:03.71,ChText,,0000,0000,0000,,- 你能跟我们玩么\N- 不行
+Dialogue: 0,0:37:04.13,0:37:06.33,ChText,,0000,0000,0000,,- 为什么\N- 因为我很忙
+Dialogue: 0,0:37:06.43,0:37:08.00,ChText,,0000,0000,0000,,忙什么呢
+Dialogue: 0,0:37:09.43,0:37:11.00,ChText,,0000,0000,0000,,好吧好吧 被你发现了
+Dialogue: 0,0:37:11.10,0:37:13.84,ChText,,0000,0000,0000,,做牙医只是我的一个爱好
+Dialogue: 0,0:37:14.44,0:37:16.83,ChText,,0000,0000,0000,,在真实生活中 我是个间谍
+Dialogue: 0,0:37:17.36,0:37:20.51,ChText,,0000,0000,0000,,这个是最高机密哦\N你可不能告诉任何人
+Dialogue: 0,0:37:20.61,0:37:22.68,ChText,,0000,0000,0000,,- 因为如果你说出去的话\N- 这个是干什么用的
+Dialogue: 0,0:37:26.57,0:37:27.68,ChText,,0000,0000,0000,,嘿
+Dialogue: 0,0:37:28.53,0:37:29.98,ChText,,0000,0000,0000,,我的独角兽
+Dialogue: 0,0:37:30.33,0:37:31.98,ChText,,0000,0000,0000,,你得修好它
+Dialogue: 0,0:37:32.08,0:37:37.36,ChText,,0000,0000,0000,,修好 听着 它已经被分解了\N意思就是说 它没法修了
+Dialogue: 0,0:37:42.67,0:37:44.83,ChText,,0000,0000,0000,,她吓到我了 她在干嘛
+Dialogue: 0,0:37:44.92,0:37:48.08,ChText,,0000,0000,0000,,在得到一个新玩具之前她会一直憋着气
+Dialogue: 0,0:37:49.47,0:37:52.84,ChText,,0000,0000,0000,,那就是个玩具 别闹了
+Dialogue: 0,0:37:55.14,0:37:57.26,ChText,,0000,0000,0000,,好吧好吧 我来修
+Dialogue: 0,0:37:57.68,0:37:59.63,ChText,,0000,0000,0000,,Tim    Mark    Phil
+Dialogue: 0,0:38:02.32,0:38:03.56,ChText,,0000,0000,0000,,这次的任务很重要哦
+Dialogue: 0,0:38:03.65,0:38:07.14,ChText,,0000,0000,0000,,你们要给小女孩找个新的独角兽玩具
+Dialogue: 0,0:38:13.20,0:38:15.06,ChText,,0000,0000,0000,,嗨 嗨 嗨 玩具
+Dialogue: 0,0:38:16.25,0:38:18.36,ChText,,0000,0000,0000,,赶紧的
+Dialogue: 0,0:38:18.46,0:38:19.61,ChText,,0000,0000,0000,,它们是什么
+Dialogue: 0,0:38:19.71,0:38:22.86,ChText,,0000,0000,0000,,他们是我的堂弟
+Dialogue: 0,0:38:23.71,0:38:25.24,ChText,,0000,0000,0000,,Jerry  Stuart
+Dialogue: 0,0:38:26.34,0:38:29.33,ChText,,0000,0000,0000,,盯着他们  让他们离我远点
+Dialogue: 0,0:38:46.61,0:38:48.97,ChText,,0000,0000,0000,,- 哇\N- 哇
+Dialogue: 0,0:39:54.05,0:39:55.20,ChText,,0000,0000,0000,,那是你堂兄的主意
+Dialogue: 0,0:39:55.55,0:39:56.70,ChText,,0000,0000,0000,,什么
+Dialogue: 0,0:39:57.09,0:39:58.58,ChText,,0000,0000,0000,,好了 要睡觉了
+Dialogue: 0,0:40:01.89,0:40:03.33,ChText,,0000,0000,0000,,你倆不用啦
+Dialogue: 0,0:40:04.89,0:40:09.59,ChText,,0000,0000,0000,,好的 晚安\N都躺好了 好梦
+Dialogue: 0,0:40:11.52,0:40:13.34,ChText,,0000,0000,0000,,告诉你
+Dialogue: 0,0:40:13.44,0:40:15.39,ChText,,0000,0000,0000,,你绝不可能成为我爸爸
+Dialogue: 0,0:40:15.98,0:40:18.06,ChText,,0000,0000,0000,,没关系 我受得住
+Dialogue: 0,0:40:19.74,0:40:21.56,ChText,,0000,0000,0000,,这些床是炸弹做的么
+Dialogue: 0,0:40:22.11,0:40:26.27,ChText,,0000,0000,0000,,是的 但是它们很旧 不大可能爆炸
+Dialogue: 0,0:40:27.20,0:40:29.23,ChText,,0000,0000,0000,,不过最好不要乱翻身
+Dialogue: 0,0:40:29.33,0:40:30.43,ChText,,0000,0000,0000,,酷毙了
+Dialogue: 0,0:40:31.41,0:40:34.57,ChText,,0000,0000,0000,,- 能给我们读睡前故事吗\N- 不行
+Dialogue: 0,0:40:34.67,0:40:37.74,ChText,,0000,0000,0000,,可不听睡前故事 我们睡不着
+Dialogue: 0,0:40:37.84,0:40:41.41,ChText,,0000,0000,0000,,这个 看来今晚是个漫漫长夜了
+Dialogue: 0,0:40:42.26,0:40:45.88,ChText,,0000,0000,0000,,好吧  晚安 好好睡吧\N别让床虱咬到了
+Dialogue: 0,0:40:45.97,0:40:49.83,ChText,,0000,0000,0000,,因为这里真的有成千上万的床虱哦
+Dialogue: 0,0:40:50.93,0:40:54.05,ChText,,0000,0000,0000,,在衣橱里搞不好还有别的什么东西呢
+Dialogue: 0,0:40:55.65,0:40:57.80,ChText,,0000,0000,0000,,他只是开玩笑的 Agnes
+Dialogue: 0,0:41:20.04,0:41:21.95,ChText,,0000,0000,0000,,真漂亮
+Dialogue: 0,0:41:50.36,0:41:52.81,ChText,,0000,0000,0000,,姑娘们 我们走吧
+Dialogue: 0,0:41:52.91,0:41:55.73,ChText,,0000,0000,0000,,送饼干的时间到了
+Dialogue: 0,0:41:56.70,0:41:59.37,ChText,,0000,0000,0000,,好吧  但我们得先去上舞蹈课
+Dialogue: 0,0:41:59.46,0:42:02.36,ChText,,0000,0000,0000,,实际上我们今天就不去上舞蹈课啦
+Dialogue: 0,0:42:02.46,0:42:07.00,ChText,,0000,0000,0000,,实际上我们今天不能不去上舞蹈课
+Dialogue: 0,0:42:07.09,0:42:09.08,ChText,,0000,0000,0000,,我们在为一个大的演出准备呢
+Dialogue: 0,0:42:09.17,0:42:12.42,ChText,,0000,0000,0000,,- 我们将会表演天鹅湖的片段\N- 是的 天鹅湖
+Dialogue: 0,0:42:12.51,0:42:14.25,ChText,,0000,0000,0000,,那很好 太好了
+Dialogue: 0,0:42:14.35,0:42:18.42,ChText,,0000,0000,0000,,但是我们要去送饼干 来吧
+Dialogue: 0,0:42:20.60,0:42:21.62,ChText,,0000,0000,0000,,不
+Dialogue: 0,0:42:22.52,0:42:23.54,ChText,,0000,0000,0000,,不去么
+Dialogue: 0,0:42:23.65,0:42:26.85,ChText,,0000,0000,0000,,上完舞蹈课再去送饼干
+Dialogue: 0,0:42:26.94,0:42:28.05,ChText,,0000,0000,0000,,确定么
+Dialogue: 0,0:42:28.15,0:42:31.84,ChText,,0000,0000,0000,,那么 我是不会开车送你们去上舞蹈课的
+Dialogue: 0,0:42:31.95,0:42:37.31,ChText,,0000,0000,0000,,想去的话 你们就做得自己走
+Dialogue: 0,0:42:43.41,0:42:44.69,ChText,,0000,0000,0000,,你们在干嘛
+Dialogue: 0,0:42:44.79,0:42:46.53,ChText,,0000,0000,0000,,走路去上舞蹈课
+Dialogue: 0,0:42:46.63,0:42:48.58,ChText,,0000,0000,0000,,啊 好吧 好
+Dialogue: 0,0:42:48.67,0:42:52.53,ChText,,0000,0000,0000,,继续走啊\N我才不会开车送你们
+Dialogue: 0,0:42:52.63,0:42:53.82,ChText,,0000,0000,0000,,好啊
+Dialogue: 0,0:42:55.30,0:42:57.78,ChText,,0000,0000,0000,,你们小心别把我Gru惹毛啦
+Dialogue: 0,0:42:58.26,0:43:00.29,ChText,,0000,0000,0000,,说真的  我数三下
+Dialogue: 0,0:43:00.39,0:43:02.34,ChText,,0000,0000,0000,,到时候你们最好乖乖坐在车上
+Dialogue: 0,0:43:02.43,0:43:06.05,ChText,,0000,0000,0000,,现在开始 一  二
+Dialogue: 0,0:43:06.15,0:43:09.72,ChText,,0000,0000,0000,,三 四 五
+Dialogue: 0,0:43:09.82,0:43:12.72,ChText,,0000,0000,0000,,抬手 伸臂
+Dialogue: 0,0:43:12.82,0:43:15.38,ChText,,0000,0000,0000,,一 二
+Dialogue: 0,0:43:15.49,0:43:17.60,ChText,,0000,0000,0000,,- 给你\N- 这是什么
+Dialogue: 0,0:43:17.70,0:43:21.23,ChText,,0000,0000,0000,,给你参加舞蹈汇演的门票\N你会来的 是吧
+Dialogue: 0,0:43:21.33,0:43:22.98,ChText,,0000,0000,0000,,当然 当然了
+Dialogue: 0,0:43:23.08,0:43:26.15,ChText,,0000,0000,0000,,我现在坐如针毡
+Dialogue: 0,0:43:26.25,0:43:28.11,ChText,,0000,0000,0000,,拉钩保证
+Dialogue: 0,0:43:29.33,0:43:32.53,ChText,,0000,0000,0000,,哦 好的 拉钩保证
+Dialogue: 0,0:43:45.72,0:43:50.43,ChText,,0000,0000,0000,,好吧 我们的第一个顾客\N是个叫做Vector的人
+Dialogue: 0,0:43:50.52,0:43:52.26,ChText,,0000,0000,0000,,但是他的名字首字母是V
+Dialogue: 0,0:43:52.36,0:43:54.30,ChText,,0000,0000,0000,,你知道的 我们应该从A开始
+Dialogue: 0,0:43:54.40,0:43:56.31,ChText,,0000,0000,0000,,然后是B 接着呢
+Dialogue: 0,0:43:56.40,0:44:01.31,ChText,,0000,0000,0000,,是的 是的 我上过幼儿园\N我很清楚字母表
+Dialogue: 0,0:44:03.95,0:44:06.62,ChText,,0000,0000,0000,,我只是觉得
+Dialogue: 0,0:44:06.70,0:44:10.45,ChText,,0000,0000,0000,,咱们先给Vector先生送
+Dialogue: 0,0:44:10.54,0:44:12.15,ChText,,0000,0000,0000,,没别的
+Dialogue: 0,0:44:15.42,0:44:17.95,ChText,,0000,0000,0000,,快结束了 就快结束了
+Dialogue: 0,0:44:20.05,0:44:24.29,ChText,,0000,0000,0000,,女孩们 欢迎回到Vector-tude的城堡
+Dialogue: 0,0:44:25.30,0:44:27.78,ChText,,0000,0000,0000,,饼干给我带来了么
+Dialogue: 0,0:44:35.52,0:44:37.47,ChText,,0000,0000,0000,,四盒小薄荷糖 两大包乳脂糖
+Dialogue: 0,0:44:37.57,0:44:42.27,ChText,,0000,0000,0000,,两桶黄油奶糖和十五箱椰蓉糖
+Dialogue: 0,0:44:42.36,0:44:45.94,ChText,,0000,0000,0000,,很好 不知有没有第二个人订购那么多饼干
+Dialogue: 0,0:44:46.03,0:44:47.10,ChText,,0000,0000,0000,,应该没有
+Dialogue: 0,0:44:47.20,0:44:49.36,ChText,,0000,0000,0000,,能说出一个比我订购更多饼干的人不
+Dialogue: 0,0:44:49.45,0:44:50.98,ChText,,0000,0000,0000,,一共52块
+Dialogue: 0,0:44:51.58,0:44:52.85,ChText,,0000,0000,0000,,好的
+Dialogue: 0,0:45:00.42,0:45:03.16,ChText,,0000,0000,0000,,七 八 九
+Dialogue: 0,0:45:04.05,0:45:06.61,ChText,,0000,0000,0000,,滴答 我数到哪儿啦
+Dialogue: 0,0:45:06.72,0:45:09.92,ChText,,0000,0000,0000,,七 八 九
+Dialogue: 0,0:45:10.01,0:45:11.79,ChText,,0000,0000,0000,,你为什么穿着睡衣呢
+Dialogue: 0,0:45:12.81,0:45:16.17,ChText,,0000,0000,0000,,这不是睡衣\N这是热身运动服
+Dialogue: 0,0:45:32.87,0:45:35.19,ChText,,0000,0000,0000,,- 你做热身运动干嘛\N- 做事
+Dialogue: 0,0:45:35.29,0:45:36.31,ChText,,0000,0000,0000,,什么事
+Dialogue: 0,0:45:36.41,0:45:38.81,ChText,,0000,0000,0000,,你不懂的超级酷的事
+Dialogue: 0,0:45:38.92,0:45:40.32,ChText,,0000,0000,0000,,比方睡觉么
+Dialogue: 0,0:45:40.42,0:45:43.28,ChText,,0000,0000,0000,,这不是睡衣
+Dialogue: 0,0:45:55.14,0:45:58.34,ChText,,0000,0000,0000,,给你 52块大洋
+Dialogue: 0,0:46:16.45,0:46:17.90,ChText,,0000,0000,0000,,拜拜
+Dialogue: 0,0:47:11.84,0:47:13.20,ChText,,0000,0000,0000,,拜托
+Dialogue: 0,0:47:35.32,0:47:37.10,ChText,,0000,0000,0000,,搞什么
+Dialogue: 0,0:47:39.95,0:47:41.60,ChText,,0000,0000,0000,,安静 你这鱼
+Dialogue: 0,0:47:48.66,0:47:49.74,ChText,,0000,0000,0000,,别闹了 你
+Dialogue: 0,0:48:12.81,0:48:16.14,ChText,,0000,0000,0000,,我们成功了 姑娘们 咱们闪人
+Dialogue: 0,0:48:24.03,0:48:27.15,ChText,,0000,0000,0000,,但是其他订购了饼干的人怎么办呢
+Dialogue: 0,0:48:27.24,0:48:29.94,ChText,,0000,0000,0000,,人生总是充满了失望
+Dialogue: 0,0:48:30.04,0:48:31.78,ChText,,0000,0000,0000,,对于某些人来说
+Dialogue: 0,0:48:37.50,0:48:39.03,ChText,,0000,0000,0000,,别那么做
+Dialogue: 0,0:48:39.13,0:48:42.12,ChText,,0000,0000,0000,,超级笨笨乐园\N我们能去玩么 可以么
+Dialogue: 0,0:48:42.55,0:48:43.62,ChText,,0000,0000,0000,,不行
+Dialogue: 0,0:48:43.72,0:48:46.20,ChText,,0000,0000,0000,,可我们从来没去过呢\N那是地球上最好玩的地方啦
+Dialogue: 0,0:48:46.30,0:48:47.32,ChText,,0000,0000,0000,,我不在乎
+Dialogue: 0,0:48:47.43,0:48:48.53,ChText,,0000,0000,0000,,- 求求你啦\N- 求求你
+Dialogue: 0,0:48:48.64,0:48:50.25,ChText,,0000,0000,0000,,我们再也没有别要求啦\N什么别的要求都不提好不
+Dialogue: 0,0:48:50.35,0:48:52.38,ChText,,0000,0000,0000,,- 你最好的啦\N- 好不好嘛
+Dialogue: 0,0:48:59.56,0:49:01.47,ChText,,0000,0000,0000,,- 去吧\N- 去吧
+Dialogue: 0,0:49:02.07,0:49:04.35,ChText,,0000,0000,0000,,好主意
+Dialogue: 0,0:49:09.12,0:49:10.90,ChText,,0000,0000,0000,,去吧
+Dialogue: 0,0:49:10.99,0:49:13.94,ChText,,0000,0000,0000,,再见 玩得开心哈
+Dialogue: 0,0:49:17.37,0:49:20.91,ChText,,0000,0000,0000,,对不起伙计\N得有个大人跟她们一起坐
+Dialogue: 0,0:49:21.00,0:49:22.41,ChText,,0000,0000,0000,,什么
+Dialogue: 0,0:50:19.14,0:50:20.30,ChText,,0000,0000,0000,,哦 我的天啊
+Dialogue: 0,0:50:20.39,0:50:22.79,ChText,,0000,0000,0000,,瞧那个可爱的毛毛独角兽
+Dialogue: 0,0:50:25.56,0:50:27.84,ChText,,0000,0000,0000,,它好多毛毛啊 我都要兴奋死了
+Dialogue: 0,0:50:27.94,0:50:29.39,ChText,,0000,0000,0000,,让我们玩这个来赢它好不
+Dialogue: 0,0:50:29.48,0:50:31.18,ChText,,0000,0000,0000,,不 不 不
+Dialogue: 0,0:50:31.28,0:50:32.55,ChText,,0000,0000,0000,,来吧
+Dialogue: 0,0:50:34.11,0:50:36.65,ChText,,0000,0000,0000,,这个毛茸茸的独角兽多少钱
+Dialogue: 0,0:50:37.87,0:50:39.77,ChText,,0000,0000,0000,,额 那个不卖的
+Dialogue: 0,0:50:39.87,0:50:44.82,ChText,,0000,0000,0000,,不过只要你把那个小飞船击倒\N就能把它赢回家
+Dialogue: 0,0:50:45.71,0:50:46.81,ChText,,0000,0000,0000,,很简单
+Dialogue: 0,0:50:55.22,0:50:56.49,ChText,,0000,0000,0000,,耶
+Dialogue: 0,0:51:08.48,0:51:09.67,ChText,,0000,0000,0000,,再来一次
+Dialogue: 0,0:51:10.40,0:51:12.85,ChText,,0000,0000,0000,,- 等等\N- 求你了 再玩一次吧
+Dialogue: 0,0:51:12.94,0:51:14.10,ChText,,0000,0000,0000,,就最后一次
+Dialogue: 0,0:51:14.19,0:51:16.52,ChText,,0000,0000,0000,,我刚刚碰巧闭上眼睛了
+Dialogue: 0,0:51:31.88,0:51:33.87,ChText,,0000,0000,0000,,- 我打着了 打着了\N- 太牛了
+Dialogue: 0,0:51:38.34,0:51:41.21,ChText,,0000,0000,0000,,喔 喔 喔 怎么回事
+Dialogue: 0,0:51:41.97,0:51:45.04,ChText,,0000,0000,0000,,她打到了 我亲眼看见的
+Dialogue: 0,0:51:45.14,0:51:47.88,ChText,,0000,0000,0000,,嘿 伙计\N听我给你解释
+Dialogue: 0,0:51:47.97,0:51:52.51,ChText,,0000,0000,0000,,看到那个锡制小飞船了吧\N看到它还没被打翻么
+Dialogue: 0,0:51:52.60,0:51:55.43,ChText,,0000,0000,0000,,知道那意味着什么吗 教授
+Dialogue: 0,0:51:55.52,0:51:59.06,ChText,,0000,0000,0000,,这意味着你不能得到那只独角兽
+Dialogue: 0,0:52:01.20,0:52:03.06,ChText,,0000,0000,0000,,看来有人要不爽啦
+Dialogue: 0,0:52:03.16,0:52:05.55,ChText,,0000,0000,0000,,嘘 祝你下次好运吧
+Dialogue: 0,0:52:07.78,0:52:10.48,ChText,,0000,0000,0000,,好 轮到我了
+Dialogue: 0,0:52:31.93,0:52:34.41,ChText,,0000,0000,0000,,搞定
+Dialogue: 0,0:52:38.77,0:52:41.68,ChText,,0000,0000,0000,,- 好多毛毛啊\N- 是啊
+Dialogue: 0,0:52:42.32,0:52:44.43,ChText,,0000,0000,0000,,太帅了
+Dialogue: 0,0:52:44.53,0:52:46.14,ChText,,0000,0000,0000,,你把整个摊子都炸飞啦
+Dialogue: 0,0:52:46.24,0:52:48.60,ChText,,0000,0000,0000,,走吧 我们去玩另一个游戏
+Dialogue: 0,0:52:55.66,0:52:58.06,ChText,,0000,0000,0000,,Gru能跟你说句话么
+Dialogue: 0,0:52:58.83,0:53:01.07,ChText,,0000,0000,0000,,好啦 孩子们 去玩吧
+Dialogue: 0,0:53:08.63,0:53:10.92,ChText,,0000,0000,0000,,我拿到缩小射线枪了
+Dialogue: 0,0:53:13.56,0:53:15.75,ChText,,0000,0000,0000,,棉花糖要么
+Dialogue: 0,0:53:16.77,0:53:20.71,ChText,,0000,0000,0000,,还有12天月亮就会转至最合宜的位置
+Dialogue: 0,0:53:20.81,0:53:22.93,ChText,,0000,0000,0000,,我们不能分心啊
+Dialogue: 0,0:53:24.69,0:53:25.93,ChText,,0000,0000,0000,,给我接Perkins
+Dialogue: 0,0:53:33.99,0:53:36.11,ChText,,0000,0000,0000,,不好意思打扰你 Perkins先生
+Dialogue: 0,0:53:36.20,0:53:40.14,ChText,,0000,0000,0000,,不过我想你需要看看这个
+Dialogue: 0,0:53:40.96,0:53:42.06,ChText,,0000,0000,0000,,什么
+Dialogue: 0,0:53:54.59,0:53:57.08,ChText,,0000,0000,0000,,不错啊Gru 非常厉害
+Dialogue: 0,0:53:57.18,0:54:00.17,ChText,,0000,0000,0000,,剩下的事情就很简单啦
+Dialogue: 0,0:54:00.81,0:54:04.55,ChText,,0000,0000,0000,,我飞去月球  把它缩小
+Dialogue: 0,0:54:04.65,0:54:08.34,ChText,,0000,0000,0000,,拿到它 坐上马桶
+Dialogue: 0,0:54:08.44,0:54:10.06,ChText,,0000,0000,0000,,什么
+Dialogue: 0,0:54:10.15,0:54:12.27,ChText,,0000,0000,0000,,不好意思 对不起
+Dialogue: 0,0:54:12.36,0:54:15.48,ChText,,0000,0000,0000,,我离开一小会哦
+Dialogue: 0,0:54:15.57,0:54:16.98,ChText,,0000,0000,0000,,告诉过你们别碰我的东西
+Dialogue: 0,0:54:17.07,0:54:20.07,ChText,,0000,0000,0000,,我已经和你们说过几千遍了
+Dialogue: 0,0:54:20.16,0:54:21.86,ChText,,0000,0000,0000,,嘿 我们能点比萨吃么
+Dialogue: 0,0:54:21.95,0:54:23.86,ChText,,0000,0000,0000,,比萨 你们才吃过午饭啊
+Dialogue: 0,0:54:23.96,0:54:25.11,ChText,,0000,0000,0000,,不是现在吃 是当晚餐
+Dialogue: 0,0:54:25.21,0:54:26.74,ChText,,0000,0000,0000,,晚餐啊
+Dialogue: 0,0:54:26.83,0:54:29.66,ChText,,0000,0000,0000,,好吧 好 随便\N现在赶快进去吧
+Dialogue: 0,0:54:29.75,0:54:31.54,ChText,,0000,0000,0000,,能点包心卷边的么
+Dialogue: 0,0:54:32.80,0:54:34.04,ChText,,0000,0000,0000,,- 包心卷边\N- 包心卷边
+Dialogue: 0,0:54:34.13,0:54:35.70,ChText,,0000,0000,0000,,再叫我就把你们包起来卷进边里
+Dialogue: 0,0:54:37.72,0:54:39.08,ChText,,0000,0000,0000,,你好搞笑哦
+Dialogue: 0,0:54:39.18,0:54:41.92,ChText,,0000,0000,0000,,别再跑出来啦
+Dialogue: 0,0:54:42.47,0:54:43.49,ChText,,0000,0000,0000,,好的
+Dialogue: 0,0:54:44.43,0:54:47.84,ChText,,0000,0000,0000,,不好意思哈  我们说到哪了
+Dialogue: 0,0:54:47.94,0:54:49.51,ChText,,0000,0000,0000,,你坐在马桶上
+Dialogue: 0,0:54:49.61,0:54:54.14,ChText,,0000,0000,0000,,不 不 不 真不好意思\N那只是想幽默一下
+Dialogue: 0,0:54:54.23,0:54:57.02,ChText,,0000,0000,0000,,我知道你有多爱笑
+Dialogue: 0,0:54:59.49,0:55:03.32,ChText,,0000,0000,0000,,在心里笑\N好了 我刚刚说到
+Dialogue: 0,0:55:06.91,0:55:08.86,ChText,,0000,0000,0000,,你好像很心不在焉呀 Gru\N600\N00:52:52,440 --> 00:52:54,317\N你似乎没怎么用心做事啊 Gru
+Dialogue: 0,0:55:08.96,0:55:11.32,ChText,,0000,0000,0000,,相信我 我一向很用心做事的
+Dialogue: 0,0:55:11.42,0:55:13.41,ChText,,0000,0000,0000,,- 你好啊\N- 什么?
+Dialogue: 0,0:55:13.50,0:55:14.66,ChText,,0000,0000,0000,,这个人好大个头呀
+Dialogue: 0,0:55:14.75,0:55:16.16,ChText,,0000,0000,0000,,- 我们是上电视了吗\N- 这都是谁啊?你孩子?
+Dialogue: 0,0:55:16.26,0:55:19.04,ChText,,0000,0000,0000,,你们在干嘛?\N我不是说了要你们出去吗!
+Dialogue: 0,0:55:24.26,0:55:25.50,ChText,,0000,0000,0000,,别 别 别
+Dialogue: 0,0:55:25.60,0:55:26.62,ChText,,0000,0000,0000,,冰冻射线!
+Dialogue: 0,0:55:26.72,0:55:28.34,ChText,,0000,0000,0000,,Gru先生?
+Dialogue: 0,0:55:33.06,0:55:34.39,ChText,,0000,0000,0000,,好了
+Dialogue: 0,0:55:35.77,0:55:37.14,ChText,,0000,0000,0000,,就像我所说的...
+Dialogue: 0,0:55:37.23,0:55:41.06,ChText,,0000,0000,0000,,你不必说了 我已经看够了
+Dialogue: 0,0:55:41.15,0:55:43.52,ChText,,0000,0000,0000,,- 但是我的计划...\N- 很棒的计划
+Dialogue: 0,0:55:43.61,0:55:46.77,ChText,,0000,0000,0000,,我喜欢你计划里的一切 除了一件事
+Dialogue: 0,0:55:47.66,0:55:48.98,ChText,,0000,0000,0000,,就是你
+Dialogue: 0,0:55:52.25,0:55:55.82,ChText,,0000,0000,0000,,看 妈妈 我画了张我登月的图!
+Dialogue: 0,0:55:58.92,0:56:02.96,ChText,,0000,0000,0000,,看 妈妈\N我用通心粉做了个火箭模型!
+Dialogue: 0,0:56:05.59,0:56:09.96,ChText,,0000,0000,0000,,看 妈妈\N我参照通心粉的模型做了个真的火箭!
+Dialogue: 0,0:56:21.23,0:56:22.97,ChText,,0000,0000,0000,,我不明白
+Dialogue: 0,0:56:23.32,0:56:25.60,ChText,,0000,0000,0000,,面对现实吧 Gru
+Dialogue: 0,0:56:25.70,0:56:30.44,ChText,,0000,0000,0000,,虽然你一直在努力\N可是总不能成功
+Dialogue: 0,0:56:30.66,0:56:34.86,ChText,,0000,0000,0000,,我们将把我们的信心\N我们的钱放到一个...
+Dialogue: 0,0:56:35.71,0:56:37.32,ChText,,0000,0000,0000,,一个更年轻的坏蛋身上
+Dialogue: 0,0:56:37.42,0:56:38.91,ChText,,0000,0000,0000,,但我...
+Dialogue: 0,0:56:39.00,0:56:41.07,ChText,,0000,0000,0000,,都结束了 再见 Gru
+Dialogue: 0,0:57:02.31,0:57:06.81,ChText,,0000,0000,0000,,我知道最近出现了些谣言
+Dialogue: 0,0:57:06.90,0:57:10.19,ChText,,0000,0000,0000,,说银行不会再资助我们了
+Dialogue: 0,0:57:11.07,0:57:13.86,ChText,,0000,0000,0000,,我就是来澄清谣言的
+Dialogue: 0,0:57:15.99,0:57:17.94,ChText,,0000,0000,0000,,谣言是真的
+Dialogue: 0,0:57:19.87,0:57:22.07,ChText,,0000,0000,0000,,就资金而言
+Dialogue: 0,0:57:23.25,0:57:25.41,ChText,,0000,0000,0000,,我们是没有钱了
+Dialogue: 0,0:57:25.50,0:57:28.07,ChText,,0000,0000,0000,,那我们要怎么上月球呢
+Dialogue: 0,0:57:29.26,0:57:31.08,ChText,,0000,0000,0000,,答案再明显不过了
+Dialogue: 0,0:57:31.17,0:57:32.75,ChText,,0000,0000,0000,,我们去不了了
+Dialogue: 0,0:57:35.81,0:57:38.09,ChText,,0000,0000,0000,,我们失败了
+Dialogue: 0,0:57:39.35,0:57:44.22,ChText,,0000,0000,0000,,你们是时候去找份新工作了
+Dialogue: 0,0:57:45.86,0:57:46.96,ChText,,0000,0000,0000,,我知道
+Dialogue: 0,0:57:47.07,0:57:52.27,ChText,,0000,0000,0000,,我已经把我的简历给烧了\N我也建议你们这么做
+Dialogue: 0,0:57:53.28,0:57:54.85,ChText,,0000,0000,0000,,怎么了
+Dialogue: 0,0:57:56.78,0:58:00.07,ChText,,0000,0000,0000,,没看见我正在激励大家吗
+Dialogue: 0,0:58:29.73,0:58:31.10,ChText,,0000,0000,0000,,好呀
+Dialogue: 0,0:58:31.19,0:58:34.10,ChText,,0000,0000,0000,,好的 我们来建自己的火箭
+Dialogue: 0,0:58:34.74,0:58:38.27,ChText,,0000,0000,0000,,用这个 还有任何我们能找到的东西
+Dialogue: 0,0:58:38.74,0:58:42.36,ChText,,0000,0000,0000,,把所有东西都拿上\N去废品回收站  把那些旧车给拆了
+Dialogue: 0,0:58:42.87,0:58:44.73,ChText,,0000,0000,0000,,谁还需要银行啊
+Dialogue: 0,0:58:44.83,0:58:46.57,ChText,,0000,0000,0000,,我们走 我们走
+Dialogue: 0,0:59:36.84,0:59:38.83,ChText,,0000,0000,0000,,妈妈  你在这干嘛?
+Dialogue: 0,0:59:38.92,0:59:41.75,ChText,,0000,0000,0000,,这是他正在浴缸里的照片
+Dialogue: 0,0:59:42.47,0:59:44.12,ChText,,0000,0000,0000,,看看他的小屁屁
+Dialogue: 0,0:59:46.47,0:59:47.96,ChText,,0000,0000,0000,,妈妈
+Dialogue: 0,0:59:48.06,0:59:49.42,ChText,,0000,0000,0000,,一点都不好玩
+Dialogue: 0,0:59:50.43,0:59:54.97,ChText,,0000,0000,0000,,这张 他穿上了他最好的衣服
+Dialogue: 0,0:59:55.65,0:59:57.84,ChText,,0000,0000,0000,,他看起来像个女孩
+Dialogue: 0,0:59:57.94,1:00:01.10,ChText,,0000,0000,0000,,没错  是的  一个难看的女孩
+Dialogue: 0,1:00:23.92,1:00:25.50,ChText,,0000,0000,0000,,你真可爱
+Dialogue: 0,1:00:39.02,1:00:41.97,ChText,,0000,0000,0000,,真棒  我的看起来像个死人
+Dialogue: 0,1:01:00.08,1:01:02.62,ChText,,0000,0000,0000,,Perkins先生 你儿子来了
+Dialogue: 0,1:01:02.71,1:01:04.53,ChText,,0000,0000,0000,,让他进来
+Dialogue: 0,1:01:05.71,1:01:07.37,ChText,,0000,0000,0000,,嗨 爸爸
+Dialogue: 0,1:01:08.21,1:01:09.66,ChText,,0000,0000,0000,,你想见我?
+Dialogue: 0,1:01:09.76,1:01:12.71,ChText,,0000,0000,0000,,- 没错 Victor\N- 我已经不叫Victor了
+Dialogue: 0,1:01:12.80,1:01:16.25,ChText,,0000,0000,0000,,Victor这名字傻死了\N现在我叫Vector
+Dialogue: 0,1:01:16.35,1:01:17.67,ChText,,0000,0000,0000,,坐下!
+Dialogue: 0,1:01:19.31,1:01:21.71,ChText,,0000,0000,0000,,你知道缩小激光枪在哪吗
+Dialogue: 0,1:01:22.14,1:01:24.09,ChText,,0000,0000,0000,,就在我那放着呢
+Dialogue: 0,1:01:24.19,1:01:27.05,ChText,,0000,0000,0000,,是吗 在你那放着吗\N那真是不错啊
+Dialogue: 0,1:01:27.15,1:01:31.39,ChText,,0000,0000,0000,,那Gru是正好有了个一样的咯!
+Dialogue: 0,1:01:33.99,1:01:37.23,ChText,,0000,0000,0000,,等下...这些小女孩卖过饼干给我
+Dialogue: 0,1:01:37.53,1:01:41.28,ChText,,0000,0000,0000,,你知道这个偷月计划有多赚钱吗
+Dialogue: 0,1:01:41.37,1:01:43.15,ChText,,0000,0000,0000,,我给你了次千载难逢的机会
+Dialogue: 0,1:01:43.25,1:01:45.07,ChText,,0000,0000,0000,,你却白白断送了
+Dialogue: 0,1:01:45.96,1:01:49.24,ChText,,0000,0000,0000,,- 不 我没有\N- 是吗
+Dialogue: 0,1:01:49.67,1:01:52.54,ChText,,0000,0000,0000,,你就等着让Gru看我的终极武器吧
+Dialogue: 0,1:01:52.63,1:01:55.62,ChText,,0000,0000,0000,,鱿鱼发射器  欧耶
+Dialogue: 0,1:01:58.60,1:02:00.75,ChText,,0000,0000,0000,,怎么有只鱿鱼盖我脸上了
+Dialogue: 0,1:02:02.31,1:02:03.58,ChText,,0000,0000,0000,,别担心
+Dialogue: 0,1:02:03.68,1:02:06.93,ChText,,0000,0000,0000,,月亮会是我们的
+Dialogue: 0,1:02:09.77,1:02:11.26,ChText,,0000,0000,0000,,好了 过来 该上床睡觉了
+Dialogue: 0,1:02:11.36,1:02:14.52,ChText,,0000,0000,0000,,你刷牙没?\N让我闻闻 让我闻闻
+Dialogue: 0,1:02:15.15,1:02:16.52,ChText,,0000,0000,0000,,你没刷
+Dialogue: 0,1:02:16.61,1:02:20.69,ChText,,0000,0000,0000,,穿上你们的睡衣\N别捣乱了 好了 我说真的 真的
+Dialogue: 0,1:02:20.78,1:02:25.28,ChText,,0000,0000,0000,,该睡觉了 现在就去\N我没在开玩笑 快睡
+Dialogue: 0,1:02:25.37,1:02:28.11,ChText,,0000,0000,0000,,- 我们还不累呢\N- 但我累了
+Dialogue: 0,1:02:28.21,1:02:30.41,ChText,,0000,0000,0000,,能给我们讲个睡前故事吗
+Dialogue: 0,1:02:34.30,1:02:35.66,ChText,,0000,0000,0000,,不行
+Dialogue: 0,1:02:35.76,1:02:37.00,ChText,,0000,0000,0000,,求你了
+Dialogue: 0,1:02:37.09,1:02:40.92,ChText,,0000,0000,0000,,说多少个"求你了"也没用
+Dialogue: 0,1:02:41.01,1:02:43.09,ChText,,0000,0000,0000,,回答还是不行 所以快睡觉
+Dialogue: 0,1:02:43.18,1:02:45.30,ChText,,0000,0000,0000,,我们睡不着 我们还这么兴奋
+Dialogue: 0,1:02:45.39,1:02:49.88,ChText,,0000,0000,0000,,如果不讲睡前故事的话\N我们就会不断的起床打扰你滴
+Dialogue: 0,1:02:49.98,1:02:51.05,ChText,,0000,0000,0000,,整个晚上
+Dialogue: 0,1:02:53.23,1:02:54.47,ChText,,0000,0000,0000,,好吧
+Dialogue: 0,1:02:55.52,1:02:58.52,ChText,,0000,0000,0000,,好 好 沉睡的小猫
+Dialogue: 0,1:02:58.99,1:03:00.31,ChText,,0000,0000,0000,,沉睡的小猫?
+Dialogue: 0,1:03:00.74,1:03:02.15,ChText,,0000,0000,0000,,- 这是什么\N- 手指玩偶
+Dialogue: 0,1:03:02.62,1:03:04.90,ChText,,0000,0000,0000,,你可以戴着它们给我们讲故事
+Dialogue: 0,1:03:12.00,1:03:14.53,ChText,,0000,0000,0000,,好吧 让我们开始吧
+Dialogue: 0,1:03:15.04,1:03:19.29,ChText,,0000,0000,0000,,"有三只小猫 它们很爱玩耍\N它们在阳光下疯玩了一整天"
+Dialogue: 0,1:03:19.38,1:03:23.79,ChText,,0000,0000,0000,,"这时它们的妈妈来了说\N'小猫们该睡觉了‘'"
+Dialogue: 0,1:03:23.89,1:03:27.74,ChText,,0000,0000,0000,,哇 这故事真烂\N你们真的喜欢这个?
+Dialogue: 0,1:03:27.85,1:03:29.30,ChText,,0000,0000,0000,,继续讲啊
+Dialogue: 0,1:03:30.10,1:03:32.47,ChText,,0000,0000,0000,,- 快点继续\N- 好 好 好
+Dialogue: 0,1:03:32.56,1:03:35.12,ChText,,0000,0000,0000,,"这三只小猫就开始哭着说"
+Dialogue: 0,1:03:35.23,1:03:37.55,ChText,,0000,0000,0000,,"'妈妈 我们还一点都不想睡呢'"
+Dialogue: 0,1:03:37.65,1:03:40.18,ChText,,0000,0000,0000,,"它们的妈妈笑了笑 回答说"\N705\N01:01:04,800 --> 01:01:08,315\N"'好吧 但你们至少\N要先梳理梳理自己的毛'"
+Dialogue: 0,1:03:44.03,1:03:46.19,ChText,,0000,0000,0000,,现在你帮它们梳毛
+Dialogue: 0,1:03:47.91,1:03:49.65,ChText,,0000,0000,0000,,这也算儿童文学?
+Dialogue: 0,1:03:49.74,1:03:52.98,ChText,,0000,0000,0000,,两岁的小孩子都能写了 好吧
+Dialogue: 0,1:03:53.54,1:03:56.53,ChText,,0000,0000,0000,,"三只小猫把毛都梳理了"
+Dialogue: 0,1:03:56.62,1:04:00.03,ChText,,0000,0000,0000,,"然后说 '我们睡不着\N我们还兴奋着呢'"
+Dialogue: 0,1:04:00.13,1:04:03.20,ChText,,0000,0000,0000,,"她们的妈妈柔声回答到"
+Dialogue: 0,1:04:03.30,1:04:06.21,ChText,,0000,0000,0000,,"'好吧 那你们应该至少先喝个牛奶吧'"
+Dialogue: 0,1:04:06.30,1:04:08.63,ChText,,0000,0000,0000,,现在给它们喝牛奶吧
+Dialogue: 0,1:04:12.97,1:04:16.83,ChText,,0000,0000,0000,,我不喜欢这书\N这没完没了的
+Dialogue: 0,1:04:16.94,1:04:23.26,ChText,,0000,0000,0000,,"三只小猫喝了牛奶后\N眼皮开始打架 打起了哈切"
+Dialogue: 0,1:04:29.66,1:04:35.44,ChText,,0000,0000,0000,,"'我们还是睡不着 我们还不困'\N然后它们的妈妈唱了支摇篮曲 "
+Dialogue: 0,1:04:35.54,1:04:41.28,ChText,,0000,0000,0000,,"'小猫们晚安 闭上眼睛吧\N愿你们一觉安睡到天亮"
+Dialogue: 0,1:04:41.88,1:04:45.08,ChText,,0000,0000,0000,,"'尽管当你们睡着时\N我们不在一起"
+Dialogue: 0,1:04:45.17,1:04:49.91,ChText,,0000,0000,0000,,"'但你们的妈妈\N永远全心全意地爱你们'"
+Dialogue: 0,1:04:53.93,1:04:56.25,ChText,,0000,0000,0000,,故事讲完了 好了 晚安
+Dialogue: 0,1:04:57.27,1:04:59.51,ChText,,0000,0000,0000,,- 等等\N- 怎么了又?
+Dialogue: 0,1:04:59.60,1:05:01.47,ChText,,0000,0000,0000,,还有晚安吻呢
+Dialogue: 0,1:05:03.44,1:05:07.18,ChText,,0000,0000,0000,,不行 不行\N不会有晚安吻 抱抱还有吻之类的
+Dialogue: 0,1:05:10.11,1:05:12.68,ChText,,0000,0000,0000,,他不会给我们晚安吻的 Agnes
+Dialogue: 0,1:05:13.32,1:05:15.35,ChText,,0000,0000,0000,,我喜欢他 他挺好的
+Dialogue: 0,1:05:15.45,1:05:16.77,ChText,,0000,0000,0000,,就长得有点吓人
+Dialogue: 0,1:05:18.04,1:05:19.31,ChText,,0000,0000,0000,,像圣诞老人!
+Dialogue: 0,1:05:37.85,1:05:42.05,ChText,,0000,0000,0000,,离火箭发射只有48小时了\N整个系统已经准备好了
+Dialogue: 0,1:05:44.31,1:05:45.97,ChText,,0000,0000,0000,,关于这个
+Dialogue: 0,1:05:46.48,1:05:50.72,ChText,,0000,0000,0000,,我在想可不可以推迟几天
+Dialogue: 0,1:05:50.82,1:05:56.39,ChText,,0000,0000,0000,,千万别告诉我这是因为要去看\N这几个小姑娘的舞蹈表演 好吗
+Dialogue: 0,1:05:56.49,1:05:58.69,ChText,,0000,0000,0000,,不是 不是 不是
+Dialogue: 0,1:05:58.78,1:06:01.82,ChText,,0000,0000,0000,,舞蹈表演会?\N绝对不是...这么傻的玩意
+Dialogue: 0,1:06:01.95,1:06:06.82,ChText,,0000,0000,0000,,我只是觉得在星期六发射有点奇怪
+Dialogue: 0,1:06:06.92,1:06:12.49,ChText,,0000,0000,0000,,我只是觉得\N或许星期二去偷月不错 对吗
+Dialogue: 0,1:06:13.21,1:06:16.83,ChText,,0000,0000,0000,,Gru 我们都为这工作了几十年了
+Dialogue: 0,1:06:16.93,1:06:19.00,ChText,,0000,0000,0000,,这就是我们的夙愿
+Dialogue: 0,1:06:19.09,1:06:21.00,ChText,,0000,0000,0000,,这是改写历史的机会
+Dialogue: 0,1:06:21.10,1:06:24.30,ChText,,0000,0000,0000,,成为偷月的第一人!
+Dialogue: 0,1:06:24.39,1:06:28.16,ChText,,0000,0000,0000,,但这些女孩会让你分心的
+Dialogue: 0,1:06:28.27,1:06:29.59,ChText,,0000,0000,0000,,她们得离开
+Dialogue: 0,1:06:30.35,1:06:34.35,ChText,,0000,0000,0000,,如果你不采取行动的话\N我就会了
+Dialogue: 0,1:06:36.03,1:06:37.68,ChText,,0000,0000,0000,,我明白了
+Dialogue: 0,1:06:40.20,1:06:41.69,ChText,,0000,0000,0000,,很好
+Dialogue: 0,1:06:44.83,1:06:45.98,ChText,,0000,0000,0000,,屁股
+Dialogue: 0,1:06:49.21,1:06:50.39,ChText,,0000,0000,0000,,屁股
+Dialogue: 0,1:07:02.97,1:07:04.12,ChText,,0000,0000,0000,,屁股
+Dialogue: 0,1:07:06.01,1:07:09.76,ChText,,0000,0000,0000,,好了  当我们碰杯时
+Dialogue: 0,1:07:09.85,1:07:12.52,ChText,,0000,0000,0000,,我们要说"干杯"
+Dialogue: 0,1:07:12.60,1:07:13.76,ChText,,0000,0000,0000,,准备好没 Edith?
+Dialogue: 0,1:07:13.85,1:07:14.88,ChText,,0000,0000,0000,,- 干杯\N- 干杯
+Dialogue: 0,1:07:14.98,1:07:16.97,ChText,,0000,0000,0000,,来吧 现在喝了它
+Dialogue: 0,1:07:17.73,1:07:18.75,ChText,,0000,0000,0000,,接下来 Agnes?
+Dialogue: 0,1:07:18.86,1:07:19.93,ChText,,0000,0000,0000,,- 干杯\N- 干杯
+Dialogue: 0,1:07:20.03,1:07:21.39,ChText,,0000,0000,0000,,很好!
+Dialogue: 0,1:07:23.11,1:07:24.48,ChText,,0000,0000,0000,,很抱歉 姑娘们
+Dialogue: 0,1:07:24.86,1:07:25.97,ChText,,0000,0000,0000,,拜托
+Dialogue: 0,1:07:26.07,1:07:29.61,ChText,,0000,0000,0000,,别担心 我马上就回 你们继续干杯
+Dialogue: 0,1:07:30.08,1:07:31.18,ChText,,0000,0000,0000,,- 干杯 干杯\N- 干杯 干杯
+Dialogue: 0,1:07:33.58,1:07:35.45,ChText,,0000,0000,0000,,Hattie小姐 有何贵干
+Dialogue: 0,1:07:35.54,1:07:39.45,ChText,,0000,0000,0000,,我是为姑娘们来的\N我接到电话说你想把她们送回去
+Dialogue: 0,1:07:42.05,1:07:46.29,ChText,,0000,0000,0000,,还有 我专门买了本西班牙字典
+Dialogue: 0,1:07:49.72,1:07:50.91,ChText,,0000,0000,0000,,我不喜欢你说的
+Dialogue: 0,1:07:51.01,1:07:52.38,ChText,,0000,0000,0000,,但...
+Dialogue: 0,1:07:58.69,1:08:01.25,ChText,,0000,0000,0000,,我会让姑娘们准备好的
+Dialogue: 0,1:08:11.16,1:08:13.61,ChText,,0000,0000,0000,,别让她带我们走 Gru先生
+Dialogue: 0,1:08:14.87,1:08:16.74,ChText,,0000,0000,0000,,告诉她你想让我们留下来
+Dialogue: 0,1:08:16.83,1:08:18.82,ChText,,0000,0000,0000,,好了 姑娘们 来吧 我们走
+Dialogue: 0,1:08:18.92,1:08:21.40,ChText,,0000,0000,0000,,再见了 Gru先生\N感谢你所做的一切
+Dialogue: 0,1:08:37.52,1:08:39.59,ChText,,0000,0000,0000,,我是为你好
+Dialogue: 0,1:08:39.98,1:08:43.05,ChText,,0000,0000,0000,,来吧 让我们偷月吧
+Dialogue: 0,1:08:44.90,1:08:45.97,ChText,,0000,0000,0000,,好的
+Dialogue: 0,1:10:02.56,1:10:03.66,ChText,,0000,0000,0000,,这是干嘛的
+Dialogue: 0,1:10:05.35,1:10:06.62,ChText,,0000,0000,0000,,舞蹈表演会?
+Dialogue: 0,1:10:06.73,1:10:09.97,ChText,,0000,0000,0000,,我可是本世纪最伟大的罪犯
+Dialogue: 0,1:10:10.06,1:10:14.14,ChText,,0000,0000,0000,,我才不会去\N这些小女孩的舞蹈表演会呢
+Dialogue: 0,1:10:34.96,1:10:39.91,ChText,,0000,0000,0000,,开启顶上舱门\N开始发射程序
+Dialogue: 0,1:10:40.01,1:10:45.00,ChText,,0000,0000,0000,,我们将在十秒后出发
+Dialogue: 0,1:10:46.10,1:10:50.55,ChText,,0000,0000,0000,,十 九 八 七
+Dialogue: 0,1:10:50.64,1:10:51.66,ChText,,0000,0000,0000,,六...
+Dialogue: 0,1:11:20.96,1:11:23.50,ChText,,0000,0000,0000,,干的漂亮 博士 一切正常
+Dialogue: 0,1:11:36.27,1:11:37.84,ChText,,0000,0000,0000,,我的飞行服
+Dialogue: 0,1:11:39.61,1:11:42.76,ChText,,0000,0000,0000,,再来一次 强大的...
+Dialogue: 0,1:13:07.61,1:13:09.31,ChText,,0000,0000,0000,,我拿到了!
+Dialogue: 0,1:13:10.82,1:13:13.64,ChText,,0000,0000,0000,,我拿到了月亮!
+Dialogue: 0,1:13:13.74,1:13:16.52,ChText,,0000,0000,0000,,我拿到了月亮!
+Dialogue: 0,1:13:31.63,1:13:33.12,ChText,,0000,0000,0000,,我还可以赶上的
+Dialogue: 0,1:13:40.39,1:13:42.71,ChText,,0000,0000,0000,,- 等下\N- Kevin
+Dialogue: 0,1:13:45.85,1:13:47.42,ChText,,0000,0000,0000,,快点 快点!
+Dialogue: 0,1:13:55.69,1:13:57.27,ChText,,0000,0000,0000,,他还没来
+Dialogue: 0,1:13:57.36,1:13:59.76,ChText,,0000,0000,0000,,他为什么要来?\N他已经不要我们了
+Dialogue: 0,1:13:59.86,1:14:01.40,ChText,,0000,0000,0000,,但他已经和我拉钩答应的了
+Dialogue: 0,1:14:01.49,1:14:04.23,ChText,,0000,0000,0000,,姑娘们 姑娘们 要开始了
+Dialogue: 0,1:14:04.33,1:14:07.11,ChText,,0000,0000,0000,,还不能开始\N我们还在等一个人
+Dialogue: 0,1:14:07.20,1:14:09.57,ChText,,0000,0000,0000,,能再等等吗
+Dialogue: 0,1:14:13.42,1:14:15.82,ChText,,0000,0000,0000,,好吧 但只有几分钟
+Dialogue: 0,1:14:15.92,1:14:18.00,ChText,,0000,0000,0000,,他不会来的 大家
+Dialogue: 0,1:14:21.47,1:14:23.46,ChText,,0000,0000,0000,,Gru  Gru 能听到我说话吗
+Dialogue: 0,1:14:25.81,1:14:29.34,ChText,,0000,0000,0000,,快 我们得警告他 要快!
+Dialogue: 0,1:15:04.34,1:15:06.33,ChText,,0000,0000,0000,,好的 好的 这是图书馆
+Dialogue: 0,1:15:06.43,1:15:09.13,ChText,,0000,0000,0000,,那是第三大街 舞蹈厅...
+Dialogue: 0,1:15:09.22,1:15:10.63,ChText,,0000,0000,0000,,那! 那! 在那!
+Dialogue: 0,1:15:48.09,1:15:50.49,ChText,,0000,0000,0000,,抱歉 兄弟 演出已经结束了
+Dialogue: 0,1:15:50.85,1:15:52.46,ChText,,0000,0000,0000,,结束了?
+Dialogue: 0,1:16:08.57,1:16:10.15,ChText,,0000,0000,0000,,(Margo Edith和Agnes的爸爸)
+Dialogue: 0,1:16:23.71,1:16:25.45,ChText,,0000,0000,0000,,(带上月亮 V)
+Dialogue: 0,1:16:30.42,1:16:31.91,ChText,,0000,0000,0000,,Vector 快开门
+Dialogue: 0,1:16:33.68,1:16:36.16,ChText,,0000,0000,0000,,先把月亮给我\N然后我们再谈
+Dialogue: 0,1:16:49.73,1:16:52.22,ChText,,0000,0000,0000,,- Gru先生\N- 闭嘴 小甜心们
+Dialogue: 0,1:16:52.32,1:16:53.81,ChText,,0000,0000,0000,,现在 可以放了她们了吧
+Dialogue: 0,1:16:53.90,1:16:58.27,ChText,,0000,0000,0000,,事实上 我觉得我还要多留她们一阵
+Dialogue: 0,1:16:58.37,1:16:59.39,ChText,,0000,0000,0000,,不行!
+Dialogue: 0,1:16:59.49,1:17:02.16,ChText,,0000,0000,0000,,当然可以  难以预料吧
+Dialogue: 0,1:17:02.87,1:17:04.36,ChText,,0000,0000,0000,,给我听好了 你个小废物
+Dialogue: 0,1:17:04.46,1:17:07.78,ChText,,0000,0000,0000,,要是我进去了 你就惨了
+Dialogue: 0,1:17:09.09,1:17:10.91,ChText,,0000,0000,0000,,我好害怕哟
+Dialogue: 0,1:17:14.38,1:17:16.21,ChText,,0000,0000,0000,,他绝对会把你臭扁一顿的
+Dialogue: 0,1:17:56.51,1:17:58.37,ChText,,0000,0000,0000,,什么 他居然打了我的鲨鱼
+Dialogue: 0,1:18:25.12,1:18:26.22,ChText,,0000,0000,0000,,他在那
+Dialogue: 0,1:18:32.17,1:18:33.41,ChText,,0000,0000,0000,,抓紧 Gru
+Dialogue: 0,1:18:38.76,1:18:40.03,ChText,,0000,0000,0000,,噢 不要!
+Dialogue: 0,1:18:50.35,1:18:52.17,ChText,,0000,0000,0000,,姑娘们在Vector手上 快走!
+Dialogue: 0,1:18:56.19,1:18:57.85,ChText,,0000,0000,0000,,这船怎么回事  怎么又变大了
+Dialogue: 0,1:18:57.94,1:19:00.68,ChText,,0000,0000,0000,,- 反正不会比月亮大\N- 什么
+Dialogue: 0,1:19:00.78,1:19:05.84,ChText,,0000,0000,0000,,你缩小的对象越大\N缩小射线的作用消失得就越快
+Dialogue: 0,1:19:05.95,1:19:08.86,ChText,,0000,0000,0000,,我称之为Nefario定律
+Dialogue: 0,1:19:08.95,1:19:10.86,ChText,,0000,0000,0000,,其实 我也是刚想到的
+Dialogue: 0,1:19:11.70,1:19:13.19,ChText,,0000,0000,0000,,不是吧
+Dialogue: 0,1:19:19.25,1:19:20.57,ChText,,0000,0000,0000,,你们看见没?
+Dialogue: 0,1:19:20.71,1:19:23.41,ChText,,0000,0000,0000,,- Vector!  救命!\N- Vector!
+Dialogue: 0,1:19:23.51,1:19:24.69,ChText,,0000,0000,0000,,- 快看这\N- 嗨
+Dialogue: 0,1:19:24.80,1:19:26.41,ChText,,0000,0000,0000,,你们几个在那搞什么鬼?
+Dialogue: 0,1:19:26.51,1:19:27.53,ChText,,0000,0000,0000,,月亮!
+Dialogue: 0,1:19:43.69,1:19:44.71,ChText,,0000,0000,0000,,小心!
+Dialogue: 0,1:19:48.57,1:19:50.35,ChText,,0000,0000,0000,,快点靠近啊
+Dialogue: 0,1:19:51.20,1:19:52.47,ChText,,0000,0000,0000,,行了
+Dialogue: 0,1:20:08.84,1:20:11.04,ChText,,0000,0000,0000,,- Gru先生 我们在这\N- Gru先生
+Dialogue: 0,1:20:11.13,1:20:13.17,ChText,,0000,0000,0000,,好了 姑娘们  姑娘们
+Dialogue: 0,1:20:13.26,1:20:15.96,ChText,,0000,0000,0000,,- 你们得跳下来\N- 跳下去?
+Dialogue: 0,1:20:16.06,1:20:17.96,ChText,,0000,0000,0000,,你疯了吗
+Dialogue: 0,1:20:18.06,1:20:19.47,ChText,,0000,0000,0000,,别担心 我会接住你们的
+Dialogue: 0,1:20:20.39,1:20:21.80,ChText,,0000,0000,0000,,你都抛弃我们了
+Dialogue: 0,1:20:21.89,1:20:26.05,ChText,,0000,0000,0000,,我知道 我知道\N这是我犯过的最大的错
+Dialogue: 0,1:20:26.65,1:20:28.56,ChText,,0000,0000,0000,,但你们得马上跳下来
+Dialogue: 0,1:20:29.15,1:20:31.23,ChText,,0000,0000,0000,,会没事的
+Dialogue: 0,1:20:36.20,1:20:37.22,ChText,,0000,0000,0000,,好了 姑娘们
+Dialogue: 0,1:20:39.33,1:20:40.82,ChText,,0000,0000,0000,,快跳
+Dialogue: 0,1:20:45.83,1:20:48.12,ChText,,0000,0000,0000,,Margo 我会接住你的
+Dialogue: 0,1:20:48.79,1:20:51.83,ChText,,0000,0000,0000,,而且再也不会放手
+Dialogue: 0,1:21:01.43,1:21:03.46,ChText,,0000,0000,0000,,- 别想这么快走\N- 不要!
+Dialogue: 0,1:21:03.56,1:21:04.80,ChText,,0000,0000,0000,,让我走
+Dialogue: 0,1:21:08.77,1:21:09.85,ChText,,0000,0000,0000,,Margo!
+Dialogue: 0,1:21:15.65,1:21:17.85,ChText,,0000,0000,0000,,我来了 Margo 抓住!
+Dialogue: 0,1:21:46.81,1:21:48.30,ChText,,0000,0000,0000,,抓到你了
+Dialogue: 0,1:22:06.45,1:22:07.56,ChText,,0000,0000,0000,,不!
+Dialogue: 0,1:22:24.76,1:22:26.00,ChText,,0000,0000,0000,,天那
+Dialogue: 0,1:22:27.10,1:22:28.92,ChText,,0000,0000,0000,,这次 是好消息
+Dialogue: 0,1:22:29.01,1:22:32.13,ChText,,0000,0000,0000,,月亮又回到了它在天上的位置
+Dialogue: 0,1:22:32.52,1:22:37.14,ChText,,0000,0000,0000,,但再一次的 政府部门也很困惑\N大家都在想
+Dialogue: 0,1:22:37.23,1:22:39.01,ChText,,0000,0000,0000,,这次的神秘英雄是谁?
+Dialogue: 0,1:22:39.11,1:22:41.06,ChText,,0000,0000,0000,,他的下一步行动是什么呢
+Dialogue: 0,1:22:41.61,1:22:43.39,ChText,,0000,0000,0000,,好了 姑娘们 该睡觉了
+Dialogue: 0,1:22:43.49,1:22:47.18,ChText,,0000,0000,0000,,- 行了  我们想要睡前故事\N- 三只沉睡的小猫
+Dialogue: 0,1:22:47.28,1:22:51.53,ChText,,0000,0000,0000,,不行  抱歉\N那本书碰巧被完全损坏了
+Dialogue: 0,1:22:52.96,1:22:56.16,ChText,,0000,0000,0000,,今晚我们要讲个新故事
+Dialogue: 0,1:22:56.25,1:22:58.45,ChText,,0000,0000,0000,,叫做
+Dialogue: 0,1:22:58.54,1:23:02.20,ChText,,0000,0000,0000,,一只大的独角兽 作者是...\N谁写的呢?
+Dialogue: 0,1:23:03.01,1:23:06.70,ChText,,0000,0000,0000,,哦 我!  我写的 看\N还是个有手指玩偶的书哟!
+Dialogue: 0,1:23:07.51,1:23:09.21,ChText,,0000,0000,0000,,来 看看这个
+Dialogue: 0,1:23:10.39,1:23:12.21,ChText,,0000,0000,0000,,这是角
+Dialogue: 0,1:23:16.23,1:23:18.30,ChText,,0000,0000,0000,,这肯定会是最好的书!
+Dialogue: 0,1:23:18.40,1:23:23.18,ChText,,0000,0000,0000,,我也不想吹牛\N但 没错  或许会是
+Dialogue: 0,1:23:23.28,1:23:24.35,ChText,,0000,0000,0000,,我们开始吧
+Dialogue: 0,1:23:24.44,1:23:27.43,ChText,,0000,0000,0000,,"有一个大的 强壮的 自由的独角兽"
+Dialogue: 0,1:23:27.53,1:23:30.23,ChText,,0000,0000,0000,,"他总是自以为快乐的生活着"
+Dialogue: 0,1:23:31.57,1:23:35.02,ChText,,0000,0000,0000,,"突然三只小猫闯进了他的生活"
+Dialogue: 0,1:23:35.37,1:23:39.11,ChText,,0000,0000,0000,,"然后改变了他整个的生活"
+Dialogue: 0,1:23:39.21,1:23:40.95,ChText,,0000,0000,0000,,嗨 那只猫跟我好像!
+Dialogue: 0,1:23:41.04,1:23:43.16,ChText,,0000,0000,0000,,不是 你在说什么呢\N这是些小猫
+Dialogue: 0,1:23:43.25,1:23:47.00,ChText,,0000,0000,0000,,如有雷同 肯定纯属巧合
+Dialogue: 0,1:23:50.55,1:23:52.92,ChText,,0000,0000,0000,,"它们让他笑"
+Dialogue: 0,1:23:53.01,1:23:55.21,ChText,,0000,0000,0000,,"让他哭"
+Dialogue: 0,1:23:57.47,1:23:59.92,ChText,,0000,0000,0000,,"他最不该的就是和它们说再见"
+Dialogue: 0,1:24:00.77,1:24:05.35,ChText,,0000,0000,0000,,"现在他知道"
+Dialogue: 0,1:24:05.44,1:24:08.00,ChText,,0000,0000,0000,,"他永远不能和这三只"
+Dialogue: 0,1:24:08.53,1:24:11.43,ChText,,0000,0000,0000,,"改变了他的心的小猫分离"
+Dialogue: 0,1:24:11.53,1:24:13.60,ChText,,0000,0000,0000,,"故事讲完了"
+Dialogue: 0,1:24:13.70,1:24:16.02,ChText,,0000,0000,0000,,好了 晚安
+Dialogue: 0,1:24:39.35,1:24:40.96,ChText,,0000,0000,0000,,我爱你
+Dialogue: 0,1:24:41.52,1:24:43.22,ChText,,0000,0000,0000,,我也爱你
+Dialogue: 0,1:24:52.57,1:24:54.39,ChText,,0000,0000,0000,,不行 不行
+Dialogue: 0,1:24:56.61,1:24:57.72,ChText,,0000,0000,0000,,好吧
+Dialogue: 0,1:25:02.74,1:25:04.90,ChText,,0000,0000,0000,,我不是已经亲过你了吗
+Dialogue: 0,1:25:38.74,1:25:40.73,ChText,,0000,0000,0000,,她们跳得很好
+Dialogue: 0,1:25:40.82,1:25:43.77,ChText,,0000,0000,0000,,我真为你骄傲 儿子
+Dialogue: 0,1:25:43.87,1:25:46.78,ChText,,0000,0000,0000,,你成了一个很棒的家长
+Dialogue: 0,1:25:47.91,1:25:49.40,ChText,,0000,0000,0000,,就像我一样
+Dialogue: 0,1:25:50.00,1:25:52.24,ChText,,0000,0000,0000,,或许比我还要好
+Dialogue: 0,1:26:19.57,1:26:21.27,ChText,,0000,0000,0000,,不 谢了 你们继续吧
+Dialogue: 0,1:26:23.03,1:26:24.48,ChText,,0000,0000,0000,,不 不 不
+Dialogue: 0,1:28:04.13,1:28:05.70,ChText,,0000,0000,0000,,嗨 Carl! 嗨
+Dialogue: 0,1:28:09.96,1:28:11.04,ChText,,0000,0000,0000,,不 不 不
+Dialogue: 0,1:28:11.13,1:28:12.32,ChText,,0000,0000,0000,,我来 我来 我来
+Dialogue: 0,1:28:13.68,1:28:14.70,ChText,,0000,0000,0000,,John?
+Dialogue: 0,1:28:14.80,1:28:16.25,ChText,,0000,0000,0000,,不 不 我来 我来 我来
+Dialogue: 0,1:28:39.99,1:28:41.01,ChText,,0000,0000,0000,,噢 天那
+Dialogue: 0,1:29:27.75,1:29:28.93,ChText,,0000,0000,0000,,不!
+Dialogue: 0,1:29:29.79,1:29:31.24,ChText,,0000,0000,0000,,停  停
+Dialogue: 0,1:30:32.47,1:30:33.84,ChText,,0000,0000,0000,,你好 我是Gru
+Dialogue: 0,1:30:33.94,1:30:36.93,ChText,,0000,0000,0000,,去工作 去工作! 去...
