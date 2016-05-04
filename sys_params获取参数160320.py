@@ -9,5 +9,7 @@ def main():
 
 if __name__ == '__main__':
     main()
+    for i in os.sys.argv:
+        print(i)
     print(os.sys.argv[1])
     print(type(os.sys.argv[1]))
