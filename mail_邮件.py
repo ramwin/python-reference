@@ -12,21 +12,16 @@ from email.mime.text import MIMEText
 # mail_pass="gopzbloojbfujxzb"   #口令 
 # mail_postfix="163.com"  #发件箱的后缀
 
-mailto_list=["1175190234@qq.com"]
-mail_host="smtp.zettage.com"  #设置服务器
-mail_user="register"    #用户名
-mail_pass="Zettage321"   #口令 
-mail_postfix="zettage.com"  #发件箱的后缀
+mailto_list=["ramwin@qq.com"]
+mail_host="smtp.163.com"  #设置服务器
+mail_user="zettage_wangx"    #用户名
+mail_pass="zettage321"   #口令 
+mail_postfix="163.com"  #发件箱的后缀
 
-def send_mail(to_list,sub,random_string):  #to_list：收件人；sub：主题；content：邮件内容
-    content = '''
-        <h1>感谢您注册振古科技数据邦</h1>
-        <p>请点击下面的链接确认注册</p> <a href='http://192.168.1.88/normal/email_confime?code={random_string}'>点击确认</a>
-        <p>如果链接无法点击，请复制以下链接进行访问</p><br>
-        <p>http://192.168.1.88/normal/email_confime?code={random_string}</p>
-    '''.format(random_string=random_string)
-    me="振古科技数据邦注册确认"+"<"+mail_user+"@"+mail_postfix+">"   #这里的hello可以任意设置，收到信后，将按照设置显示
-    msg = MIMEText(content,_subtype='html',_charset='utf-8')    #创建一个实例，这里设置为html格式邮件
+def send_mail(to_list,sub,content = '爬虫中断了'):  #to_list：收件人；sub：主题；content：邮件内容
+    content = '''出大事了, %s'''%(content)
+    me="王祥"+"<"+mail_user+"@"+mail_postfix+">"
+    msg = MIMEText(content,_subtype='text',_charset='utf-8')    #创建一个实例，这里设置为html格式邮件
     msg['Subject'] = sub    #设置主题
     msg['From'] = me  
     msg['To'] = ";".join(to_list)  
@@ -41,7 +36,7 @@ def send_mail(to_list,sub,random_string):  #to_list：收件人；sub：主题�
         print str(e)  
         return False  
 if __name__ == '__main__':  
-    if send_mail(mailto_list,"hello",random_string='werrewewaasd'):  
+    if send_mail(mailto_list,"hello",content='数据中断'):  
         print "发送成功"  
     else:  
         print "发送失败"  
