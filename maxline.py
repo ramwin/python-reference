@@ -12,10 +12,8 @@ def main(filename):
         index += 1
         if len(i) > len(line):
             line = i
-    print('第%d行最长'%(index))
-    print(line)
-
-
+    print('文件 %s : 第%d行最长'%(filename,index))
+    print(line,end=',')
 if __name__ == '__main__':
-    filename = os.sys.argv[2]
-    main(filename)
+    for filename in os.sys.argv[1:]:
+        main(filename)
