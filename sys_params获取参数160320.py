@@ -4,6 +4,7 @@
 
 import os
 
+
 def main():
     print(1)
 
