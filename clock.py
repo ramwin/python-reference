@@ -4,15 +4,18 @@
 
 import datetime
 import time
+
+
 def log(f):
     def fin(*args, **kw):
-        start=datetime.datetime.now()
+        start = datetime.datetime.now()
         print('call'+f.__name__+'()...')
-        f(*args,**kw)
-        print('stop'+f.__name__+'()...')
-        end=datetime.datetime.now()
-        print('耗时 %d 秒'%(end-start).seconds)
+        f(*args, **kw)
+        print('stop' + f.__name__ + '()...')
+        end = datetime.datetime.now()
+        print('耗时 %d 秒' % (end-start).seconds)
     return fin
+
 
 @log
 def main():
