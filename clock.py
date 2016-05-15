@@ -11,7 +11,7 @@ def log(f):
         start = datetime.datetime.now()
         print('call'+f.__name__+'()...')
         f(*args, **kw)
-        print('stop'+f.__name__+'()...')
+        print('stop' + f.__name__ + '()...')
         end = datetime.datetime.now()
         print('耗时 %d 秒' % (end-start).seconds)
     return fin
