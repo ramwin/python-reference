@@ -19,8 +19,11 @@ class Card(object):
         self.suit = suit
         self.number = number
 
+    def getscore(self):
+        return self.number if self.number < 10 else 10
+
     def __str__(self):
-        return '%s %d'%(self.suit, self.number)
+        return '%s %d' % (self.suit, self.number)
 
 
 class Deck(object):
@@ -34,12 +37,12 @@ class Deck(object):
         for suit in ['spade', 'diamond', 'club', 'heart']:
             for number in range(0, 13):
                 self.cards.append(Card(suit=suit, number=number))
-        if joker == True:
-            self.cards.append(Card(suit='joker',number=0))
-            self.cards.append(Card(suit='joker',number=1))
+        if joker is True:
+            self.cards.append(Card(suit='joker', number=0))
+            self.cards.append(Card(suit='joker', number=1))
 
     def pop(self):
-        return self.cards.pop(random.randint(0,len(self.cards)-1))
+        return self.cards.pop(random.randint(0, len(self.cards) - 1))
 
     def __iter__(self):
         while len(self.cards) > 0:
@@ -53,12 +56,25 @@ class Person(object):
 
     def __init__(self, max_number=15):
         '''
-            max_number: if the the current point >= max_number, the
+            max_number: if the the current point >= max_number, the person will
+            not want more card any more
+        '''
         self.number = 15
+        self.cards = []
+        self.score = 0
+
+    def get(self, card):
+        self.cards.append(card)
+
+    def getscore(self):
+        for card in self.cards:
+            self.score += card.getscore()
+
+
 def main():
     deck = Deck()
     for i in deck:
-        print(i)
+        print(i.getscore())
 
 
 if __name__ == '__main__':
