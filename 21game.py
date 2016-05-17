@@ -58,24 +58,63 @@ class Person(object):
         '''
             max_number: if the the current point >= max_number, the person will
             not want more card any more
+
+            def get(self, card):
+                give the person a card
+
+            def getscore(self):
+                get the scroe of the person
+
+            def expire(self):
+                return True if the person want more card
+
         '''
-        self.number = 15
+        self.number = max_number
         self.cards = []
-        self.score = 0
 
     def get(self, card):
         self.cards.append(card)
 
-    def getscore(self):
+    @property
+    def score(self):
+        score = 0
         for card in self.cards:
-            self.score += card.getscore()
+            score += card.getscore()
+        return score
+
+    def final_score(self):
+        return self.score if self.score <= 21 else 0
+
+    def expire(self):
+        return self.score <= self.number
+
+
+def agame(person, deck):
+    while person.expire():
+        person.get(deck.pop())
+    return person.final_score()
 
 
 def main():
     deck = Deck()
     for i in deck:
-        print(i.getscore())
+        print(i)
 
 
 if __name__ == '__main__':
-    main()
+    times = 0
+    score = 0
+    zero_time = 0
+    max_number = 19
+    for i in range(10000):
+        a = Person(max_number=max_number)
+        deck = Deck()
+        times += 1
+        tmp = agame(a, deck)
+        if tmp == 0:
+            zero_time += 1
+        score += agame(a, deck)
+    print('保险数字选择 %d' % max_number)
+    print('超过21点的概率 %0.2f' % (zero_time / times))
+    print('平均数值 %0.2f ' % (score / times))
+    print('不为0的平均数值 %0.2f' % (score / (times - zero_time)))
