@@ -101,7 +101,7 @@ def main():
         print(i)
 
 
-if __name__ == '__main__':
+def single():
     times = 0
     score = 0
     zero_time = 0
@@ -118,3 +118,9 @@ if __name__ == '__main__':
     print('超过21点的概率 %0.2f' % (zero_time / times))
     print('平均数值 %0.2f ' % (score / times))
     print('不为0的平均数值 %0.2f' % (score / (times - zero_time)))
+
+
+def double(a,b):
+    times = 0
+    for i in range(10000):
+if __name__ == '__main__':
