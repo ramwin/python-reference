@@ -28,6 +28,6 @@ class TestError(Exception):
     def __init__(self, name):
         self.name = name
         pass
-    def __str__(self):
+    def str(self):
         return '自定义的错误 %s'%(self.name)
 raise TestError('error')

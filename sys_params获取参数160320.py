@@ -6,7 +6,7 @@ import os
 
 
 def main():
-    print(1)
+    print('获取传入的参数')
 
 if __name__ == '__main__':
     main()
