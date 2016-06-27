@@ -9,3 +9,5 @@
     string.ascii_letters
     string.ascii_lowercase
     string.ascii_uppercase
+
+<string>.count('w') # 查看字符串里面字符的数量

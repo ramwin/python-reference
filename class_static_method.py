@@ -42,14 +42,14 @@ class B(object):
         return B.get(self)
 
 start = time.time()
-for i in range(10000):
+for i in range(1):
     a = B(i)
     B.get(a)
 end = time.time()
 print('使用静态方法耗时%0.2f秒'%(end-start))
 
 start = time.time()
-for i in range(10000):
+for i in range(1):
     a = A(i)
     a.get()
 end = time.time()
@@ -82,3 +82,11 @@ red = Red()
 print(red.value())
 green = Green()
 xcolor = UnknownColor()
+
+
+import time
+class A(object):
+    def test():
+        return 23
+    print(time.strftime('%Y-%m-%d %H:%M:%S', time.localtime()))
+    a = test()
