@@ -7,9 +7,35 @@ connect('tumblelog')    # 链接到 tumblelog 这个数据库
 
 
 class User(Document):
-    email = StringField(required=True)
+    name = StringField()
+    email = StringField()
     first_name = StringField(max_length=50)
     last_name = StringField(max_length=50)
+
+
+class Book1(Document):
+    name = StringField(required=True)
+    author = ReferenceField(User)
+
+
+class User_embeded(EmbeddedDocument):
+    name = StringField(required=True)
+
+
+class Book2(Document):
+    name = StringField(required=True)
+    author = EmbeddedDocumentField(User_embeded)
+
+w = User_embeded(name='王祥2')
+b = Book2(name="第二本书2", author=w)
+b.save()
+w.name= '王祥4'
+w.save()
+
+
+class Comment(EmbeddedDocument):
+    content = StringField()
+    name = StringField(max_length=120)
 
 
 class Post(Document):
@@ -33,9 +59,6 @@ class LinkPost(Post):
     link_url = StringField()
 
 
-class Comment(EmbeddedDocument):
-    content = StringField()
-    name = StringField(max_length=120)
 
 
 
@@ -46,7 +69,7 @@ class Comment(EmbeddedDocument):
 # post1.content = 'Took a look at MongoEngine today, looks pretty cool.'
 # post1.tags = ['mongodb', 'mongoengine']
 # post1.save()
-# 
+
 # post2 = LinkPost(title='MongoEngine Documentation', author=ross)
 # post2.link_url = 'http://docs.mongoengine.com/'
 # post2.tags = ['mongoengine']
