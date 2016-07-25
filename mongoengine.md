@@ -13,12 +13,15 @@
         name = StringField(required=True)
 
 ### 数据格式
-* StringField # 字符串
+* StringField() # 字符串
     1. max_length   # 设置最长多少, 超过就会报错, 类似meta, 是python层面
     2. primary_key=True # 设置为主键，数据库里面的`_id`就会是这个值
+    3.required=True # 能否为空, 如果为空，保存的时候就不保存
 * ReferenceField(User)  # 保存了reference的 `ObjectId` 
 * EmbeddedDocumentField(User_embedded)  # 保存了所有的信息
-* required=True # 能否为空, 如果为空，保存的时候就不保存
+* URLField()
+    1. verify_exists=False  # True 每次保存都会检查url
+* ListField(EmbeddedDocumentField(models))
 
 ### 特殊的自定义方法
     clean(self):  # 每次save的时候都会调用这个，用来写数据格式的正确与否
@@ -29,3 +32,8 @@
     Book.objects(language='Eng')
     Book.objects(author__name='wangx')
     User.objects(name='wangx').fields(slice__addresses=[0,1])
+    User.objects(friends__contains='Lily').all()
+
+### 其他类
+    DynamicDocument:    # 如果数据库里面的数据无法正确解析到class(比如多了一个字段，就会报错。使用DynamicDocument就能解决这个问题)
+    

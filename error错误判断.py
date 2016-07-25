@@ -2,6 +2,12 @@
 # -*- coding: utf-8 -*-
 # Xiang Wang @ 2016-01-03 21:10:49
 
+
+# 输出错误的行数
+try:
+    1/0
+except:
+    traceback.print_exc()
 def main():
     '''错误判断的方法'''
     try:
