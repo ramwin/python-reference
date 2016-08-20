@@ -2,12 +2,14 @@
 # -*- coding: utf-8 -*-
 # Xiang Wang @ 2016-01-03 21:10:49
 
+import traceback
 
 # 输出错误的行数
 try:
     1/0
 except:
-    traceback.print_exc()
+    i = traceback.format_exc()
+    print(i)
 def main():
     '''错误判断的方法'''
     try:
@@ -37,3 +39,5 @@ class TestError(Exception):
     def str(self):
         return '自定义的错误 %s'%(self.name)
 raise TestError('error')
+
+print('运行完毕')
