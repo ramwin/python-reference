@@ -20,6 +20,13 @@ def result(r):
     print('content: %s' % r.text)
 
 
+# # 获取周报
+# response = requests.get(
+#     url='http://localhost:8000/api/v1/weeklypaper/',
+#     headers=headers,
+# )
+# result(response)
+
 # # 删除group
 # response = requests.delete(
 #     url='http://localhost:8000/api/v1/todo/group/2',
