@@ -2,6 +2,25 @@
 # -*- coding: utf-8 -*-
 # Xiang Wang @ 2016-08-18 09:21:05
 
+# 基础用法
+# def log(f):
+#     print('log')
+#     print(f.__name__)
+#     def fin(*args, **kwargs):
+#         return f(*args, **kwargs)
+#     return fin
+# 
+# @log
+# def main():
+#     ''' main __docstring__ '''
+#     print(1)
+
+
+# main()
+# print(main.__doc__)
+
+from functools import update_wrapper
+## 但是这样 docstring就变了
 def log(f):
     print('log')
     print(f.__name__)
@@ -14,9 +33,8 @@ def log(f):
 
 @log
 def main():
-    ''' main __docstring__ '''
+    """ main docstring """
     print(1)
-
 
 main()
 print(main.__doc__)
