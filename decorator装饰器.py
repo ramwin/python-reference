@@ -6,8 +6,11 @@ def log(f):
     print('log')
     print(f.__name__)
     def fin(*args, **kwargs):
-        return f(*args, **kwargs)
-    return fin
+        try:
+            return f(*args, **kwargs)
+        except:
+            return '出现错误, 但是我不告诉你错误是什么'
+    return update_wrapper(fin, f)
 
 @log
 def main():
