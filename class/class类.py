@@ -8,6 +8,14 @@ class Person(object):
     def __str__(self):
         return self.name
 class Student(Person):
+
+    class motto(object):
+        """
+            class 内部也可以定义 class
+        """
+        def __init__(self, text):
+            self.text = text
+
     def __init__(self, name):
         super(Student,self).__init__(name)
         # self._name = name
@@ -20,3 +28,6 @@ class Student(Person):
 lucy = Student(name='lucy')
 print(lucy)
 print(lucy._name)
+
+a = lucy.motto('w')
+print(a.text)
