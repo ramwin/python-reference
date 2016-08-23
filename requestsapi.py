@@ -20,6 +20,10 @@ def result(r):
     print('content: %s' % r.text)
 
 
+# 导入数据
+response = requests.post(
+    url='http://localhost:8000/api/v1/common/test',
+)
 # # 获取周报
 # response = requests.get(
 #     url='http://localhost:8000/api/v1/weeklypaper/',
@@ -56,5 +60,5 @@ def result(r):
 #     headers=headers,
 #     params=params,
 #     )
-# print(response.text)
-# 
+print(response.text)
+
