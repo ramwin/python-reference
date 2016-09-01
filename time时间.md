@@ -1,6 +1,11 @@
 # 标准化输出时间
+[参考代码](./script/time时间.py)
+
 ## 时间 变成 文本
     time.strftime('%Y-%m-%d %H:%M:%S',time.localtime())
+    time.strftime('%F %T', time.localtime())
+        %F: 2016-08-30
+        %T, %X: 14:35:37
 ## 把时间文本变成标准化的structtime        文本变成 structtime
     temp=time.strptime('20150707120000','%Y%m%d%H%M%S')
 

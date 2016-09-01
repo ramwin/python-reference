@@ -10,6 +10,12 @@ class Person(object):
         return self.name
     def same(self, obj):
         return isinstance(obj, self.__class__)
+    def test(self):
+        return self.help("救救 %s"%self._name)
+    @staticmethod
+    def help(text="救救我"):
+        print(text)
+        return text
 class Student(Person):
 
     class motto(object):
@@ -29,6 +35,11 @@ class Student(Person):
         print('%s: %s'%(self._name, self.__score))
 
 
-a = Person(name='a', age=18)
-b = Person(name='b', age=19)
-print(a.same(b))
+# a = Person(name='a', age=18)
+# b = Person(name='b', age=19)
+# print(a.same(b))
+
+Person.help('测试静态方法')
+a = Person(name='test', age=18)
+a.test()
+
