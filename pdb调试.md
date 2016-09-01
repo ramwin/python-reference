@@ -9,3 +9,9 @@
     run some code
     pdb.set_trace()
     run some code
+
+## 操作
+    s  # 跳转到下一条执行的指令
+    n  # 跳转到下一条执行的代码
+    c  # 继续执行
+    l  # 显示当前附近的代码
