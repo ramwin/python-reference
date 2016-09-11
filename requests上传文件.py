@@ -4,26 +4,17 @@
 
 import requests
 
-url = 'http://192.168.1.60:8080/api/v1/crm/LandSeaDocReceptionRecord'
-files = {'file': ('test.txt', 'test text')}
-values = {
-    'DocumentTitle': 'test',
-    'builder': 'wangxiang',
-    'keywords': 'test',
-    'business_id': 'business_id',
-    'business_app_name': 'business_app_name',
-    'buildtime': '2017-07-04 14:00:00',
-    'realty_prj': 'relaty_prj',
-    'reception_id': 'reception_id',
-    'complainant': 'wangxiang',
-    'author': 'wangxiang',
-    'submit_time': '2017-04-04 14:12:00',
-    'proprietor': 'yezhu',
-    'reception_type': 'jiedai',
-    'complain_object': 'mingyuan',
-    'accept_person': 'wangxiang',
-    'business_node': 'business_node',
-    'folder': '{87CC030E-538F-4C66-86CE-278F1781CBB9}'
+url = 'http://localhost:8000/api/v1/user/avatar'
+files = {'files': open('./portrait.png', 'rb')}
+headers = {
+    # 'Authorization': 'Token 76ec5ef11050fefd51deb836b3c795b7ddca3bee', # wangxiang
+    'Authorization': 'Token 43a215c5de33d99f8a3c049310c5186dfaea1947', # zoe
+    # 'Content-Type': 'Application/json',
 }
-r = requests.post(url, files=files, data=values)
-print(r.text)
+r = requests.put(url, files=files, headers=headers)
+
+# url = 'http://192.168.1.60:8080/api/v1/crm/LandSeaDocReceptionRecord'
+# files = {'file': ('test.txt', 'test text')}
+# values = {
+# }
+# r = requests.post(url, files=files, data=values)
