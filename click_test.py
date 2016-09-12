@@ -11,7 +11,7 @@ import click
 def hello(count, name):
     """Simple program that greets NAME for a total of COUNT times."""
     for x in range(count):
-        click.echo('Hello %s!' % name)
+        click.echo(click.style('!'*100 + 'Hello %s!' % name, bg='blue', fg='red', bold=True, blink=True))
 
 if __name__ == '__main__':
     hello()
