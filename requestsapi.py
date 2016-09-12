@@ -28,6 +28,33 @@ def result(r):
     pprint.pprint('status_code: %d' % r.status_code)
     pprint.pprint('content: %s' % r.text)
 
+# 获取单个简报
+# response = requests.get(
+#     url = 'http://localhost:8000/api/v1/weeklypaper/brief/1',
+#     headers = headers,
+# )
+# 获取所有简报
+# response = requests.get(
+#     url = 'http://localhost:8000/api/v1/weeklypaper/brief',
+#     headers = headers,
+# )
+# 制作简报
+# response = requests.post(
+#     url = 'http://localhost:8000/api/v1/weeklypaper/brief',
+#     data = {
+#         "opr_user": 6,
+#         "weekly_paper": 89, "comment": "测试简报",
+#     },
+#     headers = headers,
+# )
+
+# 上传头像
+# url = 'http://localhost:8000/api/v1/user/avatar'
+# data = {
+#     "avatar": open("test/png.txt", "r").read(),
+#     "filename": "test/123.png",
+# }
+# response = requests.post(url, headers=headers, data=data)
 # 标签
 # response = requests.get(
 #     url='http://localhost:8000/api/v1/weeklypaper/label',
@@ -42,21 +69,21 @@ response = requests.get(
     url='http://localhost:8000/api/v1/weeklypaper/?page=1',
     headers=headers,
     params = {
-        # 'user_id': 28,
-        'user_id': 6,
-        'page': 4,
+        'user_id': 28,
+        # 'user_id': 6,
+        # 'page': 4,
     }
 )
 
 # 创建周报
-data = {
-    'title': "周报测试" + "".join(random.sample(string.ascii_letters,10)),
-    'status': 2,
-    'todos': {
-        'achievements': [13,],
-        'plans': [3,],
-    }
-}
+# data = {
+#     'title': "周报测试" + "".join(random.sample(string.ascii_letters,10)),
+#     'status': 2,
+#     'todos': {
+#         # 'achievements': [13,],
+#         # 'plans': [3,],
+#     }
+# }
 # response = requests.post(
 #     url='http://localhost:8000/api/v1/weeklypaper/',
 #     headers=headers,
@@ -65,7 +92,7 @@ data = {
 
 # 查看周报
 # response = requests.get(
-#     url='http://localhost:8000/api/v1/weeklypaper/91',
+#     url='http://localhost:8000/api/v1/weeklypaper/110',
 #     headers=headers,
 # )
 
