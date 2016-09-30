@@ -101,11 +101,11 @@ def main():
         print(i)
 
 
-def single():
+def single(n):
     times = 0
     score = 0
     zero_time = 0
-    max_number = 19
+    max_number = n
     for i in range(10000):
         a = Person(max_number=max_number)
         deck = Deck()
@@ -120,7 +120,6 @@ def single():
     print('不为0的平均数值 %0.2f' % (score / (times - zero_time)))
 
 
-def double(a,b):
-    times = 0
-    for i in range(10000):
 if __name__ == '__main__':
+    for i in range(15, 20):
+        single(i)

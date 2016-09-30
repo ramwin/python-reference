@@ -11,6 +11,7 @@
 
 # MySQL官方python包
 [官方地址](http://dev.mysql.com/doc/connector-python/en/connector-python-example-connecting.html)
+[下载地址](http://dev.mysql.com/downloads/connector/python/)
 ## 基础
     from mysql.connector import connection
     cnx = connection.MySQLConnection(
