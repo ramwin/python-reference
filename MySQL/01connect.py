@@ -4,9 +4,9 @@
 
 import mysql.connector
 
-cnx = mysql.connector.connect(user='root', password='wangxiang',
+cnx = mysql.connector.connect(user='root', password='wangxiangno',
                               host='127.0.0.1',
-                              database='employees')
+                              database='testtime')
 cnx.close()
 print('使用connect函数链接成功\n')
 
