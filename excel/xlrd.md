@@ -10,4 +10,3 @@
     sheet = workbook.sheets()[0] # 获取 workbook 的sheets
     sheet.nrows # 获取 sheet 的行数
     sheet.row_values(1) # 获取某一行的数据(返回一个 list)
-    
