@@ -2,8 +2,11 @@
 [参考代码](./script/time时间.py)
 
 ## 时间 变成 文本
+    import datetime, time
     time.strftime('%Y-%m-%d %H:%M:%S',time.localtime())
     time.strftime('%F %T', time.localtime())
+        %d: 几号
+        %b: 几月 Sep, Feb
         %F: 2016-08-30
         %T, %X: 14:35:37
 ## 把时间文本变成标准化的structtime        文本变成 structtime
@@ -16,3 +19,4 @@
     localtime()        #这个比较好,当地时间
 
 ## 时间运算
+    datetime.timedelta(day, second, microsecond)  # microsecond 10e-6s

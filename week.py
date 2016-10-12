@@ -22,11 +22,13 @@ class Week(object):
         self.week = week
 
     @classmethod
-    def create_from_date(cls, date_obj):
+    def create_from_date(cls, date_obj=None):
         """
             date: datetime.date
             example: week = Week.create_from_date(date(2016, 9, 18))
         """
+        if date_obj is None:
+            date_obj = datetime.date.today()
         year = date_obj.year
         week = int(date_obj.strftime('%W'))
         if week == 0:
