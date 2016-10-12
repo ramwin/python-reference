@@ -1,4 +1,10 @@
 # MySQLdb
+## 安装
+* sudo apt install python-mysqldb
+* 虚拟环境安装
+    1. sudo apt-get install python-dev libmysqlclient-dev
+    2. pip install mysql-python
+## 使用
     import MySQLdb
     db = MySQLdb.connect(host="localhost",user="root",passwd="wangxiang", db="test",charset="utf8")
     cursor = db.cursor()
