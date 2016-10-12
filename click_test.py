@@ -6,10 +6,13 @@ import click
 
 @click.command()
 @click.option('--count', default=1, help='Number of greetings.')
-@click.option('--name', prompt='Your name',
+@click.option('--name', required=True, default="ew", prompt="Your Name",
               help='The person to greet.')
-def hello(count, name):
+@click.confirm('-r')
+@click.argument('target')
+def hello(count, name, target):
     """Simple program that greets NAME for a total of COUNT times."""
+    print("你输入的最后参数是: %s" % target)
     for x in range(count):
         click.echo(click.style('!'*100 + 'Hello %s!' % name, bg='blue', fg='red', bold=True, blink=True, underline=True))
 
