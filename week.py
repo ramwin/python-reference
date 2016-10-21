@@ -46,9 +46,18 @@ class Week(object):
         return startdate
 
     @property
+    def startdatetime(self):
+        return datetime.datetime.strptime(self.startdate.strftime("%F %X"), "%Y-%m-%d %H:%M:%S")
+
+    @property
     def enddate(self):
         enddate = self.startdate + datetime.timedelta(days=6)
         return enddate
+
+    @property
+    def enddatetime(self):
+        return datetime.datetime.strptime(self.enddate.strftime("%F %X"), "%Y-%m-%d %H:%M:%S") + datetime.timedelta(
+            days=0, seconds=3600 * 24)
 
     def __str__(self):
         return "%d年第%d周: %s~%s" % (self.year, self.week, self.startdate.strftime("%m月%d日"), self.enddate.strftime("%m月%d日"))
