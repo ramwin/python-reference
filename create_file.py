@@ -7,12 +7,16 @@ import random
 
 @click.command()
 @click.option('-r', is_flag=True, default=False)
-@click.option('-s', is
+@click.option('-f', is_flag=True, default=False)
 @click.argument('filename')
-def create(r, filename):
-    if r is True:  # 生成随机文档
-    print(r)
-    print(filename)
+def create(r, f, filename):
+    if os.path.exists(filename):
+        if not f:
+            print("文件已存在")
+            return False
+    file_obj = open(filename, 'wb')
+    if r is not True:  # 生成随机文档
+        file_obj.write('0')
 
 
 if __name__ == '__main__':
