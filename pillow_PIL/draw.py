@@ -8,8 +8,8 @@ import random
 
 
 def create_image(
-        width=1000, height=1000,
-        row=10, column=10,
+        width=2000, height=1500,
+        row=6, column=8,
         path="test.png", percent=0.48,
         background=0xffffff):
     """
@@ -17,27 +17,33 @@ def create_image(
     """
     total = row*column  # 一共的圆
     yellow_total = int(row*column*percent)
+    print(yellow_total)
     yellow_cnt = 0
     blue_total = total - yellow_total
+    print(blue_total)
     blue_cnt = 0
     image = Image.new('RGB', (width, height), background)
     draw = ImageDraw.Draw(image)
     fill_color = 0x00ff00  # 填充颜色
-    rec_width = width/row
-    rec_row = width/column
-    padding = 20  # 设置圆和边界之间的间隔
+    rec_width = width/column
+    rec_row = height/row
+    padding = 4  # 设置圆和边界之间的间隔
     for i in range(row):  # 第i行
         for j in range(column):  # 第j列
-            if random.randint(1, total - yellow_cnt - blue_cnt) > \
+            if random.randint(1, total - yellow_cnt - blue_cnt) <= \
                (yellow_total - yellow_cnt):
                 color = 'yellow'
+                yellow_cnt += 1
             else:
                 color = 'blue'
+                blue_cnt += 1
             draw.chord(
                 ((rec_width*j+padding, rec_row*i+padding), (rec_width*(j+1)-padding, rec_row*(i+1)-padding)),
                 0, 360, fill=color)
+    print(blue_cnt)
     image.save(path)
 
 
 if __name__ == '__main__':
-    create_image()
+    for i in range(1):
+        create_image()
