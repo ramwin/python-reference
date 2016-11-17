@@ -9,6 +9,10 @@
     string.ascii_uppercase
     <string>.count('w') # 查看字符串里面字符的数量
 
+# strip
+    'a'.strip()  # 把前后空格，换行，tab删除
+    'a'.strip('we')  # 把前后的 w 和 e 删除。 而不是把前后的 'we' 删除
+
 # bytes
 
 # unicode

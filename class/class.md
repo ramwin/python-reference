@@ -7,6 +7,8 @@
         def __init__(self, i):
             self.i = i
 
+        def __eat(self):  # 如果是两个下划线，就是不能继承的
+            print("It is eating")
         @staticmethod   # 这个必须有
         def judge(i):
             return isinstance(i, int)
