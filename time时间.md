@@ -19,4 +19,6 @@
     localtime()        #这个比较好,当地时间
 
 ## 时间运算
-    datetime.timedelta(day, second, microsecond)  # microsecond 10e-6s
+    a = b - c
+    a = datetime.timedelta(day, second, microsecond)  # microsecond 10e-6s
+    print(a.total_seconds())
