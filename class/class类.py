@@ -12,6 +12,10 @@ class Person(object):
         return isinstance(obj, self.__class__)
     def test(self):
         return self.help("救救 %s"%self._name)
+    def _one(self):
+        print("我是person")
+    def printname(self):
+        self._one()
     @staticmethod
     def help(text="救救我"):
         print(text)
@@ -42,4 +46,6 @@ class Student(Person):
 Person.help('测试静态方法')
 a = Person(name='test', age=18)
 a.test()
-
+a.printname()
+a._one()
+print(a._name)
