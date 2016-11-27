@@ -32,12 +32,20 @@ def send_mail(to_list,sub,content = '爬虫中断了'):  #to_list：收件人；
         s.sendmail(me, to_list, msg.as_string())  #发送邮件
         s.close()  
         return True  
-    except Exception, e:  
-        print str(e)  
+    except Exception as e:  
+        print(e)
         return False  
-if __name__ == '__main__':  
-    if send_mail(mailto_list,"hello",content='数据中断'):  
-        print "发送成功"  
-    else:  
-        print "发送失败"  
 
+
+# 使用yagmail 来发送邮件
+
+import yagmail
+print("yag")
+yag = yagmail.SMTP("zettage_wangx@163.com", "Zettage321")
+print("yag生成")
+# yag = yagmail.SMTP("meeting_service@inmindglobal.com")
+contents = ["This is the body, and here is just text http://www.ramwin.com/media/portrait.png",
+    "You can find a autio file attached,", "/local/path/song.mp3"]
+print("准备发送邮件")
+a = yag.send("ramwin@qq.com", "subject", contents)
+print(a)
