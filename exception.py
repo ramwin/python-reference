@@ -3,6 +3,7 @@
 # Xiang Wang @ 2016-08-19 11:00:43
 
 import json
+import time
 def testexcept():
     try:
         1/0
@@ -33,3 +34,13 @@ def testexcept():
         1/0
     except Exception as e:
         a = e
+
+def all():
+    a = 0
+    while True:
+        try:
+            print(a)
+            a = a+1
+            time.sleep(1)
+        except KeyboardInterrupt as e:
+            a = a+1
