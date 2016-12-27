@@ -15,8 +15,10 @@
 ## 把structime变成时间戳
     time.mktime(structtime)
 ## 把时间戳变成structime
-    gmtime(...)        #这个会变成标准UTC时间
-    localtime()        #这个比较好,当地时间
+    time.gmtime(...)        #这个会变成标准UTC时间
+    time.localtime()        #这个比较好,当地时间
+    datetime.datetime.fromtimestamp(integer)
+
 
 ## 时间运算
     a = b - c

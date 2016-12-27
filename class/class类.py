@@ -43,9 +43,30 @@ class Student(Person):
 # b = Person(name='b', age=19)
 # print(a.same(b))
 
-Person.help('测试静态方法')
-a = Person(name='test', age=18)
-a.test()
-a.printname()
-a._one()
-print(a._name)
+def main():
+    Person.help('测试静态方法')
+    a = Person(name='test', age=18)
+    a.test()
+    a.printname()
+    a._one()
+    print(a._name)
+
+
+class A(object):
+    def _say(self):
+        print("calling _say")
+    def __say(self):
+        print("calling __say")
+    def _say_(self):
+        print("calling _say_")
+    def __say__(self):
+        print("calling __say__")
+    def out(self):
+        self.__say()
+
+a = A()
+a._say()
+# a.__say()  # 有两个下划线是无法被调用的
+a.out()
+a._say_()
+a.__say__()
