@@ -73,6 +73,10 @@ an event
 * body
 * location
 
+## function
+* save
+    * `send_meeting_invitations`: 'SendToNone', 'SendOnlyToChanged', 'SendToAllAndSaveCopy'
+
 
 # Attendee
 ## example
