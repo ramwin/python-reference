@@ -5,6 +5,7 @@
 ## 基础
     from mongoengine import *
     connect('tumblelog')
+    connect('mongodb', host='mac', port=27017)
 
     class User(Document):
         name = StringField(required=True)

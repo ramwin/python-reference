@@ -2,3 +2,6 @@
 
 ## 安装
     sudo pip install pep8
+
+## 其他
+    flake8

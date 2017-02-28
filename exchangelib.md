@@ -15,7 +15,7 @@ call this function first
     # the PYTZ_TO_MS_MAP only contains few location, you should add your
     # special timezone refering the MS_TIMEZONE_DEFINITIONS
 
-    tz = EWSTimeZone.timezone("Asia/Shanghai")
+    TZ = EWSTimeZone.timezone("Asia/Shanghai")
     account = Account(primary_smtp_address=USERNAME, config=get_config(),
                       access_type=DELEGATE)
 
@@ -57,14 +57,26 @@ an event
 ## example
     from exchangelib.folders import CalendarItem 
     item = CalendarItem(
-        start = tz.localize(EWSDateTime(year, month, day, hour, 30)),
-        end = tz.localize(EWSDateTime(year, month, day, hour+1, 30)),
+        start = TZ.localize(EWSDateTime(year, month, day, hour, 30)),
+        end = TZ.localize(EWSDateTime(year, month, day, hour+1, 30)),
         subject = "Subject",
         body = "Hello from python",
         location = "devnull",
         categories = ['foo', 'bar'],
         account = account,
         folder = account.calendar,
+    )
+    item2 = CalendarItem(
+        start = TZ.localize(EWSDateTime(year, month, day, hour+1, 30)),
+        end = TZ.localize(EWSDateTime(year, month, day, hour+2, 30)),
+        subject = "changed changed subject",
+        body = "Hello from python",
+        location = "devnull",
+        categories = ['foo', 'bar'],
+        account = account,
+        folder = account.calendar,
+        changekey = item.changekey,
+        # item_id = item.item_id,
     )
 ## parameters
 * start: starttime
