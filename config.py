@@ -1,5 +1,9 @@
 #!/usr/local/bin/env python3
 # -*- coding: utf-8 -*-
+"""
+    获取数字
+    config.getint('section', 'name')
+"""
 import random
 import six
 if six.PY3:
