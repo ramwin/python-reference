@@ -4,6 +4,9 @@
     response.selector.xpath('//title')
 ## 根据css选择
     response.selector.css('title')
+    response.selector.css('.title span')
+## 根据class选择
+    response.selector.xpath('//div[@class="area"]')
 
 
 # 数据处理
@@ -19,4 +22,3 @@
     response.selector.xpath('//a').xpath('@href')
     response.selector.xpath('//a/@href')
     response.selector.css('a::attr(href)')
-

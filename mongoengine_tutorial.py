@@ -3,8 +3,11 @@
 # Xiang Wang @ 2016-06-22 14:06:25
 
 from mongoengine import *
-connect('tumblelog')    # 链接到 tumblelog 这个数据库
+connect('test')    # 链接到 tumblelog 这个数据库
 
+
+class Text(Document):
+    text = StringField()
 
 class User(Document):
     name = StringField()
@@ -59,18 +62,20 @@ class LinkPost(Post):
     link_url = StringField()
 
 
-
-
-
-# ross = User(email='ross@example.com',
-#             first_name='Ross',
-#             last_name='Lawley').save()
-# post1 = TextPost(title='Fun with MongoEngine', author=john)
-# post1.content = 'Took a look at MongoEngine today, looks pretty cool.'
-# post1.tags = ['mongodb', 'mongoengine']
-# post1.save()
-
-# post2 = LinkPost(title='MongoEngine Documentation', author=ross)
-# post2.link_url = 'http://docs.mongoengine.com/'
-# post2.tags = ['mongoengine']
-# post2.save()
+def test_reference():
+    class User(Document):  # 哪些用户看过这个书
+        name = StringField()
+    class Book(Document):
+        name = StringField()
+        users = ListField(ReferenceField(User))
+    user = User(name='user1')
+    user.save()
+    book = Book(name='book1')
+    book.save()
+    book.update(push__users=user)
+    user.delete()
+    book = Book.objects.get(id=book.id)
+    print(book.users)  # 这样生成的id是还存在，但是user已经不存在了
+    book.users.pop(0)
+    book.save()
+    
