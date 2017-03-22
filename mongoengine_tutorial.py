@@ -78,4 +78,7 @@ def test_reference():
     print(book.users)  # 这样生成的id是还存在，但是user已经不存在了
     book.users.pop(0)
     book.save()
-    
+
+
+if __name__ == '__main__':
+    test_reference()
