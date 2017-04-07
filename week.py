@@ -109,6 +109,9 @@ class Week(object):
             return self.__sub_integer__(week)
         return (self.startdate - week.startdate).days/7
 
+    def __eq__(self, week):
+        return self.get_year_week() == week.get_year_week()
+
 
 def main():
     a = Week(2016,1)

@@ -38,11 +38,11 @@ with open('test.cfg', 'w') as configfile:
 
 
 
-import configparser
-
-config = configparser.ConfigParser()
-config.read('test.cfg')
-print("解析")
-# print(config.get('Section2', 'spacevalue'))
-print(config.get('Section2', 'space key'))
-print("解析完成")
+# import configparser
+# 
+# config = configparser.ConfigParser()
+# config.read('test.cfg')
+# print("解析")
+# # print(config.get('Section2', 'spacevalue'))
+# print(config.get('Section2', 'space key'))
+# print("解析完成")
