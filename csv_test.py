@@ -8,7 +8,7 @@ import csv
 def test_dictwriter():
     """使用dict来做header"""
     person1 = {
-        # 'first_name': 'walter, ", ",',
+        'first_name': 'walter, ", ",联通',
         'last_name': 'white',
         'location': {
             'city': 'los angeles'
@@ -29,7 +29,7 @@ def test_dictwriter():
         }
     }
     persons = [person1, person2, person3]
-    with open('test/dictwriter.csv', 'w') as csvfile:
+    with open('test/dictwriter.csv', 'w', encoding="gbk") as csvfile:
         fieldnames = ['first_name', 'last_name', 'location']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames, extrasaction='raise')
         writer.writeheader()
@@ -71,4 +71,4 @@ def test_dynamic_header():
         writer.writerows(persons)
 
 if __name__ == '__main__':
-    test_dynamic_header()
+    test_dictwriter()
