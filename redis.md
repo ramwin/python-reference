@@ -4,7 +4,7 @@
     import redis
     r = redis.StrictRedis()
     r.get('foo')  # 如果key不存在，返回None
-    r.set('foo', 'bar')
+    r.set('foo', 'bar', ex=3600)  # 3600秒后过期。传入string也可以
 
     r.delete(key)   # 删除key，存在就是返回1, 否则返回0
 
