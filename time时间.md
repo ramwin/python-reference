@@ -24,3 +24,11 @@
     a = b - c
     a = datetime.timedelta(day, second, microsecond)  # microsecond 10e-6s
     print(a.total_seconds())
+
+
+# datetime
+
+## datetime.date
+* 参数
+* 方法
+    * weekday: monday ==0; sunday ==6

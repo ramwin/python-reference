@@ -13,3 +13,5 @@
 
 # 其他包
 * [jinja模板渲染](./jinjia.md)
+* [openpyxl](./openpyxl.md)
+* [scrapy](./scrapy/tutorial.md)
