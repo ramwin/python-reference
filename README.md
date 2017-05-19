@@ -14,4 +14,5 @@
 # 其他包
 * [jinja模板渲染](./jinjia.md)
 * [openpyxl](./openpyxl.md)
-* [scrapy](./scrapy/tutorial.md)
+* [scrapy](./scrapy/README.md)
+* [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*

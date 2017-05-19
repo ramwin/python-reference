@@ -19,3 +19,10 @@
         yield {}  # 返回一个可以被 item 解析的字典
         yield scrapy.Request(url, callback=self.part)  # 生成一个新的队列
 ```
+
+* [start\_requets]  
+
+*生成一系列的requests*
+```
+    
+```
