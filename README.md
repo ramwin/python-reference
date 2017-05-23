@@ -10,6 +10,12 @@
 # 包参考
 * [csv](./csv.md)
 * [collections](./collections.md)
+* [fractions](https://docs.python.org/2/library/fractions.html#fractions.Fraction)
+```
+    from fractions import Fraction
+    f = Fraction(1,3)
+    print("1/3 = %d/%d" % (f.numerator, f.denominator))
+```
 
 # 其他包
 * [jinja模板渲染](./jinjia.md)
