@@ -6,6 +6,16 @@
 ```
     enumerate(['a','b','c'])  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象
 ```
+* [执行顺序](https://docs.python.org/3/reference/expressions.html#evaluation-order)
+```
+    ()  # 括号内
+    **  # 指数
+    +x, -x  # 负数
+    in, not in, is, is not, <, <=, >, >=  # 比较
+    not x  #
+    and  #
+    or  # and 和 or不是同样的哦。
+```
 
 
 # 包参考
