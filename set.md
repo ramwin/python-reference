@@ -2,8 +2,8 @@
 
 # 基础
 * [官网文档](https://docs.python.org/3/tutorial/datastructures.html#sets)
-* 示例
-```
+* 基础操作
+    ```
     basket = {'apple', 'orange', 'apple'}  # {'apple', 'orange'}
     basket = set()  # 创建空的set需要使用方法，不能使用{}
     a = set('abracadabra')
@@ -12,4 +12,6 @@
     a | b
     a & b
     a ^ b
-```
+    a.add('123')
+    a.remove('123')
+    ```

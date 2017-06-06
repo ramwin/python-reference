@@ -1,6 +1,12 @@
 #### Xiang Wang @ 2016-09-05 12:48:47
 
 
+# 方法
+* islower
+* isupper
+* istitle
+
+
 # string
     'a,b,c'.split(',',1)    # 只拆分一次
     string.digits   # '0123456789'
