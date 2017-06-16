@@ -31,8 +31,10 @@
 * [json](./json.md)
 
 # 其他包
+* [click](./click.md) *用python写shell命令*
 * [jinja模板渲染](./jinjia.md)
 * [openpyxl](./openpyxl.md)
 * [scrapy](./scrapy/README.md)
 * [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
 * [word2html](https://github.com/bradmontgomery/word2html)  *把word转化成html*
+* [qiniu](https://developer.qiniu.com/kodo/sdk/1242/python) *调用七牛的api上传文件*
