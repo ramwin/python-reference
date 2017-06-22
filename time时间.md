@@ -11,6 +11,7 @@
         %T, %X: 14:35:37
 ## 把时间文本变成标准化的structtime        文本变成 structtime
     temp=time.strptime('20150707120000','%Y%m%d%H%M%S')
+    datetime.datetime.strptime('2017-01-01 00:00:00', '%Y-%m-%d %H:%M:%S')
 
 ## 把structime变成时间戳
     time.mktime(structtime)
@@ -24,3 +25,11 @@
     a = b - c
     a = datetime.timedelta(day, second, microsecond)  # microsecond 10e-6s
     print(a.total_seconds())
+
+
+# datetime
+
+## datetime.date
+* 参数
+* 方法
+    * weekday: monday ==0; sunday ==6
