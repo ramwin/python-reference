@@ -1,7 +1,9 @@
 #### Xiang Wang @ 2017-02-10 15:30:51
 
 # 基础
+* [字符串string](./string字符串.md)
 * [列表list](list.md)
+* [集合set](set.md)
 * [时间](time时间.md)
 * enumerate
 ```
@@ -38,4 +40,5 @@
 * [scrapy](./scrapy/README.md)
 * [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
 * [word2html](https://github.com/bradmontgomery/word2html)  *把word转化成html*
+* [pillow](./Pillow.md)
 * [qiniu](https://developer.qiniu.com/kodo/sdk/1242/python) *调用七牛的api上传文件*
