@@ -40,6 +40,9 @@
 * [openpyxl](./openpyxl.md)
 * [scrapy](./scrapy/README.md)
 * [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
+* [flask](./flask.md) *轻量级http服务器*
 * [word2html](https://github.com/bradmontgomery/word2html)  *把word转化成html*
 * [pillow](./Pillow.md)
 * [qiniu](https://developer.qiniu.com/kodo/sdk/1242/python) *调用七牛的api上传文件*
+* pyperclip *控制系统剪切板*
+    pyperclip.copy('ew') # 把ew放入剪切板
