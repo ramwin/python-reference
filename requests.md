@@ -29,6 +29,16 @@
 * params
 * headers
 * cookies
+* [proxies](http://docs.python-requests.org/en/master/user/advanced/#proxies) 
+[代理池](http://www.xicidaili.com/)
+    ```
+        import requests
+        proxies = {
+            'http': 'http://10.10.1.10:3182',
+            'https': 'http://10.10.1.10:1080',
+        }
+        requests.get('http://ipinfo.io', proxies=proxies)
+    ```
 
 
 # response

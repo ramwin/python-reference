@@ -34,6 +34,7 @@
 * [json](./json.md)
 
 # 其他包
+* [requests](./requests.md) *发送http请求*
 * [click](./click.md) *用python写shell命令*
 * [jinja模板渲染](./jinjia.md)
 * [openpyxl](./openpyxl.md)
