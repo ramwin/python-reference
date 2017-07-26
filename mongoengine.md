@@ -25,6 +25,8 @@
     1. verify_exists=False  # True 每次保存都会检查url
 * ListField(EmbeddedDocumentField(models))
     * 不管有没有 default = [],默认的都是 [] 而不是None
+* [ObjectIdField](http://docs.mongoengine.org/apireference.html#mongoengine.fields.ObjectIdField)
+    * str(object) 返回他的id的字符串
 
 ### 数据更新
     class.update(inc__filed=3)  # 原子操作，多线程使用

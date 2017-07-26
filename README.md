@@ -1,6 +1,7 @@
 #### Xiang Wang @ 2017-02-10 15:30:51
 
 # 基础
+* [官网教程](https://docs.python.org/3/)
 * [字符串string](./string字符串.md)
 * [列表list](list.md)
 * [集合set](set.md)
@@ -40,6 +41,7 @@
 * [openpyxl](./openpyxl.md)
 * [scrapy](./scrapy/README.md)
 * [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
+* [mongoengine](./mongoengine.md) *把mongodb当作sql用。那你为什么不直接用mysql啊*
 * [flask](./flask.md) *轻量级http服务器*
 * [word2html](https://github.com/bradmontgomery/word2html)  *把word转化成html*
 * [pillow](./Pillow.md)
