@@ -25,6 +25,9 @@
     1. verify_exists=False  # True 每次保存都会检查url
 * ListField(EmbeddedDocumentField(models))
     * 不管有没有 default = [],默认的都是 [] 而不是None
+    * [删除里面的数据](http://docs.mongoengine.org/guide/defining-documents.html#one-to-many-with-listfields)
+        page.update(pull__authors=bob)
+
 * [ObjectIdField](http://docs.mongoengine.org/apireference.html#mongoengine.fields.ObjectIdField)
     * str(object) 返回他的id的字符串
 
