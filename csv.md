@@ -23,3 +23,14 @@
 
 * 注意
     * 如果dict里面缺少了某个字段，只会使那个字段为空，而不报错
+
+
+* csv.DictReader
+    ```
+        file = open('filename.csv')
+        reader = csv.DictReader(file)
+        reader.fieldnames
+        >>> ['序号', '企业名称', '联系电话']
+        for row in reader:
+            print(row) >>> {'联系电话': '', '企业名称': '碧桂园控股', '序号': {...}}
+    ```

@@ -1,6 +1,9 @@
 #### Xiang Wang @ 2016-09-05 12:48:47
 
 
+## 导航
+* [字符串格式化](#format)
+
 ### 方法
 * islower
 * isupper
@@ -29,7 +32,7 @@
 ### unicode
     a = u'ew'   # python3里面默认的字符串就是unicode, python2里面默认的字符串是str, 所有有unicode这个类
 
-* unicode转字符串
+### unicode转字符串
     # 因为python的unicode就是字符串，所以不需要
     u = u'我'
     u.encode('utf8')
@@ -39,3 +42,10 @@
     b = base64.encodestring('我'.encode('utf8')) # 查了源码，果然这个是为了兼容python2的语法。以后避免使用这个方法
 
     b = base64.encodestring('我')   # python2里面的str就是二进制,结果是str(仍然是二进制)
+
+
+### format
+```
+    "{0}: {1}".format("姓", "名")
+    "{name}".format(name="名字")
+```
