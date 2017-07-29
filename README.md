@@ -1,6 +1,7 @@
 #### Xiang Wang @ 2017-02-10 15:30:51
 
 # 基础
+* [字符串string](./string.md)
 * [列表list](list.md)
 * [时间](time时间.md)
 * enumerate
