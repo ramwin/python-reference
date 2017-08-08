@@ -20,6 +20,7 @@
     and  #
     or  # and 和 or不是同样的哦。
 ```
+* [Exception报错](./exception.md) [官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
 
 
 # 包参考
