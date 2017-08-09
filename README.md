@@ -1,9 +1,19 @@
 #### Xiang Wang @ 2017-02-10 15:30:51
 
-# 基础
+### 基础
+* 参考资料
+    * [官网教程](https://docs.python.org/3/)
+    * [python tips](http://book.pythontips.com/en/latest/index.html)
 * [字符串string](./string.md)
-* [官网教程](https://docs.python.org/3/)
 * [列表list](list.md)
+    * [for else](http://book.pythontips.com/en/latest/for_-_else.html)
+        ```
+            for item in container:
+                if search_something(item):
+                    process(item)
+            else:
+                not_found_in_container()
+        ```
 * [集合set](set.md)
 * [时间](time时间.md)
 * enumerate
@@ -23,7 +33,7 @@
 * [Exception报错](./exception.md) [官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
 
 
-# 包参考
+### 包参考
 * [csv](./csv.md)
 * [re正则表达式](./rematch正则表达式.md)
 * [collections](./collections.md)
@@ -35,7 +45,7 @@
 ```
 * [json](./json.md)
 
-# 其他包
+### 其他包
 * [requests](./requests.md) *发送http请求*
 * [click](./click.md) *用python写shell命令*
 * [jinja模板渲染](./jinjia.md)
