@@ -8,11 +8,12 @@
 * [列表list](list.md)
     * [for else](http://book.pythontips.com/en/latest/for_-_else.html)
         ```
-            for item in container:
-                if search_something(item):
-                    process(item)
-            else:
-                not_found_in_container()
+        for item in container:
+            if search_something(item):
+                process(item)
+                break
+        else:
+            not_found_in_container()
         ```
 * [集合set](set.md)
 * [时间](time时间.md)
@@ -31,6 +32,8 @@
     or  # and 和 or不是同样的哦。
 ```
 * [Exception报错](./exception.md) [官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
+* [class](./class/README.md)
+    * [property](./class/property.md) [示例](./class/property.py)
 
 
 ### 包参考
@@ -59,3 +62,5 @@
 * [qiniu](https://developer.qiniu.com/kodo/sdk/1242/python) *调用七牛的api上传文件*
 * pyperclip *控制系统剪切板*
     pyperclip.copy('ew') # 把ew放入剪切板
+* [flake8] *检测python代码是不是满足pep8*
+* [yapf] *把python的代码格式化*
