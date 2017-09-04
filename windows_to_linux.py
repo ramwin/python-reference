@@ -8,7 +8,7 @@ import click
 
 @click.command()
 @click.argument("path")
-def transform(path):
+def transform(path, *args, **kwargs):
     """把一个文件的中文换行符变成英文换行符"""
     text = open(path, "rb").read()
     text1 = text.replace(b'\r\n', b'\n')
