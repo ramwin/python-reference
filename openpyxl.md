@@ -13,6 +13,9 @@
     from openpyxl import load_workbook
     wb = load_workbook(<filename>)
     ws = wb.get_active_sheet()
+    for row in ws.rows:
+        for cell in row:
+            print(cell.value)
 ```
 
 * 写入数据
