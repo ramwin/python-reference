@@ -12,6 +12,8 @@
     * `\S`  *非空白字符*
     * `\w`  *单词字符*
     * `\W`  *非单词字符*
+    * `(a|bc|d)  *a或者bc或者c*
+    * `[a-z]` * 小写字母
 
 * 方法
     re.compile(r'(?P<id>\d+)we').match('123we').group('id')

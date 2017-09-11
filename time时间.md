@@ -2,13 +2,18 @@
 [参考代码](./script/time时间.py)
 
 ## 时间 变成 文本
+* [参考](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior)
+* 例子
+    ```
     import datetime, time
     time.strftime('%Y-%m-%d %H:%M:%S',time.localtime())
     time.strftime('%F %T', time.localtime())
         %d: 几号
         %b: 几月 Sep, Feb
-        %F: 2016-08-30
+        %F: 2016-08-30  # 不推荐使用
         %T, %X: 14:35:37
+        %Y-%m-%d %H:%M:%S  # 2017-09-11 10:35:10
+    ```
 ## 把时间文本变成标准化的structtime        文本变成 structtime
     temp=time.strptime('20150707120000','%Y%m%d%H%M%S')
     datetime.datetime.strptime('2017-01-01 00:00:00', '%Y-%m-%d %H:%M:%S')
