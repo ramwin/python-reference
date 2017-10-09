@@ -50,7 +50,9 @@
 
 ### 其他包
 * [requests](./requests.md) *发送http请求*
+* [redis](./redis.md) *使用Redis缓存*
 * [click](./click.md) *用python写shell命令*
+* [urllib](./urllib.md) *处理url*
 * [jinja模板渲染](./jinjia.md)
 * [openpyxl](./openpyxl.md)
 * [scrapy](./scrapy/README.md)
