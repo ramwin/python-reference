@@ -62,12 +62,23 @@ class LinkPost(Post):
     link_url = StringField()
 
 
+class Text2(Document):
+    text = StringField()
+
+
+class Book(Document):
+    name = StringField()
+    users = ListField(ReferenceField(User))
+
+class User(Document):
+    name = StringField()
+
+
+class Read(Document):
+    userid = IntField()
+    books = ListField(ObjectIdField())
+
 def test_reference():
-    class User(Document):  # 哪些用户看过这个书
-        name = StringField()
-    class Book(Document):
-        name = StringField()
-        users = ListField(ReferenceField(User))
     user = User(name='user1')
     user.save()
     book = Book(name='book1')
@@ -79,6 +90,19 @@ def test_reference():
     book.users.pop(0)
     book.save()
 
+def test_reference2():
+    user = User(name='user1')
+    user.save()
+    read = Read(userid=1)
+    read.save()
+    book = Book(name='book')
+    book.save()
+    print("当前看过的书")
+    print(read.books)
+    read.update(push__books=book.id)
+    read.save()
+    print(read.books)
+
 
 if __name__ == '__main__':
-    test_reference()
+    test_reference2()

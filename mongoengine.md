@@ -1,7 +1,10 @@
 #### Xiang Wang @ 2016-07-13 15:47:54
 
 ## 参考
-[学习网址](http://mongoengine.org/)
+* [学习网址](http://mongoengine.org/)
+* [字段](http://docs.mongoengine.org/guide/defining-documents.html#fields)
+
+
 ## 基础
     from mongoengine import *
     connect('tumblelog')
@@ -12,6 +15,7 @@
 
     class User_embedded(EmbeddedDocument):
         name = StringField(required=True)
+
 
 ### 数据格式
 * StringField() # 字符串
@@ -25,8 +29,12 @@
     1. verify_exists=False  # True 每次保存都会检查url
 * ListField(EmbeddedDocumentField(models))
     * 不管有没有 default = [],默认的都是 [] 而不是None
-    * [删除里面的数据](http://docs.mongoengine.org/guide/defining-documents.html#one-to-many-with-listfields)
-        page.update(pull__authors=bob)
+    * [删除或者添加里面的数据](http://docs.mongoengine.org/guide/defining-documents.html#one-to-many-with-listfields)
+        ```
+        page.update_one(pull__authors=bob)
+        page.update_one(push_authors=bob)
+        ```
+
 
 * [ObjectIdField](http://docs.mongoengine.org/apireference.html#mongoengine.fields.ObjectIdField)
     * str(object) 返回他的id的字符串

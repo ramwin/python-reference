@@ -65,6 +65,6 @@
 * pyperclip *控制系统剪切板*
     pyperclip.copy('ew') # 把ew放入剪切板
 * pip *快速安装包*
-    pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11
+    `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11`
 * [flake8] *检测python代码是不是满足pep8*
 * [yapf] *把python的代码格式化*
