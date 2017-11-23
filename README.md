@@ -64,6 +64,8 @@
 * [pillow](./Pillow.md)
 * pip *快速安装包*
     `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11`
+* pip *快速安装包*
+    `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11`
 * [pydub](https://github.com/jiaaro/pydub) *编辑mp3的包*
     * 安装依赖: `apt install libav-tools ffmpeg`
     * 基础:
@@ -77,4 +79,5 @@
 * [qiniu](https://developer.qiniu.com/kodo/sdk/1242/python) *调用七牛的api上传文件*
 * [urllib](./urllib.md) *处理url*
 * [word2html](https://github.com/bradmontgomery/word2html)  *把word转化成html*
+* [flake8] *检测python代码是不是满足pep8*
 * [yapf] *把python的代码格式化*
