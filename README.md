@@ -6,6 +6,7 @@
     * [python tips](http://book.pythontips.com/en/latest/index.html)
 * [字符串string](./string.md)
     * [unicode表](https://unicode-table.com/cn/#samaritan)
+    * 格式化 [参考链接](https://pyformat.info/)
 * [列表list](list.md)
     * [for else](http://book.pythontips.com/en/latest/for_-_else.html)
         ```
@@ -66,6 +67,11 @@
     `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11`
 * pip *快速安装包*
     `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11`
+* [pycharm]
+    * 快捷键:
+        * [折叠代码](https://www.jetbrains.com/help/pycharm/code-folding-2.html)
+        * `Ctrl+B 或者 Ctal+click`: 查看一个函数的定义
+        * `Ctrl+Q`: 查看一个函数的文档
 * [pydub](https://github.com/jiaaro/pydub) *编辑mp3的包*
     * 安装依赖: `apt install libav-tools ffmpeg`
     * 基础:
