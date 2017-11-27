@@ -55,6 +55,17 @@
 * [flake8] *检测python代码是不是满足pep8*
 * [flask](./flask.md) *轻量级http服务器*
 * [jinja模板渲染](./jinjia.md)
+* kafka *用于kafka的消息分发*
+    ```
+    from kafka import KafkaConsumer
+    consumer = KafkaConsumer('test',bootstrap_servers='192.168.1.191')
+    for msg in consumer:
+        print(msg)
+    from kafka import SimpleProducer, SimpleClient
+    kafka_client = SimpleClient('192.168.1.191')
+    kafka_producer = SimpleProducer(kafka_client, async=False)
+    kafka_producer.send_messages('test',b'test')
+    ```
 * [mongoengine](./mongoengine.md) *把mongodb当作sql用。那你为什么不直接用mysql啊*
 * [openpyxl](./openpyxl.md)
 * [redis](./redis.md) *使用Redis缓存*
