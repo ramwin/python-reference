@@ -17,6 +17,10 @@
         else:
             not_found_in_container()
         ```
+    * sorted
+        ```
+        sorted(l, key=lambda x: x['value'])  # 根据value进行排序
+        ```
 * [集合set](set.md)
 * [时间](time时间.md)
 * enumerate
@@ -80,9 +84,15 @@
     `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11`
 * [pycharm]
     * 快捷键:
-        * [折叠代码](https://www.jetbrains.com/help/pycharm/code-folding-2.html)
-        * `Ctrl+B 或者 Ctal+click`: 查看一个函数的定义
-        * `Ctrl+Q`: 查看一个函数的文档
+        * 界面工具查看
+            * 命令行: `alt+F12`
+        * 代码编辑
+            * [折叠代码](https://www.jetbrains.com/help/pycharm/code-folding-2.html)
+            * `Ctrl+B 或者 Ctal+click`: 查看一个函数的定义
+            * `Ctrl+Q`: 查看一个函数的文档
+            * `查看文件结构`: `alt+7` or `ctrl+F12`
+            * `shift+F6`: *重构函数名称，全局变化他的名字*
+    * [django支持](https://www.jetbrains.com/help/pycharm/running-tasks-of-manage-py-utility.html)
 * [pydub](https://github.com/jiaaro/pydub) *编辑mp3的包*
     * 安装依赖: `apt install libav-tools ffmpeg`
     * 基础:

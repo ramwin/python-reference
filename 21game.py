@@ -30,9 +30,9 @@ class Deck(object):
     '''
         This is the object for deck
     '''
-
     def __init__(self, joker=False):
-        # TODO I don't know how to randomly pick a card in set
+        # <del>I don't know how to randomly pick a card in set</del>
+        # set().pop()
         self.cards = []
         for suit in ['spade', 'diamond', 'club', 'heart']:
             for number in range(0, 13):

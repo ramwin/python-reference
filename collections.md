@@ -21,6 +21,7 @@
 <span id="defaultdict"></span>
 ## defaultdict
 * [官方文档](https://docs.python.org/3/library/collections.html#collections.defaultdict)
+* [参考代码]
     ```
     dd = defaultdict(int)
     dd['w']
@@ -29,6 +30,16 @@
     dd['w']
     >>> 1
     ```
+* [方法]
+    * setdefault
+        ```
+        dd = defaultdict(int)
+        dd.setdefault('w', 2)  # dd['w'] = 2 if 'w' not in dd
+        dd['w']
+        >>> 2
+        dd.setdefault('w', 4)
+        >>> 2
+        ```
 
 <span id="deque"></span>
 ## deque
