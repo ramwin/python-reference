@@ -76,6 +76,7 @@ class User(Document):
 
 class Read(Document):
     userid = IntField()
+    anotherid = IntField(default=1)
     books = ListField(ObjectIdField())
 
 def test_reference():
@@ -99,9 +100,14 @@ def test_reference2():
     book.save()
     print("当前看过的书")
     print(read.books)
-    read.update(push__books=book.id)
+    print(read.anotherid)
+    read.anotherid = 2
+    read.update(push_all__books=[book.id])
+    print(read.anotherid)
     read.save()
+    read.reload()
     print(read.books)
+    print(read.anotherid)
 
 
 if __name__ == '__main__':
