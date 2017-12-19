@@ -24,10 +24,6 @@
 * ## [集合set](set.md)
 * ## [时间](time时间.md)
 * ## [函数](function.md)
-* enumerate
-```
-    enumerate(['a','b','c'])  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象
-```
 * ## [执行顺序](https://docs.python.org/3/reference/expressions.html#evaluation-order)
 ```
     ()  # 括号内
@@ -38,13 +34,19 @@
     and  #
     or  # and 和 or不是同样的哦。
 ```
-* ## [Exception报错](./exception.md) [官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
 * ## [class](./class/README.md)
     * ## [property](./class/property.md) [示例](./class/property.py)
+* ## enumerate
+```
+    enumerate(['a','b','c'])  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象
+```
+* ## [Exception报错](./exception.md) [官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
+* ## [magic method魔法方法](./magic_methods/README.md)
 
 
 # 包参考
 * ## [csv](./csv.md)
+    * [源码](https://github.com/python/cpython/blob/3.6/Lib/csv.py)
 * ## [re正则表达式](./rematch正则表达式.md)
 * ## [collections](./collections.md)
 * ## [fractions](https://docs.python.org/2/library/fractions.html#fractions.Fraction)
