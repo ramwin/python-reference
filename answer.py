@@ -14,7 +14,7 @@ file_name = 'type.csv'
 class Industry(object):
     """代表了行业的类"""
     def __init__(self, name, code, pattern=None, parent=None):
-        self.name = name
+        self.name = name.strip()
         self.code = code
         self.parent = parent
         self.pattern = pattern  # 这个值你可以暂时不管
