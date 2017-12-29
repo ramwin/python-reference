@@ -4,6 +4,7 @@
 
 from mongoengine import *
 connect('test')    # 链接到 tumblelog 这个数据库
+import bson
 
 
 class Text(Document):
@@ -108,6 +109,15 @@ def test_reference2():
     read.reload()
     print(read.books)
     print(read.anotherid)
+
+
+def test_reference3():
+    """测试自己去创建一个圈子的主键"""
+    object_id = bson.objectid.ObjectId()
+    read = Read(
+        userid=1, anotherid=2, books=[], id=object_id)
+    read.save()
+    assert read.id == object_id
 
 
 if __name__ == '__main__':

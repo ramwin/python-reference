@@ -61,6 +61,7 @@
 * ## [click](./click.md) *用python写shell命令*
 * ## [flake8] *检测python代码是不是满足pep8*
 * ## [flask](./flask.md) *轻量级http服务器*
+* ## [iptools] *处理IP地址的包*
 * ## [jinja模板渲染](./jinjia.md)
 * kafka *用于kafka的消息分发*
     ```
@@ -79,6 +80,13 @@
 * ## [requests](./requests.md) *发送http请求*
 * ## [rsa](./rsa.md) *使用rsa加密*
 * ## [scrapy](./scrapy/README.md)
+* ## [srt](http://srt.readthedocs.io/en/latest/api.html)
+    * 基础:
+    ```python
+    subs = list(srt.parse(text))
+    for sub in subs:
+        print(sub.content)  # 输出字幕的内容
+    ```
 * ## [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
 * ## [pillow](./Pillow.md)
 * pip *快速安装包*
