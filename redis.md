@@ -2,7 +2,13 @@
 
 # 基础
     import redis
-    r = redis.StrictRedis()
+    # 单独链接
+    r = redis.StrictRedis(db=0)
+
+    # 连接池
+    pool = redis.ConnectionPool(host='localhost', port=6379, db=0)
+    r = redis.StrictRedis(connection_pool=pool)
+
     r.get('foo')  # 如果key不存在，返回None
     r.set('foo', 'bar', ex=3600)  # 3600秒后过期。传入string也可以
 

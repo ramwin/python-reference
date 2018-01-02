@@ -15,8 +15,8 @@
         fieldnames = ['first_name', 'last_name']
         writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
         writer.writerheader()
-        writer.writerrow(<dict>)
-        writer.writerrows([<dict1>, <dict2>])
+        writer.writerow(<dict>)
+        writer.writerows([<dict1>, <dict2>])
 ```
 * `csv.DictWriter`
     * extrasaction = 'raise' 默认如果dict里面多出了字段就会报错, 如果是ignore 就会忽略这个字段

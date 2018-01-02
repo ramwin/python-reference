@@ -29,5 +29,5 @@ def hello():
 <div id="deploy"></div>
 ### 部署
 ```
-    gunicorn -w 4 -b 127.0.0.1:8000 duishangproxy:app
+    gunicorn -w 4 -b 127.0.0.1:8000 --access-logfile log.log duishangproxy:app
 ```
