@@ -66,3 +66,8 @@
     pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11
 * [flake8] *检测python代码是不是满足pep8*
 * [yapf] *把python的代码格式化*
+* urllib
+    urllib.parse.urlencode({'key': 'value%&'})
+    >>> 'key=value%25%26'
+    urllib.parse.quote('&')
+    >>> '%26'
