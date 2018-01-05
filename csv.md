@@ -20,6 +20,7 @@
 ```
 * `csv.DictWriter`
     * extrasaction = 'raise' 默认如果dict里面多出了字段就会报错, 如果是ignore 就会忽略这个字段
+    * delimiter=',' 列与列之间的分隔符
 
 * 注意
     * 如果dict里面缺少了某个字段，只会使那个字段为空，而不报错
