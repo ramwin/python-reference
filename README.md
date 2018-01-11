@@ -47,7 +47,6 @@
 # 包参考
 * ## [csv](./csv.md)
     * [源码](https://github.com/python/cpython/blob/3.6/Lib/csv.py)
-* ## [re正则表达式](./rematch正则表达式.md)
 * ## [collections](./collections.md)
 * ## [fractions](https://docs.python.org/2/library/fractions.html#fractions.Fraction)
 ```
@@ -55,7 +54,30 @@
     f = Fraction(1,3)
     print("1/3 = %d/%d" % (f.numerator, f.denominator))
 ```
-* ## [json](./json.md)
+* ## json
+    * [官方教程](https://docs.python.org/3/library/json.html)
+    * 代码内使用
+    ```
+        import json
+        data = {}
+        text = json.dumps(data)
+        data = json.loads(text)
+
+        file_obj = open('source/test.json','r')
+        data = json.load(file_obj)
+
+        file_obj = open('source/test.json', w')
+        json.dump(obj, file_obj, ensure_ascii=False)
+    ```
+    * 命令行使用
+    ```
+        python -m json.tool <filename>
+        import pprint
+        pprint.pprint(data, depth=4, indent=4)
+    ```
+* ## [os](https://docs.python.org/3/library/os.path.html)
+    * `os.path.isfile()`: 返回是否存在这个文件
+* ## [re正则表达式](./rematch正则表达式.md)
 
 # 其他包
 * ## [click](./click.md) *用python写shell命令*
