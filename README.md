@@ -126,6 +126,7 @@
     song = AudioSegment.from_mp3('origin.mp3')
     song[10*1000: 40*1000].export('target.mp3')
     ```
+* ## [PyPDF2](https://pythonhosted.org/PyPDF2/) *对中文支持不友好*
 * pyperclip *控制系统剪切板*
     pyperclip.copy('ew') # 把ew放入剪切板
 * ## [qiniu](https://developer.qiniu.com/kodo/sdk/1242/python) *调用七牛的api上传文件*
