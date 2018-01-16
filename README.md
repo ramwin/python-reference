@@ -98,17 +98,7 @@
     ```
 * ## [mongoengine](./mongoengine.md) *把mongodb当作sql用。那你为什么不直接用mysql啊*
 * ## [openpyxl](./openpyxl.md)
-* ## [redis](./redis.md) *使用Redis缓存*
-* ## [requests](./requests.md) *发送http请求*
-* ## [rsa](./rsa.md) *使用rsa加密*
-* ## [scrapy](./scrapy/README.md)
-* ## [srt](http://srt.readthedocs.io/en/latest/api.html)
-    * 基础:
-    ```python
-    subs = list(srt.parse(text))
-    for sub in subs:
-        print(sub.content)  # 输出字幕的内容
-    ```
+* ## [pdfminer](https://github.com/euske/pdfminer) *解析pdf的包，好用*
 * ## [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
 * ## [pillow](./Pillow.md)
 * pip *快速安装包*
@@ -139,6 +129,17 @@
 * pyperclip *控制系统剪切板*
     pyperclip.copy('ew') # 把ew放入剪切板
 * ## [qiniu](https://developer.qiniu.com/kodo/sdk/1242/python) *调用七牛的api上传文件*
+* ## [redis](./redis.md) *使用Redis缓存*
+* ## [requests](./requests.md) *发送http请求*
+* ## [rsa](./rsa.md) *使用rsa加密*
+* ## [scrapy](./scrapy/README.md)
+* ## [srt](http://srt.readthedocs.io/en/latest/api.html)
+    * 基础:
+    ```python
+    subs = list(srt.parse(text))
+    for sub in subs:
+        print(sub.content)  # 输出字幕的内容
+    ```
 * ## [urllib](./urllib.md) *处理url*
 * ## [word2html](https://github.com/bradmontgomery/word2html)  *把word转化成html*
 * ## [flake8] *检测python代码是不是满足pep8*
