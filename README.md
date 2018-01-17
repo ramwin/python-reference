@@ -8,7 +8,7 @@
     * ## [unicode表](https://unicode-table.com/cn/#samaritan)
     * 格式化 [参考链接](https://pyformat.info/)
 * ## [列表list](list.md)
-    * ## [for else](http://book.pythontips.com/en/latest/for_-_else.html)
+    * [for else](http://book.pythontips.com/en/latest/for_-_else.html)
         ```
         for item in container:
             if search_something(item):
@@ -21,6 +21,7 @@
         ```
         sorted(l, key=lambda x: x['value'])  # 根据value进行排序
         ```
+    * [自定义可迭代](./for.md)
 * ## [集合set](set.md)
 * ## [时间](time时间.md)
 * ## [函数](function.md)
@@ -87,6 +88,7 @@
 * ## [click](./click.md) *用python写shell命令*
 * ## [flake8] *检测python代码是不是满足pep8*
 * ## [flask](./flask.md) *轻量级http服务器*
+* ## [itchat](https://github.com/littlecodersh/ItChat)  *微信机器人*
 * ## [iptools] *处理IP地址的包*
 * ## [jinja模板渲染](./jinjia.md)
 * kafka *用于kafka的消息分发*
