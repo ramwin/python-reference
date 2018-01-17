@@ -80,6 +80,10 @@
 * ## [re正则表达式](./rematch正则表达式.md)
 
 # 其他包
+* ## beautifulsoup4 *用来解析html文件*
+    * [官网](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html#id5)
+    * 安装: `pip3 install beautifulsoup4`
+    * [文档整理](./beautifulsoup.md)
 * ## [click](./click.md) *用python写shell命令*
 * ## [flake8] *检测python代码是不是满足pep8*
 * ## [flask](./flask.md) *轻量级http服务器*
