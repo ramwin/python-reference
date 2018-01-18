@@ -103,7 +103,7 @@
     kafka_producer.send_messages('test',b'test')
     ```
 * ## [mongoengine](./mongoengine.md) *把mongodb当作sql用。那你为什么不直接用mysql啊*
-* ## [openpyxl](./openpyxl.md)
+* ## [openpyxl](./openpyxl.md) *处理excel*
 * ## [pdfminer](https://github.com/euske/pdfminer) *解析pdf的包，好用*
 * ## [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
 * ## [pillow](./Pillow.md)
