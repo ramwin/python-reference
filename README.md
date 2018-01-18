@@ -76,7 +76,7 @@
         import pprint
         pprint.pprint(data, depth=4, indent=4)
     ```
-* ## [os](https://docs.python.org/3/library/os.path.html)
+* ## [os](./os.md)
     * `os.path.isfile()`: 返回是否存在这个文件
 * ## [re正则表达式](./rematch正则表达式.md)
 * ## [zipfile](./zip.md) *处理zip压缩包*
