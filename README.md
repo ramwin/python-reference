@@ -79,6 +79,7 @@
 * ## [os](https://docs.python.org/3/library/os.path.html)
     * `os.path.isfile()`: 返回是否存在这个文件
 * ## [re正则表达式](./rematch正则表达式.md)
+* ## [zipfile](./zip.md) *处理zip压缩包*
 
 # 其他包
 * ## beautifulsoup4 *用来解析html文件*
