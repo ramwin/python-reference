@@ -32,3 +32,17 @@
                     raise StopIteration
                 else:
                     yield self.i
+
+    class A(object):
+
+        def f(self, x):
+            for i in range(x):
+                yield i
+            raise StopIteration
+
+        def __iter__(self):
+            return self.f(10)
+    b = A()
+    for i in b.f(5):
+        print(i)
+    print(list(b.f(6)))
