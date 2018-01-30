@@ -22,6 +22,14 @@
         sorted(l, key=lambda x: x['value'])  # 根据value进行排序
         ```
     * [自定义可迭代](./for.md)
+* ## 字典dict
+```python3
+    a_dict = {'foo': 'bar', 'my': 'a-only'}
+    b_dict = {'foo': 'b', 'you': 'b-only'}
+    a_dict.update(b_dict)
+    >>> a_dict
+    {'foo': 'b', 'my': 'a-only', 'you': 'b-only'}
+```
 * ## [集合set](set.md)
 * ## [时间](time时间.md)
 * ## [函数](function.md)
