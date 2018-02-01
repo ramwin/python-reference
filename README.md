@@ -144,6 +144,18 @@
 * ## [PyPDF2](https://pythonhosted.org/PyPDF2/) *对中文支持不友好*
 * pyperclip *控制系统剪切板*
     pyperclip.copy('ew') # 把ew放入剪切板
+* ## [pytz](https://pythonhosted.org/pytz/)  *时区*
+    ```
+    from datetime import datetime
+    from pytz import timezone
+    import pytz
+    utc = pytz.utc
+    shanghai = timezone("Asia/Shanghai")
+    fmt = "%Y-%m-%d %H:%M:%S %Z%z"
+    loc_datetime = shanghai.localize(datetime(2002, 10, 27, 6, 0, 0))
+    print(loc_datetime.strftime(fmt))
+    utc_time = loc_datetime.astimezone(utc)
+    ```
 * ## [qiniu](https://developer.qiniu.com/kodo/sdk/1242/python) *调用七牛的api上传文件*
 * ## [redis](./redis.md) *使用Redis缓存*
 * ## [requests](./requests.md) *发送http请求*

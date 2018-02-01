@@ -2,7 +2,8 @@
 
 
 ```
-    from urllib.parse import urlencode, urlparse, unquote
+    from urllib.parse import urlencode, urlparse, unquote  #python3
+    from urllib import urlencode  # python2
     url = "%s?%s" % ('http://www.ramwin.com', urlencode({'pram1': 'foo', 'param2': 'bar'}))
     unquote_url = unquote(url)
     urlparse(unquote_url).query
