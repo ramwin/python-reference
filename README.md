@@ -87,6 +87,13 @@
 * ## [os](./os.md)
     * `os.path.isfile()`: 返回是否存在这个文件
 * ## [re正则表达式](./rematch正则表达式.md)
+* ## [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
+    ```
+    import tempfile
+    fp = tempfile.TemporaryFile(mode='w+b', encoding=None)
+    fp.write(b'Hello world!')
+    ```
+
 * ## [zipfile](./zip.md) *处理zip压缩包*
 
 # 其他包
