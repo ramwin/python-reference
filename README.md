@@ -8,6 +8,12 @@
     * ## [unicode表](https://unicode-table.com/cn/#samaritan)
     * 格式化 [参考链接](https://pyformat.info/)
 * ## [列表list](list.md)
+    * [基础]
+        ```
+        >>> a = ['a', 'b', 'c']
+        >>> a.insert(1, 'd')
+        ['a', 'd', 'b', 'c']
+        ```
     * [for else](http://book.pythontips.com/en/latest/for_-_else.html)
         ```
         for item in container:
@@ -44,6 +50,10 @@
     or  # and 和 or不是同样的哦。
 ```
 * ## [class](./class/README.md)
+    * [官网文档 TODO](https://docs.python.org/3.6/tutorial/classes.html)
+    * ## 属性
+        * `__module__` : class的模块
+        * `__name__` : class的name
     * ## [property](./class/property.md) [示例](./class/property.py)
 * ## enumerate
 ```
@@ -84,6 +94,8 @@
         import pprint
         pprint.pprint(data, depth=4, indent=4)
     ```
+    * 报错
+    json.decoder.JSONDecodeError(python3), ValueError(python2)
 * ## [os](./os.md)
     * `os.path.isfile()`: 返回是否存在这个文件
 * ## [re正则表达式](./rematch正则表达式.md)
