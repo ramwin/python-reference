@@ -1,6 +1,7 @@
 #### Xiang Wang @ 2016-12-15 17:41:21
 
 # 基础
+    ```
     import redis
     # 单独链接
     r = redis.StrictRedis(db=0)
@@ -16,3 +17,10 @@
 
     r.hset('dict', 'key', 'value')
     r.hdel('dict', 'key')  # 存在就返回1, 否则返回0
+    ```
+
+# list
+    ```
+    r.rpush(key, *args)  把args里面的数据按照顺序放入key
+    r.lpop(key)  把key里面的数据pop出来，如果没有就是None
+    ```
