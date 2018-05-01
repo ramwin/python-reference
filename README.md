@@ -175,6 +175,7 @@
     print(loc_datetime.strftime(fmt))
     utc_time = loc_datetime.astimezone(utc)
     ```
+* ## [PyWinMouse](https://pypi.org/project/PyWinMouse/)  *windows下操作鼠标*
 * ## [qiniu](https://developer.qiniu.com/kodo/sdk/1242/python) *调用七牛的api上传文件*
 * ## [redis](./redis.md) *使用Redis缓存*
 * ## [requests](./requests.md) *发送http请求*
