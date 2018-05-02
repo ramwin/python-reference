@@ -8,7 +8,7 @@ r = redis.StrictRedis(db=0)
 
 # 连接池
 pool = redis.ConnectionPool(host='localhost', port=6379, db=0)
-r = redis.StrictRedis(connection_pool=pool)
+r = redis.StrictRedis(connection_pool=pool, decode_responses=True)
 
 r.get('foo')  # 如果key不存在，返回None
 r.set('foo', 'bar', ex=3600)  # 3600秒后过期。传入string也可以
@@ -23,12 +23,18 @@ r.hdel('dict', 'key')  # 存在就返回1, 否则返回0
 ```
 # 普通链接
 r = redis.StrictRedis(host="localhost", port=6379, db=0, password=None)  # 如果服务器中断了或者无法链接 redis.exceptions.ConnectionError 连接池一样会报错。二者redis可以连接时会恢复
-
 ```
+* `decode_responses`: 对数据进行解析，这样就不再是utf8的二进制了
 
 # list
 ```
 r.rpush(key, *args)  # 把args里面的数据按照顺序放入key
 r.lpop(key)  # 把key里面的数据pop出来，如果没有就是None
 r.lpop(['key1', 'key2'], 5)  # 随便那个key有结果就返回
+```
+
+# set
+```
+r.sadd(key, 'value')
+r.smembers(key)  # 如果是空的，返回 set()
 ```
