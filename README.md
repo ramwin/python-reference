@@ -98,6 +98,7 @@
     json.decoder.JSONDecodeError(python3), ValueError(python2)
 * ## [os](./os.md)
     * `os.path.isfile()`: 返回是否存在这个文件
+* ## [pickle](https://docs.python.org/3/library/pickle.html) *把python的对象序列化成字符串*
 * ## [re正则表达式](./rematch正则表达式.md)
 * ## [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
     ```
@@ -137,8 +138,6 @@
 * ## [pillow](./Pillow.md)
 * pip *快速安装包*
     `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11`
-* pip *快速安装包*
-    `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11`
 * ## [pycharm]
     * 快捷键:
         * 界面工具查看
@@ -152,6 +151,9 @@
         * 跳转
             * `ctrl+shift+backspace`: 查看上期编辑的地方
     * ## [django支持](https://www.jetbrains.com/help/pycharm/running-tasks-of-manage-py-utility.html)
+* ## [pycrypto]
+    * 安装:
+        * windows: 先去[下载visual c++ 9.0](http://aka.ms/vcpython27)，然后再 `pip install pycrypto`
 * ## [pydub](https://github.com/jiaaro/pydub) *编辑mp3的包*
     * 安装依赖: `apt install libav-tools ffmpeg`
     * 基础:
