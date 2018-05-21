@@ -42,5 +42,6 @@ requests.requests(
 ### response
 * `status_code` 状态码
 * `json` JSON数据
+如果报错了，会raise `simplejson.errors.JSONDecodeError`, python2里面会raise `ValueError`
 * `content` 二进制数据
 * `text` 文本数据
