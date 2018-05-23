@@ -1,12 +1,12 @@
 *Xiang Wang @ 2017-02-10 15:30:51*
 
-# 基础
-* 参考资料
-    * ## [官网教程](https://docs.python.org/3/)
+# Basic
+* Reference
+    * ## [official documents](https://docs.python.org/3/)
     * ## [python tips](http://book.pythontips.com/en/latest/index.html)
-* ## [字符串string](./string.md)
-    * ## [unicode表](https://unicode-table.com/cn/#samaritan)
-    * 格式化 [参考链接](https://pyformat.info/)
+* ## [string](./string.md)
+    * ## [unicode table](https://unicode-table.com/cn/#samaritan)
+    * [format](https://pyformat.info/)
 * ## [列表list](list.md)
     * [基础]
         ```
@@ -63,10 +63,39 @@
 * ## [magic method魔法方法](./magic_methods/README.md)
 
 
-# 包参考
-* ## [csv](./csv.md)
-    * [源码](https://github.com/python/cpython/blob/3.6/Lib/csv.py)
-* ## [collections](./collections.md)
+# [Library Reference](https://docs.python.org/3/library/index.html)
+1. [ ] Introduction
+2. [ ] Built-in Functions
+3. [ ] Built-in Constants
+4. [ ] Built-in Types
+5. [ ] Built-in Exceptions
+6. [ ] Text Processing Services
+    2. ### [re -- Regular expression operations](./re.md)
+7. [ ] Binary Data Services
+8. ## [Data Types](https://docs.python.org/3/library/datatypes.html)
+    3. ### [collections](./collections.md)
+9. [ ] Numeric and Mathematical Modules
+10. [ ] Functional Programming Modules
+11. [ ] File and Directory Access
+12. [ ] Data Persistence
+13. [ ] Data Compression and Archiving
+14. ## [File Formats](https://docs.python.org/3/library/fileformats.html)
+    1. ### [csv](./csv.md)
+        * [source code](https://github.com/python/cpython/blob/3.6/Lib/csv.py)
+    2. [ ] configparser
+    3. [ ] netrc
+    4. [ ] xdrlib
+    5. [ ] plistlib
+15. [ ] Cryptographic Services
+16. [ ] Generic Operating System Services
+17. [ ] Concurrent Execution
+18. [ ] Interprocess Communication and Networking
+19. [ ] Internet Data Handling
+20. [ ] Structed Markup Processing Tools
+21. [ ] Internet Protocols and Support
+22. [ ] to be continued
+
+
 * ## [fractions](https://docs.python.org/2/library/fractions.html#fractions.Fraction)
 ```
     from fractions import Fraction
@@ -99,7 +128,6 @@
 * ## [os](./os.md)
     * `os.path.isfile()`: 返回是否存在这个文件
 * ## [pickle](https://docs.python.org/3/library/pickle.html) *把python的对象序列化成字符串*
-* ## [re正则表达式](./rematch正则表达式.md)
 * ## [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
     ```
     import tempfile
@@ -109,7 +137,7 @@
 
 * ## [zipfile](./zip.md) *处理zip压缩包*
 
-# 其他包
+# Other Useful Library
 * ## beautifulsoup4 *用来解析html文件*
     * [官网](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html#id5)
     * 安装: `pip3 install beautifulsoup4`
