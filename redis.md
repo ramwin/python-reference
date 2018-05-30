@@ -1,6 +1,9 @@
 #### Xiang Wang @ 2016-12-15 17:41:21
 
-# 基础
+# Basic
+* [github link](https://github.com/andymccurdy/redis-py)
+* [Quick usage]
+
 ```
 import redis
 # 单独链接
@@ -31,10 +34,19 @@ r = redis.StrictRedis(host="localhost", port=6379, db=0, password=None)  # 如�
 r.rpush(key, *args)  # 把args里面的数据按照顺序放入key
 r.lpop(key)  # 把key里面的数据pop出来，如果没有就是None
 r.lpop(['key1', 'key2'], 5)  # 随便那个key有结果就返回
+r.blrange(key, 0, -1)  # must have the start and end index
 ```
 
 # set
 ```
 r.sadd(key, 'value')
 r.smembers(key)  # 如果是空的，返回 set()
+r.sadd(key, *set or list)  # 批量添加set
+```
+
+# ttl
+```
+r.ttl(key)
+returns -2 if the key does not exist.
+returns -1 if the key exists but has no associated expire
 ```

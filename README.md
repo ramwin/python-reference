@@ -76,7 +76,11 @@
     3. ### [collections](./collections.md)
 9. [ ] Numeric and Mathematical Modules
 10. [ ] Functional Programming Modules
-11. [ ] File and Directory Access
+11. ## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
+    2. ### [os.path](https://docs.python.org/3/library/os.path.html)
+        * os.path.abspath
+        * `os.path.isfile`:  
+            *Return True if path is an existing regular file. This follows symbolic links, so both islink() and isfile() can be true for the same path.*
 12. [ ] Data Persistence
 13. [ ] Data Compression and Archiving
 14. ## [File Formats](https://docs.python.org/3/library/fileformats.html)
@@ -126,7 +130,6 @@
     * 报错
     json.decoder.JSONDecodeError(python3), ValueError(python2)
 * ## [os](./os.md)
-    * `os.path.isfile()`: 返回是否存在这个文件
 * ## [pickle](https://docs.python.org/3/library/pickle.html) *把python的对象序列化成字符串*
 * ## [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
     ```
@@ -207,7 +210,7 @@
     ```
 * ## [PyWinMouse](https://pypi.org/project/PyWinMouse/)  *windows下操作鼠标*
 * ## [qiniu](https://developer.qiniu.com/kodo/sdk/1242/python) *调用七牛的api上传文件*
-* ## [redis](./redis.md) *使用Redis缓存*
+* ## [redis](./redis.md) *use redis db*
 * ## [requests](./requests.md) *发送http请求*
 * ## [rsa](./rsa.md) *使用rsa加密*
 * ## [scrapy](./scrapy/README.md)
