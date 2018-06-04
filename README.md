@@ -69,18 +69,23 @@
 3. [ ] Built-in Constants
 4. [ ] Built-in Types
 5. [ ] Built-in Exceptions
-6. [ ] Text Processing Services
+6. ## [Text Processing Services](https://docs.python.org/3/library/text.html)
     2. ### [re -- Regular expression operations](./re.md)
+
 7. [ ] Binary Data Services
+
 8. ## [Data Types](https://docs.python.org/3/library/datatypes.html)
     3. ### [collections](./collections.md)
+
 9. [ ] Numeric and Mathematical Modules
 10. [ ] Functional Programming Modules
+
 11. ## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
     2. ### [os.path](https://docs.python.org/3/library/os.path.html)
         * os.path.abspath
         * `os.path.isfile`:  
             *Return True if path is an existing regular file. This follows symbolic links, so both islink() and isfile() can be true for the same path.*
+
 12. [ ] Data Persistence
 13. [ ] Data Compression and Archiving
 14. ## [File Formats](https://docs.python.org/3/library/fileformats.html)
@@ -91,7 +96,18 @@
     4. [ ] xdrlib
     5. [ ] plistlib
 15. [ ] Cryptographic Services
-16. [ ] Generic Operating System Services
+
+16. ## [Generic Operating System Services](https://docs.python.org/3/library/allos.html)
+    1. ### [os](https://docs.python.org/3/library/os.html)
+        * os.scandir
+        Better performance than os.listdir
+        ```
+        filter(lambda x: x.is_dir(), os.scandir())  # show all the directory entry
+        ```
+
+        * os.listdir  
+        Return a list containing the names of the entries in the directory given by path. 
+
 17. [ ] Concurrent Execution
 18. [ ] Interprocess Communication and Networking
 19. [ ] Internet Data Handling
@@ -224,4 +240,13 @@
 * ## [urllib](./urllib.md) *处理url*
 * ## [word2html](https://github.com/bradmontgomery/word2html)  *把word转化成html*
 * ## [flake8] *检测python代码是不是满足pep8*
+* ## [xlrd] *读取excel数据*
+```python
+import xlrd
+wb = xlrd.open_workbook(filename)
+wb.sheets()  // [sheet0, sheet1, sheet2]
+ws = wb.sheets()[0]
+ws.visibility  // 2: hidden 0: show
+```
+
 * ## [yapf] *把python的代码格式化*
