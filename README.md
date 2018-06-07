@@ -223,5 +223,19 @@
     ```
 * ## [urllib](./urllib.md) *处理url*
 * ## [word2html](https://github.com/bradmontgomery/word2html)  *把word转化成html*
+* ## [word2vec](http://nbviewer.jupyter.org/github/danielfrg/word2vec/blob/master/examples/word2vec.ipynb)
+```
+import word2vec
+word2vec.word2phrase('./text8', './text8-phrases', verbose=True)
+word2vec.word2vec('text8-phrases', 'text8.bin', size=100, verbose=True)
+word2vec.word2clusters('text8', 'text8-clusters.txt', 100, verbose=True)
+import word2vec
+model = word2vec.load('text8.bin')
+model.vocab
+model.vectors.shape
+model.vectors
+model['狗'].shape
+```
+
 * ## [flake8] *检测python代码是不是满足pep8*
 * ## [yapf] *把python的代码格式化*
