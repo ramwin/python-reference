@@ -247,6 +247,8 @@ wb = xlrd.open_workbook(filename)
 wb.sheets()  // [sheet0, sheet1, sheet2]
 ws = wb.sheets()[0]
 ws.visibility  // 2: hidden 0: show
+for i in range(ws.nrows):
+    print(ws.row(i)[0])  // first column
 ```
 
 * ## [yapf] *把python的代码格式化*
