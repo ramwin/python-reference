@@ -74,7 +74,13 @@
 7. [ ] Binary Data Services
 8. ## [Data Types](https://docs.python.org/3/library/datatypes.html)
     3. ### [collections](./collections.md)
-9. [ ] Numeric and Mathematical Modules
+9. ## Numeric and Mathematical Modules
+    6. random — Generate pseudo-random numbers
+        * random.randrange(stop)
+        * random.randrange(start, stop[, step])  
+        return value from start(included) to stop(excluded)
+        * random.randint(start, stop)  
+        return value from start(included) to stop(included)
 10. [ ] Functional Programming Modules
 11. ## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
     2. ### [os.path](https://docs.python.org/3/library/os.path.html)
@@ -146,6 +152,19 @@
     * 安装: `pip3 install beautifulsoup4`
     * [文档整理](./beautifulsoup.md)
 * ## [click](./click.md) *用python写shell命令*
+* ## [faker](https://github.com/joke2k/faker)  *use fake to create a lot of name of text*  
+    ```python
+    from faker import Faker
+    f = Faker('zh_cn')
+    print(f.name(), f.address(), f.text())
+    f.profile(['ssn', 'birthdate'])
+    ```
+
+    ```shell
+    $ faker address
+    $ faker name
+    $ faker password
+    ```
 * ## [flake8] *检测python代码是不是满足pep8*
 * ## [flask](./flask.md) *轻量级http服务器*
 * ## [itchat](https://github.com/littlecodersh/ItChat)  *微信机器人*
@@ -169,6 +188,10 @@
 * ## [pillow](./Pillow.md)
 * pip *快速安装包*
     `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11`
+    ```
+    export LC_ALL="en_US.UTF-8"  # 出现乱码
+    export LC_CTYPE="en_US.UTF-8"
+    ```
 * ## [pycharm]
     * 快捷键:
         * 界面工具查看
