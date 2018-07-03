@@ -84,6 +84,10 @@
         return value from start(included) to stop(excluded)
         * random.randint(start, stop)  
         return value from start(included) to stop(included)
+    7. statistics — Mathematical statistics functions 数学分析
+        * [statistics.mean](https://docs.python.org/3/library/statistics.html#statistics.mean)
+        * [statistics.stdev](https://docs.python.org/3/library/statistics.html#statistics.stdev)
+        * statistics.StatisticsError
 
 10. [ ] Functional Programming Modules
 
