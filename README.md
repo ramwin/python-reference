@@ -44,7 +44,7 @@
     ()  # 括号内
     **  # 指数
     +x, -x  # 负数
-    in, not in, is, is not, <, <=, >, >=  # 比较
+    in, not in, is, is not, <, <=, >, >=, !=  # 比较
     not x  #
     and  #
     or  # and 和 or不是同样的哦。
@@ -78,6 +78,12 @@
     3. ### [collections](./collections.md)
 
 9. ## Numeric and Mathematical Modules
+    5. [fractions](https://docs.python.org/2/library/fractions.html#fractions.Fraction)
+    ```
+        from fractions import Fraction
+        f = Fraction(1,3)
+        print("1/3 = %d/%d" % (f.numerator, f.denominator))
+    ```
     6. random — Generate pseudo-random numbers
         * random.randrange(stop)
         * random.randrange(start, stop[, step])  
@@ -96,9 +102,17 @@
         * os.path.abspath
         * `os.path.isfile`:  
             *Return True if path is an existing regular file. This follows symbolic links, so both islink() and isfile() can be true for the same path.*
+    6. ### [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
+        ```
+        import tempfile
+        fp = tempfile.TemporaryFile(mode='w+b', encoding=None)
+        fp.write(b'Hello world!')
+        ```
 
 12. [ ] Data Persistence
+    * ### [pickle](https://docs.python.org/3/library/pickle.html) *把python的对象序列化成字符串*
 13. [ ] Data Compression and Archiving
+    * ### [zipfile](./zip.md) *处理zip压缩包*
 14. ## [File Formats](https://docs.python.org/3/library/fileformats.html)
     1. ### [csv](./csv.md)
         * [source code](https://github.com/python/cpython/blob/3.6/Lib/csv.py)
@@ -118,54 +132,49 @@
 
         * os.listdir  
         Return a list containing the names of the entries in the directory given by path. 
+        * [以前的参考](./os.md)
 
 17. [ ] Concurrent Execution
-18. [ ] Interprocess Communication and Networking
-19. [ ] Internet Data Handling
-20. [ ] Structed Markup Processing Tools
-21. [ ] Internet Protocols and Support
-22. [ ] to be continued
+18. [ ] contextvars — Context Variables
+19. [ ] Interprocess Communication and Networking
+20. Internet Data Handling
+    * ### JSON
+        * [官方教程](https://docs.python.org/3/library/json.html)
+        * 代码内使用
+        ```
+            import json
+            data = {}
+            text = json.dumps(data)
+            data = json.loads(text)
 
+            file_obj = open('source/test.json','r')
+            data = json.load(file_obj)
 
-* ## [fractions](https://docs.python.org/2/library/fractions.html#fractions.Fraction)
-```
-    from fractions import Fraction
-    f = Fraction(1,3)
-    print("1/3 = %d/%d" % (f.numerator, f.denominator))
-```
-* ## json
-    * [官方教程](https://docs.python.org/3/library/json.html)
-    * 代码内使用
-    ```
-        import json
-        data = {}
-        text = json.dumps(data)
-        data = json.loads(text)
+            file_obj = open('source/test.json', w')
+            json.dump(obj, file_obj, ensure_ascii=False)
+        ```
+        * 命令行使用
+        ```
+            python -m json.tool <filename>
+            import pprint
+            pprint.pprint(data, depth=4, indent=4)
+        ```
+        * 报错
+        json.decoder.JSONDecodeError(python3), ValueError(python2)
+    * [ ] to be continued
+21. [ ] Structed Markup Processing Tools
+22. [ ] Internet Protocols and Support
+27. Development Tools
+    4. ### [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html)
+        * [assets methods](https://docs.python.org/3/library/unittest.html#unittest.TestCase.debug)  
+            * assert**Equal**, assertNotEqual, 
+            * assert**True**, assertFalse, 
+            * assert**Is**, assertIsNot, 
+            * assert**IsNone**, assertIsNotNone, 
+            * assert**In(a, b)**, assertNotIn
+            * assert**IsInstance**, assertNotIsInstance
+100. [ ] to be continued
 
-        file_obj = open('source/test.json','r')
-        data = json.load(file_obj)
-
-        file_obj = open('source/test.json', w')
-        json.dump(obj, file_obj, ensure_ascii=False)
-    ```
-    * 命令行使用
-    ```
-        python -m json.tool <filename>
-        import pprint
-        pprint.pprint(data, depth=4, indent=4)
-    ```
-    * 报错
-    json.decoder.JSONDecodeError(python3), ValueError(python2)
-* ## [os](./os.md)
-* ## [pickle](https://docs.python.org/3/library/pickle.html) *把python的对象序列化成字符串*
-* ## [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
-    ```
-    import tempfile
-    fp = tempfile.TemporaryFile(mode='w+b', encoding=None)
-    fp.write(b'Hello world!')
-    ```
-
-* ## [zipfile](./zip.md) *处理zip压缩包*
 
 # Other Useful Library
 * ## beautifulsoup4 *用来解析html文件*
