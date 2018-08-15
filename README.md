@@ -75,6 +75,7 @@
 7. [ ] Binary Data Services
 
 8. ## [Data Types](https://docs.python.org/3/library/datatypes.html)
+    1. ### [datetime](./datetime时间.md)
     3. ### [collections](./collections.md)
 
 9. ## Numeric and Mathematical Modules

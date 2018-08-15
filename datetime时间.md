@@ -47,3 +47,8 @@
 
 #### datetime.datetime
     * datetime.datetime.now()  当前时间，当前系统时间。在django里面设置时区为utc后，会自动变成utc时间
+
+# [timedelta](https://docs.python.org/3/library/datetime.html#timedelta-objects)
+* `class datetime.timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0)`
+* 方法:
+    total_seconds(): 返回一共的秒数(float)
