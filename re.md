@@ -1,8 +1,5 @@
 ** Xiang Wang @ 2016-05-26 15:30:51 **
 
-# Menu
-* [Official Document](https://docs.python.org/3/library/re.html#module-re)
-* [test regrex](https://regex101.com/#python)
 
 # 基础知识
 * 匹配规则
@@ -13,7 +10,14 @@
     * `\w`  *单词字符*
     * `\W`  *非单词字符*
     * `(a|bc|d)  *a或者bc或者c*
-    * `[a-z]` * 小写字母
+    * `[a-z]` * 小写字母  
+    * 是否是贪婪模式: 在匹配后面加上?, 比如  
+        ```
+        *?
+        +?
+        ??
+        {4, 6}?
+        ```
 
 * 方法
     re.compile(r'(?P<id>\d+)we').match('123we').group('id')
@@ -47,3 +51,7 @@
     >>> re.sub(r"(\w)(\w+)(\w)", repl, text)
     'Pofsroser Aodlambelk, plasee reoprt yuor asnebces potlmrpy.'
     ```
+
+# 其他
+## [Official Document官方文档](https://docs.python.org/3/library/re.html#module-re)
+## [test regrex在线测试](https://regex101.com/#python)
