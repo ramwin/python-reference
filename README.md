@@ -1,12 +1,55 @@
 *Xiang Wang @ 2017-02-10 15:30:51*
 
 # Basic
-* Reference
-    * ## [official documents](https://docs.python.org/3/)
-    * ## [python tips](http://book.pythontips.com/en/latest/index.html)
+* Reference 参考
+    * [official documents 官网文档](https://docs.python.org/3/)
+    * [python tips](http://book.pythontips.com/en/latest/index.html)
 * ## [string](./string.md)
-    * ## [unicode table](https://unicode-table.com/cn/#samaritan)
-    * [format](https://pyformat.info/)
+    * [unicode table](https://unicode-table.com/cn/#samaritan)
+    * ### [format](https://pyformat.info/)
+        1. basic formatting 基础
+        ```
+        year = 2015; event = 'Referendum'
+        f'Results of the {year} {event}'
+
+        yes_votes = 42_572_654
+        no_votes = 43_132_495
+        percentage = yes_votes/(yes_votes + no_votes)
+        '{:-9} YES votes  {:2.2%}'.format(yes_votes, percentage)
+        ' 42572654 YES votes  49.67%'
+
+        'We are the {} who say "{}!"'.format('knights', 'Ni')
+        '{0} and {1}'.format('spam', 'eggs')
+        ```
+
+        2. [x] [value conversion](https://pyformat.info/#conversion_flags)
+        ```
+        old "%s %r" % (Data(), Data())
+        new '{0!s} {0!r}'.format(Data(), Data())
+        ```
+        6. Numbers
+        ```
+        old '%d' % 42
+        new '{:d}'.format(42)
+        old '%f' % 3.14159
+        new '{:f}'.format(3.14159)
+        ```
+        7. padding numbers
+        ```
+        old '%4d' % 32
+        new '{:4d}'.format(32)
+        output '  42'
+
+        old '%06.2f' % 3.14159
+        new '{:06.2f}'.format(3.14159)  # 第一个数字代表长度，第二个代表精度
+        output '003.14'
+
+        old '%04d' % 42
+        new '{:04d}'.format(42)
+        output '0042'
+        ```
+        14. [ ] to be continued  
+
 * ## [列表list](list.md)
     * [基础]
         ```
@@ -37,7 +80,6 @@
     {'foo': 'b', 'my': 'a-only', 'you': 'b-only'}
 ```
 * ## [集合set](set.md)
-* ## [时间](time时间.md)
 * ## [函数](function.md)
 * ## [执行顺序](https://docs.python.org/3/reference/expressions.html#evaluation-order)
 ```
@@ -63,7 +105,7 @@
 * ## [magic method魔法方法](./magic_methods/README.md)
 
 
-# [Library Reference](https://docs.python.org/3/library/index.html)
+# [Library Reference 内置库参考](https://docs.python.org/3/library/index.html)
 1. [ ] Introduction
 2. [ ] Built-in Functions
 3. [ ] Built-in Constants
@@ -113,7 +155,7 @@
 12. [ ] Data Persistence
     * ### [pickle](https://docs.python.org/3/library/pickle.html) *把python的对象序列化成字符串*
 13. [ ] Data Compression and Archiving
-    * ### [zipfile](./zip.md) *处理zip压缩包*
+    * [zipfile](./zip.md) *处理zip压缩包*
 14. ## [File Formats](https://docs.python.org/3/library/fileformats.html)
     1. ### [csv](./csv.md)
         * [source code](https://github.com/python/cpython/blob/3.6/Lib/csv.py)
@@ -134,6 +176,12 @@
         * os.listdir  
         Return a list containing the names of the entries in the directory given by path. 
         * [以前的参考](./os.md)
+    2. [ ] io
+    3. [ ] time
+    4. [ ] argparse
+    5. [ ] getopt
+    6. ### [logging日志处理](./log/README.md)
+    9. [ ] to be continued
 
 17. [ ] Concurrent Execution
 18. [ ] contextvars — Context Variables
