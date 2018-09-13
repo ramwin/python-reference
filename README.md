@@ -1,58 +1,16 @@
 *Xiang Wang @ 2017-02-10 15:30:51*
 
 # 目录
-* [Basic 基础](#Basic)
-* [tutorial 学习tutorial的进度](./tutorial.md)
-* [Library Reference](#Library-Reference-内置库参考)
+* [Language Reference](#language-reference)
+* [Library Reference](#library-reference-内置库参考)
+* [Other Useful Library](#other-useful-library)
 * [official documents 官网文档](https://docs.python.org/3/)
 * [python tips 小技巧](http://book.pythontips.com/en/latest/index.html)
 
-# Basic
+# Language Reference
 * ## [string](./string.md)
     * [unicode table](https://unicode-table.com/cn/#samaritan)
-    * ### [format](https://pyformat.info/)
-        1. basic formatting 基础
-        ```
-        year = 2015; event = 'Referendum'
-        f'Results of the {year} {event}'
-
-        yes_votes = 42_572_654
-        no_votes = 43_132_495
-        percentage = yes_votes/(yes_votes + no_votes)
-        '{:-9} YES votes  {:2.2%}'.format(yes_votes, percentage)
-        ' 42572654 YES votes  49.67%'
-
-        'We are the {} who say "{}!"'.format('knights', 'Ni')
-        '{0} and {1}'.format('spam', 'eggs')
-        ```
-
-        2. [x] [value conversion](https://pyformat.info/#conversion_flags)
-        ```
-        old "%s %r" % (Data(), Data())
-        new '{0!s} {0!r}'.format(Data(), Data())
-        ```
-        6. Numbers
-        ```
-        old '%d' % 42
-        new '{:d}'.format(42)
-        old '%f' % 3.14159
-        new '{:f}'.format(3.14159)
-        ```
-        7. padding numbers
-        ```
-        old '%4d' % 32
-        new '{:4d}'.format(32)
-        output '  42'
-
-        old '%06.2f' % 3.14159
-        new '{:06.2f}'.format(3.14159)  # 第一个数字代表长度，第二个代表精度
-        output '003.14'
-
-        old '%04d' % 42
-        new '{:04d}'.format(42)
-        output '0042'
-        ```
-        14. [ ] to be continued  
+    * ### [format](./string.md#format)
 
 * ## [列表list](list.md)
     * [基础]
@@ -190,8 +148,8 @@
 17. [ ] Concurrent Execution
 18. [ ] contextvars — Context Variables
 19. [ ] Interprocess Communication and Networking
-20. Internet Data Handling
-    * ### JSON
+20. ## Internet Data Handling
+    2. ### JSON
         * [官方教程](https://docs.python.org/3/library/json.html)
         * 代码内使用
         ```
@@ -214,6 +172,12 @@
         ```
         * 报错
         json.decoder.JSONDecodeError(python3), ValueError(python2)
+    6. ### base64
+    ```
+    b = base64.encodebytes('我'.encode('utf8')) # 只有二进制才能encode,结果还是bytes
+    b = base64.encodestring('我'.encode('utf8')) # 查了源码，果然这个是为了兼容python2的语法。以后避免使用这个方法
+    b = base64.encodestring('我')   # python2里面的str就是二进制,结果是str(仍然是二进制)
+    ```
     * [ ] to be continued
 21. [ ] Structed Markup Processing Tools
 22. [ ] Internet Protocols and Support
