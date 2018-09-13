@@ -197,7 +197,7 @@
 * ## beautifulsoup4 *用来解析html文件*
     * [官网](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html#id5)
     * 安装: `pip3 install beautifulsoup4`
-    * [文档整理](./beautifulsoup.md)
+    * [文档整理](./other_useful_library/beautifulsoup.md)
 * ## [click](./click.md) *用python写shell命令*
 * ## [faker](https://github.com/joke2k/faker)  *use fake to create a lot of name of text*  
     ```python
@@ -293,6 +293,7 @@
         print(sub.content)  # 输出字幕的内容
     ```
 * ## [urllib](./urllib.md) *处理url*
+* ## [watchdog](https://pypi.org/project/watchdog/) *监控文件变化*
 * ## [wechatpy](https://github.com/jxtech/wechatpy) *和微信的接口*
     * 基础
     ```
