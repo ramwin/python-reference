@@ -214,6 +214,7 @@
     ```
 * ## [flake8] *检测python代码是不是满足pep8*
 * ## [flask](./flask.md) *轻量级http服务器*
+* ## [ics](https://pypi.org/project/ics/) *日历，行程 calendar*
 * ## [itchat](https://github.com/littlecodersh/ItChat)  *微信机器人*
 * ## [iptools] *处理IP地址的包*
 * ## [jinja模板渲染](./jinjia.md)
