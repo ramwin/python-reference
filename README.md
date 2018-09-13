@@ -1,9 +1,13 @@
 *Xiang Wang @ 2017-02-10 15:30:51*
 
+# 目录
+* [Basic 基础](#Basic)
+* [tutorial 学习tutorial的进度](./tutorial.md)
+* [Library Reference](#Library-Reference-内置库参考)
+* [official documents 官网文档](https://docs.python.org/3/)
+* [python tips 小技巧](http://book.pythontips.com/en/latest/index.html)
+
 # Basic
-* Reference 参考
-    * [official documents 官网文档](https://docs.python.org/3/)
-    * [python tips](http://book.pythontips.com/en/latest/index.html)
 * ## [string](./string.md)
     * [unicode table](https://unicode-table.com/cn/#samaritan)
     * ### [format](https://pyformat.info/)
@@ -93,10 +97,10 @@
 ```
 * ## [class](./class/README.md)
     * [官网文档 TODO](https://docs.python.org/3.6/tutorial/classes.html)
-    * ## 属性
+    * ### 属性
         * `__module__` : class的模块
         * `__name__` : class的name
-    * ## [property](./class/property.md) [示例](./class/property.py)
+    * ### [property](./class/property.md) [示例](./class/property.py)
 * ## enumerate
 ```
     enumerate(['a','b','c'])  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象
@@ -324,6 +328,18 @@
         print(sub.content)  # 输出字幕的内容
     ```
 * ## [urllib](./urllib.md) *处理url*
+* ## [wechatpy](https://github.com/jxtech/wechatpy) *和微信的接口*
+    * 基础
+    ```
+    from wechatpy.client import WeChatClient
+    from wechatpy.session.redisstorage import RedisStorage
+    from redis import Redis
+    redis_client = Redis.from_url('redis://127.0.0.1:6379/0')
+    session_interface = RedisStorage(redis_client, prefix="wechatpy")
+    wechat_client = WeChatClient(
+        app_id, secret, session=session_interface
+    )
+    ```
 * ## [word2html](https://github.com/bradmontgomery/word2html)  *把word转化成html*
 * ## [word2vec](http://nbviewer.jupyter.org/github/danielfrg/word2vec/blob/master/examples/word2vec.ipynb)
 ```
