@@ -43,7 +43,9 @@
 ```
 * ## [集合set](set.md)
 * ## [函数](function.md)
-* ## [执行顺序](https://docs.python.org/3/reference/expressions.html#evaluation-order)
+    * [decorator装饰器](http://www.cnblogs.com/huxi/archive/2011/03/01/1967600.html)
+    * [decorator.py](decorator装饰器.py)
+* [执行顺序](https://docs.python.org/3/reference/expressions.html#evaluation-order)
 ```
     ()  # 括号内
     **  # 指数
@@ -65,7 +67,9 @@
 ```
 * ## [Exception报错](./exception.md) [官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
 * ## [magic method魔法方法](./magic_methods/README.md)
-
+* ## [Simple statements](https://docs.python.org/3/reference/simple_stmts.html)
+    11. [import机制](http://www.jianshu.com/p/b963782f59e9) [import文档](https://docs.python.org/3/reference/simple_stmts.html#the-import-statement)
+    12. [global](language_reference/global_test.py)
 
 # [Library Reference 内置库参考](https://docs.python.org/3/library/index.html)
 1. [ ] Introduction
@@ -83,7 +87,7 @@
     2. [ ] [calendar](https://docs.python.org/3/library/calendar.html)
     3. ### [collections](./collections.md)
 
-9. ## Numeric and Mathematical Modules
+9. Numeric and Mathematical Modules
     5. [fractions](https://docs.python.org/2/library/fractions.html#fractions.Fraction)
     ```
         from fractions import Fraction
@@ -91,11 +95,13 @@
         print("1/3 = %d/%d" % (f.numerator, f.denominator))
     ```
     6. random — Generate pseudo-random numbers
+        * random.choice(list)  # choose one value from list
         * random.randrange(stop)
         * random.randrange(start, stop[, step])  
         return value from start(included) to stop(excluded)
         * random.randint(start, stop)  
         return value from start(included) to stop(included)
+        * random.sample(list, k)  # choose k's value from list
     7. statistics — Mathematical statistics functions 数学分析
         * [statistics.mean](https://docs.python.org/3/library/statistics.html#statistics.mean)
         * [statistics.stdev](https://docs.python.org/3/library/statistics.html#statistics.stdev)
@@ -195,12 +201,13 @@
 
 
 # Other Useful Library
-* ## beautifulsoup4 *用来解析html文件*
+* beautifulsoup4 *用来解析html文件*
     * [官网](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html#id5)
     * 安装: `pip3 install beautifulsoup4`
     * [文档整理](./other_useful_library/beautifulsoup.md)
-* ## [click](./click.md) *用python写shell命令*
-* ## [faker](https://github.com/joke2k/faker)  *use fake to create a lot of name of text*  
+* [captcha](./other_useful_library/captcha_test.py) *生成验证码*
+* [click](./click.md) *用python写shell命令*
+* [faker](https://github.com/joke2k/faker)  *use fake to create a lot of name of text*  
     ```python
     from faker import Faker
     f = Faker('zh_cn')
@@ -213,12 +220,12 @@
     $ faker name
     $ faker password
     ```
-* ## [flake8] *检测python代码是不是满足pep8*
-* ## [flask](./flask.md) *轻量级http服务器*
-* ## [ics](https://pypi.org/project/ics/) *日历，行程 calendar*
-* ## [itchat](https://github.com/littlecodersh/ItChat)  *微信机器人*
-* ## [iptools] *处理IP地址的包*
-* ## [jinja模板渲染](./jinjia.md)
+* [flake8] *检测python代码是不是满足pep8*
+* [flask](./flask.md) *轻量级http服务器*
+* [ics](https://pypi.org/project/ics/) *日历，行程 calendar*
+* [itchat](https://github.com/littlecodersh/ItChat)  *微信机器人*
+* [iptools] *处理IP地址的包*
+* [jinja模板渲染](./jinjia.md)
 * kafka *用于kafka的消息分发*
     ```
     from kafka import KafkaConsumer
@@ -230,11 +237,11 @@
     kafka_producer = SimpleProducer(kafka_client, async=False)
     kafka_producer.send_messages('test',b'test')
     ```
-* ## [mongoengine](./other_useful_library/mongoengine.md) *把mongodb当作sql用。那你为什么不直接用mysql啊*
-* ## [openpyxl](./openpyxl.md) *处理excel*
-* ## [pdfminer](https://github.com/euske/pdfminer) *解析pdf的包，好用*
-* ## [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
-* ## [pillow](./Pillow.md)
+* [mongoengine](./other_useful_library/mongoengine.md) *把mongodb当作sql用。那你为什么不直接用mysql啊*
+* [openpyxl](./openpyxl.md) *处理excel*
+* [pdfminer](https://github.com/euske/pdfminer) *解析pdf的包，好用*
+* [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
+* [pillow](./Pillow.md)
 * pip *快速安装包*
     `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11`
     ```
@@ -284,7 +291,7 @@
 * ## [qiniu](https://developer.qiniu.com/kodo/sdk/1242/python) *调用七牛的api上传文件*
 * ## [redis](./redis.md) *use redis db*
 * ## [requests](./requests.md) *发送http请求*
-* ## [rsa](./rsa.md) *使用rsa加密*
+* ## [rsa](./other_useful_library/rsa.md) *使用rsa加密*
 * ## [scrapy](./scrapy/README.md)
 * ## [srt](http://srt.readthedocs.io/en/latest/api.html)
     * 基础:
@@ -335,3 +342,8 @@ for i in range(ws.nrows):
 ```
 
 * ## [yapf] *把python的代码格式化*
+
+# 其他
+* socket.gethostname()    # 获取当前主机的主机名
+* uuid.getnote()    # 获取本机的MAC地址  
+mac=uuid.UUID(int = node).hex[-12:]
