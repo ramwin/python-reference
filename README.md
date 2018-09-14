@@ -72,8 +72,11 @@
     12. [global](language_reference/global_test.py)
 
 # [Library Reference 内置库参考](https://docs.python.org/3/library/index.html)
-1. [ ] Introduction
-2. [ ] Built-in Functions
+1. [x] Introduction
+2. ## [Built-in Functions](./library_reference/built_in_functions内置函数.md)
+    * ### all
+    * ### any
+    * ### divmod
 3. [ ] Built-in Constants
 4. [ ] Built-in Types
 5. [ ] Built-in Exceptions
@@ -197,6 +200,10 @@
             * assert**IsNone**, assertIsNotNone, 
             * assert**In(a, b)**, assertNotIn
             * assert**IsInstance**, assertNotIsInstance
+33. Python Language Services
+    2. ast
+    `ast.literal_eval`: "savely evalute an expression node or a string containing a Python literal or container display."
+    3. [ ] to be continued
 100. [ ] to be continued
 
 
