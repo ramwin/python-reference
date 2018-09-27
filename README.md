@@ -284,6 +284,23 @@
 * ## [PyPDF2](https://pythonhosted.org/PyPDF2/) *对中文支持不友好*
 * pyperclip *控制系统剪切板*
     pyperclip.copy('ew') # 把ew放入剪切板
+* ## [pysrt](https://github.com/byroot/pysrt)
+    * 基础
+    ```
+    import pysrt
+    subs = pysrt.open('srt.srt', encoding='utf8')
+    first_sub = subs[0]
+    first_sub.text = "hello world"
+    first_sub.start.seconds = 20
+    first_sub.shift(seconds=2)
+    first_sub.start += {'seconds': -1}
+    subs.shift(minutes=1)
+    subs.shift(ratio=25/23.9)  # convert a 23.9 fps subtitle in 25fps
+    del subs[12]
+    part = subs.slice(starts_after={'minutes': 2, 'seconds': 30}, ends_before={'minutes': 3, 'seconds': 40})
+    part.shift(seconds=-2)
+    subs.save('other/path.srt', encoding='utf8')
+    ```
 * ## [pytz](https://pythonhosted.org/pytz/)  *时区*
     ```
     from datetime import datetime
@@ -302,13 +319,7 @@
 * ## [requests](./requests.md) *发送http请求*
 * ## [rsa](./other_useful_library/rsa.md) *使用rsa加密*
 * ## [scrapy](./scrapy/README.md)
-* ## [srt](http://srt.readthedocs.io/en/latest/api.html)
-    * 基础:
-    ```python
-    subs = list(srt.parse(text))
-    for sub in subs:
-        print(sub.content)  # 输出字幕的内容
-    ```
+* ## ~~[srt](http://srt.readthedocs.io/en/latest/api.html)*因为缺少shift功能而改成用pysrt*~~
 * ## [urllib](./urllib.md) *处理url*
 * ## [watchdog](https://pypi.org/project/watchdog/) *监控文件变化*
 * ## [wechatpy](./other_useful_library/wechatpy.md) *和微信的接口*
