@@ -1,11 +1,12 @@
 *Xiang Wang @ 2017-02-10 15:30:51*
 
 # 目录
-* [Language Reference](#language-reference)
-* [Library Reference](#library-reference-内置库参考)
-* [Other Useful Library](#other-useful-library)
+* [Language Reference 语法](#language-reference)
+* [Library Reference 内置包参考](#library-reference-内置库参考)
+* [Other Useful Library 其他有用的包](#other-useful-library)
 * [official documents 官网文档](https://docs.python.org/3/)
 * [python tips 小技巧](http://book.pythontips.com/en/latest/index.html)
+* [github链接](https://github.com/ramwin/python-reference/)
 
 # Language Reference
 * ## [string](./string.md)
@@ -309,18 +310,7 @@
     ```
 * ## [urllib](./urllib.md) *处理url*
 * ## [watchdog](https://pypi.org/project/watchdog/) *监控文件变化*
-* ## [wechatpy](https://github.com/jxtech/wechatpy) *和微信的接口*
-    * 基础
-    ```
-    from wechatpy.client import WeChatClient
-    from wechatpy.session.redisstorage import RedisStorage
-    from redis import Redis
-    redis_client = Redis.from_url('redis://127.0.0.1:6379/0')
-    session_interface = RedisStorage(redis_client, prefix="wechatpy")
-    wechat_client = WeChatClient(
-        app_id, secret, session=session_interface
-    )
-    ```
+* ## [wechatpy](./other_useful_library/wechatpy.md) *和微信的接口*
 * ## [word2html](https://github.com/bradmontgomery/word2html)  *把word转化成html*
 * ## [word2vec](http://nbviewer.jupyter.org/github/danielfrg/word2vec/blob/master/examples/word2vec.ipynb)
 ```
