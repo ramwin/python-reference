@@ -321,6 +321,10 @@
 * ## [scrapy](./scrapy/README.md)
 * ## ~~[srt](http://srt.readthedocs.io/en/latest/api.html)*因为缺少shift功能而改成用pysrt*~~
 * ## [urllib](./urllib.md) *处理url*
+* ## [virtualenv](https://virtualenv.pypa.io/en/stable/)
+```
+virtualenv ENV -p /bin/python
+```
 * ## [watchdog](https://pypi.org/project/watchdog/) *监控文件变化*
 * ## [wechatpy](./other_useful_library/wechatpy.md) *和微信的接口*
 * ## [word2html](https://github.com/bradmontgomery/word2html)  *把word转化成html*
