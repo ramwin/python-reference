@@ -202,6 +202,11 @@
             * assert**IsNone**, assertIsNotNone, 
             * assert**In(a, b)**, assertNotIn
             * assert**IsInstance**, assertNotIsInstance
+30. Python Runtime Services
+    10. traceback -- Print or retrieve a stack traceback [官网](https://docs.python.org/3/library/traceback.html)
+    ```
+    traceback.print_stack()
+    ```
 33. Python Language Services
     2. ast
     `ast.literal_eval`: "savely evalute an expression node or a string containing a Python literal or container display."
