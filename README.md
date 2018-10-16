@@ -202,10 +202,12 @@
             * assert**IsNone**, assertIsNotNone, 
             * assert**In(a, b)**, assertNotIn
             * assert**IsInstance**, assertNotIsInstance
-30. Python Runtime Services
+30. Python Runtime Services [官网](https://docs.python.org/3/library/python.html)
     10. traceback -- Print or retrieve a stack traceback [官网](https://docs.python.org/3/library/traceback.html)
     ```
-    traceback.print_stack()
+    traceback.print_stack()  # 直接print出stack
+    log = traceback.format_exc()  # 记录报错的stack
+    stack = traceback.format_stack()  # 记录当前的stack
     ```
 33. Python Language Services
     2. ast
