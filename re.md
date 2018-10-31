@@ -1,7 +1,8 @@
 ** Xiang Wang @ 2016-05-26 15:30:51 **
 
 
-# 基础知识
+* [官网](https://docs.python.org/3/library/re.html#module-re)
+## Regular Expression Syntax 基础知识和语法
 * 匹配规则
     * `\d`  *数字*
     * `\D`  *非数字*
@@ -23,7 +24,26 @@
     re.compile(r'(?P<id>\d+)we').match('123we').group('id')
     re.sub(r'(00)*$', '', '100000')  # 把匹配到的数据变成空
 
-# 例子
+## Module Contents 模块内容 [官网](https://docs.python.org/3/library/re.html#module-contents)
+* re.compile
+* re.A
+* re.ASCII
+* [ ] ...
+* re.sub(pattern, repl, string, count=0, flags=0)  
+Return the string obtained by replacing the leftmost non-overlapping occurences of pattern in string by the replacement repl. The repl can be a function.
+    * 每次匹配把结果里面的数据拿出来  
+    `re.sub('a(\d)b', r'\1', 'a4bcdaba2b')`
+    * 使用函数来替换
+    ```
+    >>> def dashrepl(matchobj):
+    ...     if matchobj.group(0) == '-': return ' '
+    ...     else: return '-'
+    >>> re.sub('-{1,2}', dashrepl, 'pro----gram-files')
+    'pro--gram files'
+    ```
+* [ ] ...
+
+## 例子
 * 找到字符串里面符合规则的字符串
 ```
     a = re.compile(r'^数据更新时间：(?P<time>[0-9: -]*)').match('数据更新时间：2016-05-25 16:00:00')
@@ -51,7 +71,3 @@
     >>> re.sub(r"(\w)(\w+)(\w)", repl, text)
     'Pofsroser Aodlambelk, plasee reoprt yuor asnebces potlmrpy.'
     ```
-
-# 其他
-## [Official Document官方文档](https://docs.python.org/3/library/re.html#module-re)
-## [test regrex在线测试](https://regex101.com/#python)

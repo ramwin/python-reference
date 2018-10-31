@@ -8,7 +8,7 @@
 * [python tips 小技巧](http://book.pythontips.com/en/latest/index.html)
 * [github链接](https://github.com/ramwin/python-reference/)
 
-# Language Reference
+# Language Reference [官网](https://docs.python.org/3/library/index.html)
 * ## [string](./string.md)
     * [unicode table](https://unicode-table.com/cn/#samaritan)
     * ### [format](./string.md#format)
@@ -83,6 +83,7 @@
 5. [ ] Built-in Exceptions
 6. ## [Text Processing Services](https://docs.python.org/3/library/text.html)
     2. ### [re -- Regular expression operations](./re.md)
+    [test regrex 在线测试](https://regex101.com/#python)
 
 7. [ ] Binary Data Services
 
