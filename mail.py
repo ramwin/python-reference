@@ -7,6 +7,8 @@
 
 
 import smtplib
+from email.mime.text import MIMEText
+from email.header import Header
 
 
 def basic():
@@ -61,5 +63,16 @@ def use_mail():
     s.quit()
 
 
+def send():
+    """最新版，已经用阿里云邮箱测试过了"""
+    msg = MIMEText("<p>使用Python可以做很多事情</p>",  "html" "utf-8")
+    msg["Subject"] = Header("主题", 'utf-8')
+    msg['From'] = Header('ramwin@alumni.sjtu.edu.cn', 'utf-8')
+    msg['To'] = Header('ramwin@qq.com', 'utf-8')
+    s = smtplib.SMTP('smtp.sjtu.edu.cn')
+    password = input("输入邮箱密码")
+    s.login('ramwin', password)
+    s.sendmail(from_addr='ramwin@alumni.sjtu.edu.cn', to_addrs=['ramwin@qq.com'], msg=msg.as_string())
+
 if __name__ == '__main__':
-    use_mail()
+    send()

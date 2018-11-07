@@ -1,6 +1,6 @@
 *.pyc
 *.*~
-/log/*
+/log/*.log
 *~
 !/log/test
 *.swp

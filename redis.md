@@ -1,23 +1,25 @@
-#### Xiang Wang @ 2016-12-15 17:41:21
+**Xiang Wang @ 2016-12-15 17:41:21**
 
-# 基础
-```
-import redis
-# 单独链接
-r = redis.StrictRedis(db=0)
-
-# 连接池
-pool = redis.ConnectionPool(host='localhost', port=6379, db=0)
-r = redis.StrictRedis(connection_pool=pool, decode_responses=True)
-
-r.get('foo')  # 如果key不存在，返回None
-r.set('foo', 'bar', ex=3600)  # 3600秒后过期。传入string也可以
-
-r.delete(key)   # 删除key，存在就是返回1, 否则返回0
-
-r.hset('dict', 'key', 'value')
-r.hdel('dict', 'key')  # 存在就返回1, 否则返回0
-```
+# Basic
+* [github link](https://github.com/andymccurdy/redis-py)
+* Quick usage
+    ```
+    import redis
+    # 单独链接
+    r = redis.StrictRedis(db=0)
+    
+    # 连接池
+    pool = redis.ConnectionPool(host='localhost', port=6379, db=0)
+    r = redis.StrictRedis(connection_pool=pool, decode_responses=True)
+    
+    r.get('foo')  # 如果key不存在，返回None
+    r.set('foo', 'bar', ex=3600)  # 3600秒后过期。传入string也可以
+    
+    r.delete(key)   # 删除key，存在就是返回1, 否则返回0
+    
+    r.hset('dict', 'key', 'value')
+    r.hdel('dict', 'key')  # 存在就返回1, 否则返回0
+    ```
 
 # 链接
 ```
@@ -31,10 +33,36 @@ r = redis.StrictRedis(host="localhost", port=6379, db=0, password=None)  # 如�
 r.rpush(key, *args)  # 把args里面的数据按照顺序放入key
 r.lpop(key)  # 把key里面的数据pop出来，如果没有就是None
 r.lpop(['key1', 'key2'], 5)  # 随便那个key有结果就返回
+r.blrange(key, 0, -1)  # must have the start and end index
 ```
 
 # set
 ```
 r.sadd(key, 'value')
 r.smembers(key)  # 如果是空的，返回 set()
+r.sadd(key, *set or list)  # 批量添加set
 ```
+
+# ttl
+```
+r.ttl(key)
+returns -2 if the key does not exist.
+returns -1 if the key exists but has no associated expire
+```
+
+# Sorted Set 排序集合
+* zadd
+    ```
+    zadd('key', user_2=1)
+    data = {
+        'user_2': 2,
+        'user_3': 33,
+    }
+    zadd('key', **data)
+    zadd('ss', user_2=2, user_3=33)
+    redis.zadd('my-key', 1.1, 'name1', 2.2, 'name2', name3=3.3, name4=4.4)
+    ```
+* zrange
+    ```
+    zrange('mykey', 0, -1)
+    ```

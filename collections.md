@@ -1,14 +1,13 @@
-#### Xiang Wang @ 2017-04-28 11:19:42
+**Xiang Wang @ 2017-04-28 11:19:42**
 
-# 基础
+### collections
 * [官网文档](https://docs.python.org/3/library/collections.html#module-collections)
 * [OrderedDict](#OrderedDict)
 * [defaultdict](#defaultdict)
 * [deque](#deque)
 
 
-<span id="OrderedDict"></span>
-## OrderedDict
+#### OrderedDict
 * [官网文档](https://docs.python.org/3/library/collections.html#ordereddict-objects)
     ```
     od = OrderedDict()  # 注意不能直接把一个dict传入进去, 因为这个dict是没有排序的
@@ -18,8 +17,7 @@
     ```
 
 
-<span id="defaultdict"></span>
-## defaultdict
+#### defaultdict
 * [官方文档](https://docs.python.org/3/library/collections.html#collections.defaultdict)
 * [参考代码]
     ```
@@ -41,8 +39,7 @@
         >>> 2
         ```
 
-<span id="deque"></span>
-## deque
+#### deque
 * [官方文档](https://docs.python.org/3/library/collections.html#collections.deque)
 * pop和append左右的速度很快
     ```
@@ -52,3 +49,23 @@
     a.pop()
     a.popleft()
     ```
+
+
+### collections.abc
+这个是 Abstract Base Classes 可以用来确保这个Class无法被直接使用，而必须指定了特定的方法才能使用,利用的是`abc.abstractmethod`就能实现这样的效果
+
+* #### Container
+
+```
+class A(Container):
+    pass
+
+class B(A):
+    def __contains__(self, item):
+        return True
+
+b = B()  # OK
+a = A()  # TypeError:  Can't instantiate abstract class A with abstract methods __contains__
+```
+* #### Hashable
+* #### Iterable

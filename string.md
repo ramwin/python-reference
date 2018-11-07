@@ -1,51 +1,67 @@
 #### Xiang Wang @ 2016-09-05 12:48:47
 
 
-## 导航
-* [字符串格式化](#format)
-
 ### 方法
 * islower
 * isupper
 * istitle
-* format [中文参考](http://www.cnblogs.com/eternal1025/p/5227997.html)
-```
-    "{:0>8}".format('ew')  用0在左边补足，直到长度为八位
-    "{key:>8}".format(**{'key':'value'})
-```
-
 
 ### string模块
-    'a,b,c'.split(',',1)    # 只拆分一次
-    string.digits   # '0123456789'
-    string.ascii_letters
-    string.ascii_lowercase
-    string.ascii_uppercase
-    <string>.count('w') # 查看字符串里面字符的数量
+```
+'a,b,c'.split(',',1)    # 只拆分一次
+string.digits   # '0123456789'
+string.ascii_letters
+string.ascii_lowercase
+string.ascii_uppercase
+<string>.count('w') # 查看字符串里面字符的数量
+```
 
 ### strip
-    'a'.strip()  # 把前后空格，换行，tab删除
-    'a'.strip('we')  # 把前后的 w 和 e 删除。 而不是把前后的 'we' 删除
-
-### bytes
-
-### unicode
-    a = u'ew'   # python3里面默认的字符串就是unicode, python2里面默认的字符串是str, 所有有unicode这个类
-
-### unicode转字符串
-    # 因为python的unicode就是字符串，所以不需要
-    u = u'我'
-    u.encode('utf8')
-
-### base64
-    b = base64.encodebytes('我'.encode('utf8')) # 只有二进制才能encode,结果还是bytes
-    b = base64.encodestring('我'.encode('utf8')) # 查了源码，果然这个是为了兼容python2的语法。以后避免使用这个方法
-
-    b = base64.encodestring('我')   # python2里面的str就是二进制,结果是str(仍然是二进制)
-
-
-### format
 ```
-    "{0}: {1}".format("姓", "名")
-    "{name}".format(name="名字")
+'a'.strip()  # 把前后空格，换行，tab删除
+'a'.strip('we')  # 把前后的 w 和 e 删除。 而不是把前后的 'we' 删除
 ```
+
+### [format](https://pyformat.info/)
+1. basic formatting 基础
+```
+year = 2015; event = 'Referendum'
+f'Results of the {year} {event}'
+
+yes_votes = 42_572_654
+no_votes = 43_132_495
+percentage = yes_votes/(yes_votes + no_votes)
+'{:-9} YES votes  {:2.2%}'.format(yes_votes, percentage)
+' 42572654 YES votes  49.67%'
+
+'We are the {} who say "{}!"'.format('knights', 'Ni')
+'{0} and {1}'.format('spam', 'eggs')
+```
+
+2. [x] [value conversion](https://pyformat.info/#conversion_flags)
+```
+old "%s %r" % (Data(), Data())
+new '{0!s} {0!r}'.format(Data(), Data())
+```
+6. Numbers
+```
+old '%d' % 42
+new '{:d}'.format(42)
+old '%f' % 3.14159
+new '{:f}'.format(3.14159)
+```
+7. padding numbers
+```
+old '%4d' % 32
+new '{:4d}'.format(32)
+output '  42'
+
+old '%06.2f' % 3.14159
+new '{:06.2f}'.format(3.14159)  # 第一个数字代表长度，第二个代表精度
+output '003.14'
+
+old '%04d' % 42
+new '{:04d}'.format(42)
+output '0042'
+```
+14. [ ] to be continued  

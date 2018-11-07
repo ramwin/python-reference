@@ -1,6 +1,7 @@
-#### Xiang Wang @ 2017-05-19 15:22:17
+**Xiang Wang @ 2017-05-19 15:22:17**
 
-
+# [python3官网教程](https://docs.python.org/3.6/library/urllib.parse.html)
+* 基础
 ```
     from urllib.parse import urlencode, urlparse, unquote  #python3
     from urllib import urlencode  # python2
@@ -21,8 +22,41 @@
     >>> 'http%3A//duishang.net%3Few%3Dew'
 ```
 
-* 解码
-[python2官网教程](https://docs.python.org/2/library/urlparse.html)
+# [python2官网教程](https://docs.python.org/2/library/urlparse.html)
+## urllib
+* urllib.urlencode
+```
+urllib.urlencode({'key': 'value'})  # 对应 urlparse.parse_qsl
+urllib.urlencode({'key': ['value']}, doseq=1)  # 对应 urlparse.parse_qs
+```
+
+## urlparse
+```
+from urlparse import urlparse
+o = urlparse('https://www.ramwin.com/testrest/text/?text=qwer')
+>>> ParseResult(scheme='http', netloc='www.ramwin.com', path='/testrest/text/', params='', query='text=qwer', fragment='')
+```
+* 属性
+    * `parse_qs`
+    ```
+    result urlparse.parse_qs(url)
+    >>> {'name': ['name1']}  # result
+    import urllib
+    urllib.urlencode(result, doseq=1)
+    ```
+    * `parse_qsl`
+    ```
+    urlparse.parse_qsl(url)
+    >>> [('name', 'name1')]
+    ```
+
+
+## ParseResult *urlparse.ParseResult*
+* 属性
+    * port: o.port: 80
+    * scheme: o.scheme: http
+    * geturl: o.geturl(): 'http://www.ramwin.com/testrest/text/?text=qwer'
+
 ```
     url = (
         "http://7xlyxj.com1.z0.glb.clouddn.com/groups-198-1508841093056?"

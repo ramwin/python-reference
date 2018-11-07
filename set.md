@@ -20,4 +20,6 @@
     a.update([1,2,3])  # update把一个数组里面的元素都插入进去
     a.add('123')
     a.remove('123')
+    b = {2}
+    b.issubset(a)
     ```
