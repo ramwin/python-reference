@@ -368,7 +368,39 @@ for i in range(ws.nrows):
 
 * ## [yapf] *把python的代码格式化*
 
+
 # 其他
 * socket.gethostname()    # 获取当前主机的主机名
 * uuid.getnote()    # 获取本机的MAC地址  
 mac=uuid.UUID(int = node).hex[-12:]
+
+# 设计模式
+[runoob教程](http://www.runoob.com/design-pattern/factory-pattern.html)
+## 工厂模式
+* 根据输入的颜色名, 产生对应的颜色的class
+
+```
+class Color(object):
+    pass
+
+
+class Red(Color):
+    color = 'red'
+
+
+class Green(Color):
+    color = 'green'
+
+
+class Factory(object):
+
+    def get_color(self, name):
+        if name == 'red':
+            return Red()
+        if name == 'green':
+            return Green()
+        raise NotImplemented
+```
+
+* 我用过工厂模式的地方:
+> 给小荐开发时, 公司信息. 有个通用的CompanyInfo, 然后不同公司, 有ContactInfo, AddressInfo, ProductInfo. 他们的操作都是获取数据, 处理数据, 保存数据, 都有缓存机制. 然后一个请求过来, 不同的View就是调用了不同的Info, 然而其他处理机制都一样
