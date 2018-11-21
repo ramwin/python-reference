@@ -1,11 +1,12 @@
 ** Xiang Wang @ 2016-07-13 15:47:54 **
 
-# 参考
-* [学习网址](http://mongoengine.org/)
+**mongoengine**
+[官网](http://docs.mongoengine.org/)
 * [字段](http://docs.mongoengine.org/guide/defining-documents.html#fields)
 
-
-# 基础
+## 基础
+* example
+    ```
     from mongoengine import *
     connect('tumblelog')
     connect('mongodb', host='mac', port=27017)
@@ -15,9 +16,9 @@
 
     class User_embedded(EmbeddedDocument):
         name = StringField(required=True)
+    ```
 
-
-# 数据格式
+## 数据格式
 * StringField() # 字符串
     1. max_length   # 设置最长多少, 超过就会报错, 类似meta, 是python层面
     2. primary_key=True # 设置为主键，数据库里面的`_id`就会是这个值

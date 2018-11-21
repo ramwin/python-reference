@@ -79,7 +79,7 @@
     * [property](./class/property.md) [示例](./class/property.py)
 
 
-# [Library Reference 内置库参考](https://docs.python.org/3/library/index.html)
+# Library Reference 内置库参考 [官网](https://docs.python.org/3/library/index.html)
 1. [x] Introduction
 2. [Built-in Functions](./library_reference/built_in_functions内置函数.md)
     * all
@@ -99,10 +99,21 @@
 7. [ ] Binary Data Services
 
 8. ## [Data Types](https://docs.python.org/3/library/datatypes.html)
-    1. ### [datetime](./datetime时间.md)
+    1. [datetime](./datetime时间.md)
     2. [ ] [calendar](https://docs.python.org/3/library/calendar.html)
-    3. ### [collections](./collections.md)
+    3. [collections](./collections.md)
     4. [collections.abc](./collections.md#collections.abc)
+    5. [ ] heapq: *heap queque algorithm*
+    * [ ] ...
+    10. copy  
+    copy.copy(x): return a shallow copy of x
+    copy.deepcopy(x): return a deepcopy
+    copy.copy只会copy一层, 里面的可变对象不会copy  
+    copy.deepcopy会copy recursively  
+    在shallow copy里, 对于dict, 使用的是 dict.copy(), 对于list使用的是copied_list = original_list[:]  
+    如果要实现自己的copye, 可以重写 `__copy__()` 和 `__deepcopy__()`  
+    11. [ ] pprint
+    12. [ ] ...
 
 9. Numeric and Mathematical Modules
     5. [fractions](https://docs.python.org/2/library/fractions.html#fractions.Fraction)
