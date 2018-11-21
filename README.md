@@ -8,12 +8,12 @@
 * [python tips 小技巧](http://book.pythontips.com/en/latest/index.html)
 * [github链接](https://github.com/ramwin/python-reference/)
 
-# Language Reference [官网](https://docs.python.org/3/library/index.html)
-* ## [string](./string.md)
-    * [unicode table](https://unicode-table.com/cn/#samaritan)
-    * ### [format](./string.md#format)
+# tutorial [官网](https://docs.python.org/3/tutorial/index.html)
 
-* ## [列表list](list.md)
+# Language Reference [官网](https://docs.python.org/3/reference/index.html)
+## Built-in Types 基础类型
+其实这个是Library Reference的内容
+* [列表list](list.md)
     * [基础]
         ```
         >>> a = ['a', 'b', 'c']
@@ -34,7 +34,10 @@
         sorted(l, key=lambda x: x['value'])  # 根据value进行排序
         ```
     * [自定义可迭代](./for.md)
-* ## 字典dict
+* [string](./string.md)
+    * [unicode table](https://unicode-table.com/cn/#samaritan)
+    * #### [format](./string.md#format)
+* 字典dict
 ```python3
     a_dict = {'foo': 'bar', 'my': 'a-only'}
     b_dict = {'foo': 'b', 'you': 'b-only'}
@@ -42,11 +45,14 @@
     >>> a_dict
     {'foo': 'b', 'my': 'a-only', 'you': 'b-only'}
 ```
-* ## [集合set](set.md)
-* ## [函数](function.md)
-    * [decorator装饰器](http://www.cnblogs.com/huxi/archive/2011/03/01/1967600.html)
-    * [decorator.py](decorator装饰器.py)
-* [执行顺序](https://docs.python.org/3/reference/expressions.html#evaluation-order)
+* [集合set](set.md)
+
+## Exceution model
+* [Exception报错](./exception.md) [官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
+
+## Expressions
+* ### [magic method魔法方法](./magic_methods/README.md)
+* Evaluation order 执行顺序 [官网](https://docs.python.org/3/reference/expressions.html#evaluation-order)
 ```
     ()  # 括号内
     **  # 指数
@@ -56,32 +62,37 @@
     and  #
     or  # and 和 or不是同样的哦。
 ```
-* ## [class](./class/README.md)
+
+## Simple statements 简单语句
+11. [import机制](http://www.jianshu.com/p/b963782f59e9) [import文档](https://docs.python.org/3/reference/simple_stmts.html#the-import-statement)
+12. [global](language_reference/global_test.py)
+
+## Compound statements 复合语句
+* [函数](function.md) [官网](https://docs.python.org/3/reference/compound_stmts.html#function-definitions)
+    * [decorator装饰器](http://www.cnblogs.com/huxi/archive/2011/03/01/1967600.html)
+    * [decorator.py](decorator装饰器.py)
+* [class](./class/README.md)
     * [官网文档 TODO](https://docs.python.org/3.6/tutorial/classes.html)
-    * ### 属性
+    * 属性
         * `__module__` : class的模块
         * `__name__` : class的name
-    * ### [property](./class/property.md) [示例](./class/property.py)
-* enumerate
-```
-    enumerate(['a','b','c'])  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象
-```
-* [Exception报错](./exception.md) [官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
-* ## [magic method魔法方法](./magic_methods/README.md)
-* [Simple statements](https://docs.python.org/3/reference/simple_stmts.html)
-    11. [import机制](http://www.jianshu.com/p/b963782f59e9) [import文档](https://docs.python.org/3/reference/simple_stmts.html#the-import-statement)
-    12. [global](language_reference/global_test.py)
+    * [property](./class/property.md) [示例](./class/property.py)
+
 
 # [Library Reference 内置库参考](https://docs.python.org/3/library/index.html)
 1. [x] Introduction
-2. ## [Built-in Functions](./library_reference/built_in_functions内置函数.md)
-    * ### all
-    * ### any
-    * ### divmod
+2. [Built-in Functions](./library_reference/built_in_functions内置函数.md)
+    * all
+    * any
+    * divmod
+    * enumerate
+    ```
+    enumerate(['a','b','c'])  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象
+    ```
 3. [ ] Built-in Constants
 4. [ ] Built-in Types
 5. [ ] Built-in Exceptions
-6. ## [Text Processing Services](https://docs.python.org/3/library/text.html)
+6. [Text Processing Services](https://docs.python.org/3/library/text.html)
     2. ### [re -- Regular expression operations](./re.md)
     [test regrex 在线测试](https://regex101.com/#python)
 
@@ -116,11 +127,11 @@
 10. [ ] Functional Programming Modules
 
 11. ## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
-    2. ### [os.path](https://docs.python.org/3/library/os.path.html)
+    2. [os.path](https://docs.python.org/3/library/os.path.html)
         * os.path.abspath
         * `os.path.isfile`:  
             *Return True if path is an existing regular file. This follows symbolic links, so both islink() and isfile() can be true for the same path.*
-    6. ### [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
+    6. [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
         ```
         import tempfile
         fp = tempfile.TemporaryFile(mode='w+b', encoding=None)
@@ -131,7 +142,7 @@
     * ### [pickle](https://docs.python.org/3/library/pickle.html) *把python的对象序列化成字符串*
 13. [ ] Data Compression and Archiving
     * [zipfile](./zip.md) *处理zip压缩包*
-14. ## [File Formats](https://docs.python.org/3/library/fileformats.html)
+14. [File Formats](https://docs.python.org/3/library/fileformats.html)
     1. ### [csv](./csv.md)
         * [source code](https://github.com/python/cpython/blob/3.6/Lib/csv.py)
     2. [ ] configparser
@@ -141,7 +152,7 @@
 15. [ ] Cryptographic Services
 
 16. ## [Generic Operating System Services](https://docs.python.org/3/library/allos.html)
-    1. ### [os](https://docs.python.org/3/library/os.html)
+    1. [os](https://docs.python.org/3/library/os.html)
         * os.scandir
         Better performance than os.listdir
         ```
@@ -185,7 +196,7 @@
         ```
         * 报错
         json.decoder.JSONDecodeError(python3), ValueError(python2)
-    6. ### base64
+    6. base64
     ```
     b = base64.encodebytes('我'.encode('utf8')) # 只有二进制才能encode,结果还是bytes
     b = base64.encodestring('我'.encode('utf8')) # 查了源码，果然这个是为了兼容python2的语法。以后避免使用这个方法
