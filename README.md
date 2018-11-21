@@ -9,35 +9,35 @@
 * [github链接](https://github.com/ramwin/python-reference/)
 
 # tutorial [官网](https://docs.python.org/3/tutorial/index.html)
-
-# Language Reference [官网](https://docs.python.org/3/reference/index.html)
-## Built-in Types 基础类型
+## Data Structures 基础类型
 其实这个是Library Reference的内容
 * [列表list](list.md)
     * [基础]
-        ```
-        >>> a = ['a', 'b', 'c']
-        >>> a.insert(1, 'd')
-        ['a', 'd', 'b', 'c']
-        ```
+    ```
+    >>> a = ['a', 'b', 'c']
+    >>> a.insert(1, 'd')
+    ['a', 'd', 'b', 'c']
+    ```
     * [for else](http://book.pythontips.com/en/latest/for_-_else.html)
-        ```
-        for item in container:
-            if search_something(item):
-                process(item)
-                break
-        else:
-            not_found_in_container()
-        ```
+    ```
+    for item in container:
+        if search_something(item):
+            process(item)
+            break
+    else:
+        not_found_in_container()
+    ```
     * sorted
-        ```
-        sorted(l, key=lambda x: x['value'])  # 根据value进行排序
-        ```
+    ```
+    sorted(l, key=lambda x: x['value'])  # 根据value进行排序
+    ```
     * [自定义可迭代](./for.md)
 * [string](./string.md)
     * [unicode table](https://unicode-table.com/cn/#samaritan)
     * #### [format](./string.md#format)
-* 字典dict
+5. [x] Dictionaries  
+使用**del**可以删除一个key  
+list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特性. 使用时注意版本是否支持*
 ```python3
     a_dict = {'foo': 'bar', 'my': 'a-only'}
     b_dict = {'foo': 'b', 'you': 'b-only'}
@@ -47,6 +47,8 @@
 ```
 * [集合set](set.md)
 
+
+# Language Reference [官网](https://docs.python.org/3/reference/index.html)
 ## Exceution model
 * [Exception报错](./exception.md) [官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
 
@@ -90,7 +92,8 @@
     enumerate(['a','b','c'])  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象
     ```
 3. [ ] Built-in Constants
-4. [ ] Built-in Types
+4. [ ] [Built-in Types](./library_reference/built_in_types内置数据类型.md)
+    * ### [Mapping Types -- dict 字典参考](./library_reference/built_in_types内置数据类型.md)
 5. [ ] Built-in Exceptions
 6. [Text Processing Services](https://docs.python.org/3/library/text.html)
     2. ### [re -- Regular expression operations](./re.md)
