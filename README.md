@@ -353,7 +353,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 * ## [PyWinMouse](https://pypi.org/project/PyWinMouse/)  *windows下操作鼠标*
 * ## [qiniu](./qiniu.md)  *七牛的接口*
 * ## [redis](./redis.md) *use redis db*
-* ## [requests](./requests.md) *发送http请求*
+* ## [requests](./other_useful_library/requests.md) *发送http请求*
 * ## [rsa](./other_useful_library/rsa.md) *使用rsa加密*
 * ## [scrapy](./scrapy/README.md)
 * ## ~~[srt](http://srt.readthedocs.io/en/latest/api.html)*因为缺少shift功能而改成用pysrt*~~

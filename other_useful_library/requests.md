@@ -1,4 +1,7 @@
-#### Xiang Wang @ 2016-12-26 21:21:00
+**Xiang Wang @ 2016-12-26 21:21:00**
+
+* [官网](http://docs.python-requests.org/en/master/)
+* [上传文件代码](./requests上传文件.py)
 
 ### 基础
 ```
@@ -45,3 +48,13 @@ requests.requests(
 如果报错了，会raise `simplejson.errors.JSONDecodeError`, python2里面会raise `ValueError`
 * `content` 二进制数据
 * `text` 文本数据
+
+### Advanced Usage 进阶用法
+#### 1. Session Objects
+通过Session可以保持长链接, 请求速度会快一点.
+```
+s = requests.Session()
+s.get('https://httpbin.org/cookies/set/sessioncookie/123456789')
+r = s.get("https://httpbin.org/cookies")
+print(r.text)
+```
