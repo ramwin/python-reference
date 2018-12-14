@@ -156,10 +156,10 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     * ### [pickle](https://docs.python.org/3/library/pickle.html) *把python的对象序列化成字符串*
 13. [ ] Data Compression and Archiving
     * [zipfile](./zip.md) *处理zip压缩包*
-14. [File Formats](https://docs.python.org/3/library/fileformats.html)
+14. File Formats [官网](https://docs.python.org/3/library/fileformats.html)
     1. ### [csv](./csv.md)
         * [source code](https://github.com/python/cpython/blob/3.6/Lib/csv.py)
-    2. [ ] configparser
+    2. ### [configparser](./config.md) 配置文件
     3. [ ] netrc
     4. [ ] xdrlib
     5. [ ] plistlib
@@ -228,8 +228,8 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
             * assert**IsNone**, assertIsNotNone, 
             * assert**In(a, b)**, assertNotIn
             * assert**IsInstance**, assertNotIsInstance
-30. Python Runtime Services [官网](https://docs.python.org/3/library/python.html)
-    10. traceback -- Print or retrieve a stack traceback [官网](https://docs.python.org/3/library/traceback.html)
+30. ## Python Runtime Services 和编译器,环境有关的服务 [官网](https://docs.python.org/3/library/python.html)
+    10. ### traceback -- Print or retrieve a stack traceback [官网](https://docs.python.org/3/library/traceback.html)
     ```
     traceback.print_stack()  # 直接print出stack
     log = traceback.format_exc()  # 记录报错的stack
@@ -351,7 +351,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     utc_time = loc_datetime.astimezone(utc)
     ```
 * ## [PyWinMouse](https://pypi.org/project/PyWinMouse/)  *windows下操作鼠标*
-* ## [qiniu](https://developer.qiniu.com/kodo/sdk/1242/python) *调用七牛的api上传文件*
+* ## [qiniu](./qiniu.md)  *七牛的接口*
 * ## [redis](./redis.md) *use redis db*
 * ## [requests](./requests.md) *发送http请求*
 * ## [rsa](./other_useful_library/rsa.md) *使用rsa加密*

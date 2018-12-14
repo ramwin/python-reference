@@ -17,6 +17,21 @@ wechat_client = WeChatClient(
 )
 ```
 
+### 推送事件
+#### 公共属性
+```
+name	value
+id	事件 id, 64 位整型。
+source	事件的来源用户，即发送消息的用户。
+target	事件的目标用户。
+create_time	事件的发送时间，UNIX 时间戳
+type	event
+event	事件的类型
+```
+#### 模板消息发送任务完成事件
+event: "templatesendjobfinish"
+status: "success"
+
 ### 微信主动调用接口
 * #### 用户接口 [官网](http://docs.wechatpy.org/zh_CN/master/client/user.html)
 `wechatpy.client.api.WeChatUser(client=None)`
