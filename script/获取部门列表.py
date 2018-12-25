@@ -22,7 +22,7 @@ class DeptSerializer(serializers.ModelSerializer):
         qs = Dept.objects.filter(path__startswith=obj.path)
         results = []
         for i in qs:
-            if re.match(r'{}\.\d+'.format(qs.path), i.path):
+            if re.match(r'^{}\.\d+$'.format(qs.path), i.path):
                 results.append(i)
         return results
 
