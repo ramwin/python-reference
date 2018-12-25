@@ -15,5 +15,5 @@ class DeptSerializer(serializers.ModelSerializer):
         fields = ["id", "title", "children"]
 
     def get_children(self, obj):
-        qs = Dept.objects.filter(path__endswith) = ".{}".format(obj.id)
+        qs = Dept.objects.filter(path__endswith = ".{}".format(obj.id)).exclude(id=obj.id)
         return DeptSerializer(qs, many=True).data
