@@ -11,7 +11,7 @@
 # tutorial [官网](https://docs.python.org/3/tutorial/index.html)
 ## Data Structures 基础类型
 其实这个是Library Reference的内容
-* [列表list](list.md)
+* ### [列表list](list.md)
     * [基础]
     ```
     >>> a = ['a', 'b', 'c']
@@ -32,7 +32,7 @@
     sorted(l, key=lambda x: x['value'])  # 根据value进行排序
     ```
     * [自定义可迭代](./for.md)
-* [string](./string.md)
+* ### [string](./string.md)
     * [unicode table](https://unicode-table.com/cn/#samaritan)
     * #### [format](./string.md#format)
 5. [x] Dictionaries  
