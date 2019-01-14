@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 # Xiang Wang @ 2019-01-08 18:21:44
 
+# from __future__ import unicode_literals 这行不能有, 有了的话, 后面就会报错
 
 import csv
 from collections import OrderedDict
