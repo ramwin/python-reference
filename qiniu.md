@@ -1,8 +1,18 @@
 *Xiang Wang @ 2017-06-16 14:58:59*
 
 
-## 智能多媒体API
+## 智能多媒体API [官网](https://developer.qiniu.com/dora)
 ### 图片处理
+#### 图片基本处理
+* 接口规格
+```
+?imageView/<mode>/w/
+```
+    * `/0/w/<longEdge>/h/<ShortEdge>`
+    * `/1/w/<Width>/h/<Height>`: 宽最少为Width, 高最少为Height, 等比缩放， 居中裁剪
+    * `/1/w/<Width>`: 宽和高都最少为Width, 生成正方图
+
+
 #### 图片水印处理
 * 接口规格
 ```
@@ -16,6 +26,14 @@
          /wst/<watermarkScaleType>
 # 对上的水印
 ?watermark/1/image/aHR0cHM6Ly9wdWJsaWNzdGF0aWMuZHVpc2hhbmcubmV0L3dhdGVybWFya19zbWFsbC5wbmc=/dissolve/70/
+```
+
+#### 图片圆角处理
+* 接口规格
+```
+roundPic/radius/<radius>
+        /radiusx/<radiusx>
+        /radiusy/<radiusy>
 ```
 
 

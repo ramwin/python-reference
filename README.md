@@ -92,7 +92,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     enumerate(['a','b','c'])  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象
     ```
 3. [ ] Built-in Constants
-4. [ ] [Built-in Types](./library_reference/built_in_types内置数据类型.md)
+4. [ ] Built-in Types
     * ### [Mapping Types -- dict 字典参考](./library_reference/built_in_types内置数据类型.md)
 5. [ ] Built-in Exceptions
 6. [Text Processing Services](https://docs.python.org/3/library/text.html)
@@ -363,6 +363,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 virtualenv ENV -p /bin/python
 ```
 * ## [watchdog](https://pypi.org/project/watchdog/) *监控文件变化*
+* ## websocket [websocket 客户端](https://github.com/websocket-client/websocket-client)
 * ## [wechatpy](./other_useful_library/wechatpy.md) *和微信的接口*
 * ## [word2html](https://github.com/bradmontgomery/word2html)  *把word转化成html*
 * ## [word2vec](http://nbviewer.jupyter.org/github/danielfrg/word2vec/blob/master/examples/word2vec.ipynb)
