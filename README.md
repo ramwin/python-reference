@@ -360,7 +360,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 * ## [urllib](./urllib.md) *处理url*
 * ## [virtualenv](https://virtualenv.pypa.io/en/stable/)
 ```
-virtualenv ENV -p /bin/python
+virtualenv --system-site-packages -p /bin/python ENV
 ```
 * ## [watchdog](https://pypi.org/project/watchdog/) *监控文件变化*
 * ## websocket [websocket 客户端](https://github.com/websocket-client/websocket-client)
