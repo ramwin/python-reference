@@ -5,6 +5,7 @@
 # 结果见 /results/扔骰子.png
 
 import random
+from collections import defaultdict
 
 
 POINTS = [1, 2, 3, 4, 5, 6]
@@ -48,6 +49,7 @@ class Throw(object):
             return "{}头".format(self.value)
 
     def throw_to_valid(self):
+        self.throw()
         while not self.is_valid():
             self.throw()
 
@@ -110,10 +112,11 @@ class Person(object):
             host.money += STAKE
 
 
-if __name__ == '__main__':
+def test():
+    """测试庄家还是闲家"""
     host = Person(is_host=True, money=100)
     guest = Person(is_host=False, money=100)
-    for i in range(20):
+    for i in range(20000):
         guest_dice = guest.throw()
         host_dice = host.throw()
         print("客家结果: {}".format(guest_dice), end="\t")
@@ -123,3 +126,28 @@ if __name__ == '__main__':
         guest.compare(host)
         print("客家余额: {}".format(guest.money), end="\t")
         print("庄家余额: {}".format(host.money), end="\n")
+
+
+def test5():
+    """测试5头"""
+    result = defaultdict(int)
+    t = Throw()
+    n = 10000
+    for i in range(n):
+        t.throw_to_valid()
+        t.value
+        result[t.value] += 1
+    keys = list(result.keys())
+    keys.sort()
+    sum_property = 0
+    for key in keys:
+        print("扔到{}的概率是{}".format(
+            key, result[key]/n
+        ))
+        sum_property += result[key]/n
+        print("当前总概率{}".format(sum_property))
+    print(result)
+
+
+if __name__ == '__main__':
+    test5()
