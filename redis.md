@@ -41,6 +41,11 @@ r.blrange(key, 0, -1)  # must have the start and end index
 r.sadd(key, 'value')
 r.smembers(key)  # 如果是空的，返回 set()
 r.sadd(key, *set or list)  # 批量添加set
+
+>>> r.set('key', 'bar', nx=True)
+True
+>>> r.set('key', 'bar', nx=True)
+None
 ```
 
 # ttl

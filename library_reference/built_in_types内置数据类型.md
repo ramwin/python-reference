@@ -2,9 +2,10 @@
 
 **内置数据类型**
 
-## Built-in Types
+### Built-in Types [官网](./library_reference/built_in_types内置数据类型.md)
 * [ ] and, or, not; int, float, complet; list, tuple, range ...
-### Mapping Types -- dict
+
+#### Mapping Types -- dict
 这是唯一的一种mapping object  
 hashable的数据, 就可以当作key. 因为数字遵循了一样的计算规则, 所以如果两个数字值一样, 那么他们得到的索引结果就一样. `a[1]`和`a[1.0]` 完全同步. 但是因为python保存浮点数是近似值, 所以用浮点数当作key很不明智
 ```

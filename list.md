@@ -1,15 +1,16 @@
-#### Xiang Wang @ 2017-06-01 11:14:56
+**Xiang Wang @ 2017-06-01 11:14:56**
 
-### 基础
-```
-    a = ['a', 'b', 'c']
-    a.pop(0)=='a' # ['b', 'c']  如果index太大，会报错
-    a.remove('b')==None  # ['c'], 如果不存在，会报错。既然你都知道remove什么了，就不返回给你remove了什么了
-    
-```
+[官网](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
+
+#### 基础
+* append(x) 添加元素,等价于a[len(a):] = [x]
+* extend(iterable) 延长, 等价语a[len(a):] = iterable
+* insert(i, x)
+* remove(x) 删除x, 如果x不存在, 就会报错, 注意这个x是==来判断的, 只要二者相等就能remove
+* pop([i]) pop掉第i个元素, 或者pop掉最后一个元素, 如果list为空,或者i太多 raise IndexError
 
 
-### 操作
+#### 操作
 * 切片
     ```
     a = [1,2,3]
@@ -27,7 +28,7 @@
     )
     ```
 
-### 进阶
+#### 进阶
 * 自定义迭代器
     ```
     class A(object):

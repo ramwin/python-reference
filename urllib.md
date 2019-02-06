@@ -26,8 +26,18 @@
 ## urllib
 * urllib.urlencode
 ```
-urllib.urlencode({'key': 'value'})  # 对应 urlparse.parse_qsl
-urllib.urlencode({'key': ['value']}, doseq=1)  # 对应 urlparse.parse_qs
+>>> urllib.urlencode({'key': 'value'})  # 对应 urlparse.parse_qsl
+key=value
+>>> urllib.urlencode({'key': ['value']}, doseq=1)  # 对应 urlparse.parse_qs
+key=value
+```
+
+* urllib.quote
+```
+>>> urllib.quote("我")
+%E6%88%91
+>>> urllib.quote('&')
+"%26"
 ```
 
 ## urlparse
