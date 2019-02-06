@@ -2,6 +2,7 @@
 # -*- coding: utf-8 -*-
 # Xiang Wang @ 2019-02-06 12:35:47
 
+# 结果见 /results/扔骰子.png
 
 import random
 
