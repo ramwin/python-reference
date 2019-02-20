@@ -221,6 +221,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 22. [ ] Internet Protocols and Support
 27. Development Tools
     4. ### [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html)
+    [示例](./test/unittest示例.py)
         * [assets methods](https://docs.python.org/3/library/unittest.html#unittest.TestCase.debug)  
             * assert**Equal**, assertNotEqual, 
             * assert**True**, assertFalse, 
@@ -228,6 +229,11 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
             * assert**IsNone**, assertIsNotNone, 
             * assert**In(a, b)**, assertNotIn
             * assert**IsInstance**, assertNotIsInstance
+            * assert*Raises*
+            ```
+            with self.assertRaises(SomeException):
+                do_something()  如果do_something 不报这个 SomeException, 就失败
+            ```
 30. ## Python Runtime Services 和编译器,环境有关的服务 [官网](https://docs.python.org/3/library/python.html)
     10. ### traceback -- Print or retrieve a stack traceback [官网](https://docs.python.org/3/library/traceback.html)
     ```
