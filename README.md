@@ -8,7 +8,8 @@
 * [python tips 小技巧](http://book.pythontips.com/en/latest/index.html)
 * [github链接](https://github.com/ramwin/python-reference/)
 
-# tutorial [官网](https://docs.python.org/3/tutorial/index.html)
+# tutorial
+[官网](https://docs.python.org/3/tutorial/index.html)
 ## Data Structures 基础类型
 其实这个是Library Reference的内容
 * ### [列表list](list.md)
@@ -48,13 +49,16 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 * [集合set](set.md)
 
 
-# Language Reference [官网](https://docs.python.org/3/reference/index.html)
+# Language Reference
+[官网](https://docs.python.org/3/reference/index.html)
 ## Exceution model
-* [Exception报错](./exception.md) [官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
+* [Exception报错](./exception.md)
+[官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
 
 ## Expressions
 * ### [magic method魔法方法](./magic_methods/README.md)
-* Evaluation order 执行顺序 [官网](https://docs.python.org/3/reference/expressions.html#evaluation-order)
+* Evaluation order 执行顺序
+[官网](https://docs.python.org/3/reference/expressions.html#evaluation-order)
 ```
     ()  # 括号内
     **  # 指数
@@ -70,18 +74,20 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 12. [global](language_reference/global_test.py)
 
 ## Compound statements 复合语句
-* [函数](function.md) [官网](https://docs.python.org/3/reference/compound_stmts.html#function-definitions)
+* [函数](function.md)
+[官网](https://docs.python.org/3/reference/compound_stmts.html#function-definitions)
     * [decorator装饰器](http://www.cnblogs.com/huxi/archive/2011/03/01/1967600.html)
     * [decorator.py](decorator装饰器.py)
 * [class](./class/README.md)
-    * [官网文档 TODO](https://docs.python.org/3.6/tutorial/classes.html)
+[官网文档 TODO](https://docs.python.org/3.6/tutorial/classes.html)
     * 属性
         * `__module__` : class的模块
         * `__name__` : class的name
     * [property](./class/property.md) [示例](./class/property.py)
 
 
-# Library Reference 内置库参考 [官网](https://docs.python.org/3/library/index.html)
+# Library Reference 内置库参考
+[官网](https://docs.python.org/3/library/index.html)
 1. [x] Introduction
 2. [Built-in Functions](./library_reference/built_in_functions内置函数.md)
     * all
@@ -119,6 +125,11 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     12. [ ] ...
 
 9. Numeric and Mathematical Modules
+    2. [math](https://docs.python.org/3/library/math.html)
+    ```
+    math.ceil(x) 大于等于x的最小的整数, 使用 __ceil__ 方法，可以让一个对象支持这个函数
+    math.floor(x) 小于等于x的最大的整数, 使用 __floor__ 方法，可以让一个对象支持这个函数
+    ```
     5. [fractions](https://docs.python.org/2/library/fractions.html#fractions.Fraction)
     ```
         from fractions import Fraction
@@ -156,7 +167,8 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     * ### [pickle](https://docs.python.org/3/library/pickle.html) *把python的对象序列化成字符串*
 13. [ ] Data Compression and Archiving
     * [zipfile](./zip.md) *处理zip压缩包*
-14. File Formats [官网](https://docs.python.org/3/library/fileformats.html)
+14. File Formats
+[官网](https://docs.python.org/3/library/fileformats.html)
     1. ### [csv](./csv.md)
         * [source code](https://github.com/python/cpython/blob/3.6/Lib/csv.py)
     2. ### [configparser](./config.md) 配置文件
@@ -187,29 +199,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 18. [ ] contextvars — Context Variables
 19. [ ] Interprocess Communication and Networking
 20. ## Internet Data Handling
-    2. ### JSON
-        * [官方教程](https://docs.python.org/3/library/json.html)
-        * 代码内使用
-        ```
-            import json
-            data = {}
-            text = json.dumps(data)
-            data = json.loads(text)
-
-            file_obj = open('source/test.json','r')
-            data = json.load(file_obj)
-
-            file_obj = open('source/test.json', w')
-            json.dump(obj, file_obj, ensure_ascii=False)
-        ```
-        * 命令行使用
-        ```
-            python -m json.tool <filename>
-            import pprint
-            pprint.pprint(data, depth=4, indent=4)
-        ```
-        * 报错
-        json.decoder.JSONDecodeError(python3), ValueError(python2)
+    2. ### [JSON](./library_reference/json.md)
     6. base64
     ```
     b = base64.encodebytes('我'.encode('utf8')) # 只有二进制才能encode,结果还是bytes
@@ -220,22 +210,11 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 21. [ ] Structed Markup Processing Tools
 22. [ ] Internet Protocols and Support
 27. Development Tools
-    4. ### [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html)
-    [示例](./test/unittest示例.py)
-        * [assets methods](https://docs.python.org/3/library/unittest.html#unittest.TestCase.debug)  
-            * assert**Equal**, assertNotEqual, 
-            * assert**True**, assertFalse, 
-            * assert**Is**, assertIsNot, 
-            * assert**IsNone**, assertIsNotNone, 
-            * assert**In(a, b)**, assertNotIn
-            * assert**IsInstance**, assertNotIsInstance
-            * assert*Raises*
-            ```
-            with self.assertRaises(SomeException):
-                do_something()  如果do_something 不报这个 SomeException, 就失败
-            ```
-30. ## Python Runtime Services 和编译器,环境有关的服务 [官网](https://docs.python.org/3/library/python.html)
-    10. ### traceback -- Print or retrieve a stack traceback [官网](https://docs.python.org/3/library/traceback.html)
+    4. ### [unittest — Unit testing framework 测试框架](./library_reference/unittest.md)
+30. ## Python Runtime Services 和编译器,环境有关的服务
+[官网](https://docs.python.org/3/library/python.html)
+    10. ### traceback -- Print or retrieve a stack traceback
+    [官网](https://docs.python.org/3/library/traceback.html)
     ```
     traceback.print_stack()  # 直接print出stack
     log = traceback.format_exc()  # 记录报错的stack
@@ -250,7 +229,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 
 # Other Useful Library
 * beautifulsoup4 *用来解析html文件*
-    * [官网](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html#id5)
+[官网](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html#id5)
     * 安装: `pip3 install beautifulsoup4`
     * [文档整理](./other_useful_library/beautifulsoup.md)
 * [captcha](./other_useful_library/captcha_test.py) *生成验证码*
@@ -320,9 +299,17 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     * 安装依赖: `apt install libav-tools ffmpeg`
     * 基础:
     ```python
+    import math
     from pydub import AudioSegment
     song = AudioSegment.from_mp3('origin.mp3')
     song[10*1000: 40*1000].export('target.mp3')
+    # 把一个视频切割成很多个小的mp3
+    song = AudioSegment.from_mp4("filename.mp4", "mp4")
+    song.export("filename.mp3", format="mp3")
+    step = 5 * 60 * 1000
+    file_prefex = "2019-01-26_"
+    for i in range(math.ceil(len(song)/step)):
+        song[step*i: (i+1)*step].export("{}_{}.mp3".format(file_prefex, i), format="mp3")
     ```
 * ## [PyPDF2](https://pythonhosted.org/PyPDF2/) *对中文支持不友好*
 * pyperclip *控制系统剪切板*
