@@ -348,6 +348,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 * ## [redis](./redis.md) *use redis db*
 * ## [requests](./other_useful_library/requests.md) *发送http请求*
 * ## [rsa](./other_useful_library/rsa.md) *使用rsa加密*
+* ## [six](./other_useful_library/six.md) `python2和python3兼容的库`
 * ## [scrapy](./scrapy/README.md)
 * ## ~~[srt](http://srt.readthedocs.io/en/latest/api.html)*因为缺少shift功能而改成用pysrt*~~
 * ## [urllib](./urllib.md) *处理url*
