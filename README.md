@@ -191,6 +191,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     2. [ ] io
     3. [ ] time
     4. [argparse](./library_reference/argparse.md)
+    这个用来解析python的命令
     5. [ ] getopt
     6. ### [logging日志处理](./log/README.md)
     9. [ ] to be continued
@@ -297,6 +298,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
         * windows: 先去[下载visual c++ 9.0](http://aka.ms/vcpython27)，然后再 `pip install pycrypto`
 * ## [pydub](https://github.com/jiaaro/pydub) *编辑mp3的包*
     * 安装依赖: `apt install libav-tools ffmpeg`
+    * [示例](./other_useful_library/mp4tomp3.py)
     * 基础:
     ```python
     import math
