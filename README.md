@@ -102,7 +102,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     * ### [Mapping Types -- dict 字典参考](./library_reference/built_in_types内置数据类型.md)
 5. [ ] Built-in Exceptions
 6. [Text Processing Services](https://docs.python.org/3/library/text.html)
-    2. ### [re -- Regular expression operations](./re.md)
+    2. ### [re -- Regular expression operations 正则表达式](./re.md)
     [test regrex 在线测试](https://regex101.com/#python)
 
 7. [ ] Binary Data Services

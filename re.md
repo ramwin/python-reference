@@ -1,7 +1,7 @@
-** Xiang Wang @ 2016-05-26 15:30:51 **
+**Xiang Wang @ 2016-05-26 15:30:51**
 
+[官网](https://docs.python.org/3/library/re.html#module-re)
 
-* [官网](https://docs.python.org/3/library/re.html#module-re)
 ## Regular Expression Syntax 基础知识和语法
 * 匹配规则
     * `\d`  *数字*
@@ -10,9 +10,9 @@
     * `\S`  *非空白字符*
     * `\w`  *单词字符*
     * `\W`  *非单词字符*
-    * `(a|bc|d)  *a或者bc或者c*
+    * `(a|bc|d)`  *a或者bc或者c*
     * `[a-z]` * 小写字母  
-    * 是否是贪婪模式: 在匹配后面加上?, 比如  
+    * 是否是贪婪模式: 在匹配后面加上?, 比如
         ```
         *?
         +?
@@ -43,6 +43,20 @@ Return the string obtained by replacing the leftmost non-overlapping occurences 
     ```
 * [ ] ...
 
+## [Regular Expression Examples](https://docs.python.org/3/library/re.html#regular-expression-examples)
+5. [Text Munging](https://docs.python.org/3/library/re.html#text-munging)
+```
+>>> def repl(m):
+...     inner_word = list(m.group(2))
+...     random.shuffle(inner_word)
+...     return m.group(1) + "".join(inner_word) + m.group(3)
+>>> text = "Professor Abdolmalek, please report your absences promptly."
+>>> re.sub(r"(\w)(\w+)(\w)", repl, text)
+'Poefsrosr Aealmlobdk, pslaee reorpt your abnseces plmrptoy.'
+>>> re.sub(r"(\w)(\w+)(\w)", repl, text)
+'Pofsroser Aodlambelk, plasee reoprt yuor asnebces potlmrpy.'
+```
+
 ## 例子
 * 找到字符串里面符合规则的字符串
 ```
@@ -57,17 +71,3 @@ Return the string obtained by replacing the leftmost non-overlapping occurences 
 
 
 * 删除字符串里面符合规则的字符串
-
-5. # [Regular Expression Examples](https://docs.python.org/3/library/re.html#regular-expression-examples)
-    5. ## [Text Munging](https://docs.python.org/3/library/re.html#text-munging)
-    ```
-    >>> def repl(m):
-    ...     inner_word = list(m.group(2))
-    ...     random.shuffle(inner_word)
-    ...     return m.group(1) + "".join(inner_word) + m.group(3)
-    >>> text = "Professor Abdolmalek, please report your absences promptly."
-    >>> re.sub(r"(\w)(\w+)(\w)", repl, text)
-    'Poefsrosr Aealmlobdk, pslaee reorpt your abnseces plmrptoy.'
-    >>> re.sub(r"(\w)(\w+)(\w)", repl, text)
-    'Pofsroser Aodlambelk, plasee reoprt yuor asnebces potlmrpy.'
-    ```
