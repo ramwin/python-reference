@@ -305,13 +305,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     from pydub import AudioSegment
     song = AudioSegment.from_mp3('origin.mp3')
     song[10*1000: 40*1000].export('target.mp3')
-    # 把一个视频切割成很多个小的mp3
-    song = AudioSegment.from_mp4("filename.mp4", "mp4")
-    song.export("filename.mp3", format="mp3")
-    step = 5 * 60 * 1000
-    file_prefex = "2019-01-26_"
-    for i in range(math.ceil(len(song)/step)):
-        song[step*i: (i+1)*step].export("{}_{}.mp3".format(file_prefex, i), format="mp3")
+    # 把一个视频切割成很多个小的mp3 ../other_useful_library/mp4tomp3.py
     ```
 * ## [PyPDF2](https://pythonhosted.org/PyPDF2/) *对中文支持不友好*
 * pyperclip *控制系统剪切板*
