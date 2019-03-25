@@ -274,12 +274,13 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 * [pdfminer](https://github.com/euske/pdfminer) *解析pdf的包，好用*
 * [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
 * [pillow](./Pillow.md)
-* pip *快速安装包*
-    `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11`
-    ```
-    export LC_ALL="en_US.UTF-8"  # 出现乱码
-    export LC_CTYPE="en_US.UTF-8"
-    ```
+* pip *快速安装包*  
+`pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11`  
+`pip install -i https://pypi.org/simple django==1.11`
+```
+export LC_ALL="en_US.UTF-8"  # 出现乱码
+export LC_CTYPE="en_US.UTF-8"
+```
 * ## [pycharm]
     * 快捷键:
         * 界面工具查看

@@ -11,11 +11,15 @@ from pydub import AudioSegment
 
 abspath = sys.argv[1]
 directory, filename = os.path.split(abspath)
+print("当前目录", directory)
+print("文件名", filename)
 name, suffix = os.path.splitext(filename)
 
 
 song = AudioSegment.from_file(abspath, "mp4")
-song.export(os.path.join(directory, name + ".mp3"), format="mp3")
+export_path = os.path.join(directory, name + ".mp3")
+print("导出路径", export_path)
+song.export(export_path, format="mp3")
 step = 3 * 60 * 1000
 for i in range(math.ceil(len(song)/step)):
     destination = os.path.join(
