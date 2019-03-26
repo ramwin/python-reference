@@ -152,10 +152,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 10. [ ] Functional Programming Modules
 
 11. ## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
-    2. [os.path](https://docs.python.org/3/library/os.path.html)
-        * os.path.abspath
-        * `os.path.isfile`:  
-            *Return True if path is an existing regular file. This follows symbolic links, so both islink() and isfile() can be true for the same path.*
+    2. [os.path](library_reference/os.md)
     6. [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
         ```
         import tempfile
