@@ -6,7 +6,7 @@
 #### 图片基本处理 [官网](https://developer.qiniu.com/dora/manual/1279/basic-processing-images-imageview2)
 * 接口规格
 ```
-?imageView/<mode>/w/
+?imageView2/<mode>/w/
 ```
     * `/0/w/<longEdge>/h/<ShortEdge>` 限制长边最长，短边最长，等比缩放，适合移动端的缩略图。
     * `/1/w/<Width>/h/<Height>`: 宽最少为Width, 高最少为Height, 等比缩放， 居中裁剪 只
