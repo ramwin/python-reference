@@ -13,25 +13,6 @@
 ## Data Structures 基础类型
 其实这个是Library Reference的内容
 * ### [列表list](list.md)
-    * [基础]
-    ```
-    >>> a = ['a', 'b', 'c']
-    >>> a.insert(1, 'd')
-    ['a', 'd', 'b', 'c']
-    ```
-    * [for else](http://book.pythontips.com/en/latest/for_-_else.html)
-    ```
-    for item in container:
-        if search_something(item):
-            process(item)
-            break
-    else:
-        not_found_in_container()
-    ```
-    * sorted
-    ```
-    sorted(l, key=lambda x: x['value'])  # 根据value进行排序
-    ```
     * [自定义可迭代](./for.md)
 * ### [string](./string.md)
     * [unicode table](https://unicode-table.com/cn/#samaritan)
@@ -308,23 +289,7 @@ export LC_CTYPE="en_US.UTF-8"
 * ## [PyPDF2](https://pythonhosted.org/PyPDF2/) *对中文支持不友好*
 * pyperclip *控制系统剪切板*
     pyperclip.copy('ew') # 把ew放入剪切板
-* ## [pysrt](https://github.com/byroot/pysrt)
-    * 基础
-    ```
-    import pysrt
-    subs = pysrt.open('srt.srt', encoding='utf8')
-    first_sub = subs[0]
-    first_sub.text = "hello world"
-    first_sub.start.seconds = 20
-    first_sub.shift(seconds=2)
-    first_sub.start += {'seconds': -1}
-    subs.shift(minutes=1)
-    subs.shift(ratio=25/23.9)  # convert a 23.9 fps subtitle in 25fps
-    del subs[12]
-    part = subs.slice(starts_after={'minutes': 2, 'seconds': 30}, ends_before={'minutes': 3, 'seconds': 40})
-    part.shift(seconds=-2)
-    subs.save('other/path.srt', encoding='utf8')
-    ```
+* ## [pysrt](./other_useful_library/README.md#pysrt)  *控制srt字幕*
 * ## [pytz](https://pythonhosted.org/pytz/)  *时区*
     ```
     from datetime import datetime
@@ -381,6 +346,7 @@ for i in range(ws.nrows):
 ```
 
 * ## [yapf] *把python的代码格式化*
+## 其他不重要的包
 
 
 # 其他
@@ -388,33 +354,5 @@ for i in range(ws.nrows):
 * uuid.getnote()    # 获取本机的MAC地址  
 mac=uuid.UUID(int = node).hex[-12:]
 
-# 设计模式
+## [设计模式](./设计模式.md)
 [runoob教程](http://www.runoob.com/design-pattern/factory-pattern.html)
-## 工厂模式
-* 根据输入的颜色名, 产生对应的颜色的class
-
-```
-class Color(object):
-    pass
-
-
-class Red(Color):
-    color = 'red'
-
-
-class Green(Color):
-    color = 'green'
-
-
-class Factory(object):
-
-    def get_color(self, name):
-        if name == 'red':
-            return Red()
-        if name == 'green':
-            return Green()
-        raise NotImplemented
-```
-
-* 我用过工厂模式的地方:
-> 给小荐开发时, 公司信息. 有个通用的CompanyInfo, 然后不同公司, 有ContactInfo, AddressInfo, ProductInfo. 他们的操作都是获取数据, 处理数据, 保存数据, 都有缓存机制. 然后一个请求过来, 不同的View就是调用了不同的Info, 然而其他处理机制都一样

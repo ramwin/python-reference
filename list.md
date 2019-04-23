@@ -8,6 +8,10 @@
 * insert(i, x)
 * remove(x) 删除x, 如果x不存在, 就会报错, 注意这个x是==来判断的, 只要二者相等就能remove
 * pop([i]) pop掉第i个元素, 或者pop掉最后一个元素, 如果list为空,或者i太多 raise IndexError
+* sorted
+```
+sorted(l, key=lambda x: x['value'])  # 根据value进行排序
+```
 
 
 #### 操作
@@ -45,3 +49,15 @@
             else:
                 raise StopIteration()
     ```
+
+
+#### 其他
+* [for else](http://book.pythontips.com/en/latest/for_-_else.html)
+```
+for item in container:
+    if search_something(item):
+        process(item)
+        break
+else:
+    not_found_in_container()
+```
