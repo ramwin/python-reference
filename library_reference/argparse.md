@@ -27,7 +27,30 @@ parser.add_argument("echo", help="echo the string you use here")
 parser.add_argument("square", help="展示一个数字", type=int)
 ```
 
-#### [ ] Introducing Optional arguments
+#### Introducing Optional arguments
+* example
+```
+parser.add_argument("--verbosity", help="是否查看")
+if args.verbosity:
+    print("verbosity turned on")
+./command.py --verbosity 1
+./command.py  # 这样就不会verbosity了
+```
+* 使用`store_true`
+```
+parser.add_argument("--verbose", action="store_true", help="increase output verbosity")
+args = parser.parse_args()
+if args.verbos:
+    print("verbose")
+```
+* 使用short options
+```
+parser.add_arguments("-v", ""--verbose", help="increate output verbosity", action="store_true")
+args = parser.parse_args()
+if args.verbose:
+    print("verbosity on")
+```
+
 #### [ ] Combining Positional and Optional arguments
 #### [ ] Getting a little mode advanced
 #### [ ] Conclusion
