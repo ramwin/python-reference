@@ -217,7 +217,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     * [官网](http://docs.celeryproject.org/en/latest/index.html)
     * [github在线链接](https://github.com/ramwin/linux-reference#celery)
     * [本地链接](../linux-reference/README.md#celery)
-* [click](./click.md) *用python写shell命令*
+* [click](./other_useful_library/click.md) *用python写shell命令*
 * [faker](https://github.com/joke2k/faker)  *use fake to create a lot of name of text*  
     ```python
     from faker import Faker
