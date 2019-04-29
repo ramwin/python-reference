@@ -79,7 +79,8 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     enumerate(['a','b','c'])  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象
     ```
 3. [ ] Built-in Constants
-4. [ ] Built-in Types
+4. ## Built-in Types
+    * ### [Set集合](./set.md)
     * ### [Mapping Types -- dict 字典参考](./library_reference/built_in_types内置数据类型.md)
 5. [ ] Built-in Exceptions
 6. [Text Processing Services](https://docs.python.org/3/library/text.html)
@@ -171,7 +172,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     4. [argparse](./library_reference/argparse.md)
     这个用来解析python的命令
     5. [ ] getopt
-    6. ### [logging日志处理](./log/README.md)
+    6. ### [logging日志处理](./logging/README.md)
     9. [ ] to be continued
 
 17. [ ] Concurrent Execution

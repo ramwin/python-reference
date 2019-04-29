@@ -1,10 +1,10 @@
 **Xiang Wang @ 2018-09-04 18:49:59**
 
-# logging日志模块
-## 参考
-* [官网教程](https://docs.python.org/3/howto/logging.html)
+* [官网教程-基础](https://docs.python.org/3/howto/logging.html)
+* [官网模块-进阶](https://docs.python.org/3/library/logging.html)
 
-## 基础
+### example
+#### 基础
 ```python
 import logging
 
@@ -14,16 +14,14 @@ logging.basicConfig(
     datefmt='%a, %d %b %Y %H:%M:%S',
     filename='./log/test.log',
     filemode='a')
-    
 logging.debug('This is debug message')
 logging.info('This is info message')
 logging.warning('This is warning message')
- 
 log = logging.getLogger()
 log.error('error')
 ```
 
-## 保存到文件的同时，输入的终端
+#### 保存到文件的同时，输入的终端
 ```
 import logging
 logger = logging.getLogger('simple_example')
@@ -46,7 +44,7 @@ logger.info("info message")
 logger.warn("warn message")
 ```
 
-## 添加过滤器,只记录info,不记录warning
+#### 添加过滤器,只记录info,不记录warning
 ```
 import logging
 logger = logging.getLogger('test_filter')
@@ -74,3 +72,28 @@ logger.addFilter(f)
 logger.info("info")
 logger.warning("warning")
 ```
+
+### logging.handlers
+[官网](https://docs.python.org/3/library/logging.handlers.html)
+
+#### [FileHandler](https://docs.python.org/3/library/logging.handlers.html#filehandler)
+```
+class logging.FileHandler(filename, mode='a', encoding=None, delay=False)
+```
+
+#### 其他
+* [ ] StreamHandler
+* [ ] NullHandler
+* [ ] WatchedFileHadnler
+* [ ] BaseRotatingHandler
+* [ ] RotatingFileHandler
+* [ ] TimedRotatingFileHandler
+* [ ] SocketHandler
+* [ ] DatagramHandler
+* [ ] SysLogHandler
+* [ ] NTEventLogHandler
+* [ ] SMTPHandler
+* [ ] MemoryHandler
+* [ ] HTTPHandler
+* [ ] QueueHandler
+* [ ] QueueListener

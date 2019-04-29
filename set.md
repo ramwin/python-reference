@@ -1,7 +1,8 @@
 #### Xiang Wang @ 2017-04-28 10:38:49
 
-# 基础
+### 基础
 * [官网文档](https://docs.python.org/3/tutorial/datastructures.html#sets)
+* [官方api](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
 * 基础操作
     ```
     basket = {'apple', 'orange', 'apple'}  # {'apple', 'orange'}
@@ -23,3 +24,6 @@
     b = {2}
     b.issubset(a)
     ```
+
+* pop
+返回任意一个元素，如果为空会raise KeyError
