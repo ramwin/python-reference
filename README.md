@@ -249,6 +249,12 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     kafka_producer.send_messages('test',b'test')
     ```
 * [mongoengine](./other_useful_library/mongoengine.md) *把mongodb当作sql用。那你为什么不直接用mysql啊*
+* [moviewpy](https://github.com/Zulko/moviepy) *操作mp4的包*
+```
+from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
+# 截取前5秒的mp4文件
+ffmpeg_extract_subclip("movie.mp4", 0, 5, targetname="test.mp4")
+```
 * [openpyxl](./openpyxl.md) *处理excel*
 * [pdfminer](https://github.com/euske/pdfminer) *解析pdf的包，好用*
 * [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
