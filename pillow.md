@@ -12,7 +12,13 @@ sudo apt install -yqq libjpeg9 zlib1g zlib1g-dbg libjpeg9 libtiff5 libtiff5-dev 
 ```
 
 ### 参考文档
-#### Image  
+#### [Image](https://pillow.readthedocs.io/en/stable/reference/Image.html#)
+* new
+```
+Image.new(mode, size, color=0)
+Image.new("RGB", (480, 320), 0xffffff)
+```
+* open
 `im = Image.open(path, 'r')`
 
 ##### 尺寸修改
@@ -31,8 +37,10 @@ font = ImageFont.load("arial.pil")
 draw.text((10, 10), "hello", font=font)
 # use a truetype font
 font = ImageFont.truetype("arial.ttf", 15)
-draw.text((10, 25), "world", font=font)
+draw.text((10, 25), "world", font=font, fill=0xff0000)
 ```
+* getsize  
+有时候写了一段文字后要加一点图标什么的，用getsize可以获取文字的长度。因为有 *kerning* 的存在，所以这个长度会比单个字符合并起来的长度短。不能直接用字体宽度乘以文字数量 [stackoverflow](https://stackoverflow.com/questions/43828955/measuring-width-of-text-python-pil)
 
 
 [install]: https://pillow.readthedocs.io/en/stable/installation.html#linux-installation
