@@ -8,27 +8,33 @@
 from PIL import Image, ImageColor
 
 
-def only_middle(x):
-    if 230 > x > 100:
+# 写个脚本只保留中间颜色，排除黑白两色, 把其他颜色都变成自定义色调
+
+
+def exclude_black_and_white(x):  # 这样两边的黑色背景和白色背景就都没有了, 只保留文字（文字不是全黑或者全白的)
+    if 30 < x < 230:
         return 255
     return 0
 
-image = Image.open("底图.png")
 
-# 有颜色就张贴金色
-img = Image.open("图片1.png")
-img = img.resize((160,160))
-img.save("小尺寸.png")
-img = img.convert(mode="L")
-img.save('灰度图.png')
-img = Image.eval(img, only_middle)
-# for column in range(img.size[0]):
-#     for row in range(img.size[1]):
-#         if pixels[column][row] == (255,255,255,255):
-#             pixels[column][row] = (255,255,255,0)
+def convert_image(from_image, to_image, background, frontcolor, image_size):
+    img = Image.open(from_image)
+    img = img.resize(image_size)
+    img = img.convert(mode="L")
+    img = Image.eval(img, exclude_black_and_white)
+    result = Image.new("RGBA", image_size, background)
+    yellow = Image.new("RGBA", image_size, frontcolor)
+    result.paste(yellow, (0, 0), mask=img)
+    result.save(to_image)
 
-yellow = Image.new("RGBA", (160, 160), ImageColor.getrgb("#ffae00ff"))
-image.paste(yellow, box=(450, 850), mask=img)
-image.save("test.png")
 
-# 有白色就粘贴白色
+if __name__ == "__main__":
+    convert_image(
+        "黑白原图.png",
+        "result.png",
+        background="purple",
+        frontcolor="gold",
+        # ImageColor.getrgb("#00000000"),
+        # ImageColor.getrgb("#ffae00ff"),
+        image_size=(720, 480)
+    )
