@@ -17,8 +17,9 @@ def exclude_black_and_white(x):  # 这样两边的黑色背景和白色背景就
     return 0
 
 
-def convert_image(from_image, to_image, background, frontcolor, image_size):
+def convert_image(from_image, to_image, background, frontcolor):
     img = Image.open(from_image)
+    image_size = img.size
     img = img.resize(image_size)
     img = img.convert(mode="L")
     img = Image.eval(img, exclude_black_and_white)
@@ -36,5 +37,4 @@ if __name__ == "__main__":
         frontcolor="gold",
         # ImageColor.getrgb("#00000000"),
         # ImageColor.getrgb("#ffae00ff"),
-        image_size=(720, 480)
     )
