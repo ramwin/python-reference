@@ -13,6 +13,17 @@ sudo apt install -yqq libjpeg9 zlib1g zlib1g-dbg libjpeg9 libtiff5 libtiff5-dev 
 
 ### 参考文档
 #### [Image](https://pillow.readthedocs.io/en/stable/reference/Image.html#)
+* eval
+[测试](./pillow_example/eval.py)  
+把一个函数作用于每个像素的每个维度的值。注意，传入的是红绿蓝分别的int,而不是一个颜色的tuple
+```
+def only_extreme_color(x):
+    if 20 < x < 235:
+        return 0  # 不要中间颜色
+    return x  # 或者return 255
+img = Image.open("原图")
+Image.eval(img, only_extreme_color).save("result.png")
+```
 * new
 ```
 Image.new(mode, size, color=0)
@@ -21,7 +32,7 @@ Image.new("RGB", (480, 320), 0xffffff)
 * open
 `im = Image.open(path, 'r')`
 
-#### [ImageClass](https://pillow.readthedocs.io/en/stable/reference/Image.html#the-image-class)
+#### [ImageClass][image-class]
 * paste `Image.paste(im, box=None, mask=None)`
 把图片粘贴进去
 
@@ -50,3 +61,4 @@ draw.text((10, 25), "world", font=font, fill=0xff0000)
 
 [install]: https://pillow.readthedocs.io/en/stable/installation.html#linux-installation
 [imagefont]: https://pillow.readthedocs.io/en/stable/reference/ImageFont.html
+[image-class]: https://pillow.readthedocs.io/en/stable/reference/Image.html#the-image-class
