@@ -21,10 +21,15 @@ Image.new("RGB", (480, 320), 0xffffff)
 * open
 `im = Image.open(path, 'r')`
 
-##### 尺寸修改
+#### [ImageClass](https://pillow.readthedocs.io/en/stable/reference/Image.html#the-image-class)
+* paste `Image.paste(im, box=None, mask=None)`
+把图片粘贴进去
+
+* resize `Image.resize(size)`  
+修改尺寸
 ```
 im.crop(0,0,100,100).save(path)
-im.resize((28.28))
+im2 = im.resize((28.28))
 ```
 
 #### [ImageFont][imagefont]

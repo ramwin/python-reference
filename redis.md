@@ -1,6 +1,8 @@
 **Xiang Wang @ 2016-12-15 17:41:21**
 
-[github参考](https://github.com/andymccurdy/redis-py)  
+[github 文档](https://github.com/andymccurdy/redis-py)  
+
+# Redis的用法
 [本地linux-reference下的redis参考](../linux-reference/redis.md)  
 [github 上linux-reference下的redis参考](https://github.com/ramwin/linux-reference/blob/master/redis.md)  
 
