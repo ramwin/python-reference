@@ -49,15 +49,15 @@ dict.keys(), dict.values(), dict.items() 返回的对象. 当dict变化时, 这�
     * x in dictview
     返回True 如果x在里面. 当dictview是dict_items的时候, x要是(key, value)的tuple, 不可以是list
 * 循环插入深层的value  
-在dict的key1下的key2下的key3设置为ivalue
+在dict的key1下的key2下的key3设置为ivalue  
 ```
 dic = {'a':'b'}
-def insertdata(dic, keys, value):        
-    if len(keys) == 1:                   
-        dic[keys[0]] = value             
-        return 0                         
-    if not keys[0] in dic:                   
-        dic[keys[0]] = {}                
+def insertdata(dic, keys, value):
+    if len(keys) == 1:
+        dic[keys[0]] = value
+        return 0
+    if not keys[0] in dic:
+        dic[keys[0]] = {}
     insertdata(dic[keys[0]], keys[1:], value)
 insertdata(dic, ['key1','key2','key3'], 'ivalue')
 ```
