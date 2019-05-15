@@ -29,9 +29,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 ```
 * [集合set](set.md)
 
-
-# Language Reference
-[官网](https://docs.python.org/3/reference/index.html)
+# [Language Reference](https://docs.python.org/3/reference/index.html)
 ## Exceution model
 * [Exception报错](./exception.md)
 [官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
@@ -67,8 +65,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     * [property](./class/property.md) [示例](./class/property.py)
 
 
-# Library Reference 内置库参考
-[官网](https://docs.python.org/3/library/index.html)
+# [Library Reference 内置库参考][library-reference]
 1. [x] Introduction
 2. [Built-in Functions](./library_reference/built_in_functions内置函数.md)
     * all
@@ -78,9 +75,9 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     ```
     enumerate(['a','b','c'])  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象
     ```
-3. [ ] Built-in Constants
-4. ## Built-in Types
-    * ### [Set集合](./set.md)
+3. Built-in Constants
+4. Built-in Types
+    * [Set集合](./set.md)
     * ### [Mapping Types -- dict 字典参考](./library_reference/built_in_types内置数据类型.md)
 5. [ ] Built-in Exceptions
 6. [Text Processing Services](https://docs.python.org/3/library/text.html)
@@ -363,3 +360,6 @@ mac=uuid.UUID(int = node).hex[-12:]
 
 ## [设计模式](./设计模式.md)
 [runoob教程](http://www.runoob.com/design-pattern/factory-pattern.html)
+
+
+[library-reference]: https://docs.python.org/3/library/index.html
