@@ -43,6 +43,9 @@ im.crop(0,0,100,100).save(path)
 im2 = im.resize((28.28))
 ```
 
+* size
+返回图片的尺寸 (1980, 1080)
+
 #### [ImageFont][imagefont]
 * Example
 ```
