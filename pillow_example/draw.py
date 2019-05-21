@@ -44,6 +44,17 @@ def create_image(
     image.save(path)
 
 
+def paste_an_circle_to_image():
+    image = Image.open("底图.png")
+    draw = ImageDraw.Draw(image)
+    draw.ellipse(
+        ((0,0), (100, 100)),
+        fill="#ff0000ff",
+        outline="#00FF0000",
+        width=10)
+    image.save("画了一个圆圈的图.png")
+
 if __name__ == '__main__':
-    for i in range(1):
-        create_image()
+    # for i in range(1):
+    #     create_image()
+    paste_an_circle_to_image()

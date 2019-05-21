@@ -46,6 +46,23 @@ im2 = im.resize((28.28))
 * size
 返回图片的尺寸 (1980, 1080)
 
+#### [ImageDraw](https://pillow.readthedocs.io/en/stable/reference/ImageDraw.html#)
+```
+from PIL import ImageDraw
+draw = ImageDraw.Draw(image)
+```
+* `ImageDraw.chord`
+画一个指定了起始角度和终止角度的圆圈，并链接首尾
+```
+draw.chord(xy, start, end, fill=None, outline=None, width=0)
+```
+
+* `ImageDraw.ellipse`
+在指定区域画一个椭圆。但是估计是园的计算问题，outline里面有些像素点显示的是fill的颜色
+```
+draw.ellipse(xy, fill, outline, width)
+```
+
 #### [ImageFont][imagefont]
 * Example
 ```
