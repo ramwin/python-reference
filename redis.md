@@ -79,3 +79,9 @@ zrange直接就把数据取出来了，所以就不存在后续处理了
 ```
 zrange('mykey', 0, -1)
 ```
+
+# Lock
+```
+    with client.lock(key) as lock:
+        do something expensive  # 保证同时只有一个线程跑这个
+```
