@@ -3,6 +3,7 @@
 [github 文档](https://github.com/andymccurdy/redis-py)  
 
 # Redis的用法
+尽量参考这个文档  
 [本地linux-reference下的redis参考](../linux-reference/redis.md)  
 [github 上linux-reference下的redis参考](https://github.com/ramwin/linux-reference/blob/master/redis.md)  
 
@@ -58,26 +59,6 @@ None
 r.ttl(key)
 returns -2 if the key does not exist.
 returns -1 if the key exists but has no associated expire
-```
-
-# Sorted Set 排序集合
-[测试]
-* zadd
-    ```
-    zadd('key', user_2=1)
-    data = {
-        'user_2': 2,
-        'user_3': 33,
-    }
-    zadd('key', **data)
-    zadd('key', {"ramwin": 1992})
-    zadd('ss', user_2=2, user_3=33)
-    redis.zadd('my-key', 1.1, 'name1', 2.2, 'name2', name3=3.3, name4=4.4)
-    ```
-* zrange
-zrange直接就把数据取出来了，所以就不存在后续处理了
-```
-zrange('mykey', 0, -1)
 ```
 
 # Lock
