@@ -54,18 +54,13 @@ ch.setLevel(logging.INFO)
 ch.setFormatter(
     logging.Formatter('%(user)s %(message)s')
 )
-
-
 class RamwinFilter(logging.Filter):
-
     def filter(self, record):
         record.user = 'ramwin'
         if record.levelname == 'WARNING':
             return False
         print(record.levelname)
         return True
-
-
 f = RamwinFilter()
 logger.addHandler(ch)
 logger.addFilter(f)
@@ -73,16 +68,22 @@ logger.info("info")
 logger.warning("warning")
 ```
 
+### logging.Logger
+* `debug(msg, *args, **kwargs)`
+* `log(lvl, msg, *args, **kwargs)`
+lvl: 必须是整数
+用指定的lvl等级去添加一个日志, 只要这个lvl大于等于20, 就会出发logging.INFO
+
 ### logging.handlers
 [官网](https://docs.python.org/3/library/logging.handlers.html)
 
+#### [StreamHandler](https://docs.python.org/3/library/logging.handlers.html#streamhandler)
 #### [FileHandler](https://docs.python.org/3/library/logging.handlers.html#filehandler)
 ```
 class logging.FileHandler(filename, mode='a', encoding=None, delay=False)
 ```
 
 #### 其他
-* [ ] StreamHandler
 * [ ] NullHandler
 * [ ] WatchedFileHadnler
 * [ ] BaseRotatingHandler

@@ -22,6 +22,7 @@ log = logging.getLogger()
 log.addHandler(file_handler1)
 
 
-for i in range(80):
-    time.sleep(1)
-    log.warning("warning")
+if __name__ == '__main__':
+    for i in range(80):
+        time.sleep(1)
+        log.warning("warning")
