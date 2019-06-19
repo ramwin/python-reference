@@ -185,7 +185,15 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     ```
     * [ ] to be continued
 21. [ ] Structed Markup Processing Tools
-22. [ ] Internet Protocols and Support
+22. ## Internet Protocols and Support
+    * [ ] telnetlib
+    * ### uuid
+        * uuid.uuid1
+        根据序列号，时间，电脑的mac地址生成一个uuid
+        返回一个uuid,但是后面是固定的node,可以手工提供或者直接获取电脑的mac地址
+        * uuid.uuid4
+        生成随机的uuid
+    * [ ] socketserver
 27. Development Tools
     4. ### [unittest — Unit testing framework 测试框架](./library_reference/unittest.md)
 30. ## Python Runtime Services 和编译器,环境有关的服务
