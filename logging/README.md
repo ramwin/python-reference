@@ -83,6 +83,14 @@ lvl: 必须是整数
 class logging.FileHandler(filename, mode='a', encoding=None, delay=False)
 ```
 
+#### [MemoryHandler](https://docs.python.org/3/library/logging.handlers.html#memoryhandler)
+[测试](./memory_handler.py)
+MemoryHandler继承了BufferingHandler, 可以用来临时记录日志，一旦日志太多(超过了capacity),或者等级太高(达到了flushLevel), 就会记录到(target)
+如果需要抛弃刚才的日志，可以调用`log.handelrs[0].close()`或者`log.removeHandler(memory_handler)`
+```
+class logging.handlers.MemoryHandler(capacity, flushLevel=ERROR, target=None)
+```
+
 #### 其他
 * [ ] NullHandler
 * [ ] WatchedFileHadnler
@@ -94,7 +102,6 @@ class logging.FileHandler(filename, mode='a', encoding=None, delay=False)
 * [ ] SysLogHandler
 * [ ] NTEventLogHandler
 * [ ] SMTPHandler
-* [ ] MemoryHandler
 * [ ] HTTPHandler
 * [ ] QueueHandler
 * [ ] QueueListener
