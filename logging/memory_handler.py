@@ -3,6 +3,7 @@
 # Xiang Wang @ 2019-07-03 10:38:10
 
 
+import six
 import logging
 from logging import handlers
 
@@ -32,14 +33,18 @@ def noflush():  # close的时候不记录
     stream_handler = logging.StreamHandler()
 
     # 写入5个后才会记录。并且close的时候会记录
-    memory_handler1 = handlers.MemoryHandler(100,
-        target=stream_handler,
-        flushOnClose=False)
+    if six.PY3:
+        memory_handler1 = handlers.MemoryHandler(100,
+            target=stream_handler,
+            flushOnClose=False)
+    else:
+        memory_handler1 = handlers.MemoryHandler(100,
+            target=stream_handler)
     memory_handler1.setLevel(logging.INFO)
 
     log.addHandler(memory_handler1)
 
-    for i in range(14):
+    for i in range(13):
         log.info(i)
     # log.handlers[0].close()  # 调用close直接关闭可以避免记录最后的数据
     # log.removeHandler(memory_handler1)  # 直接remove，会导致没有flush

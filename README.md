@@ -241,6 +241,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 * [flake8] *检测python代码是不是满足pep8*
 * [flask](./flask.md) *轻量级http服务器*
 * [ics](https://pypi.org/project/ics/) *日历，行程 calendar*
+* [ipdb](./other_useful_library/ipdb.md) *断点来检测查看源码和运行状态*
 * [itchat](https://github.com/littlecodersh/ItChat)  *微信机器人*
 * [iptools] *处理IP地址的包*
 * [jinja模板渲染](./jinjia.md)
