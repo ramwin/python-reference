@@ -38,6 +38,15 @@
         dd.setdefault('w', 4)
         >>> 2
         ```
+* 如果要实现无线的循环
+```
+class MyDict(dict):
+    def __getitem__(self, key):
+        print("调用get")
+        if key not in self:
+            self[key] = MyDict()
+        return super(MyDict, self).__getitem__(key)
+```
 
 #### deque
 * [官方文档](https://docs.python.org/3/library/collections.html#collections.deque)
