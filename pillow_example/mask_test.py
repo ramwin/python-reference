@@ -5,7 +5,7 @@
 
 import io
 
-from PIL import Image, ImageColor, ImageDraw
+from PIL import Image, ImageColor, ImageDraw, ImageFont
 import requests
 
 
@@ -47,7 +47,7 @@ def circle_image(from_image):
 
 
 
-if __name__ == "__main__":
+def test1():
     image = Image.open("底图.png")
     res = requests.get(
         "https://publicstatic.duishang.net/avatar-2586-d188f5637c5f4"
@@ -57,3 +57,56 @@ if __name__ == "__main__":
     image_avatar = circle_image(image_avatar)
     image.paste(image_avatar, (465, 100), image_avatar)
     image.save("result.png")
+
+
+def test2():
+    green_img = Image.new("RGBA", (1000, 1000), 0xff00ff00)
+    draw = ImageDraw.Draw(green_img)
+    font = ImageFont.truetype("./font.ttf")
+
+    green_solid_img = Image.new("RGBA", (100, 100), 0xff00ff00)
+    red_solid_img = Image.new("RGBA", (100, 100), 0xff0000ff)
+    red_half_img = Image.new("RGBA", (100, 100), 0x800000ff)
+    solid_mask = Image.new("RGBA", (100, 100), 0xffffffff)
+    half_mask = Image.new("RGBA", (100, 100), 0x80808080)
+    trans_mask = Image.new("RGBA", (100, 100), 0x00000000)
+
+    height = 10
+    width = 10
+    green_img.paste(red_solid_img, (width, height), red_solid_img)
+    draw.text((width, height+100), "红色的实心圆\n(自己mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
+
+    width += 110
+    green_img.paste(red_solid_img, (width, height), solid_mask)
+    draw.text((width, height+100), "红色的实心圆\n(实心mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
+
+    width += 110
+    green_img.paste(red_solid_img, (width, height), half_mask)  # 贴红色，但是用个半透明
+    draw.text((width, height+100), "红色的实心圆\n(半透明mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
+
+    width += 100
+    green_img.paste(red_solid_img, (width, height), trans_mask)
+    draw.text((width, height+100), "红色的实心圆\n(透明mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
+
+    width = 10
+    height += 130
+    green_img.paste(red_half_img, (width, height), red_half_img)
+    draw.text((width, height+100), "红色的半透明圆\n(自己mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
+
+    width += 110
+    green_img.paste(red_half_img, (width, height), solid_mask)
+    draw.text((width, height+100), "红色的半透明圆\n(实心mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
+
+    width += 110
+    green_img.paste(red_half_img, (width, height), half_mask)
+    draw.text((width, height+100), "红色的半透明圆\n(半透明mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
+
+    width += 100
+    green_img.paste(red_half_img, (width, height), trans_mask)
+    draw.text((width, height+100), "红色的半透明圆\n(透明mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
+
+    green_img.save("result.png")
+
+
+if __name__ == "__main__":
+    test2()
