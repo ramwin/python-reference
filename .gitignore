@@ -10,3 +10,4 @@ test.png
 .DS_STORE
 logging/*log*
 pillow_example/result.png
+*_test.png

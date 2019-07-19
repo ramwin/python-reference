@@ -105,6 +105,40 @@ def test2():
     green_img.paste(red_half_img, (width, height), trans_mask)
     draw.text((width, height+100), "红色的半透明圆\n(透明mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
 
+    height += 130
+    width = 10
+    green_img.paste(solid_mask, (width, height), solid_mask)
+    draw.text((width, height+100), "白色不透明圆\n(自己mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
+
+    width += 110
+    green_img.paste(solid_mask, (width, height), solid_mask)
+    draw.text((width, height+100), "白色不透明圆\n(实心mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
+
+    width += 110
+    green_img.paste(solid_mask, (width, height), half_mask)
+    draw.text((width, height+100), "白色不透明圆\n(半透明mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
+
+    width += 100
+    green_img.paste(solid_mask, (width, height), trans_mask)
+    draw.text((width, height+100), "白色不透明圆\n(透明mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
+
+    height += 130
+    width = 10
+    green_img.paste(half_mask, (width, height), half_mask)
+    draw.text((width, height+100), "白色半透明圆\n(自己mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
+
+    width += 110
+    green_img.paste(half_mask, (width, height), solid_mask)
+    draw.text((width, height+100), "白色半透明圆\n(实心mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
+
+    width += 110
+    green_img.paste(half_mask, (width, height), half_mask)
+    draw.text((width, height+100), "白色半透明圆\n(半透明mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
+
+    width += 100
+    green_img.paste(half_mask, (width, height), trans_mask)
+    draw.text((width, height+100), "白色半透明圆\n(透明mask)", font=font, fill=ImageColor.getrgb("#0000ff"))
+
     green_img.save("result.png")
 
 

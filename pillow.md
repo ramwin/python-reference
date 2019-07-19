@@ -27,13 +27,16 @@ Image.eval(img, only_extreme_color).save("result.png")
 * new
 ```
 Image.new(mode, size, color=0)
-Image.new("RGB", (480, 320), 0xffffff)
+Image.new("RGB", (480, 320), 0xffffff)  
+Image.new("RGBA", (480, 320), 0xffffffff)   # 透明度, 蓝, 绿, 红
 ```
 * open
 `im = Image.open(path, 'r')`
 
 #### [ImageClass][image-class]
-* paste `Image.paste(im, box=None, mask=None)`
+* paste `Image.paste(im, box=None, mask=None)`  
+[测试image](./pillow_example/image_test.py)
+[测试mask](./pillow_example/mask_test.py)
 把图片粘贴进去
 
 * resize `Image.resize(size)`  
