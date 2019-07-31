@@ -68,6 +68,9 @@ logger.info("info")
 logger.warning("warning")
 ```
 
+### [Exceptions raised during logging][exceptions]
+[测试](./test_unicode.py)
+
 ### logging.Logger
 * `debug(msg, *args, **kwargs)`
 * `log(lvl, msg, *args, **kwargs)`
@@ -105,3 +108,6 @@ class logging.handlers.MemoryHandler(capacity, flushLevel=ERROR, target=None)
 * [ ] HTTPHandler
 * [ ] QueueHandler
 * [ ] QueueListener
+
+
+[exceptions]: https://docs.python.org/3/howto/logging.html#exceptions-raised-during-logging

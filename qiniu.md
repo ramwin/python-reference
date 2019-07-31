@@ -2,6 +2,14 @@
 
 
 ## 智能多媒体API [官网](https://developer.qiniu.com/dora)
+### [处理机制](https://developer.qiniu.com/dora/manual/1204/processing-mechanism)
+* 管道处理
+```
+[GET] url?<fop1>|<fop2>|<fop3>|<fopN>
+```
+* [样式](https://developer.qiniu.com/dora/manual/1204/processing-mechanism#3)
+通过命令行工作，可以把一大串的处理变成一个简短的类似`-phone`这种图片
+
 ### 图片处理
 #### 图片基本处理 [官网](https://developer.qiniu.com/dora/manual/1279/basic-processing-images-imageview2)
 * 接口规格

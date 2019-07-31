@@ -368,6 +368,7 @@ for i in range(ws.nrows):
 * socket.gethostname()    # 获取当前主机的主机名
 * uuid.getnote()    # 获取本机的MAC地址  
 mac=uuid.UUID(int = node).hex[-12:]
+* [ ] `readme_renderer`
 
 ## [设计模式](./设计模式.md)
 [runoob教程](http://www.runoob.com/design-pattern/factory-pattern.html)
