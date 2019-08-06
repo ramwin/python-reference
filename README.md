@@ -154,16 +154,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 15. [ ] Cryptographic Services
 
 16. ## [Generic Operating System Services](https://docs.python.org/3/library/allos.html)
-    1. [os](https://docs.python.org/3/library/os.html)
-        * os.scandir
-        Better performance than os.listdir
-        ```
-        filter(lambda x: x.is_dir(), os.scandir())  # show all the directory entry
-        ```
-
-        * os.listdir  
-        Return a list containing the names of the entries in the directory given by path. 
-        * [以前的参考](./os.md)
+    1. ### [os](./os.md)
     2. [ ] io
     3. [ ] time
     4. [argparse](./library_reference/argparse.md)

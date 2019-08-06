@@ -4,11 +4,19 @@
 
 import requests
 import time
+import logging
 
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
+    datefmt='%a, %d %b %Y %H:%M:%S',
+    filename='./test.log',
+    filemode='a')
+formatter = logging.Formatter("%(asctime)s %(filename)s")
 
-count = 10
+count = 3
 url = "https://httpbin.org/get"
-url = "https://www.ramwin.com"
+url = "https://publicstatic.duishang.net/avatar-2586"
 
 start1 = time.time()
 for i in range(count):
