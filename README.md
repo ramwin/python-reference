@@ -67,7 +67,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 
 # [Library Reference 内置库参考][library-reference]
 1. [x] Introduction
-2. [Built-in Functions](./library_reference/built_in_functions内置函数.md)
+2. ## [Built-in Functions](./library_reference/built_in_functions内置函数.md)
     * all
     * any
     * divmod
@@ -75,6 +75,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     ```
     enumerate(['a','b','c'])  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象
     ```
+    * ### [property](./library_reference/built_in_functions内置函数.md#property)
 3. Built-in Constants
 4. Built-in Types
     * [Set集合](./set.md)
