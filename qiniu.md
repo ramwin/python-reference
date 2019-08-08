@@ -46,6 +46,8 @@ roundPic/radius/<radius>
 
 ## SDK
 * [官网](https://developer.qiniu.com/kodo/sdk/1242/python#1)
+```
+```
 
 ### 上传文件
 ```
@@ -92,6 +94,27 @@ print(info)
 assert ret == {}
 ```
 #### [ ] 复制文件副本
+#### [ ] 删除空间中的文件
+#### [ ] 获取指定前缀文件列表
+#### [抓取网络资源到空间](https://developer.qiniu.com/kodo/sdk/1242/python#rs-fetch)
+```
+# -*- coding: utf-8 -*-
+# flake8: noqa
+from qiniu import Auth
+from qiniu import BucketManager
+access_key = '...'
+secret_key = '...'
+bucket_name = 'Bucket_Name'
+q = Auth(access_key, secret_key)
+bucket = BucketManager(q)
+url = 'http://7xr875.com1.z0.glb.clouddn.com/xxx.jpg'
+key = 'xxx.jpg'
+ret, info = bucket.fetch(url, bucket_name, key)
+print(info)
+assert ret['key'] == key  # 如果失败了 ret is None
+```
+
+#### [ ] 更新镜像存储空间中文件内容
 
 ### CDN相关
 * #### 文件刷新
