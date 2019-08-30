@@ -259,10 +259,11 @@ ffmpeg_extract_subclip("movie.mp4", 0, 5, targetname="test.mp4")
 * [pdfminer](https://github.com/euske/pdfminer) *解析pdf的包，好用*
 * [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
 * [pillow](./pillow.md)
-* pip *快速安装包*  
+* [pip](https://pip.pypa.io/en/stable/user_guide/#config-file) *快速安装包*  
 `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11`  
 `pip install -i https://pypi.org/simple django==1.11`
 ```
+sudo pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple  # 设置清华的源
 export LC_ALL="en_US.UTF-8"  # 出现乱码
 export LC_CTYPE="en_US.UTF-8"
 ```
