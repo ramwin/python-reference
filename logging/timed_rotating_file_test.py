@@ -12,9 +12,9 @@ logging.basicConfig(
     datefmt="%H:%M:%S"
 )
 file_handler1 = TimedRotatingFileHandler(
-    filename="logger.log",
+    filename="timelogger.log",
     backupCount=5,
-    when="M",
+    when="midnight",
 )
 file_handler1.setFormatter(logging.Formatter(fmt="%(asctime)s %(message)s"))
 

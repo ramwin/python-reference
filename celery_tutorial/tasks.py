@@ -5,10 +5,16 @@
 
 from celery import Celery
 import time
-app = Celery('tasks', broker='redis://@203.166.189.102:20379/9')
+app = Celery(
+    'tasks',
+    )
+
+app.config_from_object('celeryconfig')
 
 
 @app.task
 def add(x, y):
-    time.sleep(100)
+    time.sleep(x+y)
     return x + y
+
+
