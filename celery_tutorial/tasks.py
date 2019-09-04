@@ -11,6 +11,11 @@ app = Celery(
 
 app.config_from_object('celeryconfig')
 
+# a = list(range(100000)) celery运行时，里面的a是共享的．不会额外占用４倍内存
+# b = list(range(100000))
+# c = list(range(100000))
+# d = list(range(100000))
+
 
 @app.task
 def add(x, y):
