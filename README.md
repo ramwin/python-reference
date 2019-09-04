@@ -171,6 +171,8 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 18. [ ] contextvars — Context Variables
 19. [ ] Networking and Interprocess Communication
     1. ### [asyncio](./library_reference/asyncio.md) *用来处理协程*
+    8. ### signal
+    触发信号，处理reload功能
 
 20. ## Internet Data Handling
     2. ### [JSON](./library_reference/json.md)
