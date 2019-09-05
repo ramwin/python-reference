@@ -261,6 +261,8 @@ from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 ffmpeg_extract_subclip("movie.mp4", 0, 5, targetname="test.mp4")
 ```
 * [openpyxl](./openpyxl.md) *处理excel*
+* pdf2image: *把pdf转化成图片的库*
+[测试代码](./other_useful_library/pdfconvert.py)
 * [pdfminer](https://github.com/euske/pdfminer) *解析pdf的包，好用*
 * [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
 * [pillow](./pillow.md)
