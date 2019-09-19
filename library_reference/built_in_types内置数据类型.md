@@ -35,7 +35,7 @@ True
     * copy: 返回shadowcopy
     * classmethod fromkeys(seq[, value]): `返回keys为seq, 默认值为value或者None的dict`
     * get(key[, default]) *如果有key就返回他的value, 否则返回default, default默认是None, 所以这个永远不会raise KeyError*
-    * pop(key[, default]) *同get, 只是最后还要删除key*
+    * pop(key[, default]) *同get, 只是最后还要删除key 如果没有这个key会raise KeyError*
     * popitem() *返回(key, value)或者报KeyError, 注意是LIFO,后进先出的规则*
     * setdefault(key[, default]) *如果key不存在就设置默认值default或者None*
     * update *更新dictionary的值, 覆盖已经存在的key*

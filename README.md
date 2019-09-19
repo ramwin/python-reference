@@ -75,7 +75,10 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     ```
     enumerate(['a','b','c'])  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象
     ```
+    * open  
+    打开一个文件 buffering=0代表不需要缓存(不缓存,mode必须是b), buffering=1代表每一行保存,buffering>1代表多少字节保存
     * ### [property](./library_reference/built_in_functions内置函数.md#property)
+    * zip: 迭代2个迭代器, 按照最短的来计算
 3. Built-in Constants
 4. Built-in Types
     * [Set集合](./set.md)
@@ -135,6 +138,32 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 10. [ ] Functional Programming Modules
 
 11. ## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
+    1. ### [pathlib](https://docs.python.org/3/library/pathlib.html)
+    ```
+    from pathlib import Path
+    p = Path('.')
+    ```
+        * iterdir(): 返回一个包含子文件的generator
+        * glob(pattern): 返回匹配的文件或者目录名
+        ```
+        glob("*.pdf")
+        glob("**/*.pdf")
+        ```
+        * mkdir(): 创建目录
+        * stem: 最后的目录(排除后缀)
+        ```
+        >>> PurePosixPath('my/library.tar.gz').stem
+        'library.tar'
+        >>> PurePosixPath('my/library.tar').stem
+        'library'
+        >>> PurePosixPath('my/library').stem
+        'library'
+        ```
+        * as_posix(): 返回绝对路径
+        * joinpath(str|path): 合并路径
+        * suffix: 返回最后一个后缀名
+        * suffixed: 返回后缀名列表
+        * unlink: 删除文件或者链接
     2. [os.path](library_reference/os.md)
     6. [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
         ```

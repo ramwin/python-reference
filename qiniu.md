@@ -47,23 +47,25 @@ roundPic/radius/<radius>
 ## SDK
 * [官网](https://developer.qiniu.com/kodo/sdk/1242/python#1)
 ```
+from qiniu import put_file, Auth
+access_key = 'Zy3HE44UK9tRACuAeEL3mxc8aTTj0jgZkrjxrJAB'
+secret_key = 'wLXODkNWpzFj_SI60zu5GjjOVZzxmvlNJ0tLOR3K'
+qiniu_auth = Auth(access_key, secret_key)
 ```
 
 ### 上传文件
 ```
-    from qiniu import put_file, Auth
-    access_key = 'Zy3HE44UK9tRACuAeEL3mxc8aTTj0jgZkrjxrJAB'
-    secret_key = 'wLXODkNWpzFj_SI60zu5GjjOVZzxmvlNJ0tLOR3K'
-    q = Auth(access_key, secret_key)
-    bucket_name = 'sharegine-public-test'
-    key = 'avatar-user-0.png'
-    token = q.upload_token(bucket_name, key, 3600, policy={
-        # 'bucket': 'sharegine-public-test',
-        # 'key': 'avatar-user-0.png',
-        'insertOnly': 0,
-    })
-    ret, into = put_file(token, key, './portrait.png')
-    # ret, into = put_file(token, key, './android.png')
+from qiniu import etag
+bucket_name = 'sharegine-public-test'
+key = 'avatar-user-0.png'
+token = qiniu_auth.upload_token(bucket_name, key, 3600, policy={
+    # 'bucket': 'sharegine-public-test',
+    # 'key': 'avatar-user-0.png',
+    'insertOnly': 0,
+})
+ret, into = put_file(token, key, './portrait.png')
+assert ret["key"] == key
+assert ret["hash"] == etag(localfile)
 ```
 
 ### 数据处理

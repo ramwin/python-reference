@@ -30,9 +30,14 @@
 * re.ASCII
 * [ ] ...
 * re.sub(pattern, repl, string, count=0, flags=0)  
+[测试代码](library_reference/test_re.py)  
 Return the string obtained by replacing the leftmost non-overlapping occurences of pattern in string by the replacement repl. The repl can be a function.
     * 每次匹配把结果里面的数据拿出来  
     `re.sub('a(\d)b', r'\1', 'a4bcdaba2b')`
+    * 替换手机号码
+    ```
+    re.sub('(\d*)(\d{4})(\d{3})', r"\1****\3", "7982660")
+    ```
     * 使用函数来替换
     ```
     >>> def dashrepl(matchobj):
