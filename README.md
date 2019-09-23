@@ -162,6 +162,10 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
         * as_posix(): 返回绝对路径
         * joinpath(str|path): 合并路径
         * suffix: 返回最后一个后缀名
+        ```
+        >>> Path("README.md").suffix
+        '.md'
+        ```
         * suffixed: 返回后缀名列表
         * unlink: 删除文件或者链接
     2. [os.path](library_reference/os.md)

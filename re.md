@@ -3,33 +3,45 @@
 [官网](https://docs.python.org/3/library/re.html#module-re)
 
 ## Regular Expression Syntax 基础知识和语法
-* 匹配规则
-    * `\d`  *数字*
-    * `\D`  *非数字*
-    * `\s`  *空白字符*
-    * `\S`  *非空白字符*
-    * `\w`  *单词字符*
-    * `\W`  *非单词字符*
-    * `(a|bc|d)`  *a或者bc或者c*
-    * `[a-z]` * 小写字母  
-    * 是否是贪婪模式: 在匹配后面加上?, 比如
-        ```
-        *?
-        +?
-        ??
-        {4, 6}?
-        ```
-
-* 方法
-    re.compile(r'(?P<id>\d+)we').match('123we').group('id')
-    re.sub(r'(00)*$', '', '100000')  # 把匹配到的数据变成空
+* `\d`  *数字*
+* `\D`  *非数字*
+* `\s`  *空白字符*
+* `\S`  *非空白字符*
+* `\w`  *单词字符*
+* `\W`  *非单词字符*
+* `(a|bc|d)`  *a或者bc或者c*
+* `[a-z]` * 小写字母  
+* 是否是贪婪模式: 在匹配后面加上?, 比如
+    ```
+    *?
+    +?
+    ??
+    {4, 6}?
+    ```
+* `(?P<name>...)`  
+或者匹配的时候就能用
+```
+m = re.match(r'(?P<index>\d+)word(?P=index)', '123word123')  # 用\1也可以
+```
+匹配楚Name, 之后可以获取
+```
+m = re.match(r'(?P<name>.*)', 'name')
+print(m.group('name'))
+print(m.end('name'))  # TODO
+```
 
 ## Module Contents 模块内容 [官网](https://docs.python.org/3/library/re.html#module-contents)
 * re.compile
+```
+re.compile(r'(?P<id>\d+)we').match('123we').group('id')
+```
 * re.A
 * re.ASCII
 * [ ] ...
 * re.sub(pattern, repl, string, count=0, flags=0)  
+```
+re.sub(r'(00)*$', '', '100000')  # 把匹配到的数据变成空
+```
 [测试代码](library_reference/test_re.py)  
 Return the string obtained by replacing the leftmost non-overlapping occurences of pattern in string by the replacement repl. The repl can be a function.
     * 每次匹配把结果里面的数据拿出来  
