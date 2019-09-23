@@ -1,29 +1,43 @@
 **Xiang Wang @ 2017-05-19 15:22:17**
 
-# [python3官网教程](https://docs.python.org/3.6/library/urllib.parse.html)
+### [python3官网教程](https://docs.python.org/3.6/library/urllib.parse.html)
+#### 基础
 * 基础
 ```
-    from urllib.parse import urlencode, urlparse, unquote  #python3
-    from urllib import urlencode  # python2
-    url = "%s?%s" % ('http://www.ramwin.com', urlencode({'pram1': 'foo', 'param2': 'bar'}))
-    unquote_url = unquote(url)
-    urlparse(unquote_url).query
+from urllib.parse import urlencode, urlparse, unquote  #python3
+from urllib import urlencode  # python2
+url = "%s?%s" % ('http://www.ramwin.com', urlencode({'pram1': 'foo', 'param2': 'bar'}))
+unquote_url = unquote(url)
+urlparse(unquote_url).query
 ```
 
 * 编码
 ```
-    # 把字典变成url
-    urlencode({"kw": "查找=kw"})
-    >>> 'kw=%E6%9F%A5%E6%89%BE%3Dkw'
-    url = 'https://duishang.net?%s' %  'kw=%E6%9F%A5%E6%89%BE%3Dkw'
-
-    # urlencode
-    quote('http://duishang.net')
-    >>> 'http%3A//duishang.net%3Few%3Dew'
+# 把字典变成url
+urlencode({"kw": "查找=kw"})
+>>> 'kw=%E6%9F%A5%E6%89%BE%3Dkw'
+url = 'https://duishang.net?%s' %  'kw=%E6%9F%A5%E6%89%BE%3Dkw'
+# urlencode
+quote('http://duishang.net')
+>>> 'http%3A//duishang.net%3Few%3Dew'
 ```
 
-# [python2官网教程](https://docs.python.org/2/library/urlparse.html)
-## urllib
+#### urllib.parse
+* [ ] urlunsplit
+* [`urllib.parse.urljoin(base, url, allow_fragments=True)`](https://docs.python.org/3.6/library/urllib.parse.html#urllib.parse.urljoin)  
+`allow_fragments`为True代表url里面可以有#anchor, 如果为False,代表base的path里面不能有fragments, 会舍弃掉后再与url相连
+```
+>>> parse.urljoin('https://localhost/1/2', '3')
+'https://localhost/1/3'
+>>> parse.urljoin('https://localhost/1/2/', '3')
+'https://localhost/1/2/3/'
+>>> parse.urljoin('https://localhost/1/2/', '/3')
+'https://localhost/3'
+```
+* [ ] urldefrag
+
+### [python2官网教程](https://docs.python.org/2/library/urlparse.html)
+#### urllib
 * urllib.urlencode
 ```
 >>> urllib.urlencode({'key': 'value'})  # 对应 urlparse.parse_qsl
@@ -40,7 +54,7 @@ key=value
 "%26"
 ```
 
-## urlparse
+#### urlparse
 ```
 from urlparse import urlparse
 o = urlparse('https://www.ramwin.com/testrest/text/?text=qwer')
@@ -61,7 +75,7 @@ o = urlparse('https://www.ramwin.com/testrest/text/?text=qwer')
     ```
 
 
-## ParseResult *urlparse.ParseResult*
+#### ParseResult *urlparse.ParseResult*
 * 属性
     * port: o.port: 80
     * scheme: o.scheme: http

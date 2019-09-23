@@ -214,6 +214,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     * [ ] to be continued
 21. [ ] Structed Markup Processing Tools
 22. ## Internet Protocols and Support
+    * ### [urllib](./library_reference/urllib.md) *处理url*
     * [ ] telnetlib
     * ### uuid
         * uuid.uuid1
@@ -355,7 +356,6 @@ export LC_CTYPE="en_US.UTF-8"
 * ## [six](./other_useful_library/six.md) `python2和python3兼容的库`
 * ## [scrapy](./scrapy/README.md)
 * ## ~~[srt](http://srt.readthedocs.io/en/latest/api.html)*因为缺少shift功能而改成用pysrt*~~
-* ## [urllib](./urllib.md) *处理url*
 * ## [virtualenv](https://virtualenv.pypa.io/en/stable/)
 ```
 virtualenv --system-site-packages -p /bin/python ENV
