@@ -36,6 +36,7 @@ datetime.datetime.fromtimestamp(integer)
 * 参数
 * 方法
     * weekday: monday ==0; sunday ==6
+    * isoweekday: monday == 1; sunday = 7
 ##### datetime.datetime
     * datetime.datetime.now()  当前时间，当前系统时间。在django里面设置时区为utc后，会自动变成utc时间
 
@@ -44,3 +45,5 @@ datetime.datetime.fromtimestamp(integer)
 * `class datetime.timedelta(days=0, seconds=0, microseconds=0, milliseconds=0, minutes=0, hours=0, weeks=0)`
 * 方法:
     total_seconds(): 返回一共的秒数(float)
+
+#### 其他要学习的

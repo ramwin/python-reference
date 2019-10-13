@@ -1,25 +1,31 @@
 **Xiang Wang @ 2016-12-15 17:41:21**
 
+[github 文档](https://github.com/andymccurdy/redis-py)  
+
+# Redis的用法
+尽量参考这个文档  
+[本地linux-reference下的redis参考](../linux-reference/redis.md)  
+[github 上linux-reference下的redis参考](https://github.com/ramwin/linux-reference/blob/master/redis.md)  
+
 # Basic
-* [github link](https://github.com/andymccurdy/redis-py)
 * Quick usage
-    ```
-    import redis
-    # 单独链接
-    r = redis.StrictRedis(db=0)
-    
-    # 连接池
-    pool = redis.ConnectionPool(host='localhost', port=6379, db=0)
-    r = redis.StrictRedis(connection_pool=pool, decode_responses=True)
-    
-    r.get('foo')  # 如果key不存在，返回None
-    r.set('foo', 'bar', ex=3600)  # 3600秒后过期。传入string也可以
-    
-    r.delete(key)   # 删除key，存在就是返回1, 否则返回0
-    
-    r.hset('dict', 'key', 'value')
-    r.hdel('dict', 'key')  # 存在就返回1, 否则返回0
-    ```
+```
+import redis
+# 单独链接
+r = redis.StrictRedis(db=0)
+
+# 连接池
+pool = redis.ConnectionPool(host='localhost', port=6379, db=0)
+r = redis.StrictRedis(connection_pool=pool, decode_responses=True)
+
+r.get('foo')  # 如果key不存在，返回None
+r.set('foo', 'bar', ex=3600)  # 3600秒后过期。传入string也可以
+
+r.delete(key)   # 删除key，存在就是返回1, 否则返回0
+
+r.hset('dict', 'key', 'value')
+r.hdel('dict', 'key')  # 存在就返回1, 否则返回0
+```
 
 # 链接
 ```
@@ -55,19 +61,8 @@ returns -2 if the key does not exist.
 returns -1 if the key exists but has no associated expire
 ```
 
-# Sorted Set 排序集合
-* zadd
-    ```
-    zadd('key', user_2=1)
-    data = {
-        'user_2': 2,
-        'user_3': 33,
-    }
-    zadd('key', **data)
-    zadd('ss', user_2=2, user_3=33)
-    redis.zadd('my-key', 1.1, 'name1', 2.2, 'name2', name3=3.3, name4=4.4)
-    ```
-* zrange
-    ```
-    zrange('mykey', 0, -1)
-    ```
+# Lock
+```
+    with client.lock(key) as lock:
+        do something expensive  # 保证同时只有一个线程跑这个
+```

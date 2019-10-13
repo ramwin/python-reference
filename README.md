@@ -29,9 +29,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 ```
 * [集合set](set.md)
 
-
-# Language Reference
-[官网](https://docs.python.org/3/reference/index.html)
+# [Language Reference](https://docs.python.org/3/reference/index.html)
 ## Exceution model
 * [Exception报错](./exception.md)
 [官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
@@ -67,10 +65,9 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     * [property](./class/property.md) [示例](./class/property.py)
 
 
-# Library Reference 内置库参考
-[官网](https://docs.python.org/3/library/index.html)
+# [Library Reference 内置库参考][library-reference]
 1. [x] Introduction
-2. [Built-in Functions](./library_reference/built_in_functions内置函数.md)
+2. ## [Built-in Functions](./library_reference/built_in_functions内置函数.md)
     * all
     * any
     * divmod
@@ -78,10 +75,18 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     ```
     enumerate(['a','b','c'])  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象
     ```
-3. [ ] Built-in Constants
-4. [ ] Built-in Types
+    * open  
+    打开一个文件 buffering=0代表不需要缓存(不缓存,mode必须是b), buffering=1代表每一行保存,buffering>1代表多少字节保存
+    * ### [property](./library_reference/built_in_functions内置函数.md#property)
+    * zip: 迭代2个迭代器, 按照最短的来计算
+3. Built-in Constants
+4. Built-in Types
+    * [Set集合](./set.md)
     * ### [Mapping Types -- dict 字典参考](./library_reference/built_in_types内置数据类型.md)
-5. [ ] Built-in Exceptions
+5. ## [Built-in Exceptions](https://docs.python.org/3/library/exceptions.html)
+### Warnings
+* DeprecationWarning
+
 6. [Text Processing Services](https://docs.python.org/3/library/text.html)
     2. ### [re -- Regular expression operations 正则表达式](./re.md)
     [test regrex 在线测试](https://regex101.com/#python)
@@ -133,6 +138,36 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 10. [ ] Functional Programming Modules
 
 11. ## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
+    1. ### [pathlib](https://docs.python.org/3/library/pathlib.html)
+    ```
+    from pathlib import Path
+    p = Path('.')
+    ```
+        * iterdir(): 返回一个包含子文件的generator
+        * glob(pattern): 返回匹配的文件或者目录名
+        ```
+        glob("*.pdf")
+        glob("**/*.pdf")
+        ```
+        * mkdir(): 创建目录
+        * stem: 最后的目录(排除后缀)
+        ```
+        >>> PurePosixPath('my/library.tar.gz').stem
+        'library.tar'
+        >>> PurePosixPath('my/library.tar').stem
+        'library'
+        >>> PurePosixPath('my/library').stem
+        'library'
+        ```
+        * as_posix(): 返回绝对路径
+        * joinpath(str|path): 合并路径
+        * suffix: 返回最后一个后缀名
+        ```
+        >>> Path("README.md").suffix
+        '.md'
+        ```
+        * suffixed: 返回后缀名列表
+        * unlink: 删除文件或者链接
     2. [os.path](library_reference/os.md)
     6. [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
         ```
@@ -156,27 +191,22 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 15. [ ] Cryptographic Services
 
 16. ## [Generic Operating System Services](https://docs.python.org/3/library/allos.html)
-    1. [os](https://docs.python.org/3/library/os.html)
-        * os.scandir
-        Better performance than os.listdir
-        ```
-        filter(lambda x: x.is_dir(), os.scandir())  # show all the directory entry
-        ```
-
-        * os.listdir  
-        Return a list containing the names of the entries in the directory given by path. 
-        * [以前的参考](./os.md)
+    1. ### [os](./os.md)
     2. [ ] io
     3. [ ] time
     4. [argparse](./library_reference/argparse.md)
     这个用来解析python的命令
     5. [ ] getopt
-    6. ### [logging日志处理](./log/README.md)
+    6. ### [logging日志处理](./logging/README.md)
     9. [ ] to be continued
 
 17. [ ] Concurrent Execution
 18. [ ] contextvars — Context Variables
-19. [ ] Interprocess Communication and Networking
+19. [ ] Networking and Interprocess Communication
+    1. ### [asyncio](./library_reference/asyncio.md) *用来处理协程*
+    8. ### signal
+    触发信号，处理reload功能
+
 20. ## Internet Data Handling
     2. ### [JSON](./library_reference/json.md)
     6. base64
@@ -187,7 +217,16 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     ```
     * [ ] to be continued
 21. [ ] Structed Markup Processing Tools
-22. [ ] Internet Protocols and Support
+22. ## Internet Protocols and Support
+    * ### [urllib](./library_reference/urllib.md) *处理url*
+    * [ ] telnetlib
+    * ### uuid
+        * uuid.uuid1
+        根据序列号，时间，电脑的mac地址生成一个uuid
+        返回一个uuid,但是后面是固定的node,可以手工提供或者直接获取电脑的mac地址
+        * uuid.uuid4
+        生成随机的uuid
+    * [ ] socketserver
 27. Development Tools
     4. ### [unittest — Unit testing framework 测试框架](./library_reference/unittest.md)
 30. ## Python Runtime Services 和编译器,环境有关的服务
@@ -213,10 +252,11 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     * [文档整理](./other_useful_library/beautifulsoup.md)
 * [captcha](./other_useful_library/captcha_test.py) *生成验证码*
 * ## celery *用来执行异步脚本*
+这个软件在linux-reference里面  
     * [官网](http://docs.celeryproject.org/en/latest/index.html)
     * [github在线链接](https://github.com/ramwin/linux-reference#celery)
-    * [本地链接](../linux-reference/README.md#celery)
-* [click](./click.md) *用python写shell命令*
+    * [本地linux-reference链接](../linux-reference/README.md#celery)
+* [click](./other_useful_library/click.md) *用python写shell命令*
 * [faker](https://github.com/joke2k/faker)  *use fake to create a lot of name of text*  
     ```python
     from faker import Faker
@@ -233,6 +273,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 * [flake8] *检测python代码是不是满足pep8*
 * [flask](./flask.md) *轻量级http服务器*
 * [ics](https://pypi.org/project/ics/) *日历，行程 calendar*
+* [ipdb](./other_useful_library/ipdb.md) *断点来检测查看源码和运行状态*
 * [itchat](https://github.com/littlecodersh/ItChat)  *微信机器人*
 * [iptools] *处理IP地址的包*
 * [jinja模板渲染](./jinjia.md)
@@ -248,14 +289,26 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     kafka_producer.send_messages('test',b'test')
     ```
 * [mongoengine](./other_useful_library/mongoengine.md) *把mongodb当作sql用。那你为什么不直接用mysql啊*
+* [moviewpy](https://github.com/Zulko/moviepy) *操作mp4的包*
+```
+from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
+# 截取前5秒的mp4文件
+ffmpeg_extract_subclip("movie.mp4", 0, 5, targetname="test.mp4")
+```
 * [openpyxl](./openpyxl.md) *处理excel*
+* pdf2image: *把pdf转化成图片的库*
+[测试代码](./other_useful_library/pdfconvert.py)
 * [pdfminer](https://github.com/euske/pdfminer) *解析pdf的包，好用*
 * [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
-* [pillow](./Pillow.md)
-* [pip](https://pip.pypa.io/en/stable/) *快速安装包*  
-`pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11`  
-`pip install -i https://pypi.org/simple django==1.11`
+* [pillow](./pillow.md)
+* pip *快速安装包*  
+    * [官网](https://pip.pypa.io/en/stable/)
+    * [配置文件](https://pip.pypa.io/en/stable/user_guide/#config-file)
+    * 使用其他源
 ```
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11  
+pip install -i https://pypi.org/simple django==1.11
+sudo pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple  # 设置清华的源
 export LC_ALL="en_US.UTF-8"  # 出现乱码
 export LC_CTYPE="en_US.UTF-8"
 ```
@@ -310,7 +363,6 @@ export LC_CTYPE="en_US.UTF-8"
 * ## [six](./other_useful_library/six.md) `python2和python3兼容的库`
 * ## [scrapy](./scrapy/README.md)
 * ## ~~[srt](http://srt.readthedocs.io/en/latest/api.html)*因为缺少shift功能而改成用pysrt*~~
-* ## [urllib](./urllib.md) *处理url*
 * ## [virtualenv](https://virtualenv.pypa.io/en/stable/)
 ```
 virtualenv --system-site-packages -p /bin/python ENV
@@ -353,6 +405,10 @@ for i in range(ws.nrows):
 * socket.gethostname()    # 获取当前主机的主机名
 * uuid.getnote()    # 获取本机的MAC地址  
 mac=uuid.UUID(int = node).hex[-12:]
+* [ ] `readme_renderer`
 
 ## [设计模式](./设计模式.md)
 [runoob教程](http://www.runoob.com/design-pattern/factory-pattern.html)
+
+
+[library-reference]: https://docs.python.org/3/library/index.html

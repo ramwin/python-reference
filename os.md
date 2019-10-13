@@ -1,6 +1,29 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# Xiang Wang @ ramwin@qq.com 2016-04-22 17:36:02
+**Xiang Wang @ ramwin@qq.com 2016-04-22 17:36:02**
+
+### [os](https://docs.python.org/3/library/os.html)
+
+#### [Process Parameters](https://docs.python.org/3/library/os.html#process-parameters)
+
+
+#### [File Descriptor Operations](https://docs.python.org/3/library/os.html#file-descriptor-operations)
+
+#### [Files and Directories](https://docs.python.org/3/library/os.html#files-and-directories)
+* [ ] os.chroot(path)
+* os.fchdir(fd)  
+等于`os.chdir`
+* os.getcwd()  
+返回当前工作目录: `'/home/wangx/github/python-reference'`
+* os.getcwdb()
+返回当前工作目录的二进制: `b'/home/wangx/github/duishang_design/\xe7\xbd\x91\xe9\xa1\xb5'`
+* os.listdir(path=".")
+Return a list containing the names of the entries in the directory given by path. 
+* os.scandir(path=".")
+Better performance than os.listdir
+```
+filter(lambda x: x.is_dir(), os.scandir())  # show all the directory entry
+```
+
+#### [Process Management](https://docs.python.org/3/library/os.html#process-management)
 
 # 目录操作
 ## 获取当前目录  

@@ -7,5 +7,8 @@
 test.db
 test.html
 test.png
-test.*
 .DS_STORE
+logging/*log*
+pillow_example/result.png
+*_test.png
+test.log
