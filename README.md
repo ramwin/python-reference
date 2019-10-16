@@ -302,10 +302,14 @@ ffmpeg_extract_subclip("movie.mp4", 0, 5, targetname="test.mp4")
 * [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
 * [pillow](./pillow.md)
 * [pip](https://pip.pypa.io/en/stable/user_guide/#config-file) *快速安装包*  
-`pip install --extra-index=https://pypi.tuna.tsinghua.edu.cn/simple --extra-index=https://pypi.python.org/ django`
-`pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11`  
-`pip install -i https://pypi.org/simple django==1.11`
+* pip *快速安装包*  
+    * [官网](https://pip.pypa.io/en/stable/)
+    * [配置文件](https://pip.pypa.io/en/stable/user_guide/#config-file)
+    * 使用其他源
 ```
+pip install --extra-index=https://pypi.tuna.tsinghua.edu.cn/simple --extra-index=https://pypi.python.org/ django
+pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11  
+pip install -i https://pypi.org/simple django==1.11
 sudo pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple  # 设置清华的源
 export LC_ALL="en_US.UTF-8"  # 出现乱码
 export LC_CTYPE="en_US.UTF-8"
