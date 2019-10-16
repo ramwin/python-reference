@@ -9,7 +9,7 @@ import click
 @click.option('--name', required=True, default="ew", prompt="Your Name",
               help='The person to greet.')
 @click.argument('target')
-def hello(count, name, r, target):
+def hello(count, name, target):
     """Simple program that greets NAME for a total of COUNT times."""
     if click.confirm('继续吗'):
         print("你输入的最后参数是: %s" % target)

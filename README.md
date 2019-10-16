@@ -302,6 +302,7 @@ ffmpeg_extract_subclip("movie.mp4", 0, 5, targetname="test.mp4")
 * [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
 * [pillow](./pillow.md)
 * [pip](https://pip.pypa.io/en/stable/user_guide/#config-file) *快速安装包*  
+`pip install --extra-index=https://pypi.tuna.tsinghua.edu.cn/simple --extra-index=https://pypi.python.org/ django`
 `pip install -i https://pypi.tuna.tsinghua.edu.cn/simple django==1.11`  
 `pip install -i https://pypi.org/simple django==1.11`
 ```
@@ -367,6 +368,7 @@ virtualenv --system-site-packages -p /bin/python ENV
 * ## [watchdog](https://pypi.org/project/watchdog/) *监控文件变化*
 * ## websocket [websocket 客户端](https://github.com/websocket-client/websocket-client)
 * ## [wechatpy](./other_useful_library/wechatpy.md) *和微信的接口*
+* ## [wechat-django](https://github.com/Xavier-Lam/wechat-django) *微信的django app*
 * ## [word2html](https://github.com/bradmontgomery/word2html)  *把word转化成html*
 * ## [word2vec](http://nbviewer.jupyter.org/github/danielfrg/word2vec/blob/master/examples/word2vec.ipynb)
 ```
