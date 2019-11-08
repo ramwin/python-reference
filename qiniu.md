@@ -97,7 +97,25 @@ assert ret == {}
 ```
 #### [ ] 复制文件副本
 #### [ ] 删除空间中的文件
-#### [ ] 获取指定前缀文件列表
+#### 获取指定前缀文件列表
+```
+ret, eof, info = bucket.list(bucket_name, prefix, marker, limit, delimiter)
+ret = {
+    "marker": "eywehrjklew",
+    "items": [
+        {
+            'putTime': 15687092976559020,
+            'key': 'avatar-10410-9654a38253a44b5fb0f4c6b488aada04.png',
+            'status': 0, 'md5': '3e99448da736a4eb742b40b525416e91',
+            'fsize': 18948, 'type': 0,
+            'mimeType': 'image/png', 'hash': 'FvosvnLv2SFSqqRmW4nFEfY17Kkb'
+        }
+    ]
+}
+eof = False 如果还有数据的话
+assert len(ret.get('items')) is not None
+```
+
 #### [抓取网络资源到空间](https://developer.qiniu.com/kodo/sdk/1242/python#rs-fetch)
 ```
 # -*- coding: utf-8 -*-
