@@ -82,6 +82,29 @@ user_info = wechat_client.user.get('openid')
 }
 ```
 
+### 微信支付接口
+#### 订单接口
+`class wechatpy.pay.api.WeChatOrder`
+* [WeChatPay](http://docs.wechatpy.org/zh_CN/master/pay.html#module-wechatpy.pay)
+```
+from wechatpy.pay import WeChatPay
+wechatpay = WeChatPay(
+   appid=..
+   api_key=..
+)
+```
+* 查询订单
+```
+from wechatpy.pay.api import WeChatOrder
+>>> WeChatOrder(wechatpay).query(out_trade_no=o.out_trade_no)
+>>> OrderedDict([
+    ("return_code", "SUCCESS"),
+    ("result_code", "SUCCESS"),
+    ("total_fee", "18000"),
+    ("trade_state": "NOTPAY"),
+    ])
+```
+
 ### 微信 OAuth 网页授权接入
 #### 公众号 OAuth 网页授权接入 [官网](http://docs.wechatpy.org/zh_CN/master/oauth.html#module-wechatpy.oauth)
 `class wechatpy.oauth.WeChatOAuth(app_id, secret, redirect_uri, scope="snsapi_base", state="")`
