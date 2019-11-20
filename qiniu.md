@@ -72,7 +72,7 @@ assert ret["hash"] == etag(localfile)
 
 * #### 触发持久化操作
 
-### 资源管理
+### [资源管理](https://developer.qiniu.com/kodo/sdk/1242/python#6)
 #### [ ] 修改文件存储类型
 #### [移动或重命名文件](https://developer.qiniu.com/kodo/sdk/1242/python#rs-move)
 ```
@@ -96,7 +96,12 @@ print(info)
 assert ret == {}
 ```
 #### [ ] 复制文件副本
-#### [ ] 删除空间中的文件
+#### [删除空间中的文件](https://developer.qiniu.com/kodo/sdk/1242/python#rs-delete)
+```
+ret, info = bucket_manager.delete(bucket_name, key)
+assert ret == {}
+```
+
 #### 获取指定前缀文件列表
 ```
 ret, eof, info = bucket.list(bucket_name, prefix, marker, limit, delimiter)
