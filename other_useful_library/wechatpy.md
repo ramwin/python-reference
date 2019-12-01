@@ -33,32 +33,77 @@ event: "templatesendjobfinish"
 status: "success"
 
 ### 微信主动调用接口
-* #### 用户接口 [官网](http://docs.wechatpy.org/zh_CN/master/client/user.html)
+#### [模板消息相关接口](http://docs.wechatpy.org/zh_CN/master/client/template.html#)
+```
+wechatpy.client.api.WeChatTemplate(client=None)
+```
+
+* `get_all_private_template` 获取模板列表
+```
+{
+    "template_list": [
+        {
+            "content": "{{first.DATA}}\n业务状态：{{keyword1.DATA}}\n时间：{{keyword2.DATA}}\n{{remark.DATA}}",
+            "title": "业务状态通知",
+            "deputy_industry": "其他",
+            "template_id": "ZphdjlGNe9XxLdLoib2qYfTH6ueu-WjteQyKLsyeDkQ",
+            "primary_industry": "其他",
+            "example": "你好，你的合同状态有变更。\n业务状态：你的合同号为HT00001的合同已审核通过，请查阅。\n时间：2016年3月17号 \n13:18感谢你的使用\n",
+        }
+    ]
+}
+```
+
+
+#### 用户接口 [官网](http://docs.wechatpy.org/zh_CN/master/client/user.html)
 `wechatpy.client.api.WeChatUser(client=None)`
-    * `get(user_id, lange='zh_CN')` 获取**用户基本信息**(UnionId机制)
-    ```
-    user_info = wechat_client.user.get('openid')
-    {u'subscribe': 0, u'tagid_list': [], u'openid': u'o_13fszy206hbTUZJMyxClHrjVW8'}  # 未关注
-    {  # 已关注
-        "subscribe": 1,
-        "openid": "o6_bmjrPTlm6_2sgVt7hMZOPfL2M",
-        "nickname": "Band",
-        "sex": 1,
-        "language": "zh_CN",
-        "city": "广州",
-        "province": "广东",
-        "country": "中国",
-        "headimgurl":"http://thirdwx.qlogo.cn/mmopen/g3MonUZtNHkdmzicIlibx6iaFqAc56vxLSUfpb6n5WKSYVY0ChQKkiaJSgQ1dZuTOgvLLrhJbERQQ4eMsv84eavHiaiceqxibJxCfHe/0",
-        "subscribe_time": 1382694957,
-        "unionid": " o6_bmasdasdsad6_2sgVt7hMZOPfL"
-        "remark": "",
-        "groupid": 0,
-        "tagid_list":[128,2],
-        "subscribe_scene": "ADD_SCENE_QR_CODE",
-        "qr_scene": 98765,
-        "qr_scene_str": ""
-    }
-    ```
+* `get(user_id, lange='zh_CN')` 获取**用户基本信息**(UnionId机制)
+```
+user_info = wechat_client.user.get('openid')
+{u'subscribe': 0, u'tagid_list': [], u'openid': u'o_13fszy206hbTUZJMyxClHrjVW8'}  # 未关注
+{  # 已关注
+    "subscribe": 1,
+    "openid": "o6_bmjrPTlm6_2sgVt7hMZOPfL2M",
+    "nickname": "Band",
+    "sex": 1,
+    "language": "zh_CN",
+    "city": "广州",
+    "province": "广东",
+    "country": "中国",
+    "headimgurl":"http://thirdwx.qlogo.cn/mmopen/g3MonUZtNHkdmzicIlibx6iaFqAc56vxLSUfpb6n5WKSYVY0ChQKkiaJSgQ1dZuTOgvLLrhJbERQQ4eMsv84eavHiaiceqxibJxCfHe/0",
+    "subscribe_time": 1382694957,
+    "unionid": " o6_bmasdasdsad6_2sgVt7hMZOPfL"
+    "remark": "",
+    "groupid": 0,
+    "tagid_list":[128,2],
+    "subscribe_scene": "ADD_SCENE_QR_CODE",
+    "qr_scene": 98765,
+    "qr_scene_str": ""
+}
+```
+
+### 微信支付接口
+#### 订单接口
+`class wechatpy.pay.api.WeChatOrder`
+* [WeChatPay](http://docs.wechatpy.org/zh_CN/master/pay.html#module-wechatpy.pay)
+```
+from wechatpy.pay import WeChatPay
+wechatpay = WeChatPay(
+   appid=..
+   api_key=..
+)
+```
+* 查询订单
+```
+from wechatpy.pay.api import WeChatOrder
+>>> WeChatOrder(wechatpay).query(out_trade_no=o.out_trade_no)
+>>> OrderedDict([
+    ("return_code", "SUCCESS"),
+    ("result_code", "SUCCESS"),
+    ("total_fee", "18000"),
+    ("trade_state": "NOTPAY"),
+    ])
+```
 
 ### 微信 OAuth 网页授权接入
 #### 公众号 OAuth 网页授权接入 [官网](http://docs.wechatpy.org/zh_CN/master/oauth.html#module-wechatpy.oauth)

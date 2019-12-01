@@ -6,19 +6,22 @@
 
 import csv
 from collections import OrderedDict
+import datetime
 
 fieldnames = OrderedDict([
     ("name", "姓名"),
     ("age", "年龄"),
+    ("birth", "生日"),
+    ("birthtime", "生日时间"),
 ])
 rows = [
-    {"name": "王祥", "age": 28},
-    {"name": "测试", "age": 28},
+    {"name": "王祥", "age": 28, "birthtime": datetime.datetime.now()},
+    {"name": "测试", "age": 28, "birth": datetime.date(1992,1,1)},
 ]
 
 with open("/tmp/test.csv", "w") as csvfile:
     writer = csv.DictWriter(csvfile, fieldnames=fieldnames.keys())
-    writer.writeheader()
+    # writer.writeheader()
     writer.writerow(fieldnames)
     for row in rows:
         writer.writerow(row)
