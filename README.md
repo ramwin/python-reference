@@ -136,6 +136,9 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
         * statistics.StatisticsError
 
 10. [ ] Functional Programming Modules
+    * [ ] itertools
+    * functools: 对于函数和可调用对象的执行操作
+    * [ ] operator
 
 11. ## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
     1. ### [pathlib](https://docs.python.org/3/library/pathlib.html)
