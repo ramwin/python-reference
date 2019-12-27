@@ -3,6 +3,8 @@
 [官网](https://docs.python.org/3/library/re.html#module-re)
 
 ## Regular Expression Syntax 基础知识和语法
+* `(?!...)`  
+后续不能出现`...`
 * `\d`  *数字*
 * `\D`  *非数字*
 * `\s`  *空白字符*
