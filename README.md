@@ -193,18 +193,29 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
     5. [ ] plistlib
 15. [ ] Cryptographic Services
 
-16. ## [Generic Operating System Services](https://docs.python.org/3/library/allos.html)
-    1. ### [os](./os.md)
-    2. [ ] io
-    3. [ ] time
-    4. [argparse](./library_reference/argparse.md)
-    这个用来解析python的命令
-    5. [ ] getopt
-    6. ### [logging日志处理](./logging/README.md)
-    9. [ ] to be continued
+## [Generic Operating System Services](https://docs.python.org/3/library/allos.html)
+1. ### [os](./os.md)
+2. [ ] io
+3. [ ] time
+4. [argparse](./library_reference/argparse.md)
+这个用来解析python的命令
+5. [ ] getopt
+6. ### [logging日志处理](./logging/README.md)
+9. [ ] to be continued
 
-17. [ ] Concurrent Execution
-18. [ ] contextvars — Context Variables
+## Concurrent Execution
+### multiprocessing — Process-based parallelism
+[测试](./multi/poll_test.py)
+* Introduction
+```
+from multiprocessing import Pool
+def f(x):
+    return x * x
+with Pool(5) as p:
+    print(p.map(f, [1,2,3]))
+```
+
+## contextvars — Context Variables
 19. [ ] Networking and Interprocess Communication
     1. ### [asyncio](./library_reference/asyncio.md) *用来处理协程*
     8. ### signal
