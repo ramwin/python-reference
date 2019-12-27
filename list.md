@@ -8,9 +8,15 @@
 * insert(i, x)
 * remove(x) 删除x, 如果x不存在, 就会报错, 注意这个x是==来判断的, 只要二者相等就能remove
 * pop([i]) pop掉第i个元素, 或者pop掉最后一个元素, 如果list为空,或者i太多 raise IndexError
-* sorted
+* sort  
+把list排序
 ```
-sorted(l, key=lambda x: x['value'])  # 根据value进行排序
+list.sort(key=None, reverse=False)
+```
+* sorted  
+生成一个新的排序好的list
+```
+new_list = sorted(l, key=lambda x: x['value'])  # 根据value进行排序
 ```
 
 
