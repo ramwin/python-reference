@@ -4,12 +4,9 @@
     * [timedelta](#datetime.timedelta)
 
 #### datetime
-##### formatting格式化
+##### [formatting格式化](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior)
 * [参考代码](./script/time时间.py)
-* [参考](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior)
-
-##### 各个格式之间的转化
-* 时间 > 文本
+* %w: weekday，0周日, 6是周六
 ```
 import datetime, time
 time.strftime('%Y-%m-%d %H:%M:%S',time.localtime())
@@ -20,6 +17,8 @@ time.strftime('%F %T', time.localtime())
     %T, %X: 14:35:37
     %Y-%m-%d %H:%M:%S  # 2017-09-11 10:35:10
 ```
+
+##### 各个格式之间的转化
 * 文本 > structtime
 ```
 temp=time.strptime('20150707120000','%Y%m%d%H%M%S')
