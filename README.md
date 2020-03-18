@@ -53,7 +53,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 12. [global](language_reference/global_test.py)
 
 ## Compound statements 复合语句
-* [函数](function.md)
+* [函数 function](function.md)
 [官网](https://docs.python.org/3/reference/compound_stmts.html#function-definitions)
     * [decorator装饰器](http://www.cnblogs.com/huxi/archive/2011/03/01/1967600.html)
     * [decorator.py](decorator装饰器.py)
