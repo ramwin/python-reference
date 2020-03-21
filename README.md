@@ -29,6 +29,17 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 ```
 * [集合set](set.md)
 
+# Classes
+* 9.8 [Iterators](https://docs.python.org/3/tutorial/classes.html#iterators)
+定义一个iter会返回一个class(拥有__next__方法). 如果这个iterator自己有__next__方法，他可以返回self  
+for的功能就是调用object的`__iter__`函数
+* 9.9 [Generators](https://docs.python.org/3/tutorial/classes.html#generators)
+在函数里添加yield来使得这个函数变成iterators
+    1. 自动创建`__iter__, __next__`函数
+    2. 每次执行next时自动更新，免去手动设置`self.data, self.index`
+    3. 不返回时，自动`raise StopIteration`
+
+
 # [Language Reference](https://docs.python.org/3/reference/index.html)
 ## Exceution model
 * [Exception报错](./exception.md)
@@ -426,6 +437,12 @@ mac=uuid.UUID(int = node).hex[-12:]
 
 ## [设计模式](./设计模式.md)
 [runoob教程](http://www.runoob.com/design-pattern/factory-pattern.html)
+
+## 进程
+通过fork可以创建一个子线程。子线程可以完整地运行并且每个子线程可以充分地利用一个cpu.当一个线程崩溃后，不会影响其他线程
+## 线程
+python的解释器在执行代码的时候，有个GIL锁，保证同一时间只有一个线程执行。所以不能充分利用CPU。但是这不代表不会出现几个线程打乱数据的问题，因为线程的切换是按照python字节码来处理的。`test/test_thread.py` 不会应为有多核CPU而变快。但是`test/test_fork.py`会因为多核而变快
+用kill杀出一个子线程后，会导致进程崩溃
 
 
 [library-reference]: https://docs.python.org/3/library/index.html
