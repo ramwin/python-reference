@@ -15,7 +15,7 @@ def main():
     tcp_socket.connect(dest_addr)
 
     # 3. 接收/发送数据
-    send_data = input("请输入要发送的数据：")
+    send_data = "123"
     tcp_socket.send(send_data.encode("utf-8"))    
 
     # 接收服务器发送的数据

@@ -15,7 +15,7 @@ def main():
     print("接收到的数据：%s" % recv_data.decode("utf-8"))
         
     # 6.给对方发送数据
-    client_socket.send("hahaha".encode("utf-8")) 
+    # client_socket.send("hahaha".encode("utf-8")) 
 
 
 main()
