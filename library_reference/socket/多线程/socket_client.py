@@ -9,7 +9,7 @@ import socket
 import time
 import socket
 
-HOST = 'ramwin.com'    # The remote host
+HOST = 'localhost'    # The remote host
 PORT = 50008              # The same port as used by the server
 for i in range(100):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
@@ -19,5 +19,6 @@ for i in range(100):
         for i in range(1):
             s.sendall(str(i).encode('utf-8'))
             data = s.recv(1024)
+            assert data
             print('Received', repr(data))
             time.sleep(0.1)
