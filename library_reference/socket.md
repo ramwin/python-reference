@@ -21,3 +21,6 @@
 接受方的socket信息:  IP: 47.100.203.184, 私有IP: 172.19.162.85
 <socket.socket fd=4, family=AddressFamily.AF_INET, type=SocketKind.SOCK_STREAM, proto=0, laddr=('172.19.162.85', 50008), raddr=('47.241.21.44', 49702)>
 ```
+
+#### 多个socket线程来接听
+[stackoverflow](https://stackoverflow.com/questions/10810249/python-socket-multiple-clients)
