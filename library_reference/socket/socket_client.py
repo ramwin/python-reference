@@ -9,7 +9,7 @@ import socket
 import time
 import socket
 
-HOST = 'localhost'    # The remote host
+HOST = 'ramwin.com'    # The remote host
 PORT = 50008              # The same port as used by the server
 for i in range(100):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
