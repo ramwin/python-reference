@@ -69,8 +69,21 @@ for的功能就是调用object的`__iter__`函数
     * [decorator装饰器](http://www.cnblogs.com/huxi/archive/2011/03/01/1967600.html)
     * [decorator.py](decorator装饰器.py)
 * [class](./class/README.md)
-[官网文档 TODO](https://docs.python.org/3.6/tutorial/classes.html)
+[官网文档 TODO](http://ramwin.com:8000/tutorial/classes.html)
     * 属性
+        * `__new__`: 创建class类的时候调用  
+        [示例](./class/class_new.py). 通过`__new__`的时候`，返回不同的class  
+        ```python
+        class GuessAnimal(object):
+
+            def __name__(self, type, *args, **kwargs):
+                if type == 'dog':
+                    return Dog(*args, **kwargs)
+                return Cat(*args, **kwargs)
+        d = Some("dog")
+        d.say()
+        c = Some("cat")
+        ```
         * `__module__` : class的模块
         * `__name__` : class的name
     * [property](./class/property.md) [示例](./class/property.py)
@@ -240,6 +253,7 @@ with Pool(5) as p:
 ## contextvars — Context Variables
 19. [ ] Networking and Interprocess Communication
     1. ### [asyncio](./library_reference/asyncio.md) *用来处理协程*
+    2. [socket](./library_reference/socket.md) *低级的网络接口*
     8. ### signal
     触发信号，处理reload功能
 
