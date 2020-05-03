@@ -4,6 +4,22 @@
 
 * [github链接](https://github.com/jxtech/wechatpy)
 * [官网文档](http://docs.wechatpy.org/zh_CN/master/)
+### 小程序接口
+#### 基础
+```
+from wechatpy.client.api import WeChatWxa
+wxa = WeChatWxa(client)
+```
+
+#### 登录
+```
+session_data = wxa.code_to_session(jscode)
+session_data = {
+  "openid": "...",
+  "session_key": "...",
+}
+
+```
 
 ### 基础
 ```
