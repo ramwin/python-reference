@@ -12,6 +12,12 @@ x or y: 如果x为True, 就不再计算y
 x and y: 如果x为False, 就不再计算y
 
 ### Mapping Types -- dict
+* 原理
+[stackoverflow questions: how-does-python-implement-dictionaries](https://stackoverflow.com/questions/56097997/how-does-python-implement-dictionaries)
+[参考资料](https://www.freecodecamp.org/news/exploring-python-internals-the-dictionary-a32c14e73efa/)
+一开始定义一个array(默认长度为8), 通过key的hash，存入对应的array。如果遇到碰撞了，就采用第二次hash`(i = i * 5 +1，或者 i = another_hash(i))`来保存输入。大约达到70%左右时，就考虑扩展这个arry的长度，重新放入值
+
+
 这是唯一的一种mapping object  
 hashable的数据, 就可以当作key. 因为数字遵循了一样的计算规则, 所以如果两个数字值一样, 那么他们得到的索引结果就一样. `a[1]`和`a[1.0]` 完全同步. 但是因为python保存浮点数是近似值, 所以用浮点数当作key很不明智
 ```
