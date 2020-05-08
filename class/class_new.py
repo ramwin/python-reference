@@ -4,7 +4,11 @@
 
 
 class Animal(object):
+<<<<<<< HEAD
     class_attr = 'animal'
+=======
+    class_attr = 'class_attr'
+>>>>>>> 745286e788c3e44108ec9944b26bad26314f3fa2
     def __init__(self, *args, **kwargs):
         print("chushihua")
         pass
