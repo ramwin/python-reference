@@ -4,6 +4,7 @@
 
 
 class Animal(object):
+    class_attr = 'class_attr'
     def __init__(self, *args, **kwargs):
         print("chushihua")
         pass
@@ -34,6 +35,8 @@ class Some(object):
 
 
 d = Some("dog")
-d.say()
+# d.say()
+print(d.class_attr)
 c = Some("cat")
-c.say()
+print(c.class_attr)
+# c.say()
