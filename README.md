@@ -285,6 +285,14 @@ with Pool(5) as p:
     b = base64.encodestring('我'.encode('utf8')) # 查了源码，果然这个是为了兼容python2的语法。以后避免使用这个方法
     b = base64.encodestring('我')   # python2里面的str就是二进制,结果是str(仍然是二进制)
     ```
+    7. [ ] binhex
+    8. [binascii](https://docs.python.org/3/library/binascii.html)
+        * unhexlify(a) 把十六进制的字符串变成二进制数据
+        ```
+        a = 'b4447f6670a'
+        binascii.unhexlify(a)
+        >>> b'\xb4G\xf6g\n'
+        ```
     * [ ] to be continued
 21. [ ] Structed Markup Processing Tools
 22. ## Internet Protocols and Support

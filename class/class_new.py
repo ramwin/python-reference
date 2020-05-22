@@ -4,6 +4,11 @@
 
 
 class Animal(object):
+<<<<<<< HEAD
+    class_attr = 'animal'
+=======
+    class_attr = 'class_attr'
+>>>>>>> 745286e788c3e44108ec9944b26bad26314f3fa2
     def __init__(self, *args, **kwargs):
         print("chushihua")
         pass
@@ -34,6 +39,10 @@ class Some(object):
 
 
 d = Some("dog")
-d.say()
+# d.say()
+d.class_attr = 'new attr'  # 如果没有这个赋值，那么d的class_attr会被下面这句覆盖
+Animal.class_attr = 'new attr2'
+print(d.class_attr)
 c = Some("cat")
-c.say()
+# c.say()
+print(c.class_attr)
