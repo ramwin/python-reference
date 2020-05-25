@@ -38,6 +38,16 @@ Image.new("RGBA", (480, 320), 0xffffffff)   # 透明度, 蓝, 绿, 红
 [测试image](./pillow_example/image_test.py)
 [测试mask](./pillow_example/mask_test.py)
 把图片粘贴进去
+mask也是一张图片。如果mask是1, 就会用粘贴的图片。如果是0就用原图  
+mask的尺寸要和im一致，并且是rgba模式  
+```
+blue = Image.new("RGB", (480, 320), 0xffffff00)
+im = Image.new("RGB", (150, 150), 0xff0000ff)
+mask = Image.new("RGBA", (150, 150), 0x00000000)
+draw = ImageDraw.Draw(mask)
+draw.chord(((0, 0), (150, 150)), 0, 360, 0xffffffff)
+blue.paste(red, (150, 150), mask=mask)
+```
 
 * resize `Image.resize(size)`  
 修改尺寸
