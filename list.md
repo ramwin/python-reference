@@ -4,7 +4,7 @@
 
 #### 基础
 * append(x) 添加元素,等价于a[len(a):] = [x]
-* extend(iterable) 延长, 等价语a[len(a):] = iterable
+* extend(iterable) 延长, 等价于a[len(a):] = iterable
 * insert(i, x)
 * remove(x) 删除x, 如果x不存在, 就会报错, 注意这个x是==来判断的, 只要二者相等就能remove
 * pop([i]) pop掉第i个元素, 或者pop掉最后一个元素, 如果list为空,或者i太多 raise IndexError

@@ -49,7 +49,7 @@ list(d)可以把Dictionaries的keys按照插入的顺序输出 *python3.7新特�
 ```
 * [集合set](set.md)
 
-# Classes
+## Classes
 * 9.8 [Iterators](https://docs.python.org/3/tutorial/classes.html#iterators)
 定义一个iter会返回一个class(拥有__next__方法). 如果这个iterator自己有__next__方法，他可以返回self  
 for的功能就是调用object的`__iter__`函数
@@ -374,6 +374,37 @@ from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 ffmpeg_extract_subclip("movie.mp4", 0, 5, targetname="test.mp4")
 ```
 * [openpyxl](./openpyxl.md) *处理excel*
+
+## pandas
+```
+import pandas
+df = pandas.read_excel(header=[0,1])
+```
+
+### Input/output
+```
+pandas.read_excel(filename, header=[0, 1], converters={("学校信息", "年级"): str})
+最后converters会进入
+ParserBase._convert_to_ndarrays()
+    for c, values in dct.items():
+        # c = ("学校信息", "年级")
+        conv_f = None if converters is None else converters.get(c, None)
+        conv_f执行
+```
+
+### [pandas.core.series.Series](https://pandas.pydata.org/pandas-docs/stable/reference/series.html)
+* iteritems
+```
+df['姓名'].dropna().iteritems()
+[
+    (0, value),
+    (1, value),
+]
+```
+
+### [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
+
+
 * [pdf2image](https://github.com/Belval/pdf2image): *把pdf转化成图片的库*
 ```
 from pdf2image import convert_from_path
