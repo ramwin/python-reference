@@ -1,9 +1,10 @@
 ### 时间
-* [datetime](#datetime)
-    * [formatting格式化](#formatting)
-    * [timedelta](#datetime.timedelta)
 
 #### datetime
+##### combine
+```
+datetime.combine(date, time, tzinfo=self.tzinfo)
+```
 ##### [formatting格式化](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior)
 * [参考代码](./script/time时间.py)
 * %w: weekday，0周日, 6是周六

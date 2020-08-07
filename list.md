@@ -9,9 +9,9 @@
 * remove(x) 删除x, 如果x不存在, 就会报错, 注意这个x是==来判断的, 只要二者相等就能remove
 * pop([i]) pop掉第i个元素, 或者pop掉最后一个元素, 如果list为空,或者i太多 raise IndexError
 * sort  
-把list排序
+把list排序, 返回None
 ```
-list.sort(key=None, reverse=False)
+list.sort(key=function, reverse=False)
 ```
 * sorted  
 生成一个新的排序好的list
