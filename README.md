@@ -375,7 +375,7 @@ ffmpeg_extract_subclip("movie.mp4", 0, 5, targetname="test.mp4")
 ```
 * [openpyxl](./openpyxl.md) *处理excel*
 
-## pandas
+## [pandas](https://pandas.pydata.org/docs/user_guide/index.html)
 ```
 import pandas
 df = pandas.read_excel(header=[0,1])
@@ -403,6 +403,11 @@ df['姓名'].dropna().iteritems()
 ```
 
 ### [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
+* iterrows()
+```
+for index, row in df.iterrows():
+    print(row.客户名称)
+```
 
 
 * [pdf2image](https://github.com/Belval/pdf2image): *把pdf转化成图片的库*
