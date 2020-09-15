@@ -1,4 +1,5 @@
 ### 时间
+[官方文档](https://docs.python.org/3/library/datetime.html)
 
 #### datetime
 ##### combine
@@ -46,4 +47,13 @@ datetime.datetime.fromtimestamp(integer)
 * 方法:
     total_seconds(): 返回一共的秒数(float)
 
-#### 其他要学习的
+#### Date
+* classmethod date.today()
+返回当天的本地日期, 等价于`date.fromtimestamp(time.time())`
+* classmethod date.fromtimestamp
+* classmethod date.fromisoformat
+```
+date.fromisoformat('2020-12-04')
+>>> date(2020, 12, 4)
+```
+* classmethod date.fromisocalendar

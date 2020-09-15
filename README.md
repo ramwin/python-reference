@@ -160,6 +160,9 @@ for的功能就是调用object的`__iter__`函数
     math.ceil(x) 大于等于x的最小的整数, 使用 __ceil__ 方法，可以让一个对象支持这个函数
     math.floor(x) 小于等于x的最大的整数, 使用 __floor__ 方法，可以让一个对象支持这个函数
     ```
+    4. [decimal](https://docs.python.org/3/library/decimal.html)
+    ```
+    ```
     5. [fractions](https://docs.python.org/2/library/fractions.html#fractions.Fraction)
     ```
         from fractions import Fraction
@@ -218,6 +221,10 @@ for的功能就是调用object的`__iter__`函数
         ```
         * as_posix(): 返回绝对路径
         * joinpath(str|path): 合并路径
+        ```
+        dirpath = Path("缓存")
+        cache_path = dirpath.join("运行缓存.json")
+        ```
         * name: 返回文件名
         * suffix: 返回最后一个后缀名
         ```
@@ -226,6 +233,7 @@ for的功能就是调用object的`__iter__`函数
         ```
         * suffixes: 返回后缀名列表
         * unlink: 删除文件或者链接
+        * write_text: 写入文字然后关闭
     2. [os.path](library_reference/os.md)
     6. [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
         ```
@@ -403,6 +411,7 @@ df['姓名'].dropna().iteritems()
 ```
 
 ### [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
+* columns: 返回字段列表`pandas.core.indexes.base.Index`
 * iterrows()
 ```
 for index, row in df.iterrows():
