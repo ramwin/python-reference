@@ -389,6 +389,10 @@ import pandas
 df = pandas.read_excel(header=[0,1])
 ```
 
+### [Indexing and selecting data](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html)
+```
+```
+
 ### Input/output
 ```
 pandas.read_excel(filename, header=[0, 1], converters={("学校信息", "年级"): str})
@@ -416,6 +420,13 @@ df['姓名'].dropna().iteritems()
 ```
 for index, row in df.iterrows():
     print(row.客户名称)
+```
+* shape:
+返回DataFrame的尺寸
+```
+df = pandas.DataFrame({"col1": [1,2,], "col2": [3,4], "col3": [5,6]})
+df.shape
+>>> (2, 3)
 ```
 
 
