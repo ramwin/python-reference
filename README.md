@@ -391,6 +391,8 @@ df = pandas.read_excel(header=[0,1])
 
 ### [Indexing and selecting data](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html)
 ```
+df.loc["张三"].年龄
+df.loc["张三"]["年龄"]
 ```
 
 ### Input/output

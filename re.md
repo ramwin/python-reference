@@ -46,20 +46,20 @@ re.sub(r'(00)*$', '', '100000')  # 把匹配到的数据变成空
 ```
 [测试代码](library_reference/test_re.py)  
 Return the string obtained by replacing the leftmost non-overlapping occurences of pattern in string by the replacement repl. The repl can be a function.
-    * 每次匹配把结果里面的数据拿出来  
-    `re.sub('a(\d)b', r'\1', 'a4bcdaba2b')`
-    * 替换手机号码
-    ```
-    re.sub('(\d*)(\d{4})(\d{3})', r"\1****\3", "7982660")
-    ```
-    * 使用函数来替换
-    ```
-    >>> def dashrepl(matchobj):
-    ...     if matchobj.group(0) == '-': return ' '
-    ...     else: return '-'
-    >>> re.sub('-{1,2}', dashrepl, 'pro----gram-files')
-    'pro--gram files'
-    ```
+* 每次匹配把结果里面的数据拿出来  
+`re.sub('a(\d)b', r'\1', 'a4bcdaba2b')`
+* 替换手机号码
+```
+re.sub('(\d*)(\d{4})(\d{3})', r"\1****\3", "7982660")
+```
+* 使用函数来替换
+```
+>>> def dashrepl(matchobj):
+...     if matchobj.group(0) == '-': return ' '
+...     else: return '-'
+>>> re.sub('-{1,2}', dashrepl, 'pro----gram-files')
+'pro--gram files'
+```
 * [ ] ...
 
 ## [Regular Expression Examples](https://docs.python.org/3/library/re.html#regular-expression-examples)
