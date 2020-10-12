@@ -4,16 +4,16 @@
 * [官网文档](https://docs.python.org/3/tutorial/datastructures.html#sets)
 * [官方api](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
 * 基础操作
-    ```
-    basket = {'apple', 'orange', 'apple'}  # {'apple', 'orange'}
-    basket = set()  # 创建空的set需要使用方法，不能使用{}
-    a = set('abracadabra')
-    b = set('alacazam')
-    a - b
-    a | b
-    a & b
-    a ^ b
-    ```
+```
+basket = {'apple', 'orange', 'apple'}  # {'apple', 'orange'}
+basket = set()  # 创建空的set需要使用方法，不能使用{}
+a = set('abracadabra')
+b = set('alacazam')
+a - b
+a | b  # ab并集
+a & b  # ab交集
+a ^ b  # 只存在于a或者b的
+```
 
 * 操作
     ```
