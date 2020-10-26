@@ -9,13 +9,18 @@ df1 = pandas.DataFrame(
     index=pandas.Series(
         ['a张三', 'b李四', 'c王二', 'd麻子'],
         name='姓名'
-    )
+    ),
+    columns=["年龄"]
 )
 df2 = df1.iloc[0:3]
 df2 = df2.sort_index(ascending=False)
 
 >>> df1.loc[df2.index]]['年龄'] == df2['年龄']
 True
+
+index = pandas.Index(data=[], name='name')
+df = pandas.DataFrame(data={'age':[]}, columns=['age'], index=index)
+df.loc['张三'] = {'age': 18}
 ```
 
 ### [Indexing and selecting data](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html)
