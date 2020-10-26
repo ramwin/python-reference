@@ -38,7 +38,7 @@
         dd.setdefault('w', 4)
         >>> 2
         ```
-* 如果要实现无线的循环
+* 如果要实现无限的循环
 ```
 class MyDict(dict):
     def __getitem__(self, key):
@@ -46,6 +46,17 @@ class MyDict(dict):
         if key not in self:
             self[key] = MyDict()
         return super(MyDict, self).__getitem__(key)
+```
+
+#### [Namedtuple](https://docs.python.org/3/library/collections.html#collections.namedtuple)
+```
+// 自定义不可变的类
+Point = namedtuple("Point", ["x", "y"])
+Point = namedtuple("Point", "x, y")
+Point = namedtuple("Point", "x y")
+p = Point(11, y=22)
+p.x + p.y
+x, y = p
 ```
 
 #### deque
