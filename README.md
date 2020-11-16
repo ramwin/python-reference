@@ -160,6 +160,8 @@ for的功能就是调用object的`__iter__`函数
     math.ceil(x) 大于等于x的最小的整数, 使用 __ceil__ 方法，可以让一个对象支持这个函数
     math.floor(x) 小于等于x的最大的整数, 使用 __floor__ 方法，可以让一个对象支持这个函数
     ```
+        * [isclose](https://docs.python.org/3/library/math.html#math.isclose)
+        相当于 `abs(a-b) <= max{abs_tol, rel_tol*max[abs(a), abs(b)]}`, 起不到校验超过`abs_tol`或者`rel_tol`的功能哦
     4. [decimal](https://docs.python.org/3/library/decimal.html)
     ```
     ```
@@ -343,6 +345,14 @@ with Pool(5) as p:
     * [github在线链接](https://github.com/ramwin/linux-reference#celery)
     * [本地linux-reference链接](../linux-reference/README.md#celery)
 * [click](./other_useful_library/click.md) *用python写shell命令*
+* [python-docx](https://python-docx.readthedocs.io/en/latest/index.html)
+```
+f = open("模板.docx", "rb")
+document = Document() or Document(f)
+first_line = document.paragraphs[0]
+first_line.text = "通知"
+document.save("通知.docx")
+```
 * [faker](https://github.com/joke2k/faker)  *use fake to create a lot of name of text*  
     ```python
     from faker import Faker
