@@ -70,11 +70,17 @@ requests.post(
     requests.get('http://ipinfo.io', proxies=proxies)
     ```
 
-### response
-* `status_code` 状态码
+### Exceptions
+* ConnectionError
+* HTTPError
+
+### [response](https://requests.readthedocs.io/en/latest/api/#requests.Response)
+* `content` 二进制数据
 * `json` JSON数据
 如果报错了，会raise `simplejson.errors.JSONDecodeError`, python2里面会raise `ValueError`
-* `content` 二进制数据
+* `raise_for_status()`
+Raises HTTPError
+* `status_code` 状态码
 * `text` 文本数据
 
 ### Advanced Usage 进阶用法
