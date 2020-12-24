@@ -258,6 +258,16 @@ for的功能就是调用object的`__iter__`函数
     5. [ ] plistlib
 15. [ ] Cryptographic Services
 
+## Unix Specific Services
+### fcntl
+* fcntl.flock
+```
+f = open("name", "w")
+fcntl.flock(f, fcntl.LOCK_EX)  # 只有一个线程可以获取执行, 其他的会等待
+fcntl.flock(f, fcntl.LOCK_UN)  # 执行完毕后记得unlock
+fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
+```
+
 ## [Generic Operating System Services](https://docs.python.org/3/library/allos.html)
 1. ### [os](./os.md)
 2. [ ] io
