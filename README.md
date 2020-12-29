@@ -359,7 +359,21 @@ with Pool(5) as p:
     * [github在线链接](https://github.com/ramwin/linux-reference#celery)
     * [本地linux-reference链接](../linux-reference/README.md#celery)
 * [click](./other_useful_library/click.md) *用python写shell命令*
-* [python-docx](https://python-docx.readthedocs.io/en/latest/index.html)
+## [diff-match-patch](https://github.com/google/diff-match-patch)
+用来比较文字的不同
+* 用法
+    ```
+    >>> from diff_match_patch import diff_match_patch
+    >>> dmp = diff_match_patch()
+    >>> dmp.diff_main('123', '22')
+    [(-1, '1'), (1, '2'), (0, '2'), (-1, '3')]
+    >>> dmp.diff_prettyHtml(dmp.diff_main('123', '223'))
+    '<del style="background:#ffe6e6;">1</del><ins style="background:#e6ffe6;">2</ins><span>23</span>'
+    ```
+* 效果  
+<del style="background:#ffe6e6;">1</del><ins style="background:#e6ffe6;">2</ins><span>23</span>
+
+## [python-docx](https://python-docx.readthedocs.io/en/latest/index.html)
 ```
 f = open("模板.docx", "rb")
 document = Document() or Document(f)
