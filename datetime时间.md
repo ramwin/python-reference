@@ -48,12 +48,15 @@ datetime.datetime.fromtimestamp(integer)
     total_seconds(): 返回一共的秒数(float)
 
 #### Date
-* classmethod date.today()
-返回当天的本地日期, 等价于`date.fromtimestamp(time.time())`
-* classmethod date.fromtimestamp
-* classmethod date.fromisoformat
-```
-date.fromisoformat('2020-12-04')
->>> date(2020, 12, 4)
-```
-* classmethod date.fromisocalendar
+* 构造方法
+    * classmethod date.today()
+    返回当天的本地日期, 等价于`date.fromtimestamp(time.time())`
+    * classmethod date.fromtimestamp
+    * classmethod date.fromisoformat
+    ```
+    date.fromisoformat('2020-12-04')
+    >>> date(2020, 12, 4)
+    ```
+    * classmethod date.fromisocalendar
+* 属性
+    * day: 返回某个date的日期
