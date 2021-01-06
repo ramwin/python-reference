@@ -28,6 +28,7 @@ if command -v pyenv 1>/dev/null 2>&1; then
 fi
 实际上，只要运行 eval "$(pyenv init -)"就可以
 ```
+
 # tutorial
 [官网](https://docs.python.org/3/tutorial/index.html)
 ## Data Structures 基础类型
@@ -190,52 +191,8 @@ for的功能就是调用object的`__iter__`函数
     * [ ] operator
 
 11. ## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
-    1. ### [pathlib](https://docs.python.org/3/library/pathlib.html)
-    ```
-    from pathlib import Path
-    p = Path('.')
-    ```
-        * iterdir(): 返回一个包含子文件的generator
-        ```
-        import re
-        def get_number(name):
-            '785e321f-7855-42a8-8365-2cd82488d581-2.png'
-            return int(re.match("\S+-(\d+).png", name).groups()[0])
-        sorted(
-            path.iterdir(),
-            key=lambda i: 
-        )
-        ```
-        * glob(pattern): 返回匹配的文件或者目录名
-        ```
-        glob("*.pdf")
-        glob("**/*.pdf")
-        ```
-        * mkdir(exist_ok=False): 创建目录
-        * stem: 最后的目录(排除后缀)
-        ```
-        >>> PurePosixPath('my/library.tar.gz').stem
-        'library.tar'
-        >>> PurePosixPath('my/library.tar').stem
-        'library'
-        >>> PurePosixPath('my/library').stem
-        'library'
-        ```
-        * as_posix(): 返回绝对路径
-        * joinpath(str|path): 合并路径
-        ```
-        dirpath = Path("缓存")
-        cache_path = dirpath.join("运行缓存.json")
-        ```
-        * name: 返回文件名
-        * suffix: 返回最后一个后缀名
-        ```
-        >>> Path("README.md").suffix
-        '.md'
-        ```
-        * suffixes: 返回后缀名列表
-        * unlink: 删除文件或者链接
-        * write_text: 写入文字然后关闭
+    ### [pathlib](./library_reference/pathlib.md)
+    操作目录,路径的功能
     2. [os.path](library_reference/os.md)
     6. [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
         ```
@@ -373,6 +330,19 @@ with Pool(5) as p:
 * 效果  
 <del style="background:#ffe6e6;">1</del><ins style="background:#e6ffe6;">2</ins><span>23</span>
 
+## [git](https://gitpython.readthedocs.io/en/stable/tutorial.html)
+处理git用
+
+    sudo pip3 install gitpython
+    from git import Repo
+    repo = Repo()
+    for tag in repo.tags:
+        print(tag.name, tag.commit)
+
+    for commit in repo.iter_commits(max_count=10):
+        print(commit.hexsha, commit.message, commit.author.name, )
+
+
 ## [python-docx](https://python-docx.readthedocs.io/en/latest/index.html)
 ```
 f = open("模板.docx", "rb")
@@ -473,7 +443,7 @@ export LC_CTYPE="en_US.UTF-8"
         * 界面工具查看
             * 命令行: `alt+F12`
         * 代码编辑
-            * ## [折叠代码](https://www.jetbrains.com/help/pycharm/code-folding-2.html)
+            * [折叠代码](https://www.jetbrains.com/help/pycharm/code-folding-2.html)
             * `Ctrl+B 或者 Ctal+click`: 查看一个函数的定义
             * `Ctrl+Q`: 查看一个函数的文档
             * `查看文件结构`: `alt+7` or `ctrl+F12`
