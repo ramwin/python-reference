@@ -185,10 +185,22 @@ for的功能就是调用object的`__iter__`函数
         * [statistics.stdev](https://docs.python.org/3/library/statistics.html#statistics.stdev)
         * statistics.StatisticsError
 
-10. [ ] Functional Programming Modules
-    * [ ] itertools
-    * functools: 对于函数和可调用对象的执行操作
-    * [ ] operator
+10. ## [Functional Programming Modules](https://docs.python.org/3/library/functional.html)
+### [itertools](https://docs.python.org/3/library/itertools.html)
+
+* count(start, [step])  
+从某个数字开始一直循环
+
+
+    from itertools import count
+    loop = count(10)
+    next(loop) // 10
+    next(loop) // 11
+    next(loop) // 12
+    ...
+
+### functools: 对于函数和可调用对象的执行操作
+### [ ] operator
 
 11. ## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
     ### [pathlib](./library_reference/pathlib.md)
@@ -332,6 +344,7 @@ with Pool(5) as p:
 
 ## [git](https://gitpython.readthedocs.io/en/stable/tutorial.html)
 处理git用
+* 基础代码
 
     sudo pip3 install gitpython
     from git import Repo
