@@ -423,7 +423,20 @@ from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
 # 截取前5秒的mp4文件
 ffmpeg_extract_subclip("movie.mp4", 0, 5, targetname="test.mp4")
 ```
-* [openpyxl](./openpyxl.md) *处理excel*
+
+## [ordered-set](https://github.com/LuminosoInsight/ordered-set)
+有顺序的set
+```
+sudo pip3 install ordered-set
+
+from ordered_set import OrderedSet
+a = OrderedSet()
+a.add(3)
+a.update([5, 1, 4]) // OrderedSet([3, 5, 1, 4])
+a.indexof(3)  // 0
+```
+
+## [openpyxl](./openpyxl.md) *处理excel*
 
 ## [pandas](./other_useful_library/pandas.md)
 
