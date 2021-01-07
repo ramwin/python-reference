@@ -248,6 +248,15 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 9. [ ] to be continued
 
 ## Concurrent Execution
+### [Threading](https://docs.python.org/3/library/threading.html)
+```
+from threading import Thread
+s1 = Thread(function, args=[], kwargs={})
+s2 = Thread(function2, args=[], kwargs={})
+s1.start()
+s2.start()
+```
+
 ### multiprocessing — Process-based parallelism
 [测试](./multi/poll_test.py)
 * Introduction
@@ -425,7 +434,10 @@ ffmpeg_extract_subclip("movie.mp4", 0, 5, targetname="test.mp4")
 ```
 
 ## [ordered-set](https://github.com/LuminosoInsight/ordered-set)
-有顺序的set
+有顺序的set, 实现原理其实就是用一个class内部保存一个list和一个set.  
+我尝试用dict来做(python现在dict的key是有顺序的),但是他的key不太方便做index顺序索引.  
+但是他内部是先判断是否存在,后插入的, 会不会遇到多线程导致key重复的问题呢?  
+会的, [参考代码](./test/test_sorted_set.py) 在sorted_set的add函数里加入一个time.sleep可以发现, 不加的话估计要很大的高并发才能出现
 ```
 sudo pip3 install ordered-set
 
