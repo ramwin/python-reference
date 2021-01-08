@@ -120,6 +120,9 @@ for的功能就是调用object的`__iter__`函数
     ```
     enumerate(['a','b','c'])  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象
     ```
+    * [ ] locals
+    * ### [map(function, iterable)](https://docs.python.org/3/library/functions.html#map)
+    * [ ] max
     * open  
     打开一个文件 buffering=0代表不需要缓存(不缓存,mode必须是b), buffering=1代表每一行保存,buffering>1代表多少字节保存
     * ### [property](./library_reference/built_in_functions内置函数.md#property)
