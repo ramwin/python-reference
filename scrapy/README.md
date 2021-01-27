@@ -7,7 +7,7 @@
 
 ## 安装
 ```
-    sudo apt-get install python-dev python-pip libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev
+    sudo apt-get install python3-dev libxml2-dev libxslt1-dev zlib1g-dev libffi-dev libssl-dev
     sudo apt install python3-dev  # 17.04
     sudo pip install Scrapy
 

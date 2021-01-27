@@ -85,29 +85,48 @@ for的功能就是调用object的`__iter__`函数
 12. [global](language_reference/global_test.py)
 
 ## Compound statements 复合语句
-* [函数 function](function.md)
-[官网](https://docs.python.org/3/reference/compound_stmts.html#function-definitions)
-    * [decorator装饰器](http://www.cnblogs.com/huxi/archive/2011/03/01/1967600.html)
-    * [decorator.py](decorator装饰器.py)
-* [class](./class/README.md)
-[官网文档 TODO](http://ramwin.com:8000/tutorial/classes.html)
-    * 属性
-        * `__new__`: 创建class类的时候调用  
-        [示例](./class/class_new.py). 通过`__new__`的时候`，返回不同的class  
-        ```python
-        class GuessAnimal(object):
 
-            def __name__(self, type, *args, **kwargs):
-                if type == 'dog':
-                    return Dog(*args, **kwargs)
-                return Cat(*args, **kwargs)
-        d = Some("dog")
-        d.say()
-        c = Some("cat")
-        ```
-        * `__module__` : class的模块
-        * `__name__` : class的name
-    * [property](./class/property.md) [示例](./class/property.py)
+### [with语句 the with statement](https://docs.python.org/3/reference/compound_stmts.html#the-with-statement)
+[测试](./test/test_with.py)
+成功执行时, exit的三个参数都为None, 否则为对应数据
+```
+class A():
+    def __enter__(self):
+        print('enter')
+    def __exit__(self, exc_type, exc_value, traceback):
+        print(f'exc_type: {exc_type}')
+        print(f'exc_value: {exc_value}')
+        print(f'traceback: {traceback}')
+        print('exist')
+with A():
+    print('start')
+    raise Exception('value')
+```
+
+### [函数 function](function.md)
+[官网](https://docs.python.org/3/reference/compound_stmts.html#function-definitions)
+* [decorator装饰器](http://www.cnblogs.com/huxi/archive/2011/03/01/1967600.html)
+* [decorator.py](decorator装饰器.py)
+
+### [class](./class/README.md)
+[官网文档 TODO](http://ramwin.com:8000/tutorial/classes.html)
+* 属性
+    * `__new__`: 创建class类的时候调用  
+    [示例](./class/class_new.py). 通过`__new__`的时候`，返回不同的class  
+    ```python
+    class GuessAnimal(object):
+
+        def __name__(self, type, *args, **kwargs):
+            if type == 'dog':
+                return Dog(*args, **kwargs)
+            return Cat(*args, **kwargs)
+    d = Some("dog")
+    d.say()
+    c = Some("cat")
+    ```
+    * `__module__` : class的模块
+    * `__name__` : class的name
+* [property](./class/property.md) [示例](./class/property.py)
 
 
 # [Library Reference 内置库参考][library-reference]
@@ -141,52 +160,56 @@ for的功能就是调用object的`__iter__`函数
 
 7. [ ] Binary Data Services
 
-8. ## [Data Types](https://docs.python.org/3/library/datatypes.html)
-    1. [datetime](./datetime时间.md)
-    2. [ ] [calendar](https://docs.python.org/3/library/calendar.html)
-    3. [collections](./collections.md)
-    4. [collections.abc](./collections.md#collections.abc)
-    5. [ ] heapq: *heap queque algorithm*
-    * [ ] ...
-    10. copy  
-    copy.copy(x): return a shallow copy of x
-    copy.deepcopy(x): return a deepcopy
-    copy.copy只会copy一层, 里面的可变对象不会copy  
-    copy.deepcopy会copy recursively  
-    在shallow copy里, 对于dict, 使用的是 dict.copy(), 对于list使用的是copied_list = original_list[:]  
-    如果要实现自己的copye, 可以重写 `__copy__()` 和 `__deepcopy__()`  
-    11. [ ] pprint
-    12. [ ] ...
+## [Data Types](https://docs.python.org/3/library/datatypes.html)
 
-9. Numeric and Mathematical Modules
-    2. [math](https://docs.python.org/3/library/math.html)
-    ```
-    math.ceil(x) 大于等于x的最小的整数, 使用 __ceil__ 方法，可以让一个对象支持这个函数
-    math.floor(x) 小于等于x的最大的整数, 使用 __floor__ 方法，可以让一个对象支持这个函数
-    ```
-        * [isclose](https://docs.python.org/3/library/math.html#math.isclose)
-        相当于 `abs(a-b) <= max{abs_tol, rel_tol*max[abs(a), abs(b)]}`, 起不到校验超过`abs_tol`或者`rel_tol`的功能哦
-    4. [decimal](https://docs.python.org/3/library/decimal.html)
-    ```
-    ```
-    5. [fractions](https://docs.python.org/2/library/fractions.html#fractions.Fraction)
-    ```
-        from fractions import Fraction
-        f = Fraction(1,3)
-        print("1/3 = %d/%d" % (f.numerator, f.denominator))
-    ```
-    6. random — Generate pseudo-random numbers
-        * random.choice(list)  # choose one value from list
-        * random.randrange(stop)
-        * random.randrange(start, stop[, step])  
-        return value from start(included) to stop(excluded)
-        * random.randint(start, stop)  
-        return value from start(included) to stop(included)
-        * random.sample(list, k)  # choose k's value from list
-    7. statistics — Mathematical statistics functions 数学分析
-        * [statistics.mean](https://docs.python.org/3/library/statistics.html#statistics.mean)
-        * [statistics.stdev](https://docs.python.org/3/library/statistics.html#statistics.stdev)
-        * statistics.StatisticsError
+### [datetime](./datetime时间.md)
+### [ ] [calendar](https://docs.python.org/3/library/calendar.html)
+
+### [collections](./collections.md)
+
+### 其他
+4. [collections.abc](./collections.md#collections.abc)
+5. [ ] heapq: *heap queque algorithm*
+* [ ] ...
+10. copy  
+copy.copy(x): return a shallow copy of x
+copy.deepcopy(x): return a deepcopy
+copy.copy只会copy一层, 里面的可变对象不会copy  
+copy.deepcopy会copy recursively  
+在shallow copy里, 对于dict, 使用的是 dict.copy(), 对于list使用的是copied_list = original_list[:]  
+如果要实现自己的copye, 可以重写 `__copy__()` 和 `__deepcopy__()`  
+11. [ ] pprint
+12. [ ] ...
+
+### Numeric and Mathematical Modules
+2. [math](https://docs.python.org/3/library/math.html)
+```
+math.ceil(x) 大于等于x的最小的整数, 使用 __ceil__ 方法，可以让一个对象支持这个函数
+math.floor(x) 小于等于x的最大的整数, 使用 __floor__ 方法，可以让一个对象支持这个函数
+```
+    * [isclose](https://docs.python.org/3/library/math.html#math.isclose)
+    相当于 `abs(a-b) <= max{abs_tol, rel_tol*max[abs(a), abs(b)]}`, 起不到校验超过`abs_tol`或者`rel_tol`的功能哦
+4. [decimal](https://docs.python.org/3/library/decimal.html)
+```
+```
+5. [fractions](https://docs.python.org/2/library/fractions.html#fractions.Fraction)
+```
+    from fractions import Fraction
+    f = Fraction(1,3)
+    print("1/3 = %d/%d" % (f.numerator, f.denominator))
+```
+6. random — Generate pseudo-random numbers
+    * random.choice(list)  # choose one value from list
+    * random.randrange(stop)
+    * random.randrange(start, stop[, step])  
+    return value from start(included) to stop(excluded)
+    * random.randint(start, stop)  
+    return value from start(included) to stop(included)
+    * random.sample(list, k)  # choose k's value from list
+7. statistics — Mathematical statistics functions 数学分析
+    * [statistics.mean](https://docs.python.org/3/library/statistics.html#statistics.mean)
+    * [statistics.stdev](https://docs.python.org/3/library/statistics.html#statistics.stdev)
+    * statistics.StatisticsError
 
 10. ## [Functional Programming Modules](https://docs.python.org/3/library/functional.html)
 ### [itertools](https://docs.python.org/3/library/itertools.html)
@@ -228,17 +251,12 @@ for的功能就是调用object的`__iter__`函数
     3. [ ] netrc
     4. [ ] xdrlib
     5. [ ] plistlib
-15. [ ] Cryptographic Services
 
-## Unix Specific Services
-### fcntl
-* fcntl.flock
-```
-f = open("name", "w")
-fcntl.flock(f, fcntl.LOCK_EX)  # 只有一个线程可以获取执行, 其他的会等待
-fcntl.flock(f, fcntl.LOCK_UN)  # 执行完毕后记得unlock
-fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
-```
+## Cryptographic Services
+### hashlib
+
+### [ ] hmac
+### [ ] secrets
 
 ## [Generic Operating System Services](https://docs.python.org/3/library/allos.html)
 1. ### [os](./os.md)
@@ -325,8 +343,16 @@ with Pool(5) as p:
     2. ast
     `ast.literal_eval`: "savely evalute an expression node or a string containing a Python literal or container display."
     3. [ ] to be continued
-100. [ ] to be continued
 
+## Unix Specific Services
+### fcntl
+* fcntl.flock
+```
+f = open("name", "w")
+fcntl.flock(f, fcntl.LOCK_EX)  # 只有一个线程可以获取执行, 其他的会等待
+fcntl.flock(f, fcntl.LOCK_UN)  # 执行完毕后记得unlock
+fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
+```
 
 # Other Useful Library
 * beautifulsoup4 *用来解析html文件*

@@ -7,6 +7,10 @@
 * [deque](#deque)
 
 
+#### [Counter](https://docs.python.org/3/library/collections.html#counter-objects)
+```
+```
+
 #### OrderedDict
 * [官网文档](https://docs.python.org/3/library/collections.html#ordereddict-objects)
     ```
