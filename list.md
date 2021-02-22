@@ -8,6 +8,7 @@
 * insert(i, x)
 * remove(x) 删除x, 如果x不存在, 就会报错, 注意这个x是==来判断的, 只要二者相等就能remove
 * pop([i]) pop掉第i个元素, 或者pop掉最后一个元素, 如果list为空,或者i太多 raise IndexError
+* index(item, start, end) 从start开始找到item的index
 * sort  
 把list排序, 返回None
 ```

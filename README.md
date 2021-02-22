@@ -270,6 +270,7 @@ math.floor(x) 小于等于x的最大的整数, 使用 __floor__ 方法，可以�
 
 ## Concurrent Execution
 ### [Threading](https://docs.python.org/3/library/threading.html)
+* [测试2个thread的变量](./test/test_thread_local.py)
 ```
 from threading import Thread
 s1 = Thread(function, args=[], kwargs={})
@@ -555,6 +556,20 @@ export LC_CTYPE="en_US.UTF-8"
 * ## [rsa](./other_useful_library/rsa.md) *使用rsa加密*
 * ## [six](./other_useful_library/six.md) `python2和python3兼容的库`
 * ## [scrapy](./scrapy/README.md)
+
+## [sortedsets](https://github.com/tailhook/sortedsets)
+模仿redis的sorted set做的自动排序的set
+
+    sudo pip3 install sortedsets
+    >>> from sortedsets import SortedSet
+    >>> ss = SortedSet()
+    >>> for i in range(1, 1000):
+    >>>     ss['player' + str(i)] = i*10 if i % 2 else i*i
+    ss.by_score[470:511]
+    >>> ss.index('player20'), ss.index('player21')
+    400, 210
+
+
 * ## ~~[srt](http://srt.readthedocs.io/en/latest/api.html)*因为缺少shift功能而改成用pysrt*~~
 * ## [virtualenv](https://virtualenv.pypa.io/en/stable/)
 ```
