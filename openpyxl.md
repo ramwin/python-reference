@@ -21,7 +21,7 @@
 * 写入数据
 ```
     ws['A4'] = 4
-    ws.cell(rows=1, columns=1, value=1)  # 因为excel是从1开始的，所以这里也是从1开始
+    ws.cell(row=1, column=1, value=1)  # 因为excel是从1开始的，所以这里也是从1开始
 ```
 
 # Simple Usage
