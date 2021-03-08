@@ -290,6 +290,17 @@ with Pool(5) as p:
     print(p.map(f, [1,2,3]))
 ```
 
+### [ ] concurrent.futures
+
+### subprocess
+```
+import subprocess
+res = subprocess.run(["ls", "-l"], capture_output=True, encode="utf-8")
+print(res.stdout)
+```
+
+### [ ] sched
+
 ## contextvars — Context Variables
 19. [ ] Networking and Interprocess Communication
     1. ### [asyncio](./library_reference/asyncio.md) *用来处理协程*
@@ -331,16 +342,26 @@ with Pool(5) as p:
     * [ ] socketserver
 27. Development Tools
     4. ### [unittest — Unit testing framework 测试框架](./library_reference/unittest.md)
-30. ## Python Runtime Services 和编译器,环境有关的服务
-[官网](https://docs.python.org/3/library/python.html)
-    10. ### traceback -- Print or retrieve a stack traceback
-    [官网](https://docs.python.org/3/library/traceback.html)
-    ```
-    traceback.print_stack()  # 直接print出stack
-    log = traceback.format_exc()  # 记录报错的stack
-    stack = traceback.format_stack()  # 记录当前的stack
-    ```
-33. Python Language Services
+
+30. ## [Python Runtime Services 和编译器,环境有关的服务](https://docs.python.org/3/library/python.html)
+
+### [Sys](https://docs.python.org/3/library/sys.html)
+* stdin
+```
+print(sys.stdin)  # 用于python处理pipe数据
+```
+
+### traceback -- Print or retrieve a stack traceback
+[官网](https://docs.python.org/3/library/traceback.html)
+```
+traceback.print_stack()  # 直接print出stack
+log = traceback.format_exc()  # 记录报错的stack
+stack = traceback.format_stack()  # 记录当前的stack
+```
+
+## [ ] Custom Python Interpreters
+
+33. ## Python Language Services
     2. ast
     `ast.literal_eval`: "savely evalute an expression node or a string containing a Python literal or container display."
     3. [ ] to be continued
@@ -385,6 +406,7 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 处理git用
 * 基础代码
 
+    ```
     sudo pip3 install gitpython
     from git import Repo
     repo = Repo()
@@ -393,6 +415,7 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 
     for commit in repo.iter_commits(max_count=10):
         print(commit.hexsha, commit.message, commit.author.name, )
+    ```
 
 
 ## [python-docx](https://python-docx.readthedocs.io/en/latest/index.html)
