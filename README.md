@@ -167,9 +167,22 @@ with A():
 
 ### [collections](./collections.md)
 
-### 其他
-4. [collections.abc](./collections.md#collections.abc)
-5. [ ] heapq: *heap queque algorithm*
+### [collections.abc](./collections.md#collections.abc)
+### [ ] heapq: *heap queque algorithm*
+
+### [bisect](https://docs.python.org/3/library/bisect.html)
+通过二分法来查找list或者插入数据
+```
+bisect.insort(list, item)  # 把x插入list并保持顺序
+bisect.bisect(list, item)  # 找到可以插入item的位置(最右侧)
+# 查看是否存在
+def index(a, x):
+    i = bisect_left(a, x)
+    if i != len(a) and a[i] == x:
+        return i
+    raise ValueError
+```
+
 * [ ] ...
 10. copy  
 copy.copy(x): return a shallow copy of x
