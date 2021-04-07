@@ -205,20 +205,23 @@ math.floor(x) 小于等于x的最大的整数, 使用 __floor__ 方法，可以�
 4. [decimal](https://docs.python.org/3/library/decimal.html)
 ```
 ```
-5. [fractions](https://docs.python.org/2/library/fractions.html#fractions.Fraction)
+5. [fractions](
+https://docs.python.org/3.8/library/fractions.html#fractions.Fraction)
 ```
     from fractions import Fraction
     f = Fraction(1,3)
     print("1/3 = %d/%d" % (f.numerator, f.denominator))
 ```
-6. random — Generate pseudo-random numbers
+6. [random](https://docs.python.org/3.8/library/random.html)
+Generate pseudo-random numbers
     * random.choice(list)  # choose one value from list
+    * random.choices(list, k=20)  # 随机选择20次, 可能重复宣导
     * random.randrange(stop)
     * random.randrange(start, stop[, step])  
     return value from start(included) to stop(excluded)
     * random.randint(start, stop)  
     return value from start(included) to stop(included)
-    * random.sample(list, k)  # choose k's value from list
+    * random.sample(list, k)  # choose k's value from list, 每个item只被选一次，所以k要小于len(list)
 7. statistics — Mathematical statistics functions 数学分析
     * [statistics.mean](https://docs.python.org/3/library/statistics.html#statistics.mean)
     * [statistics.stdev](https://docs.python.org/3/library/statistics.html#statistics.stdev)
