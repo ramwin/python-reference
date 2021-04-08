@@ -243,8 +243,7 @@ Generate pseudo-random numbers
 
 ### functools: 对于函数和可调用对象的执行操作
 ### [ ] operator
-
-11. ## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
+## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
     ### [pathlib](./library_reference/pathlib.md)
     操作目录,路径的功能
     2. [os.path](library_reference/os.md)
@@ -287,13 +286,12 @@ Generate pseudo-random numbers
 ## Concurrent Execution
 ### [Threading](https://docs.python.org/3/library/threading.html)
 * [测试2个thread的变量](./test/test_thread_local.py)
-```
-from threading import Thread
-s1 = Thread(function, args=[], kwargs={})
-s2 = Thread(function2, args=[], kwargs={})
-s1.start()
-s2.start()
-```
+
+    from threading import Thread
+    s1 = Thread(function, args=[], kwargs={})
+    s2 = Thread(function2, args=[], kwargs={})
+    s1.start()
+    s2.start()
 
 ### multiprocessing — Process-based parallelism
 [测试](./multi/poll_test.py)
@@ -309,22 +307,21 @@ with Pool(5) as p:
 ### [ ] concurrent.futures
 
 ### subprocess
-```
-import subprocess
-res = subprocess.run(["ls", "-l"], capture_output=True, encode="utf-8")
-print(res.stdout)
-```
+
+    import subprocess
+    res = subprocess.run(["ls", "-l"], capture_output=True, encode="utf-8")
+    print(res.stdout)
 
 ### [ ] sched
 
 ## contextvars — Context Variables
-19. [ ] Networking and Interprocess Communication
+## Networking and Interprocess Communication
     1. ### [asyncio](./library_reference/asyncio.md) *用来处理协程*
     2. [socket](./library_reference/socket.md) *低级的网络接口*
     8. ### signal
     触发信号，处理reload功能
 
-20. ## Internet Data Handling
+## Internet Data Handling
     2. ### [JSON](./library_reference/json.md)
     6. base64
     ```
@@ -431,6 +428,42 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 
     for commit in repo.iter_commits(max_count=10):
         print(commit.hexsha, commit.message, commit.author.name, )
+    ```
+
+
+## [imapclient](https://github.com/mjs/imapclient)
+* 搜索邮件
+
+    ```
+    client = IMAPClient(host="imap.qq.com")
+    password = input("输入密码")
+    client.login("ramwin@qq.com", password)
+    message_ids = client.search(
+      [u'SINCE', date(2021, 4, 8)],
+    )
+    >>> [393]
+    ```
+
+* 获取邮件
+
+    ```
+    message_id = 393
+    content = client.fetch(message_id, ['FLAGS', 'RFC822'])[393][b'RFC822']
+    ```
+
+* 解析邮件
+
+    ```
+    import mailparser
+    mail = mailparser.parse_from_bytes(content)
+    print(mail.headers['Subject'])
+    print(mail.body)
+    ```
+
+* 设置已读
+
+    ```
+    client.set_flags(messages, imapclient.SEEN)
     ```
 
 
