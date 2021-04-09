@@ -2,7 +2,20 @@
 
 
 ### [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html)
-[示例](../test/unittest示例.py)
+
+
+    import unittest
+
+    class MyTest(unittest.TestCase):
+
+        def test_divide_zero(self):
+            with self.assertRaises(ZeroDivisionError):
+                1/0
+                pass
+
+    if __name__ == "__main__":
+        unittest.main()
+
 * [assets methods](https://docs.python.org/3/library/unittest.html#unittest.TestCase.debug)  
     * assert**Equal**, assertNotEqual, 
     * assert**True**, assertFalse, 
