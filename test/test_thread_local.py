@@ -17,7 +17,7 @@ def print_local(*args, **kwargs):
     time.sleep(random.random() * 10)
     print("sleep结束")
     if not hasattr(_thread_locals, "cnt"):
-        print("线程没有 cnt")
+        print(f"线程{thread_id}没有 cnt")
         _thread_locals.cnt = random.randint(100, 200)
     print(f"当前cnt: {_thread_locals.cnt}")
     _thread_locals.cnt += 1

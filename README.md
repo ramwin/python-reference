@@ -244,19 +244,23 @@ Generate pseudo-random numbers
 ### functools: 对于函数和可调用对象的执行操作
 ### [ ] operator
 ## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
+
     ### [pathlib](./library_reference/pathlib.md)
     操作目录,路径的功能
+
     2. [os.path](library_reference/os.md)
     6. [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
-        ```
+
         import tempfile
         fp = tempfile.TemporaryFile(mode='w+b', encoding=None)
         fp.write(b'Hello world!')
-        ```
 
 12. [ ] Data Persistence
+
     * ### [pickle](https://docs.python.org/3/library/pickle.html) *把python的对象序列化成字符串*
+
 13. [ ] Data Compression and Archiving
+
     * [zipfile](./zip.md) *处理zip压缩包*
 14. File Formats
 [官网](https://docs.python.org/3/library/fileformats.html)
@@ -280,18 +284,27 @@ Generate pseudo-random numbers
 4. [argparse](./library_reference/argparse.md)
 这个用来解析python的命令
 5. [ ] getopt
-6. ### [logging日志处理](./logging/README.md)
+
+### [logging日志处理](./logging/README.md)
 9. [ ] to be continued
 
 ## Concurrent Execution
-### [Threading](https://docs.python.org/3/library/threading.html)
-* [测试2个thread的变量](./test/test_thread_local.py)
+
+### 线程 [Threading](https://docs.python.org/3/library/threading.html)
+
 
     from threading import Thread
     s1 = Thread(function, args=[], kwargs={})
     s2 = Thread(function2, args=[], kwargs={})
     s1.start()
     s2.start()
+
+* Trhead-Local Data:
+使用`treading.local()`可以获取本线程的变量。 这个变量在几个线程内不想通
+
+
+    * [测试2个thread的变量](./test/test_thread_local.py)
+
 
 ### multiprocessing — Process-based parallelism
 [测试](./multi/poll_test.py)
@@ -316,28 +329,32 @@ with Pool(5) as p:
 
 ## contextvars — Context Variables
 ## Networking and Interprocess Communication
-    1. ### [asyncio](./library_reference/asyncio.md) *用来处理协程*
-    2. [socket](./library_reference/socket.md) *低级的网络接口*
-    8. ### signal
-    触发信号，处理reload功能
+
+### [asyncio](./library_reference/asyncio.md) *用来处理协程*
+[socket](./library_reference/socket.md) *低级的网络接口*
+### 8. signal
+触发信号，处理reload功能
 
 ## Internet Data Handling
-    2. ### [JSON](./library_reference/json.md)
-    6. base64
+
+### [JSON](./library_reference/json.md)
+
+6. base64
+```
+b = base64.encodebytes('我'.encode('utf8')) # 只有二进制才能encode,结果还是bytes
+b = base64.encodestring('我'.encode('utf8')) # 查了源码，果然这个是为了兼容python2的语法。以后避免使用这个方法
+b = base64.encodestring('我')   # python2里面的str就是二进制,结果是str(仍然是二进制)
+```
+7. [ ] binhex
+8. [binascii](https://docs.python.org/3/library/binascii.html)
+    * unhexlify(a) 把十六进制的字符串变成二进制数据
     ```
-    b = base64.encodebytes('我'.encode('utf8')) # 只有二进制才能encode,结果还是bytes
-    b = base64.encodestring('我'.encode('utf8')) # 查了源码，果然这个是为了兼容python2的语法。以后避免使用这个方法
-    b = base64.encodestring('我')   # python2里面的str就是二进制,结果是str(仍然是二进制)
+    a = 'b4447f6670a'
+    binascii.unhexlify(a)
+    >>> b'\xb4G\xf6g\n'
     ```
-    7. [ ] binhex
-    8. [binascii](https://docs.python.org/3/library/binascii.html)
-        * unhexlify(a) 把十六进制的字符串变成二进制数据
-        ```
-        a = 'b4447f6670a'
-        binascii.unhexlify(a)
-        >>> b'\xb4G\xf6g\n'
-        ```
-    * [ ] to be continued
+
+* [ ] to be continued
 21. [ ] Structed Markup Processing Tools
 22. ## Internet Protocols and Support
     * [ ] poplib
