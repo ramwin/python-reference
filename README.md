@@ -245,19 +245,20 @@ Generate pseudo-random numbers
 ### [ ] operator
 ## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
 
-    ### [pathlib](./library_reference/pathlib.md)
-    操作目录,路径的功能
+### [pathlib](./library_reference/pathlib.md)
+操作目录,路径的功能
 
-    2. [os.path](library_reference/os.md)
-    6. [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
+2. [os.path](library_reference/os.md)
+6. [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
 
-        import tempfile
-        fp = tempfile.TemporaryFile(mode='w+b', encoding=None)
-        fp.write(b'Hello world!')
 
-12. [ ] Data Persistence
+    import tempfile
+    fp = tempfile.TemporaryFile(mode='w+b', encoding=None)
+    fp.write(b'Hello world!')
 
-    * ### [pickle](https://docs.python.org/3/library/pickle.html) *把python的对象序列化成字符串*
+## Data Persistence
+
+### [pickle](https://docs.python.org/3/library/pickle.html) *把python的对象序列化成字符串*
 
 13. [ ] Data Compression and Archiving
 
@@ -580,7 +581,7 @@ images = convert_from_path(pdf_path)
 
 [测试代码](./other_useful_library/pdfconvert.py)
 * [pdfminer](https://github.com/euske/pdfminer) *解析pdf的包，好用*
-* [peewee](./peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
+* [peewee](./other_useful_library/peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
 * [pillow](./pillow.md)
 * [pip](https://pip.pypa.io/en/stable/user_guide/#config-file) *快速安装包*  
 * pip *快速安装包*  
