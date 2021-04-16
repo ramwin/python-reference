@@ -437,7 +437,7 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 处理git用
 * 基础代码
 
-    ```
+
     sudo pip3 install gitpython
     from git import Repo
     repo = Repo()
@@ -446,7 +446,13 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 
     for commit in repo.iter_commits(max_count=10):
         print(commit.hexsha, commit.message, commit.author.name, )
-    ```
+
+* 运行git命令
+
+
+    import git
+    cmd = git.cmd.Git()
+    cmd.execute('git lfs ls-files -l')
 
 
 ## [imapclient](https://github.com/mjs/imapclient)
