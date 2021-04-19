@@ -14,27 +14,27 @@ import redis
 ```
 
 # 单独链接
-r = redis.StrictRedis(db=0)
+
+    r = redis.StrictRedis(db=0)
 
 # 连接池
-pool = redis.ConnectionPool(host='localhost', port=6379, db=0)
-r = redis.StrictRedis(connection_pool=pool, decode_responses=True)
 
-r.get('foo')  # 如果key不存在，返回None
-r.set('foo', 'bar', ex=3600)  # 3600秒后过期。传入string也可以
+    pool = redis.ConnectionPool(host='localhost', port=6379, db=0)
+    r = redis.StrictRedis(connection_pool=pool, decode_responses=True)
 
-r.delete(key)   # 删除key，存在就是返回1, 否则返回0
+    r.get('foo')  # 如果key不存在，返回None
+    r.set('foo', 'bar', ex=3600)  # 3600秒后过期。传入string也可以
 
-r.hset('dict', 'key', 'value')
-r.hdel('dict', 'key')  # 存在就返回1, 否则返回0
-```
+    r.delete(key)   # 删除key，存在就是返回1, 否则返回0
+
+    r.hset('dict', 'key', 'value')
+    r.hdel('dict', 'key')  # 存在就返回1, 否则返回0
 
 # 链接
-```
+
 # 普通链接
-```
-r = redis.StrictRedis(host="localhost", port=6379, db=0, password=None)  # 如果服务器中断了或者无法链接 redis.exceptions.ConnectionError 连接池一样会报错。二者redis可以连接时会恢复
-```
+    r = redis.StrictRedis(host="localhost", port=6379, db=0, password=None)  # 如果服务器中断了或者无法链接 redis.exceptions.ConnectionError 连接池一样会报错。二者redis可以连接时会恢复
+
 * `decode_responses`: 对数据进行解析，这样就不再是utf8的二进制了
 
 # list
