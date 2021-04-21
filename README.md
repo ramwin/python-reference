@@ -407,7 +407,7 @@ fcntl.flock(f, fcntl.LOCK_UN)  # 执行完毕后记得unlock
 fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 ```
 
-# Other Useful Library
+# 其他有用的包 Other Useful Library
 * beautifulsoup4 *用来解析html文件*
 [官网](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html#id5)
     * 安装: `pip3 install beautifulsoup4`
@@ -574,7 +574,7 @@ a.update([5, 1, 4]) // OrderedSet([3, 5, 1, 4])
 a.indexof(3)  // 0
 ```
 
-## [openpyxl](./openpyxl.md) *处理excel*
+## [openpyxl](./other_useful_library/openpyxl.md) *处理excel*
 
 ## [pandas](./other_useful_library/pandas.md)
 

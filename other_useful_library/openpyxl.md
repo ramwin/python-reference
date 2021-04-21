@@ -1,14 +1,17 @@
-#### Xiang Wang @ 2017-05-09 11:10:45
+**Xiang Wang @ 2017-05-09 11:10:45**
 
 # 基础
 * [官方教程](https://openpyxl.readthedocs.io/)
+
 * 安装
-```
+
+
     pip install openpyxl
     pip install pillow  # 如果你需要插入图片
-```
+
 * 读取数据
-```
+
+
     from openpyxl import Workbook
     from openpyxl import load_workbook
     wb = load_workbook(<filename>)
@@ -16,18 +19,36 @@
     for row in ws.rows:
         for cell in row:
             print(cell.value)
-```
 
 * 写入数据
-```
+
+
     ws['A4'] = 4
     ws.cell(row=1, column=1, value=1)  # 因为excel是从1开始的，所以这里也是从1开始
-```
+
+
+# Workbook
+* 读取workbook
+
+
+    load_workbook(filename, data_only=True)  # data_only会把公式变成value
+
+
+* 获取sheet, 操作sheet
+
+
+    wb = load_workbook(filename)
+    wb.sheetnames
+    wb['其他sheetname']  # 获取sheet, 操作sheet
+    wb.active = wb["another sheet"]  # 修改激活的sheet
+
+
 
 # Simple Usage
 
 ## [Merge Cells](https://openpyxl.readthedocs.io/en/stable/usage.html#merge-unmerge-cells)
 When you merge cells the column and row number starts from 1
+
 ```
 >>> from openpyxl.workbook import Workbook
 >>>
