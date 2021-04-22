@@ -1,7 +1,8 @@
 **Xiang Wang @ 2017-05-19 15:22:17**
 
-### [python3官网教程](https://docs.python.org/3.6/library/urllib.parse.html)
 #### 基础
+[python3官网教程](https://docs.python.org/3.6/library/urllib.parse.html)
+
 * 基础
 ```
 from urllib.parse import urlencode, urlparse, unquote  #python3
@@ -98,3 +99,9 @@ o = urlparse('https://www.ramwin.com/testrest/text/?text=qwer')
     >>> urlparse(url).query
     'e=1508844931&token=I0J8v_OINiV1arysiBZn9oyxoQH2bt5q51BjuMnW:fL46s4ff_8wiNFm-QxWDT6b6B3U='
 ```
+
+#### URL Quoting
+
+    from urllib.parse import quote
+    quote('=')
+    >>> '%3D'

@@ -340,12 +340,21 @@ with Pool(5) as p:
 
 ### [JSON](./library_reference/json.md)
 
-6. base64
-```
-b = base64.encodebytes('我'.encode('utf8')) # 只有二进制才能encode,结果还是bytes
-b = base64.encodestring('我'.encode('utf8')) # 查了源码，果然这个是为了兼容python2的语法。以后避免使用这个方法
-b = base64.encodestring('我')   # python2里面的str就是二进制,结果是str(仍然是二进制)
-```
+### [base64][base64]
+原理, [RFC 3548](https://tools.ietf.org/html/rfc3548.html#section-3)
+
+    '  '  b'00100000 00100000'
+    按照6个比特来分割 001000 000010 0000[补充00]
+                      I      C      A=
+    对比 0-25 A-Z 26-51 a-z 52-61 0-9
+    然后每76个字符加一个换行，最后加一个换行
+    base64.encodebytes(b'  ') == b'ICA=\n'
+
+
+    b = base64.encodebytes('我'.encode('utf8')) # 只有二进制才能encode,结果还是bytes
+    b = base64.encodestring('我'.encode('utf8')) # 查了源码，果然这个是为了兼容python2的语法。以后避免使用这个方法
+    b = base64.encodestring('我')   # python2里面的str就是二进制,结果是str(仍然是二进制)
+
 7. [ ] binhex
 8. [binascii](https://docs.python.org/3/library/binascii.html)
     * unhexlify(a) 把十六进制的字符串变成二进制数据
@@ -723,3 +732,4 @@ python的解释器在执行代码的时候，有个GIL锁，保证同一时间�
 
 
 [library-reference]: https://docs.python.org/3/library/index.html
+[base64]: https://docs.python.org/3/library/base64.html
