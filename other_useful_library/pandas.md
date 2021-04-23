@@ -69,3 +69,18 @@ df = pandas.DataFrame({"col1": [1,2,], "col2": [3,4], "col3": [5,6]})
 df.shape
 >>> (2, 3)
 ```
+
+#### [`to_dict`][to_dict]
+返回字典
+
+    df.to_dict(orient="index")
+    >>> {
+      "张三": {
+        "年龄": 25,
+        "身高": 170,
+      }
+    }
+
+
+
+[to_dict]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_dict.html
