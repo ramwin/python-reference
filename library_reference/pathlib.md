@@ -48,3 +48,11 @@ cache_path = dirpath.join("运行缓存.json")
 * suffixes: 返回后缀名列表
 * unlink: 删除文件或者链接
 * write_text: 写入文字然后关闭
+
+#### methods
+* stat()  
+返回文件状态
+
+
+    p.stat().st_size  # 文件字节大小
+    p.stat().st_ctime st_mtime  # 创建，修改的时间戳
