@@ -66,11 +66,20 @@ for的功能就是调用object的`__iter__`函数
 * [Exception报错](./exception.md)
 [官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
 
-## Expressions
-* ### [magic method魔法方法](./magic_methods/README.md)
-* Evaluation order 执行顺序
+## 6. Expressions
+### [magic method魔法方法](./magic_methods/README.md)
+* [slice](https://docs.python.org/3/reference/expressions.html#expression-lists)
+
+
+    class A:
+
+        def __getitem__(self, sli):
+            sli.start, sli.stop, sli.step  # A()[start:stop:step]
+
+
+### Evaluation order 执行顺序
 [官网](https://docs.python.org/3/reference/expressions.html#evaluation-order)
-```
+
     ()  # 括号内
     **  # 指数
     +x, -x  # 负数
@@ -78,7 +87,6 @@ for的功能就是调用object的`__iter__`函数
     not x  #
     and  #
     or  # and 和 or不是同样的哦。
-```
 
 ## Simple statements 简单语句
 11. [import机制](http://www.jianshu.com/p/b963782f59e9) [import文档](https://docs.python.org/3/reference/simple_stmts.html#the-import-statement)
