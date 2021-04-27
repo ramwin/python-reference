@@ -320,10 +320,10 @@ with Pool(5) as p:
 
 ### [ ] concurrent.futures
 
-### subprocess
+### [subprocess][subprocess]
 
     import subprocess
-    res = subprocess.run(["ls", "-l"], capture_output=True, encode="utf-8")
+    res = subprocess.run(["ls", "-l"], capture_output=True, encode="utf-8", check=True)
     print(res.stdout)
 
 ### [ ] sched
@@ -733,3 +733,4 @@ python的解释器在执行代码的时候，有个GIL锁，保证同一时间�
 
 [library-reference]: https://docs.python.org/3/library/index.html
 [base64]: https://docs.python.org/3/library/base64.html
+[subprocess]: https://docs.python.org/3/library/subprocess.html
