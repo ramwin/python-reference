@@ -9,6 +9,7 @@
     pip install openpyxl
     pip install pillow  # 如果你需要插入图片
 
+
 * 读取数据
 
 
@@ -19,6 +20,7 @@
     for row in ws.rows:
         for cell in row:
             print(cell.value)
+
 
 * 写入数据
 
