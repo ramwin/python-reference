@@ -268,9 +268,23 @@ Generate pseudo-random numbers
 
 ### [pickle](https://docs.python.org/3/library/pickle.html) *把python的对象序列化成字符串*
 
-13. [ ] Data Compression and Archiving
+## Data Compression and Archiving
+* bz2
 
-    * [zipfile](./zip.md) *处理zip压缩包*
+
+    import bz2
+    bz2.compress(b'11111' * 1000)
+    >>> b'BZh91....'
+    bz2.decompress(b'BZh91...')
+    >>> b'11111...'
+    f = bz2.open("myfiles.bz2", "bb")
+    f.read()
+    f = bz2.open("myfiles.bz2", "wb")
+    f.write(data)
+
+
+* [zipfile](./zip.md) *处理zip压缩包*
+
 14. File Formats
 [官网](https://docs.python.org/3/library/fileformats.html)
     1. ### [csv](./csv.md)
