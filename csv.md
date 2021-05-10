@@ -5,29 +5,29 @@
 
 #### Module Contents
 
-#### [ ] Dialects and Formatting Parameters
+#### Dialects and Formatting Parameters
 
 #### csv.DictReader
-```python
-file = open('filename.csv')
-reader = csv.DictReader(file)
-reader.fieldnames
->>> ['number', 'name', 'tel']
-for row in reader:
-    print(row) >>> {'tel': '', 'name': 'company', 'number': 'No. 1'}
-```
+
+    file = open('filename.csv')
+    reader = csv.DictReader(file)
+    reader.fieldnames
+    >>> ['number', 'name', 'tel']
+    for row in reader:
+        print(row) >>> {'tel': '', 'name': 'company', 'number': 'No. 1'}
 
 #### [dictwriter](https://docs.python.org/3/library/csv.html#csv.DictWriter)
 * example
-```
-import csv
-with open('names.csv', 'w') as csvfile:
-    fieldnames = ['first_name', 'last_name']
-    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-    writer.writeheader()
-    writer.writerow(<dict>)
-    writer.writerows([<dict1>, <dict2>])
-```
+
+    import csv
+    with open('names.csv', 'w') as csvfile:  # 也可以用a模式，继续写入。但是要注意fieldnames需要务必顺序正确
+        fieldnames = ['first_name', 'last_name']
+        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+        writer.writeheader()
+        writer.writerow(<dict>)
+        writer.writerows([<dict1>, <dict2>])
+
+
 * `csv.DictWriter`
     * extrasaction = 'raise' | 'ignore' raise ValueError or not if there is another keys in `<dict>` data
     * delimiter=',' the delimiter between columns

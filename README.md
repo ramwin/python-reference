@@ -145,7 +145,7 @@ with A():
     * divmod
     * enumerate
     ```
-    enumerate(['a','b','c'])  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象
+    enumerate(['a','b','c'], start=1)  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象, 默认从0开始
     ```
     * [ ] locals
     * ### [map(function, iterable)](https://docs.python.org/3/library/functions.html#map)
@@ -269,7 +269,7 @@ Generate pseudo-random numbers
 ### [pickle](https://docs.python.org/3/library/pickle.html) *把python的对象序列化成字符串*
 
 ## Data Compression and Archiving
-* bz2
+* [bz2][bz2]
 
 
     import bz2
@@ -756,3 +756,5 @@ python的解释器在执行代码的时候，有个GIL锁，保证同一时间�
 [library-reference]: https://docs.python.org/3/library/index.html
 [base64]: https://docs.python.org/3/library/base64.html
 [subprocess]: https://docs.python.org/3/library/subprocess.html
+[bz2]: https://docs.python.org/3/library/bz2.html#examples-of-usage
+```
