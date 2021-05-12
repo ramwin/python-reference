@@ -34,11 +34,13 @@ glob("**/*.pdf")
 'library'
 ```
 * as_posix(): 返回绝对路径
-* joinpath(str|path): 合并路径
-```
-dirpath = Path("缓存")
-cache_path = dirpath.join("运行缓存.json")
-```
+* joinpath(str|path|paths): 合并一个或者多个路径
+注意，如果一个path开头是 `/`, 那么前面的路径就失效了，直接按照这个path开始计算  
+
+
+    dirpath = Path("缓存")
+    cache_path = dirpath.join("运行缓存", "tmp.json")
+
 * name: 返回文件名
 * suffix: 返回最后一个后缀名
 ```
