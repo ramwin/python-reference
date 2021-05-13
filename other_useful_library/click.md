@@ -24,12 +24,15 @@ if __name__ == '__main__':
 
 # 参数
 * 添加是否`dry_run`  
-这样就可以`python3 run.py --dry-run // python3 run.py -n了`
+这样就可以`python3 run.py --dry-run // python3 run.py -n了`  
+default为False, 传入了才是True, 请不要设置default为True, 这样传入了反而是False, 不方便阅读和理解
 
 
     @click.option("--dry-run", "-n", is_flag=True)
     def test(*args, **kwargs):
         assert isinstance(kwargs["dry_run"], bool)
+        if kwargs["dry_run"]:
+            return
 
 
 * @click.argument('name')  # 参数，最后的参数
