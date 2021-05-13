@@ -264,6 +264,14 @@ Generate pseudo-random numbers
     fp = tempfile.TemporaryFile(mode='w+b', encoding=None)
     fp.write(b'Hello world!')
 
+### [shutil](https://docs.python.org/3/library/shutil.html)
+* rmtree  
+删除文件夹
+
+
+    shutil.rmtree(Path)
+
+
 ## Data Persistence
 
 ### [pickle](https://docs.python.org/3/library/pickle.html) *把python的对象序列化成字符串*
@@ -449,7 +457,7 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
     * [官网](http://docs.celeryproject.org/en/latest/index.html)
     * [github在线链接](https://github.com/ramwin/linux-reference#celery)
     * [本地linux-reference链接](../linux-reference/README.md#celery)
-* [click](./other_useful_library/click.md) *用python写shell命令*
+## [click](./other_useful_library/click.md) *用python写shell命令command*
 ## [diff-match-patch](https://github.com/google/diff-match-patch)
 用来比较文字的不同
 * 用法
