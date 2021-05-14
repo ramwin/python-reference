@@ -61,12 +61,19 @@ df['姓名'].dropna().iteritems()
 
     del df[attribute]  # 删除列
 
+* apply: 应用函数
+
+
+    df['field'] = df['field'].apply(lambda x: x if x != '0.000000' else x)
+
+
 * columns: 返回字段列表`pandas.core.indexes.base.Index`
 * iterrows()
-```
-for index, row in df.iterrows():
-    print(row.客户名称)
-```
+
+
+    for index, row in df.iterrows():
+        print(row.客户名称)
+
 * shape:
 返回DataFrame的尺寸
 
