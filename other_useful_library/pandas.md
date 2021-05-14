@@ -56,6 +56,11 @@ df['姓名'].dropna().iteritems()
 ```
 
 ### [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
+* 基础操作
+
+
+    del df[attribute]  # 删除列
+
 * columns: 返回字段列表`pandas.core.indexes.base.Index`
 * iterrows()
 ```
@@ -64,11 +69,22 @@ for index, row in df.iterrows():
 ```
 * shape:
 返回DataFrame的尺寸
-```
-df = pandas.DataFrame({"col1": [1,2,], "col2": [3,4], "col3": [5,6]})
-df.shape
->>> (2, 3)
-```
+
+
+    df = pandas.DataFrame({"col1": [1,2,], "col2": [3,4], "col3": [5,6]})
+    df.shape
+    >>> (2, 3)
+
+* to_csv
+保存到csv文件, 可以直接 `df.to_csv(name.csv.gz)` 变成压缩文件
+
+
+* drop  
+删除列
+
+
+    new_df = df.drop(columns=['company'])
+
 
 #### [`to_dict`][to_dict]
 返回字典
