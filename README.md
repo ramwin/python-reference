@@ -330,11 +330,13 @@ Generate pseudo-random numbers
     s1.start()
     s2.start()
 
-* Trhead-Local Data:
-使用`treading.local()`可以获取本线程的变量。 这个变量在几个线程内不想通
+* `threading.get_native_id()`
+获取当前线程的id  
 
 
-    * [测试2个thread的变量](./test/test_thread_local.py)
+* Trhead-Local Data:  
+使用`treading.local()`可以获取本线程的变量。 这个变量在几个线程内不想通  
+[测试2个thread的变量](./test/test_thread_local.py)
 
 
 ### multiprocessing — Process-based parallelism
@@ -447,7 +449,16 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 ```
 
 # 其他有用的包 Other Useful Library
-* beautifulsoup4 *用来解析html文件*
+## 7z
+[官网](https://github.com/miurahr/py7zr)
+
+
+    import py7zr
+    archive = py7zr.SevenZipFile('sample.7z', mode='r')
+    archive.extractall(path='/tmp')
+
+
+## beautifulsoup4 *用来解析html文件*
 [官网](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html#id5)
     * 安装: `pip3 install beautifulsoup4`
     * [文档整理](./other_useful_library/beautifulsoup.md)
@@ -457,7 +468,9 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
     * [官网](http://docs.celeryproject.org/en/latest/index.html)
     * [github在线链接](https://github.com/ramwin/linux-reference#celery)
     * [本地linux-reference链接](../linux-reference/README.md#celery)
+
 ## [click](./other_useful_library/click.md) *用python写shell命令command*
+
 ## [diff-match-patch](https://github.com/google/diff-match-patch)
 用来比较文字的不同
 * 用法
