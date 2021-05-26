@@ -2,10 +2,22 @@
 [官方文档](https://docs.python.org/3/library/datetime.html)
 
 #### datetime
+
+##### [Instance methods 实例方法](https://docs.python.org/3/library/datetime.html#datetime.datetime.date)
+* datetime.date(): 返回时间的日期  
+注意如果时区切换了，返回的结果是对应时区的日期，所以会变化  
+
+##### Instance attributes
+* datetime.year
+* datetime.month
+* datetime.day
+* datetime.hour
+
 ##### combine
 ```
 datetime.combine(date, time, tzinfo=self.tzinfo)
 ```
+
 ##### [formatting格式化](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior)
 * [参考代码](./script/time时间.py)
 * %w: weekday，0周日, 6是周六
@@ -34,6 +46,7 @@ time.localtime()        #这个比较好,当地时间
 datetime.datetime.fromtimestamp(integer)
 ```
 ##### datetime.date
+
 * 参数
 * 方法
     * weekday: monday ==0; sunday ==6

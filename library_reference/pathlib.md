@@ -52,6 +52,8 @@ glob("**/*.pdf")
 * write_text: 写入文字然后关闭
 
 #### methods
+* `is_dir()`: `返回是否是文件`
+* `is_symlink()`: `返回是否是链接`
 * stat()  
 返回文件状态
 

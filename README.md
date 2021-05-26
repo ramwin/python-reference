@@ -439,7 +439,7 @@ stack = traceback.format_stack()  # 记录当前的stack
     3. [ ] to be continued
 
 ## Unix Specific Services
-### fcntl
+### [fcntl](https://docs.python.org/3/library/fcntl.html)
 * fcntl.flock
 ```
 f = open("name", "w")
@@ -484,6 +484,17 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
     ```
 * 效果  
 <del style="background:#ffe6e6;">1</del><ins style="background:#e6ffe6;">2</ins><span>23</span>
+
+## [filelock](https://github.com/benediktschmitt/py-filelock)
+
+
+    from filelock import Timeout, FileLock
+    lock = FileLock(path)
+    try:
+        lock.acquire(timeout=0)
+    except Timeout:
+        pass
+
 
 ## [git](https://gitpython.readthedocs.io/en/stable/tutorial.html)
 处理git用
