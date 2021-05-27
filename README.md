@@ -271,6 +271,12 @@ Generate pseudo-random numbers
 
     shutil.rmtree(Path)
 
+* 复制文件夹
+    * `dirs_exist_ok=False`
+
+
+    shutil.copytree(src, dst)
+
 
 ## Data Persistence
 
@@ -361,12 +367,29 @@ with Pool(5) as p:
 ### [ ] sched
 
 ## contextvars — Context Variables
-## Networking and Interprocess Communication
+## Networking and Interprocess Communication 网络和进程间通信
 
 ### [asyncio](./library_reference/asyncio.md) *用来处理协程*
 [socket](./library_reference/socket.md) *低级的网络接口*
-### 8. signal
-触发信号，处理reload功能
+### [signal](https://docs.python.org/zh-cn/3/library/signal.html)
+* 使用触发信号，处理ctrl+c的时候，保证循环执行完毕
+
+    
+    stop = False
+
+
+    def handler(signalnum, handler):
+        global stop
+        stop = True
+
+
+    def main():
+        signal.signal(signal.SIGINT, handler)
+        global stop
+        while not stop:
+            time.sleep(0.1)
+        print("stop拉")
+
 
 ## Internet Data Handling
 
