@@ -9,6 +9,7 @@
 
 #### csv.DictReader
 
+
     file = open('filename.csv')
     reader = csv.DictReader(file)
     reader.fieldnames
@@ -16,8 +17,10 @@
     for row in reader:
         print(row) >>> {'tel': '', 'name': 'company', 'number': 'No. 1'}
 
+
 #### [dictwriter](https://docs.python.org/3/library/csv.html#csv.DictWriter)
 * example
+
 
     import csv
     with open('names.csv', 'w') as csvfile:  # 也可以用a模式，继续写入。但是要注意fieldnames需要务必顺序正确

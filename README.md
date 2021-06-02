@@ -639,11 +639,11 @@ document.save("通知.docx")
     ```
 * [mongoengine](./other_useful_library/mongoengine.md) *把mongodb当作sql用。那你为什么不直接用mysql啊*
 * [moviewpy](https://github.com/Zulko/moviepy) *操作mp4的包*
-```
-from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
-# 截取前5秒的mp4文件
-ffmpeg_extract_subclip("movie.mp4", 0, 5, targetname="test.mp4")
-```
+
+
+    from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
+    # 截取前5秒的mp4文件
+    ffmpeg_extract_subclip("movie.mp4", 0, 5, targetname="test.mp4")
 
 ## [ordered-set](https://github.com/LuminosoInsight/ordered-set)
 有顺序的set, 实现原理其实就是用一个class内部保存一个list和一个set.  
@@ -688,7 +688,8 @@ sudo pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple  
 export LC_ALL="en_US.UTF-8"  # 出现乱码
 export LC_CTYPE="en_US.UTF-8"
 ```
-* ## [pycharm]
+
+## [pycharm]
     * 快捷键:
         * 界面工具查看
             * 命令行: `alt+F12`
@@ -701,10 +702,10 @@ export LC_CTYPE="en_US.UTF-8"
         * 跳转
             * `ctrl+shift+backspace`: 查看上期编辑的地方
     * ## [django支持](https://www.jetbrains.com/help/pycharm/running-tasks-of-manage-py-utility.html)
-* ## [pycrypto]
+## [pycrypto]
     * 安装:
         * windows: 先去[下载visual c++ 9.0](http://aka.ms/vcpython27)，然后再 `pip install pycrypto`
-* ## [pydub](https://github.com/jiaaro/pydub) *编辑mp3的包*
+## [pydub](https://github.com/jiaaro/pydub) *编辑mp3的包*
     * 安装依赖: `apt install libav-tools ffmpeg`
     * [示例](./other_useful_library/mp4tomp3.py)
     * 基础:
@@ -715,11 +716,11 @@ export LC_CTYPE="en_US.UTF-8"
     song[10*1000: 40*1000].export('target.mp3')
     # 把一个视频切割成很多个小的mp3 ../other_useful_library/mp4tomp3.py
     ```
-* ## [PyPDF2](https://pythonhosted.org/PyPDF2/) *对中文支持不友好*
+## [PyPDF2](https://pythonhosted.org/PyPDF2/) *对中文支持不友好*
 * pyperclip *控制系统剪切板*
     pyperclip.copy('ew') # 把ew放入剪切板
-* ## [pysrt](./other_useful_library/README.md#pysrt)  *控制srt字幕*
-* ## [pytz](https://pythonhosted.org/pytz/)  *时区*
+## [pysrt](./other_useful_library/README.md#pysrt)  *控制srt字幕*
+## [pytz](https://pythonhosted.org/pytz/)  *时区*
     ```
     from datetime import datetime
     from pytz import timezone
@@ -731,13 +732,13 @@ export LC_CTYPE="en_US.UTF-8"
     print(loc_datetime.strftime(fmt))
     utc_time = loc_datetime.astimezone(utc)
     ```
-* ## [PyWinMouse](https://pypi.org/project/PyWinMouse/)  *windows下操作鼠标*
-* ## [qiniu](./qiniu.md)  *七牛的接口*
-* ## [redis](./redis.md) *use redis db*
-* ## [requests](./other_useful_library/requests.md) *发送http请求*
-* ## [rsa](./other_useful_library/rsa.md) *使用rsa加密*
-* ## [six](./other_useful_library/six.md) `python2和python3兼容的库`
-* ## [scrapy](./scrapy/README.md)
+## [PyWinMouse](https://pypi.org/project/PyWinMouse/)  *windows下操作鼠标*
+## [qiniu](./qiniu.md)  *七牛的接口*
+## [redis](./redis.md) *use redis db*
+## [requests](./other_useful_library/requests.md) *发送http请求*
+## [rsa](./other_useful_library/rsa.md) *使用rsa加密*
+## [six](./other_useful_library/six.md) `python2和python3兼容的库`
+## [scrapy](./scrapy/README.md)
 
 ## [sortedsets](https://github.com/tailhook/sortedsets)
 模仿redis的sorted set做的自动排序的set
@@ -753,7 +754,15 @@ export LC_CTYPE="en_US.UTF-8"
 
 
 * ## ~~[srt](http://srt.readthedocs.io/en/latest/api.html)*因为缺少shift功能而改成用pysrt*~~
-* ## [virtualenv](https://virtualenv.pypa.io/en/stable/)
+## [visidata](https://www.visidata.org/docs/rows/)
+查看csv文件
+* [快捷键](https://jsvine.github.io/visidata-cheat-sheet/en/)
+  * | 搜索列来选择行
+  * s 选择行
+  * " 筛选过滤出的结果
+  * _ 适应宽度
+
+## [virtualenv](https://virtualenv.pypa.io/en/stable/)
 ```
 virtualenv --system-site-packages -p /bin/python ENV
 ```
@@ -788,9 +797,7 @@ for i in range(ws.nrows):
     print(ws.row(i)[0])  // first column
 ```
 
-* ## [yapf] *把python的代码格式化*
-## 其他不重要的包
-
+## [yapf] *把python的代码格式化*
 
 # 其他
 * socket.gethostname()    # 获取当前主机的主机名
