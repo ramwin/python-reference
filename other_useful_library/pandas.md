@@ -44,6 +44,12 @@ ParserBase._convert_to_ndarrays()
         conv_f执行
 ```
 
+* `read_csv`  
+[guide](https://pandas.pydata.org/docs/user_guide/io.html#csv-text-files)
+[api](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html)
+    * usecols: 使用那些列
+
+
 ## [API](https://pandas.pydata.org/docs/reference/index.html)
 ### [pandas.core.series.Series](https://pandas.pydata.org/pandas-docs/stable/reference/series.html)
 * iteritems
@@ -81,6 +87,13 @@ df['姓名'].dropna().iteritems()
     df = pandas.DataFrame({"col1": [1,2,], "col2": [3,4], "col3": [5,6]})
     df.shape
     >>> (2, 3)
+
+* `sort_values` 根据一列来排序
+
+
+    df = df.sort_values('datetime')
+    df.sort_values('datetime', inplace=True)
+
 
 * to_csv
 保存到csv文件, 可以直接 `df.to_csv(name.csv.gz)` 变成压缩文件
