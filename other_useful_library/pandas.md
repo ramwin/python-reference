@@ -95,8 +95,9 @@ df['姓名'].dropna().iteritems()
     df.sort_values('datetime', inplace=True)
 
 
-* to_csv
-保存到csv文件, 可以直接 `df.to_csv(name.csv.gz)` 变成压缩文件
+* [to_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_csv.html)
+      * 保存到csv文件, 可以直接 `df.to_csv(name.csv.gz)` 变成压缩文件
+      * columns: 保存哪些字段
 
 
 * drop  
