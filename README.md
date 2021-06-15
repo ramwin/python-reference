@@ -466,7 +466,7 @@ stack = traceback.format_stack()  # 记录当前的stack
 * fcntl.flock
 ```
 f = open("name", "w")
-fcntl.flock(f, fcntl.LOCK_EX)  # 只有一个线程可以获取执行, 其他的会等待
+fcntl.flock(f, fcntl.LOCK_EX)  # 只有一个线程可以获取执行, 其他的会等待, 并且如果f变量失效了，也会释放锁
 fcntl.flock(f, fcntl.LOCK_UN)  # 执行完毕后记得unlock
 fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 ```
@@ -813,6 +813,20 @@ mac=uuid.UUID(int = node).hex[-12:]
 ## 线程
 python的解释器在执行代码的时候，有个GIL锁，保证同一时间只有一个线程执行。所以不能充分利用CPU。但是这不代表不会出现几个线程打乱数据的问题，因为线程的切换是按照python字节码来处理的。`test/test_thread.py` 不会应为有多核CPU而变快。但是`test/test_fork.py`会因为多核而变快
 用kill杀出一个子线程后，会导致进程崩溃
+
+## 性能
+
+1. time.time 来判断是否刷新缓存，1秒能执行753万次
+
+    if time.time() > start :
+        refresh()
+
+
+2. random.random 来判断， 1秒能执行977万次
+
+
+    if random.random() > 0.0000001:
+        refresh()
 
 
 [library-reference]: https://docs.python.org/3/library/index.html

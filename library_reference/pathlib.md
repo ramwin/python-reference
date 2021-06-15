@@ -2,10 +2,11 @@
 
 
 ### [pathlib](https://docs.python.org/3/library/pathlib.html)
-```
-from pathlib import Path
-p = Path('.')
-```
+
+
+    from pathlib import Path
+    p = Path('.')
+
 
 * iterdir(): 返回一个包含子文件的generator
 ```
@@ -54,6 +55,7 @@ glob("**/*.pdf")
 #### methods
 * `is_dir()`: `返回是否是文件`
 * `is_symlink()`: `返回是否是链接`
+* `relative_to`: `返回相对于某个路径的相对路径`
 * stat()  
 返回文件状态
 

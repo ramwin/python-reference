@@ -35,6 +35,7 @@ default为False, 传入了才是True, 请不要设置default为True, 这样传�
             return
 
 
+* @click.option("--core", default=1)  # 根据default的类型，会自动转化
 * @click.argument('name')  # 参数，最后的参数
 * @click.option('--name')  # 使用 --name <value> 的参数
     if_flag=False  # 默认是否为布尔选项参数
