@@ -2,47 +2,58 @@
 
 
 ## [pandas](https://pandas.pydata.org/docs/user_guide/index.html)
-```
-import pandas
-df1 = pandas.DataFrame(
-    {'年龄': [21,22,23,24]},
-    index=pandas.Series(
-        ['a张三', 'b李四', 'c王二', 'd麻子'],
-        name='姓名'
-    ),
-    columns=["年龄"]
-)
-df2 = df1.iloc[0:3]
-df2 = df2.sort_index(ascending=False)
 
->>> df1.loc[df2.index]]['年龄'] == df2['年龄']
-True
 
-index = pandas.Index(data=[], name='name')
-df = pandas.DataFrame(data={'age':[]}, columns=['age'], index=index)
-df.loc['张三'] = {'age': 18}
-```
+    import pandas
+    df1 = pandas.DataFrame(
+        {'年龄': [21,22,23,24]},
+        index=pandas.Series(
+            ['a张三', 'b李四', 'c王二', 'd麻子'],
+            name='姓名'
+        ),
+        columns=["年龄"]
+    )
+    df2 = df1.iloc[0:3]
+    df2 = df2.sort_index(ascending=False)
+
+    >>> df1.loc[df2.index]]['年龄'] == df2['年龄']
+    True
+
+    index = pandas.Index(data=[], name='name')
+    df = pandas.DataFrame(data={'age':[]}, columns=['age'], index=index)
+    df.loc['张三'] = {'age': 18}
+
 
 ### [Indexing and selecting data](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html)
-```
-df.loc["张三"].年龄
-df.loc["张三"]["年龄"]
-```
+
+
+    df.loc["张三"].年龄
+    df.loc["张三"]["年龄"]
+
+
+### where 过滤数据
+
+
+    df.where(df.id > 0)
+    df[df.id > 0)
+
+
 * Set/reset Index
-```
-df2 = df.set_index("ID")
-```
+
+    df2 = df.set_index("ID")
+
 
 ### Input/output
-```
-pandas.read_excel(filename, header=[0, 1], converters={("学校信息", "年级"): str})
-最后converters会进入
-ParserBase._convert_to_ndarrays()
-    for c, values in dct.items():
-        # c = ("学校信息", "年级")
-        conv_f = None if converters is None else converters.get(c, None)
-        conv_f执行
-```
+
+
+    pandas.read_excel(filename, header=[0, 1], converters={("学校信息", "年级"): str})
+    最后converters会进入
+    ParserBase._convert_to_ndarrays()
+        for c, values in dct.items():
+            # c = ("学校信息", "年级")
+            conv_f = None if converters is None else converters.get(c, None)
+            conv_f执行
+
 
 * `read_csv`  
 [guide](https://pandas.pydata.org/docs/user_guide/io.html#csv-text-files)

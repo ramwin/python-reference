@@ -297,6 +297,15 @@ Generate pseudo-random numbers
     f.write(data)
 
 
+* [gzip](https://docs.python.org/3/library/gzip.html)
+
+    import gzip
+    f = gzip.open("~/test.csv.gz")
+    f.write("hedaer\n")
+    f.write("123\n")
+    f.close()
+
+
 * [zipfile](./zip.md) *处理zip压缩包*
 
 14. File Formats
