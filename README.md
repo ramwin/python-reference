@@ -299,8 +299,9 @@ Generate pseudo-random numbers
 
 * [gzip](https://docs.python.org/3/library/gzip.html)
 
+
     import gzip
-    f = gzip.open("~/test.csv.gz")
+    f = gzip.open("~/test.csv.gz", compresslevel=3)
     f.write("hedaer\n")
     f.write("123\n")
     f.close()
