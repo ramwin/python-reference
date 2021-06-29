@@ -43,6 +43,7 @@ glob("**/*.pdf")
     cache_path = dirpath.join("运行缓存", "tmp.json")
 
 * name: 返回文件名
+* rmdir: 删除空目录
 * suffix: 返回最后一个后缀名
 ```
 >>> Path("README.md").suffix
