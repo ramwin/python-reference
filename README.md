@@ -264,6 +264,14 @@ Generate pseudo-random numbers
     fp = tempfile.TemporaryFile(mode='w+b', encoding=None)
     fp.write(b'Hello world!')
 
+### [filecmp 文件、文件夹比较](https://docs.python.org/3/library/filecmp.html)
+推荐使用 [deep-dircmp](https://github.com/mitar/python-deep-dircmp)
+
+    from deep_dircmp import DeepDirCmp
+
+    DeepDirCmp(source, target).get_left_only_recursive()  # 注意，如果一个文件夹额外存在，只会返回文件夹路径，不会再迭代文件夹内部文件
+
+
 ### [shutil](https://docs.python.org/3/library/shutil.html)
 * rmtree  
 删除文件夹
