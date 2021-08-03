@@ -327,7 +327,13 @@ Generate pseudo-random numbers
     5. [ ] plistlib
 
 ## Cryptographic Services
-### hashlib
+### [hashlib](https://docs.python.org/3/library/hashlib.html)
+
+    import hashlib
+    a = hashlib.md5()
+    a.update('string'.encode('utf8'))
+    a.hexdigest()
+    >>> 'b45cffe084dd3d20d928bee85e7b0f21'
 
 ### [ ] hmac
 ### [ ] secrets
@@ -539,6 +545,11 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 
 ## [git](https://gitpython.readthedocs.io/en/stable/tutorial.html)
 处理git用
+* 克隆代码
+
+    from git import Repo
+    Repo.clone_from(url, to_path)
+
 * 基础代码
 
 
@@ -555,6 +566,7 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 
 
     import git
+    repo.git.rebase
     cmd = git.cmd.Git()
     cmd.execute('git lfs ls-files -l')
 
