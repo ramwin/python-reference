@@ -134,8 +134,7 @@ with A():
     ```
     * `__module__` : class的模块
     * `__name__` : class的name
-* [property](./class/property.md) [示例](./class/property.py)
-
+* [property](./library_reference/built_in_functions内置函数.md#property)
 
 # [Library Reference 内置库参考][library-reference]
 1. [x] Introduction
