@@ -1,5 +1,3 @@
-*Xiang Wang @ 2017-02-10 15:30:51*
-
 # 目录
 * [Language Reference 语法](#language-reference)
 * [Library Reference 内置包参考](#library-reference-内置库参考)
@@ -9,25 +7,26 @@
 * [github链接](https://github.com/ramwin/python-reference/)
 
 # pyenv
+
 * 安装
-```
-git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc  # 让系统有pyenv
-echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc  # 让系统能优先读取pyenv的变量
-echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
-pyenv install 3.7.5  # 安装指定版本的系统
-如果下载不下来，可以
-cd .pyenv/cache/
-wget https://cdn.npm.taobao.org/dist/python/3.7.5/Python-3.7.5.tar.xz
-然后在 pyenv install 3.7.5
-然后在你需要设置的目的下创建
-echo "3.7.5" > .python-version
-最后，在path里添加, 这个是每次都校验
-if command -v pyenv 1>/dev/null 2>&1; then  
-  eval "$(pyenv init -)"  
-fi
-实际上，只要运行 eval "$(pyenv init -)"就可以
-```
+
+    git clone https://github.com/pyenv/pyenv.git ~/.pyenv
+    echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc  # 让系统有pyenv
+    echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc  # 让系统能优先读取pyenv的变量
+    echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
+    pyenv install 3.7.5  # 安装指定版本的系统
+    如果下载不下来，可以
+    cd .pyenv/cache/
+    wget https://cdn.npm.taobao.org/dist/python/3.7.5/Python-3.7.5.tar.xz
+    然后在 pyenv install 3.7.5
+    然后在你需要设置的目的下创建
+    echo "3.7.5" > .python-version
+    最后，在path里添加, 这个是每次都校验
+    if command -v pyenv 1>/dev/null 2>&1; then  
+      eval "$(pyenv init -)"  
+    fi
+    实际上，只要运行 eval "$(pyenv init -)"就可以
+
 
 # tutorial
 [官网](https://docs.python.org/3/tutorial/index.html)
@@ -496,6 +495,7 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 
 # 其他有用的包 Other Useful Library
 ## 7z
+
 [官网](https://github.com/miurahr/py7zr)
 
 
@@ -693,18 +693,36 @@ a.indexof(3)  // 0
 
 ## [pandas](./other_useful_library/pandas.md)
 
-* [pdf2image](https://github.com/Belval/pdf2image): *把pdf转化成图片的库*
-```
-from pdf2image import convert_from_path
-convert_from_path(pdf_path, output_folder=path, fmt='png')
-images = convert_from_path(pdf_path)
-```
+## paramiko
+[github](https://github.com/paramiko/paramiko) [文档](https://docs.paramiko.org/)
+处理ssh的包，所以也能当sftp服务或者客户端。
 
+* 示例
+
+    ```python
+    import paramiko
+
+    client = paramiko.client.SSHClient()
+    client.load_system_host_keys()
+    client.connect(
+        hostname="www.ramwin.com", port=22,
+        username="*****", password="******")
+    stdin, stdout, stderr = client.exec_command('pwd')
+    print(stdout.read())
+    ```
+
+## [pdf2image](https://github.com/Belval/pdf2image): *把pdf转化成图片的库*
 [测试代码](./other_useful_library/pdfconvert.py)
-* [pdfminer](https://github.com/euske/pdfminer) *解析pdf的包，好用*
-* [peewee](./other_useful_library/peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
-* [pillow](./pillow.md)
-* [pip](https://pip.pypa.io/en/stable/user_guide/#config-file) *快速安装包*  
+
+    from pdf2image import convert_from_path
+    convert_from_path(pdf_path, output_folder=path, fmt='png')
+    images = convert_from_path(pdf_path)
+
+
+## [pdfminer](https://github.com/euske/pdfminer) *解析pdf的包，好用*
+## [peewee](./other_useful_library/peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
+## [pillow](./pillow.md)
+## [pip](https://pip.pypa.io/en/stable/user_guide/#config-file) *快速安装包*  
 * pip *快速安装包*  
     * [官网](https://pip.pypa.io/en/stable/)
     * [配置文件](https://pip.pypa.io/en/stable/user_guide/#config-file)
