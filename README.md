@@ -476,6 +476,18 @@ log = traceback.format_exc()  # 记录报错的stack
 stack = traceback.format_stack()  # 记录当前的stack
 ```
 
+## Internet Protocols and Support
+
+* ftplib
+
+    ```
+    with FTP() as ftp:
+        ftp.connect(host='localhost', port=2121)
+        ftp.login()
+        ftp.dir()
+    ```
+
+
 ## [ ] Custom Python Interpreters
 
 33. ## Python Language Services
@@ -762,6 +774,12 @@ export LC_CTYPE="en_US.UTF-8"
     song = AudioSegment.from_mp3('origin.mp3')
     song[10*1000: 40*1000].export('target.mp3')
     # 把一个视频切割成很多个小的mp3 ../other_useful_library/mp4tomp3.py
+    ```
+
+## pyftpdlib ftp客户端和服务端
+
+    ```
+    python -m pyftpdlib
     ```
 ## [PyPDF2](https://pythonhosted.org/PyPDF2/) *对中文支持不友好*
 * pyperclip *控制系统剪切板*
