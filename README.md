@@ -110,6 +110,14 @@ with A():
     raise Exception('value')
 ```
 
+### [for 语句](https://docs.python.org/3/reference/compound_stmts.html#the-for-statement)
+* 通过内置变量counter来记录执行的位置，所以remove会导致少执行，insert会导致重复执行
+    ```
+    for i in a:
+        if i == 3: a.remove(i)  # 少执行
+        if i == 3: a.insert(0, 3)  # 多执行
+    ```
+
 ### [函数 function](function.md)
 [官网](https://docs.python.org/3/reference/compound_stmts.html#function-definitions)
 * [decorator装饰器](http://www.cnblogs.com/huxi/archive/2011/03/01/1967600.html)
