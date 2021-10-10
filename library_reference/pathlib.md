@@ -1,6 +1,3 @@
-**Xiang Wang @ 2021-01-06 10:07:52**
-
-
 ### [pathlib](https://docs.python.org/3/library/pathlib.html)
 
 
@@ -24,7 +21,11 @@ sorted(
 glob("*.pdf")
 glob("**/*.pdf")
 ```
-* mkdir(exist_ok=False): 创建目录
+
+#### [mkdir](https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir)
+* `mkdir(mode=511, parents=False, exist_ok=False)`
+创建目录
+
 * stem: 最后的目录(排除后缀)
 ```
 >>> PurePosixPath('my/library.tar.gz').stem
