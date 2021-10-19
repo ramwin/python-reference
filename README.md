@@ -814,6 +814,14 @@ export LC_CTYPE="en_US.UTF-8"
 ## [six](./other_useful_library/six.md) `python2和python3兼容的库`
 ## [scrapy](./scrapy/README.md)
 
+## [sortedcontainers](https://github.com/grantjenks/python-sortedcontainers)
+
+    pip install sortedcontainers
+    from sortedcontainers import SortedList
+    s1 = SortedList()
+    s1.add(0)
+    s1.update([2, 1, 3])
+
 ## [sortedsets](https://github.com/tailhook/sortedsets)
 模仿redis的sorted set做的自动排序的set
 
