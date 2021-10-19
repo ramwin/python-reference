@@ -1,6 +1,3 @@
-**Xiang Wang @ 2020-10-09 19:45:29**
-
-
 ## [pandas](https://pandas.pydata.org/docs/user_guide/index.html)
 
 
@@ -23,6 +20,15 @@
     df = pandas.DataFrame(data={'age':[]}, columns=['age'], index=index)
     df.loc['张三'] = {'age': 18}
 
+
+### [Sorting 排序](https://pandas.pydata.org/docs/user_guide/basics.html#by-values)
+
+    ```
+    # 二分法找到最接近但不大于的数
+    df = pandas.read_csv(<filename>, names=["name, "age"])
+    df.sort_values(by='age', inplace=True)
+    df[df.age <= 20].max()
+    ```
 
 ### [Indexing and selecting data](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html)
 
@@ -55,10 +61,16 @@
             conv_f执行
 
 
-* `read_csv`  
+#### `read_csv`  
 [guide](https://pandas.pydata.org/docs/user_guide/io.html#csv-text-files)
 [api](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html)
+    * header: 数据开始的位置. 默认infer, 当有names, 相当于None, 当没有names, 相当于0
+    ```
+    pandas.read_csv(<filename>, names=['name', 'age'])  # 第一列也是数据
+    pandas.read_csv(<filename>, names=['name', 'age'], header=0)  # 第一列是标题,但是我们强制修改
+    ```
     * usecols: 使用那些列
+    * names: 自定义列名
 
 
 ## [API](https://pandas.pydata.org/docs/reference/index.html)
