@@ -168,8 +168,8 @@ with A():
 ### Warnings
 * DeprecationWarning
 
-6. [Text Processing Services](https://docs.python.org/3/library/text.html)
-    2. ### [re -- Regular expression operations 正则表达式](./re.md)
+## [Text Processing Services](https://docs.python.org/3/library/text.html)
+    2. ### [re -- Regular expression operations 正则表达式 regex](./re.md)
     [test regrex 在线测试](https://regex101.com/#python)
 
 7. [ ] Binary Data Services
