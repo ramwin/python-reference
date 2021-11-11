@@ -392,8 +392,8 @@ with Pool(5) as p:
 ### [subprocess][subprocess]
 
     import subprocess
-    res = subprocess.run(["ls", "-l"], capture_output=True, encode="utf-8", check=True)
-    print(res.stdout)
+    res = subprocess.run(["ls", "-l"], capture_output=True, check=True)
+    print(res.stdout.decode("utf-8"))
 
 ### [ ] sched
 
