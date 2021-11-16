@@ -12,3 +12,4 @@ logging/*log*
 pillow_example/result.png
 *_test.png
 test.log
+test.py

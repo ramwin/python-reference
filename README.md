@@ -379,6 +379,8 @@ Generate pseudo-random numbers
 ### multiprocessing — Process-based parallelism
 [测试](./multi/poll_test.py)
 * Introduction
+p.map返回一个列表
+
 ```
 from multiprocessing import Pool
 def f(x):
