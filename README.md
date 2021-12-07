@@ -6,28 +6,6 @@
 * [python tips 小技巧](http://book.pythontips.com/en/latest/index.html)
 * [github链接](https://github.com/ramwin/python-reference/)
 
-# pyenv
-
-* 安装
-
-    git clone https://github.com/pyenv/pyenv.git ~/.pyenv
-    echo 'export PYENV_ROOT="$HOME/.pyenv"' >> ~/.bashrc  # 让系统有pyenv
-    echo 'export PATH="$PYENV_ROOT/bin:$PATH"' >> ~/.bashrc  # 让系统能优先读取pyenv的变量
-    echo -e 'if command -v pyenv 1>/dev/null 2>&1; then\n  eval "$(pyenv init -)"\nfi' >> ~/.bash_profile
-    pyenv install 3.7.5  # 安装指定版本的系统
-    如果下载不下来，可以
-    cd .pyenv/cache/
-    wget https://cdn.npm.taobao.org/dist/python/3.7.5/Python-3.7.5.tar.xz
-    然后在 pyenv install 3.7.5
-    然后在你需要设置的目的下创建
-    echo "3.7.5" > .python-version
-    最后，在path里添加, 这个是每次都校验
-    if command -v pyenv 1>/dev/null 2>&1; then  
-      eval "$(pyenv init -)"  
-    fi
-    实际上，只要运行 eval "$(pyenv init -)"就可以
-
-
 # tutorial
 [官网](https://docs.python.org/3/tutorial/index.html)
 ## Data Structures 基础类型
@@ -629,15 +607,7 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
     ```
 
 
-## [python-docx](https://python-docx.readthedocs.io/en/latest/index.html)
-```
-f = open("模板.docx", "rb")
-document = Document() or Document(f)
-first_line = document.paragraphs[0]
-first_line.text = "通知"
-document.save("通知.docx")
-```
-* [faker](https://github.com/joke2k/faker)  *use fake to create a lot of name of text*  
+## [faker](https://github.com/joke2k/faker)  *use fake to create a lot of name of text*  
     ```python
     from faker import Faker
     f = Faker('zh_cn')
@@ -650,8 +620,8 @@ document.save("通知.docx")
     $ faker name
     $ faker password
     ```
-* [flake8] *检测python代码是不是满足pep8*
-* [flask](./flask.md) *轻量级http服务器*
+## [flake8] *检测python代码是不是满足pep8*
+## [flask](./flask.md) *轻量级http服务器*
 * [ics](https://pypi.org/project/ics/) *日历，行程 calendar*
 * [ipdb](./other_useful_library/ipdb.md) *断点来检测查看源码和运行状态*
 * [itchat](https://github.com/littlecodersh/ItChat)  *微信机器人*
@@ -668,28 +638,40 @@ document.save("通知.docx")
     kafka_producer = SimpleProducer(kafka_client, async=False)
     kafka_producer.send_messages('test',b'test')
     ```
-* [mysqliclient](https://mysqlclient.readthedocs.io/index.html)  
+## [mysqliclient](https://mysqlclient.readthedocs.io/index.html)  
 操作mysql数据库的包
-    * 安装
-    ```
-    sudo apt-get install python3-dev default-libmysqlclient-dev build-essential
-    sudo pip3 install mysqlclient
-    ```
-    * 运行
-    ```
-        from MySQLdb.connections import Connection
-        db = Connection(db="test")
-        c = db.cursor()
+* 安装
+```
+sudo apt-get install python3-dev default-libmysqlclient-dev build-essential
+sudo pip3 install mysqlclient
+```
+* 运行
+```
+    from MySQLdb.connections import Connection
+    db = Connection(db="test")
+    c = db.cursor()
 
-        res = c.execute("select * from pets");
-        print(c.fetchall())
-        >>> ((1, 'cat'), (2, 'cat'), (3, 'dogs'), (13, 'dog'), (14, 'dog'), (15, 'dog'), (21, 'dog'), (22, 'dog'))
+    res = c.execute("select * from pets");
+    print(c.fetchall())
+    >>> ((1, 'cat'), (2, 'cat'), (3, 'dogs'), (13, 'dog'), (14, 'dog'), (15, 'dog'), (21, 'dog'), (22, 'dog'))
 
-        res = c.execute("insert into pets values (null, 'dog')");
-        # 注意即使没有commit, 数据库id也会自增. 如果一次没有commit, 下次commit时,id就不是连续的了
-        db.commit()
-    ```
-* [mongoengine](./other_useful_library/mongoengine.md) *把mongodb当作sql用。那你为什么不直接用mysql啊*
+    res = c.execute("insert into pets values (null, 'dog')");
+    # 注意即使没有commit, 数据库id也会自增. 如果一次没有commit, 下次commit时,id就不是连续的了
+    db.commit()
+```
+
+## [matplotlib](https://matplotlib.org/stable/tutorials/index)
+画图工具
+
+```python
+imoprt matplotlib.pyplot as plt
+plt.plot([1, 2, 3, 4])  # 默认x轴是0, 1, 2, 3
+plt.plot([2, 3, 4, 5], [2, 2, 3, 4])
+plt.ylabel('some numbers')
+plt.show()
+```
+
+## [mongoengine](./other_useful_library/mongoengine.md) *把mongodb当作sql用。那你为什么不直接用mysql啊*
 * [moviewpy](https://github.com/Zulko/moviepy) *操作mp4的包*
 
 
@@ -787,6 +769,9 @@ export LC_CTYPE="en_US.UTF-8"
     # 把一个视频切割成很多个小的mp3 ../other_useful_library/mp4tomp3.py
     ```
 
+## [pyenv](./other_useful_library/pyenv.md)
+python虚拟化，通过制定python路径，来在服务器安装多个python
+
 ## pyftpdlib ftp客户端和服务端
 
     ```
@@ -795,7 +780,19 @@ export LC_CTYPE="en_US.UTF-8"
 ## [PyPDF2](https://pythonhosted.org/PyPDF2/) *对中文支持不友好*
 * pyperclip *控制系统剪切板*
     pyperclip.copy('ew') # 把ew放入剪切板
+
 ## [pysrt](./other_useful_library/README.md#pysrt)  *控制srt字幕*
+
+## [python-docx](https://python-docx.readthedocs.io/en/latest/index.html)
+
+```python
+f = open("模板.docx", "rb")
+document = Document() or Document(f)
+first_line = document.paragraphs[0]
+first_line.text = "通知"
+document.save("通知.docx")
+```
+
 ## [pytz](https://pythonhosted.org/pytz/)  *时区*
     ```
     from datetime import datetime
