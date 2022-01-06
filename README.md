@@ -340,8 +340,8 @@ Generate pseudo-random numbers
 
 
     from threading import Thread
-    s1 = Thread(function, args=[], kwargs={})
-    s2 = Thread(function2, args=[], kwargs={})
+    s1 = Thread(None, function, args=[], kwargs={})
+    s2 = Thread(None, function2, args=[], kwargs={})
     s1.start()
     s2.start()
 
@@ -370,10 +370,19 @@ with Pool(5) as p:
 ### [ ] concurrent.futures
 
 ### [subprocess][subprocess]
+基础用法
 
     import subprocess
-    res = subprocess.run(["ls", "-l"], capture_output=True, check=True)
-    print(res.stdout.decode("utf-8"))
+    try:
+        res = subprocess.run(["ls", "-l"], capture_output=True, check=True)
+        print(res.stdout.decode("utf-8"))
+    except subprocess.TimeoutExpired as e:
+        logger.exception(e)
+        logger.exception("超时了")
+    except subprocess.CalledProcessError as e:
+        logger.exception(e)
+        logger.error(f"执行任务失败")
+
 
 ### [ ] sched
 
