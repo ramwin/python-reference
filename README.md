@@ -383,6 +383,14 @@ with Pool(5) as p:
         logger.exception(e)
         logger.error(f"执行任务失败")
 
+* 输入输出
+[测试代码](./test/subprocess_input.py)
+
+    proc = subprocess.Popen(["sh", "input.sh"], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+    outs, errs = proc.communicate(
+        input="1\n2\nexit\n".encode("utf-8"), timeout=1)
+    print(outs.decode('utf-8'))
+
 
 ### [ ] sched
 
