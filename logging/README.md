@@ -4,8 +4,8 @@
 * [官网模块-进阶](https://docs.python.org/3/library/logging.html)
 
 ### example
-* 基础
-
+* 基础  
+默认配置, 保存到文件
 
     import logging
 
@@ -13,11 +13,10 @@
         level=logging.INFO,
         format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
         datefmt='%Y-%m-%d %H:%M:%S',
-        filename='./log/test.log',
+        filename='./info.log',
         filemode='a')
 
     log = logging.getLogger()
-
 
     ch = logging.StreamHandler()
     ch.setLevel(logging.INFO)
@@ -26,8 +25,9 @@
 
     log.addHandler(ch)
 
-* 保存到文件的同时，输入的终端
 
+* 保存到文件的同时，输入的终端  
+用2个handler
 
     import logging
     logger = logging.getLogger('simple_example')
@@ -49,7 +49,9 @@
     logger.info("info message")
     logger.warn("warn message")
 
+
 * 添加过滤器,只记录info,不记录warning
+用在info的logger
 
 
     import logging
