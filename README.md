@@ -391,6 +391,13 @@ with Pool(5) as p:
         input="1\n2\nexit\n".encode("utf-8"), timeout=1)
     print(outs.decode('utf-8'))
 
+* [异步执行 Popen](https://docs.python.org/3/library/subprocess.html#popen-constructor)
+
+    from subprocess import Popen
+    thread = Popen(["python", "-m", "pyftpdlib"])
+    time.sleep(10)
+    thread.kill()
+
 
 ### [ ] sched
 
