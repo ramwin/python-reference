@@ -775,16 +775,15 @@ export LC_CTYPE="en_US.UTF-8"
     * 安装:
         * windows: 先去[下载visual c++ 9.0](http://aka.ms/vcpython27)，然后再 `pip install pycrypto`
 ## [pydub](https://github.com/jiaaro/pydub) *编辑mp3的包*
-    * 安装依赖: `apt install libav-tools ffmpeg`
-    * [示例](./other_useful_library/mp4tomp3.py)
-    * 基础:
-    ```python
+* 安装依赖: `apt install libav-tools ffmpeg`
+* [示例](./other_useful_library/mp4tomp3.py)
+* 基础:
+
     import math
     from pydub import AudioSegment
     song = AudioSegment.from_mp3('origin.mp3')
     song[10*1000: 40*1000].export('target.mp3')
     # 把一个视频切割成很多个小的mp3 ../other_useful_library/mp4tomp3.py
-    ```
 
 ## [pyenv](./other_useful_library/pyenv.md)
 python虚拟化，通过制定python路径，来在服务器安装多个python
