@@ -277,7 +277,7 @@ Generate pseudo-random numbers
 
 ## Data Compression and Archiving
 * [bz2][bz2]
-
+使用方法
 
     import bz2
     bz2.compress(b'11111' * 1000)
