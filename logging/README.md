@@ -5,26 +5,26 @@
 
 ### example
 * 基础  
-默认配置, 保存到文件
+默认配置, 保存到文件和终端
 
-    import logging
+```python3
+import logging
 
-    logging.basicConfig(
-        level=logging.INFO,
-        format='%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s',
-        datefmt='%Y-%m-%d %H:%M:%S',
-        filename='./info.log',
-        filemode='a')
+stream_handler = logging.StreamHandler()
+file_handler = logging.FileHandler("info.log", mode="a")
 
-    log = logging.getLogger()
-
-    ch = logging.StreamHandler()
-    ch.setLevel(logging.INFO)
-    formatter = logging.Formatter('%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s')
-    ch.setFormatter(formatter)
-
-    log.addHandler(ch)
-
+logging.basicConfig(
+    level=logging.INFO,
+    format=(
+        '%(asctime)s %(filename)s[line:%(lineno)d] %(levelname)s %(message)s'
+    ),
+    datefmt='%Y-%m-%d %H:%M:%S',
+    handlers=[
+        stream_handler,
+        file_handler,
+    ],
+)
+```
 
 * 保存到文件的同时，输入的终端  
 用2个handler
