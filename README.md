@@ -571,20 +571,24 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 处理git用
 * 克隆代码
 
-    from git import Repo
-    Repo.clone_from(url, to_path)
+```
+from git import Repo
+Repo.clone_from(url, to_path)
+git.Repo.clone_from(url, to_path, recurse_submodule=True)
+```
 
 * 基础代码
 
+```
+sudo pip3 install gitpython
+from git import Repo
+repo = Repo()
+for tag in repo.tags:
+    print(tag.name, tag.commit)
 
-    sudo pip3 install gitpython
-    from git import Repo
-    repo = Repo()
-    for tag in repo.tags:
-        print(tag.name, tag.commit)
-
-    for commit in repo.iter_commits(max_count=10):
-        print(commit.hexsha, commit.message, commit.author.name, )
+for commit in repo.iter_commits(max_count=10):
+    print(commit.hexsha, commit.message, commit.author.name, )
+```
 
 * 运行git命令
 
