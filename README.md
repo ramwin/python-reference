@@ -242,12 +242,8 @@ Generate pseudo-random numbers
 操作目录,路径的功能
 
 2. [os.path](library_reference/os.md)
-6. [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
-
-
-    import tempfile
-    fp = tempfile.TemporaryFile(mode='w+b', encoding=None)
-    fp.write(b'Hello world!')
+#### [tempfile](library_reference/tempfile.md)
+临时文件，临时文件夹
 
 ### [filecmp 文件、文件夹比较](https://docs.python.org/3/library/filecmp.html)
 推荐使用 [deep-dircmp](https://github.com/mitar/python-deep-dircmp)
@@ -279,6 +275,7 @@ Generate pseudo-random numbers
 * [bz2][bz2]
 使用方法
 
+    ```
     import bz2
     bz2.compress(b'11111' * 1000)
     >>> b'BZh91....'
@@ -288,6 +285,7 @@ Generate pseudo-random numbers
     f.read()
     f = bz2.open("myfiles.bz2", "wb")
     f.write(data)
+    ```
 
 
 * [gzip](https://docs.python.org/3/library/gzip.html)
