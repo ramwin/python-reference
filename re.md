@@ -3,14 +3,26 @@
 [官网](https://docs.python.org/3/library/re.html#module-re)
 
 ## Regular Expression Syntax 基础知识和语法
+* `.` 任意一个字符， 除了\n
+```
+re.match(r".*", "123\n").group() == "123"
+re.match(r".*", "123\n", re.DOTALL).group() == "123\n"
+```
+
 * `(?!...)`  
 后续不能出现`...`
 * `\d`  *数字*
 * `\D`  *非数字*
 * `\s`  *空白字符*
 * `\S`  *非空白字符*
+
 * `\w`  *单词字符*
+```
+[a-zA-Z0-9_] 以及其他语言的字符
+```
+
 * `\W`  *非单词字符*
+
 * `(a|bc|d)`  *a或者bc或者c*
 * `[a-z]` * 小写字母  
 * 是否是贪婪模式: 在匹配后面加上?, 比如
