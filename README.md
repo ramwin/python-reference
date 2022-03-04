@@ -370,31 +370,37 @@ with Pool(5) as p:
 ### [subprocess][subprocess]
 基础用法
 
-    import subprocess
-    try:
-        res = subprocess.run(["ls", "-l"], capture_output=True, check=True)
-        print(res.stdout.decode("utf-8"))
-    except subprocess.TimeoutExpired as e:
-        logger.exception(e)
-        logger.exception("超时了")
-    except subprocess.CalledProcessError as e:
-        logger.exception(e)
-        logger.error(f"执行任务失败")
+```
+import subprocess
+try:
+    res = subprocess.run(["ls", "-l"], capture_output=True, check=True)
+    print(res.stdout.decode("utf-8"))
+except subprocess.TimeoutExpired as e:
+    logger.exception(e)
+    logger.exception("超时了")
+except subprocess.CalledProcessError as e:
+    logger.exception(e)
+    logger.error(f"执行任务失败")
+```
 
 * 输入输出
 [测试代码](./test/subprocess_input.py)
 
-    proc = subprocess.Popen(["sh", "input.sh"], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
-    outs, errs = proc.communicate(
-        input="1\n2\nexit\n".encode("utf-8"), timeout=1)
-    print(outs.decode('utf-8'))
+```
+proc = subprocess.Popen(["sh", "input.sh"], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+outs, errs = proc.communicate(
+    input="1\n2\nexit\n".encode("utf-8"), timeout=1)
+print(outs.decode('utf-8'))
+```
 
 * [异步执行 Popen](https://docs.python.org/3/library/subprocess.html#popen-constructor)
 
-    from subprocess import Popen
-    thread = Popen(["python", "-m", "pyftpdlib"])
-    time.sleep(10)
-    thread.kill()
+```
+from subprocess import Popen
+thread = Popen(["python", "-m", "pyftpdlib"])
+time.sleep(10)
+thread.kill()
+```
 
 
 ### [ ] sched
@@ -768,18 +774,19 @@ export LC_CTYPE="en_US.UTF-8"
 ```
 
 ## [pycharm]
-    * 快捷键:
-        * 界面工具查看
-            * 命令行: `alt+F12`
-        * 代码编辑
-            * [折叠代码](https://www.jetbrains.com/help/pycharm/code-folding-2.html)
-            * `Ctrl+B 或者 Ctal+click`: 查看一个函数的定义
-            * `Ctrl+Q`: 查看一个函数的文档
-            * `查看文件结构`: `alt+7` or `ctrl+F12`
-            * `shift+F6`: *重构函数名称，全局变化他的名字*
-        * 跳转
-            * `ctrl+shift+backspace`: 查看上期编辑的地方
-    * ## [django支持](https://www.jetbrains.com/help/pycharm/running-tasks-of-manage-py-utility.html)
+* 快捷键:
+    * 界面工具查看
+        * 命令行: `alt+F12`
+    * 代码编辑
+        * [折叠代码](https://www.jetbrains.com/help/pycharm/code-folding-2.html)
+        * `Ctrl+B 或者 Ctal+click`: 查看一个函数的定义
+        * `Ctrl+Q`: 查看一个函数的文档
+        * `查看文件结构`: `alt+7` or `ctrl+F12`
+        * `shift+F6`: *重构函数名称，全局变化他的名字*
+    * 跳转
+        * `ctrl+shift+backspace`: 查看上期编辑的地方
+* ## [django支持](https://www.jetbrains.com/help/pycharm/running-tasks-of-manage-py-utility.html)
+
 ## [pycrypto]
     * 安装:
         * windows: 先去[下载visual c++ 9.0](http://aka.ms/vcpython27)，然后再 `pip install pycrypto`
