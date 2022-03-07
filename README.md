@@ -235,7 +235,9 @@ Generate pseudo-random numbers
     ...
 
 ### functools: 对于函数和可调用对象的执行操作
-### [ ] operator
+
+### [operator](./operator运算符.md)
+
 ## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
 
 ### [pathlib](./library_reference/pathlib.md)
@@ -825,6 +827,25 @@ document = Document() or Document(f)
 first_line = document.paragraphs[0]
 first_line.text = "通知"
 document.save("通知.docx")
+```
+
+## python-dotenv
+* 用来读取本地.env的配置(当前目录.env > ~/.env)  
+```
+import os
+from dotenv import load_dotenv, dotenv_values
+
+load_dotenv()
+CONFIG = {
+    **os.environ(),
+    dotenv_values,
+}
+```
+
+* 设置环境变量  
+```
+dotenv set EMAIL foo@example.org
+dotenv list
 ```
 
 ## [pytz](https://pythonhosted.org/pytz/)  *时区*
