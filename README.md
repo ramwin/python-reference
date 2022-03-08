@@ -598,11 +598,16 @@ for commit in repo.iter_commits(max_count=10):
 
 * 运行git命令
 
-
-    import git
-    repo.git.rebase
-    cmd = git.cmd.Git()
-    cmd.execute('git lfs ls-files -l')
+```
+import git
+repo.git.rebase
+cmd = git.cmd.Git()
+cmd.execute('git lfs ls-files -l')
+try:
+    repo.git.merge(<ref>)  # 合并分支
+except git.GitCommandError:
+    raise
+```
 
 
 ## [imapclient](https://github.com/mjs/imapclient)
