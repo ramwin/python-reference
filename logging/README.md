@@ -29,51 +29,55 @@ logging.basicConfig(
 * 保存到文件的同时，输入的终端  
 用2个handler
 
-    import logging
-    logger = logging.getLogger('simple_example')
-    logger.setLevel(logging.DEBUG)
+```
+import logging
+logger = logging.getLogger('simple_example')
+logger.setLevel(logging.DEBUG)
 
-    ch = logging.StreamHandler()
-    ch.setLevel(logging.INFO)
-    formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
-    ch.setFormatter(formatter)
+ch = logging.StreamHandler()
+ch.setLevel(logging.INFO)
+formatter = logging.Formatter('%(asctime)s - %(name)s - %(levelname)s - %(message)s')
+ch.setFormatter(formatter)
 
-    fh = logging.FileHandler(filename='log.log')
-    fh.setLevel(logging.WARNING)
-    f_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
-    fh.setFormatter(f_formatter)
+fh = logging.FileHandler(filename='log.log')
+fh.setLevel(logging.WARNING)
+f_formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')
+fh.setFormatter(f_formatter)
 
-    logger.addHandler(ch)
-    logger.addHandler(fh)
+logger.addHandler(ch)
+logger.addHandler(fh)
 
-    logger.info("info message")
-    logger.warn("warn message")
+logger.info("info message")
+logger.warn("warn message")
+```
 
 
 * 添加过滤器,只记录info,不记录warning
 用在info的logger
 
 
-    import logging
-    logger = logging.getLogger('test_filter')
-    logger.setLevel(logging.DEBUG)
-    ch = logging.StreamHandler()
-    ch.setLevel(logging.INFO)
-    ch.setFormatter(
-        logging.Formatter('%(user)s %(message)s')
-    )
-    class RamwinFilter(logging.Filter):
-        def filter(self, record):
-            record.user = 'ramwin'
-            if record.levelname == 'WARNING':
-                return False
-            print(record.levelname)
-            return True
-    f = RamwinFilter()
-    logger.addHandler(ch)
-    logger.addFilter(f)
-    logger.info("info")
-    logger.warning("warning")
+```
+import logging
+logger = logging.getLogger('test_filter')
+logger.setLevel(logging.DEBUG)
+ch = logging.StreamHandler()
+ch.setLevel(logging.INFO)
+ch.setFormatter(
+    logging.Formatter('%(user)s %(message)s')
+)
+class RamwinFilter(logging.Filter):
+    def filter(self, record):
+        record.user = 'ramwin'
+        if record.levelname == 'WARNING':
+            return False
+        print(record.levelname)
+        return True
+f = RamwinFilter()
+logger.addHandler(ch)
+logger.addFilter(f)
+logger.info("info")
+logger.warning("warning")
+```
 
 
 ### [Exceptions raised during logging][exceptions]
