@@ -367,6 +367,15 @@ with Pool(5) as p:
     print(p.map(f, [1,2,3]))
 ```
 
+* [imap_unordered](https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.imap_unordered)
+对iterable里面的每个元素执行func. chunksize代表每个进程执行的迭代次数。这样一个进程可以执行多次
+[测试](./library_reference/pool_chunksize.py)
+```
+with Pool() as p:
+    for result in p.imap_unordered(func, iterable, chunksize):
+        print(result)
+```
+
 ### [ ] concurrent.futures
 
 ### [subprocess][subprocess]
