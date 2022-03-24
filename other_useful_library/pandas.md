@@ -1,64 +1,74 @@
 ## [pandas](https://pandas.pydata.org/docs/user_guide/index.html)
 
 
-    import pandas
-    df1 = pandas.DataFrame(
-        {'年龄': [21,22,23,24]},
-        index=pandas.Series(
-            ['a张三', 'b李四', 'c王二', 'd麻子'],
-            name='姓名'
-        ),
-        columns=["年龄"]
-    )
-    df2 = df1.iloc[0:3]
-    df2 = df2.sort_index(ascending=False)
+```
+import pandas
+df1 = pandas.DataFrame(
+    {'年龄': [21,22,23,24]},
+    index=pandas.Series(
+        ['a张三', 'b李四', 'c王二', 'd麻子'],
+        name='姓名'
+    ),
+    columns=["年龄"]
+)
+df2 = df1.iloc[0:3]
+df2 = df2.sort_index(ascending=False)
 
-    >>> df1.loc[df2.index]]['年龄'] == df2['年龄']
-    True
+>>> df1.loc[df2.index]]['年龄'] == df2['年龄']
+True
 
-    index = pandas.Index(data=[], name='name')
-    df = pandas.DataFrame(data={'age':[]}, columns=['age'], index=index)
-    df.loc['张三'] = {'age': 18}
+index = pandas.Index(data=[], name='name')
+df = pandas.DataFrame(data={'age':[]}, columns=['age'], index=index)
+df.loc['张三'] = {'age': 18}
+```
 
 
 ### [Sorting 排序](https://pandas.pydata.org/docs/user_guide/basics.html#by-values)
 
-    ```
-    # 二分法找到最接近但不大于的数
-    df = pandas.read_csv(<filename>, names=["name, "age"])
-    df.sort_values(by='age', inplace=True)
-    df[df.age <= 20].max()
-    ```
+```
+# 二分法找到最接近但不大于的数
+df = pandas.read_csv(<filename>, names=["name, "age"])
+df.sort_values(by='age', inplace=True)
+df[df.age <= 20].max()
+```
 
 ### [Indexing and selecting data](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html)
 
 
-    df.loc["张三"].年龄
-    df.loc["张三"]["年龄"]
+```
+df.loc["张三"].年龄
+df.loc["张三"]["年龄"]
+```
 
 
 ### where 过滤数据
 
 
-    df.where(df.id > 0)
-    df[df.id > 0)
+```
+df.where(df.id > 0)
+df[df.id > 0)
+```
 
 
 * Set/reset Index
 
-    df2 = df.set_index("ID")
+```
+df2 = df.set_index("ID")
+```
 
 
 ### Input/output
 
 
-    pandas.read_excel(filename, header=[0, 1], converters={("学校信息", "年级"): str})
-    最后converters会进入
-    ParserBase._convert_to_ndarrays()
-        for c, values in dct.items():
-            # c = ("学校信息", "年级")
-            conv_f = None if converters is None else converters.get(c, None)
-            conv_f执行
+```
+pandas.read_excel(filename, header=[0, 1], converters={("学校信息", "年级"): str})
+最后converters会进入
+ParserBase._convert_to_ndarrays()
+    for c, values in dct.items():
+        # c = ("学校信息", "年级")
+        conv_f = None if converters is None else converters.get(c, None)
+        conv_f执行
+```
 
 
 #### `read_csv`  
@@ -107,18 +117,23 @@ df['姓名'].dropna().iteritems()
 返回DataFrame的尺寸
 
 
-    df = pandas.DataFrame({"col1": [1,2,], "col2": [3,4], "col3": [5,6]})
-    df.shape
-    >>> (2, 3)
+```
+df = pandas.DataFrame({"col1": [1,2,], "col2": [3,4], "col3": [5,6]})
+df.shape
+>>> (2, 3)
+```
 
 * `sort_values` 根据一列来排序
 
 
-    df = df.sort_values('datetime')
-    df.sort_values('datetime', inplace=True)
+```
+df = df.sort_values('datetime')
+df.sort_values('datetime', inplace=True)
+```
 
 
 * [to_csv](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_csv.html)
+
       * 保存到csv文件, 可以直接 `df.to_csv(name.csv.gz)` 变成压缩文件
       * columns: 保存哪些字段
 
@@ -127,20 +142,29 @@ df['姓名'].dropna().iteritems()
 删除列
 
 
-    new_df = df.drop(columns=['company'])
+```
+new_df = df.drop(columns=['company'])
+```
 
+* [rename](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.rename.html)
+默认是更换index, 更换列名需要设置columns
+```
+df = pd.DataFrame({"A": [1, 2, 3], "B": [4, 5, 6]})
+df.rename(columns={"A": "a", "B": "c"}, inplace=True)
+```
 
-#### [`to_dict`][to_dict]
+* [`to_dict`][to_dict]
 返回字典
 
-    df.to_dict(orient="index")
-    >>> {
-      "张三": {
-        "年龄": 25,
-        "身高": 170,
-      }
-    }
-
+```
+df.to_dict(orient="index")
+>>> {
+  "张三": {
+    "年龄": 25,
+    "身高": 170,
+  }
+}
+```
 
 
 [to_dict]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_dict.html
