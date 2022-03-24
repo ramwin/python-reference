@@ -886,7 +886,7 @@ dotenv list
 用scp传输文件
 ```
 with SSHClient() as ssh:
-    ssh.connect("ramwin.com")
+    ssh.connect("ramwin.com", compress=True)  # https://github.com/jbardin/scp.py/pull/19
     with SCPClient(ssh.get_transport()) as scp:
         scp.put(<本地文件>, <远程路径>)
         scp.get(<远程路径>, <本地文件>, recursive=True)
