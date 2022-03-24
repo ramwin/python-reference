@@ -882,6 +882,16 @@ dotenv list
 ## [redis](./redis.md) *use redis db*
 ## [requests](./other_useful_library/requests.md) *发送http请求*
 ## [rsa](./other_useful_library/rsa.md) *使用rsa加密*
+## [scp](https://github.com/jbardin/scp.py)
+用scp传输文件
+```
+with SSHClient() as ssh:
+    ssh.connect("ramwin.com")
+    with SCPClient(ssh.get_transport()) as scp:
+        scp.put(<本地文件>, <远程路径>)
+        scp.get(<远程路径>, <本地文件>, recursive=True)
+```
+
 ## [six](./other_useful_library/six.md) `python2和python3兼容的库`
 ## [scrapy](./scrapy/README.md)
 
