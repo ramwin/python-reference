@@ -885,7 +885,10 @@ dotenv list
 ## [scp](https://github.com/jbardin/scp.py)
 用scp传输文件
 ```
+from paramiko import SSHClient
+from scp import SCPClient
 with SSHClient() as ssh:
+    ssh.load_system_host_keys()
     ssh.connect("ramwin.com", compress=True)  # https://github.com/jbardin/scp.py/pull/19
     with SCPClient(ssh.get_transport()) as scp:
         scp.put(<本地文件>, <远程路径>)
