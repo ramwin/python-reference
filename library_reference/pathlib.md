@@ -1,10 +1,26 @@
 ### [pathlib](https://docs.python.org/3/library/pathlib.html)
 
+#### 属性
+* stem: 最后的目录(排除后缀)
+```
+>>> PurePosixPath('my/library.tar.gz').stem
+'library.tar'
+>>> PurePosixPath('my/library.tar').stem
+'library'
+>>> PurePosixPath('my/library').stem
+'library'
+```
 
-    from pathlib import Path
-    p = Path('.')
-
-
+#### methods
+* as_posix(): 返回绝对路径
+* exists: 判断是否存在
+* glob(pattern): 返回匹配的文件或者目录名
+```
+glob("*.pdf")
+glob("**/*.pdf")
+```
+* `is_dir()`: `返回是否是文件`
+* `is_symlink()`: `返回是否是链接`
 * iterdir(): 返回一个包含子文件的generator
 ```
 import re
@@ -16,33 +32,14 @@ sorted(
     key=lambda i: 
 )
 ```
-* glob(pattern): 返回匹配的文件或者目录名
-```
-glob("*.pdf")
-glob("**/*.pdf")
-```
-
-#### [mkdir](https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir)
-* `mkdir(mode=511, parents=False, exist_ok=False)`
-创建目录
-
-* stem: 最后的目录(排除后缀)
-```
->>> PurePosixPath('my/library.tar.gz').stem
-'library.tar'
->>> PurePosixPath('my/library.tar').stem
-'library'
->>> PurePosixPath('my/library').stem
-'library'
-```
-* as_posix(): 返回绝对路径
 * joinpath(str|path|paths): 合并一个或者多个路径
 注意，如果一个path开头是 `/`, 那么前面的路径就失效了，直接按照这个path开始计算  
-
-
-    dirpath = Path("缓存")
-    cache_path = dirpath.join("运行缓存", "tmp.json")
-
+```
+dirpath = Path("缓存")
+cache_path = dirpath.join("运行缓存", "tmp.json")
+```
+* [`mkdir(mode=511, parents=False, exist_ok=False)`](https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir)
+创建目录
 * name: 返回文件名
 * rmdir: 删除空目录
 * suffix: 返回最后一个后缀名
@@ -50,17 +47,13 @@ glob("**/*.pdf")
 >>> Path("README.md").suffix
 '.md'
 ```
-* suffixes: 返回后缀名列表
-* unlink: 删除文件或者链接
-* write_text: 写入文字然后关闭
-
-#### methods
-* `is_dir()`: `返回是否是文件`
-* `is_symlink()`: `返回是否是链接`
 * `relative_to`: `返回相对于某个路径的相对路径`
+* suffixes: 返回后缀名列表
 * stat()  
 返回文件状态
-
-
-    p.stat().st_size  # 文件字节大小
-    p.stat().st_ctime st_mtime  # 创建，修改的时间戳
+```
+p.stat().st_size  # 文件字节大小
+p.stat().st_ctime st_mtime  # 创建，修改的时间戳
+```
+* `unlink(True)`: 删除文件或者链接, 参数`missing_ok`代表如果不存在是否报错
+* `write_text`: 写入文字然后关闭
