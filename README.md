@@ -370,6 +370,15 @@ with Pool(5) as p:
     print(p.map(f, [1,2,3]))
 ```
 
+#### Process
+* [如果不join,直接关闭](./multi/不join.py)
+直到主进程都要退出的时候，会等待子进程的结束
+
+
+#### 获取进程数据
+[示例](./multi/获取输出.py)
+
+#### Poll
 * [imap_unordered](https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.imap_unordered)
 对iterable里面的每个元素执行func. chunksize代表每个进程执行的迭代次数。这样一个进程可以执行多次
 [测试](./library_reference/pool_chunksize.py)
