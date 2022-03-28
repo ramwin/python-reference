@@ -739,6 +739,13 @@ plt.show()
     # 截取前5秒的mp4文件
     ffmpeg_extract_subclip("movie.mp4", 0, 5, targetname="test.mp4")
 
+## numpy
+* [linspace 获取整数](https://numpy.org/doc/stable/reference/generated/numpy.linspace.html)
+```
+>>> numpy.linspace(0, 100, 3, dtype='int')
+array([0, 50, 100])
+```
+
 ## [ordered-set](https://github.com/LuminosoInsight/ordered-set)
 有顺序的set, 实现原理其实就是用一个class内部保存一个list和一个set.  
 我尝试用dict来做(python现在dict的key是有顺序的),但是他的key不太方便做index顺序索引.  
