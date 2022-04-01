@@ -19,7 +19,8 @@
 glob("*.pdf")
 glob("**/*.pdf")
 ```
-* `is_dir()`: `返回是否是文件`
+* `is_dir()`: `返回是否是目录`
+* `is_file()`: `返回是否是文件`
 * `is_symlink()`: `返回是否是链接`
 * iterdir(): 返回一个包含子文件的generator
 ```

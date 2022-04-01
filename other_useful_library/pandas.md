@@ -107,21 +107,31 @@ df['姓名'].dropna().iteritems()
 
 
 * columns: 返回字段列表`pandas.core.indexes.base.Index`
-* iterrows()
 
-
-    for index, row in df.iterrows():
-        print(row.客户名称)
+* size
+返回`shape[0] * shape[1]`
 
 * shape:
 返回DataFrame的尺寸
-
 
 ```
 df = pandas.DataFrame({"col1": [1,2,], "col2": [3,4], "col3": [5,6]})
 df.shape
 >>> (2, 3)
 ```
+
+* [ ] `memory_usage`
+
+* [empty](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.empty.html)
+返回是否为空
+
+* [ ] `set_flags`
+
+* iterrows()
+
+
+    for index, row in df.iterrows():
+        print(row.客户名称)
 
 * `sort_values` 根据一列来排序
 

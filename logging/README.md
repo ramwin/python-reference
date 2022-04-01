@@ -122,4 +122,10 @@ class logging.handlers.MemoryHandler(capacity, flushLevel=ERROR, target=None)
 * [ ] QueueListener
 
 
+### [LogRecord](https://docs.python.org/3/library/logging.html#logrecord-objects)
+
+#### 用在formatter的属性
+* `%(process)d`: 进程ID
+
+
 [exceptions]: https://docs.python.org/3/howto/logging.html#exceptions-raised-during-logging
