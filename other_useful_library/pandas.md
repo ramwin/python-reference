@@ -33,17 +33,45 @@ df[df.age <= 20].max()
 ```
 
 ### [Indexing and selecting data](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html)
-
-
 ```
 df.loc["张三"].年龄
 df.loc["张三"]["年龄"]
 ```
+* loc[slice]
+寻找index某一范围内的前闭后闭区间, 注意, index一定要保证排序好了。
+```
+df.sort_index()
+df.loc[开始: 结束]
+```
 
+* loc[key]
+寻找某个key, 注意如果存在多个，返回的就是dataframe
+```
+In [109]: df
+Out[109]: 
+          b      c
+a                 
+amily    18  False
+bob      19   True
+charlie  20   True
+charlie  22   True
+
+In [110]: df.loc['bob']  # Series, df.loc['bob'].c == True
+Out[110]: 
+b      19
+c    True
+Name: bob, dtype: object
+
+In [111]: df.loc['charlie']  # DataFrame
+Out[111]: 
+          b     c
+a                
+charlie  20  True
+charlie  22  True
+
+```
 
 ### where 过滤数据
-
-
 ```
 df.where(df.id > 0)
 df[df.id > 0)
@@ -72,8 +100,8 @@ ParserBase._convert_to_ndarrays()
 
 
 #### `read_csv`  
-[guide](https://pandas.pydata.org/docs/user_guide/io.html#csv-text-files)
-[api](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html)
+* [guide](https://pandas.pydata.org/docs/user_guide/io.html#csv-text-files)  
+* [api](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html)  
     * header: 数据开始的位置. 默认infer, 当有names, 相当于None, 当没有names, 相当于0
     ```
     pandas.read_csv(<filename>, names=['name', 'age'])  # 第一列也是数据
@@ -81,6 +109,7 @@ ParserBase._convert_to_ndarrays()
     ```
     * usecols: 使用那些列
     * names: 自定义列名
+    * `index_col`: 哪一列当作index
 
 
 ## [API](https://pandas.pydata.org/docs/reference/index.html)

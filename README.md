@@ -686,7 +686,7 @@ except git.GitCommandError:
 * [ipdb](./other_useful_library/ipdb.md) *断点来检测查看源码和运行状态*
 * [itchat](https://github.com/littlecodersh/ItChat)  *微信机器人*
 * [iptools] *处理IP地址的包*
-* [jinja模板渲染](./jinjia.md)
+* [jinja模板渲染](./other_useful_library/jinjia.md)
 * kafka *用于kafka的消息分发*
     ```
     from kafka import KafkaConsumer
