@@ -110,6 +110,7 @@ ParserBase._convert_to_ndarrays()
     * usecols: 使用那些列
     * names: 自定义列名
     * `index_col`: 哪一列当作index
+    * `parse_dates`: 哪些列要当作时间。时间是TimeStamp, 所以只占用4字节
 
 
 ## [API](https://pandas.pydata.org/docs/reference/index.html)
@@ -149,7 +150,10 @@ df.shape
 >>> (2, 3)
 ```
 
-* [ ] `memory_usage`
+* [`memory_usage`](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.memory_usage.html)
+```
+df.memory_usage(deep=True)  # 查看各列的内存占用
+```
 
 * [empty](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.empty.html)
 返回是否为空
