@@ -38,6 +38,30 @@ for的功能就是调用object的`__iter__`函数
     3. 不返回时，自动`raise StopIteration`
 
 
+# Package 打包
+
+* `setup.py`示例:
+```
+from setuptools import setup
+setup(
+    # 必选
+    name="包名",
+    version="0.0.1",
+
+    # 可选
+    package_data = {
+        '': ['*.png', '*.json'],  # 把包里面的png和json放入包
+    },
+    data_files=[('README.md', ['README.md'])],
+)
+```
+
+* 发布
+```
+python3 setup.py sdist bdist_wheel
+twine upload dist/*
+```
+
 # [Language Reference](https://docs.python.org/3/reference/index.html)
 ## Exceution model
 * [Exception报错](./exception.md)
