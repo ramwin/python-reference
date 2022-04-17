@@ -53,6 +53,9 @@ setup(
         '': ['*.png', '*.json'],  # 把包里面的png和json放入包
     },
     data_files=[('README.md', ['README.md'])],
+    install_requires=[
+        '<dependency_name> @ git+ssh://git@github.com/<user>/<repo_name>@<ref>',  # 依赖一个git仓库
+    ]
 )
 ```
 
