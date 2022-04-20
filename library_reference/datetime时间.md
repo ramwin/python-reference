@@ -1,3 +1,26 @@
+### [pendulum](https://pendulum.eustace.io/docs/)
+更加好用的时间库
+```
+pendulum.now()
+DateTime(2022, 4, 20, 13, 5, 54, 185608, tzinfo=Timezone('Asia/Shanghai'))
+pendulum.now().to_datetime_string()
+"2022-04-20 13:09:14"
+pendulum.parse('2022-04-20 13:09:14', tz=pendulum.local_timezone())
+```
+
+### [pytz](https://pythonhosted.org/pytz/)  *时区*
+```
+from datetime import datetime
+from pytz import timezone
+import pytz
+utc = pytz.utc
+shanghai = timezone("Asia/Shanghai")
+fmt = "%Y-%m-%d %H:%M:%S %Z%z"
+loc_datetime = shanghai.localize(datetime(2002, 10, 27, 6, 0, 0))
+print(loc_datetime.strftime(fmt))
+utc_time = loc_datetime.astimezone(utc)
+```
+
 ### 时间
 [官方文档](https://docs.python.org/3/library/datetime.html)
 

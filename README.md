@@ -182,7 +182,7 @@ with A():
 
 ## [Data Types](https://docs.python.org/3/library/datatypes.html)
 
-### [datetime](./datetime时间.md)
+### [datetime](./library_reference/datetime时间.md)
 ### [ ] [calendar](https://docs.python.org/3/library/calendar.html)
 
 ### [collections](./collections.md)
@@ -812,14 +812,17 @@ a.indexof(3)  // 0
 
 ## [pdf2image](https://github.com/Belval/pdf2image): *把pdf转化成图片的库*
 [测试代码](./other_useful_library/pdfconvert.py)
-
-    from pdf2image import convert_from_path
-    convert_from_path(pdf_path, output_folder=path, fmt='png')
-    images = convert_from_path(pdf_path)
-
+```
+from pdf2image import convert_from_path
+convert_from_path(pdf_path, output_folder=path, fmt='png')
+images = convert_from_path(pdf_path)
+```
 
 ## [pdfminer](https://github.com/euske/pdfminer) *解析pdf的包，好用*
 ## [peewee](./other_useful_library/peewee.md) *简单而轻量级的sqlite3 orm，和django很像*
+
+## [pendulum](library_reference/datetime时间.md)
+
 ## [pillow](./pillow.md)
 ## [pip](https://pip.pypa.io/en/stable/user_guide/#config-file) *快速安装包*  
 * pip *快速安装包*  
@@ -857,21 +860,24 @@ export LC_CTYPE="en_US.UTF-8"
 * [示例](./other_useful_library/mp4tomp3.py)
 * 基础:
 
-    import math
-    from pydub import AudioSegment
-    song = AudioSegment.from_mp3('origin.mp3')
-    song[10*1000: 40*1000].export('target.mp3')
-    # 把一个视频切割成很多个小的mp3 ../other_useful_library/mp4tomp3.py
+```
+import math
+from pydub import AudioSegment
+song = AudioSegment.from_mp3('origin.mp3')
+song[10*1000: 40*1000].export('target.mp3')
+```
+* [把一个视频切割成很多个小的mp3](./other_useful_library/mp4tomp3.py)
 
 ## [pyenv](./other_useful_library/pyenv.md)
 python虚拟化，通过制定python路径，来在服务器安装多个python
 
 ## pyftpdlib ftp客户端和服务端
 
-    # 直接启动一个ftplib
-    python -m pyftpdlib  # 默认匿名登录, 端口号2121
-    python -m pyftpdlib --port=1223 --username=admin --password=123  -d ~/Downloads
-
+```
+# 直接启动一个ftplib
+python -m pyftpdlib  # 默认匿名登录, 端口号2121
+python -m pyftpdlib --port=1223 --username=admin --password=123  -d ~/Downloads
+```
 
 ## [PyPDF2](https://pythonhosted.org/PyPDF2/) *对中文支持不友好*
 * pyperclip *控制系统剪切板*
@@ -908,18 +914,7 @@ dotenv set EMAIL foo@example.org
 dotenv list
 ```
 
-## [pytz](https://pythonhosted.org/pytz/)  *时区*
-    ```
-    from datetime import datetime
-    from pytz import timezone
-    import pytz
-    utc = pytz.utc
-    shanghai = timezone("Asia/Shanghai")
-    fmt = "%Y-%m-%d %H:%M:%S %Z%z"
-    loc_datetime = shanghai.localize(datetime(2002, 10, 27, 6, 0, 0))
-    print(loc_datetime.strftime(fmt))
-    utc_time = loc_datetime.astimezone(utc)
-    ```
+## [pytz](./library_reference/datetime时间.md)  *时区*
 ## [PyWinMouse](https://pypi.org/project/PyWinMouse/)  *windows下操作鼠标*
 ## [qiniu](./qiniu.md)  *七牛的接口*
 ## [redis](./redis.md) *use redis db*
