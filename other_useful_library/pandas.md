@@ -126,14 +126,9 @@ df['姓名'].dropna().iteritems()
 
 ### [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
 * 基础操作
-
-
-    del df[attribute]  # 删除列
-
-* apply: 应用函数
-
-
-    df['field'] = df['field'].apply(lambda x: x if x != '0.000000' else x)
+```
+del df[attribute]  # 删除列
+```
 
 
 * columns: 返回字段列表`pandas.core.indexes.base.Index`
@@ -166,9 +161,19 @@ df.memory_usage(deep=True)  # 查看各列的内存占用
     for index, row in df.iterrows():
         print(row.客户名称)
 
+
+#### [apply: 应用函数](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.apply.html)
+对没一行操作， 生成新的列
+```
+df['姓名'] = df.apply(lambda row: row['姓'] + row['名'], axis=1)  # axis: 一行一行调用
+df['field'] = df['field'].apply(lambda x: x if x != '0.000000' else x)
+```
+
+* applymap  
+对每个元素操作， 没啥用
+
+
 * `sort_values` 根据一列来排序
-
-
 ```
 df = df.sort_values('datetime')
 df.sort_values('datetime', inplace=True)
