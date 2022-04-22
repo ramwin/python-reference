@@ -111,6 +111,7 @@ ParserBase._convert_to_ndarrays()
     * names: 自定义列名
     * `index_col`: 哪一列当作index
     * `parse_dates`: 哪些列要当作时间。时间是TimeStamp, 所以只占用4字节
+    * skipfooter: 排序底部的多少行, 开启的是否，需要设置engine="python"
 
 
 ## [API](https://pandas.pydata.org/docs/reference/index.html)
