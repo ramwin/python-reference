@@ -946,14 +946,32 @@ with SSHClient() as ssh:
 ## [sortedsets](https://github.com/tailhook/sortedsets)
 模仿redis的sorted set做的自动排序的set
 
-    sudo pip3 install sortedsets
-    >>> from sortedsets import SortedSet
-    >>> ss = SortedSet()
-    >>> for i in range(1, 1000):
-    >>>     ss['player' + str(i)] = i*10 if i % 2 else i*i
-    ss.by_score[470:511]
-    >>> ss.index('player20'), ss.index('player21')
-    400, 210
+```
+sudo pip3 install sortedsets
+>>> from sortedsets import SortedSet
+>>> ss = SortedSet()
+>>> for i in range(1, 1000):
+>>>     ss['player' + str(i)] = i*10 if i % 2 else i*i
+ss.by_score[470:511]
+>>> ss.index('player20'), ss.index('player21')
+400, 210
+```
+
+## [python-syncthing](https://github.com/blakev/python-syncthing)
+```
+import time
+
+from dotenv import dotenv_values, load_dotenv
+from syncthing import Syncthing
+
+load_dotenv()
+
+folder = "目录id"
+client = syncthing.Syncthing(dotenv_values()["APIKEY"])
+client.db.scan(folder, sub="要同步的目录")
+while client.db.completion(remote_device, folder) != 100:
+    time.sleep(10)
+```
 
 
 * ## ~~[srt](http://srt.readthedocs.io/en/latest/api.html)*因为缺少shift功能而改成用pysrt*~~
