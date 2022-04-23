@@ -900,11 +900,10 @@ document.save("通知.docx")
 ```
 import os
 from dotenv import load_dotenv, dotenv_values
-
 load_dotenv()
 CONFIG = {
     **os.environ(),
-    dotenv_values,
+    dotenv_values(),
 }
 ```
 
