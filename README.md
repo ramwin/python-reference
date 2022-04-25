@@ -38,9 +38,10 @@ for的功能就是调用object的`__iter__`函数
     3. 不返回时，自动`raise StopIteration`
 
 
-# Package 打包
+# [Package 打包](https://packaging.python.org/en/latest/tutorials/packaging-projects/#creating-the-package-files)
 
 * `setup.py`示例:
+[文档](https://packaging.python.org/en/latest/tutorials/packaging-projects/#creating-the-package-files)
 ```
 from setuptools import setup
 setup(
