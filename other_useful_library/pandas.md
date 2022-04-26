@@ -107,9 +107,25 @@ ParserBase._convert_to_ndarrays()
     pandas.read_csv(<filename>, names=['name', 'age'])  # 第一列也是数据
     pandas.read_csv(<filename>, names=['name', 'age'], header=0)  # 第一列是标题,但是我们强制修改
     ```
-    * usecols: 使用那些列
     * names: 自定义列名
+    * [ ] `index_col`
+    * usecols: 使用那些列
     * `index_col`: 哪一列当作index
+    * dtype: 每一列的数据
+    ```
+    dtype = {
+        'id': int,
+        'note': str,
+    }
+    ```
+    * engine: python|c|pyarrow
+    * converters: 
+    ```
+    converters={
+        "addr": lambda x: int(x[2:], 16),  # 把十六进制转化成十进制数字
+    }
+    ```
+    * [ ] `true_values`
     * `parse_dates`: 哪些列要当作时间。时间是TimeStamp, 所以只占用4字节
     * skipfooter: 排序底部的多少行, 开启的是否，需要设置engine="python"
 

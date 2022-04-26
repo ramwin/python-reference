@@ -388,8 +388,7 @@ Generate pseudo-random numbers
 ### multiprocessing — Process-based parallelism
 [测试](./multi/poll_test.py)
 * Introduction
-p.map返回一个列表
-
+p.map返回一个列表. 执行的顺序是一定按照顺序来的
 ```
 from multiprocessing import Pool
 def f(x):
