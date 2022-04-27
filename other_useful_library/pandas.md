@@ -75,6 +75,7 @@ charlie  22  True
 ```
 df.where(df.id > 0)
 df[df.id > 0)
+df[df.index.notnull()]  # 过滤掉index为None的
 ```
 
 
