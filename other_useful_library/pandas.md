@@ -76,6 +76,7 @@ charlie  22  True
 df.where(df.id > 0)
 df[df.id > 0)
 df[df.index.notnull()]  # 过滤掉index为None的
+df[~pandas.to_datetime(df.index, errors="coerce").isnull()]  # 过滤掉日期不规范的
 ```
 
 
