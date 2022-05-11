@@ -235,3 +235,15 @@ df.to_dict(orient="index")
 
 
 [to_dict]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_dict.html
+
+## data types
+### Timestamp
+```
+TimeStamp(str|datetime|date)
+```
+
+## Utils
+* [`is_datetime64_dtype`](https://pandas.pydata.org/docs/reference/api/pandas.api.types.is_datetime64_dtype.html) >> Bool
+```
+pandas.api.types.is_datetime64_dtype(df.index)  # 判断Series是否全部是日期
+```

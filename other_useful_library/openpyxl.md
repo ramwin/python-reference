@@ -1,48 +1,53 @@
-**Xiang Wang @ 2017-05-09 11:10:45**
-
-# 基础
+# openpyxl
 * [官方教程](https://openpyxl.readthedocs.io/)
 
 * 安装
 
 
-    pip install openpyxl
-    pip install pillow  # 如果你需要插入图片
+```
+pip install openpyxl
+pip install pillow  # 如果你需要插入图片
+```
 
 
 * 读取数据
 
-
-    from openpyxl import Workbook
-    from openpyxl import load_workbook
-    wb = load_workbook(<filename>)
-    ws = wb.active  # 旧版本使用 ws = wb.get_active_sheet()
-    for row in ws.rows:
-        for cell in row:
-            print(cell.value)
+```
+from openpyxl import Workbook
+from openpyxl import load_workbook
+wb = load_workbook(<filename>)
+ws = wb.active  # 旧版本使用 ws = wb.get_active_sheet()
+for row in ws.rows:
+    for cell in row:
+        print(cell.value)
+```
 
 
 * 写入数据
 
-
-    ws['A4'] = 4
-    ws.cell(row=1, column=1, value=1)  # 因为excel是从1开始的，所以这里也是从1开始
+```
+ws['A4'] = 4
+ws.cell(row=1, column=1, value=1)  # 因为excel是从1开始的，所以这里也是从1开始
+```
 
 
 # Workbook
 * 读取workbook
 
-
+```
     load_workbook(filename, data_only=True)  # data_only会把公式变成value
+```
 
 
 * 获取sheet, 操作sheet
 
 
+```
     wb = load_workbook(filename)
     wb.sheetnames
     wb['其他sheetname']  # 获取sheet, 操作sheet
     wb.active = wb["another sheet"]  # 修改激活的sheet
+```
 
 
 
@@ -87,6 +92,7 @@ When you merge cells the column and row number starts from 1
 # [Working with Styles](https://openpyxl.readthedocs.io/en/stable/styles.html#)
 
 # [Worksheet Tables](https://openpyxl.readthedocs.io/en/stable/worksheet_tables.html)
+
 ```
 from openpyxl import Workbook
 from openpyxl.worksheet.table import Table, TableStyleInfo
@@ -114,4 +120,15 @@ style = TableStyleInfo(name="TableStyleMedium9", showFirstColumn=False,
 tab.tableStyleInfo = style
 ws.add_table(tab)
 wb.save("table.xlsx")
+```
+
+# Utils
+* `openpyxl.utils.column_index_from_string`
+```
+column_index_from_string('A') => 1
+```
+
+* `get_column_letter`
+```
+get_column_letter(1) => A
 ```
