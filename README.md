@@ -983,6 +983,7 @@ while client.db.completion(remote_device, folder) != 100:
   * s 选择行
   * " 筛选过滤出的结果
   * _ 适应宽度
+  * Y zY 复制内容到系统剪贴板(需要xclip)
 
 ## [virtualenv](https://virtualenv.pypa.io/en/stable/)
 ```
