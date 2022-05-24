@@ -1,6 +1,19 @@
 ### [pathlib](https://docs.python.org/3/library/pathlib.html)
 
 #### 属性
+* parents
+返回所有的上级目录 `p.parents[0] == p.parent` `p.parents[-1] == p.root` 但是后面目前有bug
+```
+>>> p = PureWindowsPath('c:/foo/bar/setup.py')
+>>> p.parents[0]
+PureWindowsPath('c:/foo/bar')
+>>> p.parents[1]
+PureWindowsPath('c:/foo')
+>>> p.parents[2]
+PureWindowsPath('c:/')
+```
+* parent
+* name: 返回文件名
 * stem: 最后的目录(排除后缀)
 ```
 >>> PurePosixPath('my/library.tar.gz').stem
@@ -41,7 +54,8 @@ cache_path = dirpath.join("运行缓存", "tmp.json")
 ```
 * [`mkdir(mode=511, parents=False, exist_ok=False)`](https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir)
 创建目录
-* name: 返回文件名
+* resolve: 把相对路径转化成绝对路径. 并且会把软链接也解析
+* rglob: 和glob一样，但是默认在前面添加`**/`
 * rmdir: 删除空目录
 * suffix: 返回最后一个后缀名
 ```

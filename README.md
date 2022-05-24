@@ -308,40 +308,40 @@ Generate pseudo-random numbers
 ## Data Compression and Archiving
 * [bz2][bz2]
 使用方法
-
-    ```
-    import bz2
-    bz2.compress(b'11111' * 1000)
-    >>> b'BZh91....'
-    bz2.decompress(b'BZh91...')
-    >>> b'11111...'
-    f = bz2.open("myfiles.bz2", "bb")
-    f.read()
-    f = bz2.open("myfiles.bz2", "wb")
-    f.write(data)
-    ```
+```
+import bz2
+bz2.compress(b'11111' * 1000)
+>>> b'BZh91....'
+bz2.decompress(b'BZh91...')
+>>> b'11111...'
+f = bz2.open("myfiles.bz2", "bb")
+f.read()
+f = bz2.open("myfiles.bz2", "wb")
+f.write(data)
+```
 
 
 * [gzip](https://docs.python.org/3/library/gzip.html)
+```
+import gzip
+f = gzip.open("~/test.csv.gz", compresslevel=3)
+f.write("hedaer\n")
+f.write("123\n")
+f.close()
+```
 
 
-    import gzip
-    f = gzip.open("~/test.csv.gz", compresslevel=3)
-    f.write("hedaer\n")
-    f.write("123\n")
-    f.close()
+* [zipfile](./library_reference/zip.md) *处理zip压缩包*
 
-
-* [zipfile](./zip.md) *处理zip压缩包*
-
-14. File Formats
+## File Formats
 [官网](https://docs.python.org/3/library/fileformats.html)
-    1. ### [csv](./csv.md)
-        * [source code](https://github.com/python/cpython/blob/3.6/Lib/csv.py)
-    2. ### [configparser](./config.md) 配置文件
-    3. [ ] netrc
-    4. [ ] xdrlib
-    5. [ ] plistlib
+### [csv](./library_reference/csv.md)
+ * [source code](https://github.com/python/cpython/blob/3.6/Lib/csv.py)
+### [configparser](./config.md) 配置文件
+
+* [ ] netrc
+* [ ] xdrlib
+* [ ] plistlib
 
 ## Cryptographic Services
 ### [hashlib](https://docs.python.org/3/library/hashlib.html)
@@ -658,42 +658,8 @@ except git.GitCommandError:
     raise
 ```
 
-
-## [imapclient](https://github.com/mjs/imapclient)
-* 搜索邮件
-
-    ```
-    client = IMAPClient(host="imap.qq.com")
-    password = input("输入密码")
-    client.login("ramwin@qq.com", password)
-    message_ids = client.search(
-      [u'SINCE', date(2021, 4, 8)],
-    )
-    >>> [393]
-    ```
-
-* 获取邮件
-
-    ```
-    message_id = 393
-    content = client.fetch(message_id, ['FLAGS', 'RFC822'])[393][b'RFC822']
-    ```
-
-* 解析邮件
-
-    ```
-    import mailparser
-    mail = mailparser.parse_from_bytes(content)
-    print(mail.headers['Subject'])
-    print(mail.body)
-    ```
-
-* 设置已读
-
-    ```
-    client.set_flags(messages, imapclient.SEEN)
-    ```
-
+## [imapclient](other_useful_library/imapclient.md)
+很好用的邮件客户端
 
 ## [faker](https://github.com/joke2k/faker)  *use fake to create a lot of name of text*  
     ```python
