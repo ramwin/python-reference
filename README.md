@@ -774,6 +774,9 @@ a.indexof(3)  // 0
         hostname="www.ramwin.com", port=22,
         username="*****", password="******")
     stdin, stdout, stderr = client.exec_command('pwd')
+    error = stderr.read().decode("utf8")
+    if error:
+        raise Exception(error)
     print(stdout.read())
     ```
 
