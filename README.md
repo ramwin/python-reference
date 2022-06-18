@@ -525,8 +525,19 @@ thread.kill()
         * uuid.uuid4
         生成随机的uuid
     * [ ] socketserver
-27. Development Tools
-    4. ### [unittest — Unit testing framework 测试框架](./library_reference/unittest.md)
+
+## Development Tools
+### [Typing](https://docs.python.org/3/library/typing.html)
+```
+def add(number: int) -> int:
+    return number + 1
+# 数字构成的数组
+list[int]  # python3 >= 3.10
+from typing import List
+List[int]  # python3 <= 3.8
+```
+
+### [unittest — Unit testing framework 测试框架](./library_reference/unittest.md)
 
 30. ## [Python Runtime Services 和编译器,环境有关的服务](https://docs.python.org/3/library/python.html)
 
