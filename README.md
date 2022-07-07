@@ -42,29 +42,31 @@ for的功能就是调用object的`__iter__`函数
 
 * `setup.py`示例:
 [文档](https://packaging.python.org/en/latest/tutorials/packaging-projects/#creating-the-package-files)
-```
-from setuptools import setup
-setup(
-    # 必选
-    name="包名",
-    version="0.0.1",
 
-    # 可选
-    package_data = {
-        '': ['*.png', '*.json'],  # 把包里面的png和json放入包
-    },
-    data_files=[('README.md', ['README.md'])],
-    install_requires=[
-        '<dependency_name> @ git+ssh://git@github.com/<user>/<repo_name>@<ref>',  # 依赖一个git仓库
-    ]
-)
-```
+    ```python
+    from setuptools import setup
+    setup(
+        # 必选
+        name="包名",
+        version="0.0.1",
+
+        # 可选
+        package_data = {
+            '': ['*.png', '*.json'],  # 把包里面的png和json放入包
+        },
+        data_files=[('README.md', ['README.md'])],
+        install_requires=[
+            '<dependency_name> @ git+ssh://git@github.com/<user>/<repo_name>@<ref>',  # 依赖一个git仓库
+        ]
+    )
+    ```
 
 * 发布
-```
-python3 setup.py sdist bdist_wheel
-twine upload dist/*
-```
+
+    ```shell
+    python3 setup.py sdist bdist_wheel
+    twine upload dist/*
+    ```
 
 # [Language Reference](https://docs.python.org/3/reference/index.html)
 ## Exceution model
@@ -118,6 +120,7 @@ with A():
 
 ### [for 语句](https://docs.python.org/3/reference/compound_stmts.html#the-for-statement)
 * 通过内置变量counter来记录执行的位置，所以remove会导致少执行，insert会导致重复执行
+
     ```
     for i in a:
         if i == 3: a.remove(i)  # 少执行
@@ -133,10 +136,11 @@ with A():
 [官网文档 TODO](http://ramwin.com:8000/tutorial/classes.html)
 * 属性
     * `__new__`: 创建class类的时候调用  
-    [示例](./class/class_new.py). 通过`__new__`的时候`，返回不同的class  
+
+[示例](./class/class_new.py). 通过`__new__`的时候`，返回不同的class  
+
     ```python
     class GuessAnimal(object):
-
         def __name__(self, type, *args, **kwargs):
             if type == 'dog':
                 return Dog(*args, **kwargs)
@@ -145,8 +149,10 @@ with A():
     d.say()
     c = Some("cat")
     ```
+
     * `__module__` : class的模块
     * `__name__` : class的name
+
 * [property](./library_reference/built_in_functions内置函数.md#property)
 
 # [Library Reference 内置库参考][library-reference]
@@ -252,8 +258,26 @@ Generate pseudo-random numbers
     * [statistics.stdev](https://docs.python.org/3/library/statistics.html#statistics.stdev)
     * statistics.StatisticsError
 
-10. ## [Functional Programming Modules](https://docs.python.org/3/library/functional.html)
+## [Functional Programming Modules](https://docs.python.org/3/library/functional.html)
+
 ### [itertools](https://docs.python.org/3/library/itertools.html)
+
+* chain
+
+    ```python
+    chain('ABC', 'DEF') --> A B C D E F
+    chain(range(1, 6), range(4, 0, -1)) --> 1 2 3 4 5 4 3 2 1
+    ```
+
+* [chain.from_iterable](https://docs.python.org/3/library/itertools.html#itertools.chain.from_iterable)
+
+    ```python
+    # 和chain差不多， 但是只支持一个参数， 会对此展开后再用chain
+    def from_iterable(iterables):
+        for it in iterables:
+            for element in it:
+                yield it
+    ```
 
 * count(start, [step])  
 从某个数字开始一直循环
