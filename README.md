@@ -243,16 +243,20 @@ https://docs.python.org/3.8/library/fractions.html#fractions.Fraction)
     f = Fraction(1,3)
     print("1/3 = %d/%d" % (f.numerator, f.denominator))
 ```
-6. [random](https://docs.python.org/3.8/library/random.html)
+#### [random](https://docs.python.org/3.8/library/random.html)
 Generate pseudo-random numbers
-    * random.choice(list)  # choose one value from list
-    * random.choices(list, k=20)  # 随机选择20次, 可能重复宣导
-    * random.randrange(stop)
-    * random.randrange(start, stop[, step])  
-    return value from start(included) to stop(excluded)
-    * random.randint(start, stop)  
-    return value from start(included) to stop(included)
-    * random.sample(list, k)  # choose k's value from list, 每个item只被选一次，所以k要小于len(list)
+
+```python
+random.choice(list)  # choose one value from list
+random.choices(list, k=20)  # 随机选择20次, 可能重复选到
+random.randrange(stop)
+random.randrange(start, stop[, step])  
+turn value from start(included) to stop(excluded)
+random.randint(start, stop)  
+turn value from start(included) to stop(included)
+random.sample(list, k)  # choose k's value from list, 每个item只被选一次，所以k要小于len(list)
+```
+
 7. statistics — Mathematical statistics functions 数学分析
     * [statistics.mean](https://docs.python.org/3/library/statistics.html#statistics.mean)
     * [statistics.stdev](https://docs.python.org/3/library/statistics.html#statistics.stdev)
