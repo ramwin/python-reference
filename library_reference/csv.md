@@ -7,8 +7,16 @@
 
 #### Dialects and Formatting Parameters
 
-#### csv.DictReader
+```python
+class MyDialect(Dialect):
+    """示例自定义格式"""
+    delimiter = ";"
+    quotechar = "%"
+    quoting = QUOTE_ALL
+    lineterminator = "end\r\n"
+```
 
+#### csv.DictReader
 
     file = open('filename.csv')
     reader = csv.DictReader(file)
@@ -21,14 +29,15 @@
 #### [dictwriter](https://docs.python.org/3/library/csv.html#csv.DictWriter)
 * example
 
-
-    import csv
-    with open('names.csv', 'w') as csvfile:  # 也可以用a模式，继续写入。但是要注意fieldnames需要务必顺序正确
-        fieldnames = ['first_name', 'last_name']
-        writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
-        writer.writeheader()
-        writer.writerow(<dict>)
-        writer.writerows([<dict1>, <dict2>])
+```python
+import csv
+with open('names.csv', 'w') as csvfile:  # 也可以用a模式，继续写入。但是要注意fieldnames需要务必顺序正确
+    fieldnames = ['first_name', 'last_name']
+    writer = csv.DictWriter(csvfile, fieldnames=fieldnames)
+    writer.writeheader()
+    writer.writerow(<dict>)
+    writer.writerows([<dict1>, <dict2>])
+```
 
 
 * `csv.DictWriter`
