@@ -1,7 +1,6 @@
 **Xiang Wang @ 2017-04-21 10:48:07**
 
 * [official reference](https://docs.python.org/3/library/csv.html)
-* [测试代码](./script/csv写入中文.py)
 
 #### Module Contents
 
