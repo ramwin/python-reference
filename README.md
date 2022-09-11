@@ -554,6 +554,24 @@ list[int]  # python3 >= 3.10
 from typing import List
 List[int]  # python3 <= 3.8
 ```
+* 多选
+
+    from typing import Literal
+    GenderType = Literal["male", "female"]
+
+* 区分两个int
+
+    from typing import NewType
+    UserId = NewType("UserId", int)
+    AttackPoint = NewType("AttackPoint", int)
+
+    def attack(target: UserId, atk: AttackPoint):
+        if not atk:
+            atk = AttackPoint(1)
+        user = User.objects.get(id=UserId)
+        user.healph -= atk
+        user.save()
+
 
 ### [unittest — Unit testing framework 测试框架](./library_reference/unittest.md)
 
