@@ -2,12 +2,13 @@
 
 
 #### [Pool](https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.pool)
-Pool只支持一个参数。 所以如果你是多个参数， 要封装一下
+Pool.map只支持一个参数。 所以如果你是多个参数， 要用Pool.starmap
 ```
 from multiprocessing import Pool
 with Pool() as pool:
     pool.map(function, taskslist)
-    pool.imap_unordered(function, tasklist)
+    pool.imap_unordered(function, tasklist[, chunksize])  # chunksize可以让一个进程一次性多获取几个任务
+    pool.starmap(function, [(arg1, arg2), (arg1, arg2)])
 ```
 
 [测试](../multi/poll_test.py)
