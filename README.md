@@ -414,17 +414,7 @@ f.close()
 [测试2个thread的变量](./test/test_thread_local.py)
 
 
-### multiprocessing — Process-based parallelism
-[测试](./multi/poll_test.py)
-* Introduction
-p.map返回一个列表. 执行的顺序是一定按照顺序来的
-```
-from multiprocessing import Pool
-def f(x):
-    return x * x
-with Pool(5) as p:
-    print(p.map(f, [1,2,3]))
-```
+### [multiprocessing — Process-based parallelism](./library_reference/multiprocessing.md)
 
 #### Process
 * [如果不join,直接关闭](./multi/不join.py)
