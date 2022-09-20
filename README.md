@@ -195,8 +195,8 @@ with A():
 ### [collections](./collections.md)
 
 ### [collections.abc](./collections.md#collections.abc)
+
 ### [heapq](./library_reference/heapq.md)
-*heap queque algorithm*
 
 ### [bisect](https://docs.python.org/3/library/bisect.html)
 通过二分法来查找list或者插入数据
