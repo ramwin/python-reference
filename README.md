@@ -575,21 +575,11 @@ List[int]  # python3 <= 3.8
 
 ### [unittest — Unit testing framework 测试框架](./library_reference/unittest.md)
 
-30. ## [Python Runtime Services 和编译器,环境有关的服务](https://docs.python.org/3/library/python.html)
+## [Python Runtime Services](./runtime_services.md)
 
-### [Sys](https://docs.python.org/3/library/sys.html)
-* stdin
-```
-print(sys.stdin)  # 用于python处理pipe数据
-```
-
-### traceback -- Print or retrieve a stack traceback
-[官网](https://docs.python.org/3/library/traceback.html)
-```
-traceback.print_stack()  # 直接print出stack
-log = traceback.format_exc()  # 记录报错的stack
-stack = traceback.format_stack()  # 记录当前的stack
-```
+* sys
+* traceback
+* [dataclass](./runtime_services.md#dataclass)
 
 ## Internet Protocols and Support
 
