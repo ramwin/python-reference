@@ -29,6 +29,7 @@ re.match(r".*", "123\n", re.DOTALL).group() == "123\n"
 * `(a|bc|d)`  *a或者bc或者c*
 * `[a-z]` * 小写字母  
 * 是否是贪婪模式: 在匹配后面加上?表示不贪婪, 比如
+
 ```
 re.match(r"\d+?", "123").group() == "1"
 re.match(r"\d+", "123").group() == "123"
@@ -59,9 +60,11 @@ re.compile(r'(?P<id>\d+)we').match('123we').group('id')
 * re.ASCII
 * [ ] ...
 * re.sub(pattern, repl, string, count=0, flags=0)  
+
 ```
 re.sub(r'(00)*$', '', '100000')  # 把匹配到的数据变成空
 ```
+
 [测试代码](library_reference/test_re.py)  
 Return the string obtained by replacing the leftmost non-overlapping occurences of pattern in string by the replacement repl. The repl can be a function.
 * 每次匹配把结果里面的数据拿出来  
