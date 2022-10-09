@@ -3,6 +3,22 @@
 
 ### Function
 
+#### docstring
+
+```
+def function(a: int, b: str, c = True) -> bool:
+    """_summary_ 这里的格式支持restructed text
+
+    Args:
+        a (int): _description_
+        b (str): _description_
+        c (bool, optional): _description_. Defaults to True.
+
+    Returns:
+        bool: _description_
+    """
+```
+
 #### 基础
 * [参数的传递](#参数的传递)
 ```python
