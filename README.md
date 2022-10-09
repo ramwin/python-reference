@@ -131,6 +131,8 @@ with A():
     ```
 
 ### [函数 function](function.md)
+* [docstring](./function.md#docstring)
+
 [官网](https://docs.python.org/3/reference/compound_stmts.html#function-definitions)
 * [decorator装饰器](http://www.cnblogs.com/huxi/archive/2011/03/01/1967600.html)
 * [decorator.py](decorator装饰器.py)
@@ -548,33 +550,9 @@ thread.kill()
     * [ ] socketserver
 
 ## Development Tools
-### [Typing](https://docs.python.org/3/library/typing.html)
-```
-def add(number: int) -> int:
-    return number + 1
-# 数字构成的数组
-list[int]  # python3 >= 3.10
-from typing import List
-List[int]  # python3 <= 3.8
-```
-* 多选
 
-    from typing import Literal
-    GenderType = Literal["male", "female"]
-
-* 区分两个int
-
-    from typing import NewType
-    UserId = NewType("UserId", int)
-    AttackPoint = NewType("AttackPoint", int)
-
-    def attack(target: UserId, atk: AttackPoint):
-        if not atk:
-            atk = AttackPoint(1)
-        user = User.objects.get(id=UserId)
-        user.healph -= atk
-        user.save()
-
+### [typing](./library_reference/typing.md)
+各种注释
 
 ### [unittest — Unit testing framework 测试框架](./library_reference/unittest.md)
 
