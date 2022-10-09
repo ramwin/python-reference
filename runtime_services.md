@@ -15,6 +15,7 @@ stack = traceback.format_stack()  # 记录当前的stack
 ```
 
 ### [dataclass](https://docs.python.org/3/library/dataclasses.html)
+[参考](https://zhuanlan.zhihu.com/p/59657729)
 自动帮你实现 `__eq__`, `__repr__`, `__init__`
 
 ```
