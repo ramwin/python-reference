@@ -96,7 +96,10 @@ for的功能就是调用object的`__iter__`函数
     or  # and 和 or不是同样的哦。
 
 ## Simple statements 简单语句
-11. [import机制](http://www.jianshu.com/p/b963782f59e9) [import文档](https://docs.python.org/3/reference/simple_stmts.html#the-import-statement)
+11. [import机制](http://www.jianshu.com/p/b963782f59e9)
+[import文档](https://docs.python.org/3/reference/simple_stmts.html#the-import-statement)  
+如果使用了相对引用, 必须保证最外层不能抵达当前目录
+
 12. [global](language_reference/global_test.py)
 
 ## Compound statements 复合语句
