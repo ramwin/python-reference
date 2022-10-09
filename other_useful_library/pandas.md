@@ -46,6 +46,7 @@ df.loc[开始: 结束]
 
 * loc[key]
 寻找某个key, 注意如果存在多个，返回的就是dataframe
+
 ```
 In [109]: df
 Out[109]: 
@@ -104,6 +105,7 @@ ParserBase._convert_to_ndarrays()
 #### `read_csv`  
 * [guide](https://pandas.pydata.org/docs/user_guide/io.html#csv-text-files)  
 * [api](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html)  
+    * seq|delimiter: 数据分隔符,默认是`,`
     * header: 数据开始的位置. 默认infer, 当有names, 相当于None, 当没有names, 相当于0
     ```
     pandas.read_csv(<filename>, names=['name', 'age'])  # 第一列也是数据
