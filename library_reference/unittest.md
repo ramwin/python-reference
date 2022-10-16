@@ -2,8 +2,7 @@
 
 
 ### [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html)
-
-
+```python
     import unittest
 
     class MyTest(unittest.TestCase):
@@ -15,6 +14,15 @@
 
     if __name__ == "__main__":
         unittest.main()
+```
+
+#### [TestCase](https://docs.python.org/3/library/unittest.html#test-cases)
+
+* [setUp](https://docs.python.org/3/library/unittest.html#unittest.TestCase.setUp)  
+每次执行前都调用. 各个test的函数分别调用的
+
+* [tearDown](https://docs.python.org/3/library/unittest.html#unittest.TestCase.tearDown)  
+每次执行单元测试时, 最后都调用这个, 即使raise Exception了
 
 * [assets methods](https://docs.python.org/3/library/unittest.html#unittest.TestCase.debug)  
     * assert**Equal**, assertNotEqual, 

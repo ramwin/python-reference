@@ -269,35 +269,7 @@ random.sample(list, k)  # choose k's value from list, 每个item只被选一次�
 
 ## [Functional Programming Modules](https://docs.python.org/3/library/functional.html)
 
-### [itertools](https://docs.python.org/3/library/itertools.html)
-
-* chain
-
-    ```python
-    chain('ABC', 'DEF') --> A B C D E F
-    chain(range(1, 6), range(4, 0, -1)) --> 1 2 3 4 5 4 3 2 1
-    ```
-
-* [chain.from_iterable](https://docs.python.org/3/library/itertools.html#itertools.chain.from_iterable)
-
-    ```python
-    # 和chain差不多， 但是只支持一个参数， 会对此展开后再用chain
-    def from_iterable(iterables):
-        for it in iterables:
-            for element in it:
-                yield it
-    ```
-
-* count(start, [step])  
-从某个数字开始一直循环
-
-
-    from itertools import count
-    loop = count(10)
-    next(loop) // 10
-    next(loop) // 11
-    next(loop) // 12
-    ...
+### [itertools](./library_reference/itertools.md)
 
 ### functools: 对于函数和可调用对象的执行操作
 
