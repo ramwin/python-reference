@@ -578,7 +578,16 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 [官网](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html#id5)
     * 安装: `pip3 install beautifulsoup4`
     * [文档整理](./other_useful_library/beautifulsoup.md)
-* [captcha](./other_useful_library/captcha_test.py) *生成验证码*
+
+## [bitstring](https://github.com/scott-griffiths/bitstring)
+把二进制转化成01
+```python3
+from bitstring import BitArray
+BitArray(b"123").bin  # '001100010011001000110011'
+
+```
+
+## [captcha](./other_useful_library/captcha_test.py) *生成验证码*
 * ## celery *用来执行异步脚本*
 这个软件在linux-reference里面  
     * [官网](http://docs.celeryproject.org/en/latest/index.html)
