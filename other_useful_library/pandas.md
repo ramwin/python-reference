@@ -132,6 +132,8 @@ ParserBase._convert_to_ndarrays()
     * [ ] `true_values`
     * `parse_dates`: 哪些列要当作时间。时间是TimeStamp, 所以只占用4字节
     * skipfooter: 排序底部的多少行, 开启的是否，需要设置engine="python"
+    *
+    * `keep_default_na`: 是否把数据解析成NAN. 我喜欢设置成False
 
 
 ## [API](https://pandas.pydata.org/docs/reference/index.html)
