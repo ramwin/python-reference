@@ -610,6 +610,21 @@ BitArray(b"123").bin  # '001100010011001000110011'
 * 效果  
 <del style="background:#ffe6e6;">1</del><ins style="background:#e6ffe6;">2</ins><span>23</span>
 
+## [faker](https://github.com/joke2k/faker)  *use fake to create a lot of name of text*  
+
+```python
+from faker import Faker
+f = Faker('zh_cn')
+print(f.name(), f.address(), f.text())
+f.profile(['ssn', 'birthdate'])
+```
+
+```shell
+$ faker address
+$ faker name
+$ faker password
+```
+
 ## [filelock](https://github.com/benediktschmitt/py-filelock)
 
 
@@ -619,6 +634,10 @@ BitArray(b"123").bin  # '001100010011001000110011'
         lock.acquire(timeout=0)
     except Timeout:
         pass
+
+
+## [flake8] *检测python代码是不是满足pep8*
+## [flask](./flask.md) *轻量级http服务器*
 
 
 ## [git](https://gitpython.readthedocs.io/en/stable/tutorial.html)
@@ -660,23 +679,13 @@ except git.GitCommandError:
 ## [imapclient](other_useful_library/imapclient.md)
 很好用的邮件客户端
 
-## [faker](https://github.com/joke2k/faker)  *use fake to create a lot of name of text*  
-    ```python
-    from faker import Faker
-    f = Faker('zh_cn')
-    print(f.name(), f.address(), f.text())
-    f.profile(['ssn', 'birthdate'])
-    ```
-
-    ```shell
-    $ faker address
-    $ faker name
-    $ faker password
-    ```
-## [flake8] *检测python代码是不是满足pep8*
-## [flask](./flask.md) *轻量级http服务器*
 * [ics](https://pypi.org/project/ics/) *日历，行程 calendar*
 * [ipdb](./other_useful_library/ipdb.md) *断点来检测查看源码和运行状态*
+
+## ipython
+非常好用的交互式shell
+* 在 `~/.ipython/profile_default/startup/` 下创建脚本可以默认import一些包
+
 * [itchat](https://github.com/littlecodersh/ItChat)  *微信机器人*
 * [iptools] *处理IP地址的包*
 * [jinja模板渲染](./other_useful_library/jinjia.md)
