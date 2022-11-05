@@ -946,14 +946,7 @@ while client.db.completion(remote_device, folder) != 100:
 
 
 * ## ~~[srt](http://srt.readthedocs.io/en/latest/api.html)*因为缺少shift功能而改成用pysrt*~~
-## [visidata](https://www.visidata.org/docs/rows/)
-查看csv文件
-* [快捷键](https://jsvine.github.io/visidata-cheat-sheet/en/)
-  * | 搜索列来选择行
-  * s 选择行
-  * " 筛选过滤出的结果
-  * _ 适应宽度
-  * Y zY 复制内容到系统剪贴板(需要xclip)
+## [visidata](other_useful_library/visidata.md)
 
 ## [virtualenv](https://virtualenv.pypa.io/en/stable/)
 ```
