@@ -596,6 +596,15 @@ BitArray(b"123").bin  # '001100010011001000110011'
 
 ## [click](./other_useful_library/click.md) *用python写shell命令command*
 
+## [datetime-month](https://github.com/yitistica/month)
+安装: `pip install datetime-month`
+
+```python
+from month import XMonth
+month = XMonth(2022, 11)
+month.first_day()
+```
+
 ## [diff-match-patch](https://github.com/google/diff-match-patch)
 用来比较文字的不同
 * 用法
