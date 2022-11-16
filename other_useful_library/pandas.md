@@ -87,6 +87,10 @@ df[~pandas.to_datetime(df.index, errors="coerce").isnull()]  # 过滤掉日期�
 df2 = df.set_index("ID")
 ```
 
+### merge
+```
+result = pandas.merge(left, right, how="inner", on=["id"])
+```
 
 ### Input/output
 
