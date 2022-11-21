@@ -87,7 +87,13 @@ df[~pandas.to_datetime(df.index, errors="coerce").isnull()]  # 过滤掉日期�
 df2 = df.set_index("ID")
 ```
 
-### merge
+### [Concatenating Objects](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html#concatenating-objects)
+拼接数据
+```
+```
+
+
+### [merge](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html)
 ```
 result = pandas.merge(left, right, how="inner", on=["id"])
 ```
@@ -150,6 +156,34 @@ df['姓名'].dropna().iteritems()
     (1, value),
 ]
 ```
+
+* [ ] `set_flags`
+
+* [shift](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.shift.html)
+滑动数据
+```
+df
+            Col1  Col2  Col3
+2020-01-01    10    13    17
+2020-01-02    20    23    27
+2020-01-03    15    18    22
+2020-01-04    30    33    37
+2020-01-05    45    48    52
+df.Col1 = df.Col1.shift(1)
+df
+            Col1  Col2  Col3
+2020-01-01   NaN    13    17
+2020-01-02   10     23    27
+2020-01-03   20     18    22
+2020-01-04   15     33    37
+2020-01-05   30     48    52
+```
+
+    * periods: 偏移量
+    * axis: 'index' 竖直方向|水平方向 Series没有作用
+    * fill_value: 插入什么数据, 默认是NaN
+
+* [ ] skew
 
 ### [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
 * 基础操作
