@@ -160,6 +160,10 @@ df['姓名'].dropna().iteritems()
 * [ ] `set_flags`
 
 * [shift](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.Series.shift.html)
+    * periods: 偏移量
+    * axis: 'index' 竖直方向|水平方向 Series没有作用
+    * fill_value: 插入什么数据, 默认是NaN
+
 滑动数据
 ```
 df
@@ -179,9 +183,6 @@ df
 2020-01-05   30     48    52
 ```
 
-    * periods: 偏移量
-    * axis: 'index' 竖直方向|水平方向 Series没有作用
-    * fill_value: 插入什么数据, 默认是NaN
 
 * [ ] skew
 

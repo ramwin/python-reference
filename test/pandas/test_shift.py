@@ -20,5 +20,5 @@ data_frame1 = pandas.DataFrame(
 
 
 print(data_frame1)
-data_frame1["E"] = data_frame1["D"].shift(periods=2, axis="index", fill_value=0)
+data_frame1["E"] = data_frame1["D"].shift(periods=2, fill_value=0)
 print(data_frame1)
