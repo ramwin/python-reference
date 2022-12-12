@@ -32,6 +32,14 @@ class InventoryItem:
         return self.unit_price * self.quantity_on_hand
 ```
 
+###  contextlib
+* suppress
+忽略某些报错
+```
+with contextlib.suppress(models.Model.DoesNotExist):
+    item = models.Model.objects.get(id=id)
+    item.children.clear()
+```
+
 ### 待更新
 * [ ] warnings
-* [ ] contextlib
