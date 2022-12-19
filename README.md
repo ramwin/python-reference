@@ -160,27 +160,32 @@ with A():
 
 * [property](./library_reference/built_in_functions内置函数.md#property)
 
-# [Library Reference 内置库参考][library-reference]
+# Library Reference 内置库参考
+[官网][library-reference]
+
 1. [x] Introduction
-2. ## [Built-in Functions](./library_reference/built_in_functions内置函数.md)
-    * all
-    * any
-    * divmod
-    * enumerate
-    ```
-    enumerate(['a','b','c'], start=1)  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象, 默认从0开始
-    ```
-    * [ ] locals
-    * ### [map(function, iterable)](https://docs.python.org/3/library/functions.html#map)
-    * [ ] max
-    * open  
-    打开一个文件 buffering=0代表不需要缓存(不缓存,mode必须是b), buffering=1代表每一行保存,buffering>1代表多少字节保存
-    * ### [property](./library_reference/built_in_functions内置函数.md#property)
-    * zip: 迭代2个迭代器, 按照最短的来计算
+## [Built-in Functions](./library_reference/built_in_functions内置函数.md)
+
+* all
+* any
+* divmod
+* enumerate
+
+```
+enumerate(['a','b','c'], start=1)  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象, 默认从0开始
+```
+
+* [ ] locals
+* ### [map(function, iterable)](https://docs.python.org/3/library/functions.html#map)
+* [ ] max
+* open  
+打开一个文件 buffering=0代表不需要缓存(不缓存,mode必须是b), buffering=1代表每一行保存,buffering>1代表多少字节保存
+* ### [property](./library_reference/built_in_functions内置函数.md#property)
+* zip: 迭代2个迭代器, 按照最短的来计算
 3. Built-in Constants
 4. Built-in Types
-    * [Set集合](./set.md)
-    * ### [Mapping Types -- dict 字典参考](./library_reference/built_in_types内置数据类型.md)
+* [Set集合](./set.md)
+* ### [Mapping Types -- dict 字典参考](./library_reference/built_in_types内置数据类型.md)
 5. ## [Built-in Exceptions](https://docs.python.org/3/library/exceptions.html)
 ### Warnings
 * DeprecationWarning
@@ -280,7 +285,7 @@ random.sample(list, k)  # choose k's value from list, 每个item只被选一次�
 ### [pathlib](./library_reference/pathlib.md)
 操作目录,路径的功能
 
-2. [os.path](library_reference/os.md)
+2. [os.path](library_reference/README.md#os)
 #### [tempfile](library_reference/tempfile.md)
 临时文件，临时文件夹
 
@@ -360,12 +365,17 @@ f.close()
 ### [ ] hmac
 ### [ ] secrets
 
-## [Generic Operating System Services](https://docs.python.org/3/library/allos.html)
-1. ### [os](./os.md)
-2. [ ] io
-3. [ ] time
-4. [argparse](./library_reference/argparse.md)
+## Generic Operating System Services
+[官网](https://docs.python.org/3/library/allos.html)
+
+### [os](./library_reference/README.md#os)
+[ ] io
+
+### [time](./library_reference/README.md#time)
+
+### [argparse](./library_reference/argparse.md)
 这个用来解析python的命令
+
 5. [ ] getopt
 
 ### [logging日志处理](./logging/README.md)

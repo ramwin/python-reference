@@ -1,5 +1,3 @@
-**Xiang Wang @ ramwin@qq.com 2016-04-22 17:36:02**
-
 ### [os](https://docs.python.org/3/library/os.html)
 
 #### [Process Parameters](https://docs.python.org/3/library/os.html#process-parameters)
@@ -57,3 +55,15 @@ filter(lambda x: x.is_dir(), os.scandir())  # show all the directory entry
 * 方法
     read(n)  # 读取n个字符或者字节
     seek(offset, from_what)  # offset偏移数量，from_wath 0代表开始，1代表当前，2代表末尾
+### time
+[官网](https://docs.python.org/3/library/time.html)
+
+* localtime
+* mktime
+没啥用, 把时间变成时间戳, 不如直接用datetime
+```python
+>>> time.mktime((2022, 1, 2, 3, 4, 5, 6, 0, 0))
+1641063845.0
+>>> datetime.datetime(2022, 1, 2, 3, 4, 5).timestamp
+1641063845.0
+```
