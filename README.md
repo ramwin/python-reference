@@ -1,6 +1,5 @@
 # 目录
 * [Language Reference 语法](#language-reference)
-* [Library Reference 内置包参考](#library-reference-内置库参考)
 * [Other Useful Library 其他有用的包](#other-useful-library)
 * [official documents 官网文档](https://docs.python.org/3/)
 * [python tips 小技巧](http://book.pythontips.com/en/latest/index.html)
@@ -163,7 +162,7 @@ with A():
 
 * [property](./library_reference/built_in_functions内置函数.md#property)
 
-# Library Reference 内置库参考
+# [Library Reference 内置库参考](./library_reference/README.md)
 [官网][library-reference]
 
 1. [x] Introduction
@@ -275,13 +274,9 @@ random.sample(list, k)  # choose k's value from list, 每个item只被选一次�
     * [statistics.stdev](https://docs.python.org/3/library/statistics.html#statistics.stdev)
     * statistics.StatisticsError
 
-## [Functional Programming Modules](https://docs.python.org/3/library/functional.html)
-
-### [itertools](./library_reference/itertools.md)
-
-### functools: 对于函数和可调用对象的执行操作
-
-### [operator](./operator运算符.md)
+## Functional Programming Modules
+* [itertools 迭代器](./library_reference/itertools.md)
+* [operator 运算符](./library_reference/operator运算符.md)
 
 ## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
 
