@@ -68,7 +68,10 @@ for的功能就是调用object的`__iter__`函数
     twine upload dist/*
     ```
 
-# [Language Reference](https://docs.python.org/3/reference/index.html)
+# Language Reference
+
+[官网](https://docs.python.org/3/reference/index.html)
+
 ## Exceution model
 * [Exception报错](./exception.md)
 [官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
