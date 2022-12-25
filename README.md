@@ -132,7 +132,7 @@ with A():
         if i == 3: a.insert(0, 3)  # 多执行
     ```
 
-### [函数 function](function.md)
+### [函数 function](./language_reference/function.md)
 * [docstring](./function.md#docstring)
 
 [官网](https://docs.python.org/3/reference/compound_stmts.html#function-definitions)

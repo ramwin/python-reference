@@ -1,5 +1,3 @@
-**Xiang Wang @ 2017-12-14 17:07:36**
-
 
 ### Function
 
@@ -20,6 +18,15 @@ def function(a: int, b: str, c = True) -> bool:
 ```
 
 #### 基础
+* [参数的定义](https://docs.python.org/3/tutorial/controlflow.html#special-parameters)
+```python
+def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
+      -----------    ----------     ----------
+        |             |                  |
+        |        Positional or keyword   |
+        |                                - Keyword only
+         -- Positional only
+```
 * [参数的传递](#参数的传递)
 ```python
 def main(name, age, height=2.2, *args, **kwargs):
