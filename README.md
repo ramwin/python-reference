@@ -858,6 +858,16 @@ export LC_CTYPE="en_US.UTF-8"
 # pylint: disbale=missing-module-docstring
 ```
 
+* 配置
+```
+# ignore-path来忽略2个文件
+ignore-paths=test.py,
+    test1.py
+# disable来关闭某些类型
+disable=missing-function-docstring,
+    ...,
+```
+
 ## [pydub](https://github.com/jiaaro/pydub) *编辑mp3的包*
 * 安装依赖: `apt install libav-tools ffmpeg`
 * [示例](./other_useful_library/mp4tomp3.py)
