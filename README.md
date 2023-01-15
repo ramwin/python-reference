@@ -851,6 +851,13 @@ export LC_CTYPE="en_US.UTF-8"
 ## [pycrypto]
     * 安装:
         * windows: 先去[下载visual c++ 9.0](http://aka.ms/vcpython27)，然后再 `pip install pycrypto`
+
+## pylint
+* 忽略某行错误
+```
+# pylint: disbale=missing-module-docstring
+```
+
 ## [pydub](https://github.com/jiaaro/pydub) *编辑mp3的包*
 * 安装依赖: `apt install libav-tools ffmpeg`
 * [示例](./other_useful_library/mp4tomp3.py)
