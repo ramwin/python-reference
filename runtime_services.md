@@ -1,6 +1,15 @@
 ## [Python Runtime Services 和编译器,环境有关的服务](https://docs.python.org/3/library/python.html)
 
 ### [Sys](https://docs.python.org/3/library/sys.html)
+
+* [argv](https://docs.python.org/3/library/sys.html#sys.argv)
+获取脚本的参数
+```
+print(ssy.argv)
+["test.py", "12", "324"]
+```
+
+
 * stdin
 ```
 print(sys.stdin)  # 用于python处理pipe数据

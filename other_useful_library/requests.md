@@ -84,11 +84,21 @@ Raises HTTPError
 * `text` 文本数据
 
 ### Advanced Usage 进阶用法
-#### 1. Session Objects
+
+#### Session Objects
+
 通过Session可以保持长链接, 请求速度会快一点.
 ```
 s = requests.Session()
 s.get('https://httpbin.org/cookies/set/sessioncookie/123456789')
 r = s.get("https://httpbin.org/cookies")
 print(r.text)
+```
+
+#### Ca Ceriticates
+
+暂时关闭SSL警告
+```
+import requests
+requests.urllib3.disable_warnings()
 ```
