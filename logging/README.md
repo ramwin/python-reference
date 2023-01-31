@@ -84,8 +84,13 @@ logger.warning("warning")
 [测试](./test_unicode.py)
 
 ### logging.Logger
-* `debug(msg, *args, **kwargs)`
+
+#### [`debug(msg, stack_info, *args, **kwargs)`](https://docs.python.org/3/library/logging.html#logging.debug)
+第二个参数 stack_info 如果是 `True`, 就会把日志的堆栈信息打印出来
+
+
 * `log(lvl, msg, *args, **kwargs)`
+
 lvl: 必须是整数
 用指定的lvl等级去添加一个日志, 只要这个lvl大于等于20, 就会出发logging.INFO
 
