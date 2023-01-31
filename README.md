@@ -199,7 +199,8 @@ enumerate(['a','b','c'], start=1)  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不�
 
 7. [ ] Binary Data Services
 
-## [Data Types](https://docs.python.org/3/library/datatypes.html)
+## Data Types
+[官网](https://docs.python.org/3/library/datatypes.html)
 
 ### [datetime](./library_reference/datetime时间.md)
 ### [ ] [calendar](https://docs.python.org/3/library/calendar.html)
@@ -223,16 +224,16 @@ def index(a, x):
     raise ValueError
 ```
 
-* [ ] ...
-10. copy  
-copy.copy(x): return a shallow copy of x
-copy.deepcopy(x): return a deepcopy
+### copy  
+
+* copy.copy(x): return a shallow copy of x
+* copy.deepcopy(x): return a deepcopy
 copy.copy只会copy一层, 里面的可变对象不会copy  
 copy.deepcopy会copy recursively  
 在shallow copy里, 对于dict, 使用的是 dict.copy(), 对于list使用的是copied_list = original_list[:]  
 如果要实现自己的copye, 可以重写 `__copy__()` 和 `__deepcopy__()`  
-11. [ ] pprint
-12. [ ] ...
+
+* [ ] pprint
 
 ### Numeric and Mathematical Modules
 2. [math](https://docs.python.org/3/library/math.html)
@@ -856,6 +857,13 @@ export LC_CTYPE="en_US.UTF-8"
 * 忽略某行错误
 ```
 # pylint: disbale=missing-module-docstring
+```
+
+* 忽略某个class的错误
+```python
+class Foo:
+    # pylint: disable=no-member
+    ...
 ```
 
 * 配置
