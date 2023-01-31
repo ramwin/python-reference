@@ -36,3 +36,24 @@
     with self.assertRaises(SomeException):
         do_something()  如果do_something 不报这个 SomeException, 就失败
     ```
+
+* `addCleanup(function, /, *args, **kwargs)`
+```python
+class MyTest(unittest.TestCase):
+
+    def after(self, *args, **kwargs):
+        print(args)  # addCleanup的参数会放进来, 这样可以在单元测试内打开文件, 传入fd. 这里close了
+        print("after")
+
+    def test_raise(self):
+        self.addCleanup(self.after, 1, 2)
+        with self.assertRaises(ZeroDivisionError):
+            1/2
+        print("测试完毕")
+
+    def test_divide_zero(self):
+        self.addCleanup(self.after, 1, 2)
+        with self.assertRaises(ZeroDivisionError):
+            1/0
+        print("测试完毕")
+```
