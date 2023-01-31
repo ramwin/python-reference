@@ -854,6 +854,14 @@ export LC_CTYPE="en_US.UTF-8"
         * windows: 先去[下载visual c++ 9.0](http://aka.ms/vcpython27)，然后再 `pip install pycrypto`
 
 ## pylint
+* 忽略以前的代码, 只看自己的错误
+```python
+# pylint: disable=C,E,W,R
+其他人的代码
+# pylint: enable=C,E,W,R
+自己的代码
+```
+
 * 忽略某行错误
 ```
 # pylint: disbale=missing-module-docstring
