@@ -23,7 +23,8 @@ log = traceback.format_exc()  # 记录报错的stack
 stack = traceback.format_stack()  # 记录当前的stack
 ```
 
-### [dataclass](https://docs.python.org/3/library/dataclasses.html)
+### dataclass
+[官网](https://docs.python.org/3/library/dataclasses.html)
 [参考](https://zhuanlan.zhihu.com/p/59657729)  
 查看[typing](./library_reference/typing.md)可以了解更多方法
 自动帮你实现 `__eq__`, `__repr__`, `__init__`
@@ -39,6 +40,21 @@ class InventoryItem:
 
     def total_cost(self) -> float:
         return self.unit_price * self.quantity_on_hand
+```
+
+#### `post_init`后处理
+[官网](https://docs.python.org/3/library/dataclasses.html#post-init-processing)  
+用来在初始化实例后, 根据实例的属性, 自动生成其他属性  
+```python
+@dataclass
+class Student:
+    first_name: str
+    last_name: str
+    display_name: str = None
+
+    def __post_init__(self):
+        if self.display_name is None:
+            self.display_name = self.first_name + " " + self.last_name
 ```
 
 ###  contextlib
