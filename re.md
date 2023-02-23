@@ -111,3 +111,13 @@ re.sub('(\d*)(\d{4})(\d{3})', r"\1****\3", "7982660")
 
 
 * 删除字符串里面符合规则的字符串
+
+## re.Match
+### groupdict
+返回匹配的数据. 如果不存在就是None
+```python
+>>> re.match("(?P<id>\d+):(?P<value>\d+)?", "123:").groupdict()
+{'id': '123', 'value': None}
+>>> re.match("(?P<id>\d+):(?P<value>\d+)?", "123:").groups()
+("123", None)
+```
