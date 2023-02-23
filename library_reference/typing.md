@@ -8,6 +8,21 @@
 def f(ham: str, eggs: str='eggs') -> str:
 ```
 
+#### 基础
+可以直接用圆括号
+```python
+def get_tuple() -> (int, int):
+    pass
+def get_list() -> [int]:
+    pass
+def get_dict() -> {int: int}:
+    pass
+def get_set() -> {int}:
+    pass
+```
+
+
+#### 返回List
 ```python
 def add(number: int) -> int:
     return number + 1
@@ -17,20 +32,22 @@ from typing import List
 List[int]  # python3 <= 3.8
 ```
 
-* 多选
+#### 多选
 
-    from typing import Literal
-    GenderType = Literal["male", "female"]
+```python
+from typing import Literal
+GenderType = Literal["male", "female"]
+```
 
 
-* Union
+#### Union
 
 ```python
 from typing import Union
 Union[User, None]
 ```
 
-* 区分两个int
+#### 区分两个int
 
 ```python
 from typing import NewType
