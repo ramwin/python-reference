@@ -225,7 +225,7 @@ df.memory_usage(deep=True)  # 查看各列的内存占用
 
 
 #### [apply: 应用函数](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.apply.html)
-对没一行操作， 生成新的列
+对每一行操作， 生成新的列
 ```
 df['姓名'] = df.apply(lambda row: row['姓'] + row['名'], axis=1)  # axis: 一行一行调用
 df['field'] = df['field'].apply(lambda x: x if x != '0.000000' else x)
@@ -275,6 +275,14 @@ df.to_dict(orient="index")
   }
 }
 ```
+
+#### groupby
+[Api](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html)
+```python
+for key, sub_df in df.groupby("status"):
+    pass
+```
+
 
 
 [to_dict]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_dict.html
