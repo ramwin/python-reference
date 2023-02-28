@@ -3,17 +3,17 @@
 
 ### [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html)
 ```python
-    import unittest
+import unittest
 
-    class MyTest(unittest.TestCase):
+class MyTest(unittest.TestCase):
 
-        def test_divide_zero(self):
-            with self.assertRaises(ZeroDivisionError):
-                1/0
-                pass
+    def test_divide_zero(self):
+        with self.assertRaises(ZeroDivisionError):
+            1/0
+            pass
 
-    if __name__ == "__main__":
-        unittest.main()
+if __name__ == "__main__":
+    unittest.main()
 ```
 
 #### [TestCase](https://docs.python.org/3/library/unittest.html#test-cases)
@@ -35,6 +35,15 @@
     ```
     with self.assertRaises(SomeException):
         do_something()  如果do_something 不报这个 SomeException, 就失败
+    ```
+    * `assertRaisesRegex(exception, regex)`
+    注意, 这个的regex和re.match不一样, 不需要从头匹配
+    ```
+    with self.assertRaisesRegex(Exception, "自定义") as e:
+        pass
+    print(e.exception)
+    # 也可以让这个assertraise来调用函数callable
+    self.assertRaisesRegex(exception, regex, callable, *args, **kwds)
     ```
 
 * `addCleanup(function, /, *args, **kwargs)`
