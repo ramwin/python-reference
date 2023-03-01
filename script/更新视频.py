@@ -87,12 +87,14 @@ def main():
         info = json.load(f)
 
     for item in info:
-        item["current"] = MoveTask(
+        new_current = MoveTask(
             source=item["source"],
             target=item["target"],
             current=item["current"],
             max_=item["max"]
         ).run()
+        if new_current is not None:
+            item["current"] = new_current
 
     with open(CONFIG_FILE, "w", encoding="utf-8") as f:
         json.dump(info, f, indent=4,
