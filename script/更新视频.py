@@ -1,5 +1,7 @@
 """
-自动更新电视剧. 读取配置文件config.json
+自动复制一个文件夹的视频到另外一个文件夹.
+另外一个文件夹会触发syncthing来同步到我们平板和手机
+配置文件config.json
 config.json [
     {
         "source": "复制视频的文件夹",
