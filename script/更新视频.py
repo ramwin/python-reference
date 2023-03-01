@@ -51,7 +51,8 @@ class MoveTask:
             source = self.source.joinpath(file_path.name)
             target = self.target.joinpath(file_path.name)
             logging.info("%s => %s", source, target)
-            # shutil.copyfile(source, target)
+            shutil.copyfile(source, target)
+            logging.info("复制完成")
         return file_path.name
 
     def get_target_cnt(self):
@@ -99,4 +100,9 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        logging.exception(e)
+        logging.error("执行报错")
+        raise
