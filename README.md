@@ -194,7 +194,7 @@ enumerate(['a','b','c'], start=1)  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不�
 
 ## [Text Processing Services](https://docs.python.org/3/library/text.html)
 
-### [2. re -- Regular expression operations 正则表达式 regex](./re.md)
+### [2. re -- Regular expression operations 正则表达式 regex](./library_reference/re.md)
 [test regrex 在线测试](https://regex101.com/#python)
 
 7. [ ] Binary Data Services
