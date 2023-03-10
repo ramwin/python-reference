@@ -1,7 +1,7 @@
 **Xiang Wang @ 2019-02-27 10:56:52**
 
 
-### [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html)
+# [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html)
 ```python
 import unittest
 
@@ -16,7 +16,7 @@ if __name__ == "__main__":
     unittest.main()
 ```
 
-#### [TestCase](https://docs.python.org/3/library/unittest.html#test-cases)
+## [TestCase](https://docs.python.org/3/library/unittest.html#test-cases)
 
 * [setUp](https://docs.python.org/3/library/unittest.html#unittest.TestCase.setUp)  
 每次执行前都调用. 各个test的函数分别调用的
@@ -24,27 +24,34 @@ if __name__ == "__main__":
 * [tearDown](https://docs.python.org/3/library/unittest.html#unittest.TestCase.tearDown)  
 每次执行单元测试时, 最后都调用这个, 即使raise Exception了
 
-* [assets methods](https://docs.python.org/3/library/unittest.html#unittest.TestCase.debug)  
-    * assert**Equal**, assertNotEqual, 
-    * assert**True**, assertFalse, 
-    * assert**Is**, assertIsNot, 
-    * assert**IsNone**, assertIsNotNone, 
-    * assert**In(a, b)**, assertNotIn
-    * assert**IsInstance**, assertNotIsInstance
-    * assert*Raises*
-    ```
-    with self.assertRaises(SomeException):
-        do_something()  如果do_something 不报这个 SomeException, 就失败
-    ```
-    * `assertRaisesRegex(exception, regex)`
-    注意, 这个的regex和re.match不一样, 不需要从头匹配
-    ```
-    with self.assertRaisesRegex(Exception, "自定义") as e:
-        pass
-    print(e.exception)
-    # 也可以让这个assertraise来调用函数callable
-    self.assertRaisesRegex(exception, regex, callable, *args, **kwds)
-    ```
+### [assets methods](https://docs.python.org/3/library/unittest.html#unittest.TestCase.debug)  
+
+* assert**Equal**, assertNotEqual, 
+* assert**True**, assertFalse, 
+* assert**Is**, assertIsNot, 
+* assert**IsNone**, assertIsNotNone, 
+* assert**In(a, b)**, assertNotIn
+* assert**IsInstance**, assertNotIsInstance
+* assert*Raises*
+```
+with self.assertRaises(SomeException):
+    do_something()  如果do_something 不报这个 SomeException, 就失败
+```
+* `assertRaisesRegex(exception, regex)`
+注意, 这个的regex和re.match不一样, 不需要从头匹配
+```
+with self.assertRaisesRegex(Exception, "自定义") as e:
+    pass
+print(e.exception)
+# 也可以让这个assertraise来调用函数callable
+self.assertRaisesRegex(exception, regex, callable, *args, **kwds)
+```
+
+* assertAlmostEqual
+把a和b进行对比, 得到的值取places的精度. 看是否为0
+```
+self.assertAlmostEqual(3.1415, 3.14, places=2)
+```
 
 * `addCleanup(function, /, *args, **kwargs)`
 ```python
