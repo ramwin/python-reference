@@ -48,9 +48,10 @@ self.assertRaisesRegex(exception, regex, callable, *args, **kwds)
 ```
 
 * assertAlmostEqual
-把a和b进行对比, 得到的值取places的精度. 看是否为0
+把a和b进行对比, 得到的值取places的精度. 看是否为0. 也可以传入delta, 看绝对误差多少
 ```
 self.assertAlmostEqual(3.1415, 3.14, places=2)
+self.assertAlmostEqual(100, 100.9, delta=1)
 ```
 
 * `addCleanup(function, /, *args, **kwargs)`
