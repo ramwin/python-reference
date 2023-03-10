@@ -11,13 +11,14 @@ def f(ham: str, eggs: str='eggs') -> str:
 #### 基础
 可以直接用圆括号
 ```python
-def get_tuple() -> (int, int):
+from typing import Tuple, List, Dict, Set
+def get_tuple() -> Tuple[int, int]:
     pass
-def get_list() -> [int]:
+def get_list() -> List[int]:
     pass
-def get_dict() -> {int: int}:
+def get_dict() -> Dict[int: int]:
     pass
-def get_set() -> {int}:
+def get_set() -> Set[int]:
     pass
 ```
 
