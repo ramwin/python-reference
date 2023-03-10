@@ -37,6 +37,7 @@ class MoveTask:
     def __init__(self, source: Path, target: Path, current: str, max_: int):
         self.source = Path(source)
         self.target = Path(target)
+        self.target.mkdir(parents=True, exist_ok=True)
         self.max_ = max_
         self.current = current
 
