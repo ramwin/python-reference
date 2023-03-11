@@ -20,7 +20,7 @@ import shutil
 import filetype
 
 
-CONFIG_FILE = "C:/Users/wangx/局域网/config.json"
+CONFIG_FILE = "S:/局域网/config.json"
 logging.basicConfig(
     level=logging.INFO,
     filemode="a",

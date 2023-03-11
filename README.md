@@ -901,11 +901,14 @@ song[10*1000: 40*1000].export('target.mp3')
 python虚拟化，通过制定python路径，来在服务器安装多个python
 
 ## pyftpdlib ftp客户端和服务端
+[文档](https://pyftpdlib.readthedocs.io/en/latest/tutorial.html)
 添加`-w`参数可以允许写入
 ```
 # 直接启动一个ftplib
 python -m pyftpdlib  # 默认匿名登录, 端口号2121
 python -m pyftpdlib --port=1223 --username=admin --password=123  -d ~/Downloads
+# 后台启动
+python script/启动ftp.py
 ```
 
 
