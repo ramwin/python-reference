@@ -835,6 +835,23 @@ export LC_ALL="en_US.UTF-8"  # 出现乱码
 export LC_CTYPE="en_US.UTF-8"
 ```
 
+## psutil
+[获取系统信息](https://psutil.readthedocs.io/en/latest/)
+```python
+import psutil
+psutil.net_if_addrs()
+all_ips = [
+    i.address
+    for i in itertools.chain(*psutil.net_if_addrs().values())
+]
+['169.254.139.78', '4c:cc:6a:47:6a:6f', '169.254.51.28',
+ '90:61:ae:bb:31:8f', '127.0.0.1', '::1',
+ '00:00:00:00:00:00', '169.254.162.106', '00:ff:cc:e9:90:30',
+ '192.168.0.102', '90:61:ae:bb:31:8b', '169.254.220.176',
+ '90:61:ae:bb:31:8c', '169.254.22.106', '92:61:ae:bb:31:8b']
+
+```
+
 ## [pycharm]
 * 快捷键:
     * 界面工具查看
