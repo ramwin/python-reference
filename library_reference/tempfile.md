@@ -1,4 +1,4 @@
-### [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
+官网 [tempfile](https://docs.python.org/3/library/tempfile.html#examples)
 临时文件功能
 
 ```python
@@ -26,3 +26,6 @@ with temfile.TemporaryDirectory() as d:
 
 #### mkdtemp(dir=None)
 创建一个临时目录. 和TemporaryDirectory比，不会自动清除。需要手动清理
+
+#### mkstemp -> (文件描述符:int, 文件路径:str)
+创建一个临时文件, 权限等级最高.
