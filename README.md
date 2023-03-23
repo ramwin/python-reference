@@ -395,10 +395,15 @@ f.close()
 获取当前线程的id  
 
 
-* Trhead-Local Data:  
-使用`treading.local()`可以获取本线程的变量。 这个变量在几个线程内不想通  
+* Thread-Local Data:  
+使用`treading.local()`可以获取本线程的变量。 这个变量在几个线程内不相通  
 [测试2个thread的变量](./test/test_thread_local.py)
 
+* Lock
+线程锁, 一个线程只能拿到一个
+
+* RLock
+线程锁. 同一个线程内可以多次获取
 
 ### [multiprocessing — Process-based parallelism](./library_reference/multiprocessing.md)
 
@@ -870,36 +875,7 @@ all_ips = [
     * 安装:
         * windows: 先去[下载visual c++ 9.0](http://aka.ms/vcpython27)，然后再 `pip install pycrypto`
 
-## pylint
-* 忽略以前的代码, 只看自己的错误
-```python
-# pylint: disable=C,E,W,R
-其他人的代码
-# pylint: enable=C,E,W,R
-自己的代码
-```
-
-* 忽略某行错误
-```
-# pylint: disbale=missing-module-docstring
-```
-
-* 忽略某个class的错误
-```python
-class Foo:
-    # pylint: disable=no-member
-    ...
-```
-
-* 配置
-```
-# ignore-path来忽略2个文件
-ignore-paths=test.py,
-    test1.py
-# disable来关闭某些类型
-disable=missing-function-docstring,
-    ...,
-```
+## [pylint](other_useful_library/pylint.md)
 
 ## [pydub](https://github.com/jiaaro/pydub) *编辑mp3的包*
 * 安装依赖: `apt install libav-tools ffmpeg`
