@@ -98,6 +98,16 @@ lvl: 必须是整数
 [官网](https://docs.python.org/3/library/logging.handlers.html)
 
 #### [StreamHandler](https://docs.python.org/3/library/logging.handlers.html#streamhandler)
+```python3
+/usr/lib/python3.8/logging/__init__.py
+class StreamHandler(Handler):
+
+    def __init__(self, stream=None):
+        if stream is None:
+            stream = sys.stderr
+```
+所以StreamHandler的输出都是2>error哦
+
 #### [FileHandler](https://docs.python.org/3/library/logging.handlers.html#filehandler)
 ```
 class logging.FileHandler(filename, mode='a', encoding=None, delay=False)
@@ -132,5 +142,10 @@ class logging.handlers.MemoryHandler(capacity, flushLevel=ERROR, target=None)
 #### 用在formatter的属性
 * `%(process)d`: 进程ID
 
+
+### 模块级函数
+#### shutdown
+* 系统退出时自动调用, 不要手动调用
+* 调用时会让每个logger都调用flush后close
 
 [exceptions]: https://docs.python.org/3/howto/logging.html#exceptions-raised-during-logging
