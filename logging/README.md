@@ -13,6 +13,7 @@ import logging
 stream_handler = logging.StreamHandler()
 file_handler = logging.FileHandler("info.log", mode="a")
 
+logging.captureWarnings(True)
 logging.basicConfig(
     level=logging.INFO,
     format=(
@@ -139,13 +140,36 @@ class logging.handlers.MemoryHandler(capacity, flushLevel=ERROR, target=None)
 
 ### [LogRecord](https://docs.python.org/3/library/logging.html#logrecord-objects)
 
-#### 用在formatter的属性
+### LogRecord属性
+* `%(asctime)s`: 时间
+* `%(created)s`: 时间戳
+* `%(filename)s`: 文件名
+* `%(pathname)s`: 路径名
+* `%(levelname)s`: INFO, ERROR等级信息
 * `%(process)d`: 进程ID
+* `%(processName)d`: 进程名
 
 
 ### 模块级函数
+#### basicConfig(**kwargs)
+因为formatter的设置是在basicConfig里设置的, 所以basicConfig以后再给root添加logger就没有formatter的效果了(这样可以避免每个recorder都要判断formatter是否存在)
+```python3
+for h in root.handlers[:]:  # 清理旧的handler
+    root.removeHandler(h)
+    h.close()
+for h in handlers:  # 设置新的handler
+    if h.formatter is None:
+        h.setFormatter(fmt)
+```
+
+
 #### shutdown
 * 系统退出时自动调用, 不要手动调用
 * 调用时会让每个logger都调用flush后close
+
+#### warnings
+```python3
+logging.captureWarnings(True)
+```
 
 [exceptions]: https://docs.python.org/3/howto/logging.html#exceptions-raised-during-logging

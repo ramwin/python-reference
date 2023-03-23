@@ -8,7 +8,7 @@ test.db
 test.html
 test.png
 .DS_STORE
-logging/*log*
+logging/*.log
 pillow_example/result.png
 *_test.png
 test.log
