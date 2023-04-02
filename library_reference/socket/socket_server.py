@@ -2,14 +2,19 @@
 # -*- coding: UTF-8 -*-
 # Xiang Wang @ 2020-03-18 15:01:05
 
+"""
+测试socket
+"""
 
-# Echo server program
 import uuid
 import socket
 import time
 
+import click
+
+
 HOST = ''                 # Symbolic name meaning all available interfaces
-PORT = 50008              # Arbitrary non-privileged port
+PORT = click.prompt("输入监听端口号", default=50008, type=int)  # Arbitrary non-privileged port
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
     s.listen(1)
