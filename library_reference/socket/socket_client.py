@@ -14,7 +14,7 @@ import socket
 import click
 
 
-HOST = 'ramwin.com'    # The remote host
+HOST = click.prompt("输入访问的IP", default="ramwin.com")
 PORT = click.prompt("输入访问端口号", default=50008, type=int)
 for i in range(100):
     with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
