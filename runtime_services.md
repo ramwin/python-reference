@@ -57,6 +57,27 @@ class Student:
             self.display_name = self.first_name + " " + self.last_name
 ```
 
+#### asdict/astuple
+[官网](https://docs.python.org/3/library/dataclasses.html#dataclasses.asdict)  
+把dataclass对象转化成dict. 注意, 如果是List[Obj], asdict后可以正常变成list. 但是再通过
+Obj(**data)后, 会导致原来的List[Obj]会变成List[dict]
+```
+@dataclass
+class Point:
+     x: int
+     y: int
+
+@dataclass
+class C:
+     mylist: list[Point]
+
+p = Point(10, 20)
+assert asdict(p) == {'x': 10, 'y': 20}
+
+c = C([Point(0, 0), Point(10, 4)])
+assert asdict(c) == {'mylist': [{'x': 0, 'y': 0}, {'x': 10, 'y': 4}]}
+```
+
 ###  contextlib
 * suppress
 忽略某些报错
