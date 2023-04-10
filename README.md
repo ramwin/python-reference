@@ -552,13 +552,14 @@ thread.kill()
 ## Internet Protocols and Support
 
 * ftplib
-
-    ```
-    with FTP() as ftp:
-        ftp.connect(host='localhost', port=2121)
-        ftp.login()
-        ftp.dir()
-    ```
+```python
+with FTP() as ftp:
+    ftp.connect(host='localhost', port=2121)
+    ftp.login()
+    ftp.dir()
+    with open("source.md", "rb") as f:  # 保存文件
+        ftp.storbinary("STOR target.md", f)
+```
 
 
 ## [ ] Custom Python Interpreters
