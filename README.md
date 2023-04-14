@@ -858,6 +858,13 @@ all_ips = [
 
 ```
 
+* [获取内存信息](https://stackoverflow.com/questions/938733/total-memory-used-by-python-process)
+```python3
+import os, psutil
+process = psutil.Process()
+print(process.memory_info().rss)  # in bytes
+```
+
 ## [pycharm]
 * 快捷键:
     * 界面工具查看
