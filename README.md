@@ -664,42 +664,7 @@ $ faker password
 ## [flake8] *检测python代码是不是满足pep8*
 ## [flask](./flask.md) *轻量级http服务器*
 
-
-## [git](https://gitpython.readthedocs.io/en/stable/tutorial.html)
-处理git用
-* 克隆代码
-
-```
-from git import Repo
-Repo.clone_from(url, to_path)
-git.Repo.clone_from(url, to_path, recurse_submodule=True)
-```
-
-* 基础代码
-
-```
-sudo pip3 install gitpython
-from git import Repo
-repo = Repo()
-for tag in repo.tags:
-    print(tag.name, tag.commit)
-
-for commit in repo.iter_commits(max_count=10):
-    print(commit.hexsha, commit.message, commit.author.name, )
-```
-
-* 运行git命令
-
-```
-import git
-repo.git.rebase
-cmd = git.cmd.Git()
-cmd.execute('git lfs ls-files -l')
-try:
-    repo.git.merge(<ref>)  # 合并分支
-except git.GitCommandError:
-    raise
-```
+## [git](./other_useful_library/README.md#git)
 
 ## [imapclient](other_useful_library/imapclient.md)
 很好用的邮件客户端
