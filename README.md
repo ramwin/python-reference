@@ -1036,16 +1036,19 @@ python的解释器在执行代码的时候，有个GIL锁，保证同一时间�
 ## 性能
 
 1. time.time 来判断是否刷新缓存，1秒能执行753万次
-
-    if time.time() > start :
-        refresh()
+```python
+if time.time() > start :
+    refresh()
+```
 
 
 2. random.random 来判断， 1秒能执行977万次
 
 
-    if random.random() > 0.0000001:
-        refresh()
+```python
+if random.random() > 0.0000001:
+    refresh()
+```
 
 
 [library-reference]: https://docs.python.org/3/library/index.html
