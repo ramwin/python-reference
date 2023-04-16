@@ -881,8 +881,11 @@ python script/启动ftp.py
 
 
 ## [PyPDF2](https://pythonhosted.org/PyPDF2/) *对中文支持不友好*
-* pyperclip *控制系统剪切板*
-    pyperclip.copy('ew') # 把ew放入剪切板
+
+## pyperclip *控制系统剪切板*
+```python
+pyperclip.copy('ew') # 把ew放入剪切板
+```
 
 ## [pysrt](./other_useful_library/README.md#pysrt)  *控制srt字幕*
 
