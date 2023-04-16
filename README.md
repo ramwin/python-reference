@@ -761,10 +761,11 @@ plt.show()
 ## [mongoengine](./other_useful_library/mongoengine.md) *把mongodb当作sql用。那你为什么不直接用mysql啊*
 * [moviewpy](https://github.com/Zulko/moviepy) *操作mp4的包*
 
-
-    from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
-    # 截取前5秒的mp4文件
-    ffmpeg_extract_subclip("movie.mp4", 0, 5, targetname="test.mp4")
+```python
+from moviepy.video.io.ffmpeg_tools import ffmpeg_extract_subclip
+# 截取前5秒的mp4文件
+ffmpeg_extract_subclip("movie.mp4", 0, 5, targetname="test.mp4")
+```
 
 ## numpy
 * [linspace 获取整数](https://numpy.org/doc/stable/reference/generated/numpy.linspace.html)
