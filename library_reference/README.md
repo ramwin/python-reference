@@ -1,3 +1,21 @@
+## Data Types
+
+### [Enum](https://docs.python.org/3/library/enum.html)
+```
+
+from enum import Enum
+
+class Type(Enum):
+    A = 1
+    B = '2'
+
+Type['A'] == Type.A
+Type.A.value >> 1
+Type.A.name >> 'A'
+list(Type) >>
+[<Type.A: 1>, <Type.B: '2'>]
+```
+
 ## [Functional Programming Modules](https://docs.python.org/3/library/functional.html)
 
 ### [itertools](./itertools.md)

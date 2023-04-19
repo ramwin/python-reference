@@ -235,7 +235,9 @@ copy.deepcopy会copy recursively
 
 * [ ] pprint
 
-### Numeric and Mathematical Modules
+### [enum](./library_reference/README.md#Enum)
+
+## Numeric and Mathematical Modules
 2. [math](https://docs.python.org/3/library/math.html)
 ```
 math.ceil(x) 大于等于x的最小的整数, 使用 __ceil__ 方法，可以让一个对象支持这个函数
