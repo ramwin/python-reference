@@ -30,13 +30,14 @@ stack = traceback.format_stack()  # 记录当前的stack
 自动帮你实现 `__eq__`, `__repr__`, `__init__`
 
 ```
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 
 @dataclass
 class InventoryItem:
     name: str
     unit_price: float
     quantity_on_hand: int = 0
+    mylist: list[int] = field(default_factory=list)
 
     def total_cost(self) -> float:
         return self.unit_price * self.quantity_on_hand
