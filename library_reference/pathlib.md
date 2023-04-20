@@ -1,4 +1,4 @@
-### [pathlib](https://docs.python.org/3/library/pathlib.html)
+[官网](https://docs.python.org/3/library/pathlib.html)
 
 #### 属性
 * parents
@@ -52,8 +52,14 @@ sorted(
 dirpath = Path("缓存")
 cache_path = dirpath.join("运行缓存", "tmp.json")
 ```
-* [`mkdir(mode=511, parents=False, exist_ok=False)`](https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir)
-创建目录
+
+##### [`mkdir(mode=511, parents=False, exist_ok=False)`](https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir)
+创建目录, 具体的权限参考 [manpages](https://manpages.debian.org/bullseye/manpages-zh/open.2.zh_CN.html)
+```
+import stat
+Path("new").mkdir(mode=stat.S_IREAD | stat.S_IWRITE | stat.S_IEXEC)
+```
+
 * resolve: 把相对路径转化成绝对路径. 并且会把软链接也解析
 * rglob: 和glob一样，但是默认在前面添加`**/`
 * rmdir: 删除空目录
