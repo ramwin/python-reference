@@ -61,6 +61,15 @@ origin = repo.create_remote("origin", "git@github.com:ramwin/python-reference.gi
 origin.pull()
 ```
 
+## flockcontext
+[github](https://github.com/AntoineCezar/flockcontext)
+```
+pip3 install flockcontext
+from flockcontext import FlockOpen
+with FlockOpen(Path, "w", timeout=3600) as lock:
+    <do something>
+    lock.fd.write("Locked\n")
+```
 
 ## pysrt
 [官网](https://github.com/byroot/pysrt)

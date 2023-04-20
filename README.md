@@ -573,6 +573,7 @@ with FTP() as ftp:
 
 ## Unix Specific Services
 ### [fcntl](https://docs.python.org/3/library/fcntl.html)
+不过更加建议的是使用[flockcontext](./other_useful_library/README.md)
 * fcntl.flock
 ```
 f = open("name", "w")
