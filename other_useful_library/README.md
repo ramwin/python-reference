@@ -4,8 +4,14 @@
 
 ```python
 from git import Repo
+from pathlib import Path
 Repo.clone_from(url, to_path)
 git.Repo.clone_from(url, to_path, recurse_submodule=True)
+
+# 指定密钥来克隆
+repo = git.Repo.init(Path("target"))
+with repo.config_writer() as writer:
+    writer.set("core", "sshCommand", "ssh -i <自定义密钥>")
 ```
 
 * 基础代码
@@ -33,6 +39,28 @@ try:
 except git.GitCommandError:
     raise
 ```
+
+### 执行命令
+* show
+查看某个文件的内容
+```
+repo.git.show(f"{commit}:README.md") => str
+```
+
+### commit
+```
+commit = next(repo.iter_commits("master", before=datetime.date(2022, 1, 1)))  # 获取元旦最后一个提交
+commit.commitded_date
+datetime.datetime(2020, 6, 19, 9, 46, 9, tzinfo=<git.objects.util.tzoffset object at 0x7f0ac0736320>)
+commit.hexsha
+```
+
+### remote
+```
+origin = repo.create_remote("origin", "git@github.com:ramwin/python-reference.git")
+origin.pull()
+```
+
 
 ## pysrt
 [官网](https://github.com/byroot/pysrt)

@@ -666,7 +666,7 @@ $ faker password
 ## [flake8] *检测python代码是不是满足pep8*
 ## [flask](./flask.md) *轻量级http服务器*
 
-## [git](./other_useful_library/README.md#git)
+## [GitPython](./other_useful_library/README.md#git)
 
 ## [imapclient](other_useful_library/imapclient.md)
 很好用的邮件客户端
