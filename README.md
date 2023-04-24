@@ -701,18 +701,28 @@ sudo apt-get install python3-dev default-libmysqlclient-dev build-essential
 sudo pip3 install mysqlclient
 ```
 * 运行
-```
-    from MySQLdb.connections import Connection
-    db = Connection(db="test")
-    c = db.cursor()
 
-    res = c.execute("select * from pets");
-    print(c.fetchall())
-    >>> ((1, 'cat'), (2, 'cat'), (3, 'dogs'), (13, 'dog'), (14, 'dog'), (15, 'dog'), (21, 'dog'), (22, 'dog'))
+```python
+from MySQLdb.connections import Connection
+db = Connection(db="test")
+c = db.cursor()
 
-    res = c.execute("insert into pets values (null, 'dog')");
-    # 注意即使没有commit, 数据库id也会自增. 如果一次没有commit, 下次commit时,id就不是连续的了
-    db.commit()
+res = c.execute("select * from pets");
+print(c.fetchall())
+>>> ((1, 'cat'), (2, 'cat'), (3, 'dogs'), (13, 'dog'), (14, 'dog'), (15, 'dog'), (21, 'dog'), (22, 'dog'))
+
+res = c.execute("insert into pets values (null, 'dog')");
+# 注意即使没有commit, 数据库id也会自增. 如果一次没有commit, 下次commit时,id就不是连续的了
+db.commit()
+
+# 使用连接池
+https://github.com/discover-python-channel/youtube-content/blob/main/mysql_connection_pooling/python/import_fake_data.py
+
+from mysql.connector import pooling
+cnxpool = pooling.MySQLConnectionPool(pool_name="poolname", pool_size=20. autocommit=True, username...)
+connection = cnxpool.get_connection()
+cursor = connection.cursor()
+cursor.execute(sql)
 ```
 
 ## [matplotlib](https://matplotlib.org/stable/tutorials/index)
