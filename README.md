@@ -197,6 +197,20 @@ enumerate(['a','b','c'], start=1)  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不�
 ### [2. re -- Regular expression operations 正则表达式 regex](./library_reference/re.md)
 [test regrex 在线测试](https://regex101.com/#python)
 
+### textwrap.dedent
+注意, 前面和后面的换行符不会消失
+
+```python
+from textwrap import dedent
+def function():
+    LONG_CONTENT = dedent("""\
+        A,   # 空格数量无所谓, 只要一致就行
+        B,
+        C\
+    """)
+
+```
+
 7. [ ] Binary Data Services
 
 ## Data Types
