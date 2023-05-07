@@ -4,12 +4,17 @@
 
 
 import time
-from PyWinMouse import PyMouse
+from PyWinMouse import Mouse
 
 
 def main():
-    m = PyMouse()
-    for i in range(200):
+    m = Mouse()
+    cnt = input("输入执行次数(50): ")
+    if not cnt:
+        cnt = 50
+    else:
+        cnt = int(cnt)
+    for _ in range(cnt):
         time.sleep(0.2)
         m.left_click()
 
