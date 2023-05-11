@@ -10,7 +10,7 @@ import click
 
 
 @click.command
-@click.option("--source")
+@click.option("--source", default="./")
 def main(source):
     files = list(Path(source).iterdir())
     for path in files:

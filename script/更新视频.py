@@ -20,7 +20,10 @@ import shutil
 import filetype
 
 
-CONFIG_FILE = "S:/局域网/config.json"
+CONFIG_FILES = [
+    "S:/局域网/config.json",
+    "S:/共享给小米平板5/config.json",
+]
 logging.basicConfig(
     level=logging.INFO,
     filemode="a",
@@ -50,12 +53,15 @@ class MoveTask:
         if not remain:
             logging.error("%s看完了, 请删除配置", self.source)
             return None
+        file_path = None
         for file_path in remain[0:self.max_-cnt]:
             source = self.source.joinpath(file_path.name)
             target = self.target.joinpath(file_path.name)
             logging.info("%s => %s", source, target)
             shutil.copyfile(source, target)
             logging.info("复制完成")
+        if file_path is None:
+            return None
         return file_path.name
 
     def get_target_cnt(self):
@@ -86,22 +92,23 @@ class MoveTask:
 
 def main():
     logging.info("开始运行")
-    with open(CONFIG_FILE, encoding="utf-8") as f:
-        info = json.load(f)
+    for config_file in CONFIG_FILES:
+        with open(config_file, encoding="utf-8") as f:
+            info = json.load(f)
 
-    for item in info:
-        new_current = MoveTask(
-            source=item["source"],
-            target=item["target"],
-            current=item["current"],
-            max_=item["max"]
-        ).run()
-        if new_current is not None:
-            item["current"] = new_current
+        for item in info:
+            new_current = MoveTask(
+                source=item["source"],
+                target=item["target"],
+                current=item["current"],
+                max_=item["max"]
+            ).run()
+            if new_current is not None:
+                item["current"] = new_current
 
-    with open(CONFIG_FILE, "w", encoding="utf-8") as f:
-        json.dump(info, f, indent=4,
-                  ensure_ascii=False)
+        with open(config_file, "w", encoding="utf-8") as f:
+            json.dump(info, f, indent=4,
+                      ensure_ascii=False)
 
 
 if __name__ == "__main__":
