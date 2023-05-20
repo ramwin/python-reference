@@ -9,18 +9,11 @@ import shutil
 
 import click
 
-
-LOGGER = logging.getLogger(__name__)
-logging.basicConfig(
-    level=logging.INFO,
-    filemode="a",
-    format="%(asctime)s %(pathname)s[line:%(lineno)d] %(levelname)s %(message)s",
-    filename="info.log",
-)
-LOGGER.addHandler(logging.StreamHandler())
+import logging_config
 
 
 def copy(source, target):
+    logging.info("复制文件夹 %s => %s", source, target)
     paths = list(source.iterdir())
     files = [
         path
@@ -36,20 +29,20 @@ def copy(source, target):
         target_file_path = target.joinpath(source_file_path.relative_to(source))
         target_file_path.parent.mkdir(exist_ok=True, parents=True)
         if not target_file_path.exists():
-            LOGGER.info("move %s => %s", source_file_path, target_file_path)
+            logging.info("move %s => %s", source_file_path, target_file_path)
             shutil.move(source_file_path, target_file_path)
         else:
             if target_file_path.stat().st_size >= source_file_path.stat().st_size:
-                LOGGER.info("unlink: %s", source_file_path)
+                logging.info("unlink: %s", source_file_path)
                 source_file_path.unlink()
             else:
                 target_file_path.unlink()
+                logging.info("move %s => %s", source_file_path, target_file_path)
                 shutil.move(source_file_path, target_file_path)
-                LOGGER.info("move %s => %s", source_file_path, target_file_path)
     for source_directory in directories:
         target_directory = target.joinpath(source_directory.relative_to(source))
         copy(source_directory, target_directory)
-    LOGGER.info("clear dir: %s", source)
+    logging.info("clear dir: %s", source)
     source.rmdir()
 
 
