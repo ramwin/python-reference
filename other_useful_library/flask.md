@@ -1,15 +1,17 @@
-## 基础
-* [基础](#基础)
-* [request](#request)
-* [response](#response)
-* [部署](#deploy)
-
-
 ### 基础
 ```
+from flask import Flask
+
+app = Flask(__name__)
+
+
 @app.route("/proxy")
 def hello():
     return "Hello world!", 200
+```
+
+```
+[wangx@localhost]$ flask --app hello run
 ```
 
 ### request
