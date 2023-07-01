@@ -1,6 +1,3 @@
-**Xiang Wang @ 2019-02-27 10:56:52**
-
-
 # [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html)
 ```python
 import unittest
@@ -73,4 +70,28 @@ class MyTest(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             1/0
         print("测试完毕")
+```
+
+## Class and Module Fixtures
+模块执行和Class的setUpClass都只会调用一遍.  
+[测试](../test/test_unittest_fixture.py)
+
+```
+# test_function.py
+def setUpModule():
+    print("模块执行前调用")
+
+class Test(unittest.TestCase):
+
+    @classmethod
+    def setUpClass(cls):
+        print("class 之前调用")
+
+    @classmethod
+    def tearDownClass(cls):
+        print("class 之前调用")
+
+def tearDownModule():
+    print("模块执行后调用")
+
 ```
