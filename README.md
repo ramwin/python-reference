@@ -681,7 +681,7 @@ $ faker password
 
 
 ## [flake8] *检测python代码是不是满足pep8*
-## [flask](./flask.md) *轻量级http服务器*
+## [flask](./other_useful_library/flask.md) *轻量级http服务器*
 
 ## [GitPython](./other_useful_library/README.md#git)
 
