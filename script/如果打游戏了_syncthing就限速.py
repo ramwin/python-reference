@@ -11,6 +11,7 @@
 
 import psutil
 import requests
+import time
 
 import logging
 import logging_config
@@ -55,6 +56,8 @@ def main():
 
 if __name__ == "__main__":
     try:
+        main()
+        time.sleep(5 * 60 / 2)
         main()
     except Exception as e:
         LOGGER.exception(e)
