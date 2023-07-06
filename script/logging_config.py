@@ -11,6 +11,6 @@ logging.basicConfig(
     format="%(asctime)s %(pathname)s[line:%(lineno)d] %(levelname)s %(message)s",
     handlers=[
         logging.StreamHandler(),
-        logging.FileHandler("info.log"),
+        logging.FileHandler("info.log", encoding="utf8"),
     ]
 )

@@ -12,6 +12,9 @@
 import psutil
 import requests
 
+import logging
+import logging_config
+
 
 GAMES = [
     "dota2.exe",
@@ -19,6 +22,7 @@ GAMES = [
 
 HEADERS = {"X-API-Key": "3iRZPuLmwNNtdtKJA5joUxP4CNCxwzgb"}
 CONFIG_URL = "http://localhost:8384/rest/config"
+LOGGER = logging.getLogger(__name__)
 
 
 def is_playing_games() -> bool:
@@ -31,7 +35,7 @@ def is_playing_games() -> bool:
 
 def main():
     if is_playing_games():
-        speed_limit = 1024
+        speed_limit = 100
     else:
         speed_limit = 9000
     config = requests.get(
@@ -50,4 +54,8 @@ def main():
 
 
 if __name__ == "__main__":
-    main()
+    try:
+        main()
+    except Exception as e:
+        LOGGER.exception(e)
+        raise
