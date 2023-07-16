@@ -46,6 +46,7 @@ def main():
         headers=HEADERS,
         timeout=1,
     ).json()
+    LOGGER.info("当前限速: %d", config["options"]["maxSendKbps"])
     config["options"]["maxSendKbps"] = speed_limit
     res = requests.put(
         CONFIG_URL,
@@ -63,6 +64,8 @@ if __name__ == "__main__":
         time.sleep(5 * 60 / 2)
         main()
         LOGGER.info("完成")
+    except requests.exceptions.ConnectTimeout:
+        LOGGER.info("服务尚未启动")
     except Exception as e:
         LOGGER.exception(e)
         raise
