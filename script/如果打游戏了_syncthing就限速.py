@@ -9,11 +9,13 @@
 """
 
 
-import psutil
-import requests
 import time
 
 import logging
+
+import psutil
+import requests
+
 import logging_config
 
 
@@ -38,7 +40,7 @@ def main():
     if is_playing_games():
         speed_limit = 100
     else:
-        speed_limit = 9000
+        speed_limit = 8000
     config = requests.get(
         CONFIG_URL,
         headers=HEADERS,
@@ -55,10 +57,12 @@ def main():
 
 
 if __name__ == "__main__":
+    LOGGER.info("执行")
     try:
         main()
         time.sleep(5 * 60 / 2)
         main()
+        LOGGER.info("完成")
     except Exception as e:
         LOGGER.exception(e)
         raise
