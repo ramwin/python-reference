@@ -47,6 +47,9 @@ def main():
         timeout=1,
     ).json()
     LOGGER.info("当前限速: %d", config["options"]["maxSendKbps"])
+    if config["options"]["maxSendKbps"] == speed_limit:
+        LOGGER.info("不需要调整")
+        return
     config["options"]["maxSendKbps"] = speed_limit
     res = requests.put(
         CONFIG_URL,
