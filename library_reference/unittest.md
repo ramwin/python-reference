@@ -24,7 +24,8 @@ if __name__ == "__main__":
 ### [assets methods](https://docs.python.org/3/library/unittest.html#unittest.TestCase.debug)  
 
 * assert**Equal**, assertNotEqual, 
-* assert**True**, assertFalse, 
+* [assertTrue(expr, msg=None), assertFalse](https://docs.python.org/3/library/unittest.html#unittest.TestCase.assertTrue)
+添加msg参数可以报错时知道为什么报错了
 * assert**Is**, assertIsNot, 
 * assert**IsNone**, assertIsNotNone, 
 * assert**In(a, b)**, assertNotIn
