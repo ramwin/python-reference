@@ -490,23 +490,20 @@ thread.kill()
 [socket](./library_reference/socket.md) *低级的网络接口*
 ### [signal](https://docs.python.org/zh-cn/3/library/signal.html)
 * 使用触发信号，处理ctrl+c的时候，保证循环执行完毕
+```
+stop = False
 
-    
-    stop = False
+def handler(signalnum, handler):
+    global stop
+    stop = True
 
-
-    def handler(signalnum, handler):
-        global stop
-        stop = True
-
-
-    def main():
-        signal.signal(signal.SIGINT, handler)
-        global stop
-        while not stop:
-            time.sleep(0.1)
-        print("stop拉")
-
+def main():
+    signal.signal(signal.SIGINT, handler)
+    global stop
+    while not stop:
+        time.sleep(0.1)
+    print("stop拉")
+```
 
 ## Internet Data Handling
 
