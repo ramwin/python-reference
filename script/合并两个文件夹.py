@@ -12,6 +12,9 @@ import click
 import logging_config
 
 
+LOGGER = logging.getLogger(__name__)
+
+
 def move_no_exist_directory(source, target, act=False):
     """把source文件夹存在而target文件夹不存在的文件夹， 移动到target下"""
     source_directories = {
@@ -24,11 +27,17 @@ def move_no_exist_directory(source, target, act=False):
         for path in target.iterdir()
         if path.is_dir()
     }
+    failed_directory = []
     for extra in source_directories - target_directories:
-        print(extra, end="=>")
-        print(target.joinpath(extra.name))
+        LOGGER.info("%s => %s", extra, target.joinpath(extra.name))
         if act:
-            shutil.move(extra, target.joinpath(extra.name))
+            try:
+                shutil.move(extra, target.joinpath(extra.name))
+            except Exception as e:
+                LOGGER.error("无法移动文件: %s", extra)
+                failed_directory.append(extra)
+    if failed_directory:
+        raise Exception(failed_directory)
 
 
 def copy(source, target):
