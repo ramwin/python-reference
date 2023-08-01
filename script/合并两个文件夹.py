@@ -12,6 +12,25 @@ import click
 import logging_config
 
 
+def move_no_exist_directory(source, target, act=False):
+    """把source文件夹存在而target文件夹不存在的文件夹， 移动到target下"""
+    source_directories = {
+        path
+        for path in source.iterdir()
+        if path.is_dir()
+    }
+    target_directories = {
+        path
+        for path in target.iterdir()
+        if path.is_dir()
+    }
+    for extra in source_directories - target_directories:
+        print(extra, end="=>")
+        print(target.joinpath(extra.name))
+        if act:
+            shutil.move(extra, target.joinpath(extra.name))
+
+
 def copy(source, target):
     logging.info("复制文件夹 %s => %s", source, target)
     paths = list(source.iterdir())
@@ -50,8 +69,11 @@ def copy(source, target):
 @click.option("--source")
 @click.option("--target")
 def main(source, target):
+    source = Path(source)
+    target = Path(target)
     """把source的文件都复制到target"""
-    copy(Path(source), Path(target))
+    # copy(Path(source), Path(target))
+    move_no_exist_directory(source, target, act=True)
 
 
 if __name__ == "__main__":
