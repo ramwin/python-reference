@@ -694,6 +694,13 @@ $ faker password
 
 * [itchat](https://github.com/littlecodersh/ItChat)  *微信机器人*
 * [iptools] *处理IP地址的包*
+
+## [jmespath](https://github.com/jmespath/jmespath.py)
+```
+>>> jmespath.search("foo.bar", {"foo": {"bar": "baz"}})
+'baz'
+```
+
 * [jinja模板渲染](./other_useful_library/jinjia.md)
 * kafka *用于kafka的消息分发*
     ```
