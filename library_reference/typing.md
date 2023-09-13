@@ -8,6 +8,13 @@
 def f(ham: str, eggs: str='eggs') -> str:
 ```
 
+#### Literal
+```
+Mode: TypeAlias = Literal['r', 'rb', 'w', 'wb']
+def open(file: str, mode: Mode):
+    pass
+```
+
 #### 基础
 可以直接用圆括号
 ```python
