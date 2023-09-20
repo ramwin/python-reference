@@ -882,6 +882,14 @@ print(process.memory_info().rss)  # in bytes
     * 安装:
         * windows: 先去[下载visual c++ 9.0](http://aka.ms/vcpython27)，然后再 `pip install pycrypto`
 
+## pydash
+模拟lodash的
+```
+# pip install pydash
+import pydash
+pydash.get(obj, "a.b.1", 1)  # 默认返回1, 但是key存在为None会返回None
+```
+
 ## [pylint](other_useful_library/pylint.md)
 
 ## [pydub](https://github.com/jiaaro/pydub) *编辑mp3的包*
