@@ -38,7 +38,8 @@ def is_playing_games() -> bool:
 
 def main():
     if is_playing_games():
-        speed_limit = 100
+        # 3000 太高
+        speed_limit = 2000
     else:
         speed_limit = 8000
     config = requests.get(
