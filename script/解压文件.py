@@ -41,13 +41,13 @@ def change_name(path):
     把path里面的所有内容，改成纯数字
     第%d页.png => 0x.png
     """
-    pattern = re.compile(r".*第(\d+)页.png")
+    pattern = re.compile(r".*第(\d+)页")
     for file in list(path.iterdir()):
         match = pattern.match(file.name)
         assert match, file
         page = int(match.groups()[0])
         file.rename(file.parent.joinpath(
-            f"{page:02d}.png"
+            f"{page:02d}" + file.suffix,
         ))
 
 
@@ -58,6 +58,8 @@ def main():
     3. 把第x页抽取出来，直接变成0x页
     """
     for zip_file in sorted(Path().iterdir()):
+        if zip_file.suffix != ".zip":
+            continue
         target_dir = Path(zip_file.stem.replace(" ", "-"))
         if target_dir.exists():
             continue
