@@ -682,6 +682,18 @@ $ faker password
 
 ## [GitPython](./other_useful_library/README.md#git)
 
+## [hexbytes](https://hexbytes.readthedocs.io/en/stable/)
+处理字符串和十六进制
+```python
+from hexbytes import HexBytes
+HexBytes(b"123")  // HexBytes("0x313233")
+HexBytes(b"123").hex()  // "0x0123"
+
+HexBytes("123")  // HexBytes("0x0123")
+HexBytes("123").hex()  // "0x313233"
+
+```
+
 ## [imapclient](other_useful_library/imapclient.md)
 很好用的邮件客户端
 
