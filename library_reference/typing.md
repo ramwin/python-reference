@@ -70,3 +70,13 @@ def attack(target: UserId, atk: AttackPoint):
     user.save()
 
 ```
+
+
+#### TypedDict
+
+```python3
+class Point2D(TypedDict):
+    x: int
+    y: int
+    label: str
+```
