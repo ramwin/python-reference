@@ -22,3 +22,5 @@ def test1():
     print("after send 1")
     print("next: {}".format(next(a)))
     print("end")
+
+test1()
