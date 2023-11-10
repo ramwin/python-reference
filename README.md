@@ -869,6 +869,11 @@ all_ips = [
 
 ```
 
+* 获取CPU信息
+```python3
+psutil.cpu_percent() => 3.5  # 所有cpu平均3.5%
+```
+
 * [获取内存信息](https://stackoverflow.com/questions/938733/total-memory-used-by-python-process)
 ```python3
 import os, psutil
