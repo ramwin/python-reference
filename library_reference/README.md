@@ -18,6 +18,22 @@ list(Type) >>
 [<Type.A: 1>, <Type.B: '2'>]
 ```
 
+## Numeric and Mathematical Modules
+
+### [random](https://docs.python.org/3.8/library/random.html)
+Generate pseudo-random numbers
+
+```python
+random.choice(list)  # choose one value from list
+random.choices(list, k=20)  # 随机选择20次, 可能重复选到
+random.randrange(stop)
+random.randrange(start, stop[, step])  
+turn value from start(included) to stop(excluded)
+random.randint(start, stop)  
+turn value from start(included) to stop(included)
+random.sample(list, k)  # choose k's value from list, 每个item只被选一次，所以k要小于len(list)
+```
+
 ## [Functional Programming Modules](https://docs.python.org/3/library/functional.html)
 
 ### [itertools](./itertools.md)
