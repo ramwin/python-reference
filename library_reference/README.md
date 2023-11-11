@@ -140,6 +140,10 @@ filter(lambda x: x.is_dir(), os.scandir())  # show all the directory entry
 1641063845.0
 ```
 
+### [Platform](https://docs.python.org/3/library/platform.html)
+* system  
+最实用,返回Linux, Windows, Java, Darwin
+
 ## File and Directory Acces
 
 ### [pathlib](./pathlib.md)

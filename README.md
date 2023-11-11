@@ -273,7 +273,7 @@ https://docs.python.org/3.8/library/fractions.html#fractions.Fraction)
     print("1/3 = %d/%d" % (f.numerator, f.denominator))
 ```
 
-### [random](./library_reference/README.md#random)
+### [random](./library_reference/README.md#user-content-random)
 
 7. statistics — Mathematical statistics functions 数学分析
     * [statistics.mean](https://docs.python.org/3/library/statistics.html#statistics.mean)
@@ -385,7 +385,8 @@ f.close()
 5. [ ] getopt
 
 ### [logging日志处理](./logging/README.md)
-9. [ ] to be continued
+### [platform](./library_reference/README.md#user-content-platform)
+平台相关
 
 ## Concurrent Execution
 
