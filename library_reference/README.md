@@ -22,7 +22,8 @@ list(Type) >>
 
 ### [itertools](./itertools.md)
 
-### functools: 对于函数和可调用对象的执行操作
+### functools
+对于函数和可调用对象的执行操作
 * cache
 缓存函数结果
 ```

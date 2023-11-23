@@ -293,7 +293,7 @@ random.sample(list, k)  # choose k's value from list, 每个item只被选一次�
 
 ## Functional Programming Modules
 * [itertools 迭代器](./library_reference/itertools.md)
-* functools
+* [functools](./library_reference/README.md#functools)
 包含cache lru_cache等功能
 * [operator 运算符](./library_reference/operator运算符.md)
 
