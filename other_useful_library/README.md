@@ -1,3 +1,20 @@
+## [diff-match-patch](https://github.com/google/diff-match-patch)
+用来比较文字的不同
+* 用法
+    ```
+    >>> from diff_match_patch import diff_match_patch
+    >>> dmp = diff_match_patch()
+    >>> dmp.diff_main('123', '22')
+    [(-1, '1'), (1, '2'), (0, '2'), (-1, '3')]
+    >>> dmp.diff_prettyHtml(dmp.diff_main('123', '223'))
+    '<del style="background:#ffe6e6;">1</del><ins style="background:#e6ffe6;">2</ins><span>23</span>'
+    ```
+* 效果  
+<del style="background:#ffe6e6;">1</del><ins style="background:#e6ffe6;">2</ins><span>23</span>
+
+## eth_typing
+* eth_typing.evm.ChecksumAddress
+
 ## [git](https://gitpython.readthedocs.io/en/stable/tutorial.html)
 处理git用
 * 克隆代码

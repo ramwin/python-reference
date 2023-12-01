@@ -1,6 +1,6 @@
 # 目录
 * [Language Reference 语法](#language-reference)
-* [Other Useful Library 其他有用的包](#other-useful-library)
+* [Other Useful Library 其他有用的包](./other_useful_library/README.md)
 * [official documents 官网文档](https://docs.python.org/3/)
 * [python tips 小技巧](http://book.pythontips.com/en/latest/index.html)
 * [github链接](https://github.com/ramwin/python-reference/)
@@ -637,19 +637,11 @@ month = XMonth(2022, 11)
 month.first_day()
 ```
 
-## [diff-match-patch](https://github.com/google/diff-match-patch)
-用来比较文字的不同
-* 用法
-    ```
-    >>> from diff_match_patch import diff_match_patch
-    >>> dmp = diff_match_patch()
-    >>> dmp.diff_main('123', '22')
-    [(-1, '1'), (1, '2'), (0, '2'), (-1, '3')]
-    >>> dmp.diff_prettyHtml(dmp.diff_main('123', '223'))
-    '<del style="background:#ffe6e6;">1</del><ins style="background:#e6ffe6;">2</ins><span>23</span>'
-    ```
-* 效果  
-<del style="background:#ffe6e6;">1</del><ins style="background:#e6ffe6;">2</ins><span>23</span>
+## diff-match-patch
+比较文字不同
+
+## eth_typing
+数字货币的类
 
 ## [faker](https://github.com/joke2k/faker)  *use fake to create a lot of name of text*  
 
