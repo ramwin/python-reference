@@ -93,6 +93,7 @@ When you merge cells the column and row number starts from 1
 
 # [Worksheet Tables](https://openpyxl.readthedocs.io/en/stable/worksheet_tables.html)
 
+* 例子
 ```
 from openpyxl import Workbook
 from openpyxl.worksheet.table import Table, TableStyleInfo
@@ -121,6 +122,8 @@ tab.tableStyleInfo = style
 ws.add_table(tab)
 wb.save("table.xlsx")
 ```
+* max_row: 数字最大行数
+* max_column: 数字最大宽度
 
 # Utils
 * `openpyxl.utils.column_index_from_string`
