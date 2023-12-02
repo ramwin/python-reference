@@ -829,6 +829,9 @@ images = convert_from_path(pdf_path)
 
 ## [pendulum](library_reference/datetime时间.md)
 
+## [PID](./other_useful_library/README.md#pid)
+流程控制算法
+
 ## [pillow](./pillow.md)
 ## [pip](https://pip.pypa.io/en/stable/user_guide/#config-file) *快速安装包*  
 * pip *快速安装包*  
@@ -844,34 +847,8 @@ export LC_ALL="en_US.UTF-8"  # 出现乱码
 export LC_CTYPE="en_US.UTF-8"
 ```
 
-## psutil
-[获取系统信息](https://psutil.readthedocs.io/en/latest/)
-```python
-import psutil
-psutil.net_if_addrs()
-all_ips = [
-    i.address
-    for i in itertools.chain(*psutil.net_if_addrs().values())
-]
-['169.254.139.78', '4c:cc:6a:47:6a:6f', '169.254.51.28',
- '90:61:ae:bb:31:8f', '127.0.0.1', '::1',
- '00:00:00:00:00:00', '169.254.162.106', '00:ff:cc:e9:90:30',
- '192.168.0.102', '90:61:ae:bb:31:8b', '169.254.220.176',
- '90:61:ae:bb:31:8c', '169.254.22.106', '92:61:ae:bb:31:8b']
-
-```
-
-* 获取CPU信息
-```python3
-psutil.cpu_percent() => 3.5  # 所有cpu平均3.5%
-```
-
-* [获取内存信息](https://stackoverflow.com/questions/938733/total-memory-used-by-python-process)
-```python3
-import os, psutil
-process = psutil.Process()
-print(process.memory_info().rss)  # in bytes
-```
+## [psutil](./other_useful_library/README.md#psutil)
+获取系统信息
 
 ## [pycharm]
 * 快捷键:

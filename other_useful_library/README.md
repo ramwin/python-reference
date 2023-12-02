@@ -88,6 +88,58 @@ with FlockOpen(Path, "w", timeout=3600) as lock:
     lock.fd.write("Locked\n")
 ```
 
+## PID
+流程控制算法
+```python
+from simple_pid import PID
+from exponential_counter import LinearCounter
+
+def test_time2():
+    print("我们提供一个自己的时间函数，每次加1")
+    pid = PID(1, 0.1, 0.05, time_fn=LinearCounter())
+    value = -200
+    for _ in range(3):
+        delta = pid(value)
+        value = value + delta
+        print("增加%f 变成 => %f", delta, value)
+
+# 我们提供一个自己的时间函数，每次加1
+# 增加%f 变成 => %f 220.0 20.0
+# 增加%f 变成 => %f -13.0 7.0
+# 增加%f 变成 => %f 10.950000000000001 17.950000000000003
+
+```
+
+## psutil
+[获取系统信息](https://psutil.readthedocs.io/en/latest/)
+```python
+import psutil
+psutil.net_if_addrs()
+all_ips = [
+    i.address
+    for i in itertools.chain(*psutil.net_if_addrs().values())
+]
+['169.254.139.78', '4c:cc:6a:47:6a:6f', '169.254.51.28',
+ '90:61:ae:bb:31:8f', '127.0.0.1', '::1',
+ '00:00:00:00:00:00', '169.254.162.106', '00:ff:cc:e9:90:30',
+ '192.168.0.102', '90:61:ae:bb:31:8b', '169.254.220.176',
+ '90:61:ae:bb:31:8c', '169.254.22.106', '92:61:ae:bb:31:8b']
+
+```
+
+* 获取CPU信息
+```python3
+psutil.cpu_percent() => 3.5  # 所有cpu平均3.5%
+```
+
+* [获取内存信息](https://stackoverflow.com/questions/938733/total-memory-used-by-python-process)
+```python3
+import os, psutil
+process = psutil.Process()
+print(process.memory_info().rss)  # in bytes
+```
+
+
 ## pysrt
 [官网](https://github.com/byroot/pysrt)
 * 基础
