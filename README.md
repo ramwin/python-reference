@@ -658,16 +658,7 @@ $ faker name
 $ faker password
 ```
 
-## [filelock](https://github.com/benediktschmitt/py-filelock)
-
-
-    from filelock import Timeout, FileLock
-    lock = FileLock(path)
-    try:
-        lock.acquire(timeout=0)
-    except Timeout:
-        pass
-
+## [filelock](./library_reference/README.md)
 
 ## [flake8] *检测python代码是不是满足pep8*
 ## [flask](./other_useful_library/flask.md) *轻量级http服务器*
@@ -685,6 +676,9 @@ HexBytes("123")  // HexBytes("0x0123")
 HexBytes("123").hex()  // "0x313233"
 
 ```
+
+## [Humanfriendly](./other_useful_library/README.md)
+转化尺寸
 
 ## [imapclient](other_useful_library/imapclient.md)
 很好用的邮件客户端

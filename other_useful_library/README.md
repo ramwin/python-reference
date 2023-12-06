@@ -12,8 +12,26 @@
 * 效果  
 <del style="background:#ffe6e6;">1</del><ins style="background:#e6ffe6;">2</ins><span>23</span>
 
-## eth_typing
-* eth_typing.evm.ChecksumAddress
+
+## [filelock](https://github.com/benediktschmitt/py-filelock)
+
+
+    from filelock import Timeout, FileLock
+    lock = FileLock(path)
+    try:
+        lock.acquire(timeout=0)
+    except Timeout:
+        pass
+
+## flockcontext
+[github](https://github.com/AntoineCezar/flockcontext)
+```
+pip3 install flockcontext
+from flockcontext import FlockOpen
+with FlockOpen(Path, "w", timeout=3600) as lock:
+    <do something>
+    lock.fd.write("Locked\n")
+```
 
 ## [git](https://gitpython.readthedocs.io/en/stable/tutorial.html)
 处理git用
@@ -78,15 +96,17 @@ origin = repo.create_remote("origin", "git@github.com:ramwin/python-reference.gi
 origin.pull()
 ```
 
-## flockcontext
-[github](https://github.com/AntoineCezar/flockcontext)
+## Humanfriendly
 ```
-pip3 install flockcontext
-from flockcontext import FlockOpen
-with FlockOpen(Path, "w", timeout=3600) as lock:
-    <do something>
-    lock.fd.write("Locked\n")
+Humanfriendly.parse_size("10M")  // 10_000_000
+Humanfriendly.parse_size("10M", binary=True)  // 1024 x 1024 x 10
 ```
+
+## [imapclient](imapclient.md)
+很好用的邮件客户端
+
+* [ics](https://pypi.org/project/ics/) *日历，行程 calendar*
+* [ipdb](./other_useful_library/ipdb.md) *断点来检测查看源码和运行状态*
 
 ## PID
 流程控制算法
@@ -158,3 +178,72 @@ part = subs.slice(starts_after={'minutes': 2, 'seconds': 30}, ends_before={'minu
 part.shift(seconds=-2)
 subs.save('other/path.srt', encoding='utf8')
 ```
+
+## web3
+* hexbytes.main.HexBytes
+```
+a == HexBytes(b"23")  b"2" == 50 == '0x32'
+a = HexBytes("0x3233")
+a.hex()  # "0x3233"
+str(a)  # "b'23'"
+```
+
+* eth.subscribe
+```
+{
+    'jsonrpc': '2.0',
+    'method': 'eth_subscription',
+    'params': {
+        'subscription': '0x83d5de89ec40acb9929bbb809caa6f4c',
+        'result': {
+            'address': '0x6a091a3406e0073c3cd6340122143009adac0eda',  # pair address
+            'topics': [
+                '0xd78ad95fa46c994b6551d0da85fc275fe613ce37657fb8d5e3d130840159d822',  # topics, v2_swap
+                '0x000000000000000000000000d9e1ce17f2641f24ae83637ab66a2cca9c378b9f',  # sender
+                '0x0000000000000000000000002c678004af4c1e217d9ed8baabd4454406ceb63d',  # receiver
+            ],
+            'data': (
+                '0x'
+                '0000000000000000000000000000000000000000000000000000000000000000'  # amount0In
+                '000000000000000000000000000000000000000000000000225ac0e25efff07a'  # amount1In
+                '0000000000000000000000000000000000000000000000025f76668b7ad2b42f'  # amount0Out
+                '0000000000000000000000000000000000000000000000000000000000000000'  # amount1Out
+            ),
+            'blockNumber': '0x11cca4f',
+            'transactionHash': '0xe51d8ecfb4fffe4b26f87b4ff2894e8c4dcfed4dd2a42b8af93bc3f90e347d97',
+            'transactionIndex': '0x72',
+            'blockHash': '0x5a1f1a86651bc0fa04b8a219a6612e17ef6cc224bb7abe8f09c57324eddb1b5e',
+            'logIndex': '0x108',
+            'removed': False}
+        },
+    'time': 1701100620
+}
+```
+
+* web3.eth.get_transaction
+```
+AttributeDict({
+    'blockHash': HexBytes('0x7c15a5dc5ae...2ff3fc6'),
+    'blockNumber': 18664014,
+    'from': '0xDF9f0598E04DccdD941462De4fA6B915D5bb7784',
+    'gas': 213168,
+    'gasPrice': 43106689045,
+    'maxFeePerGas': 74346949956,
+    'maxPriorityFeePerGas': 5000000000,
+    'hash': HexBytes('0xbff5390790e441959364cb8c7d1ac426de832d65a947f2aad069527a506c7318'),
+    'input': HexBytes('0x8600c0fe...0000000000'),
+    'nonce': 66,
+    'to': '0x2C2C82e7CAf5F14e4995c366D9DB8CdFdf7677E3',
+    'transactionIndex': 19,
+    'value': 30000000000000000,
+    'type': 2,
+    'accessList': [],
+    'chainId': 1,
+    'v': 0,
+    'r': HexBytes('0x7e561ae149d...c46ab87b61ec'),
+    's': HexBytes('0x5a483194f03...710d52f97adf')}
+```
+
+### eth_typing
+* eth_typing.evm.ChecksumAddress
+

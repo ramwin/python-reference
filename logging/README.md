@@ -114,6 +114,14 @@ class StreamHandler(Handler):
 class logging.FileHandler(filename, mode='a', encoding=None, delay=False)
 ```
 
+#### RotatingFileHandler
+```
+logging.handlers.RotatingFileHandler(
+    "info.log", mode="a",
+    maxBytes=humanfriendly.parse_size("10M"), backupCount=30,
+)
+```
+
 #### [MemoryHandler](https://docs.python.org/3/library/logging.handlers.html#memoryhandler)
 [测试](./memory_handler.py)
 MemoryHandler继承了BufferingHandler, 可以用来临时记录日志，一旦日志太多(超过了capacity),或者等级太高(达到了flushLevel), 就会记录到(target)
@@ -126,7 +134,6 @@ class logging.handlers.MemoryHandler(capacity, flushLevel=ERROR, target=None)
 * [ ] NullHandler
 * [ ] WatchedFileHadnler
 * [ ] BaseRotatingHandler
-* [ ] RotatingFileHandler
 * [ ] TimedRotatingFileHandler
 * [ ] SocketHandler
 * [ ] DatagramHandler
@@ -146,6 +153,8 @@ class logging.handlers.MemoryHandler(capacity, flushLevel=ERROR, target=None)
 * `%(filename)s`: 文件名
 * `%(pathname)s`: 路径名
 * `%(levelname)s`: INFO, ERROR等级信息
+* `%(message)s`: 消息内容
+* `%(module)s`: 模块名，文件名.stem
 * `%(process)d`: 进程ID
 * `%(processName)d`: 进程名
 
