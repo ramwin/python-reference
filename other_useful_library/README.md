@@ -1,3 +1,10 @@
+## bitstring
+转化二进制数据
+```
+BitArray(HexBytes("0x7f")).int  // 127   01111111
+BitArray(HexBytes("0x80")).int  // -128  10000000
+```
+
 ## [diff-match-patch](https://github.com/google/diff-match-patch)
 用来比较文字的不同
 * 用法
@@ -101,6 +108,20 @@ origin.pull()
 Humanfriendly.parse_size("10M")  // 10_000_000
 Humanfriendly.parse_size("10M", binary=True)  // 1024 x 1024 x 10
 ```
+
+## [hexbytes](https://hexbytes.readthedocs.io/en/stable/)
+处理字符串和十六进制
+```python
+from hexbytes import HexBytes
+HexBytes(b"123")  // HexBytes("0x313233")
+HexBytes(b"123").hex()  // "0x0123"
+
+HexBytes("123")  // HexBytes("0x0123")
+HexBytes("123").hex()  // "0x313233"
+```
+* len  2个hex为1个长度
+* slice `HexBytes("0xffff")[0:1] == HexBytes("0xff")`
+* getitem `HexBytes("0xffff")[0] == 255`
 
 ## [imapclient](imapclient.md)
 很好用的邮件客户端
