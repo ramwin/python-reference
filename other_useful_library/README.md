@@ -201,6 +201,12 @@ subs.save('other/path.srt', encoding='utf8')
 ```
 
 ## web3
+### [eth_utils](https://eth-utils.readthedocs.io/en/stable/)
+```
+from eth_utils.address import to_checksum_address
+```
+
+### hexbytes
 * hexbytes.main.HexBytes
 ```
 a == HexBytes(b"23")  b"2" == 50 == '0x32'
@@ -209,6 +215,7 @@ a.hex()  # "0x3233"
 str(a)  # "b'23'"
 ```
 
+### eth
 * eth.subscribe
 ```
 {
