@@ -931,7 +931,6 @@ dotenv list
 ## [pytz](./library_reference/datetime时间.md)  *时区*
 ## [PyWinMouse](https://pypi.org/project/PyWinMouse/)  *windows下操作鼠标*
 ## [qiniu](./qiniu.md)  *七牛的接口*
-## [redis](./redis.md) *use redis db*
 ## [requests](./other_useful_library/requests.md) *发送http请求*
 ## [rsa](./other_useful_library/rsa.md) *使用rsa加密*
 ## [scp](https://github.com/jbardin/scp.py)
