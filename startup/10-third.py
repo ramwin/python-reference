@@ -5,3 +5,5 @@
 
 import redis
 from redis import Redis
+
+from eth_utils.address import to_checksum_address
