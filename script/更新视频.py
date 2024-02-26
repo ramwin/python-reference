@@ -21,8 +21,8 @@ import filetype
 
 
 CONFIG_FILES = [
-    "S:/局域网/config.json",
-    "S:/共享给小米平板5/config.json",
+    "G:/局域网/config.json",
+    "G:/共享给小米平板5/config.json",
 ]
 logging.basicConfig(
     level=logging.INFO,

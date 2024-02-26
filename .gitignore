@@ -1,6 +1,5 @@
 *.pyc
 *.*~
-/log/*.log
 *~
 !/log/test
 *.swp
@@ -8,8 +7,7 @@ test.db
 test.html
 test.png
 .DS_STORE
-logging/*.log
 pillow_example/result.png
 *_test.png
-test.log
 test.py
+*.log
