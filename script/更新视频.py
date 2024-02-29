@@ -4,13 +4,15 @@
 配置文件config.json
 config.json [
     {
-        "Linux": {
-            "source_device": "/run/media/wangx/software/",
-            "target_device": "/run/media/wangx/samsung/"
-        },
-        "Windows": {
-            "source_device": "W:",
-            "target_device": "S:"
+        "device": {
+            <hostname>: {
+                "source_device": "S:",  # 不同机器上的host
+                "target_device": "G:",  # 不同机器上的host
+            },
+            "manjaro.ramwin.com": {
+                "source_device": "/run/media/wangx/software/",
+                "target_device": "/run/media/wangx/samsung/"
+            },
         },
         "folder": {
             "source": "复制视频的文件夹",
@@ -24,9 +26,10 @@ config.json [
 
 import json
 import logging
-import platform
 import shutil
+import socket
 from pathlib import Path
+from typing import List
 
 import filetype
 from flockcontext import FlockOpen
@@ -40,19 +43,23 @@ logging.basicConfig(
     encoding="utf-8")
 LOGGER = logging.getLogger(__name__)
 LOGGER.addHandler(logging.StreamHandler())
+HOSTNAME = socket.getfqdn()
 
 
-if platform.system() == "Windows":
-    DEVICE = Path("S:/")
-    DEVICE_KEY = "windows_device"
-elif platform.system() == "Linux":
-    DEVICE = Path("/run/media/wangx/samsung")
-    DEVICE_KEY = "linux_device"
-
-CONFIG_FILES = [
-        DEVICE.joinpath("局域网/config.json"),
-        DEVICE.joinpath("共享给小米平板5/config.json"),
-]
+def get_config_file_list() -> List[Path]:
+    """读取所有需要同步的配置文件"""
+    if HOSTNAME == "manjaro.ramwin.com":
+        device = Path("/run/media/wangx/samsung")
+    elif HOSTNAME == "Windows":
+        device = Path("S:/")
+    else:
+        raise NotImplementedError
+    results = [
+            device.joinpath("局域网/config.json"),
+            device.joinpath("共享给小米平板5/config.json"),
+    ]
+    LOGGER.info("文件列表: %s", results)
+    return results
 
 
 class MoveTask:
@@ -128,16 +135,19 @@ class MoveTask:
 def main():
     """运行"""
     LOGGER.info("开始运行")
-    for config_file in CONFIG_FILES:
+    for config_file in get_config_file_list():
         with open(config_file, encoding="utf-8") as f:
             info = json.load(f)
 
         for item in info:
-            if platform.system() not in item:
-                LOGGER.warning("还有没有迁移的文件夹: %s", item)
+            if "device" not in item:
+                LOGGER.warning("还没有兼容: %s", item)
                 continue
-            source_device = item[platform.system()]["source_device"]
-            target_device = item[platform.system()]["target_device"]
+            if HOSTNAME not in item["device"]:
+                LOGGER.warning("还没有兼容: %s", item)
+                continue
+            source_device = item[HOSTNAME]["source_device"]
+            target_device = item[HOSTNAME]["target_device"]
             new_current = MoveTask(
                     source=Path(source_device, item["folder"]["source"]),
                     target=Path(target_device, item["folder"]["target"]),
