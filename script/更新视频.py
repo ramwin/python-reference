@@ -148,6 +148,9 @@ def main():
                 continue
             source_device = item["device"][HOSTNAME]["source_device"]
             target_device = item["device"][HOSTNAME]["target_device"]
+            if not Path(source_device, item["folder"]["source"]).exists():
+                LOGGER.warning("某个磁盘没挂载: %s", source_device)
+                continue
             new_current = MoveTask(
                     source=Path(source_device, item["folder"]["source"]),
                     target=Path(target_device, item["folder"]["target"]),
