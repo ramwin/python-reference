@@ -146,8 +146,8 @@ def main():
             if HOSTNAME not in item["device"]:
                 LOGGER.warning("还没有兼容: %s", item)
                 continue
-            source_device = item[HOSTNAME]["source_device"]
-            target_device = item[HOSTNAME]["target_device"]
+            source_device = item["device"][HOSTNAME]["source_device"]
+            target_device = item["device"][HOSTNAME]["target_device"]
             new_current = MoveTask(
                     source=Path(source_device, item["folder"]["source"]),
                     target=Path(target_device, item["folder"]["target"]),
