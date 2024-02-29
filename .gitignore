@@ -10,4 +10,8 @@ test.png
 pillow_example/result.png
 *_test.png
 test.py
+
 *.log
+
+*.lock
+
