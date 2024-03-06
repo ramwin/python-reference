@@ -262,7 +262,12 @@ math.floor(x) 小于等于x的最大的整数, 使用 __floor__ 方法，可以�
 相当于 `abs(a-b) <= max{abs_tol, rel_tol*max[abs(a), abs(b)]}`, 起不到校验超过`abs_tol`或者`rel_tol`的功能哦
 
 4. [decimal](https://docs.python.org/3/library/decimal.html)
-```
+```python
+a = Decimal(3)
+a / 3  # Decimal("0.33333333333333333")
+b = Decimal("0.050")
+b.scaleb(-3)  # Decimal("0.0000050")
+b.scaleb(3)  # Decimal("50")
 ```
 
 5. [fractions](
@@ -595,6 +600,8 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
     archive = py7zr.SevenZipFile('sample.7z', mode='r')
     archive.extractall(path='/tmp')
 
+
+## [airflow](../airflowtest/README.md)
 
 ## beautifulsoup4 *用来解析html文件*
 [官网](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html#id5)
