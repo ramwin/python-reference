@@ -20,7 +20,7 @@ REDIS = Redis("localhost")
 
 def process1():
     print("进程1开始")
-    with REDIS.lock("lock") as lock:
+    with REDIS.lock("lock"):
         print("进程1拿到了锁")
         time.sleep(5)
         print("进程1结束")
@@ -29,7 +29,7 @@ def process1():
 def process2():
     print("进程2开始")
     try:
-        with REDIS.lock("lock", blocking_timeout=0.1) as lock:
+        with REDIS.lock("lock", blocking=False):
             print("进程2拿到了锁")
             time.sleep(5)
             print("进程2结束")
