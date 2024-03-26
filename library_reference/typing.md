@@ -80,3 +80,21 @@ class Point2D(TypedDict):
     y: int
     label: str
 ```
+
+
+#### overload
+函数重载, [示例](../test_typing_overload.py)
+```python3
+from typing import overload
+@overload
+def process(response: None) -> None:
+    ...
+@overload
+def process(response: int) -> tuple[int, str]:
+    ...
+@overload
+def process(response: bytes) -> str:
+    ...
+def process(response):
+    ...  # actual implementation goes here
+```
