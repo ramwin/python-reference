@@ -15,6 +15,7 @@ author = 'Xiang Wang'
 
 extensions = [
         "myst_parser",
+        "sphinx_design",
         ]
 
 templates_path = ['_templates']
@@ -27,3 +28,7 @@ language = 'zh_CN'
 
 html_theme = 'alabaster'
 html_static_path = ['_static']
+source_suffix = {
+    '.rst': 'restructuredtext',
+    '.md': 'markdown',
+}

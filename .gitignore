@@ -15,4 +15,5 @@ test.py
 
 *.lock
 
+build
 _build

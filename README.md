@@ -616,7 +616,10 @@ BitArray(b"123").bin  # '001100010011001000110011'
 
 ```
 
-## [captcha](./other_useful_library/captcha_test.py) *生成验证码*
+## captcha  
+
+[示例](./other_useful_library/captcha_test.py)
+*生成验证码*
 * ## celery *用来执行异步脚本*
 这个软件在linux-reference里面  
     * [官网](http://docs.celeryproject.org/en/latest/index.html)

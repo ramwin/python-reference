@@ -6,8 +6,6 @@
 Welcome to python-reference's documentation!
 ============================================
 
-we
-
 .. toctree::
    :maxdepth: 2
    :caption: Contents:
