@@ -11,6 +11,7 @@ Welcome to python-reference's documentation!
    :caption: Contents:
 
    ./README.md
+   ./设计模式.md
 
 
 
