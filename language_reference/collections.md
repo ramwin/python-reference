@@ -1,5 +1,3 @@
-**Xiang Wang @ 2017-04-28 11:19:42**
-
 ### collections
 * [官网文档](https://docs.python.org/3/library/collections.html#module-collections)
 * [OrderedDict](#ordereddict)

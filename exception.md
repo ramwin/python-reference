@@ -1,6 +1,4 @@
-#### Xiang Wang @ 2016-08-19 11:00:34
-
-
+**Xiang Wang @ 2016-08-19 11:00:34**
 
 ### Exception知识
 * [python.org官网教程](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)

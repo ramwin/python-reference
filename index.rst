@@ -10,19 +10,16 @@ Welcome to python-reference's documentation!
    :maxdepth: 2
    :caption: Contents:
 
-   ./collections.md
+   ./README.md
    ./config.md
    ./exception.md
    ./exchangelib.md
-   ./for.md
    ./list.md
    ./mysql.md
    ./pdb调试.md
    ./pillow.md
    ./polymorphism_多态.md
    ./qiniu.md
-   ./range.md
-   ./README.md
    ./runtime_services.md
    ./set.md
    ./string.md
