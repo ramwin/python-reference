@@ -12,8 +12,6 @@ Welcome to python-reference's documentation!
 
    ./README.md
    ./config.md
-   ./exception.md
-   ./exchangelib.md
    ./list.md
    ./mysql.md
    ./pdb调试.md
@@ -47,7 +45,6 @@ Welcome to python-reference's documentation!
    ./library_reference/re.md
    ./library_reference/socket.md
    ./library_reference/tempfile.md
-   ./library_reference/typing.md
    ./library_reference/unittest.md
    ./library_reference/urllib.md
    ./library_reference/zip.md
@@ -69,7 +66,6 @@ Welcome to python-reference's documentation!
    ./other_useful_library/peewee.md
    ./other_useful_library/pyenv.md
    ./other_useful_library/pylint.md
-   ./other_useful_library/README.md
    ./other_useful_library/requests.md
    ./other_useful_library/rsa.md
    ./other_useful_library/visidata.md

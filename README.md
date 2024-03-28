@@ -1,3 +1,9 @@
+```{toctree}
+:maxdepth: 2
+./library_reference/README.md
+./other_useful_library/README.md
+```
+
 # 目录
 * [Language Reference 语法](#language-reference)
 * [Other Useful Library 其他有用的包](./other_useful_library/README.md)
@@ -11,11 +17,9 @@
 其实这个是Library Reference的内容
 
 ```{toctree}
-:heading-offset: 2
 ./list.md
 ```
 ```{toctree}
-:heading-offset: 3
 ./for.md
 ```
 * ### [列表list](list.md)
@@ -81,6 +85,7 @@ twine upload dist/*
 ./language_reference/README.md
 ```
 456
+
 
 # 其他有用的包 Other Useful Library
 ## 7z

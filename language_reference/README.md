@@ -4,7 +4,7 @@
 
 ```{toctree}
 :heading-offset: 1
-./exception.md)
+./exception.md
 ```
 
 [官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
@@ -480,9 +480,6 @@ def main():
     * [ ] socketserver
 
 ## Development Tools
-
-### [typing](./library_reference/typing.md)
-各种注释
 
 ### [unittest — Unit testing framework 测试框架](./library_reference/unittest.md)
 

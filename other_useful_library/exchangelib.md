@@ -1,8 +1,8 @@
-#### Xiang Wang @ 2016-12-22 17:44:47
+# exchangelib
 
-# basic auth configuration
+## basic auth configuration
 call this function first
-## example
+### example
     USERNAME = "ramwin"
     PASSWORD = "MYPASSWORD"
     config = Configuration(
@@ -20,8 +20,8 @@ call this function first
                       access_type=DELEGATE)
 
 
-# Mailbox
-## example
+## Mailbox
+### example
     # a class represent mail
     mailbox = Mailbox(
       name="nickname",
@@ -30,20 +30,20 @@ call this function first
       item_id=None)
 
 
-# EmailAddress
-## example
+## EmailAddress
+### example
     from exchangelib.folders import EmailAddress
     # a class represent email for contact
     emailaddress = EmailAddress(email="user@example.com", label="EmailAddress1")
 
 
-## parameters
+### parameters
 * email: an email
 * label: must in {'EmailAddress1', 'EmailAddress2', 'EmailAddress3'}
 
 
-# Contact
-## example
+## Contact
+### example
     from exchangelib.folders import Contact
     contact = Contact(
         nickname="name",
@@ -52,9 +52,9 @@ call this function first
     account.contacts.bulk_create(items=[contact])
 
 
-# CalendarItem
+## CalendarItem
 an event
-## example
+### example
     from exchangelib.folders import CalendarItem 
     item = CalendarItem(
         start = TZ.localize(EWSDateTime(year, month, day, hour, 30)),
@@ -78,29 +78,29 @@ an event
         changekey = item.changekey,
         # item_id = item.item_id,
     )
-## parameters
+### parameters
 * start: starttime
 * end: endtime
 * subject
 * body
 * location
 
-## function
+### function
 * save
     * `send_meeting_invitations`: 'SendToNone', 'SendOnlyToChanged', 'SendToAllAndSaveCopy'
 
 
-# Attendee
-## example
+## Attendee
+### example
     from exchangelib.folders import Attendee
     attendee = Attendee(
       mailbox = mailbox,
     )
 
 
-# Message
+## Message
 email message
-## example
+### example
     from exchangelib.folders import Message
     m = Message(
         folder=account.send,  # if folder is None, you can call m.save only
@@ -112,6 +112,6 @@ email message
     )
     m.send_and_save()
     m.save()  # if folder is None
-## parameters
+### parameters
 * to_recipients: [Mailbox, Mailbox]
 * cc_recipients: [Mailbox, Mailbox]
