@@ -1,15 +1,16 @@
-```{contents}
-```
-
 # 所有内置库一览
 [官网](https://docs.python.org/3/library/index.html)
 ```{toctree}
 :maxdepth: 1
+./socket.md
+```
+
+## Typing
+```{toctree}
 ./typing.md
 ```
 
 ## Data Types
-
 
 
 ### [Enum](https://docs.python.org/3/library/enum.html)

@@ -416,7 +416,6 @@ thread.kill()
 ## Networking and Interprocess Communication 网络和进程间通信
 
 ### [asyncio](./library_reference/asyncio.md) *用来处理协程*
-[socket](./library_reference/socket.md) *低级的网络接口*
 ### [signal](https://docs.python.org/zh-cn/3/library/signal.html)
 * 使用触发信号，处理ctrl+c的时候，保证循环执行完毕
 ```

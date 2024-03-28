@@ -1,4 +1,7 @@
-# [Typing](https://docs.python.org/3/library/typing.html)
+```{contents}
+```
+
+[官网](https://docs.python.org/3/library/typing.html)
 
 [测试](./typing_test.py)
 
@@ -8,14 +11,14 @@
 def f(ham: str, eggs: str='eggs') -> str:
 ```
 
-## Literal
+# Literal
 ```
 Mode: TypeAlias = Literal['r', 'rb', 'w', 'wb']
 def open(file: str, mode: Mode):
     pass
 ```
 
-## 基础
+# 基础
 可以直接用圆括号
 ```python
 from typing import Tuple, List, Dict, Set
@@ -30,7 +33,7 @@ def get_set() -> Set[int]:
 ```
 
 
-## 返回List
+# 返回List
 ```python
 def add(number: int) -> int:
     return number + 1
@@ -40,7 +43,7 @@ from typing import List
 List[int]  # python3 <= 3.8
 ```
 
-## 多选
+# 多选
 
 ```python
 from typing import Literal
@@ -48,14 +51,14 @@ GenderType = Literal["male", "female"]
 ```
 
 
-## Union
+# Union
 
 ```python
 from typing import Union
 Union[User, None]
 ```
 
-## 区分两个int
+# 区分两个int
 
 ```python
 from typing import NewType
@@ -72,7 +75,7 @@ def attack(target: UserId, atk: AttackPoint):
 ```
 
 
-## TypedDict
+# TypedDict
 
 ```python3
 class Point2D(TypedDict):
@@ -81,8 +84,11 @@ class Point2D(TypedDict):
     label: str
 ```
 
+* [NotRequired](https://docs.python.org/3/library/typing.html#typing.NotRequired)
+3.11新特性，可选字段
 
-## overload
+
+# overload
 函数重载, [示例](../test_typing_overload.py)
 ```python3
 from typing import overload
