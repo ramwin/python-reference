@@ -1,8 +1,8 @@
 *Xiang Wang @ 2017-06-16 14:58:59*
 
 
-## 智能多媒体API [官网](https://developer.qiniu.com/dora)
-### [处理机制](https://developer.qiniu.com/dora/manual/1204/processing-mechanism)
+# 智能多媒体API [官网](https://developer.qiniu.com/dora)
+## [处理机制](https://developer.qiniu.com/dora/manual/1204/processing-mechanism)
 * 管道处理
 ```
 [GET] url?<fop1>|<fop2>|<fop3>|<fopN>
@@ -10,8 +10,8 @@
 * [样式](https://developer.qiniu.com/dora/manual/1204/processing-mechanism#3)
 通过命令行工作，可以把一大串的处理变成一个简短的类似`-phone`这种图片
 
-### 图片处理
-#### 图片基本处理 [官网](https://developer.qiniu.com/dora/manual/1279/basic-processing-images-imageview2)
+## 图片处理
+### 图片基本处理 [官网](https://developer.qiniu.com/dora/manual/1279/basic-processing-images-imageview2)
 * 接口规格
 ```
 ?imageView2/<mode>/w/
@@ -20,7 +20,7 @@
     * `/1/w/<Width>/h/<Height>`: 宽最少为Width, 高最少为Height, 等比缩放， 居中裁剪 只
     * `/1/w/<Width>`: 宽和高都最少为Width, 生成正方图
 
-#### 图片水印处理
+### 图片水印处理
 * 接口规格
 ```
 ?watermark/1
@@ -35,7 +35,7 @@
 ?watermark/1/image/aHR0cHM6Ly9wdWJsaWNzdGF0aWMuZHVpc2hhbmcubmV0L3dhdGVybWFya19zbWFsbC5wbmc=/dissolve/70/
 ```
 
-#### 图片圆角处理
+### 图片圆角处理
 * 接口规格
 ```
 roundPic/radius/<radius>
@@ -44,7 +44,7 @@ roundPic/radius/<radius>
 ```
 
 
-## SDK
+# SDK
 * [官网](https://developer.qiniu.com/kodo/sdk/1242/python#1)
 ```
 from qiniu import put_file, Auth
@@ -53,7 +53,7 @@ secret_key = 'wLXODkNWpzFj_SI60zu5GjjOVZzxmvlNJ0tLOR3K'
 qiniu_auth = Auth(access_key, secret_key)
 ```
 
-### 上传文件
+## 上传文件
 ```
 from qiniu import etag
 bucket_name = 'sharegine-public-test'
@@ -68,13 +68,13 @@ assert ret["key"] == key
 assert ret["hash"] == etag(localfile)
 ```
 
-### 数据处理
+## 数据处理
 
 * #### 触发持久化操作
 
-### [资源管理](https://developer.qiniu.com/kodo/sdk/1242/python#6)
-#### [ ] 修改文件存储类型
-#### [移动或重命名文件](https://developer.qiniu.com/kodo/sdk/1242/python#rs-move)
+## [资源管理](https://developer.qiniu.com/kodo/sdk/1242/python#6)
+### [ ] 修改文件存储类型
+### [移动或重命名文件](https://developer.qiniu.com/kodo/sdk/1242/python#rs-move)
 ```
 # -*- coding: utf-8 -*-
 # flake8: noqa
@@ -95,14 +95,14 @@ ret, info = bucket.move(bucket_name, key, bucket_name, key2)
 print(info)
 assert ret == {}
 ```
-#### [ ] 复制文件副本
-#### [删除空间中的文件](https://developer.qiniu.com/kodo/sdk/1242/python#rs-delete)
+### [ ] 复制文件副本
+### [删除空间中的文件](https://developer.qiniu.com/kodo/sdk/1242/python#rs-delete)
 ```
 ret, info = bucket_manager.delete(bucket_name, key)
 assert ret == {}
 ```
 
-#### 获取指定前缀文件列表
+### 获取指定前缀文件列表
 ```
 ret, eof, info = bucket.list(bucket_name, prefix, marker, limit, delimiter)
 ret = {
@@ -121,7 +121,7 @@ eof = False 如果还有数据的话
 assert len(ret.get('items')) is not None
 ```
 
-#### [抓取网络资源到空间](https://developer.qiniu.com/kodo/sdk/1242/python#rs-fetch)
+### [抓取网络资源到空间](https://developer.qiniu.com/kodo/sdk/1242/python#rs-fetch)
 ```
 # -*- coding: utf-8 -*-
 # flake8: noqa
@@ -139,9 +139,9 @@ print(info)
 assert ret['key'] == key  # 如果失败了 ret is None
 ```
 
-#### [ ] 更新镜像存储空间中文件内容
+### [ ] 更新镜像存储空间中文件内容
 
-### CDN相关
+## CDN相关
 * #### 文件刷新
 ```
 import qiniu
@@ -159,8 +159,8 @@ assert ret['code'] == 200 and ret['error'] == 'success'
 * #### 目录刷新
 
 
-## 附录
-### URL安全的Base64编码
+# 附录
+## URL安全的Base64编码
 ```
 from qiniu import urlsafe_base64_encode
 ```

@@ -1,4 +1,4 @@
-### 基础
+# 基础
 ```
 from flask import Flask
 
@@ -14,16 +14,16 @@ def hello():
 [wangx@localhost]$ flask --app hello run
 ```
 
-### request
+# request
 * method: `"GET", "POST"`
 * json: `把json数据解析出来`
 
 
-### response
+# response
 * return "Hello world!", 200
 
 
-### 部署
+# 部署
 ```
     gunicorn -w 4 -b 127.0.0.1:8000 --access-logfile log.log duishangproxy:app
 ```

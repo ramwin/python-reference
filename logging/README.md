@@ -3,7 +3,7 @@
 * [官网教程-基础](https://docs.python.org/3/howto/logging.html)
 * [官网模块-进阶](https://docs.python.org/3/library/logging.html)
 
-### example
+# example
 * 基础  
 默认配置, 保存到文件和终端
 
@@ -81,12 +81,12 @@ logger.warning("warning")
 ```
 
 
-### [Exceptions raised during logging][exceptions]
+# [Exceptions raised during logging][exceptions]
 [测试](./test_unicode.py)
 
-### logging.Logger
+# logging.Logger
 
-#### [`debug(msg, stack_info, *args, **kwargs)`](https://docs.python.org/3/library/logging.html#logging.debug)
+## [`debug(msg, stack_info, *args, **kwargs)`](https://docs.python.org/3/library/logging.html#logging.debug)
 第二个参数 stack_info 如果是 `True`, 就会把日志的堆栈信息打印出来
 
 
@@ -95,10 +95,10 @@ logger.warning("warning")
 lvl: 必须是整数
 用指定的lvl等级去添加一个日志, 只要这个lvl大于等于20, 就会出发logging.INFO
 
-### logging.handlers
+# logging.handlers
 [官网](https://docs.python.org/3/library/logging.handlers.html)
 
-#### [StreamHandler](https://docs.python.org/3/library/logging.handlers.html#streamhandler)
+## [StreamHandler](https://docs.python.org/3/library/logging.handlers.html#streamhandler)
 ```python3
 /usr/lib/python3.8/logging/__init__.py
 class StreamHandler(Handler):
@@ -109,12 +109,12 @@ class StreamHandler(Handler):
 ```
 所以StreamHandler的输出都是2>error哦
 
-#### [FileHandler](https://docs.python.org/3/library/logging.handlers.html#filehandler)
+## [FileHandler](https://docs.python.org/3/library/logging.handlers.html#filehandler)
 ```
 class logging.FileHandler(filename, mode='a', encoding=None, delay=False)
 ```
 
-#### RotatingFileHandler
+## RotatingFileHandler
 ```
 logging.handlers.RotatingFileHandler(
     "info.log", mode="a",
@@ -122,7 +122,7 @@ logging.handlers.RotatingFileHandler(
 )
 ```
 
-#### [MemoryHandler](https://docs.python.org/3/library/logging.handlers.html#memoryhandler)
+## [MemoryHandler](https://docs.python.org/3/library/logging.handlers.html#memoryhandler)
 [测试](./memory_handler.py)
 MemoryHandler继承了BufferingHandler, 可以用来临时记录日志，一旦日志太多(超过了capacity),或者等级太高(达到了flushLevel), 就会记录到(target)
 如果需要抛弃刚才的日志，可以调用`log.handelrs[0].close()`或者`log.removeHandler(memory_handler)`
@@ -130,7 +130,7 @@ MemoryHandler继承了BufferingHandler, 可以用来临时记录日志，一旦�
 class logging.handlers.MemoryHandler(capacity, flushLevel=ERROR, target=None)
 ```
 
-#### 其他
+## 其他
 * [ ] NullHandler
 * [ ] WatchedFileHadnler
 * [ ] BaseRotatingHandler
@@ -145,9 +145,9 @@ class logging.handlers.MemoryHandler(capacity, flushLevel=ERROR, target=None)
 * [ ] QueueListener
 
 
-### [LogRecord](https://docs.python.org/3/library/logging.html#logrecord-objects)
+# [LogRecord](https://docs.python.org/3/library/logging.html#logrecord-objects)
 
-### LogRecord属性
+# LogRecord属性
 * `%(asctime)s`: 时间
 * `%(created)s`: 时间戳
 * `%(filename)s`: 文件名
@@ -159,8 +159,8 @@ class logging.handlers.MemoryHandler(capacity, flushLevel=ERROR, target=None)
 * `%(processName)d`: 进程名
 
 
-### 模块级函数
-#### basicConfig(**kwargs)
+# 模块级函数
+## basicConfig(**kwargs)
 因为formatter的设置是在basicConfig里设置的, 所以basicConfig以后再给root添加logger就没有formatter的效果了(这样可以避免每个recorder都要判断formatter是否存在)
 ```python3
 for h in root.handlers[:]:  # 清理旧的handler
@@ -172,11 +172,11 @@ for h in handlers:  # 设置新的handler
 ```
 
 
-#### shutdown
+## shutdown
 * 系统退出时自动调用, 不要手动调用
 * 调用时会让每个logger都调用flush后close
 
-#### warnings
+## warnings
 ```python3
 logging.captureWarnings(True)
 ```

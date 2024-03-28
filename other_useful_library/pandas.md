@@ -1,4 +1,4 @@
-## [pandas](https://pandas.pydata.org/docs/user_guide/index.html)
+# [pandas](https://pandas.pydata.org/docs/user_guide/index.html)
 
 
 ```
@@ -23,7 +23,7 @@ df.loc['张三'] = {'age': 18}
 ```
 
 
-### [Sorting 排序](https://pandas.pydata.org/docs/user_guide/basics.html#by-values)
+## [Sorting 排序](https://pandas.pydata.org/docs/user_guide/basics.html#by-values)
 
 ```
 # 二分法找到最接近但不大于的数
@@ -32,7 +32,7 @@ df.sort_values(by='age', inplace=True)
 df[df.age <= 20].max()
 ```
 
-### [Indexing and selecting data](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html)
+## [Indexing and selecting data](https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html)
 ```
 df.loc["张三"].年龄
 df.loc["张三"]["年龄"]
@@ -72,7 +72,7 @@ charlie  22  True
 
 ```
 
-### where 过滤数据
+## where 过滤数据
 ```
 df.where(df.id > 0)
 df[df.id > 0)
@@ -87,18 +87,18 @@ df[~pandas.to_datetime(df.index, errors="coerce").isnull()]  # 过滤掉日期�
 df2 = df.set_index("ID")
 ```
 
-### [Concatenating Objects](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html#concatenating-objects)
+## [Concatenating Objects](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html#concatenating-objects)
 拼接数据
 ```
 ```
 
 
-### [merge](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html)
+## [merge](https://pandas.pydata.org/pandas-docs/stable/user_guide/merging.html)
 ```
 result = pandas.merge(left, right, how="inner", on=["id"])
 ```
 
-### Input/output
+## Input/output
 
 
 ```
@@ -112,7 +112,7 @@ ParserBase._convert_to_ndarrays()
 ```
 
 
-#### `read_csv`  
+### `read_csv`  
 * [guide](https://pandas.pydata.org/docs/user_guide/io.html#csv-text-files)  
 * [api](https://pandas.pydata.org/docs/reference/api/pandas.read_csv.html)  
     * seq|delimiter: 数据分隔符,默认是`,`
@@ -146,8 +146,8 @@ ParserBase._convert_to_ndarrays()
     * `keep_default_na`: 是否把数据解析成NAN. 我喜欢设置成False
 
 
-## [API](https://pandas.pydata.org/docs/reference/index.html)
-### [pandas.core.series.Series](https://pandas.pydata.org/pandas-docs/stable/reference/series.html)
+# [API](https://pandas.pydata.org/docs/reference/index.html)
+## [pandas.core.series.Series](https://pandas.pydata.org/pandas-docs/stable/reference/series.html)
 * iteritems
 ```
 df['姓名'].dropna().iteritems()
@@ -186,7 +186,7 @@ df
 
 * [ ] skew
 
-### [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
+## [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
 * 基础操作
 ```
 del df[attribute]  # 删除列
@@ -224,7 +224,7 @@ df.memory_usage(deep=True)  # 查看各列的内存占用
         print(row.客户名称)
 
 
-#### [apply: 应用函数](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.apply.html)
+### [apply: 应用函数](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.apply.html)
 对每一行操作， 生成新的列
 ```
 df['姓名'] = df.apply(lambda row: row['姓'] + row['名'], axis=1)  # axis: 一行一行调用
@@ -276,7 +276,7 @@ df.to_dict(orient="index")
 }
 ```
 
-#### groupby
+### groupby
 [Api](https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.groupby.html)
 ```python
 for key, sub_df in df.groupby("status"):
@@ -287,13 +287,13 @@ for key, sub_df in df.groupby("status"):
 
 [to_dict]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_dict.html
 
-## data types
-### Timestamp
+# data types
+## Timestamp
 ```
 TimeStamp(str|datetime|date)
 ```
 
-## Utils
+# Utils
 * [`is_datetime64_dtype`](https://pandas.pydata.org/docs/reference/api/pandas.api.types.is_datetime64_dtype.html) >> Bool
 ```
 pandas.api.types.is_datetime64_dtype(df.index)  # 判断Series是否全部是日期

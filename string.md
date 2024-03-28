@@ -1,12 +1,12 @@
 **Xiang Wang @ 2016-09-05 12:48:47**
 
 
-#### 方法
+# 方法
 * islower
 * isupper
 * istitle
 
-#### string模块
+# string模块
 ```
 'a,b,c'.split(',',1)    # 只拆分一次
 string.digits   # '0123456789'
@@ -16,13 +16,13 @@ string.ascii_uppercase
 <string>.count('w') # 查看字符串里面字符的数量
 ```
 
-##### strip
+## strip
 ```
 'a'.strip()  # 把前后空格，换行，tab删除
 'a'.strip('we')  # 把前后的 w 和 e 删除。 而不是把前后的 'we' 删除
 ```
 
-#### [format](https://pyformat.info/)
+# [format](https://pyformat.info/)
 1. basic formatting 基础
 ```
 year = 2015; event = 'Referendum'

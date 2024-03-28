@@ -4,14 +4,14 @@
 
 * [github链接](https://github.com/jxtech/wechatpy)
 * [官网文档](http://docs.wechatpy.org/zh_CN/master/)
-### 小程序接口
-#### 基础
+# 小程序接口
+## 基础
 ```
 from wechatpy.client.api import WeChatWxa
 wxa = WeChatWxa(client)
 ```
 
-#### 登录
+## 登录
 ```
 session_data = wxa.code_to_session(jscode)
 session_data = {
@@ -21,7 +21,7 @@ session_data = {
 
 ```
 
-### 基础
+# 基础
 ```
 from wechatpy.client import WeChatClient
 from wechatpy.session.redisstorage import RedisStorage
@@ -33,8 +33,8 @@ wechat_client = WeChatClient(
 )
 ```
 
-### 推送事件
-#### 公共属性
+# 推送事件
+## 公共属性
 ```
 name	value
 id	事件 id, 64 位整型。
@@ -44,12 +44,12 @@ create_time	事件的发送时间，UNIX 时间戳
 type	event
 event	事件的类型
 ```
-#### 模板消息发送任务完成事件
+## 模板消息发送任务完成事件
 event: "templatesendjobfinish"
 status: "success"
 
-### 微信主动调用接口
-#### [模板消息相关接口](http://docs.wechatpy.org/zh_CN/master/client/template.html#)
+# 微信主动调用接口
+## [模板消息相关接口](http://docs.wechatpy.org/zh_CN/master/client/template.html#)
 ```
 wechatpy.client.api.WeChatTemplate(client=None)
 ```
@@ -71,7 +71,7 @@ wechatpy.client.api.WeChatTemplate(client=None)
 ```
 
 
-#### 用户接口 [官网](http://docs.wechatpy.org/zh_CN/master/client/user.html)
+## 用户接口 [官网](http://docs.wechatpy.org/zh_CN/master/client/user.html)
 `wechatpy.client.api.WeChatUser(client=None)`
 * `get(user_id, lange='zh_CN')` 获取**用户基本信息**(UnionId机制)
 ```
@@ -98,8 +98,8 @@ user_info = wechat_client.user.get('openid')
 }
 ```
 
-### 微信支付接口
-#### 订单接口
+# 微信支付接口
+## 订单接口
 `class wechatpy.pay.api.WeChatOrder`
 * [WeChatPay](http://docs.wechatpy.org/zh_CN/master/pay.html#module-wechatpy.pay)
 ```
@@ -121,8 +121,8 @@ from wechatpy.pay.api import WeChatOrder
     ])
 ```
 
-### 微信 OAuth 网页授权接入
-#### 公众号 OAuth 网页授权接入 [官网](http://docs.wechatpy.org/zh_CN/master/oauth.html#module-wechatpy.oauth)
+# 微信 OAuth 网页授权接入
+## 公众号 OAuth 网页授权接入 [官网](http://docs.wechatpy.org/zh_CN/master/oauth.html#module-wechatpy.oauth)
 `class wechatpy.oauth.WeChatOAuth(app_id, secret, redirect_uri, scope="snsapi_base", state="")`
 * `authorize_url`: 获取授权的跳转地址
 * `qrconnect_url`: `生成扫码登录的地址`

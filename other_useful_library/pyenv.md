@@ -1,7 +1,7 @@
 
-## pyenv
+# pyenv
 
-### 安装
+## 安装
 
 ```bash
 git clone https://github.com/pyenv/pyenv.git ~/.pyenv

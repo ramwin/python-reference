@@ -2,7 +2,7 @@
 
 [官网文档](https://pillow.readthedocs.io/en/stable/index.html)
 
-### [安装][install]
+# [安装][install]
 
 ```
 # 16.04
@@ -11,8 +11,8 @@ sudo apt install -yqq libjpeg9 zlib1g zlib1g-dbg libjpeg9 libtiff5 libtiff5-dev 
 sudo apt install -yqq libjpeg9 zlib1g zlib1g-dbg libjpeg9 libtiff5 libtiff5-dev libfreetype6 libfreetype6-dev libfreetype6 libfreetype6-dev liblcms2-2 liblcms2-dev libwebp6 libwebp-dev tk
 ```
 
-### 参考文档
-#### [Image](https://pillow.readthedocs.io/en/stable/reference/Image.html#)
+# 参考文档
+## [Image](https://pillow.readthedocs.io/en/stable/reference/Image.html#)
 * eval
 [测试](./pillow_example/eval.py)  
 把一个函数作用于每个像素的每个维度的值。注意，传入的是红绿蓝分别的int,而不是一个颜色的tuple
@@ -33,7 +33,7 @@ Image.new("RGBA", (480, 320), 0xffffffff)   # 透明度, 蓝, 绿, 红
 * open
 `im = Image.open(path, 'r')`
 
-#### [ImageClass][image-class]
+## [ImageClass][image-class]
 * paste `Image.paste(im, box=None, mask=None)`  
 [测试image](./pillow_example/image_test.py)
 [测试mask](./pillow_example/mask_test.py)
@@ -59,7 +59,7 @@ im2 = im.resize((28.28))
 * size
 返回图片的尺寸 (1980, 1080)
 
-#### [ImageDraw](https://pillow.readthedocs.io/en/stable/reference/ImageDraw.html#)
+## [ImageDraw](https://pillow.readthedocs.io/en/stable/reference/ImageDraw.html#)
 ```
 from PIL import ImageDraw
 draw = ImageDraw.Draw(image)
@@ -76,7 +76,7 @@ draw.chord(xy, start, end, fill=None, outline=None, width=0)
 draw.ellipse(xy, fill, outline, width)
 ```
 
-#### [ImageFont][imagefont]
+## [ImageFont][imagefont]
 * Example
 ```
 from PIL import ImageFont, ImageDraw 

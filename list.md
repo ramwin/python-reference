@@ -2,7 +2,7 @@
 
 [官网](https://docs.python.org/3/tutorial/datastructures.html#more-on-lists)
 
-#### 基础
+# 基础
 * append(x) 添加元素,等价于a[len(a):] = [x]
 * extend(iterable) 延长, 等价于a[len(a):] = iterable
 * insert(i, x)
@@ -21,7 +21,7 @@ new_list = sorted(l, key=lambda x: x['value'])  # 根据value进行排序
 ```
 
 
-#### 操作
+# 操作
 * 切片
     ```
     a = [1,2,3]
@@ -39,7 +39,7 @@ new_list = sorted(l, key=lambda x: x['value'])  # 根据value进行排序
     )
     ```
 
-#### 进阶
+# 进阶
 * 自定义迭代器
     ```
     class A(object):
@@ -58,7 +58,7 @@ new_list = sorted(l, key=lambda x: x['value'])  # 根据value进行排序
     ```
 
 
-#### 其他
+# 其他
 * [for else](http://book.pythontips.com/en/latest/for_-_else.html)
 ```
 for item in container:

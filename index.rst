@@ -27,6 +27,8 @@ Welcome to python-reference's documentation!
    ./set.md
    ./string.md
    ./设计模式.md
+   ./class/README.md
+   ./excel/README.md
    ./multi/README.md
    ./magic_methods/README.md
    ./language_reference/function.md

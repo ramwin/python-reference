@@ -2,7 +2,7 @@
 
 [官网](https://docs.python.org/3/library/re.html#module-re)
 
-## Regular Expression Syntax 基础知识和语法
+# Regular Expression Syntax 基础知识和语法
 * `.` 任意一个字符， 除了\n
 ```
 re.match(r".*", "123\n").group() == "123"
@@ -51,7 +51,7 @@ print(m.group('name'))
 print(m.end('name'))  # TODO
 ```
 
-## Module Contents 模块内容 [官网](https://docs.python.org/3/library/re.html#module-contents)
+# Module Contents 模块内容 [官网](https://docs.python.org/3/library/re.html#module-contents)
 * re.compile
 ```
 re.compile(r'(?P<id>\d+)we').match('123we').group('id')
@@ -83,7 +83,7 @@ re.sub('(\d*)(\d{4})(\d{3})', r"\1****\3", "7982660")
 ```
 * [ ] ...
 
-## [Regular Expression Examples](https://docs.python.org/3/library/re.html#regular-expression-examples)
+# [Regular Expression Examples](https://docs.python.org/3/library/re.html#regular-expression-examples)
 5. [Text Munging](https://docs.python.org/3/library/re.html#text-munging)
 ```
 >>> def repl(m):
@@ -97,7 +97,7 @@ re.sub('(\d*)(\d{4})(\d{3})', r"\1****\3", "7982660")
 'Pofsroser Aodlambelk, plasee reoprt yuor asnebces potlmrpy.'
 ```
 
-## 例子
+# 例子
 * 找到字符串里面符合规则的字符串
 ```
     a = re.compile(r'^数据更新时间：(?P<time>[0-9: -]*)').match('数据更新时间：2016-05-25 16:00:00')
@@ -112,8 +112,8 @@ re.sub('(\d*)(\d{4})(\d{3})', r"\1****\3", "7982660")
 
 * 删除字符串里面符合规则的字符串
 
-## re.Match
-### groupdict
+# re.Match
+## groupdict
 返回匹配的数据. 如果不存在就是None
 ```python
 >>> re.match("(?P<id>\d+):(?P<value>\d+)?", "123:").groupdict()

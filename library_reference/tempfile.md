@@ -7,25 +7,25 @@ fp = tempfile.TemporaryFile(mode='w+b', encoding=None)
 fp.write(b'Hello world!')
 ```
 
-#### NamedTemporaryFile
+# NamedTemporaryFile
 带名字的tempfile, 所以可以提供给其他程序使用
 ```python
 with tempfile.NamedTemporaryFile() as f:
     subprocess.run(cmds, stdout=f)
 ```
 
-#### SpooledTemporaryFile
+# SpooledTemporaryFile
 因为linux系统的文件io自带page cache. 所以这个class没用
 
-#### tempfile.TemporaryDirectory -> str
+# tempfile.TemporaryDirectory -> str
 可以把文件夹自动清除
 ```python
 with temfile.TemporaryDirectory() as d:
     tmp_csv = Path(d.name).joinpath("tmp.csv")
 ```
 
-#### mkdtemp(dir=None)
+# mkdtemp(dir=None)
 创建一个临时目录. 和TemporaryDirectory比，不会自动清除。需要手动清理
 
-#### mkstemp -> (文件描述符:int, 文件路径:str)
+# mkstemp -> (文件描述符:int, 文件路径:str)
 创建一个临时文件, 权限等级最高.

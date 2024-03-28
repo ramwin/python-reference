@@ -1,7 +1,7 @@
 [官方教程](https://docs.python.org/3/library/zipfile.html)
 
 
-## 基础用法
+# 基础用法
 ```
 from zipfile import ZipFile
 
@@ -11,12 +11,12 @@ with ZipFile(<filename.zip>, 'w') as myzip:
     如果filename是绝对路径，会去掉最前面的/
 ```
 
-## ZipFile
+# ZipFile
 * `write(filename, arcname=None, compress_type=None, compresslevel=None)`
 arcname默认是filename, 但是去掉了盘符和根`/`
 
 
-## 压缩一个文件夹
+# 压缩一个文件夹
 ```
 root = Path('')
 with ZipFile(filename, 'w') as myzip:
@@ -24,7 +24,7 @@ with ZipFile(filename, 'w') as myzip:
         myzip.write(f, f.relative_to(root))
 ```
 
-## 处理zip网络文件
+# 处理zip网络文件
 ```
 import tempfile
 import zipfile

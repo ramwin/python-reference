@@ -1,11 +1,11 @@
-## bitstring
+# bitstring
 转化二进制数据
 ```
 BitArray(HexBytes("0x7f")).int  // 127   01111111
 BitArray(HexBytes("0x80")).int  // -128  10000000
 ```
 
-## [diff-match-patch](https://github.com/google/diff-match-patch)
+# [diff-match-patch](https://github.com/google/diff-match-patch)
 用来比较文字的不同
 * 用法
     ```
@@ -20,7 +20,7 @@ BitArray(HexBytes("0x80")).int  // -128  10000000
 <del style="background:#ffe6e6;">1</del><ins style="background:#e6ffe6;">2</ins><span>23</span>
 
 
-## [filelock](https://github.com/benediktschmitt/py-filelock)
+# [filelock](https://github.com/benediktschmitt/py-filelock)
 
 
     from filelock import Timeout, FileLock
@@ -30,7 +30,7 @@ BitArray(HexBytes("0x80")).int  // -128  10000000
     except Timeout:
         pass
 
-## flockcontext
+# flockcontext
 [github](https://github.com/AntoineCezar/flockcontext)
 ```
 pip3 install flockcontext
@@ -40,7 +40,7 @@ with FlockOpen(Path, "w", timeout=3600) as lock:
     lock.fd.write("Locked\n")
 ```
 
-## [git](https://gitpython.readthedocs.io/en/stable/tutorial.html)
+# [git](https://gitpython.readthedocs.io/en/stable/tutorial.html)
 处理git用
 * 克隆代码
 
@@ -82,14 +82,14 @@ except git.GitCommandError:
     raise
 ```
 
-### 执行命令
+## 执行命令
 * show
 查看某个文件的内容
 ```
 repo.git.show(f"{commit}:README.md") => str
 ```
 
-### commit
+## commit
 ```
 commit = next(repo.iter_commits("master", before=datetime.date(2022, 1, 1)))  # 获取元旦最后一个提交
 commit.commitded_date
@@ -97,19 +97,19 @@ datetime.datetime(2020, 6, 19, 9, 46, 9, tzinfo=<git.objects.util.tzoffset objec
 commit.hexsha
 ```
 
-### remote
+## remote
 ```
 origin = repo.create_remote("origin", "git@github.com:ramwin/python-reference.git")
 origin.pull()
 ```
 
-## Humanfriendly
+# Humanfriendly
 ```
 Humanfriendly.parse_size("10M")  // 10_000_000
 Humanfriendly.parse_size("10M", binary=True)  // 1024 x 1024 x 10
 ```
 
-## [hexbytes](https://hexbytes.readthedocs.io/en/stable/)
+# [hexbytes](https://hexbytes.readthedocs.io/en/stable/)
 处理字符串和十六进制
 ```python
 from hexbytes import HexBytes
@@ -123,13 +123,13 @@ HexBytes("123").hex()  // "0x313233"
 * slice `HexBytes("0xffff")[0:1] == HexBytes("0xff")`
 * getitem `HexBytes("0xffff")[0] == 255`
 
-## [imapclient](imapclient.md)
+# [imapclient](imapclient.md)
 很好用的邮件客户端
 
 * [ics](https://pypi.org/project/ics/) *日历，行程 calendar*
 * [ipdb](./other_useful_library/ipdb.md) *断点来检测查看源码和运行状态*
 
-## PID
+# PID
 流程控制算法
 ```python
 from simple_pid import PID
@@ -151,7 +151,7 @@ def test_time2():
 
 ```
 
-## [pip][pip]
+# [pip][pip]
 
 *快速安装包*  
 * [官网](https://pip.pypa.io/en/stable/)
@@ -169,7 +169,7 @@ export LC_CTYPE="en_US.UTF-8"
 * 安装开发版  
 `pip install --no-index --no-build-isolation -e .`
 
-## psutil
+# psutil
 [获取系统信息](https://psutil.readthedocs.io/en/latest/)
 ```python
 import psutil
@@ -199,7 +199,7 @@ print(process.memory_info().rss)  # in bytes
 ```
 
 
-## pysrt
+# pysrt
 [官网](https://github.com/byroot/pysrt)
 * 基础
 ```
@@ -218,13 +218,13 @@ part.shift(seconds=-2)
 subs.save('other/path.srt', encoding='utf8')
 ```
 
-## web3
-### [eth_utils](https://eth-utils.readthedocs.io/en/stable/)
+# web3
+## [eth_utils](https://eth-utils.readthedocs.io/en/stable/)
 ```
 from eth_utils.address import to_checksum_address
 ```
 
-### hexbytes
+## hexbytes
 * hexbytes.main.HexBytes
 ```
 a == HexBytes(b"23")  b"2" == 50 == '0x32'
@@ -233,7 +233,7 @@ a.hex()  # "0x3233"
 str(a)  # "b'23'"
 ```
 
-### eth
+## eth
 * eth.subscribe
 ```
 {
@@ -290,7 +290,7 @@ AttributeDict({
     's': HexBytes('0x5a483194f03...710d52f97adf')}
 ```
 
-### eth_typing
+## eth_typing
 * eth_typing.evm.ChecksumAddress
 
 

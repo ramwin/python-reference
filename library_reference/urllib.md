@@ -1,6 +1,6 @@
 **Xiang Wang @ 2017-05-19 15:22:17**
 
-#### 基础
+# 基础
 [python3官网教程](https://docs.python.org/3.6/library/urllib.parse.html)
 
 * 基础
@@ -23,7 +23,7 @@ quote('http://duishang.net')
 >>> 'http%3A//duishang.net%3Few%3Dew'
 ```
 
-#### urllib.parse
+# urllib.parse
 * [ ] urlunsplit
 * [`urllib.parse.urljoin(base, url, allow_fragments=True)`](https://docs.python.org/3.6/library/urllib.parse.html#urllib.parse.urljoin)  
 `allow_fragments`为True代表url里面可以有#anchor, 如果为False,代表base的path里面不能有fragments, 会舍弃掉后再与url相连
@@ -37,8 +37,8 @@ quote('http://duishang.net')
 ```
 * [ ] urldefrag
 
-### [python2官网教程](https://docs.python.org/2/library/urlparse.html)
-#### urllib
+# [python2官网教程](https://docs.python.org/2/library/urlparse.html)
+# urllib
 * urllib.urlencode
 ```
 >>> urllib.urlencode({'key': 'value'})  # 对应 urlparse.parse_qsl
@@ -55,7 +55,7 @@ key=value
 "%26"
 ```
 
-#### urlparse
+# urlparse
 ```
 from urlparse import urlparse
 o = urlparse('https://www.ramwin.com/testrest/text/?text=qwer')
@@ -76,7 +76,7 @@ o = urlparse('https://www.ramwin.com/testrest/text/?text=qwer')
     ```
 
 
-#### ParseResult *urlparse.ParseResult*
+# ParseResult *urlparse.ParseResult*
 * 属性
     * port: o.port: 80
     * scheme: o.scheme: http
@@ -100,7 +100,7 @@ o = urlparse('https://www.ramwin.com/testrest/text/?text=qwer')
     'e=1508844931&token=I0J8v_OINiV1arysiBZn9oyxoQH2bt5q51BjuMnW:fL46s4ff_8wiNFm-QxWDT6b6B3U='
 ```
 
-#### URL Quoting
+# URL Quoting
 
     from urllib.parse import quote
     quote('=')
