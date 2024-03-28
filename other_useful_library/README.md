@@ -1,7 +1,8 @@
 # 其他第三方包
 ```{toctree}
-:maxdepth: 1
+:maxdepth: 2
 ./exchangelib.md
+./openpyxl.md
 ```
 ## bitstring
 转化二进制数据
@@ -133,6 +134,7 @@ HexBytes("123").hex()  // "0x313233"
 
 * [ics](https://pypi.org/project/ics/) *日历，行程 calendar*
 * [ipdb](./other_useful_library/ipdb.md) *断点来检测查看源码和运行状态*
+
 
 ## PID
 流程控制算法

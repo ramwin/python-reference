@@ -23,7 +23,6 @@ Welcome to python-reference's documentation!
    ./string.md
    ./设计模式.md
    ./class/README.md
-   ./excel/README.md
    ./multi/README.md
    ./magic_methods/README.md
    ./language_reference/function.md
@@ -61,7 +60,6 @@ Welcome to python-reference's documentation!
    ./other_useful_library/ipdb.md
    ./other_useful_library/jinjia.md
    ./other_useful_library/mongoengine.md
-   ./other_useful_library/openpyxl.md
    ./other_useful_library/pandas.md
    ./other_useful_library/peewee.md
    ./other_useful_library/pyenv.md

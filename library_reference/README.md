@@ -1,3 +1,6 @@
+```{contents}
+```
+
 # 所有内置库一览
 [官网](https://docs.python.org/3/library/index.html)
 ```{toctree}
