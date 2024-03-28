@@ -133,7 +133,7 @@ with A():
     ```
 
 ### [函数 function](./language_reference/function.md)
-* [docstring](./function.md#docstring)
+* [docstring](./language_reference/function.md#docstring)
 
 [官网](https://docs.python.org/3/reference/compound_stmts.html#function-definitions)
 * [decorator装饰器](http://www.cnblogs.com/huxi/archive/2011/03/01/1967600.html)
@@ -221,7 +221,7 @@ def function():
 
 ### [collections](./collections.md)
 
-### [collections.abc](./collections.md#collections.abc)
+### [collections.abc](./collections.md#collections-abc)
 
 ### [heapq](./library_reference/heapq.md)
 
@@ -249,7 +249,7 @@ copy.deepcopy会copy recursively
 
 * [ ] pprint
 
-### [enum](./library_reference/README.md#Enum)
+### [enum](./library_reference/README.md#enum)
 
 ## Numeric and Mathematical Modules
 2. [math](https://docs.python.org/3/library/math.html)
@@ -278,7 +278,7 @@ https://docs.python.org/3.8/library/fractions.html#fractions.Fraction)
     print("1/3 = %d/%d" % (f.numerator, f.denominator))
 ```
 
-### [random](./library_reference/README.md#user-content-random)
+### [random](./library_reference/README.md#random)
 
 7. statistics — Mathematical statistics functions 数学分析
     * [statistics.mean](https://docs.python.org/3/library/statistics.html#statistics.mean)
@@ -390,7 +390,7 @@ f.close()
 5. [ ] getopt
 
 ### [logging日志处理](./logging/README.md)
-### [platform](./library_reference/README.md#user-content-platform)
+### [platform](./library_reference/README.md#platform)
 平台相关
 
 ## Concurrent Execution
@@ -601,7 +601,8 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
     archive.extractall(path='/tmp')
 
 
-## [airflow](../airflowtest/README.md)
+## airflow
+[github链接](https://github.com/ramwin/airflowtest/README.md)
 
 ## beautifulsoup4 *用来解析html文件*
 [官网](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html#id5)
@@ -620,11 +621,11 @@ BitArray(b"123").bin  # '001100010011001000110011'
 
 [示例](./other_useful_library/captcha_test.py)
 *生成验证码*
-* ## celery *用来执行异步脚本*
+## celery
+* *用来执行异步脚本*
 这个软件在linux-reference里面  
     * [官网](http://docs.celeryproject.org/en/latest/index.html)
     * [github在线链接](https://github.com/ramwin/linux-reference#celery)
-    * [本地linux-reference链接](../linux-reference/README.md#celery)
 
 ## [click](./other_useful_library/click.md) *用python写shell命令command*
 
@@ -936,7 +937,6 @@ with SSHClient() as ssh:
         scp.get(<远程路径>, <本地文件>, recursive=True)
 ```
 
-## [six](./other_useful_library/six.md) `python2和python3兼容的库`
 ## [scrapy](./scrapy/README.md)
 
 ## [sortedcontainers](https://github.com/grantjenks/python-sortedcontainers)

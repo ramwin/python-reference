@@ -2,7 +2,7 @@
 
 ### collections
 * [官网文档](https://docs.python.org/3/library/collections.html#module-collections)
-* [OrderedDict](#OrderedDict)
+* [OrderedDict](#ordereddict)
 * [defaultdict](#defaultdict)
 * [deque](#deque)
 
@@ -75,7 +75,7 @@ x, y = p
     ```
 
 
-### collections.abc
+### collections abc
 这个是 Abstract Base Classes 可以用来确保这个Class无法被直接使用，而必须指定了特定的方法才能使用,利用的是`abc.abstractmethod`就能实现这样的效果
 
 * #### Container

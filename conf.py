@@ -19,7 +19,9 @@ extensions = [
         ]
 
 templates_path = ['_templates']
-exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+exclude_patterns = [
+    '_build', 'Thumbs.db', '.DS_Store',
+]
 
 language = 'zh_CN'
 
@@ -32,5 +34,4 @@ source_suffix = {
     '.rst': 'restructuredtext',
     '.md': 'markdown',
 }
-myst_heading_anchors = 3
-myst_all_links_external = True
+myst_heading_anchors = 4

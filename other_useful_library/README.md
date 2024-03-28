@@ -151,7 +151,9 @@ def test_time2():
 
 ```
 
-## [pip][pip] *快速安装包*  
+## [pip][pip]
+
+*快速安装包*  
 * [官网](https://pip.pypa.io/en/stable/)
 * [配置文件](https://pip.pypa.io/en/stable/user_guide/#config-file)
 * 使用其他源
