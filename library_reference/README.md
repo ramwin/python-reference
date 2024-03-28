@@ -1,11 +1,12 @@
 # 所有内置库一览
 [官网](https://docs.python.org/3/library/index.html)
+## socket
 ```{toctree}
 :maxdepth: 1
 ./socket.md
 ```
 
-## Typing
+## typing
 ```{toctree}
 ./typing.md
 ```

@@ -40,9 +40,7 @@ Welcome to python-reference's documentation!
    ./library_reference/operator运算符.md
    ./library_reference/os.md
    ./library_reference/pathlib.md
-   ./library_reference/README.md
    ./library_reference/re.md
-   ./library_reference/socket.md
    ./library_reference/tempfile.md
    ./library_reference/unittest.md
    ./library_reference/urllib.md
