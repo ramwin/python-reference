@@ -1,5 +1,14 @@
 # 所有内置库一览
 [官网](https://docs.python.org/3/library/index.html)
+
+## File and Directory Acces
+
+### pathlib
+操作目录,路径的功能
+```{toctree}
+./pathlib.md
+```
+
 ## socket
 ```{toctree}
 :maxdepth: 1
@@ -155,12 +164,6 @@ filter(lambda x: x.is_dir(), os.scandir())  # show all the directory entry
 ### [Platform](https://docs.python.org/3/library/platform.html)
 * system  
 最实用,返回Linux, Windows, Java, Darwin
-
-## File and Directory Acces
-
-### [pathlib](./pathlib.md)
-操作目录,路径的功能
-
 
 ## Development Tools
 

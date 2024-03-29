@@ -7,7 +7,7 @@ Welcome to python-reference's documentation!
 ============================================
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
    :caption: Contents:
 
    ./README.md
@@ -21,7 +21,6 @@ Welcome to python-reference's documentation!
    ./runtime_services.md
    ./set.md
    ./string.md
-   ./设计模式.md
    ./class/README.md
    ./multi/README.md
    ./magic_methods/README.md

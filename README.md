@@ -6,6 +6,7 @@
 
 # 设计模式
 ```{toctree}
+:maxdepth: 2
 ./设计模式.md
 ```
 
