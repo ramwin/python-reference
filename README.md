@@ -4,6 +4,11 @@
 ./other_useful_library/README.md
 ```
 
+# 设计模式
+```{toctree}
+./设计模式.md
+```
+
 # 目录
 * [Language Reference 语法](#language-reference)
 * [Other Useful Library 其他有用的包](./other_useful_library/README.md)
@@ -520,9 +525,6 @@ for i in range(ws.nrows):
 * uuid.getnote()    # 获取本机的MAC地址  
 mac=uuid.UUID(int = node).hex[-12:]
 * [ ] `readme_renderer`
-
-## [设计模式](./设计模式.md)
-[runoob教程](http://www.runoob.com/design-pattern/factory-pattern.html)
 
 ## 进程
 通过fork可以创建一个子线程。子线程可以完整地运行并且每个子线程可以充分地利用一个cpu.当一个线程崩溃后，不会影响其他线程
