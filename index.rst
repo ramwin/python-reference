@@ -12,7 +12,6 @@ Welcome to python-reference's documentation!
 
    ./README.md
    ./config.md
-   ./list.md
    ./mysql.md
    ./pdb调试.md
    ./pillow.md

@@ -1,5 +1,6 @@
 ```{toctree}
 :maxdepth: 2
+./language_reference/README.md
 ./library_reference/README.md
 ./other_useful_library/README.md
 ```
@@ -11,7 +12,6 @@
 ```
 
 # 目录
-* [Language Reference 语法](#language-reference)
 * [Other Useful Library 其他有用的包](./other_useful_library/README.md)
 * [official documents 官网文档](https://docs.python.org/3/)
 * [python tips 小技巧](http://book.pythontips.com/en/latest/index.html)
@@ -22,14 +22,7 @@
 ## Data Structures 基础类型
 其实这个是Library Reference的内容
 
-```{toctree}
-./list.md
-```
-```{toctree}
-./for.md
-```
-* ### [列表list](list.md)
-    * [自定义可迭代](./for.md)
+
 * ### [string](./string.md)
     * [unicode table](https://unicode-table.com/cn/#samaritan)
     * #### [format](./string.md#format)

@@ -1,5 +1,48 @@
 # Language Reference
 
+## Data Types
+[官网](https://docs.python.org/3/library/datatypes.html)
+
+### [list](./list.md)
+```{toctree}
+./list.md
+```
+
+### [datetime](./library_reference/datetime时间.md)
+### [ ] [calendar](https://docs.python.org/3/library/calendar.html)
+
+```{toctree}
+./collections.md
+```
+
+### [heapq](./library_reference/heapq.md)
+
+### [bisect](https://docs.python.org/3/library/bisect.html)
+通过二分法来查找list或者插入数据
+```
+bisect.insort(list, item)  # 把x插入list并保持顺序
+bisect.bisect(list, item)  # 找到可以插入item的位置(最右侧)
+# 查看是否存在
+def index(a, x):
+    i = bisect_left(a, x)
+    if i != len(a) and a[i] == x:
+        return i
+    raise ValueError
+```
+
+### copy  
+
+* copy.copy(x): return a shallow copy of x
+* copy.deepcopy(x): return a deepcopy
+copy.copy只会copy一层, 里面的可变对象不会copy  
+copy.deepcopy会copy recursively  
+在shallow copy里, 对于dict, 使用的是 dict.copy(), 对于list使用的是copied_list = original_list[:]  
+如果要实现自己的copye, 可以重写 `__copy__()` 和 `__deepcopy__()`  
+
+* [ ] pprint
+
+### [enum](./library_reference/README.md#enum)
+
 [官网](https://docs.python.org/3/reference/index.html)
 
 ```{toctree}
@@ -146,43 +189,6 @@ def function():
 
 7. [ ] Binary Data Services
 
-## Data Types
-[官网](https://docs.python.org/3/library/datatypes.html)
-
-### [datetime](./library_reference/datetime时间.md)
-### [ ] [calendar](https://docs.python.org/3/library/calendar.html)
-
-```{toctree}
-./collections.md
-```
-
-### [heapq](./library_reference/heapq.md)
-
-### [bisect](https://docs.python.org/3/library/bisect.html)
-通过二分法来查找list或者插入数据
-```
-bisect.insort(list, item)  # 把x插入list并保持顺序
-bisect.bisect(list, item)  # 找到可以插入item的位置(最右侧)
-# 查看是否存在
-def index(a, x):
-    i = bisect_left(a, x)
-    if i != len(a) and a[i] == x:
-        return i
-    raise ValueError
-```
-
-### copy  
-
-* copy.copy(x): return a shallow copy of x
-* copy.deepcopy(x): return a deepcopy
-copy.copy只会copy一层, 里面的可变对象不会copy  
-copy.deepcopy会copy recursively  
-在shallow copy里, 对于dict, 使用的是 dict.copy(), 对于list使用的是copied_list = original_list[:]  
-如果要实现自己的copye, 可以重写 `__copy__()` 和 `__deepcopy__()`  
-
-* [ ] pprint
-
-### [enum](./library_reference/README.md#enum)
 
 7. statistics — Mathematical statistics functions 数学分析
     * [statistics.mean](https://docs.python.org/3/library/statistics.html#statistics.mean)

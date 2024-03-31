@@ -68,3 +68,8 @@ for item in container:
 else:
     not_found_in_container()
 ```
+
+# [自定义可迭代，for语句](./for.md)
+```{toctree}
+./for.md
+```
