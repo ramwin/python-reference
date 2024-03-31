@@ -3,7 +3,6 @@
 [官网](https://docs.python.org/3/reference/index.html)
 
 ```{toctree}
-:heading-offset: 1
 ./exception.md
 ```
 
@@ -184,35 +183,6 @@ copy.deepcopy会copy recursively
 * [ ] pprint
 
 ### [enum](./library_reference/README.md#enum)
-
-## Numeric and Mathematical Modules
-2. [math](https://docs.python.org/3/library/math.html)
-```
-math.ceil(x) 大于等于x的最小的整数, 使用 __ceil__ 方法，可以让一个对象支持这个函数
-math.floor(x) 小于等于x的最大的整数, 使用 __floor__ 方法，可以让一个对象支持这个函数
-```
-
-* [isclose](https://docs.python.org/3/library/math.html#math.isclose)
-相当于 `abs(a-b) <= max{abs_tol, rel_tol*max[abs(a), abs(b)]}`, 起不到校验超过`abs_tol`或者`rel_tol`的功能哦
-
-4. [decimal](https://docs.python.org/3/library/decimal.html)
-```python
-a = Decimal(3)
-a / 3  # Decimal("0.33333333333333333")
-b = Decimal("0.050")
-b.scaleb(-3)  # Decimal("0.0000050")
-b.scaleb(3)  # Decimal("50")
-```
-
-5. [fractions](
-https://docs.python.org/3.8/library/fractions.html#fractions.Fraction)
-```
-    from fractions import Fraction
-    f = Fraction(1,3)
-    print("1/3 = %d/%d" % (f.numerator, f.denominator))
-```
-
-### [random](./library_reference/README.md#random)
 
 7. statistics — Mathematical statistics functions 数学分析
     * [statistics.mean](https://docs.python.org/3/library/statistics.html#statistics.mean)
