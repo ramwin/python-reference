@@ -1,6 +1,3 @@
-```{contents}
-```
-
 [官网](https://docs.python.org/3/library/typing.html)
 
 [测试](./typing_test.py)
@@ -9,6 +6,22 @@
 注意这个annotation只是起到一个提示的作用，并不会对函数的执行，参数的校验起到真正的效果
 ```python
 def f(ham: str, eggs: str='eggs') -> str:
+```
+# callable
+
+[官网](https://docs.python.org/3/library/typing.html#annotating-callable-objects)
+
+[测试代码](../test/test_typing_callable.py)
+
+```python
+from collections.abc import Callable
+
+def call_int(x: str) -> str:
+    return x + '1'
+
+f: Callable[[float], float]
+
+f = call_int
 ```
 
 # Literal

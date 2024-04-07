@@ -1,4 +1,370 @@
+# Library Reference 内置库参考
+
+[官网][library-reference]
+
+## typing
+
+```{toctree}
+:maxdepth: 2
+./typing.md
+```
+
+## [Built-in Functions](./built_in_functions内置函数.md)
+
+* all
+* any
+* divmod
+* enumerate
+
+```
+enumerate(['a','b','c'], start=1)  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不是list， 而是一个enumerate对象, 默认从0开始
+```
+
+* [ ] locals
+* ### [map(function, iterable)](https://docs.python.org/3/library/functions.html#map)
+* [ ] max
+* open  
+打开一个文件 buffering=0代表不需要缓存(不缓存,mode必须是b), buffering=1代表每一行保存,buffering>1代表多少字节保存
+* ### [property](./library_reference/built_in_functions内置函数.md#property)
+* zip: 迭代2个迭代器, 按照最短的来计算
+3. Built-in Constants
+4. Built-in Types
+* [Set集合](./set.md)
+* ### [Mapping Types -- dict 字典参考](./library_reference/built_in_types内置数据类型.md)
+5. ## [Built-in Exceptions](https://docs.python.org/3/library/exceptions.html)
+### Warnings
+* DeprecationWarning
+
+## [Text Processing Services](https://docs.python.org/3/library/text.html)
+
+### [2. re -- Regular expression operations 正则表达式 regex](./library_reference/re.md)
+[test regrex 在线测试](https://regex101.com/#python)
+
+### textwrap.dedent
+注意, 前面和后面的换行符不会消失
+
+```python
+from textwrap import dedent
+def function():
+    LONG_CONTENT = dedent("""\
+        A,   # 空格数量无所谓, 只要一致就行
+        B,
+        C\
+    """)
+
+```
+
+7. [ ] Binary Data Services
+
+
+7. statistics — Mathematical statistics functions 数学分析
+    * [statistics.mean](https://docs.python.org/3/library/statistics.html#statistics.mean)
+    * [statistics.stdev](https://docs.python.org/3/library/statistics.html#statistics.stdev)
+    * statistics.StatisticsError
+
+## Functional Programming Modules
+* [itertools 迭代器](./library_reference/itertools.md)
+* [functools](./library_reference/README.md#functools)
+包含cache lru_cache等功能
+* [operator 运算符](./library_reference/operator运算符.md)
+
+## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
+
+### [pathlib](./library_reference/pathlib.md)
+操作目录,路径的功能
+
+2. [os.path](library_reference/README.md#os)
+#### [tempfile](library_reference/tempfile.md)
+临时文件，临时文件夹
+
+### [filecmp 文件、文件夹比较](https://docs.python.org/3/library/filecmp.html)
+推荐使用 [deep-dircmp](https://github.com/mitar/python-deep-dircmp)
+
+    from deep_dircmp import DeepDirCmp
+
+    DeepDirCmp(source, target).get_left_only_recursive()  # 注意，如果一个文件夹额外存在，只会返回文件夹路径，不会再迭代文件夹内部文件
+
+
+### [shutil](https://docs.python.org/3/library/shutil.html)
+* rmtree  
+删除文件夹
+
+
+    shutil.rmtree(Path)
+
+* 复制文件夹
+    * `dirs_exist_ok=False`
+
+
+    shutil.copytree(src, dst)
+
+
+## Data Persistence
+
+### [pickle](https://docs.python.org/3/library/pickle.html) *把python的对象序列化成字符串*
+
+## Data Compression and Archiving
+* [bz2][bz2]
+使用方法
+```
+import bz2
+bz2.compress(b'11111' * 1000)
+>>> b'BZh91....'
+bz2.decompress(b'BZh91...')
+>>> b'11111...'
+f = bz2.open("myfiles.bz2", "bb")
+f.read()
+f = bz2.open("myfiles.bz2", "wb")
+f.write(data)
+```
+
+
+* [gzip](https://docs.python.org/3/library/gzip.html)
+```
+import gzip
+f = gzip.open("~/test.csv.gz", compresslevel=3)
+f.write("hedaer\n")
+f.write("123\n")
+f.close()
+```
+
+
+* [zipfile](./library_reference/zip.md) *处理zip压缩包*
+
+## File Formats
+[官网](https://docs.python.org/3/library/fileformats.html)
+### [csv](./library_reference/csv.md)
+ * [source code](https://github.com/python/cpython/blob/3.6/Lib/csv.py)
+### [configparser](./config.md) 配置文件
+
+* [ ] netrc
+* [ ] xdrlib
+* [ ] plistlib
+
+## Cryptographic Services
+### [hashlib](https://docs.python.org/3/library/hashlib.html)
+
+    import hashlib
+    a = hashlib.md5()
+    a.update('string'.encode('utf8'))
+    a.hexdigest()
+    >>> 'b45cffe084dd3d20d928bee85e7b0f21'
+
+### [ ] hmac
+### [ ] secrets
+
+## Generic Operating System Services
+[官网](https://docs.python.org/3/library/allos.html)
+
+### [os](./library_reference/README.md#os)
+[ ] io
+
+### [time](./library_reference/README.md#time)
+
+### [argparse](./library_reference/argparse.md)
+这个用来解析python的命令
+
+5. [ ] getopt
+
+### [logging日志处理](./logging/README.md)
+### [platform](./library_reference/README.md#platform)
+平台相关
+
+## Concurrent Execution
+
+### 线程 [Threading](https://docs.python.org/3/library/threading.html)
+
+
+    from threading import Thread
+    s1 = Thread(None, function, args=[], kwargs={})
+    s2 = Thread(None, function2, args=[], kwargs={})
+    s1.start()
+    s2.start()
+
+* `threading.get_native_id()`
+获取当前线程的id  
+
+
+* Thread-Local Data:  
+使用`treading.local()`可以获取本线程的变量。 这个变量在几个线程内不相通  
+[测试2个thread的变量](./test/test_thread_local.py)
+
+* Lock
+线程锁, 一个线程只能拿到一个
+
+* RLock
+线程锁. 同一个线程内可以多次获取
+
+### [multiprocessing — Process-based parallelism](./library_reference/multiprocessing.md)
+
+#### Process
+* [如果不join,直接关闭](./multi/不join.py)
+直到主进程都要退出的时候，会等待子进程的结束
+
+
+#### 获取进程数据
+[示例](./multi/获取输出.py)
+
+#### Poll
+* [imap_unordered](https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.imap_unordered)
+对iterable里面的每个元素执行func. chunksize代表每个进程执行的迭代次数。这样一个进程可以执行多次
+[测试](./library_reference/pool_chunksize.py)
+```
+with Pool() as p:
+    for result in p.imap_unordered(func, iterable, chunksize):
+        print(result)
+```
+
+### [ ] concurrent.futures
+
+### [subprocess][subprocess]
+基础用法
+
+```
+import subprocess
+try:
+    res = subprocess.run(["ls", "-l"], capture_output=True, check=True)
+    print(res.stdout.decode("utf-8"))
+except subprocess.TimeoutExpired as e:
+    logger.exception(e)
+    logger.exception("超时了")
+except subprocess.CalledProcessError as e:
+    logger.exception(e)
+    logger.error(f"执行任务失败")
+```
+
+* 输入输出
+[测试代码](./test/subprocess_input.py)
+
+```
+proc = subprocess.Popen(["sh", "input.sh"], stdin=subprocess.PIPE, stdout=subprocess.PIPE)
+outs, errs = proc.communicate(
+    input="1\n2\nexit\n".encode("utf-8"), timeout=1)
+print(outs.decode('utf-8'))
+```
+
+* [异步执行 Popen](https://docs.python.org/3/library/subprocess.html#popen-constructor)
+
+```
+from subprocess import Popen
+thread = Popen(["python", "-m", "pyftpdlib"])
+time.sleep(10)
+thread.kill()
+```
+
+
+### [ ] sched
+
+## contextvars — Context Variables
+## Networking and Interprocess Communication 网络和进程间通信
+
+### [asyncio](./library_reference/asyncio.md) *用来处理协程*
+### [signal](https://docs.python.org/zh-cn/3/library/signal.html)
+* 使用触发信号，处理ctrl+c的时候，保证循环执行完毕
+```
+stop = False
+
+def handler(signalnum, handler):
+    global stop
+    stop = True
+
+def main():
+    signal.signal(signal.SIGINT, handler)
+    global stop
+    while not stop:
+        time.sleep(0.1)
+    print("stop拉")
+```
+
+## Internet Data Handling
+
+### [JSON](./library_reference/json.md)
+
+### [base64][base64]
+原理, [RFC 3548](https://tools.ietf.org/html/rfc3548.html#section-3)
+
+    '  '  b'00100000 00100000'
+    按照6个比特来分割 001000 000010 0000[补充00]
+                      I      C      A=
+    对比 0-25 A-Z 26-51 a-z 52-61 0-9
+    然后每76个字符加一个换行，最后加一个换行
+    base64.encodebytes(b'  ') == b'ICA=\n'
+
+
+    b = base64.encodebytes('我'.encode('utf8')) # 只有二进制才能encode,结果还是bytes
+    b = base64.encodestring('我'.encode('utf8')) # 查了源码，果然这个是为了兼容python2的语法。以后避免使用这个方法
+    b = base64.encodestring('我')   # python2里面的str就是二进制,结果是str(仍然是二进制)
+
+7. [ ] binhex
+8. [binascii](https://docs.python.org/3/library/binascii.html)
+    * unhexlify(a) 把十六进制的字符串变成二进制数据
+    ```
+    a = 'b4447f6670a'
+    binascii.unhexlify(a)
+    >>> b'\xb4G\xf6g\n'
+    ```
+
+* [ ] to be continued
+21. [ ] Structed Markup Processing Tools
+22. ## Internet Protocols and Support
+    * [ ] poplib
+    * imaplib
+    * [ ] nntplib
+    * [ ] smtplib
+    * ### [urllib](./library_reference/urllib.md) *处理url*
+    * [ ] telnetlib
+    * ### uuid
+        * uuid.uuid1
+        根据序列号，时间，电脑的mac地址生成一个uuid
+        返回一个uuid,但是后面是固定的node,可以手工提供或者直接获取电脑的mac地址
+        * uuid.uuid4
+        生成随机的uuid
+    * [ ] socketserver
+
+## Development Tools
+
+### [unittest — Unit testing framework 测试框架](./library_reference/unittest.md)
+
+## [Python Runtime Services](./runtime_services.md)
+
+* sys
+* traceback
+* [dataclass](./runtime_services.md#dataclass)
+* [contextlib](./runtime_services.md#contextlib)
+
+## Internet Protocols and Support
+
+* ftplib
+```python
+with FTP() as ftp:
+    ftp.connect(host='localhost', port=2121)
+    ftp.login()
+    ftp.dir()
+    with open("source.md", "rb") as f:  # 保存文件
+        ftp.storbinary("STOR target.md", f)
+```
+
+
+## [ ] Custom Python Interpreters
+
+33. ## Python Language Services
+    2. ast
+    `ast.literal_eval`: "savely evalute an expression node or a string containing a Python literal or container display."
+    3. [ ] to be continued
+
+## Unix Specific Services
+### [fcntl](https://docs.python.org/3/library/fcntl.html)
+不过更加建议的是使用[flockcontext](./other_useful_library/README.md)
+* fcntl.flock
+```
+f = open("name", "w")
+fcntl.flock(f, fcntl.LOCK_EX)  # 只有一个线程可以获取执行, 其他的会等待, 并且如果f变量失效了，也会释放锁
+fcntl.flock(f, fcntl.LOCK_UN)  # 执行完毕后记得unlock
+fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
+```
+
 # 所有内置库一览
+
 [官网](https://docs.python.org/3/library/index.html)
 
 ## 未分类
@@ -39,11 +405,6 @@
 ```{toctree}
 :maxdepth: 1
 ./socket.md
-```
-
-## typing
-```{toctree}
-./typing.md
 ```
 
 ## Data Types
