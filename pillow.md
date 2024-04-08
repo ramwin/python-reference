@@ -1,4 +1,4 @@
-**Xiang Wang @ 2016-09-02 18:06:52**
+# pillow
 
 [官网文档](https://pillow.readthedocs.io/en/stable/index.html)
 

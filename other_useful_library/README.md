@@ -1,9 +1,46 @@
 # 其他第三方包
+
+## 未分类
 ```{toctree}
-:maxdepth: 2
+:maxdepth: 1
 ./exchangelib.md
 ./openpyxl.md
+../scrapy/spider.md
+../scrapy/README.md
+../scrapy/log.md
+../scrapy/selector选择器.md
+./beautifulsoup.md
+./click.md
+./flask.md
+./imapclient.md
+./ipdb.md
+./jinjia.md
+./pandas.md
+./peewee.md
+./pyenv.md
+./pylint.md
+./requests.md
+./rsa.md
+./visidata.md
+./wechatpy.md
 ```
+
+## mysql
+```{toctree}
+../mysql.md
+```
+
+## mongoengine
+```{toctree}
+./mongoengine.md
+```
+
+## pillow
+```{toctree}
+:maxdepth: 1
+../pillow.md
+```
+
 ## bitstring
 转化二进制数据
 ```

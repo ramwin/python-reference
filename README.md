@@ -1,7 +1,5 @@
 ```{toctree}
 :maxdepth: 2
-./language_reference/README.md
-./library_reference/README.md
 ./other_useful_library/README.md
 ```
 
@@ -10,12 +8,6 @@
 :maxdepth: 2
 ./设计模式.md
 ```
-
-# 目录
-* [Other Useful Library 其他有用的包](./other_useful_library/README.md)
-* [official documents 官网文档](https://docs.python.org/3/)
-* [python tips 小技巧](http://book.pythontips.com/en/latest/index.html)
-* [github链接](https://github.com/ramwin/python-reference/)
 
 # tutorial
 [官网](https://docs.python.org/3/tutorial/index.html)
