@@ -1,4 +1,7 @@
 # 其他第三方包
+```{toctree}
+./mypy.md
+```
 
 ## 未分类
 ```{toctree}
