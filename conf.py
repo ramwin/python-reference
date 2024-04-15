@@ -16,12 +16,12 @@ author = 'Xiang Wang'
 extensions = [
         "myst_parser",
         "sphinx_design",
+        "sphinx.ext.todo",
+        "sphinx.ext.autodoc",
         ]
 
 templates_path = ['_templates']
-exclude_patterns = [
-    '_build', 'Thumbs.db', '.DS_Store',
-]
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 language = 'zh_CN'
 

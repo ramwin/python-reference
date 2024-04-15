@@ -117,3 +117,11 @@ def process(response: bytes) -> str:
 def process(response):
     ...  # actual implementation goes here
 ```
+
+# [ClassVar](https://docs.python.org/3/library/typing.html#typing.ClassVar)
+classvar可以防止覆盖类型和类型错误。但是无法防止不赋值
+
+```python
+class A:
+    count: ClassVar[int]
+```
