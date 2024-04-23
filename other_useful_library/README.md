@@ -265,6 +265,23 @@ part.shift(seconds=-2)
 subs.save('other/path.srt', encoding='utf8')
 ```
 
+## requests-cache
+利用缓存来保存文件, 还可以指定用哪个key
+```python3
+import requests_cache
+def timekey(request: PreparedRequest, **kwargs):
+    return parse_qs(
+        urlparse(request.url).query
+    )["time"][0]
+session = requests_cache.CachedSession(
+        'demo_cache',
+        backend="filesystem",
+        use_cache_dir=False,
+        allowable_methds=["GET"],
+        key_fn=timekey,
+)
+```
+
 ## web3
 ### [eth_utils](https://eth-utils.readthedocs.io/en/stable/)
 ```
