@@ -306,24 +306,42 @@ def main():
 
 * [ ] to be continued
 21. [ ] Structed Markup Processing Tools
-22. ## Internet Protocols and Support
-    * [ ] poplib
-    * imaplib
-    * [ ] nntplib
-    * [ ] smtplib
-    * ### [urllib](./library_reference/urllib.md) *处理url*
-    * [ ] telnetlib
-    * ### uuid
-        * uuid.uuid1
-        根据序列号，时间，电脑的mac地址生成一个uuid
-        返回一个uuid,但是后面是固定的node,可以手工提供或者直接获取电脑的mac地址
-        * uuid.uuid4
-        生成随机的uuid
-    * [ ] socketserver
+
+## Internet Protocols and Support
+
+* ftplib
+```python3
+with FTP() as ftp:
+    ftp.connect(host='localhost', port=2121)
+    ftp.login()
+    ftp.dir()
+    with open("source.md", "rb") as f:  # 保存文件
+        ftp.storbinary("STOR target.md", f)
+```
+
+* [ ] poplib
+* imaplib
+* [ ] nntplib
+* [ ] smtplib
+* [ ] telnetlib
+* [ ] socketserver
+
+### urllib
+*处理url*
+```{toctree}
+./urllib.md
+```
+
+### uuid
+* uuid.uuid1
+根据序列号，时间，电脑的mac地址生成一个uuid
+返回一个uuid,但是后面是固定的node,可以手工提供或者直接获取电脑的mac地址
+* uuid.uuid4
+生成随机的uuid
 
 ## Development Tools
 
-### [unittest — Unit testing framework 测试框架](./library_reference/unittest.md)
+### [unittest — Unit testing framework 测试框架](./unittest.md)
 
 ## [Python Runtime Services](./runtime_services.md)
 
@@ -332,17 +350,6 @@ def main():
 * [dataclass](./runtime_services.md#dataclass)
 * [contextlib](./runtime_services.md#contextlib)
 
-## Internet Protocols and Support
-
-* ftplib
-```python
-with FTP() as ftp:
-    ftp.connect(host='localhost', port=2121)
-    ftp.login()
-    ftp.dir()
-    with open("source.md", "rb") as f:  # 保存文件
-        ftp.storbinary("STOR target.md", f)
-```
 
 
 ## [ ] Custom Python Interpreters
@@ -578,10 +585,6 @@ filter(lambda x: x.is_dir(), os.scandir())  # show all the directory entry
 * system  
 最实用,返回Linux, Windows, Java, Darwin
 
-## Development Tools
-
-
-1. [x] Introduction
 ## [Built-in Functions](./library_reference/built_in_functions内置函数.md)
 
 * all
@@ -889,24 +892,8 @@ def main():
 
 * [ ] to be continued
 21. [ ] Structed Markup Processing Tools
-22. ## Internet Protocols and Support
-    * [ ] poplib
-    * imaplib
-    * [ ] nntplib
-    * [ ] smtplib
-    * ### [urllib](./library_reference/urllib.md) *处理url*
-    * [ ] telnetlib
-    * ### uuid
-        * uuid.uuid1
-        根据序列号，时间，电脑的mac地址生成一个uuid
-        返回一个uuid,但是后面是固定的node,可以手工提供或者直接获取电脑的mac地址
-        * uuid.uuid4
-        生成随机的uuid
-    * [ ] socketserver
 
-## Development Tools
 
-### [unittest — Unit testing framework 测试框架](./library_reference/unittest.md)
 
 ## [Python Runtime Services](./runtime_services.md)
 
@@ -914,20 +901,6 @@ def main():
 * traceback
 * [dataclass](./runtime_services.md#dataclass)
 * [contextlib](./runtime_services.md#contextlib)
-
-## Internet Protocols and Support
-
-* ftplib
-```python
-with FTP() as ftp:
-    ftp.connect(host='localhost', port=2121)
-    ftp.login()
-    ftp.dir()
-    with open("source.md", "rb") as f:  # 保存文件
-        ftp.storbinary("STOR target.md", f)
-```
-
-
 ## [ ] Custom Python Interpreters
 
 33. ## Python Language Services
