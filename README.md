@@ -507,6 +507,7 @@ for i in range(ws.nrows):
 ## [yapf] *把python的代码格式化*
 
 # 其他
+* [ ] [awesome python](https://github.com/vinta/awesome-python)
 * socket.gethostname()    # 获取当前主机的主机名
 * uuid.getnote()    # 获取本机的MAC地址  
 mac=uuid.UUID(int = node).hex[-12:]
