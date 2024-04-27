@@ -15,6 +15,7 @@ Welcome to python-reference's documentation!
    ./language_reference/README.md
    ./other_useful_library/README.md
    ./设计模式.md
+   ./other.md
 
 
 Indices and tables

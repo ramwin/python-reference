@@ -852,3 +852,7 @@ fcntl.flock(f, fcntl.LOCK_UN)  # 执行完毕后记得unlock
 fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 ```
 
+[base64]: https://docs.python.org/3/library/base64.html
+[subprocess]: https://docs.python.org/3/library/subprocess.html
+[bz2]: https://docs.python.org/3/library/bz2.html#examples-of-usage
+[library-reference]: https://docs.python.org/3/library/index.html
