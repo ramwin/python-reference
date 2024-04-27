@@ -7,6 +7,7 @@
 ```{toctree}
 :maxdepth: 2
 ./typing.md
+./os.md
 ```
 
 ## [Built-in Functions](./built_in_functions内置函数.md)
@@ -68,36 +69,42 @@ def function():
 包含cache lru_cache等功能
 * [operator 运算符](./library_reference/operator运算符.md)
 
-## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
+## File and Directory Access
+[官网](https://docs.python.org/3/library/filesys.html)
+```{toctree}
+./os.md
+./tempfile.md
+./pathlib.md
+```
 
-### [pathlib](./library_reference/pathlib.md)
+### pathlib
 操作目录,路径的功能
 
-2. [os.path](library_reference/README.md#os)
-#### [tempfile](library_reference/tempfile.md)
-临时文件，临时文件夹
 
-### [filecmp 文件、文件夹比较](https://docs.python.org/3/library/filecmp.html)
+### filecmp 文件、文件夹比较
+[官网](https://docs.python.org/3/library/filecmp.html)
 推荐使用 [deep-dircmp](https://github.com/mitar/python-deep-dircmp)
 
-    from deep_dircmp import DeepDirCmp
-
-    DeepDirCmp(source, target).get_left_only_recursive()  # 注意，如果一个文件夹额外存在，只会返回文件夹路径，不会再迭代文件夹内部文件
+```python
+from deep_dircmp import DeepDirCmp
+DeepDirCmp(source, target).get_left_only_recursive()  # 注意，如果一个文件夹额外存在，只会返回文件夹路径，不会再迭代文件夹内部文件
+```
 
 
 ### [shutil](https://docs.python.org/3/library/shutil.html)
 * rmtree  
 删除文件夹
 
-
-    shutil.rmtree(Path)
+```python
+shutil.rmtree(Path)
+```
 
 * 复制文件夹
     * `dirs_exist_ok=False`
 
-
+    ```python
     shutil.copytree(src, dst)
-
+    ```
 
 ## Data Persistence
 
@@ -154,10 +161,12 @@ f.close()
 ### [ ] secrets
 
 ## Generic Operating System Services
+```{toctree}
+./os.md
+```
+
 [官网](https://docs.python.org/3/library/allos.html)
 
-### [os](./library_reference/README.md#os)
-[ ] io
 
 ### [time](./library_reference/README.md#time)
 
@@ -370,9 +379,6 @@ fcntl.flock(f, fcntl.LOCK_UN)  # 执行完毕后记得unlock
 fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 ```
 
-# 所有内置库一览
-
-[官网](https://docs.python.org/3/library/index.html)
 
 ## 未分类
 
@@ -398,14 +404,6 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 ./unittest.md
 ./urllib.md
 ./zip.md
-```
-
-## File and Directory Acces
-
-### pathlib
-操作目录,路径的功能
-```{toctree}
-./pathlib.md
 ```
 
 ## socket
@@ -522,51 +520,12 @@ print(log_2(4))  # 2.0
     read(n)  # 读取n个字符或者字节
     seek(offset, from_what)  # offset偏移数量，from_wath 0代表开始，1代表当前，2代表末尾
 
-### [os](https://docs.python.org/3/library/os.html)
-```python
-# 获取当前目录  
-os.getcwd()
-os.path.abspath('.')
-
-# 是否是目录
-os.path.isdir("<path>")
-
-# 切换目录
-os.chdir('Pictures')
-
-# 遍历文件
-os.listdir()
-
-# 删除目录
-import shutil
-shutil.rmtree('<directory>')
-```
-
-
 #### [Process Parameters](https://docs.python.org/3/library/os.html#process-parameters)
 
 
 #### [File Descriptor Operations](https://docs.python.org/3/library/os.html#file-descriptor-operations)
 
-#### [Files and Directories](https://docs.python.org/3/library/os.html#files-and-directories)
-* [ ] os.chroot(path)
-* os.fchdir(fd)  
-等于`os.chdir`
-* os.getcwd()  
-返回当前工作目录: `'/home/wangx/github/python-reference'`
-* os.getcwdb()
-返回当前工作目录的二进制: `b'/home/wangx/github/duishang_design/\xe7\xbd\x91\xe9\xa1\xb5'`
-* os.listdir(path=".")
-Return a list containing the names of the entries in the directory given by path. 
-* os.scandir(path=".")
-Better performance than os.listdir
-```
-filter(lambda x: x.is_dir(), os.scandir())  # show all the directory entry
-```
-
 #### [Process Management](https://docs.python.org/3/library/os.html#process-management)
-
-
 
 ### time
 [官网](https://docs.python.org/3/library/time.html)
@@ -643,37 +602,6 @@ def function():
 * [functools](./library_reference/README.md#functools)
 包含cache lru_cache等功能
 * [operator 运算符](./library_reference/operator运算符.md)
-
-## [File and Directory Access](https://docs.python.org/3/library/filesys.html)
-
-### [pathlib](./library_reference/pathlib.md)
-操作目录,路径的功能
-
-2. [os.path](library_reference/README.md#os)
-#### [tempfile](library_reference/tempfile.md)
-临时文件，临时文件夹
-
-### [filecmp 文件、文件夹比较](https://docs.python.org/3/library/filecmp.html)
-推荐使用 [deep-dircmp](https://github.com/mitar/python-deep-dircmp)
-
-    from deep_dircmp import DeepDirCmp
-
-    DeepDirCmp(source, target).get_left_only_recursive()  # 注意，如果一个文件夹额外存在，只会返回文件夹路径，不会再迭代文件夹内部文件
-
-
-### [shutil](https://docs.python.org/3/library/shutil.html)
-* rmtree  
-删除文件夹
-
-
-    shutil.rmtree(Path)
-
-* 复制文件夹
-    * `dirs_exist_ok=False`
-
-
-    shutil.copytree(src, dst)
-
 
 ## Data Persistence
 

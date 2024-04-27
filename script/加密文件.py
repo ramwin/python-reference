@@ -31,6 +31,7 @@ def check_password(password: str) -> None:
     为了防止密码输入错误，所以要和已有的密码比对
     """
     valid_password_hash: List[str] = [
+            "d8d6f089f352925bb1c74bd587a32571"
     ]
     check_salt = "check_pass:"
     md5 = hashlib.md5()
