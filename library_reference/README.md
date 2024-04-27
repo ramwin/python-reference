@@ -161,12 +161,17 @@ f.close()
 ### [ ] secrets
 
 ## Generic Operating System Services
+[https://docs.python.org/3/library/allos.html](https://docs.python.org/3/library/allos.html)
+
 ```{toctree}
 ./os.md
 ```
 
-[官网](https://docs.python.org/3/library/allos.html)
-
+### getpass
+```
+from getpass import getpass
+getpass(prompt="输入密码:")
+```
 
 ### [time](./library_reference/README.md#time)
 
