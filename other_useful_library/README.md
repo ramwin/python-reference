@@ -8,13 +8,13 @@
 :maxdepth: 1
 ./exchangelib.md
 ./openpyxl.md
-../scrapy/spider.md
-../scrapy/README.md
-../scrapy/log.md
-../scrapy/selector选择器.md
 ./beautifulsoup.md
 ./click.md
 ./flask.md
+```
+
+```{toctree}
+:maxdepth: 1
 ./imapclient.md
 ./ipdb.md
 ./jinjia.md
@@ -27,6 +27,22 @@
 ./visidata.md
 ./wechatpy.md
 ```
+
+## 网络
+
+```{toctree}
+./scrapy/README.md
+./scrapy/spider.md
+./scrapy/README.md
+./scrapy/log.md
+./scrapy/selector选择器.md
+```
+
+## 性能
+
+### optunar
+优化参数  
+[./test_optunar.py](./test_optunar.py)  
 
 ## mysql
 ```{toctree}

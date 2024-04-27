@@ -414,7 +414,6 @@ with SSHClient() as ssh:
         scp.get(<远程路径>, <本地文件>, recursive=True)
 ```
 
-## [scrapy](./scrapy/README.md)
 
 ## [sortedcontainers](https://github.com/grantjenks/python-sortedcontainers)
 
