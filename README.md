@@ -3,12 +3,6 @@
 ./other_useful_library/README.md
 ```
 
-# 设计模式
-```{toctree}
-:maxdepth: 2
-./设计模式.md
-```
-
 # tutorial
 [官网](https://docs.python.org/3/tutorial/index.html)
 ## Data Structures 基础类型

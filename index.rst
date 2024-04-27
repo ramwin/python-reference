@@ -13,7 +13,7 @@ Welcome to python-reference's documentation!
    ./library_reference/README.md
    ./language_reference/README.md
    ./README.md
-
+   ./设计模式.md
 
 
 Indices and tables
