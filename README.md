@@ -1,10 +1,12 @@
-```{toctree}
-:maxdepth: 2
-./other_useful_library/README.md
-```
-
 # tutorial
 [官网](https://docs.python.org/3/tutorial/index.html)
+* [Other Useful Library 其他有用的包](./other_useful_library/README.md)
+* [official documents 官网文档](https://docs.python.org/3/)
+* [python tips 小技巧](http://book.pythontips.com/en/latest/index.html)
+* [awesome python](https://github.com/vinta/awesome-python)
+* [github链接](https://github.com/ramwin/python-reference/)
+
+
 ## Data Structures 基础类型
 其实这个是Library Reference的内容
 
@@ -64,13 +66,6 @@ for的功能就是调用object的`__iter__`函数
 python3 setup.py sdist bdist_wheel
 twine upload dist/*
 ```
-
-123
-```{toctree}
-./language_reference/README.md
-```
-456
-
 
 # 其他有用的包 Other Useful Library
 ## 7z
@@ -501,7 +496,6 @@ for i in range(ws.nrows):
 ## [yapf] *把python的代码格式化*
 
 # 其他
-* [ ] [awesome python](https://github.com/vinta/awesome-python)
 * socket.gethostname()    # 获取当前主机的主机名
 * uuid.getnote()    # 获取本机的MAC地址  
 mac=uuid.UUID(int = node).hex[-12:]
