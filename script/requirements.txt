@@ -1,3 +1,5 @@
 click
 flockcontext
 filetype
+types-cryptography
+cryptography
