@@ -209,7 +209,7 @@ getpass(prompt="输入密码:")
 * RLock
 线程锁. 同一个线程内可以多次获取
 
-### [multiprocessing — Process-based parallelism](./library_reference/multiprocessing.md)
+### [multiprocessing — Process-based parallelism](./multiprocessing.md)
 
 #### Process
 * [如果不join,直接关闭](./multi/不join.py)
