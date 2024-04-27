@@ -55,20 +55,20 @@ def get_key() -> Fernet:
     return Fernet(base64.urlsafe_b64encode(password.encode("utf-8")))
 
 
-def encrypt_file(path: Path, fernet: Fernet):
+def decrypt_file(path: Path, fernet: Fernet):
     """
-    加密文件
-    添加.fernet后缀
+    解密文件
+    删除.fernet后缀
     删除原文件
     """
-    target_path = path.parent.joinpath(path.name + ".fernet")
+    target_path = path.parent.joinpath(path.stem)
     if target_path.exists():
         raise FileExistsError(target_path)
     with open(path, "rb") as source_file:
-        content = source_file.read()
-    encrypted_content = fernet.encrypt(content)
+        encrypted_content = source_file.read()
+    content = fernet.decrypt(encrypted_content)
     with open(target_path, "wb") as target_file:
-        target_file.write(encrypted_content)
+        target_file.write(content)
     path.unlink()
 
 
@@ -80,14 +80,14 @@ def main(path):
     """
     fernet = get_key()
     if Path(path).is_file():
-        encrypt_file(Path(path), fernet)
+        decrypt_file(Path(path), fernet)
         return
     for root, _, files in os.walk(path):
         for path_str in files:
             path = Path(root, path_str)
-            if path.suffix == ".fernet":
+            if path.suffix != ".fernet":
                 continue
-            encrypt_file(path, fernet)
+            decrypt_file(path, fernet)
 
 
 if __name__ == "__main__":
