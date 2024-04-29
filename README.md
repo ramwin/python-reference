@@ -40,44 +40,33 @@ for的功能就是调用object的`__iter__`函数
 # [Package 打包](https://packaging.python.org/en/latest/tutorials/packaging-projects/#creating-the-package-files)
 
 * `setup.py`示例:
+
 [文档](https://packaging.python.org/en/latest/tutorials/packaging-projects/#creating-the-package-files)
+```python
+from setuptools import setup
+setup(
+    # 必选
+    name="包名",
+    version="0.0.1",
 
-    ```python
-    from setuptools import setup
-    setup(
-        # 必选
-        name="包名",
-        version="0.0.1",
-
-        # 可选
-        package_data = {
-            '': ['*.png', '*.json'],  # 把包里面的png和json放入包
-        },
-        data_files=[('README.md', ['README.md'])],
-        install_requires=[
-            '<dependency_name> @ git+ssh://git@github.com/<user>/<repo_name>@<ref>',  # 依赖一个git仓库
-        ]
-    )
-    ```
+    # 可选
+    package_data = {
+        '': ['*.png', '*.json'],  # 把包里面的png和json放入包
+    },
+    data_files=[('README.md', ['README.md'])],
+    install_requires=[
+        '<dependency_name> @ git+ssh://git@github.com/<user>/<repo_name>@<ref>',  # 依赖一个git仓库
+    ]
+)
+```
 
 * 发布
-
 ```shell
 python3 setup.py sdist bdist_wheel
 twine upload dist/*
 ```
 
 # 其他有用的包 Other Useful Library
-## 7z
-
-[官网](https://github.com/miurahr/py7zr)
-
-
-    import py7zr
-    archive = py7zr.SevenZipFile('sample.7z', mode='r')
-    archive.extractall(path='/tmp')
-
-
 ## airflow
 [github链接](https://github.com/ramwin/airflowtest/README.md)
 
@@ -98,12 +87,6 @@ BitArray(b"123").bin  # '001100010011001000110011'
 
 [示例](./other_useful_library/captcha_test.py)
 *生成验证码*
-## celery
-* *用来执行异步脚本*
-这个软件在linux-reference里面  
-    * [官网](http://docs.celeryproject.org/en/latest/index.html)
-    * [github在线链接](https://github.com/ramwin/linux-reference#celery)
-
 ## [click](./other_useful_library/click.md) *用python写shell命令command*
 
 ## [datetime-month](https://github.com/yitistica/month)

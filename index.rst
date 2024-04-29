@@ -10,11 +10,11 @@ Welcome to python-reference's documentation!
    :maxdepth: 3
    :caption: Contents:
 
-   ./README.md
-   ./library_reference/README.md
    ./language_reference/README.md
+   ./library_reference/README.md
    ./other_useful_library/README.md
    ./设计模式.md
+   ./README.md
    ./other.md
 
 

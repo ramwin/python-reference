@@ -28,6 +28,18 @@
 ./wechatpy.md
 ```
 
+## celery
+用来执行异步脚本, 这个软件在linux-reference里面  
+[github在线链接](https://github.com/ramwin/linux-reference#celery)
+
+## 7z
+[官网](https://github.com/miurahr/py7zr)
+```python
+import py7zr
+archive = py7zr.SevenZipFile('sample.7z', mode='r')
+archive.extractall(path='/tmp')
+```
+
 ## 网络
 
 ```{toctree}
