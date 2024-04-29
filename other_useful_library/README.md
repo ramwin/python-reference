@@ -45,7 +45,6 @@ archive.extractall(path='/tmp')
 ```{toctree}
 ./scrapy/README.md
 ./scrapy/spider.md
-./scrapy/README.md
 ./scrapy/log.md
 ./scrapy/selector选择器.md
 ```
