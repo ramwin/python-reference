@@ -52,6 +52,8 @@ def get_config_file_list() -> List[Path]:
         device = Path("/run/media/wangx/samsung")
     elif HOSTNAME == "Windows":
         device = Path("S:/")
+    elif HOSTNAME == "win11.":
+        device = Path("/mnt/samsung/")
     else:
         raise NotImplementedError
     results = [
@@ -148,11 +150,12 @@ def main():
                 continue
             source_device = item["device"][HOSTNAME]["source_device"]
             target_device = item["device"][HOSTNAME]["target_device"]
-            if not Path(source_device, item["folder"]["source"]).exists():
-                LOGGER.warning("某个磁盘没挂载: %s", source_device)
+            source_folder = Path(source_device, item["folder"]["source"])
+            if not source_folder.exists():
+                LOGGER.warning("文件夹不存在: %s", source_folder)
                 continue
             new_current = MoveTask(
-                    source=Path(source_device, item["folder"]["source"]),
+                    source=source_folder,
                     target=Path(target_device, item["folder"]["target"]),
                     current=item["current"],
                     max_=item["max"],
