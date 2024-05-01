@@ -7,6 +7,23 @@
 
 ### colorlog
 [example](./test_colorlog.py)  
+```python
+import logging
+
+import colorlog
+
+
+handler = colorlog.StreamHandler()
+handler.setFormatter(colorlog.ColoredFormatter(
+    "%(log_color)s%(levelname)s:%(name)s:%(message)s"
+    ))
+logging.basicConfig(level=logging.DEBUG, handlers=[handler])
+
+logger = logging.getLogger(__name__)
+logger.debug("info")
+logger.info("info")
+logger.error("error")
+```
 [github](https://github.com/borntyping/python-colorlog)  
 带日志的streamlog
 
