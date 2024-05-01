@@ -3,6 +3,16 @@
 ./mypy.md
 ```
 
+## 开发工具类
+
+### colorlog
+[example](./test_colorlog.py)  
+[github](https://github.com/borntyping/python-colorlog)  
+带日志的streamlog
+
+### mistletoe 解析markdown
+[github](https://github.com/miyuchina/mistletoe)
+
 ## 未分类
 ```{toctree}
 :maxdepth: 1
