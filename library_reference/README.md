@@ -273,8 +273,10 @@ with FTP() as ftp:
 生成随机的uuid
 
 ## Development Tools
-
-### [unittest — Unit testing framework 测试框架](./unittest.md)
+```{toctree}
+:maxdepth: 4
+./unittest.md
+```
 
 ## [Python Runtime Services](./runtime_services.md)
 
@@ -325,7 +327,6 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 ./pathlib.md
 ./re.md
 ./tempfile.md
-./unittest.md
 ./urllib.md
 ./zip.md
 ```

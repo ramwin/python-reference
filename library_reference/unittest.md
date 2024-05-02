@@ -1,4 +1,8 @@
-# [unittest — Unit testing framework](https://docs.python.org/3/library/unittest.html)
+# unittest — Unit testing framework
+
+[官网](https://docs.python.org/3/library/unittest.html)
+
+## 基础示例
 ```python
 import unittest
 
@@ -71,6 +75,11 @@ class MyTest(unittest.TestCase):
         with self.assertRaises(ZeroDivisionError):
             1/0
         print("测试完毕")
+```
+
+## Skip跳过
+```
+@unittest.skipIf(condition, reason)
 ```
 
 ## Class and Module Fixtures
