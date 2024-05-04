@@ -65,9 +65,34 @@ def function():
 
 ## Functional Programming Modules
 * [itertools 迭代器](./library_reference/itertools.md)
-* [functools](./library_reference/README.md#functools)
-包含cache lru_cache等功能
-* [operator 运算符](./library_reference/operator运算符.md)
+### functools
+对于函数和可调用对象的执行操作
+
+* cache
+缓存函数结果
+```
+@functools.lru_cache(max_size=128)  # 一般用lru_cache自动释放缓存. cache的话更快,但是不会自动释放
+def factorial(n):
+    return n * factorial(n-1) if n else 1
+```
+
+* partial
+把新增的参数放入原有参数来变成新的函数
+
+原来的函数 `log_e(10)`, 默认用math.e当底数, 返回2.30.
+但是我是程序员, 经常希望以2为底数
+```python
+import math
+import functools
+
+def log_e(n, base=math.e):
+    return math.log(n, base)
+
+log_2 = functools.partial(log_e, base=2)
+print(log_2(4))  # 2.0
+```
+
+### [operator 运算符](./library_reference/operator运算符.md)
 
 ## File and Directory Access
 [官网](https://docs.python.org/3/library/filesys.html)
@@ -402,32 +427,6 @@ random.sample(list, k)  # choose k's value from list, 每个item只被选一次�
 
 ### [itertools](./itertools.md)
 
-### functools
-对于函数和可调用对象的执行操作
-* cache
-缓存函数结果
-```
-@functools.lru_cache(max_size=128)  # 一般用lru_cache自动释放缓存. cache的话更快,但是不会自动释放
-def factorial(n):
-    return n * factorial(n-1) if n else 1
-```
-
-* partial
-把新增的参数放入原有参数来变成新的函数
-
-原来的函数 `log_e(10)`, 默认用math.e当底数, 返回2.30.
-但是我是程序员, 经常希望以2为底数
-```python
-import math
-import functools
-
-def log_e(n, base=math.e):
-    return math.log(n, base)
-
-log_2 = functools.partial(log_e, base=2)
-print(log_2(4))  # 2.0
-```
-
 ### [operator](./operator运算符.md)
 
 
@@ -522,11 +521,6 @@ def function():
     * [statistics.stdev](https://docs.python.org/3/library/statistics.html#statistics.stdev)
     * statistics.StatisticsError
 
-## Functional Programming Modules
-* [itertools 迭代器](./library_reference/itertools.md)
-* [functools](./library_reference/README.md#functools)
-包含cache lru_cache等功能
-* [operator 运算符](./library_reference/operator运算符.md)
 
 ## Data Persistence
 
