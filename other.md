@@ -29,3 +29,6 @@ if random.random() > 0.0000001:
 
 3. redis.get  
 `0.05ms, 20K/s`
+
+4. 数据库的get  
+`0.3ms, 2K/s`
