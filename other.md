@@ -26,3 +26,6 @@ if time.time() > start :
 if random.random() > 0.0000001:
     refresh()
 ```
+
+3. redis.get  
+`0.05ms, 20K/s`
