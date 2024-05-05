@@ -1,36 +1,3 @@
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-# Xiang Wang @ 2016-08-18 09:21:05
-
-# 基础用法
-# def log(f):
-#     print('log')
-#     print(f.__name__)
-#     def fin(*args, **kwargs):
-#         return f(*args, **kwargs)
-#     return fin
-# 
-# @log
-# def main():
-#     ''' main __docstring__ '''
-#     print(1)
-
-# 让装饰器带参数
-def deco(text):
-    def _deco(func):
-        def __deco(*args, **kwargs):
-            print('before myfunc() called.')
-            print(text)
-            func(*args, **kwargs)
-            print('after myfunc() called.')
-        return __deco
-    return _deco
-
-@deco('text')
-def myfunc(text= 'no text' ):
-    print("myfunc() called")
-    print(text)
-
 class locker:
     def __init__(self):
         print("locker.__init__() should be not called.")

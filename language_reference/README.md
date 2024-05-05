@@ -95,6 +95,9 @@ copy.deepcopy会copy recursively
 ```
 
 ## Compound statements 复合语句
+```{toctree}
+./function.md
+```
 
 ### [with语句 the with statement](https://docs.python.org/3/reference/compound_stmts.html#the-with-statement)
 [测试](./test/test_with.py)
@@ -122,12 +125,7 @@ with A():
         if i == 3: a.insert(0, 3)  # 多执行
     ```
 
-### [函数 function](./language_reference/function.md)
-* [docstring](./language_reference/function.md#docstring)
 
-[官网](https://docs.python.org/3/reference/compound_stmts.html#function-definitions)
-* [decorator装饰器](http://www.cnblogs.com/huxi/archive/2011/03/01/1967600.html)
-* [decorator.py](decorator装饰器.py)
 
 ### [class](./class/README.md)
 [官网文档 TODO](http://ramwin.com:8000/tutorial/classes.html)
