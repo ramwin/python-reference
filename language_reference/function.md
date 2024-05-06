@@ -74,7 +74,7 @@ def deco(text):
             func(*args, **kwargs)
             print('after myfunc() called.')
         return update_wrapper(__deco, func)
-    return update_wrapper(_deco, func)
+    return _deco
 
 @deco('text')
 def myfunc(text= 'no text' ):
