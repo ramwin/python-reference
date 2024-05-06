@@ -17,7 +17,6 @@ Welcome to python-reference's documentation!
    ./README.md
    ./other.md
 
-
 Indices and tables
 ==================
 

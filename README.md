@@ -6,10 +6,8 @@
 * [awesome python](https://github.com/vinta/awesome-python)
 * [github链接](https://github.com/ramwin/python-reference/)
 
-
 ## Data Structures 基础类型
 其实这个是Library Reference的内容
-
 
 * ### [string](./string.md)
     * [unicode table](https://unicode-table.com/cn/#samaritan)
@@ -35,7 +33,6 @@ for的功能就是调用object的`__iter__`函数
     1. 自动创建`__iter__, __next__`函数
     2. 每次执行next时自动更新，免去手动设置`self.data, self.index`
     3. 不返回时，自动`raise StopIteration`
-
 
 # [Package 打包](https://packaging.python.org/en/latest/tutorials/packaging-projects/#creating-the-package-files)
 
@@ -341,7 +338,6 @@ python script/启动ftp.py
 ```
 
 
-
 ## [PyPDF2](https://pythonhosted.org/PyPDF2/) *对中文支持不友好*
 
 ## pyperclip *控制系统剪切板*
@@ -397,7 +393,6 @@ with SSHClient() as ssh:
         scp.get(<远程路径>, <本地文件>, recursive=True)
 ```
 
-
 ## [sortedcontainers](https://github.com/grantjenks/python-sortedcontainers)
 
     pip install sortedcontainers
@@ -435,7 +430,6 @@ client.db.scan(folder, sub="要同步的目录")
 while client.db.completion(remote_device, folder) != 100:
     time.sleep(10)
 ```
-
 
 * ## ~~[srt](http://srt.readthedocs.io/en/latest/api.html)*因为缺少shift功能而改成用pysrt*~~
 ## [visidata](other_useful_library/visidata.md)
