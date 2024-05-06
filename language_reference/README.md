@@ -14,6 +14,10 @@
 ## Data Types
 [官网](https://docs.python.org/3/library/datatypes.html)
 
+```{toctree}
+./exception.md
+```
+
 ### [list](./list.md)
 ```{toctree}
 ./list.md
@@ -55,12 +59,6 @@ copy.deepcopy会copy recursively
 ### [enum](./library_reference/README.md#enum)
 
 [官网](https://docs.python.org/3/reference/index.html)
-
-```{toctree}
-./exception.md
-```
-
-[官网](https://docs.python.org/3/tutorial/errors.html#handling-exceptions)
 
 ## 6. Expressions
 ### [magic method魔法方法](./magic_methods/README.md)
