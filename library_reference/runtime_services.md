@@ -1,4 +1,5 @@
-# [Python Runtime Services 和编译器,环境有关的服务](https://docs.python.org/3/library/python.html)
+# Python Runtime Services 和编译器,环境有关的服务
+[官网](https://docs.python.org/3/library/python.html)
 
 ## [Sys](https://docs.python.org/3/library/sys.html)
 
