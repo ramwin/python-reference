@@ -69,16 +69,8 @@ twine upload dist/*
 
 ## beautifulsoup4 *用来解析html文件*
 [官网](https://www.crummy.com/software/BeautifulSoup/bs4/doc/index.zh.html#id5)
-    * 安装: `pip3 install beautifulsoup4`
-    * [文档整理](./other_useful_library/beautifulsoup.md)
-
-## [bitstring](https://github.com/scott-griffiths/bitstring)
-把二进制转化成01
-```python3
-from bitstring import BitArray
-BitArray(b"123").bin  # '001100010011001000110011'
-
-```
+* 安装: `pip3 install beautifulsoup4`
+* [文档整理](./other_useful_library/beautifulsoup.md)
 
 ## captcha  
 

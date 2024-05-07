@@ -18,7 +18,7 @@
 >>> config['DEFAULT']['ForwardX11'] = 'yes'
 >>> with open('example.ini', 'w') as configfile:
 ...   config.write(configfile)
-...
+```
 
 # example.ini
 [DEFAULT]

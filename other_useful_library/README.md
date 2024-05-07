@@ -55,6 +55,14 @@ logger.error("error")
 ./wechatpy.md
 ```
 
+### bitstring
+[官网](https://github.com/scott-griffiths/bitstring)
+把二进制转化成01
+```python3
+from bitstring import BitArray
+BitArray(b"123").bin  # '001100010011001000110011'
+```
+
 ## celery
 用来执行异步脚本, 这个软件在linux-reference里面  
 [github在线链接](https://github.com/ramwin/linux-reference#celery)
