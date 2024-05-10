@@ -26,10 +26,6 @@
 ### [datetime](./library_reference/datetime时间.md)
 ### [ ] [calendar](https://docs.python.org/3/library/calendar.html)
 
-```{toctree}
-./collections.md
-```
-
 ### [heapq](./library_reference/heapq.md)
 
 ### [bisect](https://docs.python.org/3/library/bisect.html)

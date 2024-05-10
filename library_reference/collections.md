@@ -1,15 +1,15 @@
-### collections
+# collections
 * [官网文档](https://docs.python.org/3/library/collections.html#module-collections)
 * [OrderedDict](#ordereddict)
 * [defaultdict](#defaultdict)
 * [deque](#deque)
 
 
-#### [Counter](https://docs.python.org/3/library/collections.html#counter-objects)
+## [Counter](https://docs.python.org/3/library/collections.html#counter-objects)
 ```
 ```
 
-#### OrderedDict
+## OrderedDict
 * [官网文档](https://docs.python.org/3/library/collections.html#ordereddict-objects)
     ```
     od = OrderedDict()  # 注意不能直接把一个dict传入进去, 因为这个dict是没有排序的
@@ -19,7 +19,7 @@
     ```
 
 
-#### defaultdict
+## defaultdict
 * [官方文档](https://docs.python.org/3/library/collections.html#collections.defaultdict)
 * [参考代码]
     ```
@@ -50,7 +50,7 @@ class MyDict(dict):
         return super(MyDict, self).__getitem__(key)
 ```
 
-#### [Namedtuple](https://docs.python.org/3/library/collections.html#collections.namedtuple)
+## [Namedtuple](https://docs.python.org/3/library/collections.html#collections.namedtuple)
 ```
 // 自定义不可变的类
 Point = namedtuple("Point", ["x", "y"])
@@ -61,7 +61,7 @@ p.x + p.y
 x, y = p
 ```
 
-#### deque
+## deque
 * [官方文档](https://docs.python.org/3/library/collections.html#collections.deque)
 * pop和append左右的速度很快
     ```
@@ -73,7 +73,7 @@ x, y = p
     ```
 
 
-### collections abc
+# collections abc
 这个是 Abstract Base Classes 可以用来确保这个Class无法被直接使用，而必须指定了特定的方法才能使用,利用的是`abc.abstractmethod`就能实现这样的效果
 
 * #### Container
