@@ -76,8 +76,6 @@ twine upload dist/*
 
 [示例](./other_useful_library/captcha_test.py)
 *生成验证码*
-## [click](./other_useful_library/click.md) *用python写shell命令command*
-
 ## [datetime-month](https://github.com/yitistica/month)
 安装: `pip install datetime-month`
 
