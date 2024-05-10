@@ -11,11 +11,17 @@ Welcome to python-reference's documentation!
    :caption: Contents:
 
    ./language_reference/README.md
-   ./library_reference/README.md
    ./other_useful_library/README.md
    ./设计模式.md
    ./README.md
    ./other.md
+
+.. toctree::
+   :maxdepth: 3
+   :caption: 内置的包:
+
+   ./library_reference/README.md
+
 
 Indices and tables
 ==================

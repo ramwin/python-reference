@@ -336,7 +336,6 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 ./built_in_functions内置函数.md
 ./built_in_types内置数据类型.md
 ./csv.md
-./datetime时间.md
 ./heapq.md
 ./itertools.md
 ./json.md
@@ -357,6 +356,10 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 ```
 
 ## Data Types
+
+```{toctree}
+./datetime时间.md
+```
 
 
 ### [Enum](https://docs.python.org/3/library/enum.html)
