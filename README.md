@@ -348,6 +348,8 @@ document.save("通知.docx")
 ```
 
 ## python-dotenv
+优点: 配置简单,接口清晰  
+缺点: 功能单一,只能返回字符串  
 * 用来读取本地.env的配置(当前目录.env > ~/.env)  
 ```
 import os
