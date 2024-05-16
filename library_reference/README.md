@@ -5,6 +5,7 @@
 ```{toctree}
 ./concurrent.md
 runtime_services.md
+./system.md
 ```
 
 ## typing
@@ -189,34 +190,6 @@ f.close()
 
 ### [ ] hmac
 ### [ ] secrets
-
-## Generic Operating System Services
-[https://docs.python.org/3/library/allos.html](https://docs.python.org/3/library/allos.html)
-
-```{toctree}
-./os.md
-```
-
-### getpass
-```
-from getpass import getpass
-getpass(prompt="输入密码:")
-```
-
-### [time](./library_reference/README.md#time)
-
-### [argparse](./library_reference/argparse.md)
-这个用来解析python的命令
-
-5. [ ] getopt
-
-### [logging日志处理](./logging/README.md)
-### [platform](./library_reference/README.md#platform)
-平台相关
-
-```{toctree}
-./concurrent.md
-```
 
 ## contextvars — Context Variables
 ## Networking and Interprocess Communication 网络和进程间通信
@@ -463,9 +436,6 @@ random.sample(list, k)  # choose k's value from list, 每个item只被选一次�
 1641063845.0
 ```
 
-### [Platform](https://docs.python.org/3/library/platform.html)
-* system  
-最实用,返回Linux, Windows, Java, Darwin
 
 ## [Built-in Functions](./library_reference/built_in_functions内置函数.md)
 
@@ -579,28 +549,6 @@ f.close()
 
 ### [ ] hmac
 ### [ ] secrets
-
-## Generic Operating System Services
-[官网](https://docs.python.org/3/library/allos.html)
-
-### [os](./library_reference/README.md#os)
-[ ] io
-
-### [time](./library_reference/README.md#time)
-
-### [argparse](./library_reference/argparse.md)
-这个用来解析python的命令
-
-5. [ ] getopt
-
-### logging日志处理
-
-```{toctree}
-../logging/README.md
-```
-
-### [platform](./library_reference/README.md#platform)
-平台相关
 
 ## contextvars — Context Variables
 ## Networking and Interprocess Communication 网络和进程间通信
