@@ -20,6 +20,7 @@ Welcome to python-reference's documentation!
    :caption: 内置的包:
 
    ./library_reference/README.md
+   ./library_reference/system.md
 
 .. toctree::
    :maxdepth: 3
