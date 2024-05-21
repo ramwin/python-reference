@@ -2,7 +2,7 @@
 
 [官网](https://docs.python.org/3/library/typing.html)  
 
-[测试](./typing_test.py)  
+[测试](./test_typing.py)  
 
 [tutorial](https://docs.python.org/3/tutorial/controlflow.html#function-annotations)  
 
@@ -14,7 +14,7 @@ def f(ham: str, eggs: str='eggs') -> str:
 
 [官网](https://docs.python.org/3/library/typing.html#annotating-callable-objects)
 
-[测试代码](../test/test_typing_callable.py)
+[测试代码](./test_typing_callable.py)
 
 ```python
 from collections.abc import Callable
@@ -110,7 +110,7 @@ class Point2D(TypedDict):
 
 
 ## overload
-函数重载, [示例](../test_typing_overload.py)
+函数重载, [示例](./test_typing_overload.py)
 ```python3
 from typing import overload
 @overload

@@ -28,23 +28,25 @@ enumerate(['a','b','c'], start=1)  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不�
 ```
 
 * [ ] locals
-* ### [map(function, iterable)](https://docs.python.org/3/library/functions.html#map)
+
+### [map(function, iterable)](https://docs.python.org/3/library/functions.html#map)
 * [ ] max
 * open  
 打开一个文件 buffering=0代表不需要缓存(不缓存,mode必须是b), buffering=1代表每一行保存,buffering>1代表多少字节保存
-* ### [property](./library_reference/built_in_functions内置函数.md#property)
+* ### [property](../library_reference/built_in_functions内置函数.md#property)
 * zip: 迭代2个迭代器, 按照最短的来计算
 3. Built-in Constants
 4. Built-in Types
-* [Set集合](./set.md)
-* ### [Mapping Types -- dict 字典参考](./library_reference/built_in_types内置数据类型.md)
+* [Set集合](../set.md)
+* ### [Mapping Types -- dict 字典参考](../library_reference/built_in_types内置数据类型.md)
 5. ## [Built-in Exceptions](https://docs.python.org/3/library/exceptions.html)
+
 ### Warnings
 * DeprecationWarning
 
 ## [Text Processing Services](https://docs.python.org/3/library/text.html)
 
-### [2. re -- Regular expression operations 正则表达式 regex](./library_reference/re.md)
+### [2. re -- Regular expression operations 正则表达式 regex](../library_reference/re.md)
 [test regrex 在线测试](https://regex101.com/#python)
 
 ### textwrap.dedent
@@ -136,13 +138,13 @@ f.close()
 ```
 
 
-* [zipfile](./library_reference/zip.md) *处理zip压缩包*
+* [zipfile](../library_reference/zip.md) *处理zip压缩包*
 
 ## File Formats
 [官网](https://docs.python.org/3/library/fileformats.html)
-### [csv](./library_reference/csv.md)
+### [csv](../library_reference/csv.md)
  * [source code](https://github.com/python/cpython/blob/3.6/Lib/csv.py)
-### [configparser](./config.md) 配置文件
+### [configparser](../config.md) 配置文件
 
 * [ ] netrc
 * [ ] xdrlib
@@ -163,7 +165,7 @@ f.close()
 ## contextvars — Context Variables
 ## Networking and Interprocess Communication 网络和进程间通信
 
-### [asyncio](./library_reference/asyncio.md) *用来处理协程*
+### [asyncio](../library_reference/asyncio.md) *用来处理协程*
 ### [signal](https://docs.python.org/zh-cn/3/library/signal.html)
 * 使用触发信号，处理ctrl+c的时候，保证循环执行完毕
 ```
@@ -183,22 +185,23 @@ def main():
 
 ## Internet Data Handling
 
-### [JSON](./library_reference/json.md)
+### [JSON](../library_reference/json.md)
 
 ### [base64][base64]
 原理, [RFC 3548](https://tools.ietf.org/html/rfc3548.html#section-3)
+```
+'  '  b'00100000 00100000'
+按照6个比特来分割 001000 000010 0000[补充00]
+                  I      C      A=
+对比 0-25 A-Z 26-51 a-z 52-61 0-9
+然后每76个字符加一个换行，最后加一个换行
+base64.encodebytes(b'  ') == b'ICA=\n'
 
-    '  '  b'00100000 00100000'
-    按照6个比特来分割 001000 000010 0000[补充00]
-                      I      C      A=
-    对比 0-25 A-Z 26-51 a-z 52-61 0-9
-    然后每76个字符加一个换行，最后加一个换行
-    base64.encodebytes(b'  ') == b'ICA=\n'
 
-
-    b = base64.encodebytes('我'.encode('utf8')) # 只有二进制才能encode,结果还是bytes
-    b = base64.encodestring('我'.encode('utf8')) # 查了源码，果然这个是为了兼容python2的语法。以后避免使用这个方法
-    b = base64.encodestring('我')   # python2里面的str就是二进制,结果是str(仍然是二进制)
+b = base64.encodebytes('我'.encode('utf8')) # 只有二进制才能encode,结果还是bytes
+b = base64.encodestring('我'.encode('utf8')) # 查了源码，果然这个是为了兼容python2的语法。以后避免使用这个方法
+b = base64.encodestring('我')   # python2里面的str就是二进制,结果是str(仍然是二进制)
+```
 
 7. [ ] binhex
 8. [binascii](https://docs.python.org/3/library/binascii.html)
@@ -259,7 +262,7 @@ with FTP() as ftp:
 
 ## Unix Specific Services
 ### [fcntl](https://docs.python.org/3/library/fcntl.html)
-不过更加建议的是使用[flockcontext](./other_useful_library/README.md)
+不过更加建议的是使用[flockcontext](../other_useful_library/README.md)
 * fcntl.flock
 ```
 f = open("name", "w")
@@ -365,7 +368,7 @@ turn value from start(included) to stop(included)
 random.sample(list, k)  # choose k's value from list, 每个item只被选一次，所以k要小于len(list)
 ```
 
-## [Built-in Functions](./library_reference/built_in_functions内置函数.md)
+## [Built-in Functions](../library_reference/built_in_functions内置函数.md)
 
 * all
 * any
@@ -377,23 +380,13 @@ enumerate(['a','b','c'], start=1)  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不�
 ```
 
 * [ ] locals
-* ### [map(function, iterable)](https://docs.python.org/3/library/functions.html#map)
-* [ ] max
-* open  
-打开一个文件 buffering=0代表不需要缓存(不缓存,mode必须是b), buffering=1代表每一行保存,buffering>1代表多少字节保存
-* ### [property](./library_reference/built_in_functions内置函数.md#property)
-* zip: 迭代2个迭代器, 按照最短的来计算
-3. Built-in Constants
-4. Built-in Types
-* [Set集合](./set.md)
-* ### [Mapping Types -- dict 字典参考](./library_reference/built_in_types内置数据类型.md)
-5. ## [Built-in Exceptions](https://docs.python.org/3/library/exceptions.html)
+
 ### Warnings
 * DeprecationWarning
 
 ## [Text Processing Services](https://docs.python.org/3/library/text.html)
 
-### [2. re -- Regular expression operations 正则表达式 regex](./library_reference/re.md)
+### [2. re -- Regular expression operations 正则表达式 regex](../library_reference/re.md)
 [test regrex 在线测试](https://regex101.com/#python)
 
 ### textwrap.dedent
@@ -449,7 +442,7 @@ f.close()
 ```
 
 
-* [zipfile](./library_reference/zip.md) *处理zip压缩包*
+* [zipfile](../library_reference/zip.md) *处理zip压缩包*
 
 ## File Formats
 [官网](https://docs.python.org/3/library/fileformats.html)
@@ -459,7 +452,7 @@ f.close()
 ../config.md
 ```
 
-### [csv](./library_reference/csv.md)
+### [csv](../library_reference/csv.md)
  * [source code](https://github.com/python/cpython/blob/3.6/Lib/csv.py)
 
 * [ ] netrc
@@ -478,75 +471,12 @@ f.close()
 ### [ ] hmac
 ### [ ] secrets
 
-## contextvars — Context Variables
-## Networking and Interprocess Communication 网络和进程间通信
-
-### [asyncio](./library_reference/asyncio.md) *用来处理协程*
-### [signal](https://docs.python.org/zh-cn/3/library/signal.html)
-* 使用触发信号，处理ctrl+c的时候，保证循环执行完毕
-```
-stop = False
-
-def handler(signalnum, handler):
-    global stop
-    stop = True
-
-def main():
-    signal.signal(signal.SIGINT, handler)
-    global stop
-    while not stop:
-        time.sleep(0.1)
-    print("stop拉")
-```
-
-## Internet Data Handling
-
-### [JSON](./library_reference/json.md)
-
-### [base64][base64]
-原理, [RFC 3548](https://tools.ietf.org/html/rfc3548.html#section-3)
-
-    '  '  b'00100000 00100000'
-    按照6个比特来分割 001000 000010 0000[补充00]
-                      I      C      A=
-    对比 0-25 A-Z 26-51 a-z 52-61 0-9
-    然后每76个字符加一个换行，最后加一个换行
-    base64.encodebytes(b'  ') == b'ICA=\n'
-
-
-    b = base64.encodebytes('我'.encode('utf8')) # 只有二进制才能encode,结果还是bytes
-    b = base64.encodestring('我'.encode('utf8')) # 查了源码，果然这个是为了兼容python2的语法。以后避免使用这个方法
-    b = base64.encodestring('我')   # python2里面的str就是二进制,结果是str(仍然是二进制)
-
-7. [ ] binhex
-8. [binascii](https://docs.python.org/3/library/binascii.html)
-    * unhexlify(a) 把十六进制的字符串变成二进制数据
-    ```
-    a = 'b4447f6670a'
-    binascii.unhexlify(a)
-    >>> b'\xb4G\xf6g\n'
-    ```
-
-* [ ] to be continued
-21. [ ] Structed Markup Processing Tools
-
 ## [ ] Custom Python Interpreters
 
 33. ## Python Language Services
     2. ast
     `ast.literal_eval`: "savely evalute an expression node or a string containing a Python literal or container display."
     3. [ ] to be continued
-
-## Unix Specific Services
-### [fcntl](https://docs.python.org/3/library/fcntl.html)
-不过更加建议的是使用[flockcontext](./other_useful_library/README.md)
-* fcntl.flock
-```
-f = open("name", "w")
-fcntl.flock(f, fcntl.LOCK_EX)  # 只有一个线程可以获取执行, 其他的会等待, 并且如果f变量失效了，也会释放锁
-fcntl.flock(f, fcntl.LOCK_UN)  # 执行完毕后记得unlock
-fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
-```
 
 [base64]: https://docs.python.org/3/library/base64.html
 [subprocess]: https://docs.python.org/3/library/subprocess.html
