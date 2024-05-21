@@ -36,7 +36,7 @@ source_suffix = {
 }
 myst_heading_anchors = 4
 myst_enable_extensions = ["colon_fence"]
-suppress_warnings = ["myst.header", "myst.xref_missing"]
+# suppress_warnings = ["myst.header", "myst.xref_missing"]
 html_css_files = [
         "custom.css"
         ]

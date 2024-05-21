@@ -231,7 +231,7 @@ Humanfriendly.parse_size("10M", binary=True)  // 1024 x 1024 x 10
 很好用的邮件客户端
 
 * [ics](https://pypi.org/project/ics/) *日历，行程 calendar*
-* [ipdb](./other_useful_library/ipdb.md) *断点来检测查看源码和运行状态*
+* [ipdb](./ipdb.md) *断点来检测查看源码和运行状态*
 
 
 ## PID

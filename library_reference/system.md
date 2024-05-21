@@ -23,7 +23,7 @@ getpass(prompt="输入密码:")
 ## [logging日志处理](./logging/README.md)
 
 ```{toctree}
-../logging/README.md
+./logging/README.md
 ```
 
 ## [Platform](https://docs.python.org/3/library/platform.html)
