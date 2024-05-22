@@ -360,12 +360,11 @@ b.scaleb(3)  # Decimal("50")
 ```
 
 ### fractions
-[官网](
-https://docs.python.org/3.8/library/fractions.html#fractions.Fraction)
+[官网](https://docs.python.org/3.8/library/fractions.html#fractions.Fraction)
 ```
-    from fractions import Fraction
-    f = Fraction(1,3)
-    print("1/3 = %d/%d" % (f.numerator, f.denominator))
+from fractions import Fraction
+f = Fraction(1,3)
+print("1/3 = %d/%d" % (f.numerator, f.denominator))
 ```
 
 ### [random](https://docs.python.org/3.8/library/random.html)

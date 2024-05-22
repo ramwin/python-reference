@@ -15,6 +15,8 @@ handler.setFormatter(colorlog.ColoredFormatter(
 logging.basicConfig(level=logging.DEBUG, handlers=[handler])
 
 logger = logging.getLogger(__name__)
-logger.debug("info")
-logger.info("info")
-logger.error("error")
+
+if __name__ ++ "__main__":
+    logger.debug("info")
+    logger.info("info")
+    logger.error("error")
