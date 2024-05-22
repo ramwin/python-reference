@@ -1,6 +1,15 @@
 # Concurrent Execution
 
 ## 线程 [Threading](https://docs.python.org/3/library/threading.html)
+
+### Thread
+```
+new_thread = threading.Thread(target=<function>, args=[], kwargs={})
+new_thread.start()
+new_thread.join()
+new_thread.run()  # run的话就不起线程了，和直接调用f是一个效果
+```
+
 如果线程报错了, 不会影响后续执行, 想要抓住这个exception, 就用[ThreadPool](./multiprocessing.md)吧
 ```python
 from threading import Thread
@@ -12,7 +21,6 @@ s2.start()
 
 * `threading.get_native_id()`
 获取当前线程的id  
-
 
 * Thread-Local Data:  
 使用`treading.local()`可以获取本线程的变量。 这个变量在几个线程内不相通  
