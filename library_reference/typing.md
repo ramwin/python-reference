@@ -97,7 +97,7 @@ def attack(target: UserId, atk: AttackPoint):
 
 
 ## TypedDict
-[官网](https://docs.python.org/3/library/typing.html#typeddict)
+[官网](https://docs.python.org/3/library/typing.html#typing.TypedDict)
 ```python3
 class Point2D(TypedDict):
     x: int
