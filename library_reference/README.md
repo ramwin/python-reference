@@ -43,6 +43,20 @@ enumerate(['a','b','c'], start=1)  // [(0, 'a'), (1, 'b'), (2, 'c')]  但是不�
 
 ### Warnings
 * DeprecationWarning
+#### warnings filter
+[官网](https://docs.python.org/3/library/warnings.html#the-warnings-filter)
+[测试](./test_warnings_filter.py)
+```
+def f():
+    # 先给函数添加警告
+    warnings.warn(DeprecationWarning("不要用我了"))
+
+# 然后严格执行某个函数
+warnings.filterwarnings(
+    "error", category=DeprecationWarning
+    # module=可以制定过滤某个模块的
+    )
+```
 
 ## [Text Processing Services](https://docs.python.org/3/library/text.html)
 
