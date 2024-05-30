@@ -117,8 +117,9 @@ class logging.FileHandler(filename, mode='a', encoding=None, delay=False)
 
 ### RotatingFileHandler
 ```
-ipmort humanfriendly
-logging.handlers.RotatingFileHandler(
+from logging.handlers import RotatingFileHandler
+import humanfriendly
+RotatingFileHandler(
     "info.log", mode="a",
     maxBytes=humanfriendly.parse_size("10MiB"), backupCount=30,
 )
