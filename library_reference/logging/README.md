@@ -117,9 +117,10 @@ class logging.FileHandler(filename, mode='a', encoding=None, delay=False)
 
 ### RotatingFileHandler
 ```
+ipmort humanfriendly
 logging.handlers.RotatingFileHandler(
     "info.log", mode="a",
-    maxBytes=humanfriendly.parse_size("10M"), backupCount=30,
+    maxBytes=humanfriendly.parse_size("10MiB"), backupCount=30,
 )
 ```
 
