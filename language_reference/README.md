@@ -68,15 +68,17 @@ copy.deepcopy会copy recursively
 
 
 ### Evaluation order 执行顺序
-[官网](https://docs.python.org/3/reference/expressions.html#evaluation-order)
-
-    ()  # 括号内
-    **  # 指数
-    +x, -x  # 负数
-    in, not in, is, is not, <, <=, >, >=, !=  # 比较
-    not x  #
-    and  #
-    or  # and 和 or不是同样的哦。
+[官网](https://docs.python.org/3/reference/expressions.html#operator-precedence)
+|运算符|描述|
+|------|----|
+|()| # 括号内|
+|**| # 指数|
+|+x,|-x  # 负数|
+|in,|not in, is, is not, <, <=, >, >=, !=  # 比较|
+|not|x  #|
+|and| #|
+|or| **and 和 or**不是同样的哦。|
+|:=|**海象运算符最后**，所以要if (a:=3) > 3|
 
 ## Simple statements 简单语句
 11. [import机制](http://www.jianshu.com/p/b963782f59e9)
