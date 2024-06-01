@@ -100,6 +100,7 @@ lvl: 必须是整数
 [官网](https://docs.python.org/3/library/logging.handlers.html)
 
 ### [StreamHandler](https://docs.python.org/3/library/logging.handlers.html#streamhandler)
+默认是sys.std, 建议改成sys.stdout
 ```python3
 /usr/lib/python3.8/logging/__init__.py
 class StreamHandler(Handler):
@@ -164,7 +165,8 @@ class logging.handlers.MemoryHandler(capacity, flushLevel=ERROR, target=None)
 
 ## 模块级函数
 ### basicConfig(**kwargs)
-因为formatter的设置是在basicConfig里设置的, 所以basicConfig以后再给root添加logger就没有formatter的效果了(这样可以避免每个recorder都要判断formatter是否存在)
+因为formatter的设置是在basicConfig里设置的, 所以basicConfig以后再给root添加logger就没有formatter的效果了(这样可以避免每个recorder都要判断formatter是否存在)  
+basicConfig只能调用一次, 后续调用没效果.  
 ```python3
 for h in root.handlers[:]:  # 清理旧的handler
     root.removeHandler(h)
