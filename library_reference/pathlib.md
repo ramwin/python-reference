@@ -1,6 +1,8 @@
+# pathlib
+
 [官网](https://docs.python.org/3/library/pathlib.html)
 
-#### 属性
+## 属性
 * parents
 返回所有的上级目录 `p.parents[0] == p.parent` `p.parents[-1] == p.root` 但是后面目前有bug
 ```
@@ -24,7 +26,7 @@ PureWindowsPath('c:/')
 'library'
 ```
 
-#### methods
+## methods
 * as_posix(): 返回绝对路径
 * exists: 判断是否存在
 * glob(pattern): 返回匹配的文件或者目录名
@@ -53,7 +55,7 @@ dirpath = Path("缓存")
 cache_path = dirpath.join("运行缓存", "tmp.json")
 ```
 
-##### [`mkdir(mode=511, parents=False, exist_ok=False)`](https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir)
+### [`mkdir(mode=511, parents=False, exist_ok=False)`](https://docs.python.org/3/library/pathlib.html#pathlib.Path.mkdir)
 创建目录, 具体的权限参考 [manpages](https://manpages.debian.org/bullseye/manpages-zh/open.2.zh_CN.html)
 ```
 import stat

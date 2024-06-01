@@ -1,7 +1,8 @@
 # [多进程multiprocessing](https://docs.python.org/3/library/multiprocessing.html)
 
 ## [Pool](https://docs.python.org/3/library/multiprocessing.html#module-multiprocessing.pool)
-Pool.map只支持一个参数。 所以如果你是多个参数， 要用Pool.starmap
+* Pool.map只支持一个参数。 所以如果你是多个参数， 要用Pool.starmap
+* Pool的进程是根据初始化来的，后续不会生成新的进程. 处理完任务后进程会从列表继续获取任务执行
 ```
 from multiprocessing import Pool
 with Pool() as pool:

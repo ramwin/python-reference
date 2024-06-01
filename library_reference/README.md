@@ -90,12 +90,7 @@ def function():
 ```{toctree}
 ./os.md
 ./tempfile.md
-./pathlib.md
 ```
-
-### pathlib
-操作目录,路径的功能
-
 
 ### filecmp 文件、文件夹比较
 [官网](https://docs.python.org/3/library/filecmp.html)
@@ -302,7 +297,6 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 ./multiprocessing.md
 ./operator运算符.md
 ./os.md
-./pathlib.md
 ./re.md
 ./tempfile.md
 ./urllib.md

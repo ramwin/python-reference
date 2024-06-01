@@ -21,6 +21,7 @@ Welcome to python-reference's documentation!
 
    ./library_reference/README.md
    ./library_reference/system.md
+   ./library_reference/pathlib.md
 
 .. toctree::
    :maxdepth: 3
