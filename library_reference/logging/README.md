@@ -8,8 +8,9 @@
 
 ```python3
 import logging
+import sys
 
-stream_handler = logging.StreamHandler()
+stream_handler = logging.StreamHandler(sys.stdout)
 file_handler = logging.FileHandler("info.log", mode="a")
 
 logging.captureWarnings(True)

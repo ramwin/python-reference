@@ -18,7 +18,7 @@ def f(x):
     if var.get() is False:
         var.set(True)
         print("第一次遇到进程", os.getpid())
-    print("处理", x)
+    print(os.getpid(), "处理", x)
 
 
 def main():
