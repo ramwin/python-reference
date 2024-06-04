@@ -1,4 +1,7 @@
 # Concurrent Execution
+```{toctree}
+./multiprocessing.md
+```
 
 ## 线程 [Threading](https://docs.python.org/3/library/threading.html)
 
@@ -41,16 +44,6 @@ s2.start()
 
 ### 获取进程数据
 [示例](./multi/获取输出.py)
-
-### Poll
-* [imap_unordered](https://docs.python.org/3/library/multiprocessing.html#multiprocessing.pool.Pool.imap_unordered)
-对iterable里面的每个元素执行func. chunksize代表每个进程执行的迭代次数。这样一个进程可以执行多次
-[测试](./library_reference/pool_chunksize.py)
-```
-with Pool() as p:
-    for result in p.imap_unordered(func, iterable, chunksize):
-        print(result)
-```
 
 ## [ ] concurrent.futures
 
