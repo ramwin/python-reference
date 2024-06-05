@@ -1,4 +1,6 @@
 # [多进程multiprocessing](https://docs.python.org/3/library/multiprocessing.html)
+* parent_process():
+如果不是None, 说明是生成的子进程
 
 ## [Pool][pool]
 * Pool.map只支持一个参数。 所以如果你是多个参数， 要用Pool.starmap
