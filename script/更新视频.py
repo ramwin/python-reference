@@ -48,7 +48,7 @@ HOSTNAME = socket.getfqdn()
 
 def get_config_file_list() -> List[Path]:
     """读取所有需要同步的配置文件"""
-    if HOSTNAME == "manjaro.ramwin.com":
+    if HOSTNAME == "manjaro":
         device = Path("/run/media/wangx/samsung")
     elif HOSTNAME == "Windows":
         device = Path("S:/")
