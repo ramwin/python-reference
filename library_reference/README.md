@@ -174,6 +174,26 @@ f.close()
 ### [ ] secrets
 
 ## contextvars — Context Variables
+1. 作用一: 当作全局变量
+```
+import datetime
+from contextvars import ContextVar
+last_update_datetime = ContextVar("last_update_datetime", datetime.datetime(1970, 1, 1, 0, 0, 0))
+for obj in objs.order_by("update_datetime")[0:100]:
+    handle(obj)
+    last_update_datetime.set(obj.udpate_datetime)
+```
+
+2. 作用二: 当作多进程的判断
+```python
+from contextvars import ContextVar
+sub_process_first_met = ContextVar("sub_process_first_met", default=False)
+def f(x):
+    if sub_process_first_met.get() is False:
+        sub_process_first_met.set(True)
+        print("子进程第一次")
+```
+
 ## Networking and Interprocess Communication 网络和进程间通信
 
 ### [asyncio](../library_reference/asyncio.md) *用来处理协程*
