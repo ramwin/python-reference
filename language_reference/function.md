@@ -27,6 +27,14 @@ def f(pos1, pos2, /, pos_or_kwd, *, kwd1, kwd2):
         |                                - Keyword only
          -- Positional only
 ```
+
+为什么存在positional only的函数, 比如我的
+```
+class LargeQueryHandler:
+
+    def handle_object(self, instance):  # 这个时候各个类就能用不同的名称了
+```
+
 * [参数的传递](#参数的传递)
 ```python
 def main(name, age, height=2.2, *args, **kwargs):
@@ -35,6 +43,7 @@ def main(name, age, height=2.2, *args, **kwargs):
 ```
 
 ## 参数的传递
+
 * 调用的时候， 必须先传递位置变量，后传递名称变量。
     `main('name', key='value', 'age')  # 错`
 * 如果位置变量已经有了值，后面肯定不能再加同名称变量了

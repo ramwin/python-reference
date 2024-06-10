@@ -7,6 +7,7 @@
 ./concurrent.md
 ./runtime_services.md
 ./functional-programming-modules.md
+./heapq.md
 ```
 
 ## typing

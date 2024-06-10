@@ -1,4 +1,4 @@
-### [heapq](https://docs.python.org/3/library/heapq.html)
+# [heapq](https://docs.python.org/3/library/heapq.html)
 *heap queque algorithm*
 对于任意一个列表, `a[k] <= a[2*k + 1] and a[k] <= a[2*k + 2]`  
 所以插入元素耗时 `log(n)`  
