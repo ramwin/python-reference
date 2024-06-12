@@ -27,6 +27,10 @@ if random.random() > 0.0000001:
     refresh()
 ```
 
+3. 多进程的queue: 50K/s
+```{literalinclude} ./library_reference/test_multiprocessing_queue.py
+```
+
 3. redis.get  
 本地测试key长度为3和长度为720都差不多
 `0.05ms, 20K/s`
