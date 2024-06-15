@@ -31,9 +31,9 @@ if random.random() > 0.0000001:
 ```{literalinclude} ./library_reference/test_multiprocessing_queue.py
 ```
 
-3. redis.get  
+4. redis.get  
 本地测试key长度为3和长度为720都差不多
 `0.05ms, 20K/s`
 
-4. 数据库的get  
+5. 数据库的get  
 `0.3ms, 2K/s`
