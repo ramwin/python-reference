@@ -316,7 +316,6 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 ./heapq.md
 ./itertools.md
 ./json.md
-./operator运算符.md
 ./os.md
 ./re.md
 ./tempfile.md
