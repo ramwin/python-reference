@@ -1,10 +1,9 @@
-## Functional Programming Modules
+# Functional Programming Modules
 [官网](https://docs.python.org/3/library/functional.html)
 ```{toctree}
 ./itertools.md
-./operator运算符.md
 ```
-### functools
+## functools
 对于函数和可调用对象的执行操作
 
 * cache
@@ -31,7 +30,7 @@ log_2 = functools.partial(log_e, base=2)
 print(log_2(4))  # 2.0
 ```
 
-### 文件操作
+## 文件操作
 * 基础
 ```python
     file = open(<filename>, 'w')
@@ -47,13 +46,13 @@ print(log_2(4))  # 2.0
     * read(n)  # 读取n个字符或者字节
     * seek(offset, from_what)  # offset偏移数量，from_wath 0代表开始，1代表当前，2代表末尾
 
-#### [Process Parameters](https://docs.python.org/3/library/os.html#process-parameters)
+### [Process Parameters](https://docs.python.org/3/library/os.html#process-parameters)
 
-#### [File Descriptor Operations](https://docs.python.org/3/library/os.html#file-descriptor-operations)
+### [File Descriptor Operations](https://docs.python.org/3/library/os.html#file-descriptor-operations)
 
-#### [Process Management](https://docs.python.org/3/library/os.html#process-management)
+### [Process Management](https://docs.python.org/3/library/os.html#process-management)
 
-### time
+## time
 [官网](https://docs.python.org/3/library/time.html)
 
 * localtime
