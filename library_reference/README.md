@@ -5,6 +5,7 @@
 
 ```{toctree}
 ./concurrent.md
+./datetime时间.md
 ./runtime_services.md
 ./functional-programming-modules.md
 ./heapq.md
@@ -333,7 +334,6 @@ fcntl.flock(f, fcntl.LOCK_SH)  # 可以共享
 
 ```{toctree}
 ./collections.md
-./datetime时间.md
 ```
 
 
