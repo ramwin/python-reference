@@ -117,8 +117,8 @@ class StreamHandler(Handler):
 class logging.FileHandler(filename, mode='a', encoding=None, delay=False)
 ```
 
-### RotatingFileHandler
-```
+### [RotatingFileHandler](https://docs.python.org/3/library/logging.handlers.html#rotatingfilehandler)
+```python
 from logging.handlers import RotatingFileHandler
 import humanfriendly
 RotatingFileHandler(
