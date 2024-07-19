@@ -14,15 +14,8 @@ MIDDLE = AGE(38)
 
 OLD = AGE(88)
 
-# newtype不行
-# DISCOUNT = NewType("DISCOUNT", Literal[18, 88])
-# rgument 2 to NewType(...) must be subclassable (got "Literal[18, 88]")
-
-# Parameter 1 of Literal[...] is invalid
-# DISCOUNT = Literal[YOUNG, OLD]
-
-
-DISCOUNT: Literal[AGE] = Literal[YOUNG, OLD]
+# the next line will raise error Parameter 1 of Literal[...] is invalid
+DISCOUNT = Literal[YOUNG, OLD]
 
 
 def get_discount(age: DISCOUNT) -> float:
