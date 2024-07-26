@@ -3,6 +3,7 @@
 # Xiang Wang <ramwin@qq.com>
 
 
+import enum
 from typing import Literal, NewType, TypeAlias
 
 
@@ -15,10 +16,13 @@ MIDDLE = AGE(38)
 OLD = AGE(88)
 
 # the next line will raise error Parameter 1 of Literal[...] is invalid
-DISCOUNT = Literal[YOUNG, OLD]
+
+class Discount(enum.Enum):
+    YOUNG = YOUNG
+    OLD = OLD
 
 
-def get_discount(age: DISCOUNT) -> float:
+def get_discount(age: Discount) -> float:
     if age == YOUNG:
         return 0.1
     elif age == OLD:
@@ -28,5 +32,5 @@ def get_discount(age: DISCOUNT) -> float:
 
 
 if __name__ == "__main__":
-    print(get_discount(YOUNG))
+    print(get_discount(Discount.YOUNG))
     print(get_discount(MIDDLE))
