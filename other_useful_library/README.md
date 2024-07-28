@@ -340,6 +340,19 @@ session = requests_cache.CachedSession(
 )
 ```
 
+## retry
+```
+from retry import retry
+
+@retry(delay=0.1, tries=3, logger=LOGGER)
+def run():
+    if time.time() - start >= 0.1:
+        print("OK")
+        return True
+    print("FAIL")
+    raise ValueError("请等等")
+```
+
 ## web3
 ### [eth_utils](https://eth-utils.readthedocs.io/en/stable/)
 ```
