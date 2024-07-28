@@ -2,7 +2,7 @@
 
 ## 单行配置
 ```
-<error code>  # type: ignore[assignment]
+<error code>  # type: ignore[assignment]  # 其他的注释
 ```
 
 ## [配置](https://mypy.readthedocs.io/en/stable/config_file.html)
