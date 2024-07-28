@@ -174,12 +174,12 @@ f.close()
 ### [ ] hmac
 ### [ ] secrets
 
-## contextvars — Context Variables
+## [contextvars — Context Variables](https://docs.python.org/3/library/contextvars.html)
 1. 作用一: 当作全局变量
 ```
 import datetime
 from contextvars import ContextVar
-last_update_datetime = ContextVar("last_update_datetime", datetime.datetime(1970, 1, 1, 0, 0, 0))
+last_update_datetime: ContextVar[datetime.datetime] = ContextVar("last_update_datetime", datetime.datetime(1970, 1, 1, 0, 0, 0))
 for obj in objs.order_by("update_datetime")[0:100]:
     handle(obj)
     last_update_datetime.set(obj.udpate_datetime)
