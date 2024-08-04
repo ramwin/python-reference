@@ -133,3 +133,16 @@ classvar可以防止覆盖类型和类型错误。但是无法防止不赋值
 class A:
     count: ClassVar[int]
 ```
+
+## 函数和装饰器
+### cast
+运行时不做任何转化，只是用来给编辑器进行提示
+```
+typing.cast(List[int], py_(tasks).filter(lambda x: isinstance(x, int)).value())
+```
+
+### assert_type
+运行时没啥用，只是给编辑器提示
+```
+assert_type(name, str)
+```
