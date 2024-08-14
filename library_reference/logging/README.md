@@ -188,3 +188,8 @@ logging.captureWarnings(True)
 ```
 
 [exceptions]: https://docs.python.org/3/howto/logging.html#exceptions-raised-during-logging
+
+## 拓展功能
+### 根据函数自动缩进
+```{literalinclude} ./test_logging_indent.py
+```
