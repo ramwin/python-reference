@@ -11,7 +11,10 @@ handler = colorlog.StreamHandler()
 handler.setFormatter(colorlog.ColoredFormatter(
     "%(log_color)s%(levelname)s:%(name)s:%(message)s"
     ))
-file_handler = logging.FileHandler("info.log")
+file_handler = logging.FileHandler("info.log", mode="w")
+file_handler.setFormatter(logging.Formatter(
+     '%(asctime)s [%(module)s:%(lineno)d] %(levelname)s %(message)s'
+    ))
 logging.basicConfig(level=logging.INFO, handlers=[handler, file_handler])
 
 logger = logging.getLogger(__name__)
