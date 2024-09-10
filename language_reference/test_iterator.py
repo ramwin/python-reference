@@ -13,6 +13,8 @@ def test(i):
         n += 1
         yield n * n
     print("结束")
+    return
 
 
 print(list(test(10)))
+print(list(test(0)))
