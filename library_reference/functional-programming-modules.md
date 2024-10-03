@@ -6,10 +6,10 @@
 ## functools
 对于函数和可调用对象的执行操作
 
-* cache
+* [cache](https://docs.python.org/3/library/functools.html#functools.lru_cache)
 缓存函数结果
 ```
-@functools.lru_cache(max_size=128)  # 一般用lru_cache自动释放缓存. cache的话更快,但是不会自动释放
+@functools.lru_cache(maxsize=128)  # 一般用lru_cache自动释放缓存. cache的话更快,但是不会自动释放
 def factorial(n):
     return n * factorial(n-1) if n else 1
 ```
