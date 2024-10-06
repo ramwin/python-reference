@@ -353,6 +353,16 @@ list(Type) >>
 [<Type.A: 1>, <Type.B: '2'>]
 ```
 
+### graphlib
+
+```python3
+from graphlib import TopologicalSorter
+graph = {"D": {"B", "C"}, "C": {"A"}, "B": {"A"}}
+ts = TopologicalSorter(graph)
+ts.add("C", "B")  # C 依赖于B
+print(list(ts.static_order()))  # A B C D
+```
+
 ## Numeric and Mathematical Modules
 
 ### [math](https://docs.python.org/3/library/math.html)
@@ -485,18 +495,6 @@ f.close()
 * [ ] netrc
 * [ ] xdrlib
 * [ ] plistlib
-
-## Cryptographic Services
-### [hashlib](https://docs.python.org/3/library/hashlib.html)
-
-    import hashlib
-    a = hashlib.md5()
-    a.update('string'.encode('utf8'))
-    a.hexdigest()
-    >>> 'b45cffe084dd3d20d928bee85e7b0f21'
-
-### [ ] hmac
-### [ ] secrets
 
 ## [ ] Custom Python Interpreters
 
