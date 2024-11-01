@@ -44,6 +44,8 @@ with Pool() as p:
 ## ThreadPool
 [../test/test_thread_pool.py](../test/test_thread_pool.py)
 ```python
+from multiprocessing.pool import ThreadPool
+
 tasks = range(1, 4)
 with ThreadPool() as p:
     results = p.map(f, tasks)  # [2, 3, 4]
