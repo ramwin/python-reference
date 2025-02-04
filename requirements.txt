@@ -38,8 +38,10 @@ gunicorn
 hashfs2
 humanfriendly
 ipdb
+ipython
 jsondiff
 myst-parser
+numpy
 pandas
 pandas-stubs
 pendulum
