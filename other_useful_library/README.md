@@ -74,7 +74,6 @@ logger.error("error")
 ./peewee.md
 ./pyenv.md
 ./pylint.md
-./requests.md
 ./rsa.md
 ./visidata.md
 ./wechatpy.md
@@ -95,6 +94,7 @@ archive.extractall(path='/tmp')
 ## 网络
 
 ```{toctree}
+./requests.md
 ./scrapy/README.md
 ./scrapy/spider.md
 ./scrapy/log.md
