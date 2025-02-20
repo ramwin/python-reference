@@ -3,10 +3,12 @@
 # Xiang Wang <ramwin@qq.com>
 
 
+import time
 import pydash
+import atexit
 
 
-def test1():
+def test_get():
     """
     测试有key但是为None
     """
@@ -22,4 +24,23 @@ def test1():
     print("None: ", pydash.get(a, "foo.bar", 1))
 
 
-test1()
+def wait(x):
+    print("call wait")
+    print(x)
+    print("wait end")
+
+
+def test_debounse():
+    new_wait = pydash.functions.debounce(wait, wait=1000)
+    atexit.register(wait, 1)
+    print("第1遍")
+    new_wait(0)
+    print("第2遍")
+    new_wait(1)
+    print("第3遍")
+    new_wait(2)
+    print("第4遍")
+    new_wait(3)
+
+
+test_debounse()
