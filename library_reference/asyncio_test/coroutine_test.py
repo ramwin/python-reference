@@ -43,6 +43,7 @@ async def main3():
 def main4():
     """直接调用协程"""
     asyncio.run(say_after(1, 2))
+    print("调用完毕")
 
 def service():
     return say_after(1, 'service调用')
@@ -50,3 +51,6 @@ def service():
 async def main5():
     """async函数调用普通函数调用async函数"""
     await service()
+
+
+main4()

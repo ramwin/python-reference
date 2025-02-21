@@ -12,6 +12,7 @@ pillow_example/result.png
 test.py
 
 *.log
+*.log.*
 
 *.lock
 
