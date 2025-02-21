@@ -19,4 +19,5 @@ logger = logging.getLogger(__name__)
 if __name__ ++ "__main__":
     logger.debug("info")
     logger.info("info")
+    logger.warning("warning")
     logger.error("error")

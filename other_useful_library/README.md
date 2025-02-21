@@ -233,6 +233,11 @@ Humanfriendly.parse_size("10M", binary=True)  // 1024 x 1024 x 10
 * [ics](https://pypi.org/project/ics/) *日历，行程 calendar*
 * [ipdb](./ipdb.md) *断点来检测查看源码和运行状态*
 
+## jupyter
+* 安装
+```
+pip install jupyterlab notebook
+```
 
 ## PID
 流程控制算法
