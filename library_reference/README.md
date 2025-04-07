@@ -1,21 +1,15 @@
 # Library Reference 内置库参考
 
-
 [官网][library-reference]
 
 ```{toctree}
+:maxdepth: 2
+./typing.md
 ./concurrent.md
 ./datetime时间.md
 ./runtime_services.md
 ./functional-programming-modules.md
 ./heapq.md
-```
-
-## typing
-
-```{toctree}
-:maxdepth: 2
-./typing.md
 ./os.md
 ```
 
