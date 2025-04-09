@@ -3,11 +3,11 @@
 * [官网模块-进阶](https://docs.python.org/3/library/logging.html)
 
 ## example
-* 输出到stdout和stderr
+### 分别输出到stdout和stderr
 ```{literalinclude} ./简单配置stdout和stderr.py
 ```
 
-* 基础  
+### 基础  
 默认配置, 保存到文件和终端
 
 ```python3
@@ -31,7 +31,7 @@ logging.basicConfig(
 )
 ```
 
-* 保存到文件的同时，输入的终端  
+### 保存到文件的同时，输入的终端  
 用2个handler
 
 ```
@@ -57,7 +57,7 @@ logger.warn("warn message")
 ```
 
 
-* 添加过滤器,只记录info,不记录warning
+### 添加过滤器,只记录info,不记录warning
 用在info的logger
 
 
