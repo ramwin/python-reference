@@ -3,6 +3,10 @@
 * [官网模块-进阶](https://docs.python.org/3/library/logging.html)
 
 ## example
+* 输出到stdout和stderr
+```{literalinclude} ./简单配置stdout和stderr.py
+```
+
 * 基础  
 默认配置, 保存到文件和终端
 
