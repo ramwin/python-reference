@@ -9,7 +9,7 @@ import colorlog
 
 handler = colorlog.StreamHandler()
 handler.setFormatter(colorlog.ColoredFormatter(
-    "%(log_color)s%(levelname)s:%(name)s:%(message)s"
+    "%(log_color)s %(process)d %(levelname)s:%(name)s:%(message)s"
     ))
 file_handler = logging.FileHandler("info.log", mode="w")
 file_handler.setFormatter(logging.Formatter(

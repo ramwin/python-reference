@@ -1,4 +1,3 @@
-
 # visidata简介
 [官网](https://www.visidata.org/docs/rows/)
 vd 终端查看csv,excel文件, 非常方便
