@@ -31,6 +31,14 @@ logger.error("error")
 ### mistletoe 解析markdown
 [github](https://github.com/miyuchina/mistletoe)
 
+### pympler  
+用来看对象的内存
+```python3
+from pympler import asizeof
+asizeof.asizeof(obj)  # int
+print(asizeof.asized(obj, detail=1).format())  # 打印并且会自动缩略
+```
+
 ## 未分类
 ```{toctree}
 :maxdepth: 1

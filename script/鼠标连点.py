@@ -10,12 +10,14 @@ from PyWinMouse import Mouse
 def main():
     m = Mouse()
     cnt = input("输入执行次数(50): ")
+    position = m.get_mouse_pos()
     if not cnt:
         cnt = 50
     else:
         cnt = int(cnt)
     for _ in range(cnt):
         time.sleep(0.2)
+        m.move_mouse(*position)
         m.left_click()
 
 
