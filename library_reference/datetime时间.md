@@ -44,7 +44,7 @@ datetime.combine(date, time, tzinfo=self.tzinfo)
 ```
 
 #### [formatting格式化](https://docs.python.org/3/library/datetime.html#strftime-and-strptime-behavior)
-* [参考代码](./script/time时间.py)
+* [参考代码](./test_time.py)
 * `%w`: weekday，0周日, 6是周六
 ```
 import datetime, time

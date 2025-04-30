@@ -1,6 +1,8 @@
 # [pandas](https://pandas.pydata.org/docs/user_guide/index.html)
+```{contents}
+```
 
-
+* 示例
 ```
 import pandas
 df1 = pandas.DataFrame(
@@ -69,7 +71,6 @@ Out[111]:
 a                
 charlie  20  True
 charlie  22  True
-
 ```
 
 ## where 过滤数据
@@ -99,8 +100,6 @@ result = pandas.merge(left, right, how="inner", on=["id"])
 ```
 
 ## Input/output
-
-
 ```
 pandas.read_excel(filename, header=[0, 1], converters={("学校信息", "年级"): str})
 最后converters会进入
@@ -111,6 +110,10 @@ ParserBase._convert_to_ndarrays()
         conv_f执行
 ```
 
+### to_excel
+```
+pandas
+```
 
 ### `read_csv`  
 * [guide](https://pandas.pydata.org/docs/user_guide/io.html#csv-text-files)  
@@ -146,8 +149,8 @@ ParserBase._convert_to_ndarrays()
     * `keep_default_na`: 是否把数据解析成NAN. 我喜欢设置成False
 
 
-# [API](https://pandas.pydata.org/docs/reference/index.html)
-## [pandas.core.series.Series](https://pandas.pydata.org/pandas-docs/stable/reference/series.html)
+## [API](https://pandas.pydata.org/docs/reference/index.html)
+### [pandas.core.series.Series](https://pandas.pydata.org/pandas-docs/stable/reference/series.html)
 * iteritems
 ```
 df['姓名'].dropna().iteritems()
@@ -186,7 +189,7 @@ df
 
 * [ ] skew
 
-## [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
+### [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
 * 基础操作
 ```
 del df[attribute]  # 删除列

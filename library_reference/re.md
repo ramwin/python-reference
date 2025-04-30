@@ -65,7 +65,7 @@ re.compile(r'(?P<id>\d+)we').match('123we').group('id')
 re.sub(r'(00)*$', '', '100000')  # 把匹配到的数据变成空
 ```
 
-[测试代码](library_reference/test_re.py)  
+[测试代码](test_re.py)  
 Return the string obtained by replacing the leftmost non-overlapping occurences of pattern in string by the replacement repl. The repl can be a function.
 * 每次匹配把结果里面的数据拿出来  
 `re.sub('a(\d)b', r'\1', 'a4bcdaba2b')`
