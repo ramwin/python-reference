@@ -13,7 +13,7 @@ with Pool() as pool:
     pool.starmap(function, [(arg1, arg2), (arg1, arg2)])
 ```
 
-[测试](../multi/poll_test.py)
+[测试](./multi/poll_test.py)
 * Introduction
 p.map返回一个列表. 执行的顺序是一定按照顺序来的
 ```
@@ -42,7 +42,7 @@ with Pool() as p:
 ```
 
 ## ThreadPool
-[../test/test_thread_pool.py](../test/test_thread_pool.py)
+[./test/test_thread_pool.py](./test/test_thread_pool.py)
 ```python
 from multiprocessing.pool import ThreadPool
 

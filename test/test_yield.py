@@ -30,4 +30,25 @@ def test1():
         print(error.args)
         print(next(error.args[0][1]()))
 
-test1()
+
+def test_return():
+    yield 1
+    return 2
+
+def test_raise():
+    yield 1
+    raise StopIteration
+
+
+def main():
+    for i in test_return():
+        print(i)
+    print("return在yield里面能正常返回并结束循环, 但是return的值拿不到")
+
+    print("StopIteration会报错, 输出1就出错了")
+    for i in test_raise():
+        print(i)
+
+
+if __name__ == "__main__":
+    main()

@@ -15,18 +15,20 @@ from pyftpdlib.handlers import FTPHandler
 from pyftpdlib.servers import FTPServer
 
 
-file_handler = logging.FileHandler("ftp.log", mode="a")
+file_handler = logging.FileHandler("ftp.log", mode="a",
+        encoding="utf-8",
+                                   )
 
 logging.basicConfig(
-    level=logging.INFO,
-    format=(
-        '%(asctime)s %(pathname)s[line:%(lineno)d] %(levelname)s %(message)s'
-    ),
-    datefmt='%Y-%m-%d %H:%M:%S',
-    handlers=[
-        file_handler,
-    ],
-)
+        level=logging.INFO,
+        format=(
+            '%(asctime)s %(pathname)s[line:%(lineno)d] %(levelname)s %(message)s'
+            ),
+        datefmt='%Y-%m-%d %H:%M:%S',
+        handlers=[
+            file_handler,
+            ],
+        )
 
 
 def main():

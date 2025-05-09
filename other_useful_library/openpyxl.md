@@ -105,6 +105,9 @@ When you merge cells the column and row number starts from 1
 ```
 
 ## [Working with Styles](https://openpyxl.readthedocs.io/en/stable/styles.html#)
+* 给第三列添加红色竖线
+```{literalinclude} add_border.py
+```
 
 ## [Worksheet Tables](https://openpyxl.readthedocs.io/en/stable/worksheet_tables.html)
 
