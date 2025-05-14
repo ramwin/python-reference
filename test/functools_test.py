@@ -11,7 +11,7 @@ def a():
     pass
 
 class A(object):
-    def __init
+    pass
 
 
 print(a.__doc__)

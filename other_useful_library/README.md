@@ -28,6 +28,14 @@ logger.error("error")
 [github](https://github.com/borntyping/python-colorlog)  
 带日志的streamlog
 
+### crc
+```
+# pip install crc
+from crc import Calculator, Crc16
+calculator = Calculator(Crc16.XMODEM)
+calculator.checksum(b'aaa') % 16384  # 10439, redis分配key到slot的算法
+```
+
 ### mistletoe 解析markdown
 [github](https://github.com/miyuchina/mistletoe)
 

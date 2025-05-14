@@ -31,6 +31,12 @@ logging.basicConfig(
         )
 
 
+class GBKHandler(FTPHandler):
+
+    def decode(self, bytes):
+        return bytes.decode("GBK", self.unicode_errors)
+
+
 def main():
     authorizer = DummyAuthorizer()
 

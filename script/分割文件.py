@@ -2,6 +2,11 @@
 # -*- coding: utf-8 -*-
 
 
+"""
+使用kimi分割文件
+"""
+
+
 import os
 
 
@@ -87,6 +92,44 @@ class FileSplitter:
         if not os.path.exists(output_dir):
             os.makedirs(output_dir)
 
+        positions = self.split()
+        output_files = []
+        with open(self.path, 'rb') as file:
+            for i, (start, end) in enumerate(positions):
+                output_file_path = os.path.join(output_dir, f'part_{i + 1}.txt')
+                with open(output_file_path, 'wb') as output_file:
+                    file.seek(start)
+                    data = file.read(end - start)
+                    output_file.write(data)
+                output_files.append(output_file_path)
+
+        return output_files
+
+        :param output_dir: 输出目录
+        :return: 输出文件路径列表
+        """
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+        
+        positions = self.split()
+        output_files = []
+        with open(self.path, 'rb') as file:
+            for i, (start, end) in enumerate(positions):
+                output_file_path = os.path.join(output_dir, f'part_{i + 1}.txt')
+                with open(output_file_path, 'wb') as output_file:
+                    file.seek(start)
+                    data = file.read(end - start)
+                    output_file.write(data)
+                output_files.append(output_file_path)
+
+        return output_files
+
+        :param output_dir: 输出目录
+        :return: 输出文件路径列表
+        """
+        if not os.path.exists(output_dir):
+            os.makedirs(output_dir)
+        
         positions = self.split()
         output_files = []
         with open(self.path, 'rb') as file:

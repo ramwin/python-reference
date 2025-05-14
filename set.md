@@ -1,7 +1,12 @@
-# 基础
+# set
+
+## 基础
+
 * [官网文档](https://docs.python.org/3/tutorial/datastructures.html#sets)
 * [官方api](https://docs.python.org/3/library/stdtypes.html#set-types-set-frozenset)
-* 基础操作
+
+### 基础操作
+
 ```
 basket = {'apple', 'orange', 'apple'}  # {'apple', 'orange'}
 basket = set()  # 创建空的set需要使用方法，不能使用{}
@@ -26,7 +31,7 @@ a ^ b  # 只存在于a或者b的
 * pop
 返回任意一个元素，如果为空会raise KeyError
 
-# 自定义类的set
+## 自定义类的set
 [示例](./test/test_set.py)
 * 需要设置`__hash__`来用来查找定位
 * 需要设置`__eq__`来用来对hash一致的元素去重
