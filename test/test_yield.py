@@ -30,7 +30,6 @@ def test1():
         print(error.args)
         print(next(error.args[0][1]()))
 
-
 def test_return():
     yield 1
     return 2
