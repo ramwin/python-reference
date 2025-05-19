@@ -5,6 +5,9 @@
 ```
 
 ## 开发工具类
+```{toctree}
+./click.md
+```
 
 ### colorlog
 [example](./test_colorlog.py)  
@@ -53,7 +56,6 @@ print(asizeof.asized(obj, detail=1).format())  # 打印并且会自动缩略
 ./exchangelib.md
 ./openpyxl.md
 ./beautifulsoup.md
-./click.md
 ./flask.md
 ```
 

@@ -2,6 +2,7 @@ myst-parser
 sphinx
 sphinx-autobuild
 sphinx-design
+sphinx-mermaid
 sphinx-rtd-theme
 sphinxcontrib-jquery
 sphinxcontrib-mermaid

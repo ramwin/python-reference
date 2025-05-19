@@ -1,6 +1,3 @@
-**Xiang Wang @ 2016-09-05 12:48:47**
-
-
 # 方法
 * islower
 * isupper
