@@ -19,7 +19,7 @@ extensions = [
         "sphinx.ext.todo",
         "sphinx.ext.autodoc",
         'sphinxcontrib.mermaid',
-        "sphinxmermaid",
+        # "sphinxmermaid",
         ]
 
 templates_path = ['_templates']
@@ -35,12 +35,12 @@ language = 'zh_CN'
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
 
+html_css_files = [
+        "custom.css"
+        ]
 html_theme = 'sphinx_rtd_theme'
 html_static_path = ['_static']
-source_suffix = {
-    ".rst": "restructuredtext",
-    ".md": "markdown",
-}
+latex_use_xindy = True
 myst_enable_extensions = [
         "colon_fence",
         "strikethrough",
@@ -50,29 +50,23 @@ myst_enable_extensions = [
         "attrs_inline",
 ]
 myst_heading_anchors = 7
-html_css_files = [
-        "custom.css"
-        ]
-source_encoding = "UTF-8"
-todo_include_todos = True
-latex_use_xindy = True
 smartquotes = True
+source_encoding = "UTF-8"
+source_suffix = {
+    ".rst": "restructuredtext",
+    ".md": "markdown",
+}
 # mermaid_elk_use_local = "js"
 # mermaid_use_local = "js"
 # d3_use_local = "js"
+sphinxmermaid_mermaid_init = {
+  'theme': 'base',
+  'themeVariables': {
+    # 'fontSize': '40px',
+  }
+}
 suppress_warnings = [
     "myst.header",
     "myst.xref_missing",
 ]
-html_css_files = [
-    "custom.css"
-]
 todo_include_todos = True
-latex_use_xindy = True
-smartquotes = True
-sphinxmermaid_mermaid_init = {
-  'theme': 'base',
-  'themeVariables': {
-    'fontSize': '40px',
-  }
-}
