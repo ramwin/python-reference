@@ -12,4 +12,3 @@ from eth_utils.address import to_checksum_address
 
 REDIS = Redis(decode_responses=True)
 CLUSTER = RedisCluster.from_url('redis://localhost:7000', decode_responses=True)
-
