@@ -8,9 +8,11 @@ from pathlib import Path
 
 
 def main():
-    if not Path(".git").exists():
-        return
+    # if not Path(".git").exists():
+    #     return
     res = subprocess.run(["git", "branch", "--show-current"], capture_output=True)
+    if res.returncode > 0:
+        return
     print("[" + res.stdout.decode('utf8').strip() + "]")
 
 
