@@ -3,12 +3,14 @@
 
 
 import click
+from pathlib import Path
 from pptx import Presentation
 
 
 @click.command()
-@click.argument("source")
+@click.argument("source", type=Path)
 def main(source):
+    print(f"# {source.stem}")
     for index, slide in enumerate(Presentation(source).slides, 1):
         print(f"## {index}")
         for shape in slide.shapes:
