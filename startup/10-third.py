@@ -14,5 +14,5 @@ from humanfriendly import *
 REDIS = Redis(decode_responses=True)
 try:
     CLUSTER = RedisCluster.from_url("redis://localhost:7000/", decode_responses=True)
-except RedisClusterException as error:
+except redis.exceptions.RedisClusterException as error:
     CLUSTER = None
