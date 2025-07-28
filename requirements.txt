@@ -53,6 +53,7 @@ pylint-django
 pylint-django
 pytest-django
 python-dotenv
+python-docx
 python-telegram-bot
 requests
 requests-cache
