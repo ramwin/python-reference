@@ -16,7 +16,7 @@ def format(x):
         return str(x)
     if x is None:
         return ""
-    return str(x)
+    return str(x).replace("\n", "-").replace("\r", "-")
 
 
 @click.command()
