@@ -3,6 +3,8 @@
 #
 set -ex
 
-rm dist/*
-python3 setup.py sdist bdist_wheel
-twine upload dist/*"
+# rm dist/*
+hatch build
+hatch publish
+# python3 setup.py sdist bdist_wheel
+# twine upload dist/*"
