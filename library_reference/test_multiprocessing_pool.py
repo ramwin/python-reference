@@ -18,6 +18,24 @@ def test1():
         for i in p.imap_unordered(f, range(100)):
             print(i)
 
+def f2(x):
+    print("处理", x)
+    time.sleep(x / 10)
+    print("处理完毕", x)
+    return x
+
+def test3():
+    """
+    imap是否固定顺序返回: 是的
+    能否利用好多进程: 是的,返回数据处理慢了多进程也会继续执行下一个
+    """
+
+    with Pool(3) as p:
+        for result in p.imap(f2, range(6)):
+            print("  返回数据", result)
+            time.sleep(0.4)
+            print("  返回数据完毕", result)
+
 
 def test2():
     """imap提前返回"""
@@ -28,4 +46,4 @@ def test2():
                 p.terminate()
 
 
-test2()
+test3()
