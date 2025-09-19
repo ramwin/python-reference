@@ -19,6 +19,8 @@ async def say_after(delay, what):
     time.sleep(delay)
     print(f"after sleep {delay} {time.strftime('%X')}")
     print(what)
+    if what == "raise":
+        raise ValueError((delay, what))
     print(f"finished calling say_after {delay} {time.strftime('%X')}")
 
 
@@ -53,4 +55,10 @@ async def main5():
     await service()
 
 
-main4()
+def test_error():
+    """直接调用协程"""
+    asyncio.run(say_after(1, "raise"))
+    print("调用完毕")
+
+
+test_error()
