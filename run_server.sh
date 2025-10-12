@@ -7,8 +7,9 @@ then
 fi
 
 sphinx-autobuild \
-    -j auto \
     --port 18000 \
+    -j auto \
+    --verbose \
     . _build/html/ \
     --re-ignore "\.mypy_cache" \
     --re-ignore "\.git"    \

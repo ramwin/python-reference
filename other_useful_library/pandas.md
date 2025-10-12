@@ -190,6 +190,13 @@ df
 * [ ] skew
 
 ### [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
+
+#### dropna
+```
+df.dropna(subset=["姓名"], inplace=True)
+```
+
+#### 待整理
 * 基础操作
 ```
 del df[attribute]  # 删除列
