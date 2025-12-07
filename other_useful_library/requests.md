@@ -1,9 +1,8 @@
-**Xiang Wang @ 2016-12-26 21:21:00**
-
+# requests
 * [官网](http://docs.python-requests.org/en/master/)
 * [上传文件代码](./requests上传文件.py)
 
-# 基础
+## 基础
 ```
 requests.requests(
     "url": "http://www.baidu.com",
@@ -24,10 +23,12 @@ requests.requests(
     "verify": False,
 )
 ```
+
 * 发送一个Json请求
 注意, 这里如果直接使用data, 因为lib里面会判断: 不然会不传递这个参数. 而django-rest-framework哪怕是空数组也需要参数的
+
 ```
-# requests的源码
+## requests的源码
 class request.models.RequestEncodingMixin
     ...
     def _encode_params(data):
@@ -45,7 +46,9 @@ class request.models.RequestEncodingMixin
             return urlencode(result, doseq=True)
         ...
 ```
+
 示例:
+
 ```
 requests.post(
     url=<url>,
@@ -53,7 +56,7 @@ requests.post(
 )
 ```
 
-# 参数
+## 参数
 * method
 * url
 * params
@@ -70,11 +73,14 @@ requests.post(
     requests.get('http://ipinfo.io', proxies=proxies)
     ```
 
-# Exceptions
+## Exceptions
 * ConnectionError
+* requests.exceptions.ConnectTimeout  
+超时了
+
 * HTTPError
 
-# [response](https://requests.readthedocs.io/en/latest/api/#requests.Response)
+## [response](https://requests.readthedocs.io/en/latest/api/#requests.Response)
 * `content` 二进制数据
 * `json` JSON数据
 如果报错了，会raise `simplejson.errors.JSONDecodeError`, python2里面会raise `ValueError`
@@ -83,9 +89,9 @@ Raises HTTPError
 * `status_code` 状态码
 * `text` 文本数据
 
-# Advanced Usage 进阶用法
+## Advanced Usage 进阶用法
 
-## Session Objects
+### Session Objects
 
 通过Session可以保持长链接, 请求速度会快一点.
 ```
@@ -95,7 +101,7 @@ r = s.get("https://httpbin.org/cookies")
 print(r.text)
 ```
 
-## Ca Ceriticates
+### Ca Ceriticates
 
 暂时关闭SSL警告
 ```
