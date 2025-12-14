@@ -1,5 +1,8 @@
 # [pandas](https://pandas.pydata.org/docs/user_guide/index.html)
 
+```{contents}
+```
+
 
 ```
 import pandas
@@ -146,8 +149,8 @@ ParserBase._convert_to_ndarrays()
     * `keep_default_na`: 是否把数据解析成NAN. 我喜欢设置成False
 
 
-# [API](https://pandas.pydata.org/docs/reference/index.html)
-## [pandas.core.series.Series](https://pandas.pydata.org/pandas-docs/stable/reference/series.html)
+## [API](https://pandas.pydata.org/docs/reference/index.html)
+### [pandas.core.series.Series](https://pandas.pydata.org/pandas-docs/stable/reference/series.html)
 * iteritems
 ```
 df['姓名'].dropna().iteritems()
@@ -186,7 +189,7 @@ df
 
 * [ ] skew
 
-## [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
+### [DataFrame](https://pandas.pydata.org/pandas-docs/stable/reference/frame.html)
 * 基础操作
 ```
 del df[attribute]  # 删除列
@@ -224,7 +227,7 @@ df.memory_usage(deep=True)  # 查看各列的内存占用
         print(row.客户名称)
 
 
-### [apply: 应用函数](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.apply.html)
+#### [apply: 应用函数](https://pandas.pydata.org/docs/reference/api/pandas.DataFrame.apply.html)
 对每一行操作， 生成新的列
 ```
 df['姓名'] = df.apply(lambda row: row['姓'] + row['名'], axis=1)  # axis: 一行一行调用
@@ -287,14 +290,33 @@ for key, sub_df in df.groupby("status"):
 
 [to_dict]: https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.to_dict.html
 
-# data types
-## Timestamp
+## data types
+### Timestamp
 ```
 TimeStamp(str|datetime|date)
 ```
 
-# Utils
+## Utils
 * [`is_datetime64_dtype`](https://pandas.pydata.org/docs/reference/api/pandas.api.types.is_datetime64_dtype.html) >> Bool
 ```
 pandas.api.types.is_datetime64_dtype(df.index)  # 判断Series是否全部是日期
+```
+
+## 解决方案
+* 定期清零的连续递增统计数据的统计
+```
+df = pd.read_csv("test.csv")
+In [2]: df
+Out[2]:
+           日期  平均分   总分
+0  2025-01-01   10  100
+1  2025-02-01   20  200
+2  2025-03-01   25  300
+3  2025-04-01   30   30
+4  2025-05-01   40   70
+
+df["下次总分"] = df['总分'].shift(-1)
+df = df[(df.总分 > df.下次总分)]  # 这样就能排除中间过程的统计数据(小概率某个统计时间果断就被清理就会漏掉)
+df["次数"] = df["总分"] / df["平均分"]
+平均分 = float(np.average(df["平均分"], weights=df["次数"]))
 ```
