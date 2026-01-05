@@ -5,3 +5,5 @@
 
 import pendulum
 import psutil
+
+from humanfriendly import *
