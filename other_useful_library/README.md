@@ -323,6 +323,10 @@ part.shift(seconds=-2)
 subs.save('other/path.srt', encoding='utf8')
 ```
 
+## redis
+[本地](http://localhost:18002/redis/redis.html)  
+[github](https://github.com/ramwin/linux-reference/blob/master/redis/redis.md)  
+
 ## requests-cache
 利用缓存来保存文件, 还可以指定用哪个key
 ```python3

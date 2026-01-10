@@ -1,4 +1,17 @@
-# [itertools](https://docs.python.org/3/library/itertools.html)
+# itertools  
+[官网](https://docs.python.org/3/library/itertools.html)
+
+## batched
+```python
+# [
+#     (0, 1, 2),
+#     (3, 4, 5),
+#     (6, ),
+#     ...
+# ]
+for batch in itertools.batched(range(7), n=3):  # batch就是一个Tuple
+    ...
+```
 
 ## chain
 
