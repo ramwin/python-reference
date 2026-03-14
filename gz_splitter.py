@@ -135,42 +135,77 @@ def _write_chunk_worker(args: Tuple[str, List[str]]) -> None:
 
 def split_multiprocess(input_path: Path, output_dir: Path, lines_per_file: int, max_workers: int = 4) -> int:
     """
-    方案3：单进程读取 + 进程池处理写入
+    方案3：多进程处理 - 使用 Manager Queue 流式分发数据
+    
+    优化点：
+    1. 主进程读取并解压数据（I/O 密集型，单线程即可）
+    2. 使用进程池并行压缩和写入（CPU 密集型，gzip 压缩是瓶颈）
+    3. 使用队列避免一次性加载所有数据到内存
     返回生成的文件数量
     """
+    from multiprocessing import Manager, Pool
+    
     file_count = 0
-    chunks: List[Tuple[str, List[str]]] = []
-    current_lines: List[str] = []
+    chunk_index = 0
     start_line = 1
+    current_lines: List[str] = []
     line_num = 0
     
-    # 先收集所有数据块
-    for line_num, line in read_gz_lines(input_path):
-        current_lines.append(line)
+    # 使用 Manager 创建队列
+    with Manager() as manager:
+        task_queue = manager.Queue(maxsize=max_workers * 2)
         
-        if len(current_lines) >= lines_per_file:
-            file_count += 1
-            end_line = line_num
-            filename = generate_output_filename(input_path, file_count, start_line, end_line)
-            output_path_file = output_dir / filename
-            chunks.append((str(output_path_file), current_lines.copy()))
+        def worker_main(queue):
+            """工作进程主函数"""
+            while True:
+                try:
+                    task = queue.get(timeout=1)
+                    if task is None:  # 结束信号
+                        break
+                    output_path_str, lines = task
+                    write_chunk_to_gz(Path(output_path_str), lines)
+                except Exception:
+                    break
+            return True
+        
+        # 启动工作进程池
+        with Pool(max_workers) as pool:
+            # 先异步启动所有工作进程
+            async_results = [pool.apply_async(worker_main, (task_queue,)) for _ in range(max_workers)]
             
-            current_lines = []
-            start_line = line_num + 1
+            # 主进程读取数据并分发任务
+            for line_num, line in read_gz_lines(input_path):
+                current_lines.append(line)
+                
+                if len(current_lines) >= lines_per_file:
+                    chunk_index += 1
+                    end_line = line_num
+                    filename = generate_output_filename(input_path, chunk_index, start_line, end_line)
+                    output_path_file = output_dir / filename
+                    
+                    # 将任务放入队列（阻塞直到有空位）
+                    task_queue.put((str(output_path_file), current_lines.copy()))
+                    
+                    current_lines = []
+                    start_line = line_num + 1
+            
+            # 处理剩余行
+            if current_lines:
+                chunk_index += 1
+                end_line = line_num if current_lines else start_line
+                filename = generate_output_filename(input_path, chunk_index, start_line, end_line)
+                output_path_file = output_dir / filename
+                task_queue.put((str(output_path_file), current_lines))
+            
+            # 发送结束信号
+            for _ in range(max_workers):
+                task_queue.put(None)
+            
+            # 等待所有工作进程完成
+            for r in async_results:
+                r.get(timeout=300)
     
-    # 处理剩余行
-    if current_lines:
-        file_count += 1
-        end_line = line_num if current_lines else start_line
-        filename = generate_output_filename(input_path, file_count, start_line, end_line)
-        output_path_file = output_dir / filename
-        chunks.append((str(output_path_file), current_lines))
-    
-    # 使用进程池并行写入
-    with ProcessPoolExecutor(max_workers=max_workers) as executor:
-        list(executor.map(_write_chunk_worker, chunks))
-    
-    return file_count
+    return chunk_index
 
 
 @click.command()
